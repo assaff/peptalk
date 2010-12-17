@@ -34,6 +34,10 @@ parser.add_option('-t', '--clustering-metric',
 parser.add_option('-d', '--diameter-cutoff',
                   type='float', default=16.0,
                   help='maximum cluster diameter, in angstrom [default: %default]')
+parser.add_option('-w', '--weight-by-bfactor',
+                  action='store_true',
+                  default=False,
+                  help='calculate pairwise distances weighted by the pair\'s B-factor product [default: %default]')
 parser.add_option('-l', '--logfile',
                   default='/dev/null',
                   help='name of log file, mainly for debugging [default: %default]')
@@ -95,9 +99,9 @@ COLORS = ['red',
 DEFAULT_PYMOL_INIT = ';'.join(['load %s' % os.path.abspath(options.pdbfilename),
                                'bg white',
                                'hide everything',
-                               'select peptide, chain B',
-                               'deselect',
                                'select receptor, chain A',
+                               'deselect',
+                               'select peptide, chain B',
                                'deselect',
                                'color yellow, peptide',
                                'show sticks, peptide',
@@ -196,36 +200,35 @@ def write_pymol_script(output_stream, clusters):
         print >> output_stream, 'color %s, %s' % (COLORS[cluster_num], cluster_res_object)
     return
 
-
-def cluster_and_rank(coords_matrix):
+def cluster_and_rank(coords_matrix, bfactor_vector=None):
     '''
-    Input: N x 3 matrix of XYZ coordinates (practically a list of lists)
+    Input:  N x 3 array of XYZ coordinates (practically a list of lists)
+            bfactor_vector: an N-sized row vector of each observations bfactor (used as weight)
     Output: A list describing each vector's assignment to a cluster 
     '''
-    flat_clusters = fclusterdata(coords_matrix, criterion=CLUSTERING_CRITERION, t=CLUSTER_DIAMETER_CUTOFF,
-                                 metric=CLUSTERING_METRIC, depth=2,
-                                 method=CLUSTERING_METHOD)
     logging.debug('VECTOR COORDINATES:\n' + str(coords_matrix))
+    
+#    flat_clusters = fclusterdata(coords_matrix, criterion=CLUSTERING_CRITERION, t=CLUSTER_DIAMETER_CUTOFF,
+#                                 metric=CLUSTERING_METRIC, depth=2,
+#                                 method=CLUSTERING_METHOD)
+
     pdistances = pdist(coords_matrix, metric=CLUSTERING_METRIC)
-#    pweights = []*len(pdistances)
-#    d = squareform(pdistances)
-#    assert d.shape[0] == d.shape[1]
-#    assert d.shape[0] == len(atoms)
-#    m = d.shape[0]
-#    for i in range(d.shape[0]):
-#        for j in range(i+1, d.shape[1]):
-#            p_index = i*(m-i)+j-i-1
-#            print d[i,j], p_index, pdistances[p_index]
-    if CLUSTERING_METHOD=='single':
-        for i in range(len(pdistances)):
-            if pdistances[i]>NEIGHBOR_DISTANCE_CUTOFF: pdistances[i] = np.inf
+    if options.weight_by_bfactor and bfactor_vector is not None:
+        # Weighting the distance matrix by pairwise bfactor product
+        assert (type(bfactor_vector) is np.ndarray) and len(bfactor_vector.shape)<=2 and max(bfactor_vector.shape)==coords_matrix.shape[0]
+        weight_matrix = float(1)/np.outer(bfactor_vector,bfactor_vector)
+        pdistances = squareform(np.multiply(squareform(pdistances), weight_matrix))
+    d = np.zeros((coords_matrix.shape[0],coords_matrix.shape[0]))
+#    if CLUSTERING_METHOD=='single':
+#        for i in range(len(pdistances)):
+#            if pdistances[i]>NEIGHBOR_DISTANCE_CUTOFF: pdistances[i] = np.inf
     logging.debug('DISTANCE MATRIX:\n' + str(pdistances))
-#    exit()
+
     Z = linkage(pdistances, method=CLUSTERING_METHOD, metric=CLUSTERING_METRIC)
     flat_clusters = fcluster(Z, t=CLUSTER_DIAMETER_CUTOFF, criterion=CLUSTERING_CRITERION)
+    
 #    dendrogram(Z)
 #    pylab.show()
-    
 
     assert(len(flat_clusters) == coords_matrix.shape[0])
     logging.debug('FLAT CLUSTERS:\n' + str(flat_clusters))
@@ -239,13 +242,14 @@ if __name__ == '__main__':
     logging.debug('Receptor peptide-binding CA atoms:')
     for atom in pdb_atoms: logging.debug(atom.pdb_str())
     
-    
-    
     coords_matrix = np.array([
                               [atom.pos.x, atom.pos.y, atom.pos.z]
                               for atom in pdb_atoms
                               ])
-    cluster_assignment = cluster_and_rank(coords_matrix)
+    weights = None
+    if options.weight_by_bfactor:
+        weights = np.array([atom.bfactor for atom in pdb_atoms])
+    cluster_assignment = cluster_and_rank(coords_matrix, weights)
 
     clusters = [[atom for atom in pdb_atoms if cluster_assignment[pdb_atoms.index(atom)] \
                  == cluster_num] for cluster_num in set(cluster_assignment)]
@@ -253,7 +257,7 @@ if __name__ == '__main__':
     clusters.sort(key=lambda atoms: spatial_clustering_deg(atoms), reverse=True)
 
 #------- HYPER-CLUSTERING
-    cluster_centroids = [weighted_centroid(cluster) for cluster in clusters]
+#    cluster_centroids = [weighted_centroid(cluster) for cluster in clusters]
 
 
     

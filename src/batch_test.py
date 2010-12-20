@@ -8,16 +8,17 @@ import numpy as np
 from glob import glob
 import subprocess
 
+HOME_PATH = '/home/assaf/workspace/peptalk/'
+CLUSTERING_SCRIPT = os.path.join(HOME_PATH, 'src/cluster_residues.py')
+DATA_DIR = os.path.join(HOME_PATH, 'data/')
+DIAMTER_RANGE = np.arange(4,24,.5)
+BFACTOR_RANGE = np.arange(0.3,0.9,.05)
+
 if __name__ == '__main__':
-    HOME_PATH = '/home/assaf/workspace/peptalk/'
-    CLUSTERING_SCRIPT = os.path.join(HOME_PATH, 'src/cluster_residues.py')
-    DATA_DIR = os.path.join(HOME_PATH, 'data/')
     
     assert os.path.exists(CLUSTERING_SCRIPT) and os.path.isfile(CLUSTERING_SCRIPT)
     assert os.path.exists(DATA_DIR) and os.path.isdir(DATA_DIR)
     
-    DIAMTER_RANGE = np.arange(4,24,.5)
-    BFACTOR_RANGE = np.arange(0.3,0.9,.05)
 #    DIAMTER_RANGE = np.arange(16,15,-0.5)
 #    BFACTOR_RANGE = np.arange(1,0,-.2)
 

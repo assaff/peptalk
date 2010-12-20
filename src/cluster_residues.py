@@ -42,7 +42,7 @@ parser.add_option('-l', '--logfile',
                   default='/dev/null',
                   help='name of log file, mainly for debugging [default: %default]')
 parser.add_option('-y', '--pymol-output',
-                  default='/dev/null',
+                  default=None,
                   help='name of pml file, for visualization of output [default: %default]')
 parser.add_option('-s', '--meta-cluster',
                   action='store_true',
@@ -159,15 +159,17 @@ def spatial_clustering_deg(atoms):
     for i in range(len(atoms)):
         for j in range(i + 1, len(atoms) - 1):
             score += 1 / pos_distance(atoms[i].pos, atoms[j].pos)
+    score *= float(1) / np.power(len(atoms), 2)
     return score
 
 
 def quasi_rmsd(atoms1, atoms2):
-    msd = 0
+    score = 0
     for a in atoms1:
         for b in atoms2:
-            msd += 1 / pos_distance(a.pos, b.pos)
-    return msd #sqrt(msd)
+            score += 1 / pos_distance(a.pos, b.pos)
+    score *= float(1) / float(len(atoms1))  
+    return score #sqrt(score)
 
 def cluster_density_score(cluster_atoms):
     return spatial_clustering_deg(cluster_atoms)
@@ -251,19 +253,32 @@ if __name__ == '__main__':
         weights = np.array([atom.bfactor for atom in pdb_atoms])
     cluster_assignment = cluster_and_rank(coords_matrix, weights)
 
-    clusters = [[atom for atom in pdb_atoms if cluster_assignment[pdb_atoms.index(atom)] \
-                 == cluster_num] for cluster_num in set(cluster_assignment)]
+    clusters = [[atom for atom in pdb_atoms if cluster_assignment[pdb_atoms.index(atom)]==cluster_num] for cluster_num in set(cluster_assignment)]
     clusters = filter(lambda cluster: len(cluster) > 1, clusters)
     clusters.sort(key=lambda atoms: spatial_clustering_deg(atoms), reverse=True)
+    
+    if clusters is None or len(clusters)==0:
+        print 'ERROR_no_clusters_found'
+        exit(1)
+    clusters_quality = [cluster_distance_with_peptide(cluster) for cluster in clusters]
+#    if np.argmax(clusters_quality)>0:
+#        print 0
+#    else:
+#        print '%.4f\t%.4f' % (clusters_scd[0],cluster_density_score(clusters[0]))
+    print '%.4f' % (clusters_quality[0])
+#    print [cluster_density_score(cluster) for cluster in clusters]
+#    print clusters_scd
+    
+    
 
 #------- HYPER-CLUSTERING
 #    cluster_centroids = [weighted_centroid(cluster) for cluster in clusters]
 
 
-    
-    PML = open(options.pymol_output, 'w')
-    write_pymol_script(PML, clusters)
-    PML.close()
+    if options.pymol_output is not None:
+        PML = open(options.pymol_output, 'w')
+        write_pymol_script(PML, clusters)
+        PML.close()
     if options.visualize:
 #        assert not options.pymol_output.startswith('/dev'), 'Cannot read from %s' % options.pymol_output
         TEMP_PML_FILENAME = '/tmp/temp%d.pml' % os.getpid()

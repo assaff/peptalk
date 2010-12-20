@@ -1,5 +1,5 @@
 #!/bin/bash
 
-pdbid=`tr '[a-z]' '[A-Z]' $1`
-pymol -d $pdbid.results.pml
+pdbid=`echo $1 | tr '[a-z]' '[A-Z]'`
+pymol -d @$pdbid.results.pml > /dev/null &
 

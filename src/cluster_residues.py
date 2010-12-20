@@ -32,22 +32,22 @@ parser.add_option('-t', '--clustering-metric',
                   default='euclidean',
                   help='clustering metric [default: %default]')
 parser.add_option('-d', '--diameter-cutoff',
-                  type='float', default=16.0,
+                  type='float', default=10.0,
                   help='maximum cluster diameter, in angstrom [default: %default]')
 parser.add_option('-w', '--weight-by-bfactor',
                   action='store_true',
                   default=False,
                   help='calculate pairwise distances weighted by the pair\'s B-factor product [default: %default]')
+parser.add_option('-s', '--hyper-cluster',
+                  action='store_true',
+                  default=False,
+                  help='cluster the resulting clusters again, by their centroid\'s coordinates [default: %default]')
 parser.add_option('-l', '--logfile',
                   default='/dev/null',
                   help='name of log file, mainly for debugging [default: %default]')
 parser.add_option('-y', '--pymol-output',
                   default=None,
                   help='name of pml file, for visualization of output [default: %default]')
-parser.add_option('-s', '--meta-cluster',
-                  action='store_true',
-                  default=False,
-                  help='cluster the resulting clusters again, by their centroid\'s coordinates [default: %default]')
 parser.add_option('-c', '--meta-pymol-output',
                   default='/dev/null',
                   help='name of pml file, for visualization of meta-clustering output [default: %default]')
@@ -278,8 +278,6 @@ if __name__ == '__main__':
 #    else:
 #        print '%.4f\t%.4f' % (clusters_scd[0],cluster_density_score(clusters[0]))
     print '%.4f' % (clusters_quality[0])
-#    print [cluster_density_score(cluster) for cluster in clusters]
-#    print clusters_scd
     
     
 

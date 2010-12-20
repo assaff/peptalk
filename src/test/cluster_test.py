@@ -9,11 +9,18 @@ import numpy as np
 
 CLUSTERING_SCRIPT_PATH = '/home/assaff/workspace/peptalk/src/cluster_residues.py'
 
-bfactor_spectrum = np.arange(0,1,.01)
-diameter_spectrum = np.arange(4,36,.5)
+bfactor_spectrum = np.arange(0,1,.1)
+diameter_spectrum = np.arange(4,20,1)
 
-class TestRun:
-    pass
+def run_test(**params):
+    test_args = []
+    for (k,v) in params.items():
+        if type(v) is bool:
+            test_args += [k]
+        else:
+            test_args += [k, v]
+    subprocess.Popen([CLUSTERING_SCRIPT_PATH]+test_args)
+    
 
 def benchmark(hyper=False):
     i=1

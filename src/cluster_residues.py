@@ -38,19 +38,27 @@ parser.add_option('-w', '--weight-by-bfactor',
                   action='store_true',
                   default=False,
                   help='calculate pairwise distances weighted by the pair\'s B-factor product [default: %default]')
-parser.add_option('-s', '--hyper-cluster',
+parser.add_option('-k', '--connect-neighbor-clusters',
                   action='store_true',
                   default=False,
-                  help='cluster the resulting clusters again, by their centroid\'s coordinates [default: %default]')
+                  help='optional post processing that agglomerates neighboring clusters together [default: %default]')
+parser.add_option('-c', '--neighbor-distance-cutoff',
+                  type='float',
+                  default=6.0,
+                  help='the maximal distance between two clusters to still be considered neighbors')
+#parser.add_option('-c', '--hyper-pymol-output',
+#                  default='/dev/null',
+#                  help='name of pml file, for visualization of meta-clustering output [default: %default]')
+parser.add_option('-B','--use-cbeta',
+                  action='store_true',
+                  default=False,
+                  help='use C-beta atoms as representatives of receptor residues')
 parser.add_option('-l', '--logfile',
                   default='/dev/null',
                   help='name of log file, mainly for debugging [default: %default]')
 parser.add_option('-y', '--pymol-output',
                   default=None,
                   help='name of pml file, for visualization of output [default: %default]')
-parser.add_option('-c', '--meta-pymol-output',
-                  default='/dev/null',
-                  help='name of pml file, for visualization of meta-clustering output [default: %default]')
 parser.add_option('-v', '--visualize',
                   action='store_true',
                   default=False,
@@ -80,7 +88,10 @@ NEIGHBOR_DISTANCE_CUTOFF = 7.0
 #INCONSISTENCY_THRESHOLD = 0.02
 CHAIN_RECEPTOR = 'A'
 CHAIN_PEPTIDE = 'B'
-ATOM_TYPE_CA = 'CA'
+RECEPTOR_ATOM_TYPE = 'CA'
+if options.use_cbeta:
+    RECEPTOR_ATOM_TYPE = 'CB'
+PEPTIDE_ATOM_TYPE = 'CA'
 SUCCESS_MESSAGE = 'Success with %s: highest ranking cluster is closest to peptide' % os.path.basename(options.pdbfilename)
 COLORS = ['red',
           'orange',
@@ -130,50 +141,51 @@ def test_clusters_ranking(clusters, clustering_score_function, actual_score_func
     print 'Generally, pearson coefficient is: %f' % pearson_coef
     return pearson_coef
 
-def get_atoms(pdb_lines, filters):
+def get_atoms(pdb_lines, filters=None):
     atoms = [AtomFromPdbLine(line) for line in pdb_lines if (line.startswith('ATOM') or
                                                              line.startswith('HETATM'))]
     for filter_function in filters:
         atoms = filter(filter_function, atoms)
     return atoms
+
+def coords(atom):
+#    assert type(atom) is Atom, '%s' % atom.pdb_str()
+    # should use numpy array
+    return [atom.pos.x, atom.pos.y, atom.pos.z]
     
-def get_peptide_ca_atoms(filename):
+    
+def get_peptide_atoms(filename):
     pdb_lines = open(filename, 'r')
     peptide_filters = [filter_chain_eq(CHAIN_PEPTIDE),
-                       filter_atom_type(ATOM_TYPE_CA),]
+                       filter_atom_type(PEPTIDE_ATOM_TYPE),]
     peptide_atoms = get_atoms(pdb_lines, peptide_filters)
     pdb_lines.close()
     return peptide_atoms
 
-def get_positive_ca_atoms(filename, bfactor_threshold):
+def get_positive_receptor_atoms(filename, bfactor_threshold):
     pdb_lines = open(filename, 'r')
     binder_filters = [filter_chain_eq(CHAIN_RECEPTOR),
-                      filter_atom_type(ATOM_TYPE_CA),
+                      filter_atom_type(RECEPTOR_ATOM_TYPE),
                       filter_bfactor_gt(B_FACTOR_CUTOFF),]
     binders = get_atoms(pdb_lines, binder_filters)
     pdb_lines.close()
     return binders
 
-def spatial_clustering_deg(atoms):
-    score = 0
-    for i in range(len(atoms)):
-        for j in range(i + 1, len(atoms) - 1):
-            score += 1 / pos_distance(atoms[i].pos, atoms[j].pos)
-    score *= float(1) / np.power(len(atoms), 2)
+def spatial_clustering_degree(atoms):
+    distances = pdist(np.array([coords(atom) for atom in atoms]))
+    score = np.power(distances, -1).sum() * np.power(len(atoms), -1)
     return score
 
-
 def quasi_rmsd(atoms1, atoms2):
-    score = 0
-    for a in atoms1:
-        for b in atoms2:
-            score += 1 / pos_distance(a.pos, b.pos)
-    score *= float(1) / float(len(atoms1))  
-    return score #sqrt(score)
+    coords1 = np.array([coords(atom) for atom in atoms1])
+    coords2 = np.array([coords(atom) for atom in atoms2])
+    distances = cdist(coords1, coords2)
+    score = np.power(distances, -1).sum() / float((len(atoms1)*len(atoms2)))
+    return np.power(score, .5)
 
 def mini_rmsd(atoms1, atoms2):
-    coords1 = np.array([[atom.pos.x, atom.pos.y, atom.pos.z] for atom in atoms1])
-    coords2 = np.array([[atom.pos.x, atom.pos.y, atom.pos.z] for atom in atoms2])
+    coords1 = np.array([coords(atom) for atom in atoms1])
+    coords2 = np.array([coords(atom) for atom in atoms2])
     distances = cdist(coords1, coords2)
     cluster_res_proximities = np.power(distances.min(1),-1)
     score = 1./float(len(cluster_res_proximities)) * cluster_res_proximities.sum() 
@@ -184,10 +196,10 @@ def mini_rmsd(atoms1, atoms2):
     return score #sqrt(score)
 
 def cluster_density_score(cluster_atoms):
-    return spatial_clustering_deg(cluster_atoms)
+    return spatial_clustering_degree(cluster_atoms)
     
 def cluster_distance_with_peptide(cluster_atoms):
-    peptide_atoms = get_peptide_ca_atoms(pdb)
+    peptide_atoms = get_peptide_atoms(pdb)
     logging.debug('Peptide CA atoms:')
     for atom in peptide_atoms: logging.debug(atom.pdb_str())
     return mini_rmsd(cluster_atoms, peptide_atoms)
@@ -208,7 +220,7 @@ def write_pymol_script(output_stream, clusters):
         cluster_ca_object = 'cluster%d_ca' % cluster_num
         cluster_res_object = 'cluster%d_%s' % (cluster_num, COLORS[cluster_num])
         cluster_resnum_str = re.sub(r'[\[\] ]', '', str(sorted([atom.res_num for atom in cluster])))
-        print >> output_stream, 'select %s, receptor and name %s and (resi %s); deselect' % (cluster_ca_object, ATOM_TYPE_CA ,cluster_resnum_str)
+        print >> output_stream, 'select %s, receptor and name %s and (resi %s); deselect' % (cluster_ca_object, RECEPTOR_ATOM_TYPE, cluster_resnum_str)
         print >> output_stream, 'select %s, br. %s; deselect' % (cluster_res_object, cluster_ca_object)
         print >> output_stream, 'delete %s' % (cluster_ca_object)
         print >> output_stream, 'color %s, %s' % (COLORS[cluster_num], cluster_res_object)
@@ -248,26 +260,51 @@ def cluster_and_rank(coords_matrix, bfactor_vector=None):
     logging.debug('FLAT CLUSTERS:\n' + str(flat_clusters))
     return flat_clusters
 
+def find_closest_clusters(clusters_list):
+    cluster_coords = [np.array([coords(atom) for atom in cluster]) for cluster in clusters_list]
+    min_distance = np.inf
+    neighbor_clusters = None
+    for i in range(len(clusters_list)):
+        for j in range(i+1, len(clusters_list)):
+            dij = np.min(cdist(cluster_coords[i], cluster_coords[j]))
+            if  dij < min_distance:
+                min_distance = dij
+                neighbor_clusters = (clusters_list[i], clusters_list[j])
+#        print min_distance
+    return (neighbor_clusters, min_distance)
+
 if __name__ == '__main__':
 
     pdb = os.path.abspath(options.pdbfilename)
 
-    pdb_atoms = get_positive_ca_atoms(pdb, B_FACTOR_CUTOFF)
+    pdb_atoms = get_positive_receptor_atoms(pdb, B_FACTOR_CUTOFF)
     logging.debug('Receptor peptide-binding CA atoms:')
     for atom in pdb_atoms: logging.debug(atom.pdb_str())
     
-    coords_matrix = np.array([
-                              [atom.pos.x, atom.pos.y, atom.pos.z]
-                              for atom in pdb_atoms
-                              ])
+    coords_matrix = np.array([coords(atom) for atom in pdb_atoms])
     weights = None
     if options.weight_by_bfactor:
         weights = np.array([atom.bfactor for atom in pdb_atoms])
     cluster_assignment = cluster_and_rank(coords_matrix, weights)
 
     clusters = [[atom for atom in pdb_atoms if cluster_assignment[pdb_atoms.index(atom)]==cluster_num] for cluster_num in set(cluster_assignment)]
+    
+    # testing
+    clusters = [[atom] for atom in pdb_atoms]
+    
+
+    if options.connect_neighbor_clusters:
+        (neighbors, min_distance) = find_closest_clusters(clusters)
+        while min_distance < options.neighbor_distance_cutoff:
+            if neighbors is None:
+                break
+            clusters.remove(neighbors[0])
+            clusters.remove(neighbors[1])
+            clusters.insert(0, neighbors[0]+neighbors[1])
+            (neighbors, min_distance) = find_closest_clusters(clusters)
+
     clusters = filter(lambda cluster: len(cluster) > 1, clusters)
-    clusters.sort(key=lambda atoms: spatial_clustering_deg(atoms), reverse=True)
+    clusters.sort(key=lambda atoms: spatial_clustering_degree(atoms), reverse=True)
     
     if clusters is None or len(clusters)==0:
         print 'ERROR_no_clusters_found'
@@ -278,11 +315,13 @@ if __name__ == '__main__':
 #    else:
 #        print '%.4f\t%.4f' % (clusters_scd[0],cluster_density_score(clusters[0]))
     print '%.4f' % (clusters_quality[0])
-    
-    
-
-#------- HYPER-CLUSTERING
-#    cluster_centroids = [weighted_centroid(cluster) for cluster in clusters]
+#        while True:
+#            if min_distance > options.neighbor_distance_cutoff:
+#                break
+        # build an atom==>cluster mapping
+#        cluster_centroid_coords = np.array([weighted_centroid(cluster) for cluster in clusters])
+#        cluster_weights = np.array([np.mean([atom.bfactor for atom in cluster]) for cluster in clusters])
+#        hyper_clusters = cluster_and_rank(cluster_centroid_coords, cluster_weights)
 
 
     if options.pymol_output is not None:

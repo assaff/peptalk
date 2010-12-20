@@ -13,7 +13,7 @@ import numpy as np
 from optparse import OptionParser
 from matplotlib import pylab
 from scipy.cluster.hierarchy import *
-from scipy.spatial.distance import pdist, squareform
+from scipy.spatial.distance import pdist, squareform, cdist
 from scipy.stats.stats import pearsonr
 from molecule import AtomFromPdbLine, Atom
 from vector3d import pos_distance
@@ -171,6 +171,18 @@ def quasi_rmsd(atoms1, atoms2):
     score *= float(1) / float(len(atoms1))  
     return score #sqrt(score)
 
+def mini_rmsd(atoms1, atoms2):
+    coords1 = np.array([[atom.pos.x, atom.pos.y, atom.pos.z] for atom in atoms1])
+    coords2 = np.array([[atom.pos.x, atom.pos.y, atom.pos.z] for atom in atoms2])
+    distances = cdist(coords1, coords2)
+    cluster_res_proximities = np.power(distances.min(1),-1)
+    score = 1./float(len(cluster_res_proximities)) * cluster_res_proximities.sum() 
+#    for a in atoms1:
+#        for b in atoms2:
+#            score += 1 / pos_distance(a.pos, b.pos)
+#    score *= float(1) / float(len(atoms1))  
+    return score #sqrt(score)
+
 def cluster_density_score(cluster_atoms):
     return spatial_clustering_deg(cluster_atoms)
     
@@ -178,7 +190,7 @@ def cluster_distance_with_peptide(cluster_atoms):
     peptide_atoms = get_peptide_ca_atoms(pdb)
     logging.debug('Peptide CA atoms:')
     for atom in peptide_atoms: logging.debug(atom.pdb_str())
-    return quasi_rmsd(cluster_atoms, peptide_atoms)
+    return mini_rmsd(cluster_atoms, peptide_atoms)
 
 def weighted_centroid(atoms):
     assert type(atoms) is list or type(atoms) is np.array

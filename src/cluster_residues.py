@@ -75,6 +75,10 @@ parser.add_option('-v', '--visualize',
                   action='store_true',
                   default=False,
                   help='visualize the clustering results in PyMOL [default: %default]')
+parser.add_option('-S','--save-session',
+                  action='store_true',
+                  default=False,
+                  help='save the visualization session as a pse')
 
 (options, args) = parser.parse_args()
 
@@ -411,7 +415,7 @@ if __name__ == '__main__':
         PML.close()
     if options.visualize:
 #        assert not options.pymol_output.startswith('/dev'), 'Cannot read from %s' % options.pymol_output
-        TEMP_PML_FILENAME = '/tmp/temp%d.pml' % os.getpid()
+        TEMP_PML_FILENAME = '/tmp/temp%d_visualize.pml' % os.getpid()
         TEMP_PML = open(TEMP_PML_FILENAME, 'w')
         print >> TEMP_PML, DEFAULT_PYMOL_INIT
         write_pymol_script(TEMP_PML, clusters)
@@ -421,6 +425,17 @@ if __name__ == '__main__':
         subprocess.Popen(['pymol','-qd', '@%s' % TEMP_PML_FILENAME,], stdout=SINK, stderr=SINK)
         SINK.close()
 #        os.remove(TEMP_PML_FILENAME)
+
+    if options.save_session:
+        TEMP_PML_FILENAME = '/tmp/temp%d_session.pml' % os.getpid()
+        TEMP_PML = open(TEMP_PML_FILENAME, 'w')
+        print >> TEMP_PML, DEFAULT_PYMOL_INIT
+        write_pymol_script(TEMP_PML, clusters)
+        print >> TEMP_PML, 'save ../sessions/%s_Bvwk_b%.1f_d%.1f_c%.1f.pse; quit;' % (PDB_ID, options.b_factor_cutoff, options.diameter_cutoff, options.neighbor_distance_cutoff)
+        TEMP_PML.close()
+        SINK = open('/dev/null')
+        subprocess.Popen(['pymol','-qcd', '@%s' % TEMP_PML_FILENAME,], stdout=SINK, stderr=SINK)
+        SINK.close()
     
     logging.shutdown()
     exit()

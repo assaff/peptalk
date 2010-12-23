@@ -8,7 +8,7 @@ Created on Dec 4, 2010
 '''
 VERSION_STRING = '%s v0.0.1, an atom clustering script for molecular structures.'
 
-import os, sys, re, logging, subprocess
+import os, sys, re, logging, subprocess, re
 import numpy as np
 from optparse import OptionParser
 from matplotlib import pylab
@@ -73,8 +73,23 @@ parser.add_option('-v', '--visualize',
                   help='visualize the clustering results in PyMOL [default: %default]')
 
 (options, args) = parser.parse_args()
-assert options.pdbfilename is not None and os.path.exists(options.pdbfilename), \
-         'Please supply a valid PDB file as argument.'
+
+assert options.pdbfilename is not None, 'Please supply a valid PDB file as argument.'
+if not os.path.exists(options.pdbfilename) or not os.path.isfile(options.pdbfilename):
+    assert re.match(r'^[\w]{4}$', options.pdbfilename), 'At least provide a valid PDB code.'
+    pdbid = options.pdbfilename.upper()
+    options.pdbfilename = os.path.abspath(
+                                os.path.join(
+                                    os.path.dirname(sys.argv[0]),'../data/%s.results.pdb' %(pdbid.upper())))
+    assert os.path.exists(options.pdbfilename), 'file %s does not exist.' % options.pdbfilename
+    if options.binding_residues is not None and not os.path.exists(options.binding_residues): 
+        assert re.match(r'^[\w]{4}$', options.binding_residues), 'At least provide a valid PDB code.'
+        assert pdbid==options.binding_residues.upper(), 'please provide the same pdb code for pdb and binders'
+        options.binding_residues = os.path.abspath(
+                                    os.path.join(
+                                        os.path.dirname(sys.argv[0]),'../BindingResidues/%s.res' %(pdbid)))
+        assert os.path.exists(options.binding_residues), 'file %s does not exist.' % options.binding_residues
+
 #---------------------------------------------- Logging
 
 logging.basicConfig(filename=options.logfile, level=logging.DEBUG)
@@ -127,7 +142,6 @@ DEFAULT_PYMOL_INIT = ';'.join(['load %s' % os.path.abspath(options.pdbfilename),
                                'show spheres, receptor',
                                ''])
     
-
     
 def filter_chain_eq(chain_constraint):
     return (lambda atom: atom.chain_id==chain_constraint)

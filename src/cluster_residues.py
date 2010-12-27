@@ -50,10 +50,10 @@ parser.add_option('-c', '--neighbor-distance-cutoff',
 parser.add_option('-D', '--binding-residues',
                   default=None,
                   help='provide a list of actual binding residues, for evaluating the success of ranking')
-#parser.add_option('-c', '--hyper-pymol-output',
+#parser.add_option('-m', '--hyper-pymol-output',
 #                  default='/dev/null',
 #                  help='name of pml file, for visualization of meta-clustering output [default: %default]')
-parser.add_option('-B','--use-cbeta',
+parser.add_option('-B', '--use-cbeta',
                   action='store_true',
                   default=False,
                   help='use C-beta atoms as representatives of receptor residues')
@@ -75,7 +75,7 @@ parser.add_option('-v', '--visualize',
                   action='store_true',
                   default=False,
                   help='visualize the clustering results in PyMOL [default: %default]')
-parser.add_option('-S','--save-session',
+parser.add_option('-S', '--save-session',
                   action='store_true',
                   default=False,
                   help='save the visualization session as a pse')
@@ -88,15 +88,15 @@ if not os.path.exists(options.pdbfilename) or not os.path.isfile(options.pdbfile
     pdbid = options.pdbfilename.upper()
     options.pdbfilename = os.path.abspath(
                                 os.path.join(
-                                    os.path.dirname(sys.argv[0]),'../data/%s.results.pdb' %(pdbid.upper())))
+                                    os.path.dirname(sys.argv[0]), '../data/%s.results.pdb' % (pdbid.upper())))
     assert os.path.exists(options.pdbfilename), 'file %s does not exist.' % options.pdbfilename
     print >> sys.stderr, 'using %s as input PDB file.' % options.pdbfilename
     if options.binding_residues is not None and not os.path.exists(options.binding_residues): 
         assert re.match(r'^[\w]{4}$', options.binding_residues), 'At least provide a valid PDB code.'
-        assert pdbid==options.binding_residues.upper(), 'please provide the same pdb code for pdb and binders'
+        assert pdbid == options.binding_residues.upper(), 'please provide the same pdb code for pdb and binders'
         options.binding_residues = os.path.abspath(
                                     os.path.join(
-                                        os.path.dirname(sys.argv[0]),'../BindingResidues/%s.res' %(pdbid)))
+                                        os.path.dirname(sys.argv[0]), '../BindingResidues/%s.res' % (pdbid)))
         assert os.path.exists(options.binding_residues), 'file %s does not exist.' % options.binding_residues
         print >> sys.stderr, 'using %s as binding residues source' % options.binding_residues
 
@@ -155,13 +155,13 @@ DEFAULT_PYMOL_INIT = ';'.join(['load %s' % os.path.abspath(options.pdbfilename),
     
     
 def filter_chain_eq(chain_constraint):
-    return (lambda atom: atom.chain_id==chain_constraint)
+    return (lambda atom: atom.chain_id == chain_constraint)
 
 def filter_atom_type(type_constraint):
-    return (lambda atom: atom.type==type_constraint)
+    return (lambda atom: atom.type == type_constraint)
 
 def filter_bfactor_gt(bfactor_cutoff):
-    return (lambda atom: atom.bfactor>=bfactor_cutoff)
+    return (lambda atom: atom.bfactor >= bfactor_cutoff)
 
 def test_clusters_ranking(clusters, clustering_score_function, actual_score_function):
     my_scoring = np.array([clustering_score_function(cluster) for cluster in clusters])
@@ -190,7 +190,7 @@ def coords(atom):
 def get_peptide_atoms(filename):
     pdb_lines = open(filename, 'r')
     peptide_filters = [filter_chain_eq(CHAIN_PEPTIDE),
-                       filter_atom_type(PEPTIDE_ATOM_TYPE),]
+                       filter_atom_type(PEPTIDE_ATOM_TYPE), ]
     peptide_atoms = get_atoms(pdb_lines, peptide_filters)
     pdb_lines.close()
     return peptide_atoms
@@ -199,13 +199,13 @@ def get_positive_receptor_atoms(filename, bfactor_threshold):
     pdb_lines = open(filename, 'r')
     binder_filters = [filter_chain_eq(CHAIN_RECEPTOR),
                       filter_atom_type(RECEPTOR_ATOM_TYPE),
-                      filter_bfactor_gt(B_FACTOR_CUTOFF),]
+                      filter_bfactor_gt(B_FACTOR_CUTOFF), ]
     binders = get_atoms(pdb_lines, binder_filters)
     pdb_lines.close()
     return binders
 
 def centroid(residue_atoms, atom_weights=None):
-    assert atom_weights is None or (atom_weights.ndim==1 and len(atom_weights)==len(residue_atoms))
+    assert atom_weights is None or (atom_weights.ndim == 1 and len(atom_weights) == len(residue_atoms))
     residue_coords = np.array([coords(atom) for atom in residue_atoms])
     centroid_coords = np.average(residue_coords, axis=0, weights=atom_weights)
     assert centroid_coords.ndim == 1
@@ -218,7 +218,7 @@ def shift_coords_to_centroids(center_atoms, pdbfilename):
     all_receptor_atoms = get_atoms(pdb_lines, filters)
     pdb_lines.close()
     for center_atom in center_atoms:
-        residue_atoms = [atom for atom in all_receptor_atoms if atom.res_num==center_atom.res_num]
+        residue_atoms = [atom for atom in all_receptor_atoms if atom.res_num == center_atom.res_num]
         # add a weight function for atom types here
         residue_atom_weights = None
         (center_atom.pos.x, center_atom.pos.y, center_atom.pos.z) = centroid(residue_atoms, residue_atom_weights)
@@ -233,15 +233,15 @@ def quasi_rmsd(atoms1, atoms2):
     coords1 = np.array([coords(atom) for atom in atoms1])
     coords2 = np.array([coords(atom) for atom in atoms2])
     distances = cdist(coords1, coords2)
-    score = np.power(distances, -1).sum() / float((len(atoms1)*len(atoms2)))
+    score = np.power(distances, -1).sum() / float((len(atoms1) * len(atoms2)))
     return np.power(score, .5)
 
 def mini_rmsd(atoms1, atoms2):
     coords1 = np.array([coords(atom) for atom in atoms1])
     coords2 = np.array([coords(atom) for atom in atoms2])
     distances = cdist(coords1, coords2)
-    cluster_res_proximities = np.power(distances.min(1),-1)
-    score = 1./float(len(cluster_res_proximities)) * cluster_res_proximities.sum() 
+    cluster_res_proximities = np.power(distances.min(1), -1)
+    score = 1. / float(len(cluster_res_proximities)) * cluster_res_proximities.sum() 
 #    for a in atoms1:
 #        for b in atoms2:
 #            score += 1 / pos_distance(a.pos, b.pos)
@@ -276,7 +276,7 @@ def write_pymol_script(output_stream, clusters):
         if clusters.index(cluster) >= len(COLORS):
             logging.debug('out of colors - too many clusters!')
             break
-        cluster_num = clusters.index(cluster, )
+        cluster_num = clusters.index(cluster,)
         cluster_ca_object = 'cluster%d_ca' % cluster_num
         cluster_res_object = 'cluster%d_%s' % (cluster_num, COLORS[cluster_num])
         cluster_resnum_str = re.sub(r'[\[\] ]', '', str(sorted([atom.res_num for atom in cluster])))
@@ -301,8 +301,8 @@ def weighted_fclusterdata(coords_matrix, bfactor_vector=None):
     pdistances = pdist(coords_matrix, metric=CLUSTERING_METRIC)
     if options.weight_by_bfactor and bfactor_vector is not None:
         # Weighting the distance matrix by pairwise bfactor product
-        assert (type(bfactor_vector) is np.ndarray) and len(bfactor_vector.shape)<=2 and max(bfactor_vector.shape)==coords_matrix.shape[0]
-        weight_matrix = np.power(np.outer(bfactor_vector,bfactor_vector),-1)
+        assert (type(bfactor_vector) is np.ndarray) and len(bfactor_vector.shape) <= 2 and max(bfactor_vector.shape) == coords_matrix.shape[0]
+        weight_matrix = np.power(np.outer(bfactor_vector, bfactor_vector), -1)
         pdistances = squareform(np.multiply(squareform(pdistances), weight_matrix))
     logging.debug('DISTANCE MATRIX:\n' + str(pdistances))
 
@@ -318,7 +318,7 @@ def find_closest_clusters(clusters_list):
     min_distance = np.inf
     neighbor_clusters = None
     for i in range(len(clusters_list)):
-        for j in range(i+1, len(clusters_list)):
+        for j in range(i + 1, len(clusters_list)):
             dij = np.min(cdist(cluster_coords[i], cluster_coords[j]))
             if  dij < min_distance:
                 min_distance = dij
@@ -338,14 +338,14 @@ if __name__ == '__main__':
     for atom in pdb_atoms: logging.debug(atom.pdb_str())
     
     coords_matrix = np.array([coords(atom) for atom in pdb_atoms])
-    assert coords_matrix.shape[0]==len(pdb_atoms)
+    assert coords_matrix.shape[0] == len(pdb_atoms)
 
     weights = None
     if options.weight_by_bfactor:
         weights = np.array([atom.bfactor for atom in pdb_atoms])
     cluster_assignment = weighted_fclusterdata(coords_matrix, weights)
 
-    clusters = [[atom for atom in pdb_atoms if cluster_assignment[pdb_atoms.index(atom)]==cluster_num] for cluster_num in set(cluster_assignment)]
+    clusters = [[atom for atom in pdb_atoms if cluster_assignment[pdb_atoms.index(atom)] == cluster_num] for cluster_num in set(cluster_assignment)]
     
     # testing
 #    clusters = [[atom] for atom in pdb_atoms]
@@ -358,7 +358,7 @@ if __name__ == '__main__':
                 break
             clusters.remove(neighbors[0])
             clusters.remove(neighbors[1])
-            clusters.insert(0, neighbors[0]+neighbors[1])
+            clusters.insert(0, neighbors[0] + neighbors[1])
             (neighbors, min_distance) = find_closest_clusters(clusters)
 
     clusters = filter(lambda cluster: len(cluster) > 1, clusters)
@@ -379,22 +379,22 @@ if __name__ == '__main__':
         print 'actual' , actual_binders
         distances = cdist(actual_binders, cluster_binders)
         mdta = distances.min(1) # minimal distances of actual binders to 
-        mdta[mdta>3] = np.inf
+        mdta[mdta > 3] = np.inf
 #        print mdta
-        assert actual_binders.shape[0]==mdta.shape[0]
-        recovery = mdta[mdta<np.inf].shape[0] / float(mdta.shape[0])
-        print '%.2f%'%(100*recovery)
+        assert actual_binders.shape[0] == mdta.shape[0]
+        recovery = mdta[mdta < np.inf].shape[0] / float(mdta.shape[0])
+        print '%.2f%' % (100 * recovery)
         
 #        score = 1./float(len(cluster_res_proximities)) * cluster_res_proximities.sum()
 #    exit()
     clusters.sort(key=cluster_scoring_function, reverse=True)
     
     
-    if clusters is None or len(clusters)==0:
+    if clusters is None or len(clusters) == 0:
         print 'ERROR_no_clusters_found'
         exit(1)
     clusters_quality = [cluster_contacts_with_peptide(cluster) for cluster in clusters]
-    if np.argmax(clusters_quality)>0:
+    if np.argmax(clusters_quality) > 0:
         print 'FAIL'
 #    print clusters
 #    print map(spatial_clustering_degree, clusters)
@@ -422,19 +422,29 @@ if __name__ == '__main__':
 #        print >> TEMP_PML, 'save ../sessions/%s_Bvwk_b%.1f_d%.1f_c%.1f.pse; quit;' % (PDB_ID, options.b_factor_cutoff, options.diameter_cutoff, options.neighbor_distance_cutoff)
         TEMP_PML.close()
         SINK = open('/dev/null')
-        subprocess.Popen(['pymol','-qd', '@%s' % TEMP_PML_FILENAME,], stdout=SINK, stderr=SINK)
+        subprocess.Popen(['pymol', '-qd', '@%s' % TEMP_PML_FILENAME, ], stdout=SINK, stderr=SINK)
         SINK.close()
 #        os.remove(TEMP_PML_FILENAME)
 
     if options.save_session:
+        clusters_filename = '../sessions/%s_b%.1f_d%.1f_c%.1f.clusters.txt' % (PDB_ID, options.b_factor_cutoff, options.diameter_cutoff, options.neighbor_distance_cutoff)
+        CLUSTERS_OUT = open(clusters_filename, 'w')
+        for cluster in clusters:
+            cluster_str = ''
+            cluster.sort(key=lambda x: x.res_num)
+            for atom in cluster:
+                cluster_str += ' %d' % (atom.res_num)
+            print >> CLUSTERS_OUT, '%d\t%s' % (clusters.index(cluster), cluster_str)
+        CLUSTERS_OUT.close()
+        
         TEMP_PML_FILENAME = '/tmp/temp%d_session.pml' % os.getpid()
         TEMP_PML = open(TEMP_PML_FILENAME, 'w')
         print >> TEMP_PML, DEFAULT_PYMOL_INIT
         write_pymol_script(TEMP_PML, clusters)
-        print >> TEMP_PML, 'save ../sessions/%s_Bvwk_b%.1f_d%.1f_c%.1f.pse; quit;' % (PDB_ID, options.b_factor_cutoff, options.diameter_cutoff, options.neighbor_distance_cutoff)
+        print >> TEMP_PML, 'save ../sessions/%s_b%.1f_d%.1f_c%.1f.pse; quit;' % (PDB_ID, options.b_factor_cutoff, options.diameter_cutoff, options.neighbor_distance_cutoff)
         TEMP_PML.close()
         SINK = open('/dev/null')
-        subprocess.Popen(['pymol','-qcd', '@%s' % TEMP_PML_FILENAME,], stdout=SINK, stderr=SINK)
+        subprocess.Popen(['pymol', '-qcd', '@%s' % TEMP_PML_FILENAME, ], stdout=SINK, stderr=SINK)
         SINK.close()
     
     logging.shutdown()

@@ -83,7 +83,7 @@ parser.add_option('-S', '--save-session',
 (options, args) = parser.parse_args()
 
 assert options.pdbfilename is not None, 'Please supply a valid PDB file as argument.'
-if not os.path.exists(options.pdbfilename) or not os.path.isfile(options.pdbfilename):
+if not (os.path.exists(options.pdbfilename) and os.path.isfile(options.pdbfilename)):
     assert re.match(r'^[\w]{4}$', options.pdbfilename), 'At least provide a valid PDB code.'
     pdbid = options.pdbfilename.upper()
     options.pdbfilename = os.path.abspath(

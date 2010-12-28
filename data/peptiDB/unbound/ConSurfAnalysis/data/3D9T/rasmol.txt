@@ -1,0 +1,82 @@
+select all
+color [200,200,200]
+
+
+select   MET266, ARG272, ALA291, ALA293, GLY294, ASP302, CYS306, CYS309, ASP320, HIS326
+select selected or PRO331, CYS333, LYS340, GLY341
+select selected and :A
+color [160,37,96]
+spacefill
+
+define CON9 selected
+
+
+select    THR275, TRP279, PRO280, LEU290, VAL304, PHE307, LEU313, TRP316, PRO322, PHE335
+select selected or SER363
+select selected and :A
+color [240,125,171]
+spacefill
+
+define CON8 selected
+
+
+select    GLY263, SER264, ALA271, PHE276, TYR296, TYR297, GLY299, GLU325, LEU336, VAL345
+select selected or GLU357, LEU359, THR362
+select selected and :A
+color [250,201,222]
+spacefill
+
+define CON7 selected
+
+
+select    VAL285, PRO287, PHE295, VAL298, ASP310, GLY311, CYS315, ASP321, GLY350, LEU355
+select selected or LEU360, SER361
+select selected and :A
+color [252,237,244]
+spacefill
+
+define CON6 selected
+
+
+select    HIS269, ALA327, PHE330, ARG332, ILE337, GLU343, PHE344
+select selected and :A
+color [255,255,255]
+spacefill
+
+define CON5 selected
+
+
+select    HIS265, ASP303, LYS305, CYS308, GLY312, GLU317, LYS328, ASP346, ILE348, GLN349
+select selected or ARG351, HIS354
+select selected and :A
+color [234,255,255]
+spacefill
+
+define CON4 selected
+
+
+select    THR268, TYR278, GLN286, ARG314, GLY319, TRP329, GLU334, ARG338, MET339, GLN342
+select selected or GLN358
+select selected and :A
+color [215,255,255]
+spacefill
+
+define CON3 selected
+
+
+select    MET273, SER282, GLN289, SER292, VAL324, GLU347, TYR352, LEU356
+select selected and :A
+color [140,255,255]
+spacefill
+
+define CON2 selected
+
+
+select    GLN267, ALA270, ARG274, MET277, SER281, VAL283, PRO284, GLU288, ARG300, ASN301
+select selected or SER318, TRP323, PRO353
+select selected and :A
+color [16,200,209]
+spacefill
+
+define CON1 selected
+

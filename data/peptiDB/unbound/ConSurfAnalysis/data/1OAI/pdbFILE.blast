@@ -1,0 +1,195 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_A  69
+         (69 letters)
+
+Database: sprot 
+           466,739 sequences; 165,389,953 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q9UBU9|NXF1_HUMAN Nuclear RNA export factor 1 OS=Homo sapiens...   144   2e-34
+sp|Q5R752|NXF1_PONAB Nuclear RNA export factor 1 OS=Pongo abelii...   144   2e-34
+sp|Q1RMS5|NXF1_BOVIN Nuclear RNA export factor 1 OS=Bos taurus G...   143   3e-34
+sp|O88984|NXF1_RAT Nuclear RNA export factor 1 OS=Rattus norvegi...   139   4e-33
+sp|Q99JX7|NXF1_MOUSE Nuclear RNA export factor 1 OS=Mus musculus...   137   2e-32
+sp|P58797|NXF1_COTJA Nuclear RNA export factor 1 OS=Coturnix cot...    95   1e-19
+sp|Q9GZY0|NXF2_HUMAN Nuclear RNA export factor 2 OS=Homo sapiens...    84   2e-16
+sp|Q9U1H9|NXF1_DROME Nuclear RNA export factor 1 OS=Drosophila m...    56   7e-08
+
+>sp|Q9UBU9|NXF1_HUMAN Nuclear RNA export factor 1 OS=Homo sapiens
+           GN=NXF1 PE=1 SV=1
+          Length = 619
+
+ Score =  144 bits (362), Expect = 2e-34,   Method: Composition-based stats.
+ Identities = 69/69 (100%), Positives = 69/69 (100%)
+
+Query: 1   PAPTPSSSPVPTLSPEQQEMLQAFSTQSGMNLEWSQKCLQDNNWDYTRSAQAFTHLKAKG 60
+           PAPTPSSSPVPTLSPEQQEMLQAFSTQSGMNLEWSQKCLQDNNWDYTRSAQAFTHLKAKG
+Sbjct: 551 PAPTPSSSPVPTLSPEQQEMLQAFSTQSGMNLEWSQKCLQDNNWDYTRSAQAFTHLKAKG 610
+
+Query: 61  EIPEVAFMK 69
+           EIPEVAFMK
+Sbjct: 611 EIPEVAFMK 619
+
+
+>sp|Q5R752|NXF1_PONAB Nuclear RNA export factor 1 OS=Pongo abelii
+           GN=NXF1 PE=3 SV=1
+          Length = 626
+
+ Score =  144 bits (362), Expect = 2e-34,   Method: Composition-based stats.
+ Identities = 69/69 (100%), Positives = 69/69 (100%)
+
+Query: 1   PAPTPSSSPVPTLSPEQQEMLQAFSTQSGMNLEWSQKCLQDNNWDYTRSAQAFTHLKAKG 60
+           PAPTPSSSPVPTLSPEQQEMLQAFSTQSGMNLEWSQKCLQDNNWDYTRSAQAFTHLKAKG
+Sbjct: 558 PAPTPSSSPVPTLSPEQQEMLQAFSTQSGMNLEWSQKCLQDNNWDYTRSAQAFTHLKAKG 617
+
+Query: 61  EIPEVAFMK 69
+           EIPEVAFMK
+Sbjct: 618 EIPEVAFMK 626
+
+
+>sp|Q1RMS5|NXF1_BOVIN Nuclear RNA export factor 1 OS=Bos taurus
+           GN=NXF1 PE=2 SV=1
+          Length = 620
+
+ Score =  143 bits (360), Expect = 3e-34,   Method: Composition-based stats.
+ Identities = 69/69 (100%), Positives = 69/69 (100%)
+
+Query: 1   PAPTPSSSPVPTLSPEQQEMLQAFSTQSGMNLEWSQKCLQDNNWDYTRSAQAFTHLKAKG 60
+           PAPTPSSSPVPTLSPEQQEMLQAFSTQSGMNLEWSQKCLQDNNWDYTRSAQAFTHLKAKG
+Sbjct: 552 PAPTPSSSPVPTLSPEQQEMLQAFSTQSGMNLEWSQKCLQDNNWDYTRSAQAFTHLKAKG 611
+
+Query: 61  EIPEVAFMK 69
+           EIPEVAFMK
+Sbjct: 612 EIPEVAFMK 620
+
+
+>sp|O88984|NXF1_RAT Nuclear RNA export factor 1 OS=Rattus norvegicus
+           GN=Nxf1 PE=2 SV=1
+          Length = 618
+
+ Score =  139 bits (351), Expect = 4e-33,   Method: Composition-based stats.
+ Identities = 67/69 (97%), Positives = 68/69 (98%)
+
+Query: 1   PAPTPSSSPVPTLSPEQQEMLQAFSTQSGMNLEWSQKCLQDNNWDYTRSAQAFTHLKAKG 60
+           PAPTPSSSPVPTLS EQQ+MLQAFSTQSGMNLEWSQKCLQDNNWDYTRSAQAFTHLKAKG
+Sbjct: 550 PAPTPSSSPVPTLSQEQQDMLQAFSTQSGMNLEWSQKCLQDNNWDYTRSAQAFTHLKAKG 609
+
+Query: 61  EIPEVAFMK 69
+           EIPEVAFMK
+Sbjct: 610 EIPEVAFMK 618
+
+
+>sp|Q99JX7|NXF1_MOUSE Nuclear RNA export factor 1 OS=Mus musculus
+           GN=Nxf1 PE=1 SV=2
+          Length = 618
+
+ Score =  137 bits (344), Expect = 2e-32,   Method: Composition-based stats.
+ Identities = 67/68 (98%), Positives = 67/68 (98%)
+
+Query: 2   APTPSSSPVPTLSPEQQEMLQAFSTQSGMNLEWSQKCLQDNNWDYTRSAQAFTHLKAKGE 61
+           APTPSSSPVPTLSPEQQEMLQAFSTQSGMNLEWSQKCLQDNNWDYTRSAQAFT LKAKGE
+Sbjct: 551 APTPSSSPVPTLSPEQQEMLQAFSTQSGMNLEWSQKCLQDNNWDYTRSAQAFTLLKAKGE 610
+
+Query: 62  IPEVAFMK 69
+           IPEVAFMK
+Sbjct: 611 IPEVAFMK 618
+
+
+>sp|P58797|NXF1_COTJA Nuclear RNA export factor 1 OS=Coturnix
+           coturnix japonica GN=NXF1 PE=1 SV=1
+          Length = 616
+
+ Score = 94.7 bits (234), Expect = 1e-19,   Method: Composition-based stats.
+ Identities = 42/57 (73%), Positives = 49/57 (85%)
+
+Query: 13  LSPEQQEMLQAFSTQSGMNLEWSQKCLQDNNWDYTRSAQAFTHLKAKGEIPEVAFMK 69
+           L+ EQQEML AF+ QSGMNLEWSQKCLQDN+WDY R+ Q FT LK +G+IPEVAF+K
+Sbjct: 560 LAAEQQEMLAAFAMQSGMNLEWSQKCLQDNDWDYGRAGQVFTQLKLEGKIPEVAFLK 616
+
+
+>sp|Q9GZY0|NXF2_HUMAN Nuclear RNA export factor 2 OS=Homo sapiens
+           GN=NXF2 PE=1 SV=1
+          Length = 626
+
+ Score = 84.3 bits (207), Expect = 2e-16,   Method: Composition-based stats.
+ Identities = 38/52 (73%), Positives = 44/52 (84%)
+
+Query: 16  EQQEMLQAFSTQSGMNLEWSQKCLQDNNWDYTRSAQAFTHLKAKGEIPEVAF 67
+           EQQEM+QAFS QSGM LEWSQKCLQDN W+YTR+ QAFT L+ +G+IP  AF
+Sbjct: 571 EQQEMVQAFSAQSGMKLEWSQKCLQDNEWNYTRAGQAFTMLQTEGKIPAEAF 622
+
+
+>sp|Q9U1H9|NXF1_DROME Nuclear RNA export factor 1 OS=Drosophila
+           melanogaster GN=sbr PE=1 SV=2
+          Length = 672
+
+ Score = 55.8 bits (133), Expect = 7e-08,   Method: Composition-based stats.
+ Identities = 26/66 (39%), Positives = 40/66 (60%)
+
+Query: 4   TPSSSPVPTLSPEQQEMLQAFSTQSGMNLEWSQKCLQDNNWDYTRSAQAFTHLKAKGEIP 63
+           T + +P       + +M++A S QS MN+ WS+KCL++ NWD+  +A  F  L  + +IP
+Sbjct: 607 TTAVAPGAQDESTKMQMIEAMSAQSQMNVIWSRKCLEETNWDFNHAAFVFEKLFKENKIP 666
+
+Query: 64  EVAFMK 69
+             AFMK
+Sbjct: 667 PEAFMK 672
+
+
+  Database: sprot
+    Posted date:  May 6, 2009 11:11 AM
+  Number of letters in database: 165,389,953
+  Number of sequences in database:  466,739
+  
+Lambda     K      H
+   0.310    0.122    0.370 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 23,323,057
+Number of Sequences: 466739
+Number of extensions: 752953
+Number of successful extensions: 3366
+Number of sequences better than 1.0e-03: 9
+Number of HSP's better than  0.0 without gapping: 9
+Number of HSP's successfully gapped in prelim test: 0
+Number of HSP's that attempted gapping in prelim test: 3357
+Number of HSP's gapped (non-prelim): 9
+length of query: 69
+length of database: 165,389,953
+effective HSP length: 41
+effective length of query: 28
+effective length of database: 146,253,654
+effective search space: 4095102312
+effective search space used: 4095102312
+T: 11
+A: 40
+X1: 16 ( 7.2 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 42 (21.8 bits)
+S2: 97 (42.0 bits)

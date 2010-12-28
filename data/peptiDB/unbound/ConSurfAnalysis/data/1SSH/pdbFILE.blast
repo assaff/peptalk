@@ -1,0 +1,4452 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_A  58
+         (58 letters)
+
+Database: sprot 
+           466,739 sequences; 165,389,953 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|A7A261|LSB3_YEAS7 LAS seventeen-binding protein 3 OS=Saccharo...   119   6e-27
+sp|P43603|LSB3_YEAST LAS seventeen-binding protein 3 OS=Saccharo...   119   6e-27
+sp|P32793|YSC84_YEAST Protein YSC84 OS=Saccharomyces cerevisiae ...   100   2e-21
+sp|Q9URW6|YIE2_SCHPO SH3 domain-containing protein PJ696.02 OS=S...    82   1e-15
+sp|Q6DFH5|SH3Y1_XENLA SH3 domain-containing YSC84-like protein 1...    76   4e-14
+sp|Q3SZ01|SH3Y1_BOVIN SH3 domain-containing YSC84-like protein 1...    74   2e-13
+sp|Q5RAQ2|SH3Y1_PONAB SH3 domain-containing YSC84-like protein 1...    73   6e-13
+sp|Q96HL8|SH3Y1_HUMAN SH3 domain-containing YSC84-like protein 1...    72   6e-13
+sp|O74352|HOB1_SCHPO Protein hob1 OS=Schizosaccharomyces pombe G...    71   2e-12
+sp|O08641|SH3Y1_MOUSE SH3 domain-containing YSC84-like protein 1...    70   3e-12
+sp|B0BNA1|SH3Y1_RAT SH3 domain-containing YSC84-like protein 1 O...    70   4e-12
+sp|P39743|RV167_YEAST Reduced viability upon starvation protein ...    66   5e-11
+sp|O43125|CSH3_SCHPO Protein csh3 OS=Schizosaccharomyces pombe G...    66   6e-11
+sp|P10569|MYSC_ACACA Myosin IC heavy chain OS=Acanthamoeba caste...    65   1e-10
+sp|Q08012|DRK_DROME Protein enhancer of sevenless 2B OS=Drosophi...    64   3e-10
+sp|Q6YKA8|DRK_DROSI Protein E(sev)2B OS=Drosophila simulans GN=d...    64   3e-10
+sp|P29355|SEM5_CAEEL Sex muscle abnormal protein 5 OS=Caenorhabd...    63   5e-10
+sp|Q99469|STAC_HUMAN SH3 and cysteine-rich domain-containing pro...    63   5e-10
+sp|A0JNJ1|STAC_BOVIN SH3 and cysteine-rich domain-containing pro...    62   7e-10
+sp|Q9Z0R4|ITSN1_MOUSE Intersectin-1 OS=Mus musculus GN=Itsn1 PE=...    62   7e-10
+sp|P97306|STAC_MOUSE SH3 and cysteine-rich domain-containing pro...    62   9e-10
+sp|Q15811|ITSN1_HUMAN Intersectin-1 OS=Homo sapiens GN=ITSN1 PE=...    62   1e-09
+sp|Q71F54|SH3R1_RAT Putative E3 ubiquitin-protein ligase SH3RF1 ...    60   3e-09
+sp|Q6NRD3|SH3R1_XENLA Putative E3 ubiquitin-protein ligase SH3RF...    60   3e-09
+sp|Q28E95|SH3R1_XENTR Putative E3 ubiquitin-protein ligase SH3RF...    60   3e-09
+sp|Q91X43|SH319_MOUSE SH3 domain-containing protein 19 OS=Mus mu...    60   4e-09
+sp|Q7Z6J0|SH3R1_HUMAN Putative E3 ubiquitin-protein ligase SH3RF...    60   4e-09
+sp|Q5RBR0|SH3R1_PONAB Putative E3 ubiquitin-protein ligase SH3RF...    60   5e-09
+sp|Q7S6J4|HSE1_NEUCR Class E vacuolar protein-sorting machinery ...    60   5e-09
+sp|Q8TEJ3|SH3R3_HUMAN SH3 domain-containing RING finger protein ...    59   5e-09
+sp|Q2GT05|HSE1_CHAGB Class E vacuolar protein-sorting machinery ...    59   6e-09
+sp|P34109|MYOD_DICDI Myosin ID heavy chain OS=Dictyostelium disc...    59   7e-09
+sp|Q5BBL4|HSE1_EMENI Class E vacuolar protein-sorting machinery ...    59   9e-09
+sp|Q1E878|HSE1_COCIM Class E vacuolar protein-sorting machinery ...    59   9e-09
+sp|Q8C120|SH3R3_MOUSE SH3 domain-containing RING finger protein ...    59   1e-08
+sp|Q69ZI1|SH3R1_MOUSE Putative E3 ubiquitin-protein ligase SH3RF...    58   1e-08
+sp|Q0CJU8|HSE1_ASPTN Class E vacuolar protein-sorting machinery ...    58   2e-08
+sp|Q557J6|DBNL_DICDI Drebrin-like protein OS=Dictyostelium disco...    58   2e-08
+sp|O42287|ITSN1_XENLA Intersectin-1 OS=Xenopus laevis GN=itsn1 P...    58   2e-08
+sp|A2QW93|HSE1_ASPNC Class E vacuolar protein-sorting machinery ...    58   2e-08
+sp|A4RF61|HSE1_MAGGR Class E vacuolar protein-sorting machinery ...    57   2e-08
+sp|O74749|HSE1_SCHPO Class E vacuolar protein-sorting machinery ...    57   2e-08
+sp|Q8BZT2|SH3R2_MOUSE Putative E3 ubiquitin-protein ligase SH3RF...    57   2e-08
+sp|Q9NZM3|ITSN2_HUMAN Intersectin-2 OS=Homo sapiens GN=ITSN2 PE=...    57   3e-08
+sp|A1CEK6|HSE1_ASPCL Class E vacuolar protein-sorting machinery ...    57   3e-08
+sp|A5D7F8|SH3R1_BOVIN Putative E3 ubiquitin-protein ligase SH3RF...    57   3e-08
+sp|Q9WVE9|ITSN1_RAT Intersectin-1 OS=Rattus norvegicus GN=Itsn1 ...    57   3e-08
+sp|Q4WHP5|HSE1_ASPFU Class E vacuolar protein-sorting machinery ...    57   3e-08
+sp|A1DFN5|HSE1_NEOFI Class E vacuolar protein-sorting machinery ...    57   3e-08
+sp|Q8I1C0|SH3G3_DROPS Endophilin-A OS=Drosophila pseudoobscura p...    57   4e-08
+sp|Q8AXV0|SH3G1_CHICK Endophilin-A2 OS=Gallus gallus GN=SH3GL1 P...    57   4e-08
+sp|Q8I190|SH3G3_DROVI Endophilin-A OS=Drosophila virilis GN=endo...    57   4e-08
+sp|O00160|MYO1F_HUMAN Myosin-If OS=Homo sapiens GN=MYO1F PE=1 SV=2     56   4e-08
+sp|Q8AXU9|SH3G3_CHICK Endophilin-A3 OS=Gallus gallus GN=SH3GL3 P...    56   4e-08
+sp|A5D8S5|SH3R1_DANRE Putative E3 ubiquitin-protein ligase SH3RF...    56   5e-08
+sp|P70248|MYO1F_MOUSE Myosin-If OS=Mus musculus GN=Myo1f PE=1 SV=1     56   5e-08
+sp|Q5HYK7|SH319_HUMAN SH3 domain-containing protein 19 OS=Homo s...    56   5e-08
+sp|Q60992|VAV2_MOUSE Guanine nucleotide exchange factor VAV2 OS=...    56   5e-08
+sp|Q5KFQ8|HSE1_CRYNE Class E vacuolar protein-sorting machinery ...    56   6e-08
+sp|P52735|VAV2_HUMAN Guanine nucleotide exchange factor VAV2 OS=...    56   6e-08
+sp|Q9UKW4|VAV3_HUMAN Guanine nucleotide exchange factor VAV3 OS=...    56   6e-08
+sp|Q8I1I3|SH3G3_DROER Endophilin-A OS=Drosophila erecta GN=endoA...    56   7e-08
+sp|Q8T390|SH3G3_DROME Endophilin-A OS=Drosophila melanogaster GN...    56   7e-08
+sp|Q8I1A6|SH3G3_DROWI Endophilin-A OS=Drosophila willistoni GN=e...    56   7e-08
+sp|Q6C2N2|HSE1_YARLI Class E vacuolar protein-sorting machinery ...    55   8e-08
+sp|P38753|HSE1_YEAST Class E vacuolar protein-sorting machinery ...    55   8e-08
+sp|Q498M5|SH3R2_RAT Putative E3 ubiquitin-protein ligase SH3RF2 ...    55   9e-08
+sp|P15498|VAV_HUMAN Proto-oncogene vav OS=Homo sapiens GN=VAV1 P...    55   1e-07
+sp|Q62420|SH3G2_MOUSE Endophilin-A1 OS=Mus musculus GN=Sh3gl2 PE...    55   1e-07
+sp|O35179|SH3G2_RAT Endophilin-A1 OS=Rattus norvegicus GN=Sh3gl2...    55   1e-07
+sp|Q9Z0R6|ITSN2_MOUSE Intersectin-2 OS=Mus musculus GN=Itsn2 PE=...    55   1e-07
+sp|Q63356|MYO1E_RAT Myosin-Ie OS=Rattus norvegicus GN=Myo1e PE=2...    55   1e-07
+sp|Q6FN49|HSE1_CANGA Class E vacuolar protein-sorting machinery ...    55   1e-07
+sp|Q6ZMT1|STAC2_HUMAN SH3 and cysteine-rich domain-containing pr...    55   1e-07
+sp|Q8R1B0|STAC2_MOUSE SH3 and cysteine-rich domain-containing pr...    55   1e-07
+sp|Q99962|SH3G2_HUMAN Endophilin-A1 OS=Homo sapiens GN=SH3GL2 PE...    55   2e-07
+sp|Q9R0C8|VAV3_MOUSE Guanine nucleotide exchange factor VAV3 OS=...    54   2e-07
+sp|Q12965|MYO1E_HUMAN Myosin-Ie OS=Homo sapiens GN=MYO1E PE=1 SV=2     54   2e-07
+sp|Q4P5J4|HSE1_USTMA Class E vacuolar protein-sorting machinery ...    54   2e-07
+sp|O01498|STAM1_CAEEL Signal transducing adapter molecule 1 OS=C...    54   2e-07
+sp|Q0U6X7|HSE1_PHANO Class E vacuolar protein-sorting machinery ...    54   2e-07
+sp|O89100|GRAP2_MOUSE GRB2-related adaptor protein 2 OS=Mus musc...    54   2e-07
+sp|A6QLK6|GRAP_BOVIN GRB2-related adapter protein OS=Bos taurus ...    54   2e-07
+sp|Q99963|SH3G3_HUMAN Endophilin-A3 OS=Homo sapiens GN=SH3GL3 PE...    54   2e-07
+sp|P54100|VAV_RAT Proto-oncogene vav OS=Rattus norvegicus GN=Vav...    54   3e-07
+sp|P27870|VAV_MOUSE Proto-oncogene vav OS=Mus musculus GN=Vav1 P...    54   3e-07
+sp|Q6BNP6|HSE1_DEBHA Class E vacuolar protein-sorting machinery ...    54   3e-07
+sp|Q8TEC5|SH3R2_HUMAN Putative E3 ubiquitin-protein ligase SH3RF...    54   3e-07
+sp|Q8AXV1|SH3G2_CHICK Endophilin-A1 OS=Gallus gallus GN=SH3GL2 P...    54   3e-07
+sp|Q2KJB5|NOSTN_BOVIN Nostrin OS=Bos taurus GN=NOSTRIN PE=1 SV=1       54   3e-07
+sp|Q5I0D6|NOSTN_RAT Nostrin OS=Rattus norvegicus GN=Nostrin PE=2...    54   3e-07
+sp|Q9CX99|GRAP_MOUSE GRB2-related adapter protein OS=Mus musculu...    54   3e-07
+sp|Q07883|GRB2_CHICK Growth factor receptor-bound protein 2 OS=G...    53   4e-07
+sp|Q8TC17|YQ012_HUMAN Putative GRB2-related adapter protein LOC4...    53   4e-07
+sp|Q7Z8J6|MYO1_USTMA Myosin-1 OS=Ustilago maydis GN=myo1 PE=3 SV=1     53   4e-07
+sp|Q13588|GRAP_HUMAN GRB2-related adapter protein OS=Homo sapien...    53   4e-07
+sp|Q08DN7|VAV_BOVIN Proto-oncogene vav OS=Bos taurus GN=VAV1 PE=...    53   4e-07
+sp|A8PWF6|MYO1_MALGO Myosin-1 OS=Malassezia globosa (strain ATCC...    53   4e-07
+sp|Q99961|SH3G1_HUMAN Endophilin-A2 OS=Homo sapiens GN=SH3GL1 PE...    53   6e-07
+sp|O35180|SH3G3_RAT Endophilin-A3 OS=Rattus norvegicus GN=Sh3gl3...    52   7e-07
+sp|Q62419|SH3G1_MOUSE Endophilin-A2 OS=Mus musculus GN=Sh3gl1 PE...    52   7e-07
+sp|O35964|SH3G1_RAT Endophilin-A2 OS=Rattus norvegicus GN=Sh3gl1...    52   7e-07
+sp|Q2KJA1|SH3G1_BOVIN Endophilin-A2 OS=Bos taurus GN=SH3GL1 PE=2...    52   7e-07
+sp|Q3UTJ2|SRBS2_MOUSE Sorbin and SH3 domain-containing protein 2...    52   7e-07
+sp|O35413|SRBS2_RAT Sorbin and SH3 domain-containing protein 2 O...    52   7e-07
+sp|Q75DS3|HSE1_ASHGO Class E vacuolar protein-sorting machinery ...    52   7e-07
+sp|Q60631|GRB2_MOUSE Growth factor receptor-bound protein 2 OS=M...    52   8e-07
+sp|Q62421|SH3G3_MOUSE Endophilin-A3 OS=Mus musculus GN=Sh3gl3 PE...    52   8e-07
+sp|P62993|GRB2_HUMAN Growth factor receptor-bound protein 2 OS=H...    52   8e-07
+sp|Q5R4J7|GRB2_PONAB Growth factor receptor-bound protein 2 OS=P...    52   8e-07
+sp|P62994|GRB2_RAT Growth factor receptor-bound protein 2 OS=Rat...    52   8e-07
+sp|Q9U1M8|MYOI_DICDI Myosin-I heavy chain OS=Dictyostelium disco...    52   8e-07
+sp|O94875|SRBS2_HUMAN Sorbin and SH3 domain-containing protein 2...    52   8e-07
+sp|O75791|GRAP2_HUMAN GRB2-related adapter protein 2 OS=Homo sap...    52   9e-07
+sp|P41239|CSK_CHICK Tyrosine-protein kinase CSK OS=Gallus gallus...    52   1e-06
+sp|Q8IVI9|NOSTN_HUMAN Nostrin OS=Homo sapiens GN=NOSTRIN PE=1 SV=1     52   1e-06
+sp|P14317|HCLS1_HUMAN Hematopoietic lineage cell-specific protei...    52   1e-06
+sp|Q68F99|STAC3_XENTR SH3 and cysteine-rich domain-containing pr...    52   1e-06
+sp|P62484|ABI2_MOUSE Abl interactor 2 OS=Mus musculus GN=Abi2 PE...    52   1e-06
+sp|P41241|CSK_MOUSE Tyrosine-protein kinase CSK OS=Mus musculus ...    51   1e-06
+sp|P32577|CSK_RAT Tyrosine-protein kinase CSK OS=Rattus norvegic...    51   1e-06
+sp|Q0VBZ0|CSK_BOVIN Tyrosine-protein kinase CSK OS=Bos taurus GN...    51   2e-06
+sp|P41240|CSK_HUMAN Tyrosine-protein kinase CSK OS=Homo sapiens ...    51   2e-06
+sp|P98171|RHG04_HUMAN Rho GTPase-activating protein 4 OS=Homo sa...    51   2e-06
+sp|Q9JLQ0|CD2AP_MOUSE CD2-associated protein OS=Mus musculus GN=...    51   2e-06
+sp|P46109|CRKL_HUMAN Crk-like protein OS=Homo sapiens GN=CRKL PE...    51   2e-06
+sp|Q8N157|AHI1_HUMAN Jouberin OS=Homo sapiens GN=AHI1 PE=1 SV=1        51   2e-06
+sp|Q9NYB9|ABI2_HUMAN Abl interactor 2 OS=Homo sapiens GN=ABI2 PE...    51   2e-06
+sp|P05433|GAGC_AVISC P47(GAG-CRK) protein OS=Avian sarcoma virus...    51   2e-06
+sp|Q66II3|GRB2_XENTR Growth factor receptor-bound protein 2 OS=X...    51   2e-06
+sp|Q6CVA8|HSE1_KLULA Class E vacuolar protein-sorting machinery ...    51   2e-06
+sp|Q9Y5K6|CD2AP_HUMAN CD2-associated protein OS=Homo sapiens GN=...    50   2e-06
+sp|Q6GPJ9|GRB2B_XENLA Growth factor receptor-bound protein 2-B O...    50   2e-06
+sp|P47941|CRKL_MOUSE Crk-like protein OS=Mus musculus GN=Crkl PE...    50   3e-06
+sp|Q5U2U2|CRKL_RAT Crk-like protein OS=Rattus norvegicus GN=Crkl...    50   3e-06
+sp|Q5A895|HSE1_CANAL Class E vacuolar protein-sorting machinery ...    50   3e-06
+sp|Q6WKZ7|NOSTN_MOUSE Nostrin OS=Mus musculus GN=Nostrin PE=1 SV=2     50   3e-06
+sp|Q06449|PIN3_YEAST [PSI+] inducibility protein 3 OS=Saccharomy...    50   3e-06
+sp|P19706|MYSB_ACACA Myosin heavy chain IB OS=Acanthamoeba caste...    50   3e-06
+sp|Q8K3E5|AHI1_MOUSE Jouberin OS=Mus musculus GN=Ahi1 PE=2 SV=2        50   4e-06
+sp|Q54CL3|PEX13_DICDI Probable peroxisomal membrane protein PEX1...    50   4e-06
+sp|P53281|LSB1_YEAST LAS seventeen-binding protein 1 OS=Saccharo...    50   4e-06
+sp|Q3U1V8|M3K9_MOUSE Mitogen-activated protein kinase kinase kin...    50   4e-06
+sp|Q62417|SRBS1_MOUSE Sorbin and SH3 domain-containing protein 1...    50   5e-06
+sp|A4FU49|CA113_HUMAN SH3 domain-containing protein C1orf113 OS=...    50   5e-06
+sp|Q9R1Z8|VINEX_MOUSE Vinexin OS=Mus musculus GN=Sorbs3 PE=1 SV=1      50   5e-06
+sp|P80192|M3K9_HUMAN Mitogen-activated protein kinase kinase kin...    50   5e-06
+sp|P70297|STAM1_MOUSE Signal transducing adapter molecule 1 OS=M...    50   5e-06
+sp|O60504|VINEX_HUMAN Vinexin OS=Homo sapiens GN=SORBS3 PE=1 SV=1      49   5e-06
+sp|Q92783|STAM1_HUMAN Signal transducing adapter molecule 1 OS=H...    49   5e-06
+sp|Q6DTM3|AHI1_RAT Jouberin OS=Rattus norvegicus GN=Ahi1 PE=2 SV=1     49   6e-06
+sp|Q4R729|CA113_MACFA SH3 domain-containing protein C1orf113 hom...    49   6e-06
+sp|Q9BX66|SRBS1_HUMAN Sorbin and SH3 domain-containing protein 1...    49   6e-06
+sp|O14302|YE86_SCHPO Uncharacterized protein C9G1.06c OS=Schizos...    49   7e-06
+sp|Q96KQ4|ASPP1_HUMAN Apoptosis-stimulating of p53 protein 1 OS=...    49   7e-06
+sp|O93436|STAM2_CHICK Signal transducing adapter molecule 2 OS=G...    49   7e-06
+sp|Q7TSG5|CA113_MOUSE SH3 domain-containing protein C1orf113 hom...    49   7e-06
+sp|P97369|NCF4_MOUSE Neutrophil cytosol factor 4 OS=Mus musculus...    49   8e-06
+sp|Q7T2D0|SGSM3_DANRE Small G protein signaling modulator 3 OS=D...    49   8e-06
+sp|P87379|GRB2A_XENLA Growth factor receptor-bound protein 2-A O...    49   8e-06
+sp|Q15080|NCF4_HUMAN Neutrophil cytosol factor 4 OS=Homo sapiens...    49   8e-06
+sp|O13154|PACN2_CHICK Protein kinase C and casein kinase substra...    49   8e-06
+sp|Q8VCZ6|SGSM3_MOUSE Small G protein signaling modulator 3 OS=M...    49   8e-06
+sp|Q6P6R7|SGSM3_RAT Small G protein signaling modulator 3 OS=Rat...    49   9e-06
+sp|Q9UNF0|PACN2_HUMAN Protein kinase C and casein kinase substra...    49   1e-05
+sp|Q8R550|SH3K1_MOUSE SH3 domain-containing kinase-binding prote...    49   1e-05
+sp|Q96HU1|SGSM3_HUMAN Small G protein signaling modulator 3 OS=H...    49   1e-05
+sp|O88811|STAM2_MOUSE Signal transducing adapter molecule 2 OS=M...    49   1e-05
+sp|Q2KI13|SGSM3_BOVIN Small G protein signaling modulator 3 OS=B...    49   1e-05
+sp|Q925Q9|SH3K1_RAT SH3 domain-containing kinase-binding protein...    49   1e-05
+sp|Q9XYM0|CRK_DROME Adapter molecule Crk OS=Drosophila melanogas...    48   1e-05
+sp|Q96B97|SH3K1_HUMAN SH3 domain-containing kinase-binding prote...    48   1e-05
+sp|A7MBI0|PACN1_BOVIN Protein kinase C and casein kinase substra...    48   1e-05
+sp|P87378|CRK_XENLA SH2/SH3 adaptor crk OS=Xenopus laevis GN=crk...    48   1e-05
+sp|Q9QZM5|ABI1_RAT Abl interactor 1 OS=Rattus norvegicus GN=Abi1...    48   1e-05
+sp|Q61140|BCAR1_MOUSE Breast cancer anti-estrogen resistance pro...    48   2e-05
+sp|Q8CBW3|ABI1_MOUSE Abl interactor 1 OS=Mus musculus GN=Abi1 PE...    48   2e-05
+sp|Q9UKS6|PACN3_HUMAN Protein kinase C and casein kinase substra...    48   2e-05
+sp|Q63767|BCAR1_RAT Breast cancer anti-estrogen resistance prote...    48   2e-05
+sp|Q8MJ50|OSTF1_BOVIN Osteoclast-stimulating factor 1 OS=Bos tau...    48   2e-05
+sp|Q99JB8|PACN3_MOUSE Protein kinase C and casein kinase II subs...    48   2e-05
+sp|Q96MF2|STAC3_HUMAN SH3 and cysteine-rich domain-containing pr...    48   2e-05
+sp|O94868|FCSD2_HUMAN FCH and double SH3 domains protein 2 OS=Ho...    48   2e-05
+sp|Q9QY53|NPHP1_MOUSE Nephrocystin-1 OS=Mus musculus GN=Nphp1 PE...    48   2e-05
+sp|Q5ZJJ9|OSTF1_CHICK Osteoclast-stimulating factor 1 OS=Gallus ...    48   2e-05
+sp|P56945|BCAR1_HUMAN Breast cancer anti-estrogen resistance pro...    47   2e-05
+sp|Q62415|ASPP1_MOUSE Apoptosis-stimulating of p53 protein 1 OS=...    47   2e-05
+sp|Q8BZ71|STAC3_MOUSE SH3 and cysteine-rich domain-containing pr...    47   2e-05
+sp|Q04929|CRK_CHICK Proto-oncogene C-crk OS=Gallus gallus GN=CRK...    47   2e-05
+sp|Q92882|OSTF1_HUMAN Osteoclast-stimulating factor 1 OS=Homo sa...    47   3e-05
+sp|Q14155|ARHG7_HUMAN Rho guanine nucleotide exchange factor 7 O...    47   3e-05
+sp|Q14511|CASL_HUMAN Enhancer of filamentation 1 OS=Homo sapiens...    47   3e-05
+sp|Q8MJ49|OSTF1_PIG Osteoclast-stimulating factor 1 OS=Sus scrof...    47   3e-05
+sp|Q6P686|OSTF1_RAT Osteoclast-stimulating factor 1 OS=Rattus no...    47   3e-05
+sp|A6H8I2|SGSM3_XENLA Small G protein signaling modulator 3 homo...    47   3e-05
+sp|Q62422|OSTF1_MOUSE Osteoclast-stimulating factor 1 OS=Mus mus...    47   3e-05
+sp|Q14247|SRC8_HUMAN Src substrate cortactin OS=Homo sapiens GN=...    47   3e-05
+sp|O75886|STAM2_HUMAN Signal transducing adapter molecule 2 OS=H...    47   3e-05
+sp|Q61644|PACN1_MOUSE Protein kinase C and casein kinase substra...    47   3e-05
+sp|P13395|SPTCA_DROME Spectrin alpha chain OS=Drosophila melanog...    47   3e-05
+sp|Q5XHY7|STAM2_RAT Signal transducing adapter molecule 2 OS=Rat...    47   3e-05
+sp|O35177|CASL_MOUSE Enhancer of filamentation 1 OS=Mus musculus...    47   3e-05
+sp|Q5RDK0|ARHG9_PONAB Rho guanine nucleotide exchange factor 9 O...    47   3e-05
+sp|P16333|NCK1_HUMAN Cytoplasmic protein NCK1 OS=Homo sapiens GN...    47   3e-05
+sp|Q9BY11|PACN1_HUMAN Protein kinase C and casein kinase substra...    47   3e-05
+sp|Q5R411|PACN1_PONAB Protein kinase C and casein kinase substra...    47   3e-05
+sp|Q9Z0W5|PACN1_RAT Protein kinase C and casein kinase substrate...    47   3e-05
+sp|Q8IZP0|ABI1_HUMAN Abl interactor 1 OS=Homo sapiens GN=ABI1 PE...    47   3e-05
+sp|Q9WVE8|PACN2_MOUSE Protein kinase C and casein kinase substra...    47   3e-05
+sp|Q9QY17|PACN2_RAT Protein kinase C and casein kinase substrate...    47   3e-05
+sp|Q01406|SRC8_CHICK Src substrate protein p85 OS=Gallus gallus ...    47   4e-05
+sp|P43069|CDC25_CANAL Cell division control protein 25 OS=Candid...    47   4e-05
+sp|Q7T2V3|M3K10_XENLA Mitogen-activated protein kinase kinase ki...    47   4e-05
+sp|P27447|YES_XIPHE Tyrosine-protein kinase Yes OS=Xiphophorus h...    47   4e-05
+sp|O14136|PEX13_SCHPO Peroxisomal membrane protein pex13 OS=Schi...    47   4e-05
+sp|Q60598|SRC8_MOUSE Src substrate cortactin OS=Mus musculus GN=...    47   4e-05
+sp|P49710|HCLS1_MOUSE Hematopoietic lineage cell-specific protei...    46   5e-05
+sp|Q6XZF7|DNMBP_HUMAN Dynamin-binding protein OS=Homo sapiens GN...    46   5e-05
+sp|Q06187|BTK_HUMAN Tyrosine-protein kinase BTK OS=Homo sapiens ...    46   5e-05
+sp|B0CRJ3|MYO1_LACBS Myosin-1 OS=Laccaria bicolor (strain S238N-...    46   5e-05
+sp|Q9V9J3|SRC42_DROME Tyrosine-protein kinase Src42A OS=Drosophi...    46   6e-05
+sp|Q8I7C3|LASP1_DROME LIM and SH3 domain protein Lasp OS=Drosoph...    46   6e-05
+sp|Q96N96|SPT13_HUMAN Spermatogenesis-associated protein 13 OS=H...    46   6e-05
+sp|Q6TGW5|OSTF1_DANRE Osteoclast-stimulating factor 1 OS=Danio r...    46   7e-05
+sp|A5GFW5|CASS4_PIG Cas scaffolding protein family member 4 OS=S...    45   8e-05
+sp|Q3USJ8|FCSD2_MOUSE FCH and double SH3 domains protein 2 OS=Mu...    45   8e-05
+sp|Q5TCX8|M3KL4_HUMAN Mitogen-activated protein kinase kinase ki...    45   8e-05
+sp|P16546|SPTA2_MOUSE Spectrin alpha chain, brain OS=Mus musculu...    45   8e-05
+sp|P16086|SPTA2_RAT Spectrin alpha chain, brain OS=Rattus norveg...    45   8e-05
+sp|Q5DU57|SPT13_MOUSE Spermatogenesis-associated protein 13 OS=M...    45   9e-05
+sp|Q13813|SPTA2_HUMAN Spectrin alpha chain, brain OS=Homo sapien...    45   9e-05
+sp|P07751|SPTA2_CHICK Spectrin alpha chain, brain OS=Gallus gall...    45   9e-05
+sp|P46108|CRK_HUMAN Proto-oncogene C-crk OS=Homo sapiens GN=CRK ...    45   9e-05
+sp|Q63768|CRK_RAT Proto-oncogene C-crk OS=Rattus norvegicus GN=C...    45   9e-05
+sp|Q64010|CRK_MOUSE Proto-oncogene C-crk OS=Mus musculus GN=Crk ...    45   9e-05
+sp|O75044|FNBP2_HUMAN SLIT-ROBO Rho GTPase-activating protein 2 ...    45   9e-05
+sp|Q91Z67|FNBP2_MOUSE SLIT-ROBO Rho GTPase-activating protein 2 ...    45   9e-05
+sp|Q7ZYG4|OSTF1_XENLA Osteoclast-stimulating factor 1 OS=Xenopus...    45   1e-04
+sp|O43307|ARHG9_HUMAN Rho guanine nucleotide exchange factor 9 O...    45   1e-04
+sp|O77775|NCF2_BOVIN Neutrophil cytosol factor 2 OS=Bos taurus G...    45   1e-04
+sp|Q9NQ75|CASS4_HUMAN Cas scaffolding protein family member 4 OS...    45   1e-04
+sp|Q80XI6|M3K11_MOUSE Mitogen-activated protein kinase kinase ki...    45   1e-04
+sp|Q3UTH8|ARHG9_MOUSE Rho guanine nucleotide exchange factor 9 O...    45   1e-04
+sp|Q2HDI2|MYO1_CHAGB Myosin-1 OS=Chaetomium globosum GN=MYO1 PE=...    45   1e-04
+sp|P42522|MYOC_DICDI Myosin IC heavy chain OS=Dictyostelium disc...    45   1e-04
+sp|Q58DL7|ARHG9_BOVIN Rho guanine nucleotide exchange factor 9 O...    45   1e-04
+sp|Q66HA1|M3K11_RAT Mitogen-activated protein kinase kinase kina...    45   1e-04
+sp|Q6XJU9|OSTF1_MONAL Osteoclast-stimulating factor 1 OS=Monopte...    45   1e-04
+sp|Q6TXD4|DNMBP_MOUSE Dynamin-binding protein OS=Mus musculus GN...    45   1e-04
+sp|Q9ES28|ARHG7_MOUSE Rho guanine nucleotide exchange factor 7 O...    45   1e-04
+sp|O55043|ARHG7_RAT Rho guanine nucleotide exchange factor 7 OS=...    45   1e-04
+sp|Q5I1X5|IASPP_MOUSE RelA-associated inhibitor OS=Mus musculus ...    45   2e-04
+sp|Q16584|M3K11_HUMAN Mitogen-activated protein kinase kinase ki...    44   2e-04
+sp|Q9Y7Z8|MYO1_SCHPO Myosin-1 OS=Schizosaccharomyces pombe GN=my...    44   2e-04
+sp|Q8WUF5|IASPP_HUMAN RelA-associated inhibitor OS=Homo sapiens ...    44   2e-04
+sp|A3LXQ8|HSE1_PICST Class E vacuolar protein-sorting machinery ...    44   2e-04
+sp|A4RE77|MYO1_MAGGR Myosin-1 OS=Magnaporthe grisea GN=MYO1 PE=3...    44   2e-04
+sp|P10936|YES_XENLA Tyrosine-protein kinase Yes OS=Xenopus laevi...    44   2e-04
+sp|Q9DDA9|PACN2_XENLA Protein kinase C and casein kinase substra...    44   2e-04
+sp|Q9VU84|DBNL_DROME Drebrin-like protein OS=Drosophila melanoga...    44   2e-04
+sp|P19878|NCF2_HUMAN Neutrophil cytosol factor 2 OS=Homo sapiens...    44   2e-04
+sp|O70145|NCF2_MOUSE Neutrophil cytosol factor 2 OS=Mus musculus...    44   3e-04
+sp|Q7Z6B7|SRGP1_HUMAN SLIT-ROBO Rho GTPase-activating protein 1 ...    44   3e-04
+sp|Q91Z69|SRGP1_MOUSE SLIT-ROBO Rho GTPase-activating protein 1 ...    44   3e-04
+sp|P35991|BTK_MOUSE Tyrosine-protein kinase BTK OS=Mus musculus ...    44   3e-04
+sp|Q1KKW7|SKAP1_FUGRU Src kinase-associated phosphoprotein 1 OS=...    44   3e-04
+sp|P13116|SRC2_XENLA Tyrosine-protein kinase Src-2 OS=Xenopus la...    44   3e-04
+sp|P42686|SRK1_SPOLA Tyrosine-protein kinase isoform SRK1 OS=Spo...    44   3e-04
+sp|Q7SIG6|ASAP2_MOUSE Arf-GAP with SH3 domain, ANK repeat and PH...    44   3e-04
+sp|Q812A2|SRGP2_MOUSE SLIT-ROBO Rho GTPase-activating protein 3 ...    44   3e-04
+sp|Q13625|ASPP2_HUMAN Apoptosis-stimulating of p53 protein 2 OS=...    44   3e-04
+sp|Q04736|YES_MOUSE Proto-oncogene tyrosine-protein kinase Yes O...    44   3e-04
+sp|O43150|ASAP2_HUMAN Arf-GAP with SH3 domain, ANK repeat and PH...    44   3e-04
+sp|P09324|YES_CHICK Tyrosine-protein kinase Yes OS=Gallus gallus...    44   3e-04
+sp|Q09822|CDC15_SCHPO Cell division control protein 15 OS=Schizo...    44   3e-04
+sp|P42690|SRK4_SPOLA Tyrosine-protein kinase isoform SRK4 OS=Spo...    44   4e-04
+sp|Q9NR80|ARHG4_HUMAN Rho guanine nucleotide exchange factor 4 O...    44   4e-04
+sp|P07947|YES_HUMAN Proto-oncogene tyrosine-protein kinase Yes O...    44   4e-04
+sp|Q45FX5|VAV_CAEEL Protein vav-1 OS=Caenorhabditis elegans GN=v...    43   4e-04
+sp|O43295|SRGP2_HUMAN SLIT-ROBO Rho GTPase-activating protein 3 ...    43   4e-04
+sp|P27446|FYN_XIPHE Proto-oncogene tyrosine-protein kinase FYN O...    43   4e-04
+sp|Q15052|ARHG6_HUMAN Rho guanine nucleotide exchange factor 6 O...    43   5e-04
+sp|Q8K4I3|ARHG6_MOUSE Rho guanine nucleotide exchange factor 6 O...    43   5e-04
+sp|Q5XXR3|ARHG6_RAT Rho guanine nucleotide exchange factor 6 OS=...    43   5e-04
+sp|O74653|POB1_SCHPO Protein pob1 OS=Schizosaccharomyces pombe G...    43   5e-04
+sp|P06241|FYN_HUMAN Proto-oncogene tyrosine-protein kinase Fyn O...    43   5e-04
+sp|Q8JH64|BTK_CHICK Tyrosine-protein kinase BTK OS=Gallus gallus...    43   5e-04
+sp|P39688|FYN_MOUSE Proto-oncogene tyrosine-protein kinase Fyn O...    43   5e-04
+sp|A1Y2K1|FYN_PIG Proto-oncogene tyrosine-protein kinase Fyn OS=...    43   5e-04
+sp|Q62844|FYN_RAT Proto-oncogene tyrosine-protein kinase Fyn OS=...    43   5e-04
+sp|A0JNB0|FYN_BOVIN Proto-oncogene tyrosine-protein kinase Fyn O...    43   5e-04
+sp|Q80U40|RIMB2_MOUSE RIMS-binding protein 2 OS=Mus musculus GN=...    43   5e-04
+sp|Q08EC4|CASS4_MOUSE Cas scaffolding protein family member 4 OS...    43   5e-04
+sp|Q9QX73|ARHG9_RAT Rho guanine nucleotide exchange factor 9 OS=...    43   5e-04
+sp|O60861|GAS7_HUMAN Growth arrest-specific protein 7 OS=Homo sa...    43   6e-04
+sp|Q5K8T7|MYO1_CRYNE Myosin-1 OS=Cryptococcus neoformans GN=MYO1...    43   6e-04
+sp|P13406|FYN_XENLA Proto-oncogene tyrosine-protein kinase Fyn O...    42   6e-04
+sp|Q5ZLR6|ARHG6_CHICK Rho guanine nucleotide exchange factor 6 O...    42   7e-04
+sp|Q32LP7|SKAP2_BOVIN Src kinase-associated phosphoprotein 2 OS=...    42   7e-04
+sp|P51451|BLK_HUMAN Tyrosine-protein kinase BLK OS=Homo sapiens ...    42   7e-04
+sp|P13115|SRC1_XENLA Tyrosine-protein kinase Src-1 OS=Xenopus la...    42   7e-04
+sp|Q95UN8|M3KSL_DROME Mitogen-activated protein kinase kinase ki...    42   8e-04
+sp|P16277|BLK_MOUSE Tyrosine-protein kinase BLK OS=Mus musculus ...    42   9e-04
+sp|P02549|SPTA1_HUMAN Spectrin alpha chain, erythrocyte OS=Homo ...    42   0.001
+
+>sp|A7A261|LSB3_YEAS7 LAS seventeen-binding protein 3
+           OS=Saccharomyces cerevisiae (strain YJM789) GN=LSB3 PE=3
+           SV=2
+          Length = 459
+
+ Score =  119 bits (297), Expect = 6e-27,   Method: Composition-based stats.
+ Identities = 58/58 (100%), Positives = 58/58 (100%)
+
+Query: 1   SPKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           SPKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV
+Sbjct: 402 SPKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 459
+
+
+>sp|P43603|LSB3_YEAST LAS seventeen-binding protein 3
+           OS=Saccharomyces cerevisiae GN=LSB3 PE=1 SV=3
+          Length = 459
+
+ Score =  119 bits (297), Expect = 6e-27,   Method: Composition-based stats.
+ Identities = 58/58 (100%), Positives = 58/58 (100%)
+
+Query: 1   SPKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           SPKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV
+Sbjct: 402 SPKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 459
+
+
+>sp|P32793|YSC84_YEAST Protein YSC84 OS=Saccharomyces cerevisiae
+           GN=YSC84 PE=1 SV=2
+          Length = 468
+
+ Score =  100 bits (249), Expect = 2e-21,   Method: Composition-based stats.
+ Identities = 46/57 (80%), Positives = 52/57 (91%)
+
+Query: 1   SPKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+           +P AVALY+FAGE+ GDL F+KGDVITILKKSDSQNDWWTGR NG+EGIFPANYV +
+Sbjct: 411 TPTAVALYNFAGEQPGDLAFKKGDVITILKKSDSQNDWWTGRTNGKEGIFPANYVRV 467
+
+
+>sp|Q9URW6|YIE2_SCHPO SH3 domain-containing protein PJ696.02
+           OS=Schizosaccharomyces pombe GN=SPAPJ696.02 PE=1 SV=1
+          Length = 430
+
+ Score = 81.6 bits (200), Expect = 1e-15,   Method: Composition-based stats.
+ Identities = 36/55 (65%), Positives = 47/55 (85%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+           +A A+YSFAGE+ GDL F+KGD+I I+++S S +DWWTGR+  REGIFPANYV+L
+Sbjct: 375 QARAMYSFAGEQPGDLSFQKGDIIDIVERSGSHDDWWTGRIGYREGIFPANYVKL 429
+
+
+>sp|Q6DFH5|SH3Y1_XENLA SH3 domain-containing YSC84-like protein 1
+           OS=Xenopus laevis GN=sh3yl1 PE=2 SV=1
+          Length = 335
+
+ Score = 76.3 bits (186), Expect = 4e-14,   Method: Composition-based stats.
+ Identities = 33/54 (61%), Positives = 41/54 (75%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+           A ALY F G+ SGDLPF+ GD IT+L K++SQ DWW G++ G  GIFPANYV +
+Sbjct: 281 ATALYPFEGQHSGDLPFQAGDKITVLTKTNSQYDWWEGKLKGNIGIFPANYVSV 334
+
+
+>sp|Q3SZ01|SH3Y1_BOVIN SH3 domain-containing YSC84-like protein 1
+           OS=Bos taurus GN=SH3YL1 PE=2 SV=1
+          Length = 341
+
+ Score = 73.9 bits (180), Expect = 2e-13,   Method: Composition-based stats.
+ Identities = 31/55 (56%), Positives = 41/55 (74%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+           +  ALYSF G++ GDL F+ GD IT++ K+DS  DWW G++ GR GIFPANYV +
+Sbjct: 286 EVTALYSFEGQQPGDLNFQAGDRITVISKTDSHFDWWEGKLRGRTGIFPANYVTM 340
+
+
+>sp|Q5RAQ2|SH3Y1_PONAB SH3 domain-containing YSC84-like protein 1
+           OS=Pongo abelii GN=SH3YL1 PE=2 SV=1
+          Length = 342
+
+ Score = 72.8 bits (177), Expect = 6e-13,   Method: Composition-based stats.
+ Identities = 30/55 (54%), Positives = 41/55 (74%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+           +  ALYSF G++ GDL F+ GD IT++ K+DS  DWW G++ G+ GIFPANYV +
+Sbjct: 287 EVTALYSFEGQQPGDLNFQAGDRITVISKTDSHFDWWEGKLRGQTGIFPANYVTM 341
+
+
+>sp|Q96HL8|SH3Y1_HUMAN SH3 domain-containing YSC84-like protein 1
+           OS=Homo sapiens GN=SH3YL1 PE=1 SV=1
+          Length = 342
+
+ Score = 72.4 bits (176), Expect = 6e-13,   Method: Composition-based stats.
+ Identities = 30/55 (54%), Positives = 41/55 (74%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+           +  ALYSF G++ GDL F+ GD IT++ K+DS  DWW G++ G+ GIFPANYV +
+Sbjct: 287 EVTALYSFEGQQPGDLNFQAGDRITVISKTDSHFDWWEGKLRGQTGIFPANYVTM 341
+
+
+>sp|O74352|HOB1_SCHPO Protein hob1 OS=Schizosaccharomyces pombe
+           GN=hob1 PE=1 SV=1
+          Length = 466
+
+ Score = 70.9 bits (172), Expect = 2e-12,   Method: Composition-based stats.
+ Identities = 28/53 (52%), Positives = 40/53 (75%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+           VALY +A + +GDL F  GD I ++ ++D+QN+WW GR+NG +G FP NYV+L
+Sbjct: 413 VALYDYAAQAAGDLSFHAGDRIEVVSRTDNQNEWWIGRLNGAQGQFPGNYVQL 465
+
+
+>sp|O08641|SH3Y1_MOUSE SH3 domain-containing YSC84-like protein 1
+           OS=Mus musculus GN=Sh3yl1 PE=1 SV=1
+          Length = 340
+
+ Score = 70.5 bits (171), Expect = 3e-12,   Method: Composition-based stats.
+ Identities = 29/55 (52%), Positives = 40/55 (72%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+           +  ALYSF G++ GDL F+ GD I ++ K+DS  DWW G++ G+ GIFPANYV +
+Sbjct: 285 EVTALYSFEGQQPGDLNFQAGDRIIVISKTDSNFDWWEGKLRGQTGIFPANYVTM 339
+
+
+>sp|B0BNA1|SH3Y1_RAT SH3 domain-containing YSC84-like protein 1
+           OS=Rattus norvegicus GN=Sh3yl1 PE=2 SV=1
+          Length = 340
+
+ Score = 70.1 bits (170), Expect = 4e-12,   Method: Composition-based stats.
+ Identities = 29/55 (52%), Positives = 40/55 (72%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+           +  ALYSF G++ GDL F+ GD I ++ K+DS  DWW G++ G+ GIFPANYV +
+Sbjct: 285 EVTALYSFEGQQPGDLNFQAGDRIIVISKTDSNFDWWEGKLRGQTGIFPANYVTM 339
+
+
+>sp|P39743|RV167_YEAST Reduced viability upon starvation protein 167
+           OS=Saccharomyces cerevisiae GN=RVS167 PE=1 SV=1
+          Length = 482
+
+ Score = 66.2 bits (160), Expect = 5e-11,   Method: Composition-based stats.
+ Identities = 26/52 (50%), Positives = 38/52 (73%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+           ALY +  + +GDL F  G VI I++++   N+WWTGR NG++G+FP NYV+L
+Sbjct: 428 ALYDYQAQAAGDLSFPAGAVIEIVQRTPDVNEWWTGRYNGQQGVFPGNYVQL 479
+
+
+>sp|O43125|CSH3_SCHPO Protein csh3 OS=Schizosaccharomyces pombe
+           GN=csh3 PE=2 SV=1
+          Length = 296
+
+ Score = 65.9 bits (159), Expect = 6e-11,   Method: Composition-based stats.
+ Identities = 28/56 (50%), Positives = 41/56 (73%), Gaps = 2/56 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           + +A+Y F G ++GDL F  G+VI +L+  +  NDWW G +NG+EGIFP+NYV L+
+Sbjct: 144 RVLAMYDFPGPDAGDLGFHAGEVIIVLEHVN--NDWWRGELNGKEGIFPSNYVRLL 197
+
+
+>sp|P10569|MYSC_ACACA Myosin IC heavy chain OS=Acanthamoeba
+            castellanii GN=MIC PE=1 SV=1
+          Length = 1168
+
+ Score = 65.1 bits (157), Expect = 1e-10,   Method: Composition-based stats.
+ Identities = 28/56 (50%), Positives = 40/56 (71%), Gaps = 2/56 (3%)
+
+Query: 3    KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+            +A ALY FA E   +L F +G V+T++ KS+   DWW G +NG+ G+FPA+YVEL+
+Sbjct: 980  QARALYDFAAENPDELTFNEGAVVTVINKSNP--DWWEGELNGQRGVFPASYVELI 1033
+
+
+>sp|Q08012|DRK_DROME Protein enhancer of sevenless 2B OS=Drosophila
+           melanogaster GN=drk PE=1 SV=1
+          Length = 211
+
+ Score = 63.5 bits (153), Expect = 3e-10,   Method: Composition-based stats.
+ Identities = 28/50 (56%), Positives = 36/50 (72%), Gaps = 2/50 (4%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           ALY F  +ESG+L FR+GDVIT+  +SD   +WW G +  R+GIFPA YV
+Sbjct: 159 ALYDFVPQESGELDFRRGDVITVTDRSDE--NWWNGEIGNRKGIFPATYV 206
+
+
+
+ Score = 46.6 bits (109), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 19/55 (34%), Positives = 34/55 (61%), Gaps = 1/55 (1%)
+
+Query: 3  KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+          +A+A + F+     +L FRK  ++ IL   D  N W+   ++G+EG+ P+NY+E+
+Sbjct: 2  EAIAKHDFSATADDELSFRKTQILKILNMEDDSN-WYRAELDGKEGLIPSNYIEM 55
+
+
+>sp|Q6YKA8|DRK_DROSI Protein E(sev)2B OS=Drosophila simulans GN=drk
+           PE=3 SV=1
+          Length = 211
+
+ Score = 63.5 bits (153), Expect = 3e-10,   Method: Composition-based stats.
+ Identities = 28/50 (56%), Positives = 36/50 (72%), Gaps = 2/50 (4%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           ALY F  +ESG+L FR+GDVIT+  +SD   +WW G +  R+GIFPA YV
+Sbjct: 159 ALYDFVPQESGELDFRRGDVITVTDRSDE--NWWNGEIGNRKGIFPATYV 206
+
+
+
+ Score = 46.6 bits (109), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 19/55 (34%), Positives = 34/55 (61%), Gaps = 1/55 (1%)
+
+Query: 3  KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+          +A+A + F+     +L FRK  ++ IL   D  N W+   ++G+EG+ P+NY+E+
+Sbjct: 2  EAIAKHDFSATADDELSFRKTQILKILNMEDDSN-WYRAELDGKEGLIPSNYIEM 55
+
+
+>sp|P29355|SEM5_CAEEL Sex muscle abnormal protein 5
+           OS=Caenorhabditis elegans GN=sem-5 PE=1 SV=1
+          Length = 228
+
+ Score = 62.8 bits (151), Expect = 5e-10,   Method: Composition-based stats.
+ Identities = 27/50 (54%), Positives = 38/50 (76%), Gaps = 2/50 (4%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           AL+ F  +ESG+L F++GDVIT++ K D   +WW G++N R GIFP+NYV
+Sbjct: 161 ALFDFNPQESGELAFKRGDVITLINKDDP--NWWEGQLNNRRGIFPSNYV 208
+
+
+>sp|Q99469|STAC_HUMAN SH3 and cysteine-rich domain-containing
+           protein OS=Homo sapiens GN=STAC PE=1 SV=1
+          Length = 402
+
+ Score = 62.8 bits (151), Expect = 5e-10,   Method: Composition-based stats.
+ Identities = 27/52 (51%), Positives = 36/52 (69%), Gaps = 2/52 (3%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           VALY F  +E+ DL  R GD+IT+L+  DS  DWW G++  R G FPAN+V+
+Sbjct: 291 VALYKFVPQENEDLEMRPGDIITLLE--DSNEDWWKGKIQDRIGFFPANFVQ 340
+
+
+>sp|A0JNJ1|STAC_BOVIN SH3 and cysteine-rich domain-containing
+           protein OS=Bos taurus GN=STAC PE=2 SV=1
+          Length = 403
+
+ Score = 62.4 bits (150), Expect = 7e-10,   Method: Composition-based stats.
+ Identities = 28/54 (51%), Positives = 37/54 (68%), Gaps = 2/54 (3%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           VALY F  +E+ DL  R GD+IT+L+  DS  DWW G++  R G FPAN+V+ V
+Sbjct: 292 VALYKFVPQENEDLEMRPGDMITLLE--DSNEDWWKGKIQDRIGFFPANFVQRV 343
+
+
+>sp|Q9Z0R4|ITSN1_MOUSE Intersectin-1 OS=Mus musculus GN=Itsn1 PE=1
+            SV=1
+          Length = 1714
+
+ Score = 62.4 bits (150), Expect = 7e-10,   Method: Composition-based stats.
+ Identities = 26/53 (49%), Positives = 36/53 (67%), Gaps = 3/53 (5%)
+
+Query: 5    VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+            +A+Y++   E GDL F++GDVI + KK     DWWTG V  + G+FP+NYV L
+Sbjct: 1001 IAMYTYESSEQGDLTFQQGDVIVVTKKD---GDWWTGTVGDKSGVFPSNYVRL 1050
+
+
+
+ Score = 55.8 bits (133), Expect = 7e-08,   Method: Composition-based stats.
+ Identities = 22/55 (40%), Positives = 35/55 (63%), Gaps = 2/55 (3%)
+
+Query: 3    KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+            + + +Y +  +   +L F KG +I +L K D   DWW G V+G+ G+FP+NYV+L
+Sbjct: 1152 QVIGMYDYTAQNDDELAFSKGQIINVLNKEDP--DWWKGEVSGQVGLFPSNYVKL 1204
+
+
+
+ Score = 50.8 bits (120), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 24/56 (42%), Positives = 36/56 (64%), Gaps = 3/56 (5%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           +A ALY +  ++   L F K DVIT+L++ D    WW G V G++G FP +YV+L+
+Sbjct: 910 QAQALYPWRAKKDNHLNFNKSDVITVLEQQDM---WWFGEVQGQKGWFPKSYVKLI 962
+
+
+>sp|P97306|STAC_MOUSE SH3 and cysteine-rich domain-containing
+           protein OS=Mus musculus GN=Stac PE=2 SV=1
+          Length = 403
+
+ Score = 62.0 bits (149), Expect = 9e-10,   Method: Composition-based stats.
+ Identities = 28/54 (51%), Positives = 37/54 (68%), Gaps = 2/54 (3%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           VALY F  +E+ DL  R GD+IT+L+  DS  DWW G++  R G FPAN+V+ V
+Sbjct: 292 VALYRFIPQENEDLEMRPGDMITLLE--DSNEDWWKGKIQDRVGFFPANFVQRV 343
+
+
+>sp|Q15811|ITSN1_HUMAN Intersectin-1 OS=Homo sapiens GN=ITSN1 PE=1
+            SV=3
+          Length = 1721
+
+ Score = 61.6 bits (148), Expect = 1e-09,   Method: Composition-based stats.
+ Identities = 26/53 (49%), Positives = 36/53 (67%), Gaps = 3/53 (5%)
+
+Query: 5    VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+            +A+Y++   E GDL F++GDVI + KK     DWWTG V  + G+FP+NYV L
+Sbjct: 1008 IAMYTYESSEQGDLTFQQGDVILVTKKD---GDWWTGTVGDKAGVFPSNYVRL 1057
+
+
+
+ Score = 58.2 bits (139), Expect = 1e-08,   Method: Composition-based stats.
+ Identities = 23/55 (41%), Positives = 35/55 (63%), Gaps = 2/55 (3%)
+
+Query: 3    KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+            + + +Y +  +   +L F KG +I +L K D   DWW G VNG+ G+FP+NYV+L
+Sbjct: 1159 QVIGMYDYTAQNDDELAFNKGQIINVLNKEDP--DWWKGEVNGQVGLFPSNYVKL 1211
+
+
+
+ Score = 50.8 bits (120), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 24/56 (42%), Positives = 36/56 (64%), Gaps = 3/56 (5%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           +A ALY +  ++   L F K DVIT+L++ D    WW G V G++G FP +YV+L+
+Sbjct: 917 QAQALYPWRAKKDNHLNFNKNDVITVLEQQDM---WWFGEVQGQKGWFPKSYVKLI 969
+
+
+>sp|Q71F54|SH3R1_RAT Putative E3 ubiquitin-protein ligase SH3RF1
+           OS=Rattus norvegicus GN=Sh3rf1 PE=1 SV=1
+          Length = 894
+
+ Score = 60.5 bits (145), Expect = 3e-09,   Method: Composition-based stats.
+ Identities = 26/57 (45%), Positives = 39/57 (68%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P A ALY++ G+E GDL F KGD+I + ++ D   +W+ G VNG  G FP N+V+++
+Sbjct: 137 PCAKALYNYEGKEPGDLKFSKGDIIILRRQVDE--NWYHGEVNGVHGFFPTNFVQII 191
+
+
+>sp|Q6NRD3|SH3R1_XENLA Putative E3 ubiquitin-protein ligase SH3RF1
+           OS=Xenopus laevis GN=sh3rf1 PE=2 SV=1
+          Length = 826
+
+ Score = 60.1 bits (144), Expect = 3e-09,   Method: Composition-based stats.
+ Identities = 25/57 (43%), Positives = 39/57 (68%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P A ALY++ G+E GDL F KGD+I + ++ D   +W+ G +NG  G FP N+V+++
+Sbjct: 135 PCAKALYNYEGKEPGDLKFNKGDIIVLRRQVDE--NWYHGEINGIHGFFPTNFVQII 189
+
+
+>sp|Q28E95|SH3R1_XENTR Putative E3 ubiquitin-protein ligase SH3RF1
+           OS=Xenopus tropicalis GN=sh3rf1 PE=2 SV=1
+          Length = 861
+
+ Score = 60.1 bits (144), Expect = 3e-09,   Method: Composition-based stats.
+ Identities = 25/57 (43%), Positives = 39/57 (68%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P A ALY++ G+E GDL F KGD+I + ++ D   +W+ G +NG  G FP N+V+++
+Sbjct: 135 PCAKALYNYEGKEPGDLKFNKGDIIVLRRQVDE--NWYHGEINGIHGFFPTNFVQII 189
+
+
+>sp|Q91X43|SH319_MOUSE SH3 domain-containing protein 19 OS=Mus
+           musculus GN=Sh3d19 PE=1 SV=2
+          Length = 789
+
+ Score = 60.1 bits (144), Expect = 4e-09,   Method: Composition-based stats.
+ Identities = 29/51 (56%), Positives = 39/51 (76%), Gaps = 2/51 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           AL+SF  E S DLPF++GD I IL++ DS  DW+ GR++ REGIFPA +V+
+Sbjct: 667 ALHSFTAETSEDLPFKRGDRILILERLDS--DWYRGRLHDREGIFPAVFVQ 715
+
+
+
+ Score = 52.8 bits (125), Expect = 5e-07,   Method: Composition-based stats.
+ Identities = 22/58 (37%), Positives = 40/58 (68%), Gaps = 2/58 (3%)
+
+Query: 1   SPKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           +P AVAL+ F  E++ DL    G+++ +L+K D++  W+ G+   + G+FPANYV+++
+Sbjct: 496 APHAVALHDFPAEQADDLSLTSGEIVYLLEKIDAE--WYRGKCRNQTGVFPANYVKVI 551
+
+
+
+ Score = 50.4 bits (119), Expect = 3e-06,   Method: Composition-based stats.
+ Identities = 26/56 (46%), Positives = 34/56 (60%), Gaps = 2/56 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           K  ALY F GE   +L F+ GDVIT L+  D  + W  G + GR G+FP NYV+ +
+Sbjct: 733 KVKALYDFLGENEDELSFKAGDVITELEPID--DAWMRGELMGRAGMFPKNYVQFL 786
+
+
+
+ Score = 45.4 bits (106), Expect = 9e-05,   Method: Composition-based stats.
+ Identities = 21/57 (36%), Positives = 35/57 (61%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P+ VA + + G++  +L F +G+VI + +  + +  W  G +  R GIFP N+VELV
+Sbjct: 573 PRCVARFEYIGDQKDELSFSEGEVIILTEYVNEE--WGRGEIRDRSGIFPLNFVELV 627
+
+
+>sp|Q7Z6J0|SH3R1_HUMAN Putative E3 ubiquitin-protein ligase SH3RF1
+           OS=Homo sapiens GN=SH3RF1 PE=1 SV=2
+          Length = 888
+
+ Score = 59.7 bits (143), Expect = 4e-09,   Method: Composition-based stats.
+ Identities = 26/57 (45%), Positives = 39/57 (68%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P A ALY++ G+E GDL F KGD+I + ++ D   +W+ G VNG  G FP N+V+++
+Sbjct: 137 PCAKALYNYEGKEPGDLKFSKGDIIILRRQVDE--NWYHGEVNGIHGFFPTNFVQII 191
+
+
+>sp|Q5RBR0|SH3R1_PONAB Putative E3 ubiquitin-protein ligase SH3RF1
+           OS=Pongo abelii GN=SH3RF1 PE=2 SV=1
+          Length = 888
+
+ Score = 59.7 bits (143), Expect = 5e-09,   Method: Composition-based stats.
+ Identities = 26/57 (45%), Positives = 39/57 (68%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P A ALY++ G+E GDL F KGD+I + ++ D   +W+ G VNG  G FP N+V+++
+Sbjct: 137 PCAKALYNYEGKEPGDLKFSKGDIIILRRQVDE--NWYHGEVNGIHGFFPTNFVQII 191
+
+
+>sp|Q7S6J4|HSE1_NEUCR Class E vacuolar protein-sorting machinery
+           protein hse-1 OS=Neurospora crassa GN=hse-1 PE=3 SV=1
+          Length = 745
+
+ Score = 59.7 bits (143), Expect = 5e-09,   Method: Composition-based stats.
+ Identities = 28/51 (54%), Positives = 34/51 (66%), Gaps = 2/51 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           ALY F   E G+L F+KGDVI +LK      DWW+G + G+ GIFP NYVE
+Sbjct: 245 ALYDFVPSEPGELEFKKGDVIAVLKSV--YKDWWSGSLKGKTGIFPLNYVE 293
+
+
+>sp|Q8TEJ3|SH3R3_HUMAN SH3 domain-containing RING finger protein 3
+           OS=Homo sapiens GN=SH3RF3 PE=1 SV=2
+          Length = 882
+
+ Score = 59.3 bits (142), Expect = 5e-09,   Method: Composition-based stats.
+ Identities = 25/57 (43%), Positives = 38/57 (66%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P   ALYS+ G+E GDL F KGD+I + +K D Q  W+ G ++G +G  PA+Y++ +
+Sbjct: 197 PYGKALYSYEGKEPGDLKFNKGDIIVLRRKVDEQ--WYHGELHGTQGFLPASYIQCI 251
+
+
+>sp|Q2GT05|HSE1_CHAGB Class E vacuolar protein-sorting machinery
+           protein HSE1 OS=Chaetomium globosum GN=HSE1 PE=3 SV=1
+          Length = 713
+
+ Score = 59.3 bits (142), Expect = 6e-09,   Method: Composition-based stats.
+ Identities = 28/51 (54%), Positives = 34/51 (66%), Gaps = 2/51 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           ALY FA  E G+L F+KGDVI +L+      DWW G + G+ GIFP NYVE
+Sbjct: 232 ALYDFAPSEPGELEFKKGDVIAVLESV--YKDWWRGSLKGKTGIFPLNYVE 280
+
+
+>sp|P34109|MYOD_DICDI Myosin ID heavy chain OS=Dictyostelium
+            discoideum GN=myoD PE=1 SV=2
+          Length = 1109
+
+ Score = 58.9 bits (141), Expect = 7e-09,   Method: Composition-based stats.
+ Identities = 25/57 (43%), Positives = 37/57 (64%), Gaps = 2/57 (3%)
+
+Query: 2    PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+            P A ALY F  E S +L F++GD++T+L +  S  DWW   + GR G  P+NY++L+
+Sbjct: 961  PSAKALYDFDAESSMELSFKEGDILTVLDQ--SSGDWWDAELKGRRGKVPSNYLQLI 1015
+
+
+>sp|Q5BBL4|HSE1_EMENI Class E vacuolar protein-sorting machinery
+           protein hse1 OS=Emericella nidulans GN=hse1 PE=3 SV=1
+          Length = 581
+
+ Score = 58.5 bits (140), Expect = 9e-09,   Method: Composition-based stats.
+ Identities = 28/51 (54%), Positives = 33/51 (64%), Gaps = 2/51 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           ALY F   E G+L FRKGDVI +L+      DWW G + G+ GIFP NYVE
+Sbjct: 222 ALYDFQPSEPGELQFRKGDVIAVLESV--YKDWWKGSLRGQTGIFPLNYVE 270
+
+
+>sp|Q1E878|HSE1_COCIM Class E vacuolar protein-sorting machinery
+           protein HSE1 OS=Coccidioides immitis GN=HSE1 PE=3 SV=1
+          Length = 612
+
+ Score = 58.5 bits (140), Expect = 9e-09,   Method: Composition-based stats.
+ Identities = 27/51 (52%), Positives = 33/51 (64%), Gaps = 2/51 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           ALY F   E G+L FRKGD+I +L+      DWW G + G+ GIFP NYVE
+Sbjct: 222 ALYDFQPSEPGELQFRKGDIIAVLESV--YKDWWKGSLRGQVGIFPLNYVE 270
+
+
+>sp|Q8C120|SH3R3_MOUSE SH3 domain-containing RING finger protein 3
+           OS=Mus musculus GN=Sh3rf3 PE=2 SV=2
+          Length = 878
+
+ Score = 58.5 bits (140), Expect = 1e-08,   Method: Composition-based stats.
+ Identities = 26/57 (45%), Positives = 37/57 (64%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P A ALYS+ G+E GDL F KGD+I + +K D   +W+ G + G  G  PA+Y++ V
+Sbjct: 190 PYAKALYSYEGKEPGDLKFNKGDIIILRRKVDE--NWYHGELQGMHGFLPASYIQCV 244
+
+
+>sp|Q69ZI1|SH3R1_MOUSE Putative E3 ubiquitin-protein ligase SH3RF1
+           OS=Mus musculus GN=Sh3rf1 PE=1 SV=2
+          Length = 892
+
+ Score = 58.2 bits (139), Expect = 1e-08,   Method: Composition-based stats.
+ Identities = 25/57 (43%), Positives = 39/57 (68%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P A ALY++ G+E GDL F KGD+I + ++ D   +W+ G V+G  G FP N+V+++
+Sbjct: 137 PCAKALYNYEGKEPGDLKFSKGDIIILRRQVDE--NWYHGEVSGVHGFFPTNFVQII 191
+
+
+>sp|Q0CJU8|HSE1_ASPTN Class E vacuolar protein-sorting machinery
+           protein hse1 OS=Aspergillus terreus (strain NIH 2624 /
+           FGSC A1156) GN=hse1 PE=3 SV=1
+          Length = 597
+
+ Score = 57.8 bits (138), Expect = 2e-08,   Method: Composition-based stats.
+ Identities = 27/51 (52%), Positives = 33/51 (64%), Gaps = 2/51 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           AL+ F   E G+L FRKGDVI +L+      DWW G + G+ GIFP NYVE
+Sbjct: 231 ALFDFQPSEPGELQFRKGDVIAVLESV--YKDWWKGSLRGQTGIFPLNYVE 279
+
+
+>sp|Q557J6|DBNL_DICDI Drebrin-like protein OS=Dictyostelium
+           discoideum GN=abpE-1 PE=2 SV=1
+          Length = 481
+
+ Score = 57.8 bits (138), Expect = 2e-08,   Method: Composition-based stats.
+ Identities = 28/55 (50%), Positives = 39/55 (70%), Gaps = 2/55 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRV-NGREGIFPANYVE 56
+           +A ALY + GE  GDL FR+GD+ITIL +SD  + WW G +  G +G FP+N+V+
+Sbjct: 426 QAKALYDYNGENDGDLSFREGDIITILDQSDP-DGWWQGSLPTGEQGFFPSNFVQ 479
+
+
+>sp|O42287|ITSN1_XENLA Intersectin-1 OS=Xenopus laevis GN=itsn1 PE=1
+            SV=1
+          Length = 1270
+
+ Score = 57.8 bits (138), Expect = 2e-08,   Method: Composition-based stats.
+ Identities = 23/51 (45%), Positives = 36/51 (70%), Gaps = 3/51 (5%)
+
+Query: 5    VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+            +++Y++   E GDL F++GD+I ++KK     DWWTG V  + G+FP+NYV
+Sbjct: 992  ISMYTYESNEQGDLTFQQGDLIVVIKKD---GDWWTGTVGEKTGVFPSNYV 1039
+
+
+
+ Score = 55.1 bits (131), Expect = 1e-07,   Method: Composition-based stats.
+ Identities = 23/55 (41%), Positives = 34/55 (61%), Gaps = 2/55 (3%)
+
+Query: 3    KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+            + + +Y +  +   +L F KG VI +L K D   DWW G +NG  G+FP+NYV+L
+Sbjct: 1143 QVIGMYDYIAQNDDELAFSKGQVINVLNKEDP--DWWKGELNGHVGLFPSNYVKL 1195
+
+
+
+ Score = 49.7 bits (117), Expect = 4e-06,   Method: Composition-based stats.
+ Identities = 24/56 (42%), Positives = 36/56 (64%), Gaps = 3/56 (5%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           +A ALY +  ++   L F K DVIT+L++ D    WW G V G++G FP +YV+L+
+Sbjct: 901 QAQALYPWRAKKDNHLNFNKNDVITVLEQQDM---WWFGEVQGQKGWFPKSYVKLI 953
+
+
+>sp|A2QW93|HSE1_ASPNC Class E vacuolar protein-sorting machinery
+           protein hse1 OS=Aspergillus niger (strain CBS 513.88 /
+           FGSC A1513) GN=hse1 PE=3 SV=1
+          Length = 611
+
+ Score = 57.8 bits (138), Expect = 2e-08,   Method: Composition-based stats.
+ Identities = 27/51 (52%), Positives = 33/51 (64%), Gaps = 2/51 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           AL+ F   E G+L FRKGDVI +L+      DWW G + G+ GIFP NYVE
+Sbjct: 223 ALFDFQPSEPGELQFRKGDVIAVLESV--YKDWWKGSLRGQTGIFPLNYVE 271
+
+
+>sp|A4RF61|HSE1_MAGGR Class E vacuolar protein-sorting machinery
+           protein HSE1 OS=Magnaporthe grisea GN=HSE1 PE=3 SV=2
+          Length = 718
+
+ Score = 57.4 bits (137), Expect = 2e-08,   Method: Composition-based stats.
+ Identities = 27/51 (52%), Positives = 33/51 (64%), Gaps = 2/51 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           ALY F   E G+L F+KGDVI +L+      DWW G + G+ GIFP NYVE
+Sbjct: 241 ALYDFVPSEDGELEFKKGDVIAVLESV--YKDWWRGSLKGKTGIFPLNYVE 289
+
+
+>sp|O74749|HSE1_SCHPO Class E vacuolar protein-sorting machinery
+           protein hse1 OS=Schizosaccharomyces pombe GN=hse1 PE=2
+           SV=1
+          Length = 373
+
+ Score = 57.4 bits (137), Expect = 2e-08,   Method: Composition-based stats.
+ Identities = 26/53 (49%), Positives = 32/53 (60%), Gaps = 2/53 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           ALY FA  E G+L F+KGD+I +L+      DWW G      GIFP NYV+ V
+Sbjct: 222 ALYDFAATEQGELSFKKGDIILVLES--VYKDWWKGSCKNAVGIFPVNYVQRV 272
+
+
+>sp|Q8BZT2|SH3R2_MOUSE Putative E3 ubiquitin-protein ligase SH3RF2
+           OS=Mus musculus GN=Sh3rf2 PE=1 SV=2
+          Length = 735
+
+ Score = 57.4 bits (137), Expect = 2e-08,   Method: Composition-based stats.
+ Identities = 26/57 (45%), Positives = 39/57 (68%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P+A AL ++ G+  GDL F KGDVI + ++ D   +W+ G +NG  GIFPA+ VE++
+Sbjct: 128 PRAKALCNYRGKNPGDLKFNKGDVILLRRQLDE--NWYQGEINGVSGIFPASSVEVI 182
+
+
+>sp|Q9NZM3|ITSN2_HUMAN Intersectin-2 OS=Homo sapiens GN=ITSN2 PE=1
+            SV=2
+          Length = 1696
+
+ Score = 57.0 bits (136), Expect = 3e-08,   Method: Composition-based stats.
+ Identities = 22/55 (40%), Positives = 35/55 (63%), Gaps = 2/55 (3%)
+
+Query: 3    KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+            + +A+Y +A     +L F KG +I ++ K D   DWW G +NG  G+FP+NYV++
+Sbjct: 1130 QVIAMYDYAANNEDELSFSKGQLINVMNKDDP--DWWQGEINGVTGLFPSNYVKM 1182
+
+
+
+ Score = 53.9 bits (128), Expect = 3e-07,   Method: Composition-based stats.
+ Identities = 23/52 (44%), Positives = 34/52 (65%), Gaps = 3/52 (5%)
+
+Query: 5    VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+            +ALY ++  E GDL F +G+ I + +K     +WWTG +  R GIFP+NYV+
+Sbjct: 986  IALYPYSSVEPGDLTFTEGEEILVTQKD---GEWWTGSIGDRSGIFPSNYVK 1034
+
+
+
+ Score = 48.1 bits (113), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 23/56 (41%), Positives = 36/56 (64%), Gaps = 3/56 (5%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           KA AL S+  ++   L F K D+IT+L++   Q +WW G V+G  G FP +YV+++
+Sbjct: 901 KAQALCSWTAKKDNHLNFSKHDIITVLEQ---QENWWFGEVHGGRGWFPKSYVKII 953
+
+
+
+ Score = 42.4 bits (98), Expect = 8e-04,   Method: Composition-based stats.
+ Identities = 19/51 (37%), Positives = 26/51 (50%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           ALY F      ++ F  GD+I + +K+  +  W  G   G  G FP NYVE
+Sbjct: 763 ALYPFEARNHDEMSFNSGDIIQVDEKTVGEPGWLYGSFQGNFGWFPCNYVE 813
+
+
+>sp|A1CEK6|HSE1_ASPCL Class E vacuolar protein-sorting machinery
+           protein hse1 OS=Aspergillus clavatus GN=hse1 PE=3 SV=1
+          Length = 599
+
+ Score = 57.0 bits (136), Expect = 3e-08,   Method: Composition-based stats.
+ Identities = 26/51 (50%), Positives = 33/51 (64%), Gaps = 2/51 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           AL+ F   E G+L FRKGD+I +L+      DWW G + G+ GIFP NYVE
+Sbjct: 222 ALFDFQPSEPGELQFRKGDIIAVLESV--YKDWWKGSLRGQTGIFPLNYVE 270
+
+
+>sp|A5D7F8|SH3R1_BOVIN Putative E3 ubiquitin-protein ligase SH3RF1
+           OS=Bos taurus GN=SH3RF1 PE=2 SV=1
+          Length = 840
+
+ Score = 57.0 bits (136), Expect = 3e-08,   Method: Composition-based stats.
+ Identities = 25/57 (43%), Positives = 38/57 (66%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P A ALY++ G+E GDL F KGD+I + ++ D   +W+ G V G  G FP N+V+++
+Sbjct: 137 PCAKALYNYEGKEPGDLKFSKGDIIVLRRQVDE--NWYHGEVGGVHGFFPTNFVQII 191
+
+
+>sp|Q9WVE9|ITSN1_RAT Intersectin-1 OS=Rattus norvegicus GN=Itsn1 PE=2
+            SV=1
+          Length = 1217
+
+ Score = 57.0 bits (136), Expect = 3e-08,   Method: Composition-based stats.
+ Identities = 26/53 (49%), Positives = 34/53 (64%), Gaps = 3/53 (5%)
+
+Query: 5    VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+            VA+Y++   E GDL F++G VI + KK     DWWTG V    G+FP+NYV L
+Sbjct: 1005 VAMYTYESSEHGDLTFQQGHVIVVTKKD---GDWWTGTVGETSGVFPSNYVRL 1054
+
+
+
+ Score = 54.7 bits (130), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 22/55 (40%), Positives = 35/55 (63%), Gaps = 2/55 (3%)
+
+Query: 3    KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+            + + +Y +  +   +L F KG +I +L K D   DWW G V+G+ G+FP+NYV+L
+Sbjct: 1156 QVIGMYDYTAQNDDELAFSKGQIINVLSKEDP--DWWKGEVSGQVGLFPSNYVKL 1208
+
+
+
+ Score = 49.7 bits (117), Expect = 5e-06,   Method: Composition-based stats.
+ Identities = 24/56 (42%), Positives = 36/56 (64%), Gaps = 3/56 (5%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           +A ALY +  ++   L F K DVIT+L++ D    WW G V G++G FP +YV+L+
+Sbjct: 914 QAQALYPWRAKKDNHLNFNKSDVITVLEQQDM---WWFGEVQGQKGWFPKSYVKLI 966
+
+
+>sp|Q4WHP5|HSE1_ASPFU Class E vacuolar protein-sorting machinery
+           protein hse1 OS=Aspergillus fumigatus GN=hse1 PE=3 SV=1
+          Length = 584
+
+ Score = 56.6 bits (135), Expect = 3e-08,   Method: Composition-based stats.
+ Identities = 26/51 (50%), Positives = 33/51 (64%), Gaps = 2/51 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           AL+ F   E G+L FRKGD+I +L+      DWW G + G+ GIFP NYVE
+Sbjct: 203 ALFDFQPSEPGELQFRKGDIIAVLESV--YKDWWKGSLRGQTGIFPLNYVE 251
+
+
+>sp|A1DFN5|HSE1_NEOFI Class E vacuolar protein-sorting machinery
+           protein hse1 OS=Neosartorya fischeri (strain ATCC 1020 /
+           DSM 3700 / FGSC A1164 / NRRL 181) GN=hse1 PE=3 SV=1
+          Length = 603
+
+ Score = 56.6 bits (135), Expect = 3e-08,   Method: Composition-based stats.
+ Identities = 26/51 (50%), Positives = 33/51 (64%), Gaps = 2/51 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           AL+ F   E G+L FRKGD+I +L+      DWW G + G+ GIFP NYVE
+Sbjct: 222 ALFDFQPSEPGELQFRKGDIIAVLESV--YKDWWKGSLRGQTGIFPLNYVE 270
+
+
+>sp|Q8I1C0|SH3G3_DROPS Endophilin-A OS=Drosophila pseudoobscura
+           pseudoobscura GN=endoA PE=3 SV=1
+          Length = 369
+
+ Score = 56.6 bits (135), Expect = 4e-08,   Method: Composition-based stats.
+ Identities = 25/56 (44%), Positives = 37/56 (66%), Gaps = 2/56 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+           P   ALY F  E  G+L F++ D+IT+L + D  ++W+ G VNGR G FP +YV++
+Sbjct: 308 PCCQALYDFDPENPGELGFKENDIITLLNRVD--DNWYEGAVNGRTGYFPQSYVQV 361
+
+
+>sp|Q8AXV0|SH3G1_CHICK Endophilin-A2 OS=Gallus gallus GN=SH3GL1 PE=1
+           SV=1
+          Length = 367
+
+ Score = 56.6 bits (135), Expect = 4e-08,   Method: Composition-based stats.
+ Identities = 25/57 (43%), Positives = 37/57 (64%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P   ALY F  E  G+L F++GD+IT+  + D   +W+ G +NG+ G FP NYVE++
+Sbjct: 308 PCCKALYDFEPENDGELGFKEGDIITLTNQIDE--NWYEGMINGQSGFFPLNYVEVL 362
+
+
+>sp|Q8I190|SH3G3_DROVI Endophilin-A OS=Drosophila virilis GN=endoA
+           PE=3 SV=1
+          Length = 369
+
+ Score = 56.6 bits (135), Expect = 4e-08,   Method: Composition-based stats.
+ Identities = 25/56 (44%), Positives = 37/56 (66%), Gaps = 2/56 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+           P   ALY F  E  G+L F++ D+IT+L + D  ++W+ G VNGR G FP +YV++
+Sbjct: 308 PCCQALYDFDPENPGELGFKENDIITLLNRVD--DNWYEGAVNGRTGYFPQSYVQV 361
+
+
+>sp|O00160|MYO1F_HUMAN Myosin-If OS=Homo sapiens GN=MYO1F PE=1 SV=2
+          Length = 1098
+
+ Score = 56.2 bits (134), Expect = 4e-08,   Method: Composition-based stats.
+ Identities = 25/57 (43%), Positives = 37/57 (64%), Gaps = 2/57 (3%)
+
+Query: 2    PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+            P+  ALY + G++  +L F   +VI IL +  S   WW GR++G+EG+FP NYVE +
+Sbjct: 1044 PRCRALYQYVGQDVDELSFNVNEVIEILMEDPS--GWWKGRLHGQEGLFPGNYVEKI 1098
+
+
+>sp|Q8AXU9|SH3G3_CHICK Endophilin-A3 OS=Gallus gallus GN=SH3GL3 PE=1
+           SV=1
+          Length = 353
+
+ Score = 56.2 bits (134), Expect = 4e-08,   Method: Composition-based stats.
+ Identities = 25/57 (43%), Positives = 36/57 (63%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P   ALY F  E  G+L F++GD+IT+  + D   +W+ G +NG  G FP NYVE++
+Sbjct: 294 PCCQALYDFEPENEGELGFKEGDIITLTNQIDE--NWYEGMLNGESGFFPHNYVEVM 348
+
+
+>sp|A5D8S5|SH3R1_DANRE Putative E3 ubiquitin-protein ligase SH3RF1
+           OS=Danio rerio GN=sh3rf1 PE=2 SV=2
+          Length = 867
+
+ Score = 56.2 bits (134), Expect = 5e-08,   Method: Composition-based stats.
+ Identities = 24/57 (42%), Positives = 38/57 (66%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P A ALY++ G+E GDL F KGD+I + ++ D   +W+ G + G  G FP N+V+++
+Sbjct: 135 PCAKALYNYDGKEPGDLKFSKGDIIILRRQVDE--NWYHGEMGGVHGFFPTNFVQVI 189
+
+
+>sp|P70248|MYO1F_MOUSE Myosin-If OS=Mus musculus GN=Myo1f PE=1 SV=1
+          Length = 1099
+
+ Score = 56.2 bits (134), Expect = 5e-08,   Method: Composition-based stats.
+ Identities = 25/57 (43%), Positives = 37/57 (64%), Gaps = 2/57 (3%)
+
+Query: 2    PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+            P+  ALY + G++  +L F   +VI IL +  S   WW GR++G+EG+FP NYVE +
+Sbjct: 1045 PRCRALYQYIGQDVDELSFNVNEVIEILIEDSS--GWWKGRLHGQEGLFPGNYVEKI 1099
+
+
+>sp|Q5HYK7|SH319_HUMAN SH3 domain-containing protein 19 OS=Homo
+           sapiens GN=SH3D19 PE=1 SV=2
+          Length = 790
+
+ Score = 56.2 bits (134), Expect = 5e-08,   Method: Composition-based stats.
+ Identities = 26/56 (46%), Positives = 37/56 (66%), Gaps = 2/56 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           KA ALY F GE   +L F+ GD+IT L+  D  +DW +G + G+ GIFP NY++ +
+Sbjct: 734 KAKALYDFRGENEDELSFKAGDIITELESVD--DDWMSGELMGKSGIFPKNYIQFL 787
+
+
+
+ Score = 55.1 bits (131), Expect = 1e-07,   Method: Composition-based stats.
+ Identities = 28/50 (56%), Positives = 35/50 (70%), Gaps = 2/50 (4%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           AL+SF  E S DL F++GD I IL++ DS  DW  GR+  REGIFPA +V
+Sbjct: 668 ALHSFTAETSDDLSFKRGDRIQILERLDS--DWCRGRLQDREGIFPAVFV 715
+
+
+
+ Score = 50.4 bits (119), Expect = 3e-06,   Method: Composition-based stats.
+ Identities = 23/58 (39%), Positives = 37/58 (63%), Gaps = 2/58 (3%)
+
+Query: 1   SPKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           +P AV L+ F  E+  DL    G+++ +L+K D+  DW+ G    + GIFPANYV+++
+Sbjct: 497 APHAVVLHDFPAEQVDDLNLTSGEIVYLLEKIDT--DWYRGNCRNQIGIFPANYVKVI 552
+
+
+
+ Score = 44.7 bits (104), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 22/56 (39%), Positives = 33/56 (58%), Gaps = 2/56 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           + VA + + GE+  +L F +G++I +  K     +W  G V GR GIFP N+VE V
+Sbjct: 575 RCVARFEYIGEQKDELSFSEGEIIIL--KEYVNEEWARGEVRGRTGIFPLNFVEPV 628
+
+
+>sp|Q60992|VAV2_MOUSE Guanine nucleotide exchange factor VAV2 OS=Mus
+           musculus GN=Vav2 PE=2 SV=1
+          Length = 868
+
+ Score = 56.2 bits (134), Expect = 5e-08,   Method: Composition-based stats.
+ Identities = 24/53 (45%), Positives = 31/53 (58%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           AVA Y+FA  +  +L  R+GDV+ I  +      WW G  NGR G FP+ YVE
+Sbjct: 811 AVARYNFAARDMRELSLREGDVVKIYSRIGGDQGWWKGETNGRIGWFPSTYVE 863
+
+
+>sp|Q5KFQ8|HSE1_CRYNE Class E vacuolar protein-sorting machinery
+           protein HSE1 OS=Cryptococcus neoformans GN=HSE1 PE=3
+           SV=1
+          Length = 660
+
+ Score = 55.8 bits (133), Expect = 6e-08,   Method: Composition-based stats.
+ Identities = 25/51 (49%), Positives = 33/51 (64%), Gaps = 2/51 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           A+Y F G+E G+L F +GDVI +L +   +  WW G  NG+ GIFP  YVE
+Sbjct: 264 AIYPFTGQEVGELDFERGDVIKVLDRGFKE--WWRGACNGKIGIFPVTYVE 312
+
+
+>sp|P52735|VAV2_HUMAN Guanine nucleotide exchange factor VAV2
+           OS=Homo sapiens GN=VAV2 PE=1 SV=2
+          Length = 878
+
+ Score = 55.8 bits (133), Expect = 6e-08,   Method: Composition-based stats.
+ Identities = 24/53 (45%), Positives = 31/53 (58%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           AVA Y+FA  +  +L  R+GDV+ I  +      WW G  NGR G FP+ YVE
+Sbjct: 821 AVARYNFAARDMRELSLREGDVVRIYSRIGGDQGWWKGETNGRIGWFPSTYVE 873
+
+
+>sp|Q9UKW4|VAV3_HUMAN Guanine nucleotide exchange factor VAV3
+           OS=Homo sapiens GN=VAV3 PE=1 SV=1
+          Length = 847
+
+ Score = 55.8 bits (133), Expect = 6e-08,   Method: Composition-based stats.
+ Identities = 29/60 (48%), Positives = 34/60 (56%), Gaps = 5/60 (8%)
+
+Query: 1   SPK----AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           SPK    A+A Y F   +  +L   KGDV+ I  K  S N WW G VNGR G FP+ YVE
+Sbjct: 786 SPKVLGIAIARYDFCARDMRELSLLKGDVVKIYTKM-SANGWWRGEVNGRVGWFPSTYVE 844
+
+
+>sp|Q8I1I3|SH3G3_DROER Endophilin-A OS=Drosophila erecta GN=endoA
+           PE=3 SV=1
+          Length = 369
+
+ Score = 55.8 bits (133), Expect = 7e-08,   Method: Composition-based stats.
+ Identities = 24/52 (46%), Positives = 36/52 (69%), Gaps = 2/52 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+           ALY F  E  G+L F++ D+IT+L + D  ++W+ G VNGR G FP +YV++
+Sbjct: 312 ALYDFEPENPGELAFKENDIITLLNRVD--DNWFEGAVNGRTGYFPQSYVQV 361
+
+
+>sp|Q8T390|SH3G3_DROME Endophilin-A OS=Drosophila melanogaster
+           GN=endoA PE=1 SV=1
+          Length = 369
+
+ Score = 55.8 bits (133), Expect = 7e-08,   Method: Composition-based stats.
+ Identities = 24/52 (46%), Positives = 36/52 (69%), Gaps = 2/52 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+           ALY F  E  G+L F++ D+IT+L + D  ++W+ G VNGR G FP +YV++
+Sbjct: 312 ALYDFEPENPGELAFKENDIITLLNRVD--DNWFEGAVNGRTGYFPQSYVQV 361
+
+
+>sp|Q8I1A6|SH3G3_DROWI Endophilin-A OS=Drosophila willistoni
+           GN=endoA PE=3 SV=1
+          Length = 366
+
+ Score = 55.8 bits (133), Expect = 7e-08,   Method: Composition-based stats.
+ Identities = 24/52 (46%), Positives = 36/52 (69%), Gaps = 2/52 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+           ALY F  E  G+L F++ D+IT+L + D  ++W+ G VNGR G FP +YV++
+Sbjct: 312 ALYDFDPENPGELGFKENDIITLLNRVD--DNWYEGSVNGRTGYFPQSYVQV 361
+
+
+>sp|Q6C2N2|HSE1_YARLI Class E vacuolar protein-sorting machinery
+           protein HSE1 OS=Yarrowia lipolytica GN=HSE1 PE=3 SV=1
+          Length = 685
+
+ Score = 55.5 bits (132), Expect = 8e-08,   Method: Composition-based stats.
+ Identities = 26/50 (52%), Positives = 32/50 (64%), Gaps = 2/50 (4%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           ALY     E G+L FRKGD+IT+L+      DWW G + G+ GIFP NYV
+Sbjct: 257 ALYDLNATEPGELSFRKGDIITVLESV--FRDWWRGSLRGQVGIFPLNYV 304
+
+
+>sp|P38753|HSE1_YEAST Class E vacuolar protein-sorting machinery
+           protein HSE1 OS=Saccharomyces cerevisiae GN=HSE1 PE=1
+           SV=1
+          Length = 452
+
+ Score = 55.5 bits (132), Expect = 8e-08,   Method: Composition-based stats.
+ Identities = 26/50 (52%), Positives = 31/50 (62%), Gaps = 2/50 (4%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           ALY     E  +L FRKGDVIT+L++     DWW G + G  GIFP NYV
+Sbjct: 224 ALYDLTTNEPDELSFRKGDVITVLEQV--YRDWWKGALRGNMGIFPLNYV 271
+
+
+>sp|Q498M5|SH3R2_RAT Putative E3 ubiquitin-protein ligase SH3RF2
+           OS=Rattus norvegicus GN=Sh3rf2 PE=2 SV=1
+          Length = 735
+
+ Score = 55.5 bits (132), Expect = 9e-08,   Method: Composition-based stats.
+ Identities = 25/57 (43%), Positives = 38/57 (66%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P+A AL ++ G+  GDL F KGDVI + ++ D   +W+ G +NG  G FPA+ VE++
+Sbjct: 128 PRAKALCNYRGKNPGDLKFNKGDVILLQRQLDE--NWYQGEINGVSGFFPASSVEVI 182
+
+
+>sp|P15498|VAV_HUMAN Proto-oncogene vav OS=Homo sapiens GN=VAV1 PE=1
+           SV=4
+          Length = 845
+
+ Score = 55.1 bits (131), Expect = 1e-07,   Method: Composition-based stats.
+ Identities = 25/53 (47%), Positives = 31/53 (58%), Gaps = 1/53 (1%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           A A Y F   +  +L  ++GD+I IL K   Q  WW G + GR G FPANYVE
+Sbjct: 787 AKARYDFCARDRSELSLKEGDIIKILNKK-GQQGWWRGEIYGRVGWFPANYVE 838
+
+
+>sp|Q62420|SH3G2_MOUSE Endophilin-A1 OS=Mus musculus GN=Sh3gl2 PE=1
+           SV=2
+          Length = 352
+
+ Score = 55.1 bits (131), Expect = 1e-07,   Method: Composition-based stats.
+ Identities = 24/57 (42%), Positives = 37/57 (64%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P   ALY F  E  G+L F++GD+IT+  + D   +W+ G ++G+ G FP NYVE++
+Sbjct: 293 PCCRALYDFEPENEGELGFKEGDIITLTNQIDE--NWYEGMLHGQSGFFPINYVEIL 347
+
+
+>sp|O35179|SH3G2_RAT Endophilin-A1 OS=Rattus norvegicus GN=Sh3gl2
+           PE=1 SV=2
+          Length = 352
+
+ Score = 55.1 bits (131), Expect = 1e-07,   Method: Composition-based stats.
+ Identities = 24/57 (42%), Positives = 37/57 (64%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P   ALY F  E  G+L F++GD+IT+  + D   +W+ G ++G+ G FP NYVE++
+Sbjct: 293 PCCRALYDFEPENEGELGFKEGDIITLTNQIDE--NWYEGMLHGQSGFFPINYVEIL 347
+
+
+>sp|Q9Z0R6|ITSN2_MOUSE Intersectin-2 OS=Mus musculus GN=Itsn2 PE=1
+           SV=1
+          Length = 1658
+
+ Score = 54.7 bits (130), Expect = 1e-07,   Method: Composition-based stats.
+ Identities = 24/51 (47%), Positives = 34/51 (66%), Gaps = 3/51 (5%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           +ALYS++  E GDL F +G+ I + +K     +WWTG +  R GIFP+NYV
+Sbjct: 947 IALYSYSSVEPGDLTFTEGEEILVTQKD---GEWWTGSIGERTGIFPSNYV 994
+
+
+
+ Score = 53.9 bits (128), Expect = 3e-07,   Method: Composition-based stats.
+ Identities = 21/55 (38%), Positives = 33/55 (60%), Gaps = 2/55 (3%)
+
+Query: 3    KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+            + +A+Y +      +L F KG +I ++ K D   DWW G  NG  G+FP+NYV++
+Sbjct: 1091 QVIAMYDYMANNEDELNFSKGQLINVMNKDDP--DWWQGETNGLTGLFPSNYVKM 1143
+
+
+
+ Score = 50.1 bits (118), Expect = 4e-06,   Method: Composition-based stats.
+ Identities = 25/56 (44%), Positives = 36/56 (64%), Gaps = 3/56 (5%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           KA AL S+  ++   L F K DVIT+L++   Q +WW G V+G  G FP +YV+L+
+Sbjct: 855 KAQALCSWTAKKENHLNFSKHDVITVLEQ---QENWWFGEVHGGRGWFPKSYVKLI 907
+
+
+
+ Score = 43.9 bits (102), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 20/53 (37%), Positives = 28/53 (52%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           ALY F      ++ F  GD+I + +K+  +  W  G   G+ G FP NYVE V
+Sbjct: 724 ALYPFEARNHDEMSFSSGDIIQVDEKTVGEPGWLYGSFQGKFGWFPCNYVEKV 776
+
+
+>sp|Q63356|MYO1E_RAT Myosin-Ie OS=Rattus norvegicus GN=Myo1e PE=2 SV=1
+          Length = 1107
+
+ Score = 54.7 bits (130), Expect = 1e-07,   Method: Composition-based stats.
+ Identities = 23/50 (46%), Positives = 35/50 (70%), Gaps = 2/50 (4%)
+
+Query: 6    ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+            ALY++  +++ +L F   DVI I+K+  S   WWTGR+ G++G+FP NYV
+Sbjct: 1057 ALYAYDAQDTDELSFNANDVIDIIKEDPS--GWWTGRLRGKQGLFPNNYV 1104
+
+
+>sp|Q6FN49|HSE1_CANGA Class E vacuolar protein-sorting machinery
+           protein HSE1 OS=Candida glabrata GN=HSE1 PE=3 SV=1
+          Length = 450
+
+ Score = 54.7 bits (130), Expect = 1e-07,   Method: Composition-based stats.
+ Identities = 25/50 (50%), Positives = 32/50 (64%), Gaps = 2/50 (4%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           ALY     E  +L FRKGDVI +L++     DWW G ++G+ GIFP NYV
+Sbjct: 219 ALYDLNANEQDELSFRKGDVIVVLEQV--YRDWWRGSLHGKIGIFPLNYV 266
+
+
+>sp|Q6ZMT1|STAC2_HUMAN SH3 and cysteine-rich domain-containing
+           protein 2 OS=Homo sapiens GN=STAC2 PE=2 SV=1
+          Length = 411
+
+ Score = 54.7 bits (130), Expect = 1e-07,   Method: Composition-based stats.
+ Identities = 25/54 (46%), Positives = 34/54 (62%), Gaps = 2/54 (3%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           VALY F  +E+ DL  + GD I ++   DS  DWW G++  R G FPAN+V+ V
+Sbjct: 298 VALYKFLPQENNDLALQPGDRIMLV--DDSNEDWWKGKIGDRVGFFPANFVQRV 349
+
+
+>sp|Q8R1B0|STAC2_MOUSE SH3 and cysteine-rich domain-containing
+           protein 2 OS=Mus musculus GN=Stac2 PE=2 SV=1
+          Length = 408
+
+ Score = 54.7 bits (130), Expect = 1e-07,   Method: Composition-based stats.
+ Identities = 25/54 (46%), Positives = 34/54 (62%), Gaps = 2/54 (3%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           VALY F  +E+ DL  + GD I ++   DS  DWW G++  R G FPAN+V+ V
+Sbjct: 295 VALYKFLPQENNDLALQPGDRIMLV--DDSNEDWWKGKIGDRVGFFPANFVQRV 346
+
+
+>sp|Q99962|SH3G2_HUMAN Endophilin-A1 OS=Homo sapiens GN=SH3GL2 PE=1
+           SV=1
+          Length = 352
+
+ Score = 54.7 bits (130), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 24/57 (42%), Positives = 36/57 (63%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P   ALY F  E  G+L F++GD+IT+  + D   +W+ G ++G  G FP NYVE++
+Sbjct: 293 PCCRALYDFEPENEGELGFKEGDIITLTNQIDE--NWYEGMLHGHSGFFPINYVEIL 347
+
+
+>sp|Q9R0C8|VAV3_MOUSE Guanine nucleotide exchange factor VAV3 OS=Mus
+           musculus GN=Vav3 PE=1 SV=2
+          Length = 847
+
+ Score = 54.3 bits (129), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 28/60 (46%), Positives = 34/60 (56%), Gaps = 5/60 (8%)
+
+Query: 1   SPK----AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           SPK    A+A Y F   +  +L   KGD++ I  K  S N WW G VNGR G FP+ YVE
+Sbjct: 786 SPKVLGIAIARYDFCARDMRELSLLKGDMVKIYTKM-SANGWWRGEVNGRVGWFPSTYVE 844
+
+
+>sp|Q12965|MYO1E_HUMAN Myosin-Ie OS=Homo sapiens GN=MYO1E PE=1 SV=2
+          Length = 1108
+
+ Score = 54.3 bits (129), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 22/50 (44%), Positives = 35/50 (70%), Gaps = 2/50 (4%)
+
+Query: 6    ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+            ALY++  +++ +L F   D+I I+K+  S   WWTGR+ G++G+FP NYV
+Sbjct: 1058 ALYAYDAQDTDELSFNANDIIDIIKEDPS--GWWTGRLRGKQGLFPNNYV 1105
+
+
+>sp|Q4P5J4|HSE1_USTMA Class E vacuolar protein-sorting machinery
+           protein HSE1 OS=Ustilago maydis GN=HSE1 PE=3 SV=1
+          Length = 593
+
+ Score = 54.3 bits (129), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 28/63 (44%), Positives = 36/63 (57%), Gaps = 7/63 (11%)
+
+Query: 1   SPKAVA-----LYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           +P AVA     LY F+  E G+L F +G+VI +L        WW G V G  GIFP NYV
+Sbjct: 249 TPPAVASRVRALYDFSPTEPGELAFSRGEVIRVL--DSVYEHWWRGEVRGEAGIFPVNYV 306
+
+Query: 56  ELV 58
+           E++
+Sbjct: 307 EVL 309
+
+
+>sp|O01498|STAM1_CAEEL Signal transducing adapter molecule 1
+           OS=Caenorhabditis elegans GN=stam-1 PE=1 SV=2
+          Length = 457
+
+ Score = 54.3 bits (129), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 23/50 (46%), Positives = 34/50 (68%), Gaps = 2/50 (4%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           ALY F   ES +L F  GD+ITI  +S+    WWTGR+  ++G+FP+++V
+Sbjct: 226 ALYDFEAAESNELSFVAGDIITITDESNPH--WWTGRIGTQQGLFPSSFV 273
+
+
+>sp|Q0U6X7|HSE1_PHANO Class E vacuolar protein-sorting machinery
+           protein HSE1 OS=Phaeosphaeria nodorum GN=HSE1 PE=3 SV=1
+          Length = 618
+
+ Score = 54.3 bits (129), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 25/51 (49%), Positives = 32/51 (62%), Gaps = 2/51 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           AL+ F   E G+L F+KGD+I +L+      DWW G + G  GIFP NYVE
+Sbjct: 223 ALFDFQPSEPGELQFKKGDIIAVLESV--YKDWWKGSLRGNTGIFPLNYVE 271
+
+
+>sp|O89100|GRAP2_MOUSE GRB2-related adaptor protein 2 OS=Mus
+           musculus GN=Grap2 PE=1 SV=1
+          Length = 322
+
+ Score = 54.3 bits (129), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 25/52 (48%), Positives = 34/52 (65%), Gaps = 2/52 (3%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           A ALY F   E  +L FR G+V+ +L  S+    WWTGR++ + G+FPANYV
+Sbjct: 268 ARALYDFEALEEDELGFRSGEVVEVLDSSNPS--WWTGRLHNKLGLFPANYV 317
+
+
+>sp|A6QLK6|GRAP_BOVIN GRB2-related adapter protein OS=Bos taurus
+          GN=GRAP PE=2 SV=1
+          Length = 217
+
+ Score = 53.9 bits (128), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 26/55 (47%), Positives = 33/55 (60%), Gaps = 1/55 (1%)
+
+Query: 3  KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+          ++VALYSF   ES +L F KGD + IL   D QN W+   + G EG  P NY+ L
+Sbjct: 2  ESVALYSFQATESDELAFNKGDTLKILNMEDDQN-WYKAELRGAEGFVPKNYIRL 55
+
+
+
+ Score = 52.0 bits (123), Expect = 9e-07,   Method: Composition-based stats.
+ Identities = 23/55 (41%), Positives = 36/55 (65%), Gaps = 2/55 (3%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           A A + F+ ++   L FR+GD+I +L++ D    WW GR++GR G FP +YV+ V
+Sbjct: 163 AQAQFDFSAQDPSQLSFRRGDIIEVLERLDPS--WWRGRLSGRIGFFPRSYVQPV 215
+
+
+>sp|Q99963|SH3G3_HUMAN Endophilin-A3 OS=Homo sapiens GN=SH3GL3 PE=1
+           SV=1
+          Length = 347
+
+ Score = 53.9 bits (128), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 23/57 (40%), Positives = 35/57 (61%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P    LY F  E  G+L F++GD+IT+  + D   +W+ G ++G  G FP NYVE++
+Sbjct: 288 PCCRGLYDFEPENQGELGFKEGDIITLTNQIDE--NWYEGMIHGESGFFPINYVEVI 342
+
+
+>sp|P54100|VAV_RAT Proto-oncogene vav OS=Rattus norvegicus GN=Vav1
+           PE=2 SV=1
+          Length = 843
+
+ Score = 53.9 bits (128), Expect = 3e-07,   Method: Composition-based stats.
+ Identities = 24/53 (45%), Positives = 31/53 (58%), Gaps = 1/53 (1%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           A A Y F   +  +L  ++GD+I IL K   Q  WW G + GR G FP+NYVE
+Sbjct: 785 AKARYDFCARDRSELSLKEGDIIKILNKK-GQQGWWRGEIYGRIGWFPSNYVE 836
+
+
+>sp|P27870|VAV_MOUSE Proto-oncogene vav OS=Mus musculus GN=Vav1 PE=1
+           SV=1
+          Length = 845
+
+ Score = 53.9 bits (128), Expect = 3e-07,   Method: Composition-based stats.
+ Identities = 24/53 (45%), Positives = 31/53 (58%), Gaps = 1/53 (1%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           A A Y F   +  +L  ++GD+I IL K   Q  WW G + GR G FP+NYVE
+Sbjct: 787 AKARYDFCARDRSELSLKEGDIIKILNKK-GQQGWWRGEIYGRIGWFPSNYVE 838
+
+
+>sp|Q6BNP6|HSE1_DEBHA Class E vacuolar protein-sorting machinery
+           protein HSE1 OS=Debaryomyces hansenii GN=HSE1 PE=3 SV=2
+          Length = 512
+
+ Score = 53.5 bits (127), Expect = 3e-07,   Method: Composition-based stats.
+ Identities = 28/57 (49%), Positives = 34/57 (59%), Gaps = 3/57 (5%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR-VNGREGIFPANYVELV 58
+           K  ALY     E  +L FRKGD+IT+++      DWW G  VNG+ GIFP NYV  V
+Sbjct: 259 KVRALYDLISYEPDELSFRKGDIITVIES--VYRDWWRGSLVNGKTGIFPLNYVTPV 313
+
+
+>sp|Q8TEC5|SH3R2_HUMAN Putative E3 ubiquitin-protein ligase SH3RF2
+           OS=Homo sapiens GN=SH3RF2 PE=2 SV=2
+          Length = 729
+
+ Score = 53.5 bits (127), Expect = 3e-07,   Method: Composition-based stats.
+ Identities = 24/57 (42%), Positives = 38/57 (66%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P+A AL ++ G+  GDL F KGD+I + ++ D   +W+ G +NG  G FPA+ VE++
+Sbjct: 128 PRAKALCNYRGQNPGDLRFNKGDIILLRRQLDE--NWYQGEINGISGNFPASSVEVI 182
+
+
+>sp|Q8AXV1|SH3G2_CHICK Endophilin-A1 OS=Gallus gallus GN=SH3GL2 PE=1
+           SV=1
+          Length = 353
+
+ Score = 53.5 bits (127), Expect = 3e-07,   Method: Composition-based stats.
+ Identities = 23/57 (40%), Positives = 37/57 (64%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P   ALY F  E  G+L F++GD+IT+  + D   +W+ G ++G+ G FP NYV+++
+Sbjct: 294 PCCRALYDFEPENEGELGFKEGDIITLTNQIDE--NWYEGMLHGQSGFFPINYVDIL 348
+
+
+>sp|Q2KJB5|NOSTN_BOVIN Nostrin OS=Bos taurus GN=NOSTRIN PE=1 SV=1
+          Length = 505
+
+ Score = 53.5 bits (127), Expect = 3e-07,   Method: Composition-based stats.
+ Identities = 24/51 (47%), Positives = 31/51 (60%), Gaps = 2/51 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           ALY F   +  +L   KGD++TI KK D    WW G + G++G FPA YVE
+Sbjct: 444 ALYPFQARQDDELDLEKGDIVTIHKKKDE--GWWFGSLKGKKGHFPAAYVE 492
+
+
+>sp|Q5I0D6|NOSTN_RAT Nostrin OS=Rattus norvegicus GN=Nostrin PE=2
+           SV=1
+          Length = 502
+
+ Score = 53.5 bits (127), Expect = 3e-07,   Method: Composition-based stats.
+ Identities = 23/51 (45%), Positives = 33/51 (64%), Gaps = 2/51 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           ALY+F   +  +L   KGD++TI +K   +  WW G +NG++G FPA YVE
+Sbjct: 445 ALYTFQARQDDELNLEKGDIVTIHEKK--EEGWWFGSLNGKKGHFPAAYVE 493
+
+
+>sp|Q9CX99|GRAP_MOUSE GRB2-related adapter protein OS=Mus musculus
+          GN=Grap PE=2 SV=1
+          Length = 217
+
+ Score = 53.5 bits (127), Expect = 3e-07,   Method: Composition-based stats.
+ Identities = 25/55 (45%), Positives = 33/55 (60%), Gaps = 1/55 (1%)
+
+Query: 3  KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+          ++VALYSF   ES +L F KGD + IL   D QN W+   + G EG  P NY+ +
+Sbjct: 2  ESVALYSFQATESDELAFNKGDTLKILNMEDDQN-WYKAELRGAEGFVPKNYIRV 55
+
+
+
+ Score = 48.9 bits (115), Expect = 8e-06,   Method: Composition-based stats.
+ Identities = 20/55 (36%), Positives = 33/55 (60%), Gaps = 2/55 (3%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           A A + F+ ++   L  R+GD++ ++++ D    WW GR  GR G FP +YV+ V
+Sbjct: 163 AQAQFDFSAQDPSQLSLRRGDIVEVVEREDPH--WWRGRAGGRLGFFPRSYVQPV 215
+
+
+>sp|Q07883|GRB2_CHICK Growth factor receptor-bound protein 2
+           OS=Gallus gallus GN=GRB2 PE=1 SV=1
+          Length = 217
+
+ Score = 53.1 bits (126), Expect = 4e-07,   Method: Composition-based stats.
+ Identities = 25/53 (47%), Positives = 34/53 (64%), Gaps = 2/53 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           AL+ F  +E G+L FR+GD I +L  SD   +WW G  +G+ G+FP NYV  V
+Sbjct: 163 ALFDFDPQEEGELGFRRGDFIQVLDNSDP--NWWKGACHGQTGMFPRNYVTPV 213
+
+
+
+ Score = 46.6 bits (109), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 19/55 (34%), Positives = 33/55 (60%), Gaps = 1/55 (1%)
+
+Query: 3  KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+          +A+A Y F      +L F++GD++ +L +   QN W+   +NG+ G  P NY+E+
+Sbjct: 2  EAIAKYDFKATADDELSFKRGDILKVLNEECDQN-WYKAELNGKGGFIPKNYIEM 55
+
+
+>sp|Q8TC17|YQ012_HUMAN Putative GRB2-related adapter protein
+          LOC400581 OS=Homo sapiens PE=2 SV=2
+          Length = 116
+
+ Score = 53.1 bits (126), Expect = 4e-07,   Method: Composition-based stats.
+ Identities = 25/55 (45%), Positives = 33/55 (60%), Gaps = 1/55 (1%)
+
+Query: 3  KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+          ++VALYSF   ES +L F KGD + IL   D QN W+   + G EG  P NY+ +
+Sbjct: 2  ESVALYSFQATESDELAFNKGDTLKILNMEDDQN-WYKAELRGVEGFIPKNYIRV 55
+
+
+>sp|Q7Z8J6|MYO1_USTMA Myosin-1 OS=Ustilago maydis GN=myo1 PE=3 SV=1
+          Length = 1282
+
+ Score = 53.1 bits (126), Expect = 4e-07,   Method: Composition-based stats.
+ Identities = 22/53 (41%), Positives = 35/53 (66%)
+
+Query: 6    ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+            ALY FA E +G++   K DV+ + +K ++ + WW  + NG EG  P+NY+EL+
+Sbjct: 1081 ALYVFATENAGEMALDKDDVVEVTQKDETGSGWWLVKKNGVEGWAPSNYLELI 1133
+
+
+>sp|Q13588|GRAP_HUMAN GRB2-related adapter protein OS=Homo sapiens
+          GN=GRAP PE=1 SV=1
+          Length = 217
+
+ Score = 53.1 bits (126), Expect = 4e-07,   Method: Composition-based stats.
+ Identities = 25/55 (45%), Positives = 33/55 (60%), Gaps = 1/55 (1%)
+
+Query: 3  KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+          ++VALYSF   ES +L F KGD + IL   D QN W+   + G EG  P NY+ +
+Sbjct: 2  ESVALYSFQATESDELAFNKGDTLKILNMEDDQN-WYKAELRGVEGFIPKNYIRV 55
+
+
+
+ Score = 51.2 bits (121), Expect = 1e-06,   Method: Composition-based stats.
+ Identities = 23/55 (41%), Positives = 34/55 (61%), Gaps = 2/55 (3%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           A A + F+ ++   L FR+GD+I +L++ D    WW GR  GR G FP +YV+ V
+Sbjct: 163 AQAQFDFSAQDPSQLSFRRGDIIEVLERPDPH--WWRGRSCGRVGFFPRSYVQPV 215
+
+
+>sp|Q08DN7|VAV_BOVIN Proto-oncogene vav OS=Bos taurus GN=VAV1 PE=2
+           SV=1
+          Length = 844
+
+ Score = 53.1 bits (126), Expect = 4e-07,   Method: Composition-based stats.
+ Identities = 23/53 (43%), Positives = 31/53 (58%), Gaps = 1/53 (1%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           A A Y F   +  +L  ++GD++ IL K   Q  WW G + GR G FP+NYVE
+Sbjct: 786 AKARYDFCARDRSELSLKEGDIVKILNKK-GQQGWWRGEIYGRIGWFPSNYVE 837
+
+
+>sp|A8PWF6|MYO1_MALGO Myosin-1 OS=Malassezia globosa (strain ATCC
+            96807 / CBS 7966) GN=MYO1 PE=3 SV=2
+          Length = 1322
+
+ Score = 53.1 bits (126), Expect = 4e-07,   Method: Composition-based stats.
+ Identities = 23/57 (40%), Positives = 36/57 (63%), Gaps = 2/57 (3%)
+
+Query: 2    PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+            P+  ALY F  +E+G+LP R GD++ + +K   +N WW  +    EG  PA+Y+EL+
+Sbjct: 1187 PRYRALYDFETQEAGELPLRTGDIVELEEK--EENGWWLVKKGSTEGWSPADYLELI 1241
+
+
+>sp|Q99961|SH3G1_HUMAN Endophilin-A2 OS=Homo sapiens GN=SH3GL1 PE=1
+           SV=1
+          Length = 368
+
+ Score = 52.8 bits (125), Expect = 6e-07,   Method: Composition-based stats.
+ Identities = 24/57 (42%), Positives = 36/57 (63%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P   ALY F  E  G+L F +GDVIT+  + D   +W+ G ++G+ G FP +YVE++
+Sbjct: 309 PSCKALYDFEPENDGELGFHEGDVITLTNQIDE--NWYEGMLDGQSGFFPLSYVEVL 363
+
+
+>sp|O35180|SH3G3_RAT Endophilin-A3 OS=Rattus norvegicus GN=Sh3gl3
+           PE=1 SV=2
+          Length = 347
+
+ Score = 52.4 bits (124), Expect = 7e-07,   Method: Composition-based stats.
+ Identities = 23/57 (40%), Positives = 34/57 (59%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P    LY F  E  G+L F++GD+IT+  + D   +W+ G + G  G FP NYVE++
+Sbjct: 288 PCCRGLYDFEPENEGELGFKEGDIITLTNQIDE--NWYEGMLRGESGFFPINYVEVI 342
+
+
+>sp|Q62419|SH3G1_MOUSE Endophilin-A2 OS=Mus musculus GN=Sh3gl1 PE=1
+           SV=1
+          Length = 368
+
+ Score = 52.4 bits (124), Expect = 7e-07,   Method: Composition-based stats.
+ Identities = 23/57 (40%), Positives = 37/57 (64%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P   ALY F  E  G+L FR+GD+IT+  + D   +W+ G ++G+ G FP +YV+++
+Sbjct: 309 PSCKALYDFEPENDGELGFREGDLITLTNQIDE--NWYEGMLHGQSGFFPLSYVQVL 363
+
+
+>sp|O35964|SH3G1_RAT Endophilin-A2 OS=Rattus norvegicus GN=Sh3gl1
+           PE=1 SV=1
+          Length = 368
+
+ Score = 52.4 bits (124), Expect = 7e-07,   Method: Composition-based stats.
+ Identities = 23/57 (40%), Positives = 37/57 (64%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P   ALY F  E  G+L FR+GD+IT+  + D   +W+ G ++G+ G FP +YV+++
+Sbjct: 309 PSCKALYDFEPENDGELGFREGDLITLTNQIDE--NWYEGMLHGQSGFFPLSYVQVL 363
+
+
+>sp|Q2KJA1|SH3G1_BOVIN Endophilin-A2 OS=Bos taurus GN=SH3GL1 PE=2
+           SV=1
+          Length = 368
+
+ Score = 52.4 bits (124), Expect = 7e-07,   Method: Composition-based stats.
+ Identities = 23/57 (40%), Positives = 36/57 (63%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P   ALY F  E  G+L F +GD+IT+  + D   +W+ G ++G+ G FP +YVE++
+Sbjct: 309 PSCKALYDFEPENDGELGFHEGDIITLTNQIDE--NWYEGMLDGQSGFFPLSYVEVL 363
+
+
+>sp|Q3UTJ2|SRBS2_MOUSE Sorbin and SH3 domain-containing protein 2
+           OS=Mus musculus GN=Sorbs2 PE=1 SV=2
+          Length = 1180
+
+ Score = 52.4 bits (124), Expect = 7e-07,   Method: Composition-based stats.
+ Identities = 25/53 (47%), Positives = 35/53 (66%), Gaps = 2/53 (3%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           A A+Y F  + S +L F+KGD + IL+K D   +W+ G  +GR GIFP +YVE
+Sbjct: 948 AKAVYDFKAQTSKELSFKKGDTVYILRKID--QNWYEGEHHGRVGIFPISYVE 998
+
+
+
+ Score = 50.8 bits (120), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 25/58 (43%), Positives = 40/58 (68%), Gaps = 4/58 (6%)
+
+Query: 3    KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNG--REGIFPANYVELV 58
+            +A+A Y+F  + + +L  RKGD I +LK+ D   +W+ G++ G  R+GIFP +YVE+V
+Sbjct: 1022 EAIAKYNFNADTNVELSLRKGDRIILLKRVD--QNWYEGKIPGTNRQGIFPVSYVEVV 1077
+
+
+>sp|O35413|SRBS2_RAT Sorbin and SH3 domain-containing protein 2
+            OS=Rattus norvegicus GN=Sorbs2 PE=1 SV=2
+          Length = 1196
+
+ Score = 52.4 bits (124), Expect = 7e-07,   Method: Composition-based stats.
+ Identities = 25/53 (47%), Positives = 35/53 (66%), Gaps = 2/53 (3%)
+
+Query: 4    AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+            A A+Y F  + S +L F+KGD + IL+K D   +W+ G  +GR GIFP +YVE
+Sbjct: 964  AKAVYDFKAQTSKELSFKKGDTVYILRKID--QNWYEGEHHGRVGIFPISYVE 1014
+
+
+
+ Score = 50.8 bits (120), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 25/58 (43%), Positives = 40/58 (68%), Gaps = 4/58 (6%)
+
+Query: 3    KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNG--REGIFPANYVELV 58
+            +A+A Y+F  + + +L  RKGD I +LK+ D   +W+ G++ G  R+GIFP +YVE+V
+Sbjct: 1038 EAIAKYNFNADTNVELSLRKGDRIILLKRVD--QNWYEGKIPGTNRQGIFPVSYVEVV 1093
+
+
+>sp|Q75DS3|HSE1_ASHGO Class E vacuolar protein-sorting machinery
+           protein HSE1 OS=Ashbya gossypii GN=HSE1 PE=3 SV=1
+          Length = 443
+
+ Score = 52.4 bits (124), Expect = 7e-07,   Method: Composition-based stats.
+ Identities = 22/50 (44%), Positives = 32/50 (64%), Gaps = 2/50 (4%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           A++     E  +L F+KGDVIT++++     DWW G + G+ GIFP NYV
+Sbjct: 217 AIFDLNASEPDELSFKKGDVITVIEQV--YKDWWRGLLRGKVGIFPVNYV 264
+
+
+>sp|Q60631|GRB2_MOUSE Growth factor receptor-bound protein 2 OS=Mus
+           musculus GN=Grb2 PE=1 SV=1
+          Length = 217
+
+ Score = 52.4 bits (124), Expect = 8e-07,   Method: Composition-based stats.
+ Identities = 24/53 (45%), Positives = 34/53 (64%), Gaps = 2/53 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           AL+ F  +E G+L FR+GD I ++  SD   +WW G  +G+ G+FP NYV  V
+Sbjct: 163 ALFDFDPQEDGELGFRRGDFIHVMDNSDP--NWWKGACHGQTGMFPRNYVTPV 213
+
+
+
+ Score = 48.5 bits (114), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 19/55 (34%), Positives = 34/55 (61%), Gaps = 1/55 (1%)
+
+Query: 3  KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+          +A+A Y F      +L F++GD++ +L +   QN W+   +NG++G  P NY+E+
+Sbjct: 2  EAIAKYDFKATADDELSFKRGDILKVLNEECDQN-WYKAELNGKDGFIPKNYIEM 55
+
+
+>sp|Q62421|SH3G3_MOUSE Endophilin-A3 OS=Mus musculus GN=Sh3gl3 PE=2
+           SV=1
+          Length = 347
+
+ Score = 52.4 bits (124), Expect = 8e-07,   Method: Composition-based stats.
+ Identities = 23/57 (40%), Positives = 34/57 (59%), Gaps = 2/57 (3%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           P    LY F  E  G+L F++GD+IT+  + D   +W+ G + G  G FP NYVE++
+Sbjct: 288 PCCRGLYDFEPENEGELGFKEGDIITLTNQIDE--NWYEGMLRGESGFFPINYVEVI 342
+
+
+>sp|P62993|GRB2_HUMAN Growth factor receptor-bound protein 2 OS=Homo
+           sapiens GN=GRB2 PE=1 SV=1
+          Length = 217
+
+ Score = 52.4 bits (124), Expect = 8e-07,   Method: Composition-based stats.
+ Identities = 24/53 (45%), Positives = 34/53 (64%), Gaps = 2/53 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           AL+ F  +E G+L FR+GD I ++  SD   +WW G  +G+ G+FP NYV  V
+Sbjct: 163 ALFDFDPQEDGELGFRRGDFIHVMDNSDP--NWWKGACHGQTGMFPRNYVTPV 213
+
+
+
+ Score = 48.5 bits (114), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 19/55 (34%), Positives = 34/55 (61%), Gaps = 1/55 (1%)
+
+Query: 3  KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+          +A+A Y F      +L F++GD++ +L +   QN W+   +NG++G  P NY+E+
+Sbjct: 2  EAIAKYDFKATADDELSFKRGDILKVLNEECDQN-WYKAELNGKDGFIPKNYIEM 55
+
+
+>sp|Q5R4J7|GRB2_PONAB Growth factor receptor-bound protein 2
+           OS=Pongo abelii GN=GRB2 PE=2 SV=1
+          Length = 217
+
+ Score = 52.4 bits (124), Expect = 8e-07,   Method: Composition-based stats.
+ Identities = 24/53 (45%), Positives = 34/53 (64%), Gaps = 2/53 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           AL+ F  +E G+L FR+GD I ++  SD   +WW G  +G+ G+FP NYV  V
+Sbjct: 163 ALFDFDPQEDGELGFRRGDFIHVMDNSDP--NWWKGACHGQTGMFPRNYVTPV 213
+
+
+
+ Score = 48.5 bits (114), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 19/55 (34%), Positives = 34/55 (61%), Gaps = 1/55 (1%)
+
+Query: 3  KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+          +A+A Y F      +L F++GD++ +L +   QN W+   +NG++G  P NY+E+
+Sbjct: 2  EAIAKYDFKATADDELSFKRGDILKVLNEECDQN-WYKAELNGKDGFIPKNYIEM 55
+
+
+>sp|P62994|GRB2_RAT Growth factor receptor-bound protein 2 OS=Rattus
+           norvegicus GN=Grb2 PE=1 SV=1
+          Length = 217
+
+ Score = 52.4 bits (124), Expect = 8e-07,   Method: Composition-based stats.
+ Identities = 24/53 (45%), Positives = 34/53 (64%), Gaps = 2/53 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           AL+ F  +E G+L FR+GD I ++  SD   +WW G  +G+ G+FP NYV  V
+Sbjct: 163 ALFDFDPQEDGELGFRRGDFIHVMDNSDP--NWWKGACHGQTGMFPRNYVTPV 213
+
+
+
+ Score = 48.5 bits (114), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 19/55 (34%), Positives = 34/55 (61%), Gaps = 1/55 (1%)
+
+Query: 3  KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+          +A+A Y F      +L F++GD++ +L +   QN W+   +NG++G  P NY+E+
+Sbjct: 2  EAIAKYDFKATADDELSFKRGDILKVLNEECDQN-WYKAELNGKDGFIPKNYIEM 55
+
+
+>sp|Q9U1M8|MYOI_DICDI Myosin-I heavy chain OS=Dictyostelium discoideum
+            GN=myoI PE=1 SV=1
+          Length = 2357
+
+ Score = 52.4 bits (124), Expect = 8e-07,   Method: Composition-based stats.
+ Identities = 23/55 (41%), Positives = 38/55 (69%), Gaps = 1/55 (1%)
+
+Query: 4    AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+            A AL  +   ++  LPF++ D+ITI  K D +N W+ G++NG+EG FP ++VE++
+Sbjct: 1623 ARALKDYNVSDTSLLPFKRNDIITITFK-DQENKWFMGQLNGKEGSFPVDHVEIL 1676
+
+
+>sp|O94875|SRBS2_HUMAN Sorbin and SH3 domain-containing protein 2
+           OS=Homo sapiens GN=SORBS2 PE=1 SV=3
+          Length = 1100
+
+ Score = 52.0 bits (123), Expect = 8e-07,   Method: Composition-based stats.
+ Identities = 25/53 (47%), Positives = 35/53 (66%), Gaps = 2/53 (3%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           A A+Y F  + S +L F+KGD + IL+K D   +W+ G  +GR GIFP +YVE
+Sbjct: 868 AKAVYDFKAQTSKELSFKKGDTVYILRKID--QNWYEGEHHGRVGIFPISYVE 918
+
+
+
+ Score = 50.1 bits (118), Expect = 4e-06,   Method: Composition-based stats.
+ Identities = 24/58 (41%), Positives = 40/58 (68%), Gaps = 4/58 (6%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNG--REGIFPANYVELV 58
+           +A+A Y+F  + + +L  RKGD + +LK+ D   +W+ G++ G  R+GIFP +YVE+V
+Sbjct: 942 EAIAKYNFNADTNVELSLRKGDRVILLKRVD--QNWYEGKIPGTNRQGIFPVSYVEVV 997
+
+
+>sp|O75791|GRAP2_HUMAN GRB2-related adapter protein 2 OS=Homo
+           sapiens GN=GRAP2 PE=1 SV=1
+          Length = 330
+
+ Score = 52.0 bits (123), Expect = 9e-07,   Method: Composition-based stats.
+ Identities = 24/52 (46%), Positives = 33/52 (63%), Gaps = 2/52 (3%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           A ALY F   E  +L F  G+V+ +L  S+    WWTGR++ + G+FPANYV
+Sbjct: 276 ARALYDFEALEDDELGFHSGEVVEVLDSSNPS--WWTGRLHNKLGLFPANYV 325
+
+
+>sp|P41239|CSK_CHICK Tyrosine-protein kinase CSK OS=Gallus gallus
+          GN=CSK PE=2 SV=1
+          Length = 450
+
+ Score = 52.0 bits (123), Expect = 1e-06,   Method: Composition-based stats.
+ Identities = 26/55 (47%), Positives = 35/55 (63%), Gaps = 2/55 (3%)
+
+Query: 3  KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVN-GREGIFPANYVE 56
+          + +A Y+F G    DLPF KGDV+TI+  +   N W+  +   GREGI PANYV+
+Sbjct: 13 ECIAKYNFHGTAEQDLPFSKGDVLTIVAVTKDPN-WYKAKNKVGREGIIPANYVQ 66
+
+
+>sp|Q8IVI9|NOSTN_HUMAN Nostrin OS=Homo sapiens GN=NOSTRIN PE=1 SV=1
+          Length = 506
+
+ Score = 52.0 bits (123), Expect = 1e-06,   Method: Composition-based stats.
+ Identities = 23/51 (45%), Positives = 32/51 (62%), Gaps = 2/51 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           ALYSF   +  +L   KGD++ I +K   +  WW G +NG++G FPA YVE
+Sbjct: 445 ALYSFQARQDDELNLEKGDIVIIHEKK--EEGWWFGSLNGKKGHFPAAYVE 493
+
+
+>sp|P14317|HCLS1_HUMAN Hematopoietic lineage cell-specific protein
+           OS=Homo sapiens GN=HCLS1 PE=1 SV=2
+          Length = 486
+
+ Score = 51.6 bits (122), Expect = 1e-06,   Method: Composition-based stats.
+ Identities = 27/55 (49%), Positives = 36/55 (65%), Gaps = 2/55 (3%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           AVA+Y + GE S +L F   DVIT ++  D    WW GR +G  G+FPANYV+L+
+Sbjct: 433 AVAVYDYQGEGSDELSFDPDDVITDIEMVDE--GWWRGRCHGHFGLFPANYVKLL 485
+
+
+>sp|Q68F99|STAC3_XENTR SH3 and cysteine-rich domain-containing
+           protein 3 OS=Xenopus tropicalis GN=stac3 PE=2 SV=1
+          Length = 337
+
+ Score = 51.6 bits (122), Expect = 1e-06,   Method: Composition-based stats.
+ Identities = 23/51 (45%), Positives = 32/51 (62%), Gaps = 2/51 (3%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           VALY F   E  DL F+ G+ IT++   DS  +WW G+V  + G FPAN++
+Sbjct: 226 VALYRFKALEKDDLDFQAGERITVI--DDSNEEWWRGKVGEKAGYFPANFI 274
+
+
+>sp|P62484|ABI2_MOUSE Abl interactor 2 OS=Mus musculus GN=Abi2 PE=1
+           SV=1
+          Length = 446
+
+ Score = 51.6 bits (122), Expect = 1e-06,   Method: Composition-based stats.
+ Identities = 22/56 (39%), Positives = 38/56 (67%), Gaps = 2/56 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           K VA+Y +  ++  +L F++G +I ++KK+D  + W+ G +NG  G+FP NYVE +
+Sbjct: 388 KVVAIYDYTKDKEDELSFQEGAIIYVIKKND--DGWYEGVMNGVTGLFPGNYVESI 441
+
+
+>sp|P41241|CSK_MOUSE Tyrosine-protein kinase CSK OS=Mus musculus
+          GN=Csk PE=1 SV=1
+          Length = 450
+
+ Score = 51.2 bits (121), Expect = 1e-06,   Method: Composition-based stats.
+ Identities = 26/55 (47%), Positives = 35/55 (63%), Gaps = 2/55 (3%)
+
+Query: 3  KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVN-GREGIFPANYVE 56
+          + +A Y+F G    DLPF KGDV+TI+  +   N W+  +   GREGI PANYV+
+Sbjct: 13 ECIAKYNFHGTAEQDLPFCKGDVLTIVAVTKDPN-WYKAKNKVGREGIIPANYVQ 66
+
+
+>sp|P32577|CSK_RAT Tyrosine-protein kinase CSK OS=Rattus
+          norvegicus GN=Csk PE=1 SV=1
+          Length = 450
+
+ Score = 51.2 bits (121), Expect = 1e-06,   Method: Composition-based stats.
+ Identities = 26/55 (47%), Positives = 35/55 (63%), Gaps = 2/55 (3%)
+
+Query: 3  KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVN-GREGIFPANYVE 56
+          + +A Y+F G    DLPF KGDV+TI+  +   N W+  +   GREGI PANYV+
+Sbjct: 13 ECIAKYNFHGTAEQDLPFCKGDVLTIVAVTKDPN-WYKAKNKVGREGIIPANYVQ 66
+
+
+>sp|Q0VBZ0|CSK_BOVIN Tyrosine-protein kinase CSK OS=Bos taurus
+          GN=CSK PE=2 SV=1
+          Length = 450
+
+ Score = 51.2 bits (121), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 26/55 (47%), Positives = 35/55 (63%), Gaps = 2/55 (3%)
+
+Query: 3  KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVN-GREGIFPANYVE 56
+          + +A Y+F G    DLPF KGDV+TI+  +   N W+  +   GREGI PANYV+
+Sbjct: 13 ECIAKYNFHGTAEQDLPFCKGDVLTIVAVTKDPN-WYKAKNKVGREGIIPANYVQ 66
+
+
+>sp|P41240|CSK_HUMAN Tyrosine-protein kinase CSK OS=Homo sapiens
+          GN=CSK PE=1 SV=1
+          Length = 450
+
+ Score = 51.2 bits (121), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 26/55 (47%), Positives = 35/55 (63%), Gaps = 2/55 (3%)
+
+Query: 3  KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVN-GREGIFPANYVE 56
+          + +A Y+F G    DLPF KGDV+TI+  +   N W+  +   GREGI PANYV+
+Sbjct: 13 ECIAKYNFHGTAEQDLPFCKGDVLTIVAVTKDPN-WYKAKNKVGREGIIPANYVQ 66
+
+
+>sp|P98171|RHG04_HUMAN Rho GTPase-activating protein 4 OS=Homo
+           sapiens GN=ARHGAP4 PE=1 SV=2
+          Length = 946
+
+ Score = 51.2 bits (121), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 21/55 (38%), Positives = 35/55 (63%), Gaps = 2/55 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+           +AVA +++ G  + +L FR+GDV+ + +++ S  DWW G  NG  G+ P  Y+ L
+Sbjct: 750 EAVACFAYTGRTAQELSFRRGDVLRLHERASS--DWWRGEHNGMRGLIPHKYITL 802
+
+
+>sp|Q9JLQ0|CD2AP_MOUSE CD2-associated protein OS=Mus musculus
+           GN=Cd2ap PE=1 SV=2
+          Length = 637
+
+ Score = 51.2 bits (121), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 18/48 (37%), Positives = 31/48 (64%)
+
+Query: 7   LYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANY 54
+           L+ + G    +L FR+G++I ++ K   +  WW G +NG+EG+FP N+
+Sbjct: 277 LFPYTGTNEDELTFREGEIIHLISKETGEAGWWKGELNGKEGVFPDNF 324
+
+
+>sp|P46109|CRKL_HUMAN Crk-like protein OS=Homo sapiens GN=CRKL PE=1
+           SV=1
+          Length = 303
+
+ Score = 51.2 bits (121), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 23/51 (45%), Positives = 35/51 (68%), Gaps = 3/51 (5%)
+
+Query: 7   LYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR-VNGREGIFPANYVE 56
+           LY F G ++ DLPF+KG+++ I++K + Q  WW+ R  +GR G+ P  YVE
+Sbjct: 131 LYDFPGNDAEDLPFKKGEILVIIEKPEEQ--WWSARNKDGRVGMIPVPYVE 179
+
+
+>sp|Q8N157|AHI1_HUMAN Jouberin OS=Homo sapiens GN=AHI1 PE=1 SV=1
+          Length = 1196
+
+ Score = 51.2 bits (121), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 23/56 (41%), Positives = 33/56 (58%), Gaps = 3/56 (5%)
+
+Query: 1    SPKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRV-NGREGIFPANYV 55
+            +P  VALY +    S +L   +GD+I +  K +   DWW G +  G+EG FPAN+V
+Sbjct: 1053 APTVVALYDYTANRSDELTIHRGDIIRVFFKDNE--DWWYGSIGKGQEGYFPANHV 1106
+
+
+>sp|Q9NYB9|ABI2_HUMAN Abl interactor 2 OS=Homo sapiens GN=ABI2 PE=1
+           SV=1
+          Length = 513
+
+ Score = 50.8 bits (120), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 22/56 (39%), Positives = 38/56 (67%), Gaps = 2/56 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           K VA+Y +  ++  +L F++G +I ++KK+D  + W+ G +NG  G+FP NYVE +
+Sbjct: 455 KVVAIYDYTKDKEDELSFQEGAIIYVIKKND--DGWYEGVMNGVTGLFPGNYVESI 508
+
+
+>sp|P05433|GAGC_AVISC P47(GAG-CRK) protein OS=Avian sarcoma virus
+           (strain CT10) PE=4 SV=1
+          Length = 440
+
+ Score = 50.8 bits (120), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 23/52 (44%), Positives = 33/52 (63%), Gaps = 3/52 (5%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR-VNGREGIFPANYVE 56
+           AL+ F G + GDLPF+KGD++ I  K + Q  WW    ++G+ G+ P  YVE
+Sbjct: 375 ALFDFKGNDDGDLPFKKGDILKIRDKPEEQ--WWNAEDMDGKRGMIPVPYVE 424
+
+
+>sp|Q66II3|GRB2_XENTR Growth factor receptor-bound protein 2
+           OS=Xenopus tropicalis GN=grb2 PE=2 SV=1
+          Length = 229
+
+ Score = 50.8 bits (120), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 24/53 (45%), Positives = 33/53 (62%), Gaps = 2/53 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           AL+ F  +E G+L FR+GD I ++  SD   +WW G   G+ G+FP NYV  V
+Sbjct: 175 ALFDFDPQEDGELGFRRGDFIQVVDNSDP--NWWKGTCLGQTGMFPRNYVTPV 225
+
+
+
+ Score = 48.9 bits (115), Expect = 8e-06,   Method: Composition-based stats.
+ Identities = 20/55 (36%), Positives = 34/55 (61%), Gaps = 1/55 (1%)
+
+Query: 3  KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+          +AVA Y F      +L F++GD++ +L +   QN W+   +NG++G  P NY+E+
+Sbjct: 2  EAVAKYDFKATADDELSFKRGDILKVLNEECDQN-WYKAELNGKDGFIPKNYIEM 55
+
+
+>sp|Q6CVA8|HSE1_KLULA Class E vacuolar protein-sorting machinery
+           protein HSE1 OS=Kluyveromyces lactis GN=HSE1 PE=3 SV=1
+          Length = 508
+
+ Score = 50.8 bits (120), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 24/56 (42%), Positives = 33/56 (58%), Gaps = 2/56 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           K  A+Y F   E  +L F+KGD+I ++++     DWW G + G  GIFP NYV  V
+Sbjct: 226 KVRAMYDFNSTEQDELSFKKGDLICVVEQV--YRDWWRGTLAGSVGIFPLNYVTPV 279
+
+
+>sp|Q9Y5K6|CD2AP_HUMAN CD2-associated protein OS=Homo sapiens
+           GN=CD2AP PE=1 SV=1
+          Length = 639
+
+ Score = 50.4 bits (119), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 17/48 (35%), Positives = 32/48 (66%)
+
+Query: 7   LYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANY 54
+           L+++ G    +L F++G++I ++ K   +  WW G +NG+EG+FP N+
+Sbjct: 277 LFAYEGTNEDELTFKEGEIIHLISKETGEAGWWRGELNGKEGVFPDNF 324
+
+
+>sp|Q6GPJ9|GRB2B_XENLA Growth factor receptor-bound protein 2-B
+           OS=Xenopus laevis GN=grb2-B PE=1 SV=1
+          Length = 229
+
+ Score = 50.4 bits (119), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 24/53 (45%), Positives = 33/53 (62%), Gaps = 2/53 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           AL+ F  +E G+L FR+GD I ++  SD   +WW G   G+ G+FP NYV  V
+Sbjct: 175 ALFDFDPQEDGELGFRRGDFIQVVDNSDP--NWWKGTCLGQTGMFPRNYVTPV 225
+
+
+
+ Score = 48.9 bits (115), Expect = 9e-06,   Method: Composition-based stats.
+ Identities = 20/55 (36%), Positives = 34/55 (61%), Gaps = 1/55 (1%)
+
+Query: 3  KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+          +A+A Y F      +L F++GDV+ +L +   QN W+   +NG++G  P NY+E+
+Sbjct: 2  EAIAKYDFKATADDELSFKRGDVLKVLNEECDQN-WYKAELNGKDGFIPKNYIEM 55
+
+
+>sp|P47941|CRKL_MOUSE Crk-like protein OS=Mus musculus GN=Crkl PE=1
+           SV=2
+          Length = 303
+
+ Score = 50.4 bits (119), Expect = 3e-06,   Method: Composition-based stats.
+ Identities = 23/51 (45%), Positives = 35/51 (68%), Gaps = 3/51 (5%)
+
+Query: 7   LYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR-VNGREGIFPANYVE 56
+           LY F G ++ DLPF+KG+++ I++K + Q  WW+ R  +GR G+ P  YVE
+Sbjct: 131 LYDFPGNDAEDLPFKKGELLVIIEKPEEQ--WWSARNKDGRVGMIPVPYVE 179
+
+
+>sp|Q5U2U2|CRKL_RAT Crk-like protein OS=Rattus norvegicus GN=Crkl
+           PE=1 SV=1
+          Length = 303
+
+ Score = 50.4 bits (119), Expect = 3e-06,   Method: Composition-based stats.
+ Identities = 23/51 (45%), Positives = 35/51 (68%), Gaps = 3/51 (5%)
+
+Query: 7   LYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR-VNGREGIFPANYVE 56
+           LY F G ++ DLPF+KG+++ I++K + Q  WW+ R  +GR G+ P  YVE
+Sbjct: 131 LYDFPGNDAEDLPFKKGELLVIIEKPEEQ--WWSARNKDGRVGMIPVPYVE 179
+
+
+>sp|Q5A895|HSE1_CANAL Class E vacuolar protein-sorting machinery
+           protein HSE1 OS=Candida albicans GN=HSE1 PE=3 SV=1
+          Length = 498
+
+ Score = 50.4 bits (119), Expect = 3e-06,   Method: Composition-based stats.
+ Identities = 26/54 (48%), Positives = 33/54 (61%), Gaps = 3/54 (5%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRV-NGREGIFPANYV 55
+           K  ALY     E  +L FRKGDVIT+++      DWW G + +G+ GIFP NYV
+Sbjct: 216 KVRALYDLVSYEPDELSFRKGDVITVIES--VYRDWWRGSLPSGKIGIFPLNYV 267
+
+
+>sp|Q6WKZ7|NOSTN_MOUSE Nostrin OS=Mus musculus GN=Nostrin PE=1 SV=2
+          Length = 506
+
+ Score = 50.4 bits (119), Expect = 3e-06,   Method: Composition-based stats.
+ Identities = 21/51 (41%), Positives = 31/51 (60%), Gaps = 2/51 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           ALY+F   +  +L   KGD++T+ +K   +  WW G + G+ G FPA YVE
+Sbjct: 445 ALYTFQARQDDELNLEKGDIVTVHEKK--EEGWWFGSLKGKRGHFPAAYVE 493
+
+
+>sp|Q06449|PIN3_YEAST [PSI+] inducibility protein 3 OS=Saccharomyces
+           cerevisiae GN=PIN3 PE=1 SV=1
+          Length = 215
+
+ Score = 50.4 bits (119), Expect = 3e-06,   Method: Composition-based stats.
+ Identities = 24/51 (47%), Positives = 33/51 (64%), Gaps = 2/51 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           ALY F  ++ GDL  + GD + +L+K   +  W+ G  NGR GIFPANYV+
+Sbjct: 61  ALYQFDPQQDGDLGLKPGDKVQLLEKLSPE--WYKGSCNGRTGIFPANYVK 109
+
+
+>sp|P19706|MYSB_ACACA Myosin heavy chain IB OS=Acanthamoeba
+            castellanii GN=MIB PE=1 SV=2
+          Length = 1147
+
+ Score = 50.1 bits (118), Expect = 3e-06,   Method: Composition-based stats.
+ Identities = 21/55 (38%), Positives = 33/55 (60%), Gaps = 2/55 (3%)
+
+Query: 2    PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+            P+  ALY +  +   +L F++GD I + +K  +   WW G +NG+ G  PANYV+
+Sbjct: 1093 PQVKALYDYDAQTGDELTFKEGDTIIVHQKDPA--GWWEGELNGKRGWVPANYVQ 1145
+
+
+>sp|Q8K3E5|AHI1_MOUSE Jouberin OS=Mus musculus GN=Ahi1 PE=2 SV=2
+          Length = 1047
+
+ Score = 50.1 bits (118), Expect = 4e-06,   Method: Composition-based stats.
+ Identities = 24/55 (43%), Positives = 32/55 (58%), Gaps = 3/55 (5%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRV-NGREGIFPANYV 55
+           P  VALY +    S +L   +GD+I +  K +   DWW G V  G+EG FPAN+V
+Sbjct: 905 PMVVALYDYTASRSDELTIHRGDIIRVYFKDNE--DWWYGSVRKGQEGFFPANHV 957
+
+
+>sp|Q54CL3|PEX13_DICDI Probable peroxisomal membrane protein PEX13
+           OS=Dictyostelium discoideum GN=pex13 PE=3 SV=1
+          Length = 570
+
+ Score = 49.7 bits (117), Expect = 4e-06,   Method: Composition-based stats.
+ Identities = 20/53 (37%), Positives = 31/53 (58%), Gaps = 2/53 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           A+Y F  E + DLP R GD++ ++ K    ++WW G  NG  G FP ++ E +
+Sbjct: 400 AIYEFNPETTRDLPLRVGDIVNVIDKP--HDNWWVGECNGLSGFFPVDFTEKI 450
+
+
+>sp|P53281|LSB1_YEAST LAS seventeen-binding protein 1
+           OS=Saccharomyces cerevisiae GN=LSB1 PE=1 SV=1
+          Length = 241
+
+ Score = 49.7 bits (117), Expect = 4e-06,   Method: Composition-based stats.
+ Identities = 24/51 (47%), Positives = 33/51 (64%), Gaps = 2/51 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           ALY F  ++ GDL  + GD I +L+K     DW+ G+ N + GIFPANYV+
+Sbjct: 60  ALYDFEAQQDGDLSLKTGDKIQVLEKISP--DWYRGKSNNKIGIFPANYVK 108
+
+
+>sp|Q3U1V8|M3K9_MOUSE Mitogen-activated protein kinase kinase kinase
+           9 OS=Mus musculus GN=Map3k9 PE=2 SV=1
+          Length = 1077
+
+ Score = 49.7 bits (117), Expect = 4e-06,   Method: Composition-based stats.
+ Identities = 29/56 (51%), Positives = 36/56 (64%), Gaps = 7/56 (12%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQ----NDWWTGRVNGREGIFPANYV 55
+           AV  Y  AGE+  +L  R GDV+ +L K DSQ      WWTG++N R GIFP+NYV
+Sbjct: 52  AVFEYEAAGED--ELTLRLGDVVEVLSK-DSQVSGDEGWWTGQLNQRVGIFPSNYV 104
+
+
+>sp|Q62417|SRBS1_MOUSE Sorbin and SH3 domain-containing protein 1
+            OS=Mus musculus GN=Sorbs1 PE=1 SV=2
+          Length = 1290
+
+ Score = 49.7 bits (117), Expect = 5e-06,   Method: Composition-based stats.
+ Identities = 23/58 (39%), Positives = 41/58 (70%), Gaps = 4/58 (6%)
+
+Query: 3    KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNG--REGIFPANYVELV 58
+            +A+A ++F G+   ++ FRKG+ IT+L++ D   +W+ GR+ G  R+GIFP  YV+++
+Sbjct: 1127 EAIAKFNFNGDTQVEMSFRKGERITLLRQVDE--NWYEGRIPGTSRQGIFPITYVDVL 1182
+
+
+
+ Score = 46.6 bits (109), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 22/55 (40%), Positives = 34/55 (61%), Gaps = 2/55 (3%)
+
+Query: 4    AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+            A A + F  +   +LP +KGDV+ I ++ D   +W+ G  +GR GIFP  Y+EL+
+Sbjct: 1054 ARAKFDFKAQTLKELPLQKGDVVYIYRQID--QNWYEGEHHGRVGIFPRTYIELL 1106
+
+
+>sp|A4FU49|CA113_HUMAN SH3 domain-containing protein C1orf113
+           OS=Homo sapiens GN=C1orf113 PE=1 SV=2
+          Length = 640
+
+ Score = 49.7 bits (117), Expect = 5e-06,   Method: Composition-based stats.
+ Identities = 19/49 (38%), Positives = 28/49 (57%)
+
+Query: 7   LYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           L+ +  E   +L  R+GDV+ +L K+     WW G   GR G+FP N+V
+Sbjct: 73  LFDYQPEAPDELALRRGDVVKVLSKTTEDKGWWEGECQGRRGVFPDNFV 121
+
+
+>sp|Q9R1Z8|VINEX_MOUSE Vinexin OS=Mus musculus GN=Sorbs3 PE=1 SV=1
+          Length = 733
+
+ Score = 49.7 bits (117), Expect = 5e-06,   Method: Composition-based stats.
+ Identities = 25/56 (44%), Positives = 39/56 (69%), Gaps = 4/56 (7%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRV--NGREGIFPANYVEL 57
+           AVA Y+F G+   +L FRKG+ I +++K +    W+ GR+   GR+GIFPA+YV++
+Sbjct: 523 AVAQYTFKGDLEVELSFRKGERICLIRKVNEH--WYEGRITGTGRQGIFPASYVQI 576
+
+
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 21/51 (41%), Positives = 32/51 (62%), Gaps = 2/51 (3%)
+
+Query: 8   YSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           + F  +   +L  +KGD++ I K+ D   +W  G  +GR GIFPANYVE++
+Sbjct: 453 FDFQAQSPKELSLQKGDIVYIHKEVD--KNWLEGEHHGRLGIFPANYVEVL 501
+
+
+>sp|P80192|M3K9_HUMAN Mitogen-activated protein kinase kinase kinase
+           9 OS=Homo sapiens GN=MAP3K9 PE=1 SV=3
+          Length = 1104
+
+ Score = 49.7 bits (117), Expect = 5e-06,   Method: Composition-based stats.
+ Identities = 29/56 (51%), Positives = 36/56 (64%), Gaps = 7/56 (12%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQ----NDWWTGRVNGREGIFPANYV 55
+           AV  Y  AGE+  +L  R GDV+ +L K DSQ      WWTG++N R GIFP+NYV
+Sbjct: 59  AVFEYEAAGED--ELTLRLGDVVEVLSK-DSQVSGDEGWWTGQLNQRVGIFPSNYV 111
+
+
+>sp|P70297|STAM1_MOUSE Signal transducing adapter molecule 1 OS=Mus
+           musculus GN=Stam PE=2 SV=3
+          Length = 548
+
+ Score = 49.7 bits (117), Expect = 5e-06,   Method: Composition-based stats.
+ Identities = 21/53 (39%), Positives = 32/53 (60%), Gaps = 2/53 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           K  A+Y F   E  +L F+ G++IT+L  SD   +WW G  +   G+FP+N+V
+Sbjct: 214 KVRAVYDFEAAEDNELTFKAGEIITVLDDSDP--NWWKGETHQGVGLFPSNFV 264
+
+
+>sp|O60504|VINEX_HUMAN Vinexin OS=Homo sapiens GN=SORBS3 PE=1 SV=1
+          Length = 671
+
+ Score = 49.3 bits (116), Expect = 5e-06,   Method: Composition-based stats.
+ Identities = 25/57 (43%), Positives = 41/57 (71%), Gaps = 4/57 (7%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRV--NGREGIFPANYVEL 57
+           +AVA Y+F G+   +L FRKG+ I +++K +   +W+ GR+   GR+GIFPA+YV++
+Sbjct: 458 EAVAQYTFKGDLEVELSFRKGEHICLIRKVNE--NWYEGRITGTGRQGIFPASYVQV 512
+
+
+
+ Score = 43.1 bits (100), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 21/51 (41%), Positives = 32/51 (62%), Gaps = 2/51 (3%)
+
+Query: 8   YSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           + F  +   +L  +KGD++ I K+ D   +W  G  +GR GIFPANYVE++
+Sbjct: 389 FDFQAQSPKELTLQKGDIVYIHKEVD--KNWLEGEHHGRLGIFPANYVEVL 437
+
+
+>sp|Q92783|STAM1_HUMAN Signal transducing adapter molecule 1 OS=Homo
+           sapiens GN=STAM PE=1 SV=3
+          Length = 540
+
+ Score = 49.3 bits (116), Expect = 5e-06,   Method: Composition-based stats.
+ Identities = 21/53 (39%), Positives = 32/53 (60%), Gaps = 2/53 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           K  A+Y F   E  +L F+ G++IT+L  SD   +WW G  +   G+FP+N+V
+Sbjct: 214 KVRAIYDFEAAEDNELTFKAGEIITVLDDSDP--NWWKGETHQGIGLFPSNFV 264
+
+
+>sp|Q6DTM3|AHI1_RAT Jouberin OS=Rattus norvegicus GN=Ahi1 PE=2 SV=1
+          Length = 1047
+
+ Score = 49.3 bits (116), Expect = 6e-06,   Method: Composition-based stats.
+ Identities = 23/55 (41%), Positives = 32/55 (58%), Gaps = 3/55 (5%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRV-NGREGIFPANYV 55
+           P  VALY +    S +L   +GD+I +  K +   DWW G +  G+EG FPAN+V
+Sbjct: 906 PMVVALYDYTASRSDELTIHRGDIIRVFFKDNE--DWWYGSLGKGQEGFFPANHV 958
+
+
+>sp|Q4R729|CA113_MACFA SH3 domain-containing protein C1orf113
+           homolog OS=Macaca fascicularis GN=QtsA-19407 PE=2 SV=1
+          Length = 692
+
+ Score = 49.3 bits (116), Expect = 6e-06,   Method: Composition-based stats.
+ Identities = 19/49 (38%), Positives = 28/49 (57%)
+
+Query: 7   LYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           L+ +  E   +L  R+GDV+ +L K+     WW G   GR G+FP N+V
+Sbjct: 73  LFDYQPEAPDELTLRRGDVVKVLSKTTEDKGWWEGECQGRRGVFPDNFV 121
+
+
+>sp|Q9BX66|SRBS1_HUMAN Sorbin and SH3 domain-containing protein 1
+           OS=Homo sapiens GN=SORBS1 PE=1 SV=2
+          Length = 1292
+
+ Score = 49.3 bits (116), Expect = 6e-06,   Method: Composition-based stats.
+ Identities = 23/58 (39%), Positives = 41/58 (70%), Gaps = 4/58 (6%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNG--REGIFPANYVELV 58
+           +A+A ++F G+   ++ FRKG+ IT+L++ D   +W+ GR+ G  R+GIFP  YV+++
+Sbjct: 871 EAIAKFNFNGDTQVEMSFRKGERITLLRQVDE--NWYEGRIPGTSRQGIFPITYVDVI 926
+
+
+
+ Score = 46.2 bits (108), Expect = 5e-05,   Method: Composition-based stats.
+ Identities = 22/55 (40%), Positives = 34/55 (61%), Gaps = 2/55 (3%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           A A + F  +   +LP +KGD++ I K+ D   +W+ G  +GR GIFP  Y+EL+
+Sbjct: 798 ARAKFDFKAQTLKELPLQKGDIVYIYKQID--QNWYEGEHHGRVGIFPRTYIELL 850
+
+
+>sp|O14302|YE86_SCHPO Uncharacterized protein C9G1.06c
+          OS=Schizosaccharomyces pombe GN=SPAC9G1.06c PE=1 SV=1
+          Length = 886
+
+ Score = 49.3 bits (116), Expect = 7e-06,   Method: Composition-based stats.
+ Identities = 25/52 (48%), Positives = 34/52 (65%), Gaps = 4/52 (7%)
+
+Query: 6  ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR-VN-GREGIFPANYV 55
+          ALY++ GE  GDL F +GD+I  L   D +  WW GR +N   +GIFP+N+V
+Sbjct: 13 ALYAWPGEREGDLKFTEGDLIECLSIGDGK--WWIGRHINTNTQGIFPSNFV 62
+
+
+>sp|Q96KQ4|ASPP1_HUMAN Apoptosis-stimulating of p53 protein 1 OS=Homo
+            sapiens GN=PPP1R13B PE=1 SV=2
+          Length = 1090
+
+ Score = 49.3 bits (116), Expect = 7e-06,   Method: Composition-based stats.
+ Identities = 22/55 (40%), Positives = 34/55 (61%), Gaps = 1/55 (1%)
+
+Query: 4    AVALYSFAGEESGDLPFRKGDVITILKKSD-SQNDWWTGRVNGREGIFPANYVEL 57
+            A AL+ +  + S +L F +GD +TIL++ D S+ +WW  R+  REG  P N + L
+Sbjct: 1024 AYALWDYEAQNSDELSFHEGDALTILRRKDESETEWWWARLGDREGYVPKNLLGL 1078
+
+
+>sp|O93436|STAM2_CHICK Signal transducing adapter molecule 2
+           OS=Gallus gallus GN=STAM2 PE=1 SV=1
+          Length = 468
+
+ Score = 48.9 bits (115), Expect = 7e-06,   Method: Composition-based stats.
+ Identities = 22/53 (41%), Positives = 32/53 (60%), Gaps = 2/53 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           K  ALY F   E  +L F+ G++I +L  SD+  DWW G  +   G+FP+N+V
+Sbjct: 205 KVRALYDFEAVEDNELTFKSGEIIFVLDDSDT--DWWKGENHRGVGLFPSNFV 255
+
+
+>sp|Q7TSG5|CA113_MOUSE SH3 domain-containing protein C1orf113
+           homolog OS=Mus musculus PE=1 SV=1
+          Length = 549
+
+ Score = 48.9 bits (115), Expect = 7e-06,   Method: Composition-based stats.
+ Identities = 18/49 (36%), Positives = 29/49 (59%)
+
+Query: 7   LYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           L+ +  E   +L  +KGD++ +L+K+     WW G   GR G+FP N+V
+Sbjct: 73  LFDYQPEAPDELALQKGDLVKVLRKTTEDKGWWEGECQGRRGVFPDNFV 121
+
+
+>sp|P97369|NCF4_MOUSE Neutrophil cytosol factor 4 OS=Mus musculus
+           GN=Ncf4 PE=2 SV=1
+          Length = 339
+
+ Score = 48.9 bits (115), Expect = 8e-06,   Method: Composition-based stats.
+ Identities = 23/58 (39%), Positives = 35/58 (60%), Gaps = 2/58 (3%)
+
+Query: 1   SPKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           +P+A AL+ F G    +L F+ GDVI +L K +   DW  G   G  GIFP ++V+++
+Sbjct: 172 APRAEALFDFTGNSKLELSFKAGDVIFLLSKIN--KDWLEGTSQGATGIFPGSFVKIL 227
+
+
+>sp|Q7T2D0|SGSM3_DANRE Small G protein signaling modulator 3
+           OS=Danio rerio GN=sgsm3 PE=2 SV=1
+          Length = 755
+
+ Score = 48.9 bits (115), Expect = 8e-06,   Method: Composition-based stats.
+ Identities = 23/56 (41%), Positives = 33/56 (58%), Gaps = 2/56 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           +A AL  F   +  +L FRK D+ITI+ + D     W G +NG  G FPA +VE++
+Sbjct: 488 RAKALLDFERHDDDELGFRKNDIITIISQKDEH--CWVGELNGLRGWFPAKFVEIL 541
+
+
+>sp|P87379|GRB2A_XENLA Growth factor receptor-bound protein 2-A
+          OS=Xenopus laevis GN=grb2-A PE=1 SV=2
+          Length = 229
+
+ Score = 48.9 bits (115), Expect = 8e-06,   Method: Composition-based stats.
+ Identities = 20/55 (36%), Positives = 34/55 (61%), Gaps = 1/55 (1%)
+
+Query: 3  KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+          +A+A Y F      +L F++GDV+ +L +   QN W+   +NG++G  P NY+E+
+Sbjct: 2  EAIAKYDFKATADDELSFKRGDVLKVLNEECDQN-WYKAELNGKDGFIPKNYIEM 55
+
+
+
+ Score = 48.5 bits (114), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 23/53 (43%), Positives = 32/53 (60%), Gaps = 2/53 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           AL+ F  +E G+L FR+GD I ++  SD   +WW G    + G+FP NYV  V
+Sbjct: 175 ALFDFDPQEDGELGFRRGDFIQVVDNSDP--NWWKGTCLSQTGMFPRNYVTPV 225
+
+
+>sp|Q15080|NCF4_HUMAN Neutrophil cytosol factor 4 OS=Homo sapiens
+           GN=NCF4 PE=1 SV=2
+          Length = 339
+
+ Score = 48.9 bits (115), Expect = 8e-06,   Method: Composition-based stats.
+ Identities = 23/58 (39%), Positives = 36/58 (62%), Gaps = 2/58 (3%)
+
+Query: 1   SPKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           +P+A AL+ F G    +L F+ GDVI +L + +   DW  G V G  GIFP ++V+++
+Sbjct: 172 APRAEALFDFTGNSKLELNFKAGDVIFLLSRIN--KDWLEGTVRGATGIFPLSFVKIL 227
+
+
+>sp|O13154|PACN2_CHICK Protein kinase C and casein kinase substrate
+           in neurons protein 2 OS=Gallus gallus GN=PACSIN2 PE=2
+           SV=1
+          Length = 448
+
+ Score = 48.9 bits (115), Expect = 8e-06,   Method: Composition-based stats.
+ Identities = 24/52 (46%), Positives = 35/52 (67%), Gaps = 2/52 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRV-NGREGIFPANYVE 56
+           ALY + G+E  +L F+ GD +T ++  D Q  W  GR+ NG+ G++PANYVE
+Sbjct: 395 ALYDYEGQEQDELSFKAGDELTKMENEDEQG-WCKGRLDNGQVGLYPANYVE 445
+
+
+>sp|Q8VCZ6|SGSM3_MOUSE Small G protein signaling modulator 3 OS=Mus
+           musculus GN=Sgsm3 PE=1 SV=1
+          Length = 750
+
+ Score = 48.9 bits (115), Expect = 8e-06,   Method: Composition-based stats.
+ Identities = 23/56 (41%), Positives = 33/56 (58%), Gaps = 2/56 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           +A AL  F   +  +L FRK D+ITI+ + D     W G +NG  G FPA +VE++
+Sbjct: 484 RAKALLDFERHDDDELGFRKNDIITIISQKDEH--CWVGELNGLRGWFPAKFVEVL 537
+
+
+>sp|Q6P6R7|SGSM3_RAT Small G protein signaling modulator 3 OS=Rattus
+           norvegicus GN=Sgsm3 PE=2 SV=1
+          Length = 749
+
+ Score = 48.9 bits (115), Expect = 9e-06,   Method: Composition-based stats.
+ Identities = 23/56 (41%), Positives = 33/56 (58%), Gaps = 2/56 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           +A AL  F   +  +L FRK D+ITI+ + D     W G +NG  G FPA +VE++
+Sbjct: 483 RAKALLDFERHDDDELGFRKNDIITIISQKDEH--CWVGELNGLRGWFPAKFVEVL 536
+
+
+>sp|Q9UNF0|PACN2_HUMAN Protein kinase C and casein kinase substrate
+           in neurons protein 2 OS=Homo sapiens GN=PACSIN2 PE=1
+           SV=2
+          Length = 486
+
+ Score = 48.5 bits (114), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 24/54 (44%), Positives = 36/54 (66%), Gaps = 2/54 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRV-NGREGIFPANYVELV 58
+           ALY + G+E  +L F+ GD +T ++  D Q  W  GR+ NG+ G++PANYVE +
+Sbjct: 433 ALYDYEGQEHDELSFKAGDELTKMEDEDEQG-WCKGRLDNGQVGLYPANYVEAI 485
+
+
+>sp|Q8R550|SH3K1_MOUSE SH3 domain-containing kinase-binding protein
+           1 OS=Mus musculus GN=Sh3kbp1 PE=1 SV=1
+          Length = 709
+
+ Score = 48.5 bits (114), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 17/52 (32%), Positives = 33/52 (63%)
+
+Query: 7   LYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           ++ +  +   +L  ++GD++T++ K      WW G +NGR G+FP N+V+L+
+Sbjct: 319 IFPYEAQNDDELTIKEGDIVTLINKDCIDVGWWEGELNGRRGVFPDNFVKLL 370
+
+
+
+ Score = 45.1 bits (105), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 19/53 (35%), Positives = 32/53 (60%), Gaps = 2/53 (3%)
+
+Query: 3  KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+          +A+  + +  +   +L    G+VIT ++K D    WW G++NGR G+FP N+V
+Sbjct: 3  EAIVEFDYQAQHDDELTISVGEVITNIRKEDG--GWWEGQINGRRGLFPDNFV 53
+
+
+>sp|Q96HU1|SGSM3_HUMAN Small G protein signaling modulator 3 OS=Homo
+           sapiens GN=SGSM3 PE=1 SV=1
+          Length = 749
+
+ Score = 48.5 bits (114), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 23/56 (41%), Positives = 33/56 (58%), Gaps = 2/56 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           +A AL  F   +  +L FRK D+ITI+ + D     W G +NG  G FPA +VE++
+Sbjct: 484 RAKALLDFERHDDDELGFRKNDIITIVSQKDEH--CWVGELNGLRGWFPAKFVEVL 537
+
+
+>sp|O88811|STAM2_MOUSE Signal transducing adapter molecule 2 OS=Mus
+           musculus GN=Stam2 PE=1 SV=1
+          Length = 523
+
+ Score = 48.5 bits (114), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 21/50 (42%), Positives = 32/50 (64%), Gaps = 2/50 (4%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           ALY F   E  +L F+ G++IT+L  SD+  +WW G  +   G+FP+N+V
+Sbjct: 209 ALYDFEAVEDNELTFKHGELITVLDDSDA--NWWQGENHRGTGLFPSNFV 256
+
+
+>sp|Q2KI13|SGSM3_BOVIN Small G protein signaling modulator 3 OS=Bos
+           taurus GN=SGSM3 PE=2 SV=1
+          Length = 747
+
+ Score = 48.5 bits (114), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 23/56 (41%), Positives = 33/56 (58%), Gaps = 2/56 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           +A AL  F   +  +L FRK D+ITI+ + D     W G +NG  G FPA +VE++
+Sbjct: 481 RAKALLDFERHDDDELGFRKNDIITIVSQKDEH--CWVGELNGLRGWFPAKFVEVL 534
+
+
+>sp|Q925Q9|SH3K1_RAT SH3 domain-containing kinase-binding protein 1
+           OS=Rattus norvegicus GN=Sh3kbp1 PE=1 SV=2
+          Length = 709
+
+ Score = 48.5 bits (114), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 17/52 (32%), Positives = 33/52 (63%)
+
+Query: 7   LYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           ++ +  +   +L  ++GD++T++ K      WW G +NGR G+FP N+V+L+
+Sbjct: 319 IFPYEAQNDDELTIKEGDIVTLINKDCIDVGWWEGELNGRRGVFPDNFVKLL 370
+
+
+
+ Score = 45.1 bits (105), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 19/53 (35%), Positives = 32/53 (60%), Gaps = 2/53 (3%)
+
+Query: 3  KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+          +A+  + +  +   +L    G+VIT ++K D    WW G++NGR G+FP N+V
+Sbjct: 3  EAIVEFDYQAQHDDELTISVGEVITNIRKEDG--GWWEGQINGRRGLFPDNFV 53
+
+
+>sp|Q9XYM0|CRK_DROME Adapter molecule Crk OS=Drosophila melanogaster
+           GN=Crk PE=1 SV=1
+          Length = 271
+
+ Score = 48.1 bits (113), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 21/55 (38%), Positives = 35/55 (63%), Gaps = 3/55 (5%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR-VNGREGIFPANYVE 56
+           K +  + F G +  DLPF++G+V+TI++K + Q  WWT R  +G+ G  P  Y++
+Sbjct: 110 KVIGKFDFVGSDQDDLPFQRGEVLTIVRKDEDQ--WWTARNSSGKIGQIPVPYIQ 162
+
+
+>sp|Q96B97|SH3K1_HUMAN SH3 domain-containing kinase-binding protein
+           1 OS=Homo sapiens GN=SH3KBP1 PE=1 SV=2
+          Length = 665
+
+ Score = 48.1 bits (113), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 17/52 (32%), Positives = 33/52 (63%)
+
+Query: 7   LYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           ++ +  +   +L  ++GD++T++ K      WW G +NGR G+FP N+V+L+
+Sbjct: 275 IFPYEAQNDDELTIKEGDIVTLINKDCIDVGWWEGELNGRRGVFPDNFVKLL 326
+
+
+
+ Score = 44.7 bits (104), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 18/53 (33%), Positives = 32/53 (60%), Gaps = 2/53 (3%)
+
+Query: 3  KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+          +A+  + +  +   +L    G++IT ++K D    WW G++NGR G+FP N+V
+Sbjct: 3  EAIVEFDYQAQHDDELTISVGEIITNIRKEDG--GWWEGQINGRRGLFPDNFV 53
+
+
+>sp|A7MBI0|PACN1_BOVIN Protein kinase C and casein kinase substrate
+           in neurons protein 1 OS=Bos taurus GN=PACSIN1 PE=2 SV=1
+          Length = 444
+
+ Score = 48.1 bits (113), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 25/54 (46%), Positives = 37/54 (68%), Gaps = 2/54 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVN-GREGIFPANYVELV 58
+           ALY + G+E  +L F+ GD +T L + D Q  W  GR++ G+ G++PANYVE+V
+Sbjct: 392 ALYDYDGQEQDELSFKAGDELTKLGEEDEQG-WCRGRLDSGQLGLYPANYVEVV 444
+
+
+>sp|P87378|CRK_XENLA SH2/SH3 adaptor crk OS=Xenopus laevis GN=crk
+           PE=2 SV=1
+          Length = 296
+
+ Score = 48.1 bits (113), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 23/52 (44%), Positives = 32/52 (61%), Gaps = 3/52 (5%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR-VNGREGIFPANYVE 56
+           AL+ F G +  DLPF+KGD++ I +K + Q  WW     +GR G+ P  YVE
+Sbjct: 132 ALFDFIGNDDEDLPFKKGDILRIREKPEEQ--WWNAEDSDGRRGMIPVPYVE 181
+
+
+>sp|Q9QZM5|ABI1_RAT Abl interactor 1 OS=Rattus norvegicus GN=Abi1
+           PE=2 SV=3
+          Length = 476
+
+ Score = 48.1 bits (113), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 21/56 (37%), Positives = 36/56 (64%), Gaps = 2/56 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           K VA+Y +  ++  +L F++G +I ++KK+D  + W+ G  N   G+FP NYVE +
+Sbjct: 418 KVVAIYDYTKDKDDELSFKEGAIIYVIKKND--DGWFEGVCNRVTGLFPGNYVESI 471
+
+
+>sp|Q61140|BCAR1_MOUSE Breast cancer anti-estrogen resistance
+          protein 1 OS=Mus musculus GN=Bcar1 PE=1 SV=1
+          Length = 874
+
+ Score = 47.8 bits (112), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 23/57 (40%), Positives = 38/57 (66%), Gaps = 3/57 (5%)
+
+Query: 4  AVALYSFAGEESGDLPFRKGDVITILKKSDSQ--NDWWTGRVNGREGIFPANYVELV 58
+          A ALY    E   +L FRKGD++T+L++ D+Q  + WW   ++GR+GI P N ++++
+Sbjct: 8  AKALYDNVAESPDELSFRKGDIMTVLER-DTQGLDGWWLCSLHGRQGIVPGNRLKIL 63
+
+
+>sp|Q8CBW3|ABI1_MOUSE Abl interactor 1 OS=Mus musculus GN=Abi1 PE=1
+           SV=3
+          Length = 481
+
+ Score = 47.8 bits (112), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 21/56 (37%), Positives = 36/56 (64%), Gaps = 2/56 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           K VA+Y +  ++  +L F++G +I ++KK+D  + W+ G  N   G+FP NYVE +
+Sbjct: 423 KVVAIYDYTKDKDDELSFKEGAIIYVIKKND--DGWFEGVCNRVTGLFPGNYVESI 476
+
+
+>sp|Q9UKS6|PACN3_HUMAN Protein kinase C and casein kinase substrate
+           in neurons protein 3 OS=Homo sapiens GN=PACSIN3 PE=1
+           SV=2
+          Length = 424
+
+ Score = 47.8 bits (112), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 24/54 (44%), Positives = 37/54 (68%), Gaps = 2/54 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRV-NGREGIFPANYVELV 58
+           ALY +AG+E+ +L FR G+ +  + + D Q  W  G++ +GR G++PANYVE V
+Sbjct: 370 ALYDYAGQEADELSFRAGEELLKMSEEDEQG-WCQGQLQSGRIGLYPANYVECV 422
+
+
+>sp|Q63767|BCAR1_RAT Breast cancer anti-estrogen resistance protein
+           1 OS=Rattus norvegicus GN=Bcar1 PE=1 SV=1
+          Length = 968
+
+ Score = 47.8 bits (112), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 23/57 (40%), Positives = 38/57 (66%), Gaps = 3/57 (5%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQ--NDWWTGRVNGREGIFPANYVELV 58
+           A ALY    E   +L FRKGD++T+L++ D+Q  + WW   ++GR+GI P N ++++
+Sbjct: 102 AKALYDNVAESPDELSFRKGDIMTVLER-DTQGLDGWWLCSLHGRQGIVPGNRLKIL 157
+
+
+>sp|Q8MJ50|OSTF1_BOVIN Osteoclast-stimulating factor 1 OS=Bos
+          taurus GN=OSTF1 PE=2 SV=1
+          Length = 214
+
+ Score = 47.8 bits (112), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 22/50 (44%), Positives = 30/50 (60%), Gaps = 2/50 (4%)
+
+Query: 6  ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+          ALY+F      +L F +GD+I I   SD+  +WW G   GR G+ P+NYV
+Sbjct: 19 ALYTFEPRTPDELYFEEGDIIYITDMSDT--NWWKGTCKGRTGLIPSNYV 66
+
+
+>sp|Q99JB8|PACN3_MOUSE Protein kinase C and casein kinase II
+           substrate protein 3 OS=Mus musculus GN=Pacsin3 PE=1 SV=1
+          Length = 424
+
+ Score = 47.8 bits (112), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 24/54 (44%), Positives = 37/54 (68%), Gaps = 2/54 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRV-NGREGIFPANYVELV 58
+           ALY +AG+E+ +L FR G+ +  + + D Q  W  G++ +GR G++PANYVE V
+Sbjct: 370 ALYDYAGQEADELSFRAGEELLKMSEEDEQG-WCQGQLQSGRIGLYPANYVECV 422
+
+
+>sp|Q96MF2|STAC3_HUMAN SH3 and cysteine-rich domain-containing
+           protein 3 OS=Homo sapiens GN=STAC3 PE=1 SV=1
+          Length = 364
+
+ Score = 47.8 bits (112), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 21/51 (41%), Positives = 30/51 (58%), Gaps = 2/51 (3%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           VALY F   E  DL F  G+ IT++   DS  +WW G++  + G FP N++
+Sbjct: 253 VALYRFKALEKDDLDFPPGEKITVI--DDSNEEWWRGKIGEKVGFFPPNFI 301
+
+
+>sp|O94868|FCSD2_HUMAN FCH and double SH3 domains protein 2 OS=Homo
+           sapiens GN=FCHSD2 PE=1 SV=3
+          Length = 740
+
+ Score = 47.8 bits (112), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 22/52 (42%), Positives = 32/52 (61%), Gaps = 1/52 (1%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQND-WWTGRVNGREGIFPANYVE 56
+           ALY + G+   +L F +G +I IL K +  +D +W G  NGR G+FP+  VE
+Sbjct: 574 ALYDYEGQTDDELSFPEGAIIRILNKENQDDDGFWEGEFNGRIGVFPSVLVE 625
+
+
+>sp|Q9QY53|NPHP1_MOUSE Nephrocystin-1 OS=Mus musculus GN=Nphp1 PE=1
+           SV=1
+          Length = 687
+
+ Score = 47.8 bits (112), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 22/53 (41%), Positives = 34/53 (64%), Gaps = 3/53 (5%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR-VNGREGIFPANYVE 56
+           +AL  FA +++GDL F+KGDV+ I++K    + WW  +   G EG+ P  Y+E
+Sbjct: 161 IALGDFAAQQTGDLTFKKGDVLHIIEK--KPDGWWLAKDAEGVEGLIPRTYLE 211
+
+
+>sp|Q5ZJJ9|OSTF1_CHICK Osteoclast-stimulating factor 1 OS=Gallus
+          gallus GN=OSTF1 PE=2 SV=1
+          Length = 202
+
+ Score = 47.8 bits (112), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 22/50 (44%), Positives = 30/50 (60%), Gaps = 2/50 (4%)
+
+Query: 6  ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+          ALY+F      +L F +GD+I I   SD+  +WW G   GR G+ P+NYV
+Sbjct: 19 ALYTFEPRTPDELYFEEGDIIYISDMSDT--NWWKGTCKGRTGLIPSNYV 66
+
+
+>sp|P56945|BCAR1_HUMAN Breast cancer anti-estrogen resistance
+          protein 1 OS=Homo sapiens GN=BCAR1 PE=1 SV=1
+          Length = 870
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 23/57 (40%), Positives = 38/57 (66%), Gaps = 3/57 (5%)
+
+Query: 4  AVALYSFAGEESGDLPFRKGDVITILKKSDSQ--NDWWTGRVNGREGIFPANYVELV 58
+          A ALY    E   +L FRKGD++T+L++ D+Q  + WW   ++GR+GI P N ++++
+Sbjct: 8  AKALYDNVAESPDELSFRKGDIMTVLEQ-DTQGLDGWWLCSLHGRQGIVPGNRLKIL 63
+
+
+>sp|Q62415|ASPP1_MOUSE Apoptosis-stimulating of p53 protein 1 OS=Mus
+            musculus GN=Ppp1r13b PE=1 SV=2
+          Length = 1087
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 21/53 (39%), Positives = 33/53 (62%), Gaps = 1/53 (1%)
+
+Query: 6    ALYSFAGEESGDLPFRKGDVITILKKSD-SQNDWWTGRVNGREGIFPANYVEL 57
+            AL+ +  + S +L F +GD ITIL++ D ++ +WW  R+  REG  P N + L
+Sbjct: 1023 ALWDYEAQNSDELSFHEGDAITILRRKDENETEWWWARLGDREGYVPKNLLGL 1075
+
+
+>sp|Q8BZ71|STAC3_MOUSE SH3 and cysteine-rich domain-containing
+           protein 3 OS=Mus musculus GN=Stac3 PE=2 SV=1
+          Length = 360
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 21/51 (41%), Positives = 30/51 (58%), Gaps = 2/51 (3%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           VALY F   E  DL F  G+ IT++   DS  +WW G++  + G FP N++
+Sbjct: 249 VALYRFKALEKDDLDFPPGEKITVI--DDSNEEWWRGKIGEKVGFFPPNFI 297
+
+
+>sp|Q04929|CRK_CHICK Proto-oncogene C-crk OS=Gallus gallus GN=CRK
+           PE=1 SV=1
+          Length = 305
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 22/52 (42%), Positives = 32/52 (61%), Gaps = 3/52 (5%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR-VNGREGIFPANYVE 56
+           AL+ F G +  DLPF+KGD++ I  K + Q  WW    ++G+ G+ P  YVE
+Sbjct: 140 ALFDFNGNDDEDLPFKKGDILKIRDKPEEQ--WWNAEDMDGKRGMIPVPYVE 189
+
+
+>sp|Q92882|OSTF1_HUMAN Osteoclast-stimulating factor 1 OS=Homo
+          sapiens GN=OSTF1 PE=1 SV=2
+          Length = 214
+
+ Score = 47.4 bits (111), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 22/50 (44%), Positives = 30/50 (60%), Gaps = 2/50 (4%)
+
+Query: 6  ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+          ALY+F      +L F +GD+I I   SD+  +WW G   GR G+ P+NYV
+Sbjct: 19 ALYTFEPRTPDELYFEEGDIIYITDMSDT--NWWKGTSKGRTGLIPSNYV 66
+
+
+>sp|Q14155|ARHG7_HUMAN Rho guanine nucleotide exchange factor 7
+           OS=Homo sapiens GN=ARHGEF7 PE=1 SV=2
+          Length = 803
+
+ Score = 47.4 bits (111), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 22/53 (41%), Positives = 30/53 (56%), Gaps = 2/53 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           A ++F      +L F KGDVI + +    +  WW G +NGR G FP+NYV  V
+Sbjct: 191 AKFNFQQTNEDELSFSKGDVIHVTRVE--EGGWWEGTLNGRTGWFPSNYVREV 241
+
+
+>sp|Q14511|CASL_HUMAN Enhancer of filamentation 1 OS=Homo sapiens
+          GN=NEDD9 PE=1 SV=1
+          Length = 834
+
+ Score = 47.4 bits (111), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 22/56 (39%), Positives = 36/56 (64%), Gaps = 1/56 (1%)
+
+Query: 4  AVALYSFAGEESGDLPFRKGDVITILKK-SDSQNDWWTGRVNGREGIFPANYVELV 58
+          A ALY    E + +L FRKGD++T++++ +     WW   ++GR+GI P N V+L+
+Sbjct: 8  ARALYDNVPECAEELAFRKGDILTVIEQNTGGLEGWWLCSLHGRQGIVPGNRVKLL 63
+
+
+>sp|Q8MJ49|OSTF1_PIG Osteoclast-stimulating factor 1 OS=Sus scrofa
+          GN=OSTF1 PE=2 SV=1
+          Length = 214
+
+ Score = 47.4 bits (111), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 22/50 (44%), Positives = 30/50 (60%), Gaps = 2/50 (4%)
+
+Query: 6  ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+          ALY+F      +L F +GD+I I   SD+  +WW G   GR G+ P+NYV
+Sbjct: 19 ALYTFEPRTPDELYFEEGDIIYITDMSDT--NWWKGTSKGRTGLIPSNYV 66
+
+
+>sp|Q6P686|OSTF1_RAT Osteoclast-stimulating factor 1 OS=Rattus
+          norvegicus GN=Ostf1 PE=1 SV=1
+          Length = 214
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 22/50 (44%), Positives = 29/50 (58%), Gaps = 2/50 (4%)
+
+Query: 6  ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+          ALY+F      +L F +GD+I I   SD+   WW G   GR G+ P+NYV
+Sbjct: 19 ALYTFEPRTPDELYFEEGDIIYITDMSDTS--WWKGTCKGRTGLIPSNYV 66
+
+
+>sp|A6H8I2|SGSM3_XENLA Small G protein signaling modulator 3 homolog
+           OS=Xenopus laevis GN=sgsm3 PE=2 SV=1
+          Length = 753
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 22/56 (39%), Positives = 33/56 (58%), Gaps = 2/56 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           +A AL  F   +  +L FRK D+ITI+ + D     W G +NG  G FPA +V+++
+Sbjct: 486 RAKALLDFERHDDDELGFRKNDIITIISQKDEH--CWVGELNGLRGWFPAKFVDIL 539
+
+
+>sp|Q62422|OSTF1_MOUSE Osteoclast-stimulating factor 1 OS=Mus
+          musculus GN=Ostf1 PE=1 SV=2
+          Length = 215
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 22/50 (44%), Positives = 29/50 (58%), Gaps = 2/50 (4%)
+
+Query: 6  ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+          ALY+F      +L F +GD+I I   SD+   WW G   GR G+ P+NYV
+Sbjct: 19 ALYTFEPRTPDELYFEEGDIIYITDMSDTS--WWKGTCKGRTGLIPSNYV 66
+
+
+>sp|Q14247|SRC8_HUMAN Src substrate cortactin OS=Homo sapiens
+           GN=CTTN PE=1 SV=2
+          Length = 550
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 24/54 (44%), Positives = 32/54 (59%), Gaps = 2/54 (3%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+           AVALY +      ++ F   D+IT ++  D  + WW G   GR G+FPANYVEL
+Sbjct: 497 AVALYDYQAAGDDEISFDPDDIITNIEMID--DGWWRGVCKGRYGLFPANYVEL 548
+
+
+>sp|O75886|STAM2_HUMAN Signal transducing adapter molecule 2 OS=Homo
+           sapiens GN=STAM2 PE=1 SV=1
+          Length = 525
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 21/53 (39%), Positives = 32/53 (60%), Gaps = 2/53 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           K  ALY F   E  +L F+ G++I +L  SD+  +WW G  +   G+FP+N+V
+Sbjct: 206 KVRALYDFEAVEDNELTFKHGEIIIVLDDSDA--NWWKGENHRGIGLFPSNFV 256
+
+
+>sp|Q61644|PACN1_MOUSE Protein kinase C and casein kinase substrate
+           in neurons protein 1 OS=Mus musculus GN=Pacsin1 PE=1
+           SV=1
+          Length = 441
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 24/54 (44%), Positives = 36/54 (66%), Gaps = 2/54 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVN-GREGIFPANYVELV 58
+           ALY + G+E  +L F+ GD +T L + D Q  W  GR++ G+ G++PANYVE +
+Sbjct: 389 ALYDYDGQEQDELSFKAGDELTKLGEEDEQG-WCRGRLDSGQLGLYPANYVEAI 441
+
+
+>sp|P13395|SPTCA_DROME Spectrin alpha chain OS=Drosophila melanogaster
+            GN=alpha-Spec PE=1 SV=2
+          Length = 2415
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 20/54 (37%), Positives = 33/54 (61%), Gaps = 2/54 (3%)
+
+Query: 5    VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+            VALY +  +   ++  +KGDV+T+L  ++   DWW   VN R+G  PA Y++ +
+Sbjct: 976  VALYDYTEKSPREVSMKKGDVLTLLNSNN--KDWWKVEVNDRQGFVPAAYIKKI 1027
+
+
+>sp|Q5XHY7|STAM2_RAT Signal transducing adapter molecule 2 OS=Rattus
+           norvegicus GN=Stam2 PE=2 SV=1
+          Length = 523
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 20/50 (40%), Positives = 32/50 (64%), Gaps = 2/50 (4%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           ALY F   E  +L F+ G++IT+L  SD+  +WW G  +   G+FP+++V
+Sbjct: 209 ALYDFEAVEDNELTFKHGEIITVLDDSDA--NWWEGENHRGAGLFPSSFV 256
+
+
+>sp|O35177|CASL_MOUSE Enhancer of filamentation 1 OS=Mus musculus
+          GN=Nedd9 PE=1 SV=2
+          Length = 833
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 22/56 (39%), Positives = 36/56 (64%), Gaps = 1/56 (1%)
+
+Query: 4  AVALYSFAGEESGDLPFRKGDVITILKK-SDSQNDWWTGRVNGREGIFPANYVELV 58
+          A ALY    E + +L FRKGD++T++++ +     WW   ++GR+GI P N V+L+
+Sbjct: 8  ARALYDNVPECAEELAFRKGDILTVIEQNTGGLEGWWLCSLHGRQGIVPGNRVKLL 63
+
+
+>sp|Q5RDK0|ARHG9_PONAB Rho guanine nucleotide exchange factor 9
+          OS=Pongo abelii GN=ARHGEF9 PE=2 SV=1
+          Length = 564
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 22/54 (40%), Positives = 34/54 (62%), Gaps = 2/54 (3%)
+
+Query: 4  AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+          A A++  A   + +L F+ GDVI +L  S+   DWW G+++  EG FPA++V L
+Sbjct: 13 AEAVWDHATMANRELAFKAGDVIKVLDASN--KDWWWGQIDDEEGWFPASFVRL 64
+
+
+>sp|P16333|NCK1_HUMAN Cytoplasmic protein NCK1 OS=Homo sapiens
+           GN=NCK1 PE=1 SV=1
+          Length = 377
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 21/54 (38%), Positives = 34/54 (62%), Gaps = 1/54 (1%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR-VNGREGIFPANYVELV 58
+           ALY F+     +L F KGDV+ +++K ++  +WW  R +NG  G+ P NYV ++
+Sbjct: 197 ALYPFSSSNDEELNFEKGDVMDVIEKPENDPEWWKCRKINGMVGLVPKNYVTVM 250
+
+
+>sp|Q9BY11|PACN1_HUMAN Protein kinase C and casein kinase substrate
+           in neurons protein 1 OS=Homo sapiens GN=PACSIN1 PE=1
+           SV=1
+          Length = 444
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 24/54 (44%), Positives = 36/54 (66%), Gaps = 2/54 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVN-GREGIFPANYVELV 58
+           ALY + G+E  +L F+ GD +T L + D Q  W  GR++ G+ G++PANYVE +
+Sbjct: 392 ALYDYDGQEQDELSFKAGDELTKLGEEDEQG-WCRGRLDSGQLGLYPANYVEAI 444
+
+
+>sp|Q5R411|PACN1_PONAB Protein kinase C and casein kinase substrate
+           in neurons protein 1 OS=Pongo abelii GN=Pacsin1 PE=2
+           SV=1
+          Length = 444
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 24/54 (44%), Positives = 36/54 (66%), Gaps = 2/54 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVN-GREGIFPANYVELV 58
+           ALY + G+E  +L F+ GD +T L + D Q  W  GR++ G+ G++PANYVE +
+Sbjct: 392 ALYDYDGQEQDELSFKAGDELTKLGEEDEQG-WCRGRLDSGQLGLYPANYVEAI 444
+
+
+>sp|Q9Z0W5|PACN1_RAT Protein kinase C and casein kinase substrate in
+           neurons protein 1 OS=Rattus norvegicus GN=Pacsin1 PE=1
+           SV=1
+          Length = 441
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 24/54 (44%), Positives = 36/54 (66%), Gaps = 2/54 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVN-GREGIFPANYVELV 58
+           ALY + G+E  +L F+ GD +T L + D Q  W  GR++ G+ G++PANYVE +
+Sbjct: 389 ALYDYDGQEQDELSFKAGDELTKLGEEDEQG-WCRGRLDSGQLGLYPANYVEAI 441
+
+
+>sp|Q8IZP0|ABI1_HUMAN Abl interactor 1 OS=Homo sapiens GN=ABI1 PE=1
+           SV=4
+          Length = 508
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 21/56 (37%), Positives = 35/56 (62%), Gaps = 2/56 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           K VA+Y +  ++  +L F +G +I ++KK+D  + W+ G  N   G+FP NYVE +
+Sbjct: 450 KVVAIYDYTKDKDDELSFMEGAIIYVIKKND--DGWYEGVCNRVTGLFPGNYVESI 503
+
+
+>sp|Q9WVE8|PACN2_MOUSE Protein kinase C and casein kinase substrate
+           in neurons protein 2 OS=Mus musculus GN=Pacsin2 PE=2
+           SV=1
+          Length = 486
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 23/54 (42%), Positives = 36/54 (66%), Gaps = 2/54 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVN-GREGIFPANYVELV 58
+           ALY + G+E  +L F+ GD +T ++  D Q  W  GR++ G+ G++PANYVE +
+Sbjct: 433 ALYDYEGQEHDELSFKAGDELTKIEDEDEQG-WCKGRLDSGQVGLYPANYVEAI 485
+
+
+>sp|Q9QY17|PACN2_RAT Protein kinase C and casein kinase substrate in
+           neurons 2 protein OS=Rattus norvegicus GN=Pacsin2 PE=1
+           SV=2
+          Length = 488
+
+ Score = 46.6 bits (109), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 23/54 (42%), Positives = 36/54 (66%), Gaps = 2/54 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVN-GREGIFPANYVELV 58
+           ALY + G+E  +L F+ GD +T ++  D Q  W  GR++ G+ G++PANYVE +
+Sbjct: 435 ALYDYEGQEHDELSFKAGDELTKIEDEDEQG-WCKGRLDSGQVGLYPANYVEAI 487
+
+
+>sp|Q01406|SRC8_CHICK Src substrate protein p85 OS=Gallus gallus
+           GN=CTTN1 PE=2 SV=1
+          Length = 563
+
+ Score = 46.6 bits (109), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 23/54 (42%), Positives = 32/54 (59%), Gaps = 2/54 (3%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+           A+ALY +      ++ F   D+IT ++  D  + WW G   GR G+FPANYVEL
+Sbjct: 510 AIALYDYQAAGDDEISFDPDDIITNIEMID--DGWWRGVCKGRYGLFPANYVEL 561
+
+
+>sp|P43069|CDC25_CANAL Cell division control protein 25 OS=Candida
+          albicans GN=CDC25 PE=4 SV=1
+          Length = 1333
+
+ Score = 46.6 bits (109), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 26/59 (44%), Positives = 31/59 (52%), Gaps = 7/59 (11%)
+
+Query: 5  VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNG-----REGIFPANYVELV 58
+          +ALY F G +S  LP   GD I +L KS +   WW G V G     + G FP NYV  V
+Sbjct: 36 IALYDFPGTQSSHLPLNLGDTIHVLSKSAT--GWWDGVVMGNSGELQRGWFPHNYVRSV 92
+
+
+>sp|Q7T2V3|M3K10_XENLA Mitogen-activated protein kinase kinase
+          kinase 10 OS=Xenopus laevis GN=map3k10 PE=2 SV=1
+          Length = 1005
+
+ Score = 46.6 bits (109), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 20/58 (34%), Positives = 34/58 (58%), Gaps = 3/58 (5%)
+
+Query: 1  SPKAVALYSFAGEESGDLPFRKGDVITILKKSDS---QNDWWTGRVNGREGIFPANYV 55
+          +P  +A++ +      +L  R+GD++ IL K  +      WWTG++  + GIFP+NYV
+Sbjct: 34 NPLWMAVFDYEPTAEEELTLRRGDLVEILSKDSTVSGDEGWWTGKIKDKVGIFPSNYV 91
+
+
+>sp|P27447|YES_XIPHE Tyrosine-protein kinase Yes OS=Xiphophorus
+           helleri GN=yes PE=2 SV=3
+          Length = 544
+
+ Score = 46.6 bits (109), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 23/53 (43%), Positives = 30/53 (56%), Gaps = 4/53 (7%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRV--NGREGIFPANYV 55
+           VALY +    S DL FRKGD   I+  ++++ DWW  R    G  G  P+NYV
+Sbjct: 98  VALYDYEARTSDDLSFRKGDRFQII--NNTEGDWWEARSINTGENGYIPSNYV 148
+
+
+>sp|O14136|PEX13_SCHPO Peroxisomal membrane protein pex13
+           OS=Schizosaccharomyces pombe GN=pex13 PE=2 SV=1
+          Length = 288
+
+ Score = 46.6 bits (109), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 23/58 (39%), Positives = 35/58 (60%), Gaps = 5/58 (8%)
+
+Query: 6   ALYSFAGEESG-DLPFRKGDVITILKKSDSQN---DWWTGRV-NGREGIFPANYVELV 58
+           A Y F   + G ++  +KGD+I IL K+D+Q    +WW GR  +G  G FP+NY  ++
+Sbjct: 229 ADYEFMSRDPGVEMSLKKGDIIAILSKTDTQGNPCEWWQGRKRSGETGWFPSNYCSII 286
+
+
+>sp|Q60598|SRC8_MOUSE Src substrate cortactin OS=Mus musculus
+           GN=Cttn PE=1 SV=1
+          Length = 546
+
+ Score = 46.6 bits (109), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 23/54 (42%), Positives = 32/54 (59%), Gaps = 2/54 (3%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+           A+ALY +      ++ F   D+IT ++  D  + WW G   GR G+FPANYVEL
+Sbjct: 493 AIALYDYQAAGDDEISFDPDDIITNIEMID--DGWWRGVCKGRYGLFPANYVEL 544
+
+
+>sp|P49710|HCLS1_MOUSE Hematopoietic lineage cell-specific protein
+           OS=Mus musculus GN=Hcls1 PE=1 SV=1
+          Length = 486
+
+ Score = 46.2 bits (108), Expect = 5e-05,   Method: Composition-based stats.
+ Identities = 23/52 (44%), Positives = 32/52 (61%), Gaps = 2/52 (3%)
+
+Query: 7   LYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           LY + GE S +L F   D+IT ++  D    WW G+  G  G+FPANYV+L+
+Sbjct: 437 LYDYQGEGSDELSFDPDDIITDIEMVDE--GWWRGQCRGHFGLFPANYVKLL 486
+
+
+>sp|Q6XZF7|DNMBP_HUMAN Dynamin-binding protein OS=Homo sapiens
+           GN=DNMBP PE=1 SV=1
+          Length = 1577
+
+ Score = 46.2 bits (108), Expect = 5e-05,   Method: Composition-based stats.
+ Identities = 23/56 (41%), Positives = 34/56 (60%), Gaps = 2/56 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           +A AL   + +   +L FR+GDVITI+   +    W+ G + GR GIFP  +VEL+
+Sbjct: 149 QARALMGLSAQLDEELDFREGDVITIIGVPEP--GWFEGELEGRRGIFPEGFVELL 202
+
+
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 23/54 (42%), Positives = 30/54 (55%), Gaps = 2/54 (3%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+            VALY F   E  +L F  GD I IL  +  ++ W  G + GR GIFP  +V+L
+Sbjct: 248 GVALYRFQALEPNELDFEVGDKIRIL--ATLEDGWLEGSLKGRTGIFPYRFVKL 299
+
+
+>sp|Q06187|BTK_HUMAN Tyrosine-protein kinase BTK OS=Homo sapiens
+           GN=BTK PE=1 SV=3
+          Length = 659
+
+ Score = 46.2 bits (108), Expect = 5e-05,   Method: Composition-based stats.
+ Identities = 25/54 (46%), Positives = 32/54 (59%), Gaps = 3/54 (5%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR-VNGREGIFPANYV 55
+           K VALY +    + DL  RKGD   IL++S+    WW  R  NG+EG  P+NYV
+Sbjct: 218 KVVALYDYMPMNANDLQLRKGDEYFILEESNLP--WWRARDKNGQEGYIPSNYV 269
+
+
+>sp|B0CRJ3|MYO1_LACBS Myosin-1 OS=Laccaria bicolor (strain S238N-H82)
+            GN=MYO1 PE=3 SV=2
+          Length = 1252
+
+ Score = 46.2 bits (108), Expect = 5e-05,   Method: Composition-based stats.
+ Identities = 22/53 (41%), Positives = 36/53 (67%), Gaps = 3/53 (5%)
+
+Query: 6    ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+            A ++F G+E G++  +K DV+ +++K D  N WW  +++G EG  P NY+ELV
+Sbjct: 1053 AKFAFEGQE-GEMSLKKDDVVELVEKDD--NGWWLVKMDGVEGWAPNNYLELV 1102
+
+
+>sp|Q9V9J3|SRC42_DROME Tyrosine-protein kinase Src42A OS=Drosophila
+           melanogaster GN=Src42A PE=1 SV=1
+          Length = 517
+
+ Score = 45.8 bits (107), Expect = 6e-05,   Method: Composition-based stats.
+ Identities = 24/53 (45%), Positives = 30/53 (56%), Gaps = 4/53 (7%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNG--REGIFPANYV 55
+           VALY +      DL FRKG+ + IL  +D+Q DWW  R      EG  P+NYV
+Sbjct: 69  VALYDYDARTDEDLSFRKGEHLEIL--NDTQGDWWLARSKKTRSEGYIPSNYV 119
+
+
+>sp|Q8I7C3|LASP1_DROME LIM and SH3 domain protein Lasp OS=Drosophila
+           melanogaster GN=Lasp PE=1 SV=2
+          Length = 657
+
+ Score = 45.8 bits (107), Expect = 6e-05,   Method: Composition-based stats.
+ Identities = 23/53 (43%), Positives = 34/53 (64%), Gaps = 4/53 (7%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRV--NGREGIFPANYVE 56
+           A+Y +  ++  ++ FR+GDVI  ++  DS   W TGRV   G+ G+ PANYVE
+Sbjct: 603 AIYDYEAQDVDEVSFREGDVIFEVESIDS--GWMTGRVERTGKTGMLPANYVE 653
+
+
+>sp|Q96N96|SPT13_HUMAN Spermatogenesis-associated protein 13 OS=Homo
+           sapiens GN=SPATA13 PE=2 SV=1
+          Length = 652
+
+ Score = 45.8 bits (107), Expect = 6e-05,   Method: Composition-based stats.
+ Identities = 22/54 (40%), Positives = 32/54 (59%), Gaps = 2/54 (3%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+           A AL+     +  +L F+ GDVI +L+ S+   DWW GR   +E  FPA++V L
+Sbjct: 152 AEALWDHVTMDDQELGFKAGDVIQVLEASN--KDWWWGRSEDKEAWFPASFVRL 203
+
+
+>sp|Q6TGW5|OSTF1_DANRE Osteoclast-stimulating factor 1 OS=Danio
+          rerio GN=ostf1 PE=2 SV=1
+          Length = 214
+
+ Score = 45.8 bits (107), Expect = 7e-05,   Method: Composition-based stats.
+ Identities = 21/50 (42%), Positives = 30/50 (60%), Gaps = 2/50 (4%)
+
+Query: 6  ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+          AL++F      +L F +GD++ I   SDS  +WW G   GR G+ P+NYV
+Sbjct: 19 ALFTFDPRTPDELYFEEGDILYISDTSDS--NWWKGTCRGRTGLIPSNYV 66
+
+
+>sp|A5GFW5|CASS4_PIG Cas scaffolding protein family member 4
+          OS=Sus scrofa GN=CASS4 PE=3 SV=1
+          Length = 784
+
+ Score = 45.4 bits (106), Expect = 8e-05,   Method: Composition-based stats.
+ Identities = 23/62 (37%), Positives = 43/62 (69%), Gaps = 4/62 (6%)
+
+Query: 1  SPKAV---ALYSFAGEESGDLPFRKGDVITILKKSDSQND-WWTGRVNGREGIFPANYVE 56
+          +PKA+   ALY    + S +L F +GD++TIL++   +++ WWT  ++GR+G+ PAN ++
+Sbjct: 10 APKALLARALYDNHPDCSDELAFCRGDILTILEQDVPESEGWWTCLLHGRQGLAPANRLQ 69
+
+Query: 57 LV 58
+          ++
+Sbjct: 70 IL 71
+
+
+>sp|Q3USJ8|FCSD2_MOUSE FCH and double SH3 domains protein 2 OS=Mus
+           musculus GN=Fchsd2 PE=1 SV=2
+          Length = 740
+
+ Score = 45.4 bits (106), Expect = 8e-05,   Method: Composition-based stats.
+ Identities = 21/52 (40%), Positives = 32/52 (61%), Gaps = 1/52 (1%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQND-WWTGRVNGREGIFPANYVE 56
+           ALY + G+   +L F +G +I IL K +  +D +W G  +GR G+FP+  VE
+Sbjct: 574 ALYDYEGQTDDELSFPEGAIIRILNKENQDDDGFWEGEFSGRIGVFPSVLVE 625
+
+
+>sp|Q5TCX8|M3KL4_HUMAN Mitogen-activated protein kinase kinase
+          kinase OS=Homo sapiens GN=MLK4 PE=1 SV=1
+          Length = 1036
+
+ Score = 45.4 bits (106), Expect = 8e-05,   Method: Composition-based stats.
+ Identities = 20/53 (37%), Positives = 28/53 (52%), Gaps = 3/53 (5%)
+
+Query: 6  ALYSFAGEESGDLPFRKGDVITILKKS---DSQNDWWTGRVNGREGIFPANYV 55
+          ALY +      +L  R+G ++ +L +         WW G+V  R GIFPANYV
+Sbjct: 45 ALYDYEARGEDELSLRRGQLVEVLSQDAAVSGDEGWWAGQVQRRLGIFPANYV 97
+
+
+>sp|P16546|SPTA2_MOUSE Spectrin alpha chain, brain OS=Mus musculus
+            GN=Sptan1 PE=1 SV=4
+          Length = 2472
+
+ Score = 45.4 bits (106), Expect = 8e-05,   Method: Composition-based stats.
+ Identities = 19/52 (36%), Positives = 32/52 (61%), Gaps = 2/52 (3%)
+
+Query: 5    VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+            +ALY +  +   ++  +KGD++T+L  ++   DWW   VN R+G  PA YV+
+Sbjct: 973  LALYDYQEKSPREVTMKKGDILTLLNSTN--KDWWKVEVNDRQGFVPAAYVK 1022
+
+
+>sp|P16086|SPTA2_RAT Spectrin alpha chain, brain OS=Rattus norvegicus
+            GN=Sptan1 PE=1 SV=2
+          Length = 2472
+
+ Score = 45.4 bits (106), Expect = 8e-05,   Method: Composition-based stats.
+ Identities = 19/52 (36%), Positives = 32/52 (61%), Gaps = 2/52 (3%)
+
+Query: 5    VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+            +ALY +  +   ++  +KGD++T+L  ++   DWW   VN R+G  PA YV+
+Sbjct: 973  LALYDYQEKSPREVTMKKGDILTLLNSTN--KDWWKVEVNDRQGFVPAAYVK 1022
+
+
+>sp|Q5DU57|SPT13_MOUSE Spermatogenesis-associated protein 13 OS=Mus
+           musculus GN=Spata13 PE=2 SV=2
+          Length = 656
+
+ Score = 45.4 bits (106), Expect = 9e-05,   Method: Composition-based stats.
+ Identities = 22/54 (40%), Positives = 32/54 (59%), Gaps = 2/54 (3%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+           A AL+     +  +L F+ GDVI +L+ S+   DWW GR   +E  FPA++V L
+Sbjct: 156 AEALWDHVTMDDQELGFKAGDVIQVLEASN--KDWWWGRNEDKEAWFPASFVRL 207
+
+
+>sp|Q13813|SPTA2_HUMAN Spectrin alpha chain, brain OS=Homo sapiens
+            GN=SPTAN1 PE=1 SV=3
+          Length = 2472
+
+ Score = 45.4 bits (106), Expect = 9e-05,   Method: Composition-based stats.
+ Identities = 19/52 (36%), Positives = 32/52 (61%), Gaps = 2/52 (3%)
+
+Query: 5    VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+            +ALY +  +   ++  +KGD++T+L  ++   DWW   VN R+G  PA YV+
+Sbjct: 973  LALYDYQEKSPREVTMKKGDILTLLNSTN--KDWWKVEVNDRQGFVPAAYVK 1022
+
+
+>sp|P07751|SPTA2_CHICK Spectrin alpha chain, brain OS=Gallus gallus
+            GN=SPTAN1 PE=1 SV=3
+          Length = 2477
+
+ Score = 45.4 bits (106), Expect = 9e-05,   Method: Composition-based stats.
+ Identities = 19/52 (36%), Positives = 32/52 (61%), Gaps = 2/52 (3%)
+
+Query: 5    VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+            +ALY +  +   ++  +KGD++T+L  ++   DWW   VN R+G  PA YV+
+Sbjct: 973  LALYDYQEKSPREVTMKKGDILTLLNSTN--KDWWKVEVNDRQGFVPAAYVK 1022
+
+
+>sp|P46108|CRK_HUMAN Proto-oncogene C-crk OS=Homo sapiens GN=CRK
+           PE=1 SV=2
+          Length = 304
+
+ Score = 45.4 bits (106), Expect = 9e-05,   Method: Composition-based stats.
+ Identities = 22/52 (42%), Positives = 30/52 (57%), Gaps = 3/52 (5%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR-VNGREGIFPANYVE 56
+           AL+ F G +  DLPF+KGD++ I  K + Q  WW      G+ G+ P  YVE
+Sbjct: 139 ALFDFNGNDEEDLPFKKGDILRIRDKPEEQ--WWNAEDSEGKRGMIPVPYVE 188
+
+
+>sp|Q63768|CRK_RAT Proto-oncogene C-crk OS=Rattus norvegicus GN=Crk
+           PE=1 SV=1
+          Length = 304
+
+ Score = 45.4 bits (106), Expect = 9e-05,   Method: Composition-based stats.
+ Identities = 22/52 (42%), Positives = 30/52 (57%), Gaps = 3/52 (5%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR-VNGREGIFPANYVE 56
+           AL+ F G +  DLPF+KGD++ I  K + Q  WW      G+ G+ P  YVE
+Sbjct: 139 ALFDFNGNDEEDLPFKKGDILRIRDKPEEQ--WWNAEDSEGKRGMIPVPYVE 188
+
+
+>sp|Q64010|CRK_MOUSE Proto-oncogene C-crk OS=Mus musculus GN=Crk
+           PE=1 SV=1
+          Length = 304
+
+ Score = 45.4 bits (106), Expect = 9e-05,   Method: Composition-based stats.
+ Identities = 22/52 (42%), Positives = 30/52 (57%), Gaps = 3/52 (5%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR-VNGREGIFPANYVE 56
+           AL+ F G +  DLPF+KGD++ I  K + Q  WW      G+ G+ P  YVE
+Sbjct: 139 ALFDFNGNDEEDLPFKKGDILRIRDKPEEQ--WWNAEDSEGKRGMIPVPYVE 188
+
+
+>sp|O75044|FNBP2_HUMAN SLIT-ROBO Rho GTPase-activating protein 2
+           OS=Homo sapiens GN=SRGAP2 PE=1 SV=2
+          Length = 1071
+
+ Score = 45.4 bits (106), Expect = 9e-05,   Method: Composition-based stats.
+ Identities = 17/53 (32%), Positives = 33/53 (62%), Gaps = 2/53 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           +A+A + + G  + +L F+KG  + + +++   +DWW GR NG +G+ P  Y+
+Sbjct: 732 EAIAKFDYVGRTARELSFKKGASLLLYQRA--SDDWWEGRHNGIDGLIPHQYI 782
+
+
+>sp|Q91Z67|FNBP2_MOUSE SLIT-ROBO Rho GTPase-activating protein 2
+           OS=Mus musculus GN=Srgap2 PE=1 SV=2
+          Length = 1071
+
+ Score = 45.4 bits (106), Expect = 9e-05,   Method: Composition-based stats.
+ Identities = 17/53 (32%), Positives = 33/53 (62%), Gaps = 2/53 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           +A+A + + G  + +L F+KG  + + +++   +DWW GR NG +G+ P  Y+
+Sbjct: 732 EAIAKFDYVGRTARELSFKKGASLLLYQRA--SDDWWEGRHNGIDGLIPHQYI 782
+
+
+>sp|Q7ZYG4|OSTF1_XENLA Osteoclast-stimulating factor 1 OS=Xenopus
+          laevis GN=ostf1 PE=2 SV=1
+          Length = 214
+
+ Score = 45.4 bits (106), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 20/50 (40%), Positives = 30/50 (60%), Gaps = 2/50 (4%)
+
+Query: 6  ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+          ALY+F      +L F +GD++ I   SD+  +WW G   G+ G+ P+NYV
+Sbjct: 19 ALYTFEPRTPDELYFEEGDILYIADMSDT--NWWKGTCKGKTGLIPSNYV 66
+
+
+>sp|O43307|ARHG9_HUMAN Rho guanine nucleotide exchange factor 9
+          OS=Homo sapiens GN=ARHGEF9 PE=1 SV=3
+          Length = 516
+
+ Score = 45.1 bits (105), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 21/54 (38%), Positives = 33/54 (61%), Gaps = 2/54 (3%)
+
+Query: 4  AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+          A A++      + +L F+ GDVI +L  S+   DWW G+++  EG FPA++V L
+Sbjct: 13 AEAVWDHVTMANRELAFKAGDVIKVLDASN--KDWWWGQIDDEEGWFPASFVRL 64
+
+
+>sp|O77775|NCF2_BOVIN Neutrophil cytosol factor 2 OS=Bos taurus
+           GN=NCF2 PE=2 SV=1
+          Length = 527
+
+ Score = 45.1 bits (105), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 22/54 (40%), Positives = 31/54 (57%), Gaps = 2/54 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           K VAL+S+   +  DL F +GDVI ++   + Q  W  G   G+ GIFP  +VE
+Sbjct: 462 KVVALFSYEATQPEDLEFLEGDVILVISTVNEQ--WLEGECKGKVGIFPKAFVE 513
+
+
+>sp|Q9NQ75|CASS4_HUMAN Cas scaffolding protein family member 4
+          OS=Homo sapiens GN=CASS4 PE=1 SV=2
+          Length = 786
+
+ Score = 45.1 bits (105), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 22/62 (35%), Positives = 42/62 (67%), Gaps = 4/62 (6%)
+
+Query: 1  SPKAV---ALYSFAGEESGDLPFRKGDVITILKKSDSQND-WWTGRVNGREGIFPANYVE 56
+          +PKA+   ALY    + S +L F +GD++TIL++   +++ WW   ++GR+G+ PAN ++
+Sbjct: 10 APKALLARALYDNCPDCSDELAFSRGDILTILEQHVPESEGWWKCLLHGRQGLAPANRLQ 69
+
+Query: 57 LV 58
+          ++
+Sbjct: 70 IL 71
+
+
+>sp|Q80XI6|M3K11_MOUSE Mitogen-activated protein kinase kinase
+           kinase 11 OS=Mus musculus GN=Map3k11 PE=1 SV=1
+          Length = 850
+
+ Score = 45.1 bits (105), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 27/67 (40%), Positives = 36/67 (53%), Gaps = 12/67 (17%)
+
+Query: 1   SPKAVALYS-------FAGEESG--DLPFRKGDVITILKKS---DSQNDWWTGRVNGREG 48
+           SPKA A Y+       F  E +G  +L  RKGD + +L +         WW G+V G+ G
+Sbjct: 35  SPKATAAYANPVWTALFDYEPNGQDELALRKGDRVEVLSRDAAISGDEGWWAGQVGGQVG 94
+
+Query: 49  IFPANYV 55
+           IFP+NYV
+Sbjct: 95  IFPSNYV 101
+
+
+>sp|Q3UTH8|ARHG9_MOUSE Rho guanine nucleotide exchange factor 9
+          OS=Mus musculus GN=Arhgef9 PE=2 SV=1
+          Length = 516
+
+ Score = 45.1 bits (105), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 21/54 (38%), Positives = 33/54 (61%), Gaps = 2/54 (3%)
+
+Query: 4  AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+          A A++      + +L F+ GDVI +L  S+   DWW G+++  EG FPA++V L
+Sbjct: 13 AEAVWDHVTMANRELAFKAGDVIKVLDASN--KDWWWGQIDDEEGWFPASFVRL 64
+
+
+>sp|Q2HDI2|MYO1_CHAGB Myosin-1 OS=Chaetomium globosum GN=MYO1 PE=3
+            SV=1
+          Length = 1214
+
+ Score = 45.1 bits (105), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 21/53 (39%), Positives = 31/53 (58%), Gaps = 2/53 (3%)
+
+Query: 4    AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+            A  LY FAG+   +L  + G VI I++K +  N WW  +++G +   PA YVE
+Sbjct: 1070 AKVLYDFAGQRENELSIQAGQVIEIVQKEN--NGWWLAKLSGGQAWVPAAYVE 1120
+
+
+>sp|P42522|MYOC_DICDI Myosin IC heavy chain OS=Dictyostelium
+            discoideum GN=myoC PE=4 SV=2
+          Length = 1182
+
+ Score = 45.1 bits (105), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 20/56 (35%), Positives = 35/56 (62%), Gaps = 4/56 (7%)
+
+Query: 5    VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRV--NGREGIFPANYVELV 58
+            +ALY +   +  +L F++ DVI ++KK D+  DWW G +    + G+ P+NYV+ +
+Sbjct: 1129 IALYEYDAMQPDELTFKENDVINLIKKVDA--DWWQGELVRTKQIGMLPSNYVQQI 1182
+
+
+>sp|Q58DL7|ARHG9_BOVIN Rho guanine nucleotide exchange factor 9
+           OS=Bos taurus GN=ARHGEF9 PE=2 SV=1
+          Length = 561
+
+ Score = 44.7 bits (104), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 21/54 (38%), Positives = 33/54 (61%), Gaps = 2/54 (3%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+           A A++      + +L F+ GDVI +L  S+   DWW G+++  EG FPA++V L
+Sbjct: 58  AEAVWDHVTMANRELAFKAGDVIKVLDASN--KDWWWGQIDDEEGWFPASFVRL 109
+
+
+>sp|Q66HA1|M3K11_RAT Mitogen-activated protein kinase kinase kinase
+           11 OS=Rattus norvegicus GN=Map3k11 PE=2 SV=1
+          Length = 850
+
+ Score = 44.7 bits (104), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 27/67 (40%), Positives = 36/67 (53%), Gaps = 12/67 (17%)
+
+Query: 1   SPKAVALYS-------FAGEESG--DLPFRKGDVITILKKS---DSQNDWWTGRVNGREG 48
+           SPKA A Y+       F  E +G  +L  RKGD + +L +         WW G+V G+ G
+Sbjct: 35  SPKATAAYANPVWTALFDYEPNGQDELALRKGDRVEVLSRDAAISGDEGWWAGQVGGQVG 94
+
+Query: 49  IFPANYV 55
+           IFP+NYV
+Sbjct: 95  IFPSNYV 101
+
+
+>sp|Q6XJU9|OSTF1_MONAL Osteoclast-stimulating factor 1
+          OS=Monopterus albus GN=ostf1 PE=2 SV=1
+          Length = 214
+
+ Score = 44.7 bits (104), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 20/50 (40%), Positives = 30/50 (60%), Gaps = 2/50 (4%)
+
+Query: 6  ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+          AL++F      +L F +GD++ I   SD+  +WW G   GR G+ P+NYV
+Sbjct: 19 ALFTFDPRTPDELYFEEGDILYISDTSDT--NWWKGTCRGRTGLIPSNYV 66
+
+
+>sp|Q6TXD4|DNMBP_MOUSE Dynamin-binding protein OS=Mus musculus
+           GN=Dnmbp PE=1 SV=2
+          Length = 1580
+
+ Score = 44.7 bits (104), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 22/56 (39%), Positives = 34/56 (60%), Gaps = 2/56 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+           +A AL   + +   +L FR+GD+ITI+   +    W+ G + GR GIFP  +VEL+
+Sbjct: 150 QARALMGLSAQLDEELDFREGDLITIIGVPEP--GWFEGELEGRRGIFPEGFVELL 203
+
+
+>sp|Q9ES28|ARHG7_MOUSE Rho guanine nucleotide exchange factor 7
+           OS=Mus musculus GN=Arhgef7 PE=1 SV=2
+          Length = 862
+
+ Score = 44.7 bits (104), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 21/50 (42%), Positives = 28/50 (56%), Gaps = 2/50 (4%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           A ++F      +L F KGDVI + +    +  WW G  NGR G FP+NYV
+Sbjct: 170 AKFNFQQTNEDELSFSKGDVIHVTRVE--EGGWWEGTHNGRTGWFPSNYV 217
+
+
+>sp|O55043|ARHG7_RAT Rho guanine nucleotide exchange factor 7
+          OS=Rattus norvegicus GN=Arhgef7 PE=1 SV=1
+          Length = 646
+
+ Score = 44.7 bits (104), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 21/50 (42%), Positives = 28/50 (56%), Gaps = 2/50 (4%)
+
+Query: 6  ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+          A ++F      +L F KGDVI + +    +  WW G  NGR G FP+NYV
+Sbjct: 13 AKFNFQQTNEDELSFSKGDVIHVTRVE--EGGWWEGTHNGRTGWFPSNYV 60
+
+
+>sp|Q5I1X5|IASPP_MOUSE RelA-associated inhibitor OS=Mus musculus
+           GN=Ppp1r13l PE=1 SV=1
+          Length = 824
+
+ Score = 44.7 bits (104), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 19/53 (35%), Positives = 33/53 (62%), Gaps = 1/53 (1%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSD-SQNDWWTGRVNGREGIFPANYVEL 57
+           AL+ ++ E   +L FR+G+ +T+L++    + DWW   ++G+EG  P NY  L
+Sbjct: 761 ALWDYSAEFGDELSFREGESVTVLRRDGPEETDWWWASLHGQEGYVPRNYFGL 813
+
+
+>sp|Q16584|M3K11_HUMAN Mitogen-activated protein kinase kinase
+           kinase 11 OS=Homo sapiens GN=MAP3K11 PE=1 SV=1
+          Length = 847
+
+ Score = 44.3 bits (103), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 21/58 (36%), Positives = 31/58 (53%), Gaps = 3/58 (5%)
+
+Query: 1   SPKAVALYSFAGEESGDLPFRKGDVITILKKS---DSQNDWWTGRVNGREGIFPANYV 55
+           +P   AL+ +      +L  RKGD + +L +         WW G+V G+ GIFP+NYV
+Sbjct: 43  NPVWTALFDYEPSGQDELALRKGDRVEVLSRDAAISGDEGWWAGQVGGQVGIFPSNYV 100
+
+
+>sp|Q9Y7Z8|MYO1_SCHPO Myosin-1 OS=Schizosaccharomyces pombe GN=myo1
+            PE=1 SV=1
+          Length = 1217
+
+ Score = 44.3 bits (103), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 21/51 (41%), Positives = 29/51 (56%), Gaps = 2/51 (3%)
+
+Query: 5    VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+            +ALY FAG    ++  +K ++I I++K  S   WW    NG EG  PA YV
+Sbjct: 1112 LALYDFAGRSPNEMTIKKDEIIEIVQKEPS--GWWLALKNGAEGWVPATYV 1160
+
+
+>sp|Q8WUF5|IASPP_HUMAN RelA-associated inhibitor OS=Homo sapiens
+           GN=PPP1R13L PE=1 SV=4
+          Length = 828
+
+ Score = 44.3 bits (103), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 19/53 (35%), Positives = 33/53 (62%), Gaps = 1/53 (1%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSD-SQNDWWTGRVNGREGIFPANYVEL 57
+           AL+ ++ E   +L FR+G+ +T+L++    + DWW   ++G+EG  P NY  L
+Sbjct: 765 ALWDYSAEFGDELSFREGESVTVLRRDGPEETDWWWAALHGQEGYVPRNYFGL 817
+
+
+>sp|A3LXQ8|HSE1_PICST Class E vacuolar protein-sorting machinery
+           protein HSE1 OS=Pichia stipitis GN=HSE1 PE=3 SV=2
+          Length = 475
+
+ Score = 44.3 bits (103), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 23/57 (40%), Positives = 31/57 (54%), Gaps = 3/57 (5%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRV-NGREGIFPANYVELV 58
+           K  A++     E  +L FRKGD+I +++      DWW G +  G  GIFP NYV  V
+Sbjct: 224 KVRAMFDLVSHEKDELSFRKGDLINVIEV--VYRDWWRGSLPTGEVGIFPLNYVAPV 278
+
+
+>sp|A4RE77|MYO1_MAGGR Myosin-1 OS=Magnaporthe grisea GN=MYO1 PE=3 SV=1
+          Length = 1212
+
+ Score = 44.3 bits (103), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 19/53 (35%), Positives = 32/53 (60%), Gaps = 2/53 (3%)
+
+Query: 4    AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+            A  LY FAG++  ++  ++GD+I I++K +  N WW  +   ++   PA YVE
+Sbjct: 1070 AKVLYDFAGQKENEMSIKEGDLIEIVQKEN--NGWWLAKSGNQQAWVPAAYVE 1120
+
+
+>sp|P10936|YES_XENLA Tyrosine-protein kinase Yes OS=Xenopus laevis
+           GN=yes1 PE=2 SV=3
+          Length = 537
+
+ Score = 44.3 bits (103), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 21/53 (39%), Positives = 31/53 (58%), Gaps = 4/53 (7%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR--VNGREGIFPANYV 55
+           VALY +    + DL FRKG+   I+  ++++ DWW  R    G+ G  P+NYV
+Sbjct: 91  VALYDYEARTTEDLSFRKGERFQII--NNTEGDWWEARSIATGKTGYIPSNYV 141
+
+
+>sp|Q9DDA9|PACN2_XENLA Protein kinase C and casein kinase substrate
+           in neurons protein 2 OS=Xenopus laevis GN=pacsin2 PE=2
+           SV=1
+          Length = 477
+
+ Score = 43.9 bits (102), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 23/54 (42%), Positives = 35/54 (64%), Gaps = 2/54 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGRE-GIFPANYVELV 58
+           ALY + G+E  +L F+ G+ +T ++  D Q  W  GR+ G + G++PANYVE V
+Sbjct: 424 ALYDYDGQELDELSFKAGEELTKIEDEDEQG-WCKGRLEGGQVGLYPANYVESV 476
+
+
+>sp|Q9VU84|DBNL_DROME Drebrin-like protein OS=Drosophila
+           melanogaster GN=CG10083 PE=1 SV=1
+          Length = 531
+
+ Score = 43.9 bits (102), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 23/57 (40%), Positives = 34/57 (59%), Gaps = 3/57 (5%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR-VNGREGIFPANYVELV 58
+           +A ALY +   +  ++ F  GDVIT + + D    WW G   +G  G+FPANYVE++
+Sbjct: 476 RARALYDYQAADETEITFDPGDVITHIDQIDE--GWWQGLGPDGTYGLFPANYVEII 530
+
+
+>sp|P19878|NCF2_HUMAN Neutrophil cytosol factor 2 OS=Homo sapiens
+           GN=NCF2 PE=1 SV=2
+          Length = 526
+
+ Score = 43.9 bits (102), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 20/51 (39%), Positives = 31/51 (60%), Gaps = 2/51 (3%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           AL+S+   +  DL F++GD+I +L K + +  W  G   G+ GIFP  +VE
+Sbjct: 464 ALFSYEATQPEDLEFQEGDIILVLSKVNEE--WLEGECKGKVGIFPKVFVE 512
+
+
+>sp|O70145|NCF2_MOUSE Neutrophil cytosol factor 2 OS=Mus musculus
+           GN=Ncf2 PE=2 SV=1
+          Length = 525
+
+ Score = 43.9 bits (102), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 21/54 (38%), Positives = 31/54 (57%), Gaps = 2/54 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           + VA++S+   +  DL F +GDVI +L  S    +W  G   G+ GIFP  +VE
+Sbjct: 460 QVVAIFSYEAAQPEDLEFVEGDVILVL--SHVNEEWLEGECKGKVGIFPKAFVE 511
+
+
+>sp|Q7Z6B7|SRGP1_HUMAN SLIT-ROBO Rho GTPase-activating protein 1
+           OS=Homo sapiens GN=SRGAP1 PE=1 SV=1
+          Length = 1085
+
+ Score = 43.9 bits (102), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 17/53 (32%), Positives = 31/53 (58%), Gaps = 2/53 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           +A+A + + G  + +L F+KG  + +  ++    DWW GR NG +G+ P  Y+
+Sbjct: 747 EAIAKFDYVGRSARELSFKKGASLLLYHRA--SEDWWEGRHNGIDGLVPHQYI 797
+
+
+>sp|Q91Z69|SRGP1_MOUSE SLIT-ROBO Rho GTPase-activating protein 1
+           OS=Mus musculus GN=Srgap1 PE=1 SV=2
+          Length = 1062
+
+ Score = 43.9 bits (102), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 17/53 (32%), Positives = 31/53 (58%), Gaps = 2/53 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           +A+A + + G  + +L F+KG  + +  ++    DWW GR NG +G+ P  Y+
+Sbjct: 724 EAIAKFDYVGRSARELSFKKGASLLLYHRA--SEDWWEGRHNGIDGLVPHQYI 774
+
+
+>sp|P35991|BTK_MOUSE Tyrosine-protein kinase BTK OS=Mus musculus
+           GN=Btk PE=1 SV=4
+          Length = 659
+
+ Score = 43.9 bits (102), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 23/54 (42%), Positives = 32/54 (59%), Gaps = 3/54 (5%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR-VNGREGIFPANYV 55
+           K VALY +    + DL  RKG+   IL++S+    WW  R  NG+EG  P+NY+
+Sbjct: 218 KVVALYDYMPMNANDLQLRKGEEYFILEESNLP--WWRARDKNGQEGYIPSNYI 269
+
+
+>sp|Q1KKW7|SKAP1_FUGRU Src kinase-associated phosphoprotein 1
+           OS=Fugu rubripes GN=skap1 PE=3 SV=1
+          Length = 363
+
+ Score = 43.9 bits (102), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 18/50 (36%), Positives = 31/50 (62%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+            L+  + +E  +LPF++GD+I I+ K  +   WW G +NG  GI P +++
+Sbjct: 308 GLWDCSADEPDELPFQRGDLIYIISKEYNIYGWWVGELNGAVGIVPKDFL 357
+
+
+>sp|P13116|SRC2_XENLA Tyrosine-protein kinase Src-2 OS=Xenopus
+           laevis GN=src-B PE=2 SV=3
+          Length = 532
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 21/53 (39%), Positives = 32/53 (60%), Gaps = 4/53 (7%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR--VNGREGIFPANYV 55
+           VALY +      DL FRKG+ + I+  ++++ DWW  R   +G+ G  P+NYV
+Sbjct: 86  VALYDYESRTETDLSFRKGERLQIV--NNTEGDWWLARSLSSGQTGYIPSNYV 136
+
+
+>sp|P42686|SRK1_SPOLA Tyrosine-protein kinase isoform SRK1
+           OS=Spongilla lacustris GN=SRK1 PE=2 SV=1
+          Length = 505
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 22/57 (38%), Positives = 30/57 (52%), Gaps = 5/57 (8%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR---VNGREGIFPANYV 55
+           P  V  Y +      DL F+KGD++ I+  S  + DWW  R     G+EG  P+NYV
+Sbjct: 57  PIYVGKYDYDSRTDDDLSFKKGDLMYII--STDEGDWWFARSKDTAGKEGYIPSNYV 111
+
+
+>sp|Q7SIG6|ASAP2_MOUSE Arf-GAP with SH3 domain, ANK repeat and PH
+           domain-containing protein 2 OS=Mus musculus GN=Asap2
+           PE=1 SV=3
+          Length = 958
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 22/61 (36%), Positives = 35/61 (57%), Gaps = 6/61 (9%)
+
+Query: 2   PKAV-ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNG---REGIFPANYVEL 57
+           PK V ALY+   +   +L F +GDVI +  + D +  WW G ++G   R+G FP ++V  
+Sbjct: 898 PKRVKALYNCVADNPDELTFSEGDVIIVDGEEDQE--WWIGHIDGEPSRKGAFPVSFVHF 955
+
+Query: 58  V 58
+           +
+Sbjct: 956 I 956
+
+
+>sp|Q812A2|SRGP2_MOUSE SLIT-ROBO Rho GTPase-activating protein 3
+           OS=Mus musculus GN=Srgap3 PE=1 SV=1
+          Length = 1099
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 17/53 (32%), Positives = 30/53 (56%), Gaps = 2/53 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           +A+A + + G    +L F+KG  + +  ++    DWW GR NG +G+ P  Y+
+Sbjct: 748 EAIAKFDYVGRSPRELSFKKGASLLLYHRA--SEDWWEGRHNGVDGLIPHQYI 798
+
+
+>sp|Q13625|ASPP2_HUMAN Apoptosis-stimulating of p53 protein 2 OS=Homo
+            sapiens GN=TP53BP2 PE=1 SV=2
+          Length = 1128
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 18/53 (33%), Positives = 31/53 (58%), Gaps = 1/53 (1%)
+
+Query: 6    ALYSFAGEESGDLPFRKGDVITILKKSDSQN-DWWTGRVNGREGIFPANYVEL 57
+            AL+ +  +   +LP ++GD +TI+ + D    +WW  R+N +EG  P N + L
+Sbjct: 1064 ALWDYEPQNDDELPMKEGDCMTIIHREDEDEIEWWWARLNDKEGYVPRNLLGL 1116
+
+
+>sp|Q04736|YES_MOUSE Proto-oncogene tyrosine-protein kinase Yes
+           OS=Mus musculus GN=Yes1 PE=1 SV=3
+          Length = 541
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 20/53 (37%), Positives = 31/53 (58%), Gaps = 4/53 (7%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR--VNGREGIFPANYV 55
+           VALY +    + DL F+KG+   I+  ++++ DWW  R    G+ G  P+NYV
+Sbjct: 95  VALYDYEARTTEDLSFKKGERFQII--NNTEGDWWEARSIATGKSGYIPSNYV 145
+
+
+>sp|O43150|ASAP2_HUMAN Arf-GAP with SH3 domain, ANK repeat and PH
+            domain-containing protein 2 OS=Homo sapiens GN=ASAP2 PE=1
+            SV=3
+          Length = 1006
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 22/61 (36%), Positives = 35/61 (57%), Gaps = 6/61 (9%)
+
+Query: 2    PKAV-ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVN---GREGIFPANYVEL 57
+            PK V ALY+   +   +L F +GDVI +  + D +  WW G ++   GR+G FP ++V  
+Sbjct: 946  PKRVKALYNCVADNPDELTFSEGDVIIVDGEEDQE--WWIGHIDGDPGRKGAFPVSFVHF 1003
+
+Query: 58   V 58
+            +
+Sbjct: 1004 I 1004
+
+
+>sp|P09324|YES_CHICK Tyrosine-protein kinase Yes OS=Gallus gallus
+           GN=YES1 PE=2 SV=3
+          Length = 541
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 20/53 (37%), Positives = 31/53 (58%), Gaps = 4/53 (7%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR--VNGREGIFPANYV 55
+           VALY +    + DL F+KG+   I+  ++++ DWW  R    G+ G  P+NYV
+Sbjct: 95  VALYDYEARTTDDLSFKKGERFQII--NNTEGDWWEARSIATGKTGYIPSNYV 145
+
+
+>sp|Q09822|CDC15_SCHPO Cell division control protein 15
+           OS=Schizosaccharomyces pombe GN=cdc15 PE=1 SV=2
+          Length = 927
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 18/58 (31%), Positives = 35/58 (60%), Gaps = 6/58 (10%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRV----NGREGIFPANYVELV 58
+           +ALY +  +   ++ F+KGD + +L+    ++ WW G +    N + G+FP+N+V+ V
+Sbjct: 872 IALYDYQAQIPEEISFQKGDTLMVLRT--QEDGWWDGEIINVPNSKRGLFPSNFVQTV 927
+
+
+>sp|P42690|SRK4_SPOLA Tyrosine-protein kinase isoform SRK4
+           OS=Spongilla lacustris GN=SRK1 PE=2 SV=1
+          Length = 506
+
+ Score = 43.5 bits (101), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 22/57 (38%), Positives = 30/57 (52%), Gaps = 5/57 (8%)
+
+Query: 2   PKAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR---VNGREGIFPANYV 55
+           P  V  Y +      DL F+KGD++ I+  S  + DWW  R     G+EG  P+NYV
+Sbjct: 57  PIYVGKYDYDSRTDDDLSFKKGDLMYII--STDEGDWWFARSKDTAGKEGYIPSNYV 111
+
+
+>sp|Q9NR80|ARHG4_HUMAN Rho guanine nucleotide exchange factor 4
+           OS=Homo sapiens GN=ARHGEF4 PE=1 SV=3
+          Length = 690
+
+ Score = 43.5 bits (101), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 21/54 (38%), Positives = 32/54 (59%), Gaps = 2/54 (3%)
+
+Query: 4   AVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+           A AL+     +  +L F+ GDVI ++  ++ +  WW GRV   EG FPA++V L
+Sbjct: 199 AEALWDHVTMDDQELGFKAGDVIEVMDATNRE--WWWGRVADGEGWFPASFVRL 250
+
+
+>sp|P07947|YES_HUMAN Proto-oncogene tyrosine-protein kinase Yes
+           OS=Homo sapiens GN=YES1 PE=1 SV=3
+          Length = 543
+
+ Score = 43.5 bits (101), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 20/53 (37%), Positives = 31/53 (58%), Gaps = 4/53 (7%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR--VNGREGIFPANYV 55
+           VALY +    + DL F+KG+   I+  ++++ DWW  R    G+ G  P+NYV
+Sbjct: 97  VALYDYEARTTEDLSFKKGERFQII--NNTEGDWWEARSIATGKNGYIPSNYV 147
+
+
+>sp|Q45FX5|VAV_CAEEL Protein vav-1 OS=Caenorhabditis elegans
+           GN=vav-1 PE=1 SV=1
+          Length = 1007
+
+ Score = 43.1 bits (100), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 15/39 (38%), Positives = 23/39 (58%)
+
+Query: 18  LPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVE 56
+           L F+ GD++ +L        WW G+VN + G FP +YV+
+Sbjct: 949 LSFKTGDIVVLLDTVGEDRGWWKGQVNNKSGFFPLSYVK 987
+
+
+>sp|O43295|SRGP2_HUMAN SLIT-ROBO Rho GTPase-activating protein 3
+           OS=Homo sapiens GN=SRGAP3 PE=1 SV=3
+          Length = 1099
+
+ Score = 43.1 bits (100), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 17/53 (32%), Positives = 30/53 (56%), Gaps = 2/53 (3%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           +A+A + + G    +L F+KG  + +  ++    DWW GR NG +G+ P  Y+
+Sbjct: 748 EAIAKFDYMGRSPRELSFKKGASLLLYHRA--SEDWWEGRHNGVDGLIPHQYI 798
+
+
+>sp|P27446|FYN_XIPHE Proto-oncogene tyrosine-protein kinase FYN
+           OS=Xiphophorus helleri GN=fyn PE=2 SV=3
+          Length = 537
+
+ Score = 43.1 bits (100), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 23/56 (41%), Positives = 29/56 (51%), Gaps = 4/56 (7%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR--VNGREGIFPANYVELV 58
+           VALY +      DL FRKG+   IL  + ++ DWW  R    G  G  P+NYV  V
+Sbjct: 88  VALYDYEARTEDDLSFRKGERFQIL--NSTEGDWWDARSLTTGGSGYIPSNYVAPV 141
+
+
+>sp|Q15052|ARHG6_HUMAN Rho guanine nucleotide exchange factor 6
+           OS=Homo sapiens GN=ARHGEF6 PE=1 SV=2
+          Length = 776
+
+ Score = 43.1 bits (100), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 28/50 (56%), Gaps = 2/50 (4%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           A ++F      +L   KGD+I + +    +  WW G +NGR G FP+NYV
+Sbjct: 167 ARFNFKQTNEDELSVCKGDIIYVTRVE--EGGWWEGTLNGRTGWFPSNYV 214
+
+
+>sp|Q8K4I3|ARHG6_MOUSE Rho guanine nucleotide exchange factor 6
+           OS=Mus musculus GN=Arhgef6 PE=1 SV=1
+          Length = 771
+
+ Score = 43.1 bits (100), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 28/50 (56%), Gaps = 2/50 (4%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           A ++F      +L   KGD+I + +    +  WW G +NGR G FP+NYV
+Sbjct: 166 ARFNFKQTNEDELSVCKGDIIYVTRVE--EGGWWEGTLNGRTGWFPSNYV 213
+
+
+>sp|Q5XXR3|ARHG6_RAT Rho guanine nucleotide exchange factor 6
+           OS=Rattus norvegicus GN=Arhgef6 PE=1 SV=1
+          Length = 772
+
+ Score = 43.1 bits (100), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 28/50 (56%), Gaps = 2/50 (4%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           A ++F      +L   KGD+I + +    +  WW G +NGR G FP+NYV
+Sbjct: 167 ARFNFKQTNEDELSVCKGDIIYVTRVE--EGGWWEGTLNGRTGWFPSNYV 214
+
+
+>sp|O74653|POB1_SCHPO Protein pob1 OS=Schizosaccharomyces pombe
+          GN=pob1 PE=1 SV=1
+          Length = 871
+
+ Score = 42.7 bits (99), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 23/56 (41%), Positives = 34/56 (60%), Gaps = 2/56 (3%)
+
+Query: 5  VALYSFAGEESGDLPFRKGDVITILKKSDSQND-WWTGR-VNGREGIFPANYVELV 58
+          +AL+SF G+ S +LP  +G    ++K  +   D WW G    G  GIFPA++VEL+
+Sbjct: 8  IALHSFPGKSSDELPLVEGRKYLLIKMDEEFGDGWWEGEDEQGNRGIFPASHVELI 63
+
+
+>sp|P06241|FYN_HUMAN Proto-oncogene tyrosine-protein kinase Fyn
+           OS=Homo sapiens GN=FYN PE=1 SV=3
+          Length = 537
+
+ Score = 42.7 bits (99), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 23/56 (41%), Positives = 28/56 (50%), Gaps = 4/56 (7%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR--VNGREGIFPANYVELV 58
+           VALY +      DL F KG+   IL  + S+ DWW  R    G  G  P+NYV  V
+Sbjct: 88  VALYDYEARTEDDLSFHKGEKFQIL--NSSEGDWWEARSLTTGETGYIPSNYVAPV 141
+
+
+>sp|Q8JH64|BTK_CHICK Tyrosine-protein kinase BTK OS=Gallus gallus
+           GN=BTK PE=2 SV=1
+          Length = 657
+
+ Score = 42.7 bits (99), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 24/54 (44%), Positives = 31/54 (57%), Gaps = 3/54 (5%)
+
+Query: 3   KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR-VNGREGIFPANYV 55
+           K VALY++      DL  +KG+   IL+  +S   WW  R  NGREG  P+NYV
+Sbjct: 215 KVVALYNYVPMNVQDLQLQKGEDYLILE--ESHLPWWKARDKNGREGYIPSNYV 266
+
+
+>sp|P39688|FYN_MOUSE Proto-oncogene tyrosine-protein kinase Fyn
+           OS=Mus musculus GN=Fyn PE=1 SV=3
+          Length = 537
+
+ Score = 42.7 bits (99), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 23/56 (41%), Positives = 28/56 (50%), Gaps = 4/56 (7%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR--VNGREGIFPANYVELV 58
+           VALY +      DL F KG+   IL  + S+ DWW  R    G  G  P+NYV  V
+Sbjct: 88  VALYDYEARTEDDLSFHKGEKFQIL--NSSEGDWWEARSLTTGETGYIPSNYVAPV 141
+
+
+>sp|A1Y2K1|FYN_PIG Proto-oncogene tyrosine-protein kinase Fyn OS=Sus
+           scrofa GN=FYN PE=2 SV=2
+          Length = 537
+
+ Score = 42.7 bits (99), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 23/56 (41%), Positives = 28/56 (50%), Gaps = 4/56 (7%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR--VNGREGIFPANYVELV 58
+           VALY +      DL F KG+   IL  + S+ DWW  R    G  G  P+NYV  V
+Sbjct: 88  VALYDYEARTEDDLSFHKGEKFQIL--NSSEGDWWEARSLTTGETGYIPSNYVAPV 141
+
+
+>sp|Q62844|FYN_RAT Proto-oncogene tyrosine-protein kinase Fyn
+           OS=Rattus norvegicus GN=Fyn PE=1 SV=1
+          Length = 537
+
+ Score = 42.7 bits (99), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 23/56 (41%), Positives = 28/56 (50%), Gaps = 4/56 (7%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR--VNGREGIFPANYVELV 58
+           VALY +      DL F KG+   IL  + S+ DWW  R    G  G  P+NYV  V
+Sbjct: 88  VALYDYEARTEDDLSFHKGEKFQIL--NSSEGDWWEARSLTTGETGYIPSNYVAPV 141
+
+
+>sp|A0JNB0|FYN_BOVIN Proto-oncogene tyrosine-protein kinase Fyn
+           OS=Bos taurus GN=FYN PE=2 SV=1
+          Length = 537
+
+ Score = 42.7 bits (99), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 23/56 (41%), Positives = 28/56 (50%), Gaps = 4/56 (7%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR--VNGREGIFPANYVELV 58
+           VALY +      DL F KG+   IL  + S+ DWW  R    G  G  P+NYV  V
+Sbjct: 88  VALYDYEARTEDDLSFHKGEKFQIL--NSSEGDWWEARSLTTGETGYIPSNYVAPV 141
+
+
+>sp|Q80U40|RIMB2_MOUSE RIMS-binding protein 2 OS=Mus musculus
+            GN=Rimbp2 PE=1 SV=2
+          Length = 1072
+
+ Score = 42.7 bits (99), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 22/63 (34%), Positives = 39/63 (61%), Gaps = 8/63 (12%)
+
+Query: 3    KAVALYSFAGEES-------GDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+            + VALY +   ES        +LPF  GD+IT+  + D ++ ++ G +NG++G+ P+N++
+Sbjct: 976  RMVALYDYDPRESSPNVDVEAELPFCTGDIITVFGEID-EDGFYYGELNGQKGLVPSNFL 1034
+
+Query: 56   ELV 58
+            E V
+Sbjct: 1035 EEV 1037
+
+
+>sp|Q08EC4|CASS4_MOUSE Cas scaffolding protein family member 4
+          OS=Mus musculus GN=Cass4 PE=2 SV=1
+          Length = 804
+
+ Score = 42.7 bits (99), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 19/56 (33%), Positives = 39/56 (69%), Gaps = 1/56 (1%)
+
+Query: 4  AVALYSFAGEESGDLPFRKGDVITILKKSDSQND-WWTGRVNGREGIFPANYVELV 58
+          A ALY    + S +L F +GD++TI++++  +++ WW   ++GR+G+ PAN ++++
+Sbjct: 16 ARALYDNHADCSDELAFSRGDILTIVEQNVPESEGWWRCLLHGRQGLAPANRLQVL 71
+
+
+>sp|Q9QX73|ARHG9_RAT Rho guanine nucleotide exchange factor 9
+          OS=Rattus norvegicus GN=Arhgef9 PE=1 SV=1
+          Length = 493
+
+ Score = 42.7 bits (99), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 18/38 (47%), Positives = 26/38 (68%), Gaps = 2/38 (5%)
+
+Query: 20 FRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVEL 57
+          F+ GDVI +L  S+   DWW G+++  EG FPA++V L
+Sbjct: 36 FKAGDVIKVLDASN--KDWWWGQIDDEEGWFPASFVRL 71
+
+
+>sp|O60861|GAS7_HUMAN Growth arrest-specific protein 7 OS=Homo
+          sapiens GN=GAS7 PE=1 SV=3
+          Length = 476
+
+ Score = 42.7 bits (99), Expect = 6e-04,   Method: Composition-based stats.
+ Identities = 24/54 (44%), Positives = 34/54 (62%), Gaps = 4/54 (7%)
+
+Query: 7  LYSFAGEESGD-LPFRKGDVITILKKSDSQNDWWTG-RVNGREGIFPANYVELV 58
+          LY F+GE  G  L F  G++IT+L+  D    WW G + +G  G FPA+YV+L+
+Sbjct: 9  LYPFSGERHGQGLRFAAGELITLLQVPDG--GWWEGEKEDGLRGWFPASYVQLL 60
+
+
+>sp|Q5K8T7|MYO1_CRYNE Myosin-1 OS=Cryptococcus neoformans GN=MYO1 PE=3
+            SV=1
+          Length = 1274
+
+ Score = 42.7 bits (99), Expect = 6e-04,   Method: Composition-based stats.
+ Identities = 22/53 (41%), Positives = 34/53 (64%), Gaps = 3/53 (5%)
+
+Query: 6    ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYVELV 58
+            ALY+F G+E G++   KG+ + + +K D  N WW    NG+EG  P+NY++ V
+Sbjct: 1074 ALYNFTGQE-GEMNLVKGEEVEVKEKDD--NGWWMVVKNGQEGWAPSNYLKKV 1123
+
+
+>sp|P13406|FYN_XENLA Proto-oncogene tyrosine-protein kinase Fyn
+           OS=Xenopus laevis GN=fyn PE=2 SV=3
+          Length = 537
+
+ Score = 42.4 bits (98), Expect = 6e-04,   Method: Composition-based stats.
+ Identities = 23/56 (41%), Positives = 29/56 (51%), Gaps = 4/56 (7%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR--VNGREGIFPANYVELV 58
+           VALY +      DL F+KG+   IL  + S+ DWW  R    G  G  P+NYV  V
+Sbjct: 88  VALYDYEARTEDDLSFQKGEKFQIL--NSSEGDWWEARSLTTGGTGYIPSNYVAPV 141
+
+
+>sp|Q5ZLR6|ARHG6_CHICK Rho guanine nucleotide exchange factor 6
+           OS=Gallus gallus GN=ARHGEF6 PE=2 SV=1
+          Length = 764
+
+ Score = 42.4 bits (98), Expect = 7e-04,   Method: Composition-based stats.
+ Identities = 18/50 (36%), Positives = 28/50 (56%), Gaps = 2/50 (4%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+           A ++F      +L   KGD+I + +    +  WW G +NG+ G FP+NYV
+Sbjct: 159 ARFNFKQTNEDELSVNKGDIIYVTRVE--EGGWWEGTLNGKTGWFPSNYV 206
+
+
+>sp|Q32LP7|SKAP2_BOVIN Src kinase-associated phosphoprotein 2 OS=Bos
+           taurus GN=SKAP2 PE=2 SV=1
+          Length = 358
+
+ Score = 42.4 bits (98), Expect = 7e-04,   Method: Composition-based stats.
+ Identities = 20/50 (40%), Positives = 28/50 (56%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+            L+   G  S +L F++GDVI IL K  ++  WW G + G  G+ P  YV
+Sbjct: 303 GLWDCTGALSDELSFKRGDVIYILSKEYNRYGWWVGEMKGAIGLVPKAYV 352
+
+
+>sp|P51451|BLK_HUMAN Tyrosine-protein kinase BLK OS=Homo sapiens
+           GN=BLK PE=1 SV=3
+          Length = 505
+
+ Score = 42.4 bits (98), Expect = 7e-04,   Method: Composition-based stats.
+ Identities = 23/56 (41%), Positives = 30/56 (53%), Gaps = 5/56 (8%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR--VNGREGIFPANYVELV 58
+           VALY +      DL   KG+ + +LK +    DWW  R  V GREG  P+N+V  V
+Sbjct: 64  VALYDYTAMNDRDLQMLKGEKLQVLKGT---GDWWLARSLVTGREGYVPSNFVARV 116
+
+
+>sp|P13115|SRC1_XENLA Tyrosine-protein kinase Src-1 OS=Xenopus
+           laevis GN=src-A PE=2 SV=4
+          Length = 532
+
+ Score = 42.4 bits (98), Expect = 7e-04,   Method: Composition-based stats.
+ Identities = 20/53 (37%), Positives = 32/53 (60%), Gaps = 4/53 (7%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR--VNGREGIFPANYV 55
+           VALY +      DL F+KG+ + I+  ++++ DWW  R   +G+ G  P+NYV
+Sbjct: 86  VALYDYESRTETDLSFKKGERLQIV--NNTEGDWWLARSLSSGQTGYIPSNYV 136
+
+
+>sp|Q95UN8|M3KSL_DROME Mitogen-activated protein kinase kinase
+           kinase OS=Drosophila melanogaster GN=slpr PE=1 SV=1
+          Length = 1161
+
+ Score = 42.4 bits (98), Expect = 8e-04,   Method: Composition-based stats.
+ Identities = 17/53 (32%), Positives = 32/53 (60%), Gaps = 3/53 (5%)
+
+Query: 6   ALYSFAGEESGDLPFRKGDVITILKK-SDSQND--WWTGRVNGREGIFPANYV 55
+           ALY +  +   +L  R+G+++ +L   S+   D  WWTG++  + G+FP ++V
+Sbjct: 63  ALYDYDAQGEDELTLRRGEIVVVLSTDSEVSGDVGWWTGKIGDKVGVFPKDFV 115
+
+
+>sp|P16277|BLK_MOUSE Tyrosine-protein kinase BLK OS=Mus musculus
+           GN=Blk PE=1 SV=3
+          Length = 499
+
+ Score = 42.0 bits (97), Expect = 9e-04,   Method: Composition-based stats.
+ Identities = 23/56 (41%), Positives = 31/56 (55%), Gaps = 5/56 (8%)
+
+Query: 5   VALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGR--VNGREGIFPANYVELV 58
+           VAL+ +A     DL   KG+ + +L+   S  DWW  R  V GREG  P+N+V  V
+Sbjct: 58  VALFDYAAVNDRDLQVLKGEKLQVLR---STGDWWLARSLVTGREGYVPSNFVAPV 110
+
+
+>sp|P02549|SPTA1_HUMAN Spectrin alpha chain, erythrocyte OS=Homo
+            sapiens GN=SPTA1 PE=1 SV=3
+          Length = 2418
+
+ Score = 42.0 bits (97), Expect = 0.001,   Method: Composition-based stats.
+ Identities = 20/53 (37%), Positives = 28/53 (52%), Gaps = 2/53 (3%)
+
+Query: 3    KAVALYSFAGEESGDLPFRKGDVITILKKSDSQNDWWTGRVNGREGIFPANYV 55
+            + +ALY F      ++  +KGDV+T+L  S    DWW       +GI PA YV
+Sbjct: 981  RVMALYDFQARSPREVTMKKGDVLTLL--SSINKDWWKVEAADHQGIVPAVYV 1031
+
+
+  Database: sprot
+    Posted date:  May 6, 2009 11:11 AM
+  Number of letters in database: 165,389,953
+  Number of sequences in database:  466,739
+  
+Lambda     K      H
+   0.315    0.136    0.418 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 19,878,628
+Number of Sequences: 466739
+Number of extensions: 630350
+Number of successful extensions: 1906
+Number of sequences better than 1.0e-03: 329
+Number of HSP's better than  0.0 without gapping: 46
+Number of HSP's successfully gapped in prelim test: 283
+Number of HSP's that attempted gapping in prelim test: 1449
+Number of HSP's gapped (non-prelim): 483
+length of query: 58
+length of database: 165,389,953
+effective HSP length: 31
+effective length of query: 27
+effective length of database: 150,921,044
+effective search space: 4074868188
+effective search space used: 4074868188
+T: 11
+A: 40
+X1: 16 ( 7.3 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 42 (22.0 bits)
+S2: 97 (42.0 bits)

@@ -1,0 +1,81 @@
+select all
+color [200,200,200]
+
+
+select   GLY1333, ILE1336, GLY1338, GLY1339, GLY1363, ALA1365, ASP1373, ALA1378, ASN1379, HIS1388
+select selected or ALA1391, VAL1392
+select selected and :A
+color [160,37,96]
+spacefill
+
+define CON9 selected
+
+
+select    LEU1332, SER1335, GLY1353, ILE1354, THR1357, VAL1359, GLY1372, LEU1395, LEU1404, ILE1406
+select selected or ARG1408, SER1412
+select selected and :A
+color [240,125,171]
+spacefill
+
+define CON8 selected
+
+
+select    PHE1334, ASN1345, PRO1346, ASP1351, PHE1355, VAL1356, PRO1364, LEU1369, LYS1374, LYS1396
+select selected or VAL1402
+select selected and :A
+color [250,201,222]
+spacefill
+
+define CON7 selected
+
+
+select    GLY1310, SER1311, HIS1312, GLU1327, GLY1342, ARG1358, PRO1361, LYS1367, GLN1370, PRO1371
+select selected or ILE1375, ILE1386, PHE1398, VAL1410, SER1411
+select selected and :A
+color [252,237,244]
+spacefill
+
+define CON6 selected
+
+
+select    ILE1322, SER1337, GLY1341, GLU1362, ILE1376, PHE1383, GLU1409
+select selected and :A
+color [255,255,255]
+spacefill
+
+define CON5 selected
+
+
+select    MET1313, GLY1314, ALA1318, LYS1319, VAL1324, ARG1325, LYS1328, GLU1331, VAL1340, SER1366
+select selected or LEU1368, GLN1377, GLY1380, GLU1387
+select selected and :A
+color [234,255,255]
+spacefill
+
+define CON4 selected
+
+
+select    ARG1323, ARG1343, GLY1344, ARG1348, PRO1349, GLN1360, SER1382, THR1397
+select selected and :A
+color [215,255,255]
+spacefill
+
+define CON3 selected
+
+
+select    GLN1320, ASP1329, PHE1347, ASP1350, ASN1385, GLY1389, SER1393, GLN1399, ASN1400, ILE1405
+select selected and :A
+color [140,255,255]
+spacefill
+
+define CON2 selected
+
+
+select    HIS1315, GLU1316, LEU1317, GLU1321, VAL1326, PRO1330, ASP1352, TYR1381, ILE1384, GLN1390
+select selected or LEU1394, THR1401, GLU1403, VAL1407
+select selected and :A
+color [16,200,209]
+spacefill
+
+define CON1 selected
+

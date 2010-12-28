@@ -1,0 +1,754 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_A  164
+         (164 letters)
+
+Database: sprot 
+           412,525 sequences; 148,809,765 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|O00560|SDCB1_HUMAN Syntenin-1 OS=Homo sapiens GN=SDCBP PE=1 SV=1   325   7e-89
+sp|Q9JI92|SDCB1_RAT Syntenin-1 OS=Rattus norvegicus GN=Sdcbp PE=...   316   3e-86
+sp|O08992|SDCB1_MOUSE Syntenin-1 OS=Mus musculus GN=Sdcbp PE=2 SV=1   316   4e-86
+sp|Q9H190|SDCB2_HUMAN Syntenin-2 OS=Homo sapiens GN=SDCBP2 PE=2 ...   247   2e-65
+sp|Q99JZ0|SDCB2_MOUSE Syntenin-2 OS=Mus musculus GN=Sdcbp2 PE=2 ...   242   5e-64
+sp|O35430|APBA1_RAT Amyloid beta A4 precursor protein-binding fa...    62   2e-09
+sp|Q02410|APBA1_HUMAN Amyloid beta A4 precursor protein-binding ...    61   3e-09
+sp|O70248|APBA3_RAT Amyloid beta A4 precursor protein-binding fa...    60   4e-09
+sp|Q99767|APBA2_HUMAN Amyloid beta A4 precursor protein-binding ...    59   8e-09
+sp|Q5RD33|APBA2_PONAB Amyloid beta A4 precursor protein-binding ...    59   8e-09
+sp|O35431|APBA2_RAT Amyloid beta A4 precursor protein-binding fa...    59   1e-08
+sp|P98084|APBA2_MOUSE Amyloid beta A4 precursor protein-binding ...    59   1e-08
+sp|O96018|APBA3_HUMAN Amyloid beta A4 precursor protein-binding ...    58   3e-08
+sp|O17583|LIN10_CAEEL Protein lin-10 OS=Caenorhabditis elegans G...    57   4e-08
+sp|O88888|APBA3_MOUSE Amyloid beta A4 precursor protein-binding ...    54   5e-07
+sp|Q62936|DLG3_RAT Disks large homolog 3 OS=Rattus norvegicus GN...    52   1e-06
+sp|Q92796|DLG3_HUMAN Disks large homolog 3 OS=Homo sapiens GN=DL...    52   1e-06
+sp|P70175|DLG3_MOUSE Disks large homolog 3 OS=Mus musculus GN=Dl...    52   1e-06
+sp|Q5PYH7|DLG2_DANRE Disks large homolog 2 OS=Danio rerio GN=dlg...    52   2e-06
+sp|Q15700|DLG2_HUMAN Disks large homolog 2 OS=Homo sapiens GN=DL...    49   1e-05
+sp|Q91XM9|DLG2_MOUSE Disks large homolog 2 OS=Mus musculus GN=Dl...    49   1e-05
+sp|Q63622|DLG2_RAT Disks large homolog 2 OS=Rattus norvegicus GN...    49   1e-05
+sp|Q5ZM14|NHERF_CHICK Ezrin-radixin-moesin-binding phosphoprotei...    48   3e-05
+sp|Q5ZIK2|PDZ11_CHICK PDZ domain-containing protein 11 OS=Gallus...    47   3e-05
+sp|Q5PYH5|DLG1L_DANRE Discs large homolog 1-like protein OS=Dani...    47   4e-05
+sp|Q80U72|LAP4_MOUSE Protein LAP4 OS=Mus musculus GN=Scrib PE=1 ...    47   4e-05
+sp|P78352|DLG4_HUMAN Disks large homolog 4 OS=Homo sapiens GN=DL...    46   9e-05
+sp|Q62108|DLG4_MOUSE Disks large homolog 4 OS=Mus musculus GN=Dl...    46   9e-05
+sp|P31016|DLG4_RAT Disks large homolog 4 OS=Rattus norvegicus GN...    46   9e-05
+sp|Q09506|YQI7_CAEEL Uncharacterized protein C45G9.7 OS=Caenorha...    45   1e-04
+sp|Q5PYH6|DLG1_DANRE Disks large homolog 1 OS=Danio rerio GN=dlg...    45   2e-04
+sp|Q3T0X8|PDZD1_BOVIN PDZ domain-containing protein 1 OS=Bos tau...    45   2e-04
+sp|Q6R005|DLG4_DANRE Disks large homolog 4 OS=Danio rerio GN=dlg...    44   3e-04
+sp|Q14160|LAP4_HUMAN Protein LAP4 OS=Homo sapiens GN=SCRIB PE=1 ...    44   3e-04
+sp|Q5EBL8|PDZ11_HUMAN PDZ domain-containing protein 11 OS=Homo s...    44   5e-04
+sp|Q6NXB2|PDZ11_DANRE PDZ domain-containing protein 11 OS=Danio ...    43   5e-04
+
+>sp|O00560|SDCB1_HUMAN Syntenin-1 OS=Homo sapiens GN=SDCBP PE=1 SV=1
+          Length = 298
+
+ Score =  325 bits (833), Expect = 7e-89,   Method: Composition-based stats.
+ Identities = 161/161 (100%), Positives = 161/161 (100%)
+
+Query: 4   REVILCKDQDGKIGLRLKSIDNGIFVQLVQANSPASLVGLRFGDQVLQINGENCAGWSSD 63
+           REVILCKDQDGKIGLRLKSIDNGIFVQLVQANSPASLVGLRFGDQVLQINGENCAGWSSD
+Sbjct: 113 REVILCKDQDGKIGLRLKSIDNGIFVQLVQANSPASLVGLRFGDQVLQINGENCAGWSSD 172
+
+Query: 64  KAHKVLKQAFGEKITMTIRDRPFERTITMHKDSTGHVGFIFKNGKITSIVKDSSAARNGL 123
+           KAHKVLKQAFGEKITMTIRDRPFERTITMHKDSTGHVGFIFKNGKITSIVKDSSAARNGL
+Sbjct: 173 KAHKVLKQAFGEKITMTIRDRPFERTITMHKDSTGHVGFIFKNGKITSIVKDSSAARNGL 232
+
+Query: 124 LTEHNICEINGQNVIGLKDSQIADILSTSGTVVTITIMPAF 164
+           LTEHNICEINGQNVIGLKDSQIADILSTSGTVVTITIMPAF
+Sbjct: 233 LTEHNICEINGQNVIGLKDSQIADILSTSGTVVTITIMPAF 273
+
+
+>sp|Q9JI92|SDCB1_RAT Syntenin-1 OS=Rattus norvegicus GN=Sdcbp PE=1
+           SV=1
+          Length = 300
+
+ Score =  316 bits (810), Expect = 3e-86,   Method: Composition-based stats.
+ Identities = 153/161 (95%), Positives = 161/161 (100%)
+
+Query: 4   REVILCKDQDGKIGLRLKSIDNGIFVQLVQANSPASLVGLRFGDQVLQINGENCAGWSSD 63
+           REVILCKDQDGKIGLRLKS+DNGIFVQLVQANSPASLVGLRFGDQVLQINGENCAGWSSD
+Sbjct: 115 REVILCKDQDGKIGLRLKSVDNGIFVQLVQANSPASLVGLRFGDQVLQINGENCAGWSSD 174
+
+Query: 64  KAHKVLKQAFGEKITMTIRDRPFERTITMHKDSTGHVGFIFKNGKITSIVKDSSAARNGL 123
+           KAHKVLKQAFGEKITMTIRDRPFERT+TMHKDS+GHVGFIFK+GKITSIVKDSSAARNGL
+Sbjct: 175 KAHKVLKQAFGEKITMTIRDRPFERTVTMHKDSSGHVGFIFKSGKITSIVKDSSAARNGL 234
+
+Query: 124 LTEHNICEINGQNVIGLKDSQIADILSTSGTVVTITIMPAF 164
+           LT+H+ICEINGQNVIGLKD+QIADILST+GTVVTITIMPAF
+Sbjct: 235 LTDHHICEINGQNVIGLKDAQIADILSTAGTVVTITIMPAF 275
+
+
+>sp|O08992|SDCB1_MOUSE Syntenin-1 OS=Mus musculus GN=Sdcbp PE=2 SV=1
+          Length = 299
+
+ Score =  316 bits (809), Expect = 4e-86,   Method: Composition-based stats.
+ Identities = 153/161 (95%), Positives = 160/161 (99%)
+
+Query: 4   REVILCKDQDGKIGLRLKSIDNGIFVQLVQANSPASLVGLRFGDQVLQINGENCAGWSSD 63
+           REVILCKDQDGKIGLRLKSIDNGIFVQLVQANSPASLVGLRFGDQVLQINGENCAGWSSD
+Sbjct: 114 REVILCKDQDGKIGLRLKSIDNGIFVQLVQANSPASLVGLRFGDQVLQINGENCAGWSSD 173
+
+Query: 64  KAHKVLKQAFGEKITMTIRDRPFERTITMHKDSTGHVGFIFKNGKITSIVKDSSAARNGL 123
+           KAHKVLKQAFGEKITMTIRDRPFERT+TMHKDS+GHVGFIFK+GKITSIVKDSSAARNGL
+Sbjct: 174 KAHKVLKQAFGEKITMTIRDRPFERTVTMHKDSSGHVGFIFKSGKITSIVKDSSAARNGL 233
+
+Query: 124 LTEHNICEINGQNVIGLKDSQIADILSTSGTVVTITIMPAF 164
+           LT+H+ICEINGQNVIGLKD+QIADILST+GTVVTITIMP F
+Sbjct: 234 LTDHHICEINGQNVIGLKDAQIADILSTAGTVVTITIMPTF 274
+
+
+>sp|Q9H190|SDCB2_HUMAN Syntenin-2 OS=Homo sapiens GN=SDCBP2 PE=2
+           SV=2
+          Length = 292
+
+ Score =  247 bits (631), Expect = 2e-65,   Method: Composition-based stats.
+ Identities = 111/160 (69%), Positives = 140/160 (87%)
+
+Query: 4   REVILCKDQDGKIGLRLKSIDNGIFVQLVQANSPASLVGLRFGDQVLQINGENCAGWSSD 63
+           RE+ LCKD+ GK GLRL+ +D G+FVQLVQAN+PASLVGLRFGDQ+LQI+G +CAGWSS 
+Sbjct: 107 REIHLCKDERGKTGLRLRKVDQGLFVQLVQANTPASLVGLRFGDQLLQIDGRDCAGWSSH 166
+
+Query: 64  KAHKVLKQAFGEKITMTIRDRPFERTITMHKDSTGHVGFIFKNGKITSIVKDSSAARNGL 123
+           KAH+V+K+A G+KI + +RDRPF+RT+TMHKDS GHVGF+ K GKI S+VK SSAARNGL
+Sbjct: 167 KAHQVVKKASGDKIVVVVRDRPFQRTVTMHKDSMGHVGFVIKKGKIVSLVKGSSAARNGL 226
+
+Query: 124 LTEHNICEINGQNVIGLKDSQIADILSTSGTVVTITIMPA 163
+           LT H +CE++GQNVIGLKD +I +IL+T+G VVT+TI+P+
+Sbjct: 227 LTNHYVCEVDGQNVIGLKDKKIMEILATAGNVVTLTIIPS 266
+
+
+>sp|Q99JZ0|SDCB2_MOUSE Syntenin-2 OS=Mus musculus GN=Sdcbp2 PE=2
+           SV=1
+          Length = 292
+
+ Score =  242 bits (618), Expect = 5e-64,   Method: Composition-based stats.
+ Identities = 111/159 (69%), Positives = 138/159 (86%)
+
+Query: 4   REVILCKDQDGKIGLRLKSIDNGIFVQLVQANSPASLVGLRFGDQVLQINGENCAGWSSD 63
+           RE+ LCKD+ GK GLRL+++D G+FVQLVQAN+PASLVGLRFGDQ+LQI+G +CAGW++ 
+Sbjct: 107 REIHLCKDERGKTGLRLQAVDKGLFVQLVQANTPASLVGLRFGDQILQIDGCDCAGWNTH 166
+
+Query: 64  KAHKVLKQAFGEKITMTIRDRPFERTITMHKDSTGHVGFIFKNGKITSIVKDSSAARNGL 123
+           KAHKVLK+A  EKI M IRDRPF+RT+TMHKDS+G VGF  K GKI S+VK SSAARNGL
+Sbjct: 167 KAHKVLKKASAEKIVMVIRDRPFQRTVTMHKDSSGQVGFSIKKGKIVSVVKGSSAARNGL 226
+
+Query: 124 LTEHNICEINGQNVIGLKDSQIADILSTSGTVVTITIMP 162
+           LT H +CE+NGQNVIGLKD ++ +IL+T+G V+T+TI+P
+Sbjct: 227 LTNHYVCEVNGQNVIGLKDKKVTEILTTAGDVITLTIIP 265
+
+
+>sp|O35430|APBA1_RAT Amyloid beta A4 precursor protein-binding
+           family A member 1 OS=Rattus norvegicus GN=Apba1 PE=1
+           SV=1
+          Length = 839
+
+ Score = 61.6 bits (148), Expect = 2e-09,   Method: Composition-based stats.
+ Identities = 51/170 (30%), Positives = 80/170 (47%), Gaps = 16/170 (9%)
+
+Query: 9   CKD-----QDGKIGLRLKSIDNG---IFVQLVQAN----SPASLVG-LRFGDQVLQINGE 55
+           CKD     Q G+I L +  +++G   I   ++ AN     PA   G L  GDQ++ ING 
+Sbjct: 656 CKDVFIEKQKGEI-LGVVIVESGWGSILPTVIIANMMHGGPAEKSGKLNIGDQIMSINGT 714
+
+Query: 56  NCAGWSSDKAHKVLKQAFGE-KITMTI-RDRPFERTITMHKDSTGHVGFIFKNGKITSIV 113
+           +  G        ++K    + ++ + I R  P    +    D    +GF  +NG I S++
+Sbjct: 715 SLVGLPLSTCQSIIKGLKNQSRVKLNIVRCPPVTTVLIRRPDLRYQLGFSVQNGIICSLM 774
+
+Query: 114 KDSSAARNGLLTEHNICEINGQNVIGLKDSQIADILSTSGTVVTITIMPA 163
+           +   A R G+   H I EINGQ+V+     +I  ILS +   + +  MPA
+Sbjct: 775 RGGIAERGGVRVGHRIIEINGQSVVATPHEKIVHILSNAVGEIHMKTMPA 824
+
+
+>sp|Q02410|APBA1_HUMAN Amyloid beta A4 precursor protein-binding
+           family A member 1 OS=Homo sapiens GN=APBA1 PE=1 SV=3
+          Length = 837
+
+ Score = 60.8 bits (146), Expect = 3e-09,   Method: Composition-based stats.
+ Identities = 51/170 (30%), Positives = 80/170 (47%), Gaps = 16/170 (9%)
+
+Query: 9   CKD-----QDGKIGLRLKSIDNG---IFVQLVQAN----SPASLVG-LRFGDQVLQINGE 55
+           CKD     Q G+I L +  +++G   I   ++ AN     PA   G L  GDQ++ ING 
+Sbjct: 654 CKDVFIEKQKGEI-LGVVIVESGWGSILPTVIIANMMHGGPAEKSGKLNIGDQIMSINGT 712
+
+Query: 56  NCAGWSSDKAHKVLKQAFGE-KITMTI-RDRPFERTITMHKDSTGHVGFIFKNGKITSIV 113
+           +  G        ++K    + ++ + I R  P    +    D    +GF  +NG I S++
+Sbjct: 713 SLVGLPLSTCQSIIKGLKNQSRVKLNIVRCPPVTTVLIRRPDLRYQLGFSVQNGIICSLM 772
+
+Query: 114 KDSSAARNGLLTEHNICEINGQNVIGLKDSQIADILSTSGTVVTITIMPA 163
+           +   A R G+   H I EINGQ+V+     +I  ILS +   + +  MPA
+Sbjct: 773 RGGIAERGGVRVGHRIIEINGQSVVATPHEKIVHILSNAVGEIHMKTMPA 822
+
+
+>sp|O70248|APBA3_RAT Amyloid beta A4 precursor protein-binding
+           family A member 3 OS=Rattus norvegicus GN=Apba3 PE=2
+           SV=1
+          Length = 569
+
+ Score = 60.5 bits (145), Expect = 4e-09,   Method: Composition-based stats.
+ Identities = 41/130 (31%), Positives = 66/130 (50%), Gaps = 4/130 (3%)
+
+Query: 37  PASLVG-LRFGDQVLQINGENCAGWSSDKAHKVLKQAF-GEKITMTIRDRPFERTITMHK 94
+           PA   G L  GD+V  ING +  G S       +++      +T++I   P   T  +H+
+Sbjct: 426 PAERCGALSIGDRVTAINGTSLVGLSLAACQAAVREVRRHSSVTLSIIHCPPVTTAVIHR 485
+
+Query: 95  DST-GHVGFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIADILSTSG 153
+                 +GF  +NG I S+++ S+A R G+   H I E+NGQ+V+ +  ++I  +L T  
+Sbjct: 486 PHVREQLGFCVENGIICSLLRGSAAERGGVRVGHRIIEVNGQSVVAMPHARIIQLL-TET 544
+
+Query: 154 TVVTITIMPA 163
+             + I  MPA
+Sbjct: 545 REIHIKTMPA 554
+
+
+>sp|Q99767|APBA2_HUMAN Amyloid beta A4 precursor protein-binding
+           family A member 2 OS=Homo sapiens GN=APBA2 PE=1 SV=3
+          Length = 749
+
+ Score = 59.3 bits (142), Expect = 8e-09,   Method: Composition-based stats.
+ Identities = 40/130 (30%), Positives = 64/130 (49%), Gaps = 3/130 (2%)
+
+Query: 37  PASLVG-LRFGDQVLQINGENCAGWSSDKAHKVLKQAFGE-KITMTIRDRPFERTITMHK 94
+           PA+  G L  GDQ++ ING +  G        ++K    + ++ + I   P   T+ + +
+Sbjct: 605 PAARSGKLSIGDQIMSINGTSLVGLPLATCQGIIKGLKNQTQVKLNIVSCPPVTTVLIKR 664
+
+Query: 95  -DSTGHVGFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIADILSTSG 153
+            D    +GF  +NG I S+++   A R G+   H I EINGQ+V+     +I   LS S 
+Sbjct: 665 PDLKYQLGFSVQNGIICSLMRGGIAERGGVRVGHRIIEINGQSVVATAHEKIVQALSNSV 724
+
+Query: 154 TVVTITIMPA 163
+             + +  MPA
+Sbjct: 725 GEIHMKTMPA 734
+
+
+>sp|Q5RD33|APBA2_PONAB Amyloid beta A4 precursor protein-binding
+           family A member 2 OS=Pongo abelii GN=APBA2 PE=2 SV=1
+          Length = 749
+
+ Score = 59.3 bits (142), Expect = 8e-09,   Method: Composition-based stats.
+ Identities = 40/130 (30%), Positives = 64/130 (49%), Gaps = 3/130 (2%)
+
+Query: 37  PASLVG-LRFGDQVLQINGENCAGWSSDKAHKVLKQAFGE-KITMTIRDRPFERTITMHK 94
+           PA+  G L  GDQ++ ING +  G        ++K    + ++ + I   P   T+ + +
+Sbjct: 605 PAARSGKLSIGDQIMSINGTSLVGLPLATCQGIIKGLKNQTQVKLNIVSCPPVTTVLIKR 664
+
+Query: 95  -DSTGHVGFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIADILSTSG 153
+            D    +GF  +NG I S+++   A R G+   H I EINGQ+V+     +I   LS S 
+Sbjct: 665 PDLKYQLGFSVQNGIICSLMRGGIAERGGVRVGHRIIEINGQSVVATAHEKIVQALSNSV 724
+
+Query: 154 TVVTITIMPA 163
+             + +  MPA
+Sbjct: 725 GEIHMKTMPA 734
+
+
+>sp|O35431|APBA2_RAT Amyloid beta A4 precursor protein-binding
+           family A member 2 OS=Rattus norvegicus GN=Apba2 PE=1
+           SV=1
+          Length = 750
+
+ Score = 58.9 bits (141), Expect = 1e-08,   Method: Composition-based stats.
+ Identities = 40/130 (30%), Positives = 64/130 (49%), Gaps = 3/130 (2%)
+
+Query: 37  PASLVG-LRFGDQVLQINGENCAGWSSDKAHKVLKQAFGE-KITMTIRDRPFERTITMHK 94
+           PA+  G L  GDQ++ ING +  G        ++K    + ++ + I   P   T+ + +
+Sbjct: 606 PAARSGKLSIGDQIMSINGTSLVGLPLATCQGIIKGLKNQTQVKLNIVSCPPVTTVLIKR 665
+
+Query: 95  -DSTGHVGFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIADILSTSG 153
+            D    +GF  +NG I S+++   A R G+   H I EINGQ+V+     +I   LS S 
+Sbjct: 666 PDLKYQLGFSVQNGIICSLMRGGIAERGGVRVGHRIIEINGQSVVATAHEKIVQALSNSV 725
+
+Query: 154 TVVTITIMPA 163
+             + +  MPA
+Sbjct: 726 GEIHMKTMPA 735
+
+
+>sp|P98084|APBA2_MOUSE Amyloid beta A4 precursor protein-binding
+           family A member 2 OS=Mus musculus GN=Apba2 PE=1 SV=2
+          Length = 750
+
+ Score = 58.9 bits (141), Expect = 1e-08,   Method: Composition-based stats.
+ Identities = 40/130 (30%), Positives = 64/130 (49%), Gaps = 3/130 (2%)
+
+Query: 37  PASLVG-LRFGDQVLQINGENCAGWSSDKAHKVLKQAFGE-KITMTIRDRPFERTITMHK 94
+           PA+  G L  GDQ++ ING +  G        ++K    + ++ + I   P   T+ + +
+Sbjct: 606 PAARSGKLSIGDQIMSINGTSLVGLPLATCQGIIKGLKNQTQVKLNIVSCPPVTTVLIKR 665
+
+Query: 95  -DSTGHVGFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIADILSTSG 153
+            D    +GF  +NG I S+++   A R G+   H I EINGQ+V+     +I   LS S 
+Sbjct: 666 PDLKYQLGFSVQNGIICSLMRGGIAERGGVRVGHRIIEINGQSVVATAHEKIVQALSNSV 725
+
+Query: 154 TVVTITIMPA 163
+             + +  MPA
+Sbjct: 726 GEIHMKTMPA 735
+
+
+>sp|O96018|APBA3_HUMAN Amyloid beta A4 precursor protein-binding
+           family A member 3 OS=Homo sapiens GN=APBA3 PE=1 SV=1
+          Length = 575
+
+ Score = 57.8 bits (138), Expect = 3e-08,   Method: Composition-based stats.
+ Identities = 38/130 (29%), Positives = 66/130 (50%), Gaps = 3/130 (2%)
+
+Query: 37  PASLVG-LRFGDQVLQINGENCAGWSSDKAHKVLKQAFGE-KITMTIRDRPFERTITMHK 94
+           PA   G L  GD++  ING +  G         +++   +  +T++I   P   T  +H+
+Sbjct: 431 PAERSGALSIGDRLTAINGTSLVGLPLAACQAAVRETKSQTSVTLSIVHCPPVTTAIIHR 490
+
+Query: 95  -DSTGHVGFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIADILSTSG 153
+             +   +GF  ++G I S+++   A R G+   H I EINGQ+V+    ++I ++L+ + 
+Sbjct: 491 PHAREQLGFCVEDGIICSLLRGGIAERGGIRVGHRIIEINGQSVVATPHARIIELLTEAY 550
+
+Query: 154 TVVTITIMPA 163
+             V I  MPA
+Sbjct: 551 GEVHIKTMPA 560
+
+
+>sp|O17583|LIN10_CAEEL Protein lin-10 OS=Caenorhabditis elegans
+           GN=lin-10 PE=2 SV=1
+          Length = 982
+
+ Score = 57.0 bits (136), Expect = 4e-08,   Method: Composition-based stats.
+ Identities = 35/122 (28%), Positives = 61/122 (50%), Gaps = 2/122 (1%)
+
+Query: 43  LRFGDQVLQINGENCAGWSSDKAHKVLKQ-AFGEKITMTIRDRPFERTITMHK-DSTGHV 100
+           L  GDQ++ ING +  G     A   +K       + MT+   P    + + + D+   +
+Sbjct: 845 LNIGDQIININGISLVGLPLSAAQTQIKNMKTATAVRMTVVSTPPVVEVRIRRPDTKYQL 904
+
+Query: 101 GFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIADILSTSGTVVTITI 160
+           GF  +NG I S+++   A R G+   H I EING +V+ +   +I ++L+T+   + +  
+Sbjct: 905 GFSVQNGVICSLLRGGIAERGGIRVGHRIIEINGTSVVAVAHDRIVNMLATAVGEIHMKT 964
+
+Query: 161 MP 162
+           MP
+Sbjct: 965 MP 966
+
+
+>sp|O88888|APBA3_MOUSE Amyloid beta A4 precursor protein-binding
+           family A member 3 OS=Mus musculus GN=Apba3 PE=1 SV=1
+          Length = 571
+
+ Score = 53.5 bits (127), Expect = 5e-07,   Method: Composition-based stats.
+ Identities = 38/130 (29%), Positives = 64/130 (49%), Gaps = 4/130 (3%)
+
+Query: 37  PASLVG-LRFGDQVLQINGENCAGWSSDKAHKVLKQAFG-EKITMTIRDRPFERTITMHK 94
+           PA   G L  GD+V  ING +  G S       +++      +T++I   P   T  + +
+Sbjct: 428 PAERCGALSIGDRVTAINGTSLVGLSLAACQAAVREVRRLSSVTLSIIHCPPVTTAVIRR 487
+
+Query: 95  DST-GHVGFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIADILSTSG 153
+                 +GF  ++G I S+++  +A R G+   H I E+NGQ+V+ +  ++I  +L T  
+Sbjct: 488 PHVREQLGFCVEDGIICSLLRGGAAERGGVRVGHRIIEVNGQSVVAMPHARIIQLL-TET 546
+
+Query: 154 TVVTITIMPA 163
+             + I  MPA
+Sbjct: 547 REIHIKTMPA 556
+
+
+>sp|Q62936|DLG3_RAT Disks large homolog 3 OS=Rattus norvegicus
+           GN=Dlg3 PE=1 SV=1
+          Length = 849
+
+ Score = 52.0 bits (123), Expect = 1e-06,   Method: Composition-based stats.
+ Identities = 33/89 (37%), Positives = 52/89 (58%), Gaps = 5/89 (5%)
+
+Query: 2   DPREVILCKDQDGKIGLRLKSIDNG--IFVQLVQANSPASLVG-LRFGDQVLQINGENCA 58
+           +PR++IL K   G +G  +   ++G  IFV  + A  PA L G LR GD++L +NG N  
+Sbjct: 401 EPRKIILHKGSTG-LGFNIVGGEDGEGIFVSFILAGGPADLSGELRRGDRILSVNGVNLR 459
+
+Query: 59  GWSSDKAHKVLKQAFGEKITMTIRDRPFE 87
+             + ++A   LK+A G+ +T+  + RP E
+Sbjct: 460 NATHEQAAAALKRA-GQSVTIVAQYRPEE 487
+
+
+>sp|Q92796|DLG3_HUMAN Disks large homolog 3 OS=Homo sapiens GN=DLG3
+           PE=1 SV=2
+          Length = 817
+
+ Score = 52.0 bits (123), Expect = 1e-06,   Method: Composition-based stats.
+ Identities = 33/89 (37%), Positives = 52/89 (58%), Gaps = 5/89 (5%)
+
+Query: 2   DPREVILCKDQDGKIGLRLKSIDNG--IFVQLVQANSPASLVG-LRFGDQVLQINGENCA 58
+           +PR++IL K   G +G  +   ++G  IFV  + A  PA L G LR GD++L +NG N  
+Sbjct: 383 EPRKIILHKGSTG-LGFNIVGGEDGEGIFVSFILAGGPADLSGELRRGDRILSVNGVNLR 441
+
+Query: 59  GWSSDKAHKVLKQAFGEKITMTIRDRPFE 87
+             + ++A   LK+A G+ +T+  + RP E
+Sbjct: 442 NATHEQAAAALKRA-GQSVTIVAQYRPEE 469
+
+
+>sp|P70175|DLG3_MOUSE Disks large homolog 3 OS=Mus musculus GN=Dlg3
+           PE=1 SV=1
+          Length = 849
+
+ Score = 52.0 bits (123), Expect = 1e-06,   Method: Composition-based stats.
+ Identities = 33/89 (37%), Positives = 52/89 (58%), Gaps = 5/89 (5%)
+
+Query: 2   DPREVILCKDQDGKIGLRLKSIDNG--IFVQLVQANSPASLVG-LRFGDQVLQINGENCA 58
+           +PR++IL K   G +G  +   ++G  IFV  + A  PA L G LR GD++L +NG N  
+Sbjct: 401 EPRKIILHKGSTG-LGFNIVGGEDGEGIFVSFILAGGPADLSGELRRGDRILSVNGVNLR 459
+
+Query: 59  GWSSDKAHKVLKQAFGEKITMTIRDRPFE 87
+             + ++A   LK+A G+ +T+  + RP E
+Sbjct: 460 NATHEQAAAALKRA-GQSVTIVAQYRPEE 487
+
+
+>sp|Q5PYH7|DLG2_DANRE Disks large homolog 2 OS=Danio rerio GN=dlg2
+           PE=2 SV=1
+          Length = 881
+
+ Score = 51.6 bits (122), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 33/89 (37%), Positives = 52/89 (58%), Gaps = 5/89 (5%)
+
+Query: 2   DPREVILCKDQDGKIGLRLKSIDNG--IFVQLVQANSPASLVG-LRFGDQVLQINGENCA 58
+           +PR+++L K   G +G  +   ++G  IFV  + A  PA L G LR GDQ+L +NG +  
+Sbjct: 421 EPRKIVLHKGSTG-LGFNIVGGEDGEGIFVSFILAGGPADLSGELRRGDQILSVNGIDLR 479
+
+Query: 59  GWSSDKAHKVLKQAFGEKITMTIRDRPFE 87
+           G + ++A   LK A G+ +T+  + RP E
+Sbjct: 480 GATHEQAAAALKGA-GQTVTIIAQYRPEE 507
+
+
+>sp|Q15700|DLG2_HUMAN Disks large homolog 2 OS=Homo sapiens GN=DLG2
+           PE=1 SV=3
+          Length = 870
+
+ Score = 48.9 bits (115), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 32/87 (36%), Positives = 51/87 (58%), Gaps = 5/87 (5%)
+
+Query: 2   DPREVILCKDQDGKIGLRLKSIDNG--IFVQLVQANSPASLVG-LRFGDQVLQINGENCA 58
+           +PR+V+L K   G +G  +   ++G  IFV  + A  PA L G L+ GDQ+L +NG +  
+Sbjct: 418 EPRKVVLHKGSTG-LGFNIVGGEDGEGIFVSFILAGGPADLSGELQRGDQILSVNGIDLR 476
+
+Query: 59  GWSSDKAHKVLKQAFGEKITMTIRDRP 85
+           G S ++A   LK A G+ +T+  + +P
+Sbjct: 477 GASHEQAAAALKGA-GQTVTIIAQYQP 502
+
+
+>sp|Q91XM9|DLG2_MOUSE Disks large homolog 2 OS=Mus musculus GN=Dlg2
+           PE=1 SV=1
+          Length = 852
+
+ Score = 48.5 bits (114), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 32/87 (36%), Positives = 51/87 (58%), Gaps = 5/87 (5%)
+
+Query: 2   DPREVILCKDQDGKIGLRLKSIDNG--IFVQLVQANSPASLVG-LRFGDQVLQINGENCA 58
+           +PR+V+L K   G +G  +   ++G  IFV  + A  PA L G L+ GDQ+L +NG +  
+Sbjct: 418 EPRKVVLHKGSTG-LGFNIVGGEDGEGIFVSFILAGGPADLSGELQRGDQILSVNGIDLR 476
+
+Query: 59  GWSSDKAHKVLKQAFGEKITMTIRDRP 85
+           G S ++A   LK A G+ +T+  + +P
+Sbjct: 477 GASHEQAAAALKGA-GQTVTIIAQYQP 502
+
+
+>sp|Q63622|DLG2_RAT Disks large homolog 2 OS=Rattus norvegicus
+           GN=Dlg2 PE=1 SV=1
+          Length = 852
+
+ Score = 48.5 bits (114), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 32/87 (36%), Positives = 51/87 (58%), Gaps = 5/87 (5%)
+
+Query: 2   DPREVILCKDQDGKIGLRLKSIDNG--IFVQLVQANSPASLVG-LRFGDQVLQINGENCA 58
+           +PR+V+L K   G +G  +   ++G  IFV  + A  PA L G L+ GDQ+L +NG +  
+Sbjct: 418 EPRKVVLHKGSTG-LGFNIVGGEDGEGIFVSFILAGGPADLSGELQRGDQILSVNGIDLR 476
+
+Query: 59  GWSSDKAHKVLKQAFGEKITMTIRDRP 85
+           G S ++A   LK A G+ +T+  + +P
+Sbjct: 477 GASHEQAAAALKGA-GQTVTIIAQYQP 502
+
+
+>sp|Q5ZM14|NHERF_CHICK Ezrin-radixin-moesin-binding phosphoprotein
+           50 OS=Gallus gallus GN=SLC9A3R1 PE=2 SV=1
+          Length = 333
+
+ Score = 47.8 bits (112), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 38/170 (22%), Positives = 67/170 (39%), Gaps = 42/170 (24%)
+
+Query: 26  GIFVQLVQANSPASLVGLRFGDQVLQINGENCAGWSSDKAHKVLKQAFGEKITMTIRDRP 85
+           G +++LV+A SPA   GLR GD++L+++G N    S  +  + ++ A G    + ++ +P
+Sbjct: 35  GQYIRLVEAGSPAERSGLRAGDRLLEVDGTNVERESHQQVVERIRAAAGAVRLLVVQPQP 94
+
+Query: 86  FERTITMHKDSTGHV------------------------------------GFIFKNGK- 108
+            E+    H D  G                                      GF   + K 
+Sbjct: 95  EEQPPKTHSDPDGEAQREPPAAETPAAERSGPEERELRPRLCRIKKGPNGYGFNLHSEKS 154
+
+Query: 109 -----ITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIADILSTSG 153
+                + ++  DS A   GL  +  I E+NG +V G + + +   +   G
+Sbjct: 155 RPGQYVRAVDPDSPAEAAGLRAQDRIVEVNGTSVEGKQHADVVAAIKAGG 204
+
+
+>sp|Q5ZIK2|PDZ11_CHICK PDZ domain-containing protein 11 OS=Gallus
+           gallus GN=PDZD11 PE=2 SV=1
+          Length = 140
+
+ Score = 47.4 bits (111), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 31/91 (34%), Positives = 48/91 (52%), Gaps = 5/91 (5%)
+
+Query: 3   PREVILCKDQDGKIGLRL---KSIDNGIFVQLVQANSPASLVGLRFGDQVLQINGENCAG 59
+           PR V+L K    ++G  +   K+   GIF+  V  +S A   GL+ GDQVL +N  +   
+Sbjct: 45  PRTVVLKKPPGAQLGFNIRGGKASQLGIFISKVIPDSDAHRAGLQEGDQVLSVNDVDFQD 104
+
+Query: 60  WSSDKAHKVLKQAFGEKITMTIRDRPFERTI 90
+               KA ++LK A   +ITM +R  P+ + +
+Sbjct: 105 IEHSKAVEILKTA--REITMRVRYFPYSKCL 133
+
+
+>sp|Q5PYH5|DLG1L_DANRE Discs large homolog 1-like protein OS=Danio
+           rerio GN=dlg1l PE=2 SV=1
+          Length = 827
+
+ Score = 47.4 bits (111), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 30/89 (33%), Positives = 52/89 (58%), Gaps = 5/89 (5%)
+
+Query: 2   DPREVILCKDQDGKIGLRLKSIDNG--IFVQLVQANSPASLVG-LRFGDQVLQINGENCA 58
+           +PR+V+L +   G +G  +   ++G  IF+  + A  PA L G LR GD+++ +NG +  
+Sbjct: 400 EPRKVVLHRGTTG-LGFNIVGGEDGEGIFISFILAGGPADLCGELRKGDRLVSVNGIDLR 458
+
+Query: 59  GWSSDKAHKVLKQAFGEKITMTIRDRPFE 87
+           G + ++A   LK A G+ +T+  + RP E
+Sbjct: 459 GATHEQAAAALKNA-GQTVTIVAQYRPEE 486
+
+
+>sp|Q80U72|LAP4_MOUSE Protein LAP4 OS=Mus musculus GN=Scrib PE=1 SV=2
+          Length = 1612
+
+ Score = 47.0 bits (110), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 37/160 (23%), Positives = 69/160 (43%), Gaps = 19/160 (11%)
+
+Query: 24   DNGIFVQLVQANSPASLVGLRFGDQVLQINGENCAGWSSDKAHKVLKQAFGEKITMTIRD 83
+            D G+F+  V     A+  GLR GD++L +NG++    +  +A   L +   E   +  RD
+Sbjct: 1019 DPGVFISKVLPRGLAARCGLRVGDRILAVNGQDVREATHQEAVSALLRPCLELCLLVRRD 1078
+
+Query: 84   RPFE--RTITMHKDSTGHVGFIFKNGK----------------ITSIVKDSSAARNG-LL 124
+             P    R + + K     +G   + G                 I+ +    +A R+G L 
+Sbjct: 1079 PPPPGMRELCIQKAPGEKLGISIRGGAKGHAGNPCDPTDEGIFISKVSPTGAAGRDGRLR 1138
+
+Query: 125  TEHNICEINGQNVIGLKDSQIADILSTSGTVVTITIMPAF 164
+                + E+N Q+++GL  ++   +L + G  +T+ +   F
+Sbjct: 1139 VGLRLLEVNQQSLLGLTHAEAVQLLRSVGDTLTVLVCDGF 1178
+
+
+>sp|P78352|DLG4_HUMAN Disks large homolog 4 OS=Homo sapiens GN=DLG4
+           PE=1 SV=3
+          Length = 724
+
+ Score = 45.8 bits (107), Expect = 9e-05,   Method: Composition-based stats.
+ Identities = 29/89 (32%), Positives = 50/89 (56%), Gaps = 5/89 (5%)
+
+Query: 2   DPREVILCKDQDGKIGLRLKSIDNG--IFVQLVQANSPASLVG-LRFGDQVLQINGENCA 58
+           +PR +++ +   G +G  +   ++G  IF+  + A  PA L G LR GDQ+L +NG +  
+Sbjct: 310 EPRRIVIHRGSTG-LGFNIVGGEDGEGIFISFILAGGPADLSGELRKGDQILSVNGVDLR 368
+
+Query: 59  GWSSDKAHKVLKQAFGEKITMTIRDRPFE 87
+             S ++A   LK A G+ +T+  + +P E
+Sbjct: 369 NASHEQAAIALKNA-GQTVTIIAQYKPEE 396
+
+
+>sp|Q62108|DLG4_MOUSE Disks large homolog 4 OS=Mus musculus GN=Dlg4
+           PE=1 SV=1
+          Length = 724
+
+ Score = 45.8 bits (107), Expect = 9e-05,   Method: Composition-based stats.
+ Identities = 29/89 (32%), Positives = 50/89 (56%), Gaps = 5/89 (5%)
+
+Query: 2   DPREVILCKDQDGKIGLRLKSIDNG--IFVQLVQANSPASLVG-LRFGDQVLQINGENCA 58
+           +PR +++ +   G +G  +   ++G  IF+  + A  PA L G LR GDQ+L +NG +  
+Sbjct: 310 EPRRIVIHRGSTG-LGFNIVGGEDGEGIFISFILAGGPADLSGELRKGDQILSVNGVDLR 368
+
+Query: 59  GWSSDKAHKVLKQAFGEKITMTIRDRPFE 87
+             S ++A   LK A G+ +T+  + +P E
+Sbjct: 369 NASHEQAAIALKNA-GQTVTIIAQYKPEE 396
+
+
+>sp|P31016|DLG4_RAT Disks large homolog 4 OS=Rattus norvegicus
+           GN=Dlg4 PE=1 SV=1
+          Length = 724
+
+ Score = 45.8 bits (107), Expect = 9e-05,   Method: Composition-based stats.
+ Identities = 29/89 (32%), Positives = 50/89 (56%), Gaps = 5/89 (5%)
+
+Query: 2   DPREVILCKDQDGKIGLRLKSIDNG--IFVQLVQANSPASLVG-LRFGDQVLQINGENCA 58
+           +PR +++ +   G +G  +   ++G  IF+  + A  PA L G LR GDQ+L +NG +  
+Sbjct: 310 EPRRIVIHRGSTG-LGFNIVGGEDGEGIFISFILAGGPADLSGELRKGDQILSVNGVDLR 368
+
+Query: 59  GWSSDKAHKVLKQAFGEKITMTIRDRPFE 87
+             S ++A   LK A G+ +T+  + +P E
+Sbjct: 369 NASHEQAAIALKNA-GQTVTIIAQYKPEE 396
+
+
+>sp|Q09506|YQI7_CAEEL Uncharacterized protein C45G9.7
+           OS=Caenorhabditis elegans GN=C45G9.7 PE=1 SV=1
+          Length = 124
+
+ Score = 45.4 bits (106), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 20/53 (37%), Positives = 35/53 (66%)
+
+Query: 20  LKSIDNGIFVQLVQANSPASLVGLRFGDQVLQINGENCAGWSSDKAHKVLKQA 72
+            K  D+G+++  V++ SPA + GLR  D++LQ+NG +    + D+A K +KQ+
+Sbjct: 54  FKYPDSGVYITNVESGSPADVAGLRKHDKILQVNGADFTMMTHDRAVKFIKQS 106
+
+
+>sp|Q5PYH6|DLG1_DANRE Disks large homolog 1 OS=Danio rerio GN=dlg1
+           PE=2 SV=2
+          Length = 873
+
+ Score = 45.1 bits (105), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 28/89 (31%), Positives = 51/89 (57%), Gaps = 5/89 (5%)
+
+Query: 2   DPREVILCKDQDGKIGLRLKSIDNG--IFVQLVQANSPASLVG-LRFGDQVLQINGENCA 58
+           +PR+++L +   G +G  +   ++G  IF+  + A  PA L G LR GD+++ +NG +  
+Sbjct: 471 EPRKIVLHRGTTG-LGFNIVGGEDGEGIFISFILAGGPADLCGELRKGDRIVSVNGVDLR 529
+
+Query: 59  GWSSDKAHKVLKQAFGEKITMTIRDRPFE 87
+             + ++A   LK A G+ +T+  + RP E
+Sbjct: 530 SATHEQAAAALKNA-GQTVTIIAQYRPEE 557
+
+
+>sp|Q3T0X8|PDZD1_BOVIN PDZ domain-containing protein 1 OS=Bos taurus
+           GN=PDZK1 PE=2 SV=1
+          Length = 520
+
+ Score = 44.7 bits (104), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 42/193 (21%), Positives = 84/193 (43%), Gaps = 35/193 (18%)
+
+Query: 1   MDPREVILCKDQDGKIGLRLKSID--NGIFVQLVQANSPASLVGLRFGDQVLQINGENCA 58
+           M PR   L K + G  G  LK++   NG+++  ++    A   G+   D ++++NGEN  
+Sbjct: 130 MQPRLCYLVK-EGGSYGFSLKTVQGKNGVYMTDIKPQGVAMKAGVLADDHLIEVNGENVE 188
+
+Query: 59  GWSSDKAHKVLKQAFGEKITMTIRDRPFE------------------------RTITMHK 94
+             S ++  + +K++ G ++T  + D+  +                        R + M K
+Sbjct: 189 DASHEEVVEKVKKS-GSRVTFLLVDKETDKHHSEQKIKVKRETASLKLLPCQPRVVEMKK 247
+
+Query: 95  DSTGHVGFIFKNG--KITSIVKD----SSAARNGLLTEHNICEINGQNVIGLKDSQIADI 148
+            S G+ GF  +    +   I+KD    S A + GL     +  +NG++V  L    + ++
+Sbjct: 248 GSNGY-GFYLRESPEQKGQIIKDIDPKSPAEKAGLKNNDLVVAVNGKSVESLDHDSVVEM 306
+
+Query: 149 LSTSGTVVTITIM 161
+           +   G   ++ ++
+Sbjct: 307 IRKGGDQTSLLVV 319
+
+
+>sp|Q6R005|DLG4_DANRE Disks large homolog 4 OS=Danio rerio GN=dlg4
+           PE=2 SV=1
+          Length = 801
+
+ Score = 44.3 bits (103), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 29/89 (32%), Positives = 49/89 (55%), Gaps = 5/89 (5%)
+
+Query: 2   DPREVILCKDQDGKIGLRLKSIDNG--IFVQLVQANSPASLVG-LRFGDQVLQINGENCA 58
+           +PR V++ +   G +G  +   ++G  IF+  + A   A L G LR GDQ+L +NG +  
+Sbjct: 390 EPRRVVIHRGSTG-LGFNIVGGEDGEGIFISFILAGGAADLSGELRKGDQILSVNGVDLR 448
+
+Query: 59  GWSSDKAHKVLKQAFGEKITMTIRDRPFE 87
+             + ++A   LK A G+ +T+  + RP E
+Sbjct: 449 HATHEQAAAALKNA-GQTVTIITQYRPEE 476
+
+
+>sp|Q14160|LAP4_HUMAN Protein LAP4 OS=Homo sapiens GN=SCRIB PE=1 SV=3
+          Length = 1630
+
+ Score = 44.3 bits (103), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 36/158 (22%), Positives = 67/158 (42%), Gaps = 19/158 (12%)
+
+Query: 26   GIFVQLVQANSPASLVGLRFGDQVLQINGENCAGWSSDKAHKVLKQAFGEKITMTIRD-- 83
+            G+F+  V     A+  GLR GD++L +NG++    +  +A   L +   E   +  RD  
+Sbjct: 1035 GVFISKVLPRGLAARSGLRVGDRILAVNGQDVRDATHQEAVSALLRPCLELSLLVRRDPA 1094
+
+Query: 84   RPFERTITMHKDSTGHVGFIFKNGK----------------ITSIVKDSSAARNG-LLTE 126
+             P  R + + K     +G   + G                 I+ +    +A R+G L   
+Sbjct: 1095 PPGLRELCIQKAPGERLGISIRGGARGHAGNPRDPTDEGIFISKVSPTGAAGRDGRLRVG 1154
+
+Query: 127  HNICEINGQNVIGLKDSQIADILSTSGTVVTITIMPAF 164
+              + E+N Q+++GL   +   +L + G  +T+ +   F
+Sbjct: 1155 LRLLEVNQQSLLGLTHGEAVQLLRSVGDTLTVLVCDGF 1192
+
+
+>sp|Q5EBL8|PDZ11_HUMAN PDZ domain-containing protein 11 OS=Homo
+           sapiens GN=PDZD11 PE=1 SV=2
+          Length = 140
+
+ Score = 43.5 bits (101), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 32/97 (32%), Positives = 49/97 (50%), Gaps = 11/97 (11%)
+
+Query: 3   PREVILCKDQDGKIGLRL---KSIDNGIFVQLVQANSPASLVGLRFGDQVLQINGENCAG 59
+           PR + L K    ++G  +   K+   GIF+  V  +S A   GL+ GDQVL +N  +   
+Sbjct: 45  PRTITLKKPPGAQLGFNIRGGKASQLGIFISKVIPDSDAHRAGLQEGDQVLAVNDVDFQD 104
+
+Query: 60  WSSDKAHKVLKQAFGEKITMTIRDRPF------ERTI 90
+               KA ++LK A   +I+M +R  P+      ERT+
+Sbjct: 105 IEHSKAVEILKTA--REISMRVRFFPYNYHRQKERTV 139
+
+
+>sp|Q6NXB2|PDZ11_DANRE PDZ domain-containing protein 11 OS=Danio
+           rerio GN=pdzd11 PE=2 SV=1
+          Length = 142
+
+ Score = 43.1 bits (100), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 31/97 (31%), Positives = 49/97 (50%), Gaps = 11/97 (11%)
+
+Query: 3   PREVILCKDQDGKIGLRL---KSIDNGIFVQLVQANSPASLVGLRFGDQVLQINGENCAG 59
+           PR ++L K    ++G  +   K+   GIF+  V  +S A   GL+ GDQVL +N  +   
+Sbjct: 47  PRTIVLKKPPGAQLGFNIRGGKASQLGIFISKVVPDSDAHRAGLQEGDQVLSVNEVDFQD 106
+
+Query: 60  WSSDKAHKVLKQAFGEKITMTIRDRPF------ERTI 90
+               +A ++LK A   +I M +R  P+      ERT+
+Sbjct: 107 IEHSRAVEILKTA--REILMKVRYFPYNYQRQKERTV 141
+
+
+  Database: sprot
+    Posted date:  Mar 15, 2009  5:38 PM
+  Number of letters in database: 148,809,765
+  Number of sequences in database:  412,525
+  
+Lambda     K      H
+   0.319    0.136    0.391 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 45,839,109
+Number of Sequences: 412525
+Number of extensions: 1738012
+Number of successful extensions: 4945
+Number of sequences better than 1.0e-03: 43
+Number of HSP's better than  0.0 without gapping: 18
+Number of HSP's successfully gapped in prelim test: 25
+Number of HSP's that attempted gapping in prelim test: 4860
+Number of HSP's gapped (non-prelim): 79
+length of query: 164
+length of database: 148,809,765
+effective HSP length: 107
+effective length of query: 57
+effective length of database: 104,669,590
+effective search space: 5966166630
+effective search space used: 5966166630
+T: 11
+A: 40
+X1: 16 ( 7.4 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.8 bits)
+S2: 99 (42.7 bits)

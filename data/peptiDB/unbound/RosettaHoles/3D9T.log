@@ -1,0 +1,130 @@
+core.init: command: /vol/ek/share/rosetta/mini/build/src/release/linux/2.6/32/x86/gcc/holes.linuxgccrelease -database /vol/ek/share/rosetta/minirosetta_database/ -holes:dalphaball /vol/ek/share/bin/DAlphaBall -holes:make_pdb -holes:make_voids -s 3D9T.mainChain.pdb
+core.init: 'RNG device' seed mode, using '/dev/urandom', seed=-1032419160 seed_offset=0 real_seed=-1032419160
+core.init.random: RandomGenerator:init: Normal mode, seed=-1032419160 RG_type=mt19937
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: standard
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION PATCH: score12
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/pdb_pair_stats_fine
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/P_AA
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/P_AA_n
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/P_AA_pp
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/Rama_smooth_dyn.dat_ss_6.4
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: standard
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION PATCH: score12
+core.io.pdb.file_data: [ WARNING ] discarding 5 atoms at position 1 in file 3D9T.mainChain.pdb. Best match rsd_type:  GLY_p:NtermProteinFull
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 2 in file 3D9T.mainChain.pdb. Best match rsd_type:  SER
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 3 in file 3D9T.mainChain.pdb. Best match rsd_type:  HIS_D
+core.io.pdb.file_data: [ WARNING ] discarding 7 atoms at position 4 in file 3D9T.mainChain.pdb. Best match rsd_type:  MET
+core.io.pdb.file_data: [ WARNING ] discarding 6 atoms at position 5 in file 3D9T.mainChain.pdb. Best match rsd_type:  GLN
+core.io.pdb.file_data: [ WARNING ] discarding 3 atoms at position 6 in file 3D9T.mainChain.pdb. Best match rsd_type:  THR
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 7 in file 3D9T.mainChain.pdb. Best match rsd_type:  HIS_D
+core.io.pdb.file_data: [ WARNING ] discarding 3 atoms at position 8 in file 3D9T.mainChain.pdb. Best match rsd_type:  ALA
+core.io.pdb.file_data: [ WARNING ] discarding 3 atoms at position 9 in file 3D9T.mainChain.pdb. Best match rsd_type:  ALA
+core.io.pdb.file_data: [ WARNING ] discarding 10 atoms at position 10 in file 3D9T.mainChain.pdb. Best match rsd_type:  ARG
+core.io.pdb.file_data: [ WARNING ] discarding 7 atoms at position 11 in file 3D9T.mainChain.pdb. Best match rsd_type:  MET
+core.io.pdb.file_data: [ WARNING ] discarding 10 atoms at position 12 in file 3D9T.mainChain.pdb. Best match rsd_type:  ARG
+core.io.pdb.file_data: [ WARNING ] discarding 3 atoms at position 13 in file 3D9T.mainChain.pdb. Best match rsd_type:  THR
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 14 in file 3D9T.mainChain.pdb. Best match rsd_type:  PHE
+core.io.pdb.file_data: [ WARNING ] discarding 7 atoms at position 15 in file 3D9T.mainChain.pdb. Best match rsd_type:  MET
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 16 in file 3D9T.mainChain.pdb. Best match rsd_type:  TYR
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 17 in file 3D9T.mainChain.pdb. Best match rsd_type:  TRP
+core.io.pdb.file_data: [ WARNING ] discarding 6 atoms at position 18 in file 3D9T.mainChain.pdb. Best match rsd_type:  PRO
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 19 in file 3D9T.mainChain.pdb. Best match rsd_type:  SER
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 20 in file 3D9T.mainChain.pdb. Best match rsd_type:  SER
+core.io.pdb.file_data: [ WARNING ] discarding 6 atoms at position 21 in file 3D9T.mainChain.pdb. Best match rsd_type:  VAL
+core.io.pdb.file_data: [ WARNING ] discarding 6 atoms at position 22 in file 3D9T.mainChain.pdb. Best match rsd_type:  PRO
+core.io.pdb.file_data: [ WARNING ] discarding 6 atoms at position 23 in file 3D9T.mainChain.pdb. Best match rsd_type:  VAL
+core.io.pdb.file_data: [ WARNING ] discarding 6 atoms at position 24 in file 3D9T.mainChain.pdb. Best match rsd_type:  GLN
+core.io.pdb.file_data: [ WARNING ] discarding 6 atoms at position 25 in file 3D9T.mainChain.pdb. Best match rsd_type:  PRO
+core.io.pdb.file_data: [ WARNING ] discarding 4 atoms at position 26 in file 3D9T.mainChain.pdb. Best match rsd_type:  GLU
+core.io.pdb.file_data: [ WARNING ] discarding 6 atoms at position 27 in file 3D9T.mainChain.pdb. Best match rsd_type:  GLN
+core.io.pdb.file_data: [ WARNING ] discarding 8 atoms at position 28 in file 3D9T.mainChain.pdb. Best match rsd_type:  LEU
+core.io.pdb.file_data: [ WARNING ] discarding 3 atoms at position 29 in file 3D9T.mainChain.pdb. Best match rsd_type:  ALA
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 30 in file 3D9T.mainChain.pdb. Best match rsd_type:  SER
+core.io.pdb.file_data: [ WARNING ] discarding 3 atoms at position 31 in file 3D9T.mainChain.pdb. Best match rsd_type:  ALA
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 32 in file 3D9T.mainChain.pdb. Best match rsd_type:  GLY
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 33 in file 3D9T.mainChain.pdb. Best match rsd_type:  PHE
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 34 in file 3D9T.mainChain.pdb. Best match rsd_type:  TYR
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 35 in file 3D9T.mainChain.pdb. Best match rsd_type:  TYR
+core.io.pdb.file_data: [ WARNING ] discarding 6 atoms at position 36 in file 3D9T.mainChain.pdb. Best match rsd_type:  VAL
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 37 in file 3D9T.mainChain.pdb. Best match rsd_type:  GLY
+core.io.pdb.file_data: [ WARNING ] discarding 10 atoms at position 38 in file 3D9T.mainChain.pdb. Best match rsd_type:  ARG
+core.io.pdb.file_data: [ WARNING ] discarding 4 atoms at position 39 in file 3D9T.mainChain.pdb. Best match rsd_type:  ASN
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 40 in file 3D9T.mainChain.pdb. Best match rsd_type:  ASP
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 41 in file 3D9T.mainChain.pdb. Best match rsd_type:  ASP
+core.io.pdb.file_data: [ WARNING ] discarding 6 atoms at position 42 in file 3D9T.mainChain.pdb. Best match rsd_type:  VAL
+core.io.pdb.file_data: [ WARNING ] discarding 11 atoms at position 43 in file 3D9T.mainChain.pdb. Best match rsd_type:  LYS
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 44 in file 3D9T.mainChain.pdb. Best match rsd_type:  CYS
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 45 in file 3D9T.mainChain.pdb. Best match rsd_type:  PHE
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 46 in file 3D9T.mainChain.pdb. Best match rsd_type:  CYS
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 47 in file 3D9T.mainChain.pdb. Best match rsd_type:  CYS
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 48 in file 3D9T.mainChain.pdb. Best match rsd_type:  ASP
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 49 in file 3D9T.mainChain.pdb. Best match rsd_type:  GLY
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 50 in file 3D9T.mainChain.pdb. Best match rsd_type:  GLY
+core.io.pdb.file_data: [ WARNING ] discarding 8 atoms at position 51 in file 3D9T.mainChain.pdb. Best match rsd_type:  LEU
+core.io.pdb.file_data: [ WARNING ] discarding 10 atoms at position 52 in file 3D9T.mainChain.pdb. Best match rsd_type:  ARG
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 53 in file 3D9T.mainChain.pdb. Best match rsd_type:  CYS
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 54 in file 3D9T.mainChain.pdb. Best match rsd_type:  TRP
+core.io.pdb.file_data: [ WARNING ] discarding 4 atoms at position 55 in file 3D9T.mainChain.pdb. Best match rsd_type:  GLU
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 56 in file 3D9T.mainChain.pdb. Best match rsd_type:  SER
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 57 in file 3D9T.mainChain.pdb. Best match rsd_type:  GLY
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 58 in file 3D9T.mainChain.pdb. Best match rsd_type:  ASP
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 59 in file 3D9T.mainChain.pdb. Best match rsd_type:  ASP
+core.io.pdb.file_data: [ WARNING ] discarding 6 atoms at position 60 in file 3D9T.mainChain.pdb. Best match rsd_type:  PRO
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 61 in file 3D9T.mainChain.pdb. Best match rsd_type:  TRP
+core.io.pdb.file_data: [ WARNING ] discarding 6 atoms at position 62 in file 3D9T.mainChain.pdb. Best match rsd_type:  VAL
+core.io.pdb.file_data: [ WARNING ] discarding 4 atoms at position 63 in file 3D9T.mainChain.pdb. Best match rsd_type:  GLU
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 64 in file 3D9T.mainChain.pdb. Best match rsd_type:  HIS_D
+core.io.pdb.file_data: [ WARNING ] discarding 3 atoms at position 65 in file 3D9T.mainChain.pdb. Best match rsd_type:  ALA
+core.io.pdb.file_data: [ WARNING ] discarding 11 atoms at position 66 in file 3D9T.mainChain.pdb. Best match rsd_type:  LYS
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 67 in file 3D9T.mainChain.pdb. Best match rsd_type:  TRP
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 68 in file 3D9T.mainChain.pdb. Best match rsd_type:  PHE
+core.io.pdb.file_data: [ WARNING ] discarding 6 atoms at position 69 in file 3D9T.mainChain.pdb. Best match rsd_type:  PRO
+core.io.pdb.file_data: [ WARNING ] discarding 10 atoms at position 70 in file 3D9T.mainChain.pdb. Best match rsd_type:  ARG
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 71 in file 3D9T.mainChain.pdb. Best match rsd_type:  CYS
+core.io.pdb.file_data: [ WARNING ] discarding 4 atoms at position 72 in file 3D9T.mainChain.pdb. Best match rsd_type:  GLU
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 73 in file 3D9T.mainChain.pdb. Best match rsd_type:  PHE
+core.io.pdb.file_data: [ WARNING ] discarding 8 atoms at position 74 in file 3D9T.mainChain.pdb. Best match rsd_type:  LEU
+core.io.pdb.file_data: [ WARNING ] discarding 8 atoms at position 75 in file 3D9T.mainChain.pdb. Best match rsd_type:  ILE
+core.io.pdb.file_data: [ WARNING ] discarding 10 atoms at position 76 in file 3D9T.mainChain.pdb. Best match rsd_type:  ARG
+core.io.pdb.file_data: [ WARNING ] discarding 7 atoms at position 77 in file 3D9T.mainChain.pdb. Best match rsd_type:  MET
+core.io.pdb.file_data: [ WARNING ] discarding 11 atoms at position 78 in file 3D9T.mainChain.pdb. Best match rsd_type:  LYS
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 79 in file 3D9T.mainChain.pdb. Best match rsd_type:  GLY
+core.io.pdb.file_data: [ WARNING ] discarding 6 atoms at position 80 in file 3D9T.mainChain.pdb. Best match rsd_type:  GLN
+core.io.pdb.file_data: [ WARNING ] discarding 4 atoms at position 81 in file 3D9T.mainChain.pdb. Best match rsd_type:  GLU
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 82 in file 3D9T.mainChain.pdb. Best match rsd_type:  PHE
+core.io.pdb.file_data: [ WARNING ] discarding 6 atoms at position 83 in file 3D9T.mainChain.pdb. Best match rsd_type:  VAL
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 84 in file 3D9T.mainChain.pdb. Best match rsd_type:  ASP
+core.io.pdb.file_data: [ WARNING ] discarding 4 atoms at position 85 in file 3D9T.mainChain.pdb. Best match rsd_type:  GLU
+core.io.pdb.file_data: [ WARNING ] discarding 8 atoms at position 86 in file 3D9T.mainChain.pdb. Best match rsd_type:  ILE
+core.io.pdb.file_data: [ WARNING ] discarding 6 atoms at position 87 in file 3D9T.mainChain.pdb. Best match rsd_type:  GLN
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 88 in file 3D9T.mainChain.pdb. Best match rsd_type:  GLY
+core.io.pdb.file_data: [ WARNING ] discarding 10 atoms at position 89 in file 3D9T.mainChain.pdb. Best match rsd_type:  ARG
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 90 in file 3D9T.mainChain.pdb. Best match rsd_type:  TYR
+core.io.pdb.file_data: [ WARNING ] discarding 6 atoms at position 91 in file 3D9T.mainChain.pdb. Best match rsd_type:  PRO
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 92 in file 3D9T.mainChain.pdb. Best match rsd_type:  HIS_D
+core.io.pdb.file_data: [ WARNING ] discarding 8 atoms at position 93 in file 3D9T.mainChain.pdb. Best match rsd_type:  LEU
+core.io.pdb.file_data: [ WARNING ] discarding 8 atoms at position 94 in file 3D9T.mainChain.pdb. Best match rsd_type:  LEU
+core.io.pdb.file_data: [ WARNING ] discarding 4 atoms at position 95 in file 3D9T.mainChain.pdb. Best match rsd_type:  GLU
+core.io.pdb.file_data: [ WARNING ] discarding 6 atoms at position 96 in file 3D9T.mainChain.pdb. Best match rsd_type:  GLN
+core.io.pdb.file_data: [ WARNING ] discarding 8 atoms at position 97 in file 3D9T.mainChain.pdb. Best match rsd_type:  LEU
+core.io.pdb.file_data: [ WARNING ] discarding 8 atoms at position 98 in file 3D9T.mainChain.pdb. Best match rsd_type:  LEU
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 99 in file 3D9T.mainChain.pdb. Best match rsd_type:  SER
+core.io.pdb.file_data: [ WARNING ] discarding 3 atoms at position 100 in file 3D9T.mainChain.pdb. Best match rsd_type:  THR
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 101 in file 3D9T.mainChain.pdb. Best match rsd_type:  SER_p:CtermProteinFull
+core.pack.task: Packer task: initialize from command line() 
+core.scoring.packing.compute_holes_score: compute_holes_surfs try: 1
+core.scoring.packing.compute_holes_score: compute_holes_surfs completed successfully
+core.scoring.packing.compute_holes_score: compute_rosettaholes_score done: 4.56403
+RosettaHoles: 3D9T.mainChain.pdb 4.56403 2.58595 0.330256core.scoring.dunbrack: Dunbrack library took 0.05 seconds to load from binary
+ 394.066
+dumping pdb to 3D9T.mainChain.pdb_cavs.pdb
+dumping cavities 
+protocols.packstat: prune raduis 1.4 6700 3584 2305 1678 1320 1088 936 820 751 705 680 663 654 652 651 651 
+core.conformation.util: Non-ideal residue detected:  Residue #1 atom #3:  Ideal theta=1.20079, Inspected theta=1.22477 (in Radians)
+core.io.silent: ERROR: trying to use a 'protein' type silent file for a non-ideal pose
+core.io.silent: consider using the '-out:file:silent_struct_type binary' flag

@@ -1,0 +1,2255 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_A  117
+         (117 letters)
+
+Database: sprot 
+           412,525 sequences; 148,809,765 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|P31948|STIP1_HUMAN Stress-induced-phosphoprotein 1 OS=Homo sa...   214   1e-55
+sp|Q4R8N7|STIP1_MACFA Stress-induced-phosphoprotein 1 OS=Macaca ...   210   1e-54
+sp|Q3ZBZ8|STIP1_BOVIN Stress-induced-phosphoprotein 1 OS=Bos tau...   208   6e-54
+sp|O54981|STIP1_CRIGR Stress-induced-phosphoprotein 1 OS=Cricetu...   206   3e-53
+sp|Q60864|STIP1_MOUSE Stress-induced-phosphoprotein 1 OS=Mus mus...   206   3e-53
+sp|O35814|STIP1_RAT Stress-induced-phosphoprotein 1 OS=Rattus no...   206   3e-53
+sp|Q9USI5|STI1_SCHPO Heat shock protein sti1 homolog OS=Schizosa...   109   4e-24
+sp|Q54DA8|STIP1_DICDI Protein STIP1 homolog OS=Dictyostelium dis...    95   8e-20
+sp|P25407|STI1L_PLAFA STI1-like protein (Fragment) OS=Plasmodium...    85   8e-17
+sp|Q8ILC1|STI1L_PLAF7 STI1-like protein OS=Plasmodium falciparum...    83   4e-16
+sp|Q96EQ0|SGTB_HUMAN Small glutamine-rich tetratricopeptide repe...    80   2e-15
+sp|Q80W98|SGTB_RAT Small glutamine-rich tetratricopeptide repeat...    77   2e-14
+sp|Q8VD33|SGTB_MOUSE Small glutamine-rich tetratricopeptide repe...    77   2e-14
+sp|Q96AY4|TTC28_HUMAN Tetratricopeptide repeat protein 28 OS=Hom...    77   2e-14
+sp|Q43468|STIP_SOYBN Heat shock protein STI OS=Glycine max GN=ST...    76   4e-14
+sp|Q32LM2|SGTA_BOVIN Small glutamine-rich tetratricopeptide repe...    75   1e-13
+sp|O70593|SGTA_RAT Small glutamine-rich tetratricopeptide repeat...    73   4e-13
+sp|Q8BJU0|SGTA_MOUSE Small glutamine-rich tetratricopeptide repe...    73   4e-13
+sp|O43765|SGTA_HUMAN Small glutamine-rich tetratricopeptide repe...    72   5e-13
+sp|Q9H6T3|RPAP3_HUMAN RNA polymerase II-associated protein 3 OS=...    72   8e-13
+sp|O43049|PPT1_SCHPO Serine/threonine-protein phosphatase T OS=S...    71   2e-12
+sp|Q54VG4|SGT_DICDI Small glutamine-rich tetratricopeptide repea...    71   2e-12
+sp|Q84K11|PPP5_SOLLC Serine/threonine protein phosphatase 5 OS=S...    70   2e-12
+sp|P15705|STI1_YEAST Heat shock protein STI1 OS=Saccharomyces ce...    70   3e-12
+sp|Q5ZKQ3|RPAP3_CHICK RNA polymerase II-associated protein 3 OS=...    70   4e-12
+sp|O13797|SGT2_SCHPO Small glutamine-rich tetratricopeptide repe...    69   8e-12
+sp|Q9D706|RPAP3_MOUSE RNA polymerase II-associated protein 3 OS=...    67   2e-11
+sp|P53042|PPP5_RAT Serine/threonine-protein phosphatase 5 OS=Rat...    67   2e-11
+sp|Q60676|PPP5_MOUSE Serine/threonine-protein phosphatase 5 OS=M...    67   3e-11
+sp|Q6NU95|RPAP3_XENLA RNA polymerase II-associated protein 3 OS=...    66   5e-11
+sp|Q68FQ7|RPAP3_RAT RNA polymerase II-associated protein 3 OS=Ra...    66   5e-11
+sp|P38825|YHR7_YEAST TPR repeat-containing protein YHR117W OS=Sa...    65   7e-11
+sp|P53041|PPP5_HUMAN Serine/threonine-protein phosphatase 5 OS=H...    65   9e-11
+sp|Q84XU2|PPP5_ARATH Serine/threonine protein phosphatase 5 OS=A...    64   2e-10
+sp|Q28IV3|RPAP3_XENTR RNA polymerase II-associated protein 3 OS=...    64   2e-10
+sp|Q496Y0|LONF3_HUMAN LON peptidase N-terminal domain and RING f...    61   2e-09
+sp|P53804|TTC3_HUMAN Tetratricopeptide repeat protein 3 OS=Homo ...    59   7e-09
+sp|Q49AM3|TTC31_HUMAN Tetratricopeptide repeat protein 31 OS=Hom...    59   7e-09
+sp|Q12118|SGT2_YEAST Small glutamine-rich tetratricopeptide repe...    58   1e-08
+sp|Q5RAP0|UN45A_PONAB Protein unc-45 homolog A OS=Pongo abelii G...    58   1e-08
+sp|Q8BW49|TTC12_MOUSE Tetratricopeptide repeat protein 12 OS=Mus...    57   2e-08
+sp|Q9D4H7|LONF3_MOUSE LON peptidase N-terminal domain and RING f...    57   3e-08
+sp|Q9H3U1|UN45A_HUMAN Protein unc-45 homolog A OS=Homo sapiens G...    56   5e-08
+sp|Q80ZK9|WDTC1_MOUSE WD and tetratricopeptide repeats protein 1...    56   5e-08
+sp|Q8N5D0|WDTC1_HUMAN WD and tetratricopeptide repeats protein 1...    55   7e-08
+sp|P07213|TOM70_YEAST Mitochondrial import receptor subunit TOM7...    55   1e-07
+sp|Q32PZ3|UN45A_RAT Protein unc-45 homolog A OS=Rattus norvegicu...    54   2e-07
+sp|Q93YR3|F10AL_ARATH FAM10 family protein At4g22670 OS=Arabidop...    54   2e-07
+sp|P53043|PPT1_YEAST Serine/threonine-protein phosphatase T OS=S...    53   4e-07
+sp|Q99KD5|UN45A_MOUSE Protein unc-45 homolog A OS=Mus musculus G...    53   5e-07
+sp|Q75Q39|TOM70_RAT Mitochondrial import receptor subunit TOM70 ...    52   6e-07
+sp|Q9CZW5|TOM70_MOUSE Mitochondrial import receptor subunit TOM7...    52   6e-07
+sp|O14217|TOM70_SCHPO Probable mitochondrial import receptor sub...    52   8e-07
+sp|O94826|TOM70_HUMAN Mitochondrial import receptor subunit TOM7...    52   9e-07
+sp|Q9QYI3|DNJC7_MOUSE DnaJ homolog subfamily C member 7 OS=Mus m...    51   2e-06
+sp|Q8CGY6|UN45B_MOUSE Protein unc-45 homolog B OS=Mus musculus G...    50   2e-06
+sp|Q54IP0|DNJC7_DICDI DnaJ homolog subfamily C member 7 homolog ...    50   2e-06
+sp|Q8IWX7|UN45B_HUMAN Protein unc-45 homolog B OS=Homo sapiens G...    50   3e-06
+sp|Q9HGM9|DNJC7_SCHPO DnaJ homolog subfamily C member 7 homolog ...    50   3e-06
+sp|Q9M8Y0|SEC_ARATH Probable UDP-N-acetylglucosamine--peptide N-...    50   3e-06
+sp|Q9H892|TTC12_HUMAN Tetratricopeptide repeat protein 12 OS=Hom...    50   4e-06
+sp|O74991|POF3_SCHPO F-box/TPR repeat protein pof3 OS=Schizosacc...    49   5e-06
+sp|Q5R8D8|DNJC7_PONAB DnaJ homolog subfamily C member 7 OS=Pongo...    49   6e-06
+sp|Q07617|SPAG1_HUMAN Sperm-associated antigen 1 OS=Homo sapiens...    49   6e-06
+sp|Q99615|DNJC7_HUMAN DnaJ homolog subfamily C member 7 OS=Homo ...    49   7e-06
+sp|Q5ZLF0|F10A1_CHICK Hsc70-interacting protein OS=Gallus gallus...    47   2e-05
+sp|Q8IZP2|F10A4_HUMAN Protein FAM10A4 OS=Homo sapiens GN=FAM10A4...    47   2e-05
+sp|O14085|SEC72_SCHPO Translocation protein sec72 OS=Schizosacch...    47   2e-05
+sp|Q8BG19|TMTC4_MOUSE Transmembrane and TPR repeat-containing pr...    47   3e-05
+sp|P23231|TOM70_NEUCR Mitochondrial import receptor subunit tom-...    47   3e-05
+sp|Q5ZI13|DNJC3_CHICK DnaJ homolog subfamily C member 3 OS=Gallu...    47   3e-05
+sp|P50503|F10A1_RAT Hsc70-interacting protein OS=Rattus norvegic...    47   4e-05
+sp|Q91Z38|TTC1_MOUSE Tetratricopeptide repeat protein 1 OS=Mus m...    46   4e-05
+sp|Q95LY5|TTC12_MACFA Tetratricopeptide repeat protein 12 (Fragm...    46   4e-05
+sp|Q8HXH0|LONF3_MACFA LON peptidase N-terminal domain and RING f...    46   4e-05
+sp|Q99614|TTC1_HUMAN Tetratricopeptide repeat protein 1 OS=Homo ...    46   6e-05
+sp|Q8NFI4|F10A5_HUMAN Protein FAM10A5 OS=Homo sapiens GN=FAM10A5...    45   9e-05
+sp|Q99L47|F10A1_MOUSE Hsc70-interacting protein OS=Mus musculus ...    45   9e-05
+sp|Q5U2X2|SPAG1_RAT Sperm-associated antigen 1 OS=Rattus norvegi...    45   1e-04
+sp|P50502|F10A1_HUMAN Hsc70-interacting protein OS=Homo sapiens ...    45   1e-04
+sp|Q5RF31|F10A1_PONAB Hsc70-interacting protein OS=Pongo abelii ...    45   1e-04
+sp|Q80ZX8|SPAG1_MOUSE Sperm-associated antigen 1 OS=Mus musculus...    45   1e-04
+sp|Q3ZBR5|TTC1_BOVIN Tetratricopeptide repeat protein 1 OS=Bos t...    45   1e-04
+sp|Q27968|DNJC3_BOVIN DnaJ homolog subfamily C member 3 OS=Bos t...    45   1e-04
+sp|Q5T4D3|TMTC4_HUMAN Transmembrane and TPR repeat-containing pr...    45   1e-04
+sp|Q54M20|TTC4_DICDI Tetratricopeptide repeat protein 4 homolog ...    44   2e-04
+sp|Q75A03|DIA2_ASHGO Protein DIA2 OS=Ashbya gossypii GN=DIA2 PE=...    44   2e-04
+sp|Q9R0T3|DNJC3_RAT DnaJ homolog subfamily C member 3 OS=Rattus ...    44   2e-04
+sp|Q66H45|TTC36_RAT Tetratricopeptide repeat protein 36 OS=Rattu...    44   2e-04
+sp|O95801|TTC4_HUMAN Tetratricopeptide repeat protein 4 OS=Homo ...    44   2e-04
+sp|Q13217|DNJC3_HUMAN DnaJ homolog subfamily C member 3 OS=Homo ...    44   2e-04
+sp|Q06677|SWA2_YEAST Auxilin-like clathrin uncoating factor SWA2...    44   2e-04
+sp|Q91YW3|DNJC3_MOUSE DnaJ homolog subfamily C member 3 OS=Mus m...    44   3e-04
+sp|Q15785|TOM34_HUMAN Mitochondrial import receptor subunit TOM3...    44   3e-04
+sp|Q863A5|DYXC1_GORGO Dyslexia susceptibility 1 candidate gene 1...    43   4e-04
+sp|Q8WXU2|DYXC1_HUMAN Dyslexia susceptibility 1 candidate gene 1...    43   4e-04
+sp|Q863A7|DYXC1_PANTR Dyslexia susceptibility 1 candidate gene 1...    43   4e-04
+sp|Q863A4|DYXC1_PONPY Dyslexia susceptibility 1 candidate gene 1...    43   4e-04
+sp|Q863A6|DYXC1_PANPA Dyslexia susceptibility 1 candidate gene 1...    43   4e-04
+sp|P33313|CNS1_YEAST Hsp70/Hsp90 co-chaperone CNS1 OS=Saccharomy...    43   4e-04
+sp|A8MVZ4|TTC3L_HUMAN Putative tetratricopeptide repeat protein ...    43   5e-04
+sp|Q8R368|DYXC1_MOUSE Dyslexia susceptibility 1 candidate gene 1...    43   5e-04
+sp|Q8R3H9|TTC4_MOUSE Tetratricopeptide repeat protein 4 OS=Mus m...    43   6e-04
+sp|Q7ZU45|TTC25_DANRE Tetratricopeptide repeat protein 25 OS=Dan...    42   6e-04
+sp|Q9SRS9|CHIP_ARATH E3 ubiquitin-protein ligase CHIP OS=Arabido...    42   6e-04
+sp|O18158|OGT1_CAEEL UDP-N-acetylglucosamine--peptide N-acetylgl...    42   6e-04
+sp|Q8VBW8|TTC36_MOUSE Tetratricopeptide repeat protein 36 OS=Mus...    42   8e-04
+
+>sp|P31948|STIP1_HUMAN Stress-induced-phosphoprotein 1 OS=Homo
+           sapiens GN=STIP1 PE=1 SV=1
+          Length = 543
+
+ Score =  214 bits (544), Expect = 1e-55,   Method: Composition-based stats.
+ Identities = 117/117 (100%), Positives = 117/117 (100%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG
+Sbjct: 2   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 61
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNMEAR 117
+           CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNMEAR
+Sbjct: 62  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNMEAR 118
+
+
+
+ Score = 68.9 bits (167), Expect = 6e-12,   Method: Composition-based stats.
+ Identities = 41/108 (37%), Positives = 67/108 (62%)
+
+Query: 5   ELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTV 64
+           E K KGN+    G+   A++ Y+EAIK +P +  LYSNR+A Y K  ++Q A +D  + +
+Sbjct: 362 EEKNKGNECFQKGDYPQAMKHYTEAIKRNPKDAKLYSNRAACYTKLLEFQLALKDCEECI 421
+
+Query: 65  DLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQ 112
+            L+P + KGY+RKAAALE +  + +A   Y++ L  +++  +  +G Q
+Sbjct: 422 QLEPTFIKGYTRKAAALEAMKDYTKAMDVYQKALDLDSSCKEAADGYQ 469
+
+
+>sp|Q4R8N7|STIP1_MACFA Stress-induced-phosphoprotein 1 OS=Macaca
+           fascicularis GN=STIP1 PE=2 SV=1
+          Length = 543
+
+ Score =  210 bits (535), Expect = 1e-54,   Method: Composition-based stats.
+ Identities = 115/117 (98%), Positives = 116/117 (99%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           EQVNELKEKGNKALS GNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG
+Sbjct: 2   EQVNELKEKGNKALSAGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 61
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNMEAR 117
+           CKTV+LKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNMEAR
+Sbjct: 62  CKTVELKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNMEAR 118
+
+
+
+ Score = 69.7 bits (169), Expect = 4e-12,   Method: Composition-based stats.
+ Identities = 41/108 (37%), Positives = 67/108 (62%)
+
+Query: 5   ELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTV 64
+           E K KGN+    G+   A++ Y+EAIK +P +  LYSNR+A Y K  ++Q A +D  + +
+Sbjct: 362 EEKNKGNECFQKGDYPQAMKHYTEAIKRNPKDAKLYSNRAACYTKLLEFQLALKDCEECI 421
+
+Query: 65  DLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQ 112
+            L+P + KGY+RKAAALE +  + +A   Y++ L  +++  +  +G Q
+Sbjct: 422 QLEPTFIKGYTRKAAALEAMKDYTKAMDVYQKALDLDSSRKEAADGYQ 469
+
+
+
+ Score = 42.7 bits (99), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 29/80 (36%), Positives = 44/80 (55%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           +Q  + KE GN A    + D AL+ Y +A +LDP N    +N++A Y +KGDY K  E  
+Sbjct: 223 KQALKEKELGNDAYKKKDFDTALKHYDKAKELDPTNMTYITNQAAVYFEKGDYNKCRELC 282
+
+Query: 61  CKTVDLKPDWGKGYSRKAAA 80
+            K +D+  +  + Y + A A
+Sbjct: 283 EKAIDVGRENREDYRQIAKA 302
+
+
+>sp|Q3ZBZ8|STIP1_BOVIN Stress-induced-phosphoprotein 1 OS=Bos taurus
+           GN=STIP1 PE=2 SV=1
+          Length = 543
+
+ Score =  208 bits (529), Expect = 6e-54,   Method: Composition-based stats.
+ Identities = 114/117 (97%), Positives = 115/117 (98%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           EQVNELKEKGNKALS GNIDDALQCYSEAIKLDP NHVLYSNRSAAYAKKGDYQKAYEDG
+Sbjct: 2   EQVNELKEKGNKALSAGNIDDALQCYSEAIKLDPQNHVLYSNRSAAYAKKGDYQKAYEDG 61
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNMEAR 117
+           CKTVDLKPDWGKGYSRKAAALEFLNRFEEAK+TYEEGLKHEANNPQLKEGLQNMEAR
+Sbjct: 62  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKQTYEEGLKHEANNPQLKEGLQNMEAR 118
+
+
+
+ Score = 70.5 bits (171), Expect = 2e-12,   Method: Composition-based stats.
+ Identities = 42/108 (38%), Positives = 67/108 (62%)
+
+Query: 5   ELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTV 64
+           E K KGN+    G+   A++ Y+EAIK +P +  LYSNR+A Y K  ++Q A +D  + +
+Sbjct: 362 EEKNKGNECFQKGDYPQAMKHYTEAIKRNPKDAKLYSNRAACYTKLLEFQLALKDCEECI 421
+
+Query: 65  DLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQ 112
+            L+P + KGY+RKAAALE +  + +A   Y++ L  ++N  +  +G Q
+Sbjct: 422 QLEPTFIKGYTRKAAALEAMKDYTKAMDVYQKALDLDSNCKEAADGYQ 469
+
+
+>sp|O54981|STIP1_CRIGR Stress-induced-phosphoprotein 1 OS=Cricetulus
+           griseus GN=STIP1 PE=2 SV=1
+          Length = 543
+
+ Score =  206 bits (524), Expect = 3e-53,   Method: Composition-based stats.
+ Identities = 114/117 (97%), Positives = 114/117 (97%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           EQVNELKEKGNKALS GNIDDALQCYSEAIKLDP NHVLYSNRSAAYAKKGDYQKAYEDG
+Sbjct: 2   EQVNELKEKGNKALSAGNIDDALQCYSEAIKLDPQNHVLYSNRSAAYAKKGDYQKAYEDG 61
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNMEAR 117
+           CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANN QLKEGLQNMEAR
+Sbjct: 62  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNLQLKEGLQNMEAR 118
+
+
+
+ Score = 69.3 bits (168), Expect = 5e-12,   Method: Composition-based stats.
+ Identities = 41/108 (37%), Positives = 68/108 (62%)
+
+Query: 5   ELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTV 64
+           E K KGN+    G+   A++ Y+EAIK +P +  LYSNR+A Y K  ++Q A +D  + +
+Sbjct: 362 EEKNKGNECFQKGDYPQAMKHYTEAIKRNPKDAKLYSNRAACYTKLLEFQLALKDCEECI 421
+
+Query: 65  DLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQ 112
+            L+P + KGY+RKAAALE +  + +A   Y++ L+ +++  +  +G Q
+Sbjct: 422 QLEPTFIKGYTRKAAALEAMKDYTKAMDVYQKALELDSSCKEAADGYQ 469
+
+
+>sp|Q60864|STIP1_MOUSE Stress-induced-phosphoprotein 1 OS=Mus
+           musculus GN=Stip1 PE=1 SV=1
+          Length = 543
+
+ Score =  206 bits (524), Expect = 3e-53,   Method: Composition-based stats.
+ Identities = 114/117 (97%), Positives = 114/117 (97%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           EQVNELKEKGNKALS GNIDDALQCYSEAIKLDP NHVLYSNRSAAYAKKGDYQKAYEDG
+Sbjct: 2   EQVNELKEKGNKALSAGNIDDALQCYSEAIKLDPQNHVLYSNRSAAYAKKGDYQKAYEDG 61
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNMEAR 117
+           CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANN QLKEGLQNMEAR
+Sbjct: 62  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNLQLKEGLQNMEAR 118
+
+
+
+ Score = 68.9 bits (167), Expect = 6e-12,   Method: Composition-based stats.
+ Identities = 41/108 (37%), Positives = 67/108 (62%)
+
+Query: 5   ELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTV 64
+           E K KGN+    G+   A++ Y+EAIK +P +  LYSNR+A Y K  ++Q A +D  + +
+Sbjct: 362 EEKNKGNECFQKGDYPQAMKHYTEAIKRNPRDAKLYSNRAACYTKLLEFQLALKDCEECI 421
+
+Query: 65  DLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQ 112
+            L+P + KGY+RKAAALE +  + +A   Y++ L  +++  +  +G Q
+Sbjct: 422 QLEPTFIKGYTRKAAALEAMKDYTKAMDVYQKALDLDSSCKEAADGYQ 469
+
+
+>sp|O35814|STIP1_RAT Stress-induced-phosphoprotein 1 OS=Rattus
+           norvegicus GN=Stip1 PE=1 SV=1
+          Length = 543
+
+ Score =  206 bits (523), Expect = 3e-53,   Method: Composition-based stats.
+ Identities = 114/117 (97%), Positives = 114/117 (97%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           EQVNELKEKGNKALS GNIDDALQCYSEAIKLDP NHVLYSNRSAAYAKKGDYQKAYEDG
+Sbjct: 2   EQVNELKEKGNKALSAGNIDDALQCYSEAIKLDPQNHVLYSNRSAAYAKKGDYQKAYEDG 61
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNMEAR 117
+           CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANN QLKEGLQNMEAR
+Sbjct: 62  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNLQLKEGLQNMEAR 118
+
+
+
+ Score = 68.9 bits (167), Expect = 6e-12,   Method: Composition-based stats.
+ Identities = 41/108 (37%), Positives = 67/108 (62%)
+
+Query: 5   ELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTV 64
+           E K KGN+    G+   A++ Y+EAIK +P +  LYSNR+A Y K  ++Q A +D  + +
+Sbjct: 362 EEKNKGNECFQKGDYPQAMKHYTEAIKRNPRDAKLYSNRAACYTKLLEFQLALKDCEECI 421
+
+Query: 65  DLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQ 112
+            L+P + KGY+RKAAALE +  + +A   Y++ L  +++  +  +G Q
+Sbjct: 422 QLEPTFIKGYTRKAAALEAMKDYTKAMDVYQKALDLDSSCKEAADGYQ 469
+
+
+>sp|Q9USI5|STI1_SCHPO Heat shock protein sti1 homolog
+           OS=Schizosaccharomyces pombe GN=sti1 PE=2 SV=1
+          Length = 591
+
+ Score =  109 bits (272), Expect = 4e-24,   Method: Composition-based stats.
+ Identities = 60/112 (53%), Positives = 76/112 (67%)
+
+Query: 5   ELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTV 64
+           ELK KGN A S  +   A+  +++AI LD  NH+LYSNRSA YA + DY  A +D  K  
+Sbjct: 4   ELKAKGNAAFSKKDYKTAIDYFTQAIGLDERNHILYSNRSACYASEKDYADALKDATKCT 63
+
+Query: 65  DLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNMEA 116
+           +LKPDW KG+SRK AAL  L   + A+  YEEGLKH+ANN QL  GL+++EA
+Sbjct: 64  ELKPDWAKGWSRKGAALHGLGDLDAARSAYEEGLKHDANNAQLLNGLKSVEA 115
+
+
+
+ Score = 49.3 bits (116), Expect = 6e-06,   Method: Composition-based stats.
+ Identities = 32/117 (27%), Positives = 58/117 (49%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           ++  E + KGN+    G+  +A++ Y+E  K  P +   + NR+AAY K     +   D 
+Sbjct: 397 DKAEESRVKGNELFKSGDFANAIKEYTEMTKRAPSDPRGFGNRAAAYLKVMAPAECIRDC 456
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNMEAR 117
+            K ++L P++ K Y RKA AL  L  + +      E  + +   P   + L+ +E++
+Sbjct: 457 NKAIELDPNFAKAYVRKAQALFMLKDYNKCIDACNEASEVDRREPNTGKNLREIESQ 513
+
+
+>sp|Q54DA8|STIP1_DICDI Protein STIP1 homolog OS=Dictyostelium
+           discoideum GN=sti1 PE=3 SV=1
+          Length = 564
+
+ Score = 95.1 bits (235), Expect = 8e-20,   Method: Composition-based stats.
+ Identities = 50/115 (43%), Positives = 75/115 (65%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           ++  E K +GN A S  + + A++C+ +AI+LDP NH+LYSNRSA+       + A  D 
+Sbjct: 6   QKATEFKNQGNAAFSSKDYNSAVKCFDQAIELDPSNHILYSNRSASLLALDKNEDALTDA 65
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNME 115
+            K ++LKPDW KGY R+  AL  L RFEEA+++ E GLK +  N QL++ L++ +
+Sbjct: 66  KKAIELKPDWSKGYLRETNALYKLGRFEEAEKSAEAGLKIDPTNQQLEDALEDAQ 120
+
+
+
+ Score = 82.8 bits (203), Expect = 4e-16,   Method: Composition-based stats.
+ Identities = 43/101 (42%), Positives = 68/101 (67%)
+
+Query: 7   KEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVDL 66
+           K KG +    G   +A++C+ EAI+ +P +H +YSNRSAAY+K  +Y+ A +D  K ++L
+Sbjct: 383 KNKGVEHFKKGEFPEAIKCFEEAIRRNPKDHTIYSNRSAAYSKLLEYKLAIKDADKCIEL 442
+
+Query: 67  KPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQL 107
+           +P + KGY RK  AL  +  +++A   Y++GL+ EANNP+L
+Sbjct: 443 EPTFIKGYIRKGTALFAMREYQQALEVYDQGLRIEANNPEL 483
+
+
+>sp|P25407|STI1L_PLAFA STI1-like protein (Fragment) OS=Plasmodium
+           falciparum PE=4 SV=1
+          Length = 252
+
+ Score = 85.1 bits (209), Expect = 8e-17,   Method: Composition-based stats.
+ Identities = 48/114 (42%), Positives = 68/114 (59%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           E+   LKE GNK    G  ++A++ +S+AI  DP +HVLYSN S A+A  G + +A E  
+Sbjct: 5   EEAQRLKELGNKCFQEGKYEEAVKYFSDAITNDPLDHVLYSNLSGAFASLGRFYEALESA 64
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNM 114
+            K + +K DW KGY RK  A   L +   A++TY EGLK + NN  L++ L  +
+Sbjct: 65  NKCISIKKDWPKGYIRKGCAEHGLRQLSNAEKTYLEGLKIDPNNKSLQDALSKV 118
+
+
+>sp|Q8ILC1|STI1L_PLAF7 STI1-like protein OS=Plasmodium falciparum
+           (isolate 3D7) GN=PF14_0324 PE=4 SV=1
+          Length = 564
+
+ Score = 82.8 bits (203), Expect = 4e-16,   Method: Composition-based stats.
+ Identities = 48/114 (42%), Positives = 68/114 (59%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           E+   LKE GNK    G  ++A++ +S+AI  DP +HVLYSN S A+A  G + +A E  
+Sbjct: 5   EEAQRLKELGNKCFQEGKYEEAVKYFSDAITNDPLDHVLYSNLSGAFASLGRFYEALESA 64
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNM 114
+            K + +K DW KGY RK  A   L +   A++TY EGLK + NN  L++ L  +
+Sbjct: 65  NKCISIKKDWPKGYIRKGCAEHGLRQLSNAEKTYLEGLKIDPNNKSLQDALSKV 118
+
+
+
+ Score = 66.2 bits (160), Expect = 5e-11,   Method: Composition-based stats.
+ Identities = 41/112 (36%), Positives = 64/112 (57%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           ++  E K KGN+     +  +A + Y EAI+ +P++  LYSNR+AA  K  +Y  A ED 
+Sbjct: 376 DKAEEHKNKGNEYFKNNDFPNAKKEYDEAIRRNPNDAKLYSNRAAALTKLIEYPSALEDV 435
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQ 112
+            K ++L P + K YSRK     F+  + +A + Y +GL+ + NN +  EG Q
+Sbjct: 436 MKAIELDPTFVKAYSRKGNLHFFMKDYYKALQAYNKGLELDPNNKECLEGYQ 487
+
+
+>sp|Q96EQ0|SGTB_HUMAN Small glutamine-rich tetratricopeptide
+           repeat-containing protein beta OS=Homo sapiens GN=SGTB
+           PE=1 SV=1
+          Length = 304
+
+ Score = 80.5 bits (197), Expect = 2e-15,   Method: Composition-based stats.
+ Identities = 43/116 (37%), Positives = 67/116 (57%)
+
+Query: 2   QVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGC 61
+           + ++LK++GN  +   N   A+ CY++AI+LDP+N V Y NR+AA +K G Y  A +D  
+Sbjct: 84  KADQLKDEGNNHMKEENYAAAVDCYTQAIELDPNNAVYYCNRAAAQSKLGHYTDAIKDCE 143
+
+Query: 62  KTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNMEAR 117
+           K + +   + K Y R   AL  LN+FEEA  +Y++ L  +  N   K  L+  E +
+Sbjct: 144 KAIAIDSKYSKAYGRMGLALTALNKFEEAVTSYQKALDLDPENDSYKSNLKIAEQK 199
+
+
+>sp|Q80W98|SGTB_RAT Small glutamine-rich tetratricopeptide
+           repeat-containing protein beta OS=Rattus norvegicus
+           GN=Sgtb PE=1 SV=1
+          Length = 304
+
+ Score = 77.4 bits (189), Expect = 2e-14,   Method: Composition-based stats.
+ Identities = 41/116 (35%), Positives = 66/116 (56%)
+
+Query: 2   QVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGC 61
+           + ++LK++GN  +   N   A+ CY++AI+LDP+N V Y NR+AA +K   Y  A +D  
+Sbjct: 84  KADQLKDEGNNHMKEENYAAAVDCYTQAIELDPNNAVYYCNRAAAQSKLSHYTDAIKDCE 143
+
+Query: 62  KTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNMEAR 117
+           K + +   + K Y R   AL  +N+FEEA  +Y++ L  +  N   K  L+  E +
+Sbjct: 144 KAIAIDSKYSKAYGRMGLALTAMNKFEEAVTSYQKALDLDPENDSYKSNLKIAEQK 199
+
+
+>sp|Q8VD33|SGTB_MOUSE Small glutamine-rich tetratricopeptide
+           repeat-containing protein beta OS=Mus musculus GN=Sgtb
+           PE=2 SV=1
+          Length = 304
+
+ Score = 77.4 bits (189), Expect = 2e-14,   Method: Composition-based stats.
+ Identities = 41/116 (35%), Positives = 66/116 (56%)
+
+Query: 2   QVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGC 61
+           + ++LK++GN  +   N   A+ CY++AI+LDP+N V Y NR+AA +K   Y  A +D  
+Sbjct: 84  KADQLKDEGNNHMKEENYAAAVDCYTQAIELDPNNAVYYCNRAAAQSKLSHYTDAIKDCE 143
+
+Query: 62  KTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNMEAR 117
+           K + +   + K Y R   AL  +N+FEEA  +Y++ L  +  N   K  L+  E +
+Sbjct: 144 KAIAIDSKYSKAYGRMGLALTAMNKFEEAVTSYQKALDLDPENDSYKSNLKIAEQK 199
+
+
+>sp|Q96AY4|TTC28_HUMAN Tetratricopeptide repeat protein 28 OS=Homo
+           sapiens GN=TTC28 PE=1 SV=4
+          Length = 2481
+
+ Score = 77.4 bits (189), Expect = 2e-14,   Method: Composition-based stats.
+ Identities = 42/107 (39%), Positives = 59/107 (55%)
+
+Query: 5   ELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTV 64
+           E   + N+A   G+   A+  Y+EA+ +DP N +LYSNRSAAY K   Y KA +D  K  
+Sbjct: 60  EKVRQSNQACHDGDFHTAIVLYNEALAVDPQNCILYSNRSAAYMKIQQYDKALDDAIKAR 119
+
+Query: 65  DLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGL 111
+            L P W K Y R+  AL++L R  +A   +  GL  +  + QL  G+
+Sbjct: 120 LLNPKWPKAYFRQGVALQYLGRHADALAAFASGLAQDPKSLQLLVGM 166
+
+
+>sp|Q43468|STIP_SOYBN Heat shock protein STI OS=Glycine max GN=STI
+           PE=2 SV=1
+          Length = 569
+
+ Score = 76.3 bits (186), Expect = 4e-14,   Method: Composition-based stats.
+ Identities = 42/109 (38%), Positives = 66/109 (60%)
+
+Query: 4   NELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKT 63
+           +E +EKGN+        +A + Y+EAIK +P +   YSNR+A Y K G   +  +D  K 
+Sbjct: 382 DEAREKGNELFKQQKYPEATKHYTEAIKRNPKDAKAYSNRAACYTKLGAMPEGLKDAEKC 441
+
+Query: 64  VDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQ 112
+           ++L P + KGY+RK A    +  +++A  TY EGLKH+ NN +L +G++
+Sbjct: 442 IELDPTFSKGYTRKGAVQFSMKEYDKALETYREGLKHDPNNQELLDGIR 490
+
+
+
+ Score = 71.2 bits (173), Expect = 1e-12,   Method: Composition-based stats.
+ Identities = 49/112 (43%), Positives = 61/112 (54%), Gaps = 1/112 (0%)
+
+Query: 5   ELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTV 64
+           E K KGN A S G+   A++ +S+AI L P NHVLYSNRSAA     + +       KTV
+Sbjct: 4   EAKAKGNAAFSAGDFAAAVRHFSDAIALSPSNHVLYSNRSAATLPP-ELRGGPSRRQKTV 62
+
+Query: 65  DLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNMEA 116
+           DLKPDW K YSR  AA   L R  +A    +       +N  LK GL + +A
+Sbjct: 63  DLKPDWPKAYSRLGAAHLGLRRHRDASPPTKPASNSNPDNAALKSGLADAQA 114
+
+
+>sp|Q32LM2|SGTA_BOVIN Small glutamine-rich tetratricopeptide
+           repeat-containing protein alpha OS=Bos taurus GN=SGTA
+           PE=2 SV=1
+          Length = 313
+
+ Score = 74.7 bits (182), Expect = 1e-13,   Method: Composition-based stats.
+ Identities = 41/116 (35%), Positives = 65/116 (56%)
+
+Query: 2   QVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGC 61
+           +   LK +GN+ + V N + A+  Y +AI+L+P N V + NR+AAY+K G+Y  A +D  
+Sbjct: 90  EAERLKTEGNEQMKVENFEAAVHFYGKAIELNPANAVYFCNRAAAYSKLGNYAGAVQDCE 149
+
+Query: 62  KTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNMEAR 117
+           + + + P + K Y R   AL  LN+  EA   Y + L+ + +N   K  L+  E R
+Sbjct: 150 RAICIDPSYSKAYGRMGLALSSLNKHTEAVAYYRKALELDPDNETYKSNLKVAELR 205
+
+
+>sp|O70593|SGTA_RAT Small glutamine-rich tetratricopeptide
+           repeat-containing protein alpha OS=Rattus norvegicus
+           GN=Sgta PE=1 SV=1
+          Length = 314
+
+ Score = 73.2 bits (178), Expect = 4e-13,   Method: Composition-based stats.
+ Identities = 39/116 (33%), Positives = 66/116 (56%)
+
+Query: 2   QVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGC 61
+           +   LK +GN+ + + N + A+  Y +AI+L+P N V + NR+AAY+K G+Y  A +D  
+Sbjct: 90  EAERLKTEGNEQMKLENFEAAVHLYGKAIELNPANAVYFCNRAAAYSKLGNYVGAVQDCE 149
+
+Query: 62  KTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNMEAR 117
+           + + + P + K Y R   AL  LN+  EA   Y++ L+ + +N   K  L+  E +
+Sbjct: 150 RAIGIDPGYSKAYGRMGLALSSLNKHAEAVAYYKKALELDPDNDTYKSNLKIAELK 205
+
+
+>sp|Q8BJU0|SGTA_MOUSE Small glutamine-rich tetratricopeptide
+           repeat-containing protein alpha OS=Mus musculus GN=Sgta
+           PE=1 SV=2
+          Length = 315
+
+ Score = 73.2 bits (178), Expect = 4e-13,   Method: Composition-based stats.
+ Identities = 39/116 (33%), Positives = 66/116 (56%)
+
+Query: 2   QVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGC 61
+           +   LK +GN+ + + N + A+  Y +AI+L+P N V + NR+AAY+K G+Y  A +D  
+Sbjct: 91  EAERLKTEGNEQMKLENFEAAVHLYGKAIELNPANAVYFCNRAAAYSKLGNYVGAVQDCE 150
+
+Query: 62  KTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNMEAR 117
+           + + + P + K Y R   AL  LN+  EA   Y++ L+ + +N   K  L+  E +
+Sbjct: 151 RAIGIDPGYSKAYGRMGLALSSLNKHAEAVAYYKKALELDPDNDTYKSNLKIAELK 206
+
+
+>sp|O43765|SGTA_HUMAN Small glutamine-rich tetratricopeptide
+           repeat-containing protein alpha OS=Homo sapiens GN=SGTA
+           PE=1 SV=1
+          Length = 313
+
+ Score = 72.4 bits (176), Expect = 5e-13,   Method: Composition-based stats.
+ Identities = 40/116 (34%), Positives = 66/116 (56%)
+
+Query: 2   QVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGC 61
+           +   LK +GN+ + V N + A+  Y +AI+L+P N V + NR+AAY+K G+Y  A +D  
+Sbjct: 90  EAERLKTEGNEQMKVENFEAAVHFYGKAIELNPANAVYFCNRAAAYSKLGNYAGAVQDCE 149
+
+Query: 62  KTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNMEAR 117
+           + + + P + K Y R   AL  LN+  EA   Y++ L+ + +N   K  L+  E +
+Sbjct: 150 RAICIDPAYSKAYGRMGLALSSLNKHVEAVAYYKKALELDPDNETYKSNLKIAELK 205
+
+
+>sp|Q9H6T3|RPAP3_HUMAN RNA polymerase II-associated protein 3
+           OS=Homo sapiens GN=RPAP3 PE=1 SV=2
+          Length = 665
+
+ Score = 72.0 bits (175), Expect = 8e-13,   Method: Composition-based stats.
+ Identities = 42/99 (42%), Positives = 58/99 (58%)
+
+Query: 6   LKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVD 65
+           LKEKGNK    G  D+A+ CY++ +  DP+N VL +NR++AY +   +  A  D    V 
+Sbjct: 136 LKEKGNKYFKQGKYDEAIDCYTKGMDADPYNPVLPTNRASAYFRLKKFAVAESDCNLAVA 195
+
+Query: 66  LKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANN 104
+           L   + K YSR+ AA   L + EEAK+ YE  L+ E NN
+Sbjct: 196 LNRSYTKAYSRRGAARFALQKLEEAKKDYERVLELEPNN 234
+
+
+
+ Score = 58.9 bits (141), Expect = 8e-09,   Method: Composition-based stats.
+ Identities = 34/106 (32%), Positives = 56/106 (52%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           +Q    K++GN     G  + A++CY+  I  D  N +L +NR+ AY K   Y++A +D 
+Sbjct: 280 QQAISEKDRGNGFFKEGKYERAIECYTRGIAADGANALLPANRAMAYLKIQKYEEAEKDC 339
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQ 106
+            + + L   + K ++R+  A  FL +  EAK+ +E  L  E  N Q
+Sbjct: 340 TQAILLDGSYSKAFARRGTARTFLGKLNEAKQDFETVLLLEPGNKQ 385
+
+
+>sp|O43049|PPT1_SCHPO Serine/threonine-protein phosphatase T
+           OS=Schizosaccharomyces pombe GN=ppt1 PE=2 SV=2
+          Length = 473
+
+ Score = 70.9 bits (172), Expect = 2e-12,   Method: Composition-based stats.
+ Identities = 40/111 (36%), Positives = 63/111 (56%)
+
+Query: 5   ELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTV 64
+           ELK + NK L  G+I  A+  Y++AI+LD  N +LYSNRS A+ K  DY  A  D  K +
+Sbjct: 7   ELKNEANKFLKEGHIVQAIDLYTKAIELDSTNAILYSNRSLAHLKSEDYGLAINDASKAI 66
+
+Query: 65  DLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNME 115
+           +  P++ K Y R+A A   + + +EA   + + L    ++P  ++ L+  E
+Sbjct: 67  ECDPEYAKAYFRRATAHIAIFQPKEAVGDFRKALALAPSDPAARKKLRECE 117
+
+
+>sp|Q54VG4|SGT_DICDI Small glutamine-rich tetratricopeptide
+           repeat-containing protein OS=Dictyostelium discoideum
+           GN=sgt PE=1 SV=1
+          Length = 334
+
+ Score = 70.9 bits (172), Expect = 2e-12,   Method: Composition-based stats.
+ Identities = 36/104 (34%), Positives = 61/104 (58%)
+
+Query: 5   ELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTV 64
+           +LK +GN  L+ G   +AL CY++AI  D  N + ++NR+A Y+   +++K+ ED  + +
+Sbjct: 147 KLKNEGNAKLNEGKHQEALSCYNKAILYDNTNAIYFANRAATYSALQNFEKSIEDCLEAI 206
+
+Query: 65  DLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLK 108
+              P++GK Y+R  +A   L +F EA   Y + ++ E NN   K
+Sbjct: 207 KRNPNYGKAYTRMGSAYTSLGKFSEAMEAYNKAIELEPNNETFK 250
+
+
+>sp|Q84K11|PPP5_SOLLC Serine/threonine protein phosphatase 5
+           OS=Solanum lycopersicum GN=PP5 PE=1 SV=1
+          Length = 556
+
+ Score = 70.5 bits (171), Expect = 2e-12,   Method: Composition-based stats.
+ Identities = 35/114 (30%), Positives = 65/114 (57%)
+
+Query: 2   QVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGC 61
+           +  ELK+  N+A        A+  Y++AI+L+  N V Y+NR+ A+ K  +Y  A +DG 
+Sbjct: 13  RAEELKQLANEAFKGHKYSQAIDLYTQAIELNGENAVYYANRAFAHTKLEEYGSAIQDGT 72
+
+Query: 62  KTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNME 115
+           + +++ P + KGY R+ AA   + +F++A + +++  K   N+P   + L+  E
+Sbjct: 73  RAIEIDPRYSKGYYRRGAAYLAMGKFKDALKDFQQVKKLCPNDPDATKKLKECE 126
+
+
+>sp|P15705|STI1_YEAST Heat shock protein STI1 OS=Saccharomyces
+           cerevisiae GN=STI1 PE=1 SV=1
+          Length = 589
+
+ Score = 70.1 bits (170), Expect = 3e-12,   Method: Composition-based stats.
+ Identities = 42/112 (37%), Positives = 67/112 (59%), Gaps = 1/112 (0%)
+
+Query: 4   NELKEKGNKALSVGNIDDALQCYSEAIKL-DPHNHVLYSNRSAAYAKKGDYQKAYEDGCK 62
+           +E K++GN A +  + D A++ +++AI++ +  NHVLYSNRSA Y     +  A  D  +
+Sbjct: 6   DEYKQQGNAAFTAKDYDKAIELFTKAIEVSETPNHVLYSNRSACYTSLKKFSDALNDANE 65
+
+Query: 63  TVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNM 114
+            V + P W KGY+R  AA   L   +EA+  Y++ L+ +A+N   KEGL  +
+Sbjct: 66  CVKINPSWSKGYNRLGAAHLGLGDLDEAESNYKKALELDASNKAAKEGLDQV 117
+
+
+
+ Score = 42.7 bits (99), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 29/102 (28%), Positives = 52/102 (50%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           E+  E + +G +  +  +  +A++ Y+E IK  P +   YSNR+AA AK   + +A  D 
+Sbjct: 394 EKAEEARLEGKEYFTKSDWPNAVKAYTEMIKRAPEDARGYSNRAAALAKLMSFPEAIADC 453
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEA 102
+            K ++  P++ + Y RKA A   +  +  A  T +     +A
+Sbjct: 454 NKAIEKDPNFVRAYIRKATAQIAVKEYASALETLDAARTKDA 495
+
+
+>sp|Q5ZKQ3|RPAP3_CHICK RNA polymerase II-associated protein 3
+           OS=Gallus gallus GN=RPAP3 PE=2 SV=1
+          Length = 665
+
+ Score = 69.7 bits (169), Expect = 4e-12,   Method: Composition-based stats.
+ Identities = 41/109 (37%), Positives = 64/109 (58%)
+
+Query: 7   KEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVDL 66
+           KEKGNK    GN D+A++CY+  +  DP N VL +NR++A+ +   +  A  D    + L
+Sbjct: 137 KEKGNKYFKQGNFDEAIKCYTRGMHSDPFNPVLPTNRASAFYRMKKFSVAESDCNLALAL 196
+
+Query: 67  KPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNME 115
+             ++ K Y+R+ AA   L  F+ AK  YE+ L+ +ANN + K  L+ +E
+Sbjct: 197 DKNYTKAYARRGAARFALKNFQGAKEDYEKVLELDANNYEAKNELKKIE 245
+
+
+
+ Score = 53.5 bits (127), Expect = 3e-07,   Method: Composition-based stats.
+ Identities = 33/100 (33%), Positives = 53/100 (53%)
+
+Query: 7   KEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVDL 66
+           K+ GN     G  + A++CY+  I  D  N +L +NR+ AY K   Y++A  D  + + L
+Sbjct: 287 KDLGNGYFKEGKYEAAIECYTRGIAADGTNALLPANRAMAYLKIQKYEEAENDCTQALLL 346
+
+Query: 67  KPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQ 106
+              + K ++R+ AA   L + +EA + +E  LK E  N Q
+Sbjct: 347 DASYSKAFARRGAARVALGKLKEAMQDFEAVLKLEPGNKQ 386
+
+
+>sp|O13797|SGT2_SCHPO Small glutamine-rich tetratricopeptide
+           repeat-containing protein 2 OS=Schizosaccharomyces pombe
+           GN=sgt2 PE=2 SV=1
+          Length = 317
+
+ Score = 68.6 bits (166), Expect = 8e-12,   Method: Composition-based stats.
+ Identities = 40/112 (35%), Positives = 62/112 (55%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           E+  +LK +GN A++  +   AL  Y++AI++DP + V YSNR+AAY + G ++ A ED 
+Sbjct: 81  EEAEKLKLEGNNAIAAKDYQKALDLYTKAIEIDPTSPVYYSNRAAAYNQLGQFENAVEDA 140
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQ 112
+              + L P   + + R   A   L     A   Y++GL  + NN  LK GL+
+Sbjct: 141 LTCLSLDPHHARAFGRLGRAKLSLGDAAAAADAYKKGLDFDPNNEVLKRGLE 192
+
+
+>sp|Q9D706|RPAP3_MOUSE RNA polymerase II-associated protein 3 OS=Mus
+           musculus GN=Rpap3 PE=1 SV=1
+          Length = 660
+
+ Score = 67.4 bits (163), Expect = 2e-11,   Method: Composition-based stats.
+ Identities = 37/99 (37%), Positives = 60/99 (60%)
+
+Query: 6   LKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVD 65
+           LKEKGNK    G  D+A++CY++ +  DP+N VL +NR++AY +   +  A  D    + 
+Sbjct: 137 LKEKGNKYFKQGKYDEAIECYTKGMDADPYNPVLPTNRASAYFRLKKFAVAESDCNLAIA 196
+
+Query: 66  LKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANN 104
+           L   + K Y+R+ AA   L + E+A++ YE+ L+ E +N
+Sbjct: 197 LSRTYTKAYARRGAARFALQKLEDARKDYEKVLELEPDN 235
+
+
+
+ Score = 56.2 bits (134), Expect = 4e-08,   Method: Composition-based stats.
+ Identities = 34/109 (31%), Positives = 55/109 (50%)
+
+Query: 7   KEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVDL 66
+           K+ GN     G  + A++CY+  I  D  N +L +NR+ AY K   Y++A  D  + + L
+Sbjct: 288 KDLGNGFFKEGKYEQAIECYTRGIAADRTNALLPANRAMAYLKIQRYEEAERDCTQAIVL 347
+
+Query: 67  KPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNME 115
+              + K ++R+  A  FL +  EAK+ +E  L  E  N Q    L  ++
+Sbjct: 348 DGSYSKAFARRGTARTFLGKINEAKQDFETVLLLEPGNKQAATELSRIK 396
+
+
+>sp|P53042|PPP5_RAT Serine/threonine-protein phosphatase 5 OS=Rattus
+           norvegicus GN=Ppp5c PE=2 SV=1
+          Length = 499
+
+ Score = 67.4 bits (163), Expect = 2e-11,   Method: Composition-based stats.
+ Identities = 38/112 (33%), Positives = 61/112 (54%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           ++  ELK + N      + ++A++ YS+AI+L+P N + Y NRS AY +   Y  A  D 
+Sbjct: 26  KRAEELKTQANDYFKAKDYENAIKFYSQAIELNPSNAIYYGNRSLAYLRTECYGYALGDA 85
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQ 112
+            + ++L   + KGY R+AA+   L +F  A R YE  +K + N+   K   Q
+Sbjct: 86  TRAIELDKKYIKGYYRRAASNMALGKFRAALRDYETVVKVKPNDKDAKMKYQ 137
+
+
+>sp|Q60676|PPP5_MOUSE Serine/threonine-protein phosphatase 5 OS=Mus
+           musculus GN=Ppp5c PE=2 SV=2
+          Length = 499
+
+ Score = 66.6 bits (161), Expect = 3e-11,   Method: Composition-based stats.
+ Identities = 38/112 (33%), Positives = 61/112 (54%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           ++  ELK + N      + ++A++ YS+AI+L+P N + Y NRS AY +   Y  A  D 
+Sbjct: 26  KRAEELKTQANDYFKAKDYENAIKFYSQAIELNPGNAIYYGNRSLAYLRTECYGYALGDA 85
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQ 112
+            + ++L   + KGY R+AA+   L +F  A R YE  +K + N+   K   Q
+Sbjct: 86  TRAIELDKKYIKGYYRRAASNMALGKFRAALRDYETVVKVKPNDKDAKMKYQ 137
+
+
+>sp|Q6NU95|RPAP3_XENLA RNA polymerase II-associated protein 3
+           OS=Xenopus laevis GN=rpap3 PE=2 SV=1
+          Length = 660
+
+ Score = 65.9 bits (159), Expect = 5e-11,   Method: Composition-based stats.
+ Identities = 37/108 (34%), Positives = 61/108 (56%)
+
+Query: 7   KEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVDL 66
+           KEKGN     G  D+A++CY+  +  DP+N +L +NR++A+ +   +  A  D    + L
+Sbjct: 136 KEKGNNYFKSGKYDEAIECYTRGMDADPYNAILPTNRASAFFRLKKFAVAESDCNLAIAL 195
+
+Query: 67  KPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNM 114
+             D+ K Y+R+ AA   L   + AK  YE+ L+ +ANN + K  L+ +
+Sbjct: 196 NRDYAKAYARRGAARLALKNLQGAKEDYEKVLELDANNFEAKNELRKI 243
+
+
+
+ Score = 52.4 bits (124), Expect = 6e-07,   Method: Composition-based stats.
+ Identities = 32/100 (32%), Positives = 53/100 (53%)
+
+Query: 7   KEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVDL 66
+           K+ GN     G  + A++CYS+ ++ D  N +L +NR+ AY K   Y++A  D    + L
+Sbjct: 288 KDLGNAYFKEGKYEIAIECYSQGMEADNTNALLPANRAMAYLKIQKYKEAEADCTLAISL 347
+
+Query: 67  KPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQ 106
+              + K ++R+  A   L + +EAK  +E  LK +  N Q
+Sbjct: 348 DASYCKAFARRGTASIMLGKQKEAKEDFEMVLKLDPGNKQ 387
+
+
+>sp|Q68FQ7|RPAP3_RAT RNA polymerase II-associated protein 3
+           OS=Rattus norvegicus GN=Rpap3 PE=2 SV=1
+          Length = 659
+
+ Score = 65.9 bits (159), Expect = 5e-11,   Method: Composition-based stats.
+ Identities = 37/110 (33%), Positives = 64/110 (58%)
+
+Query: 6   LKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVD 65
+           LKEKGNK    G  D+A++CY++ +  DP+N VL +NR++AY +   +  A  D    + 
+Sbjct: 136 LKEKGNKYFKQGKYDEAIECYTKGMDADPYNPVLPTNRASAYFRLKKFAVAESDCNLAIA 195
+
+Query: 66  LKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNME 115
+           L   + K Y+R+ AA   L + E+A++ Y + L+ E +N +    L+ ++
+Sbjct: 196 LSRSYTKAYARRGAARFALQKLEDARKDYVKVLELEPDNFEATNELRKID 245
+
+
+
+ Score = 57.8 bits (138), Expect = 2e-08,   Method: Composition-based stats.
+ Identities = 33/100 (33%), Positives = 52/100 (52%)
+
+Query: 7   KEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVDL 66
+           K+ GN     G  + A++CY+  I  D  N +L +NR+ AY K   Y++A  D  + + L
+Sbjct: 286 KDLGNGFFKEGKYEQAIECYTRGIAADSTNALLPANRAMAYLKVQKYEEAERDCTQAILL 345
+
+Query: 67  KPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQ 106
+              + K ++R+  A  FL +  EAK+ +E  L  E  N Q
+Sbjct: 346 DGSYSKAFARRGTARTFLGKINEAKQDFETVLLLEPGNKQ 385
+
+
+>sp|P38825|YHR7_YEAST TPR repeat-containing protein YHR117W
+           OS=Saccharomyces cerevisiae GN=YHR117W PE=1 SV=1
+          Length = 639
+
+ Score = 65.5 bits (158), Expect = 7e-11,   Method: Composition-based stats.
+ Identities = 35/86 (40%), Positives = 51/86 (59%)
+
+Query: 5   ELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTV 64
+           +LK +GN   +  N ++A++ Y  AI+LDP+  V YSN SA Y   GD +K  E   K +
+Sbjct: 129 QLKNRGNHFFTAKNFNEAIKYYQYAIELDPNEPVFYSNISACYISTGDLEKVIEFTTKAL 188
+
+Query: 65  DLKPDWGKGYSRKAAALEFLNRFEEA 90
+           ++KPD  K   R+A+A E L  F +A
+Sbjct: 189 EIKPDHSKALLRRASANESLGNFTDA 214
+
+
+>sp|P53041|PPP5_HUMAN Serine/threonine-protein phosphatase 5 OS=Homo
+           sapiens GN=PPP5C PE=1 SV=1
+          Length = 499
+
+ Score = 65.1 bits (157), Expect = 9e-11,   Method: Composition-based stats.
+ Identities = 37/112 (33%), Positives = 61/112 (54%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           ++  ELK + N      + ++A++ YS+AI+L+P N + Y NRS AY +   Y  A  D 
+Sbjct: 26  KRAEELKTQANDYFKAKDYENAIKFYSQAIELNPSNAIYYGNRSLAYLRTECYGYALGDA 85
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQ 112
+            + ++L   + KGY R+AA+   L +F  A R YE  +K + ++   K   Q
+Sbjct: 86  TRAIELDKKYIKGYYRRAASNMALGKFRAALRDYETVVKVKPHDKDAKMKYQ 137
+
+
+>sp|Q84XU2|PPP5_ARATH Serine/threonine protein phosphatase 5
+           OS=Arabidopsis thaliana GN=PAPP5 PE=1 SV=1
+          Length = 538
+
+ Score = 63.9 bits (154), Expect = 2e-10,   Method: Composition-based stats.
+ Identities = 31/114 (27%), Positives = 62/114 (54%)
+
+Query: 2   QVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGC 61
+           +  E K + N+A        A+  Y++AI+L+ +N V ++NR+ A+ K  +Y  A +D  
+Sbjct: 12  RAEEFKSQANEAFKGHKYSSAIDLYTKAIELNSNNAVYWANRAFAHTKLEEYGSAIQDAS 71
+
+Query: 62  KTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNME 115
+           K +++   + KGY R+ AA   + +F++A + +++  +   N+P     L+  E
+Sbjct: 72  KAIEVDSRYSKGYYRRGAAYLAMGKFKDALKDFQQVKRLSPNDPDATRKLKECE 125
+
+
+>sp|Q28IV3|RPAP3_XENTR RNA polymerase II-associated protein 3
+           OS=Xenopus tropicalis GN=rpap3 PE=2 SV=1
+          Length = 657
+
+ Score = 63.9 bits (154), Expect = 2e-10,   Method: Composition-based stats.
+ Identities = 37/108 (34%), Positives = 60/108 (55%)
+
+Query: 7   KEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVDL 66
+           KEKGN     G  D+A++CY+  +  DP+N VL +NR++A+ +   Y  A  D    + L
+Sbjct: 136 KEKGNNYFKSGQYDEAIECYTRGMDADPYNAVLPTNRASAFFRLKKYAVAESDCNLAIAL 195
+
+Query: 67  KPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNM 114
+             ++ K Y+R+ AA   L   + AK  YE+ L+ + NN + K  L+ +
+Sbjct: 196 NHNYAKAYARRGAARLALKDLQGAKEDYEKVLELDVNNFEAKNELRKI 243
+
+
+
+ Score = 52.0 bits (123), Expect = 9e-07,   Method: Composition-based stats.
+ Identities = 32/100 (32%), Positives = 52/100 (52%)
+
+Query: 7   KEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVDL 66
+           K+ GN     G  + A+ CYS+ ++ D  N +L +NR+ AY K   Y++A  D    + L
+Sbjct: 288 KDLGNAYFKEGKYEIAIDCYSQGMEADTTNALLPANRAMAYLKIQKYKEAETDCTLAISL 347
+
+Query: 67  KPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQ 106
+              + K ++R+  A   L + +EAK  +E  LK +  N Q
+Sbjct: 348 DASYCKAFARRGTARIMLGKQKEAKEDFEMVLKLDPGNKQ 387
+
+
+>sp|Q496Y0|LONF3_HUMAN LON peptidase N-terminal domain and RING
+           finger protein 3 OS=Homo sapiens GN=LONRF3 PE=2 SV=1
+          Length = 759
+
+ Score = 60.8 bits (146), Expect = 2e-09,   Method: Composition-based stats.
+ Identities = 34/93 (36%), Positives = 53/93 (56%)
+
+Query: 2   QVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGC 61
+           + ++L+ +GN+      ++ AL  Y+EA+KL P++H+LYSNRS  Y     ++ A  D  
+Sbjct: 242 RASQLRHEGNRLYRERQVEAALLKYNEAVKLAPNDHLLYSNRSQIYFTLESHENALHDAE 301
+
+Query: 62  KTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTY 94
+               L+P   K + RKA AL  L + EEA R +
+Sbjct: 302 IACKLRPMGFKAHFRKAQALATLGKVEEALREF 334
+
+
+>sp|P53804|TTC3_HUMAN Tetratricopeptide repeat protein 3 OS=Homo
+           sapiens GN=TTC3 PE=2 SV=1
+          Length = 2025
+
+ Score = 58.9 bits (141), Expect = 7e-09,   Method: Composition-based stats.
+ Identities = 36/114 (31%), Positives = 60/114 (52%), Gaps = 3/114 (2%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           E+   +K KGN+  S    D A+  Y+ AI+  P N++LY NR+  + + G ++ A  DG
+Sbjct: 229 EEGELMKMKGNEEFSKERFDIAIIYYTRAIEYRPENYLLYGNRALCFLRTGQFRNALGDG 288
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNM 114
+            +   LK  W KG+ R   AL  L  ++ A +   +  K   N+P   EG++++
+Sbjct: 289 KRATILKNTWPKGHYRYCDALSMLGEYDWALQANIKAQKLCKNDP---EGIKDL 339
+
+
+>sp|Q49AM3|TTC31_HUMAN Tetratricopeptide repeat protein 31 OS=Homo
+           sapiens GN=TTC31 PE=2 SV=3
+          Length = 519
+
+ Score = 58.9 bits (141), Expect = 7e-09,   Method: Composition-based stats.
+ Identities = 32/99 (32%), Positives = 51/99 (51%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           +Q  EL + G      G   +A+  +++A+KL+P +H L+ NRS  + + G    A  D 
+Sbjct: 303 QQSQELAKLGTSFAQNGFYHEAVVLFTQALKLNPQDHRLFGNRSFCHERLGQPAWALADA 362
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLK 99
+              + L+P W +G  R   AL  L RF EA   ++E L+
+Sbjct: 363 QVALTLRPGWPRGLFRLGKALMGLQRFREAAAVFQETLR 401
+
+
+>sp|Q12118|SGT2_YEAST Small glutamine-rich tetratricopeptide
+           repeat-containing protein 2 OS=Saccharomyces cerevisiae
+           GN=SGT2 PE=1 SV=1
+          Length = 346
+
+ Score = 58.2 bits (139), Expect = 1e-08,   Method: Composition-based stats.
+ Identities = 35/103 (33%), Positives = 61/103 (59%)
+
+Query: 2   QVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGC 61
+           +  +LK +GNKA++  + + A+  Y+EAIK+ P N + Y+NR+AA++   +Y +A +D  
+Sbjct: 101 KAEDLKMQGNKAMANKDYELAINKYTEAIKVLPTNAIYYANRAAAHSSLKEYDQAVKDAE 160
+
+Query: 62  KTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANN 104
+             + + P + +GYSR   A     + EEA   Y++ L  E +N
+Sbjct: 161 SAISIDPSYFRGYSRLGFAKYAQGKPEEALEAYKKVLDIEGDN 203
+
+
+>sp|Q5RAP0|UN45A_PONAB Protein unc-45 homolog A OS=Pongo abelii
+           GN=UNC45A PE=2 SV=1
+          Length = 929
+
+ Score = 57.8 bits (138), Expect = 1e-08,   Method: Composition-based stats.
+ Identities = 37/115 (32%), Positives = 61/115 (53%), Gaps = 3/115 (2%)
+
+Query: 3   VNELKEKGNKALSVGNIDDALQCYSEAIKLD--PHNH-VLYSNRSAAYAKKGDYQKAYED 59
+           V +L+++GN+    G+   AL  Y++A+ LD  P +  VL+ NR+A Y K  DY KA  +
+Sbjct: 6   VEQLRKEGNELFKCGDYGGALAAYTQALGLDATPQDQAVLHRNRAACYLKLEDYDKAETE 65
+
+Query: 60  GCKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNM 114
+             K ++      K   R++ ALE L R ++A    +  +  E  N   +E L+N+
+Sbjct: 66  ASKAIEKDGGDVKALYRRSQALEKLGRLDQAVLDLQRCVSLEPKNKVFQEALRNI 120
+
+
+>sp|Q8BW49|TTC12_MOUSE Tetratricopeptide repeat protein 12 OS=Mus
+           musculus GN=Ttc12 PE=2 SV=1
+          Length = 704
+
+ Score = 57.4 bits (137), Expect = 2e-08,   Method: Composition-based stats.
+ Identities = 39/105 (37%), Positives = 54/105 (51%), Gaps = 3/105 (2%)
+
+Query: 4   NELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKT 63
+           + LKEKGN+A   G+ + A+  YSE +       VLY+NR+ A+ K GDYQKA  D    
+Sbjct: 106 DALKEKGNEAFVRGDYETAIFFYSEGLGKLKDMKVLYTNRAQAFIKLGDYQKALVDCDWA 165
+
+Query: 64  VDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLK 108
+           +    +  K Y     A   L  + +AK  Y+   K E  NP+LK
+Sbjct: 166 LKCDENCTKAYFHMGKAHVALKNYSKAKECYQ---KIEEINPKLK 207
+
+
+>sp|Q9D4H7|LONF3_MOUSE LON peptidase N-terminal domain and RING
+           finger protein 3 OS=Mus musculus GN=Lonrf3 PE=2 SV=1
+          Length = 753
+
+ Score = 57.0 bits (136), Expect = 3e-08,   Method: Composition-based stats.
+ Identities = 31/93 (33%), Positives = 53/93 (56%)
+
+Query: 2   QVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGC 61
+           + ++L+ +GN+      ++ AL  Y+EA++L P++H+LYSNRS  Y     ++ A  D  
+Sbjct: 243 RASQLRHEGNRLFREHQVEAALLKYNEAVRLAPNDHLLYSNRSQIYFTLESHEDALHDAE 302
+
+Query: 62  KTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTY 94
+               L+P   K + RKA AL  L + +EA + +
+Sbjct: 303 IACKLRPMGFKAHFRKAQALATLGKVKEALKEF 335
+
+
+>sp|Q9H3U1|UN45A_HUMAN Protein unc-45 homolog A OS=Homo sapiens
+           GN=UNC45A PE=1 SV=1
+          Length = 944
+
+ Score = 56.2 bits (134), Expect = 5e-08,   Method: Composition-based stats.
+ Identities = 36/115 (31%), Positives = 61/115 (53%), Gaps = 3/115 (2%)
+
+Query: 3   VNELKEKGNKALSVGNIDDALQCYSEAIKLD--PHNH-VLYSNRSAAYAKKGDYQKAYED 59
+           V +L+++GN+    G+   AL  Y++A+ LD  P +  VL+ NR+A + K  DY KA  +
+Sbjct: 21  VEQLRKEGNELFKCGDYGGALAAYTQALGLDATPQDQAVLHRNRAACHLKLEDYDKAETE 80
+
+Query: 60  GCKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNM 114
+             K ++      K   R++ ALE L R ++A    +  +  E  N   +E L+N+
+Sbjct: 81  ASKAIEKDGGDVKALYRRSQALEKLGRLDQAVLDLQRCVSLEPKNKVFQEALRNI 135
+
+
+>sp|Q80ZK9|WDTC1_MOUSE WD and tetratricopeptide repeats protein 1
+           OS=Mus musculus GN=Wdtc1 PE=2 SV=1
+          Length = 677
+
+ Score = 56.2 bits (134), Expect = 5e-08,   Method: Composition-based stats.
+ Identities = 33/91 (36%), Positives = 49/91 (53%), Gaps = 3/91 (3%)
+
+Query: 3   VNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKK---GDYQKAYED 59
+           +  +K++ N+A +      A+Q YS+A++  PHN +LY NR+AAY K+   GD+  A  D
+Sbjct: 361 LERVKQQANEAFACQQWTQAIQLYSQAVQKAPHNAMLYGNRAAAYMKRKWDGDHYDALRD 420
+
+Query: 60  GCKTVDLKPDWGKGYSRKAAALEFLNRFEEA 90
+             K + L P   K + R A  L  L    EA
+Sbjct: 421 CLKAISLNPCHLKAHFRLARCLFELKYVAEA 451
+
+
+>sp|Q8N5D0|WDTC1_HUMAN WD and tetratricopeptide repeats protein 1
+           OS=Homo sapiens GN=WDTC1 PE=2 SV=2
+          Length = 677
+
+ Score = 55.5 bits (132), Expect = 7e-08,   Method: Composition-based stats.
+ Identities = 33/91 (36%), Positives = 49/91 (53%), Gaps = 3/91 (3%)
+
+Query: 3   VNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKK---GDYQKAYED 59
+           +  +K++ N+A +      A+Q YS+A++  PHN +LY NR+AAY K+   GD+  A  D
+Sbjct: 362 LERVKQQANEAFACQQWTQAIQLYSKAVQRAPHNAMLYGNRAAAYMKRKWDGDHYDALRD 421
+
+Query: 60  GCKTVDLKPDWGKGYSRKAAALEFLNRFEEA 90
+             K + L P   K + R A  L  L    EA
+Sbjct: 422 CLKAISLNPCHLKAHFRLARCLFELKYVAEA 452
+
+
+>sp|P07213|TOM70_YEAST Mitochondrial import receptor subunit TOM70
+           OS=Saccharomyces cerevisiae GN=TOM70 PE=1 SV=2
+          Length = 617
+
+ Score = 54.7 bits (130), Expect = 1e-07,   Method: Composition-based stats.
+ Identities = 35/85 (41%), Positives = 51/85 (60%), Gaps = 1/85 (1%)
+
+Query: 6   LKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVD 65
+           LK+KGN+       DDA++ Y+ A++L   + V YSN SA Y   GD +K  E   K ++
+Sbjct: 102 LKDKGNQFFRNKKYDDAIKYYNWALELK-EDPVFYSNLSACYVSVGDLKKVVEMSTKALE 160
+
+Query: 66  LKPDWGKGYSRKAAALEFLNRFEEA 90
+           LKPD+ K   R+A+A E L +F +A
+Sbjct: 161 LKPDYSKVLLRRASANEGLGKFADA 185
+
+
+>sp|Q32PZ3|UN45A_RAT Protein unc-45 homolog A OS=Rattus norvegicus
+           GN=Unc45a PE=2 SV=1
+          Length = 944
+
+ Score = 53.9 bits (128), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 34/113 (30%), Positives = 60/113 (53%), Gaps = 3/113 (2%)
+
+Query: 5   ELKEKGNKALSVGNIDDALQCYSEAIKL--DPHNH-VLYSNRSAAYAKKGDYQKAYEDGC 61
+           EL+++GN+    G+ + AL  Y++A+ L   P +  +L+ NR+A + K  DY KA  +  
+Sbjct: 23  ELRKEGNELFKCGDYEGALTAYTQALSLGATPQDQAILHRNRAACHLKLEDYSKAESEAS 82
+
+Query: 62  KTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNM 114
+           K ++      K   R++ ALE L R ++A    +  +  E  N   +E L+N+
+Sbjct: 83  KAIEKDGGDVKALYRRSQALEKLGRLDQAVLDLKRCVSLEPKNKVFQESLRNI 135
+
+
+>sp|Q93YR3|F10AL_ARATH FAM10 family protein At4g22670 OS=Arabidopsis
+           thaliana GN=At4g22670 PE=1 SV=1
+          Length = 441
+
+ Score = 53.9 bits (128), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 31/92 (33%), Positives = 48/92 (52%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           E   E K K  +ALS GN D+A++  + AI L+P + ++Y NR++ Y K      A  D 
+Sbjct: 121 EAAQEAKGKAMEALSEGNFDEAIEHLTRAITLNPTSAIMYGNRASVYIKLKKPNAAIRDA 180
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKR 92
+              +++ PD  KGY  +  A   L  + EA +
+Sbjct: 181 NAALEINPDSAKGYKSRGMARAMLGEWAEAAK 212
+
+
+>sp|P53043|PPT1_YEAST Serine/threonine-protein phosphatase T
+           OS=Saccharomyces cerevisiae GN=PPT1 PE=1 SV=1
+          Length = 513
+
+ Score = 52.8 bits (125), Expect = 4e-07,   Method: Composition-based stats.
+ Identities = 33/107 (30%), Positives = 56/107 (52%)
+
+Query: 5   ELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTV 64
+           E K +GN  +   +   A++ Y+EAI LD    + +SNR+ A+ K  ++Q A  D  + +
+Sbjct: 14  ERKNEGNVFVKEKHFLKAIEKYTEAIDLDSTQSIYFSNRAFAHFKVDNFQSALNDCDEAI 73
+
+Query: 65  DLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGL 111
+            L P   K Y R+A +   L  F++A++     LK + N+P   + L
+Sbjct: 74  KLDPKNIKAYHRRALSCMALLEFKKARKDLNVLLKAKPNDPAATKAL 120
+
+
+>sp|Q99KD5|UN45A_MOUSE Protein unc-45 homolog A OS=Mus musculus
+           GN=Unc45a PE=1 SV=2
+          Length = 944
+
+ Score = 52.8 bits (125), Expect = 5e-07,   Method: Composition-based stats.
+ Identities = 33/113 (29%), Positives = 60/113 (53%), Gaps = 3/113 (2%)
+
+Query: 5   ELKEKGNKALSVGNIDDALQCYSEAIKL--DPHNH-VLYSNRSAAYAKKGDYQKAYEDGC 61
+           +L+++GN+    G+ + AL  Y++A+ L   P +  +L+ NR+A + K  DY KA  +  
+Sbjct: 23  QLRKEGNELFKCGDYEGALTAYTQALSLGATPQDQAILHRNRAACHLKLEDYSKAESEAS 82
+
+Query: 62  KTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNM 114
+           K ++      K   R++ ALE L R ++A    +  +  E  N   +E L+N+
+Sbjct: 83  KAIEKDGGDVKALYRRSQALEKLGRLDQAVLDLKRCVSLEPKNKVFQESLRNI 135
+
+
+>sp|Q75Q39|TOM70_RAT Mitochondrial import receptor subunit TOM70
+           OS=Rattus norvegicus GN=Tomm70a PE=1 SV=1
+          Length = 610
+
+ Score = 52.4 bits (124), Expect = 6e-07,   Method: Composition-based stats.
+ Identities = 32/88 (36%), Positives = 47/88 (53%), Gaps = 5/88 (5%)
+
+Query: 7   KEKGNKALSVGNIDDALQCYSEAIKLDPHNH-----VLYSNRSAAYAKKGDYQKAYEDGC 61
+           K KGNK    G  + A+QCY+EAI L P          Y NR+AA+ +   +++  +D  
+Sbjct: 120 KNKGNKYFKAGKYEQAIQCYTEAISLCPTEKNADLSTFYQNRAAAFEQLQKWKEVAQDCT 179
+
+Query: 62  KTVDLKPDWGKGYSRKAAALEFLNRFEE 89
+           K V+L P + K   R+A A E L+  +E
+Sbjct: 180 KAVELNPKYVKALFRRAKAHEKLDNKKE 207
+
+
+>sp|Q9CZW5|TOM70_MOUSE Mitochondrial import receptor subunit TOM70
+           OS=Mus musculus GN=Tomm70a PE=1 SV=1
+          Length = 611
+
+ Score = 52.4 bits (124), Expect = 6e-07,   Method: Composition-based stats.
+ Identities = 32/88 (36%), Positives = 47/88 (53%), Gaps = 5/88 (5%)
+
+Query: 7   KEKGNKALSVGNIDDALQCYSEAIKLDPHNH-----VLYSNRSAAYAKKGDYQKAYEDGC 61
+           K KGNK    G  + A+QCY+EAI L P          Y NR+AA+ +   +++  +D  
+Sbjct: 121 KNKGNKYFKAGKYEQAIQCYTEAISLCPTEKNVDLSTFYQNRAAAFEQLQKWKEVAQDCT 180
+
+Query: 62  KTVDLKPDWGKGYSRKAAALEFLNRFEE 89
+           K V+L P + K   R+A A E L+  +E
+Sbjct: 181 KAVELNPKYVKALFRRAKAHEKLDNKKE 208
+
+
+>sp|O14217|TOM70_SCHPO Probable mitochondrial import receptor
+           subunit tom70 OS=Schizosaccharomyces pombe GN=tom70 PE=1
+           SV=1
+          Length = 625
+
+ Score = 52.0 bits (123), Expect = 8e-07,   Method: Composition-based stats.
+ Identities = 30/86 (34%), Positives = 50/86 (58%), Gaps = 1/86 (1%)
+
+Query: 5   ELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTV 64
+           ELK  GNKA       +A+  Y++AI    H+ + +SNR+A YA  GD+++  +D  + +
+Sbjct: 153 ELKTLGNKAYGQKEYANAIDYYTQAITCS-HDPIFFSNRAACYAAIGDFEQVIKDTSEAL 211
+
+Query: 65  DLKPDWGKGYSRKAAALEFLNRFEEA 90
+            L   + K  +R++AA E L + +EA
+Sbjct: 212 SLDSSYVKALNRRSAAYEQLGKLDEA 237
+
+
+>sp|O94826|TOM70_HUMAN Mitochondrial import receptor subunit TOM70
+           OS=Homo sapiens GN=TOMM70A PE=1 SV=1
+          Length = 608
+
+ Score = 51.6 bits (122), Expect = 9e-07,   Method: Composition-based stats.
+ Identities = 32/88 (36%), Positives = 47/88 (53%), Gaps = 5/88 (5%)
+
+Query: 7   KEKGNKALSVGNIDDALQCYSEAIKLDPHNH-----VLYSNRSAAYAKKGDYQKAYEDGC 61
+           K KGNK    G  + A+QCY+EAI L P          Y NR+AA+ +   +++  +D  
+Sbjct: 118 KNKGNKYFKAGKYEQAIQCYTEAISLCPTEKNVDLSTFYQNRAAAFEQLQKWKEVAQDCT 177
+
+Query: 62  KTVDLKPDWGKGYSRKAAALEFLNRFEE 89
+           K V+L P + K   R+A A E L+  +E
+Sbjct: 178 KAVELNPKYVKALFRRAKAHEKLDNKKE 205
+
+
+>sp|Q9QYI3|DNJC7_MOUSE DnaJ homolog subfamily C member 7 OS=Mus
+           musculus GN=Dnajc7 PE=2 SV=2
+          Length = 494
+
+ Score = 50.8 bits (120), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 37/99 (37%), Positives = 49/99 (49%), Gaps = 4/99 (4%)
+
+Query: 7   KEKGNKALSVGNIDDALQCYSEAIKLDPHN----HVLYSNRSAAYAKKGDYQKAYEDGCK 62
+           KE GNKA   GN   A + Y+EA+ +DP+N      LY NR    +K    + A ED   
+Sbjct: 260 KEDGNKAFKEGNYKLAYELYTEALGIDPNNIKTNAKLYCNRGTVNSKLRQLEDAIEDCTN 319
+
+Query: 63  TVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHE 101
+            V L   + K Y R+A       +FEEA R YE+  + E
+Sbjct: 320 AVKLDDTYIKAYLRRAQCYMDTEQFEEAVRDYEKVYQTE 358
+
+
+
+ Score = 45.1 bits (105), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 29/115 (25%), Positives = 57/115 (49%)
+
+Query: 2   QVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGC 61
+           +    KE+GN   +  + ++A   Y++AI + P+N   Y NR+A     G +++A  D  
+Sbjct: 27  EAESFKEQGNAYYAKKDYNEAYNYYTKAIDMCPNNASYYGNRAATLMMLGRFREALGDAQ 86
+
+Query: 62  KTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNMEA 116
+           ++V L   + +G+ R+      L     A R+++  L+ +  N Q ++  +N  A
+Sbjct: 87  QSVRLDDSFVRGHLREGKCHLSLGNAMAACRSFQRALELDHKNAQAQQEFKNANA 141
+
+
+>sp|Q8CGY6|UN45B_MOUSE Protein unc-45 homolog B OS=Mus musculus
+           GN=Unc45b PE=2 SV=1
+          Length = 931
+
+ Score = 50.4 bits (119), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 32/116 (27%), Positives = 56/116 (48%), Gaps = 3/116 (2%)
+
+Query: 2   QVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVL---YSNRSAAYAKKGDYQKAYE 58
+           +  +LKE+GN+   + +   A + YS+A+KL     +L   Y NR+A   K   Y +A  
+Sbjct: 5   EAAQLKEEGNRHFQLQDYKAATKSYSQALKLTKDKALLATLYRNRAACGLKMESYAQAAS 64
+
+Query: 59  DGCKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNM 114
+           D  + +D+     K   R+  ALE L + ++A +  +     E  N   +E L+ +
+Sbjct: 65  DASRAIDINSADIKALYRRCQALEHLGKLDQAFKDVQRCATLEPRNQNFQETLRRL 120
+
+
+>sp|Q54IP0|DNJC7_DICDI DnaJ homolog subfamily C member 7 homolog
+           OS=Dictyostelium discoideum GN=dnajc7 PE=1 SV=1
+          Length = 539
+
+ Score = 50.4 bits (119), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 33/110 (30%), Positives = 54/110 (49%), Gaps = 4/110 (3%)
+
+Query: 7   KEKGNKALSVGNIDDALQCYSEAIKLDPH----NHVLYSNRSAAYAKKGDYQKAYEDGCK 62
+           K++GN+     N   A   ++EA+ +DP     N  LYSNR+AA        +A  D   
+Sbjct: 239 KKEGNEYFQSKNYQAAYDSFTEALSIDPKLETMNSQLYSNRAAALVHLNRISEAINDCTS 298
+
+Query: 63  TVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQ 112
+            V + P++GK Y R+A        +E+A R YE+    +  N +L+  ++
+Sbjct: 299 AVTIDPNYGKAYIRRAQCQMKQENYEDAVRDYEKAQSLDPENGELQRNIK 348
+
+
+
+ Score = 45.8 bits (107), Expect = 6e-05,   Method: Composition-based stats.
+ Identities = 33/107 (30%), Positives = 54/107 (50%), Gaps = 4/107 (3%)
+
+Query: 5   ELKEKGNKALSVGNIDDALQCYSEAIKLDPHN-HVLYSNRSAAY---AKKGDYQKAYEDG 60
+           E K +GN         DA++CY++AI+L        Y NR+AAY     K   Q + +D 
+Sbjct: 5   ECKTQGNNYFKQSQYMDAIRCYTQAIELSNGTIAAYYGNRAAAYLAICTKSSLQDSIKDS 64
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQL 107
+            K ++L+  + KGY+R + A   L ++++A      GL  +  N +L
+Sbjct: 65  LKAIELERSFIKGYTRASKAYIHLAQYDQAASIIVRGLVFDPRNNEL 111
+
+
+>sp|Q8IWX7|UN45B_HUMAN Protein unc-45 homolog B OS=Homo sapiens
+           GN=UNC45B PE=2 SV=1
+          Length = 931
+
+ Score = 50.1 bits (118), Expect = 3e-06,   Method: Composition-based stats.
+ Identities = 32/113 (28%), Positives = 54/113 (47%), Gaps = 3/113 (2%)
+
+Query: 5   ELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVL---YSNRSAAYAKKGDYQKAYEDGC 61
+           +LKE+GN+   + +   A   YS+A+KL     +L   Y NR+A   K   Y +A  D  
+Sbjct: 8   QLKEEGNRHFQLQDYKAATNSYSQALKLTKDKALLATLYRNRAACGLKTESYVQAASDAS 67
+
+Query: 62  KTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNM 114
+           + +D+     K   R+  ALE L + ++A +  +     E  N   +E L+ +
+Sbjct: 68  RAIDINSSDIKALYRRCQALEHLGKLDQAFKDVQRCATLEPRNQNFQEMLRRL 120
+
+
+>sp|Q9HGM9|DNJC7_SCHPO DnaJ homolog subfamily C member 7 homolog
+           OS=Schizosaccharomyces pombe GN=SPBC543.02c PE=2 SV=1
+          Length = 476
+
+ Score = 50.1 bits (118), Expect = 3e-06,   Method: Composition-based stats.
+ Identities = 33/118 (27%), Positives = 61/118 (51%), Gaps = 4/118 (3%)
+
+Query: 2   QVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNH----VLYSNRSAAYAKKGDYQKAY 57
+           ++   K +GN     GN  DA + YSEA+++DP N      LY NR+    +    ++A 
+Sbjct: 222 KLENTKNQGNDLFRQGNYQDAYEKYSEALQIDPDNKETVAKLYMNRATVLLRLKRPEEAL 281
+
+Query: 58  EDGCKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNME 115
+            D    + +   + KG   +A A E L ++EEA R  +  ++ +A++  L++ L+ ++
+Sbjct: 282 SDSDNALAIDSSYLKGLKVRAKAHEALEKWEEAVRDVQSAIELDASDANLRQELRRLQ 339
+
+
+>sp|Q9M8Y0|SEC_ARATH Probable UDP-N-acetylglucosamine--peptide
+           N-acetylglucosaminyltransferase SEC OS=Arabidopsis
+           thaliana GN=SEC PE=2 SV=1
+          Length = 977
+
+ Score = 50.1 bits (118), Expect = 3e-06,   Method: Composition-based stats.
+ Identities = 27/105 (25%), Positives = 54/105 (51%)
+
+Query: 10  GNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVDLKPD 69
+           GN   ++G   +A+ CY  A+++ P++ + + N ++ Y ++G    A     + +   P 
+Sbjct: 264 GNVYKALGRPTEAIMCYQHALQMRPNSAMAFGNIASIYYEQGQLDLAIRHYKQALSRDPR 323
+
+Query: 70  WGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNM 114
+           + + Y+    AL+ + R +EA R Y + L  + N+PQ    L N+
+Sbjct: 324 FLEAYNNLGNALKDIGRVDEAVRCYNQCLALQPNHPQAMANLGNI 368
+
+
+
+ Score = 45.8 bits (107), Expect = 6e-05,   Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 45/95 (47%)
+
+Query: 10  GNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVDLKPD 69
+           GN   + G I +A  CY EA+++ P   + +SN +  + + GD  +A +   + V LKP 
+Sbjct: 196 GNLMKAQGLIHEAYSCYLEAVRIQPTFAIAWSNLAGLFMESGDLNRALQYYKEAVKLKPA 255
+
+Query: 70  WGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANN 104
+           +   Y       + L R  EA   Y+  L+   N+
+Sbjct: 256 FPDAYLNLGNVYKALGRPTEAIMCYQHALQMRPNS 290
+
+
+
+ Score = 45.4 bits (106), Expect = 8e-05,   Method: Composition-based stats.
+ Identities = 23/90 (25%), Positives = 44/90 (48%)
+
+Query: 17  GNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVDLKPDWGKGYSR 76
+           GN  DA+ CY+E +++DP       NR   Y + G   +A +D    ++ +P   + ++ 
+Sbjct: 407 GNYSDAISCYNEVLRIDPLAADALVNRGNTYKEIGRVTEAIQDYMHAINFRPTMAEAHAN 466
+
+Query: 77  KAAALEFLNRFEEAKRTYEEGLKHEANNPQ 106
+            A+A +     E A  +Y++ L    + P+
+Sbjct: 467 LASAYKDSGHVEAAITSYKQALLLRPDFPE 496
+
+
+>sp|Q9H892|TTC12_HUMAN Tetratricopeptide repeat protein 12 OS=Homo
+           sapiens GN=TTC12 PE=2 SV=1
+          Length = 705
+
+ Score = 49.7 bits (117), Expect = 4e-06,   Method: Composition-based stats.
+ Identities = 35/105 (33%), Positives = 54/105 (51%), Gaps = 3/105 (2%)
+
+Query: 4   NELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKT 63
+           + LKEKGN+A + GN + A+  YSE ++      VLY+NR+ AY K  DY+KA  D    
+Sbjct: 107 DALKEKGNEAFAEGNYETAILRYSEGLEKLKDMKVLYTNRAQAYMKLEDYEKALVDCEWA 166
+
+Query: 64  VDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLK 108
+           +       K Y     A   L  +  ++  Y++ L+    NP+L+
+Sbjct: 167 LKCDEKCTKAYFHMGKANLALKNYSVSRECYKKILE---INPKLQ 208
+
+
+>sp|O74991|POF3_SCHPO F-box/TPR repeat protein pof3
+           OS=Schizosaccharomyces pombe GN=pof3 PE=1 SV=1
+          Length = 577
+
+ Score = 49.3 bits (116), Expect = 5e-06,   Method: Composition-based stats.
+ Identities = 35/121 (28%), Positives = 60/121 (49%), Gaps = 5/121 (4%)
+
+Query: 2   QVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHV-LYSNRSAAYAKKGDYQKAYEDG 60
+           QV  +KEK  + LS    +DAL   ++ I+ +P+  + L+  R+  Y K G Y +A  D 
+Sbjct: 5   QVKAIKEKTQQYLSKRKFEDALTFITKTIEQEPNPTIDLFELRAQVYEKSGQYSQAELDA 64
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLK--HEAN--NPQLKEGLQNMEA 116
+            + + L     +GY R    L+     ++A + Y +GL+  H+ +   P LK+  Q +  
+Sbjct: 65  KRMIHLNARNARGYLRLGKLLQLDGFDKKADQLYTQGLRMVHKMDPLRPVLKKVSQRLNE 124
+
+Query: 117 R 117
+           R
+Sbjct: 125 R 125
+
+
+>sp|Q5R8D8|DNJC7_PONAB DnaJ homolog subfamily C member 7 OS=Pongo
+           abelii GN=DNAJC7 PE=2 SV=1
+          Length = 494
+
+ Score = 48.9 bits (115), Expect = 6e-06,   Method: Composition-based stats.
+ Identities = 36/99 (36%), Positives = 48/99 (48%), Gaps = 4/99 (4%)
+
+Query: 7   KEKGNKALSVGNIDDALQCYSEAIKLDPHN----HVLYSNRSAAYAKKGDYQKAYEDGCK 62
+           KE GNKA   GN   A + Y+EA+ +DP+N      LY NR    +K      A ED   
+Sbjct: 260 KEDGNKAFKEGNYKLAYELYTEALGIDPNNIKTNAKLYCNRGTVNSKLRKLDDAIEDCTN 319
+
+Query: 63  TVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHE 101
+            V L   + K Y R+A       ++EEA R YE+  + E
+Sbjct: 320 AVKLDDTYIKAYLRRAQCYMDTEQYEEAVRDYEKVYQTE 358
+
+
+
+ Score = 43.1 bits (100), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 29/115 (25%), Positives = 55/115 (47%)
+
+Query: 2   QVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGC 61
+           +    KE+GN   +  + ++A   Y++AI + P N   Y NR+A     G +++A  D  
+Sbjct: 27  EAETFKEQGNAYYAKKDYNEAYNYYTKAIDMCPKNASYYGNRAATLMMLGRFREALGDAQ 86
+
+Query: 62  KTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNMEA 116
+           ++V L   + +G  R+      L     A R+++  L+ +  N Q ++  +N  A
+Sbjct: 87  QSVRLDDSFVRGRLREGKCHLSLGNAMAACRSFQRALELDHKNAQAQQEFKNANA 141
+
+
+>sp|Q07617|SPAG1_HUMAN Sperm-associated antigen 1 OS=Homo sapiens
+           GN=SPAG1 PE=1 SV=3
+          Length = 926
+
+ Score = 48.9 bits (115), Expect = 6e-06,   Method: Composition-based stats.
+ Identities = 34/109 (31%), Positives = 58/109 (53%), Gaps = 1/109 (0%)
+
+Query: 7   KEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVDL 66
+           KEKGN+A + G+ ++A+  Y+ +I   P   V Y+NR+ A  K  ++  A++D  K ++L
+Sbjct: 213 KEKGNEAFNSGDYEEAVMYYTRSISALP-TVVAYNNRAQAEIKLQNWNSAFQDCEKVLEL 271
+
+Query: 67  KPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNME 115
+           +P   K   R+A   +  N+  EA     + L  E +N   K+ L  +E
+Sbjct: 272 EPGNVKALLRRATTYKHQNKLREATEDLSKVLDVEPDNDLAKKTLSEVE 320
+
+
+
+ Score = 43.9 bits (102), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 26/85 (30%), Positives = 49/85 (57%)
+
+Query: 6   LKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVD 65
+           LKE+GN+ ++  N  DAL  YSE +K++     +Y+NR+  Y K   +++A +D  + + 
+Sbjct: 626 LKEEGNQCVNDKNYKDALSKYSECLKINNKECAIYTNRALCYLKLCQFEEAKQDCDQALQ 685
+
+Query: 66  LKPDWGKGYSRKAAALEFLNRFEEA 90
+           L     K + R+A A + L  ++++
+Sbjct: 686 LADGNVKAFYRRALAHKGLKNYQKS 710
+
+
+>sp|Q99615|DNJC7_HUMAN DnaJ homolog subfamily C member 7 OS=Homo
+           sapiens GN=DNAJC7 PE=1 SV=2
+          Length = 494
+
+ Score = 48.9 bits (115), Expect = 7e-06,   Method: Composition-based stats.
+ Identities = 36/99 (36%), Positives = 48/99 (48%), Gaps = 4/99 (4%)
+
+Query: 7   KEKGNKALSVGNIDDALQCYSEAIKLDPHN----HVLYSNRSAAYAKKGDYQKAYEDGCK 62
+           KE GNKA   GN   A + Y+EA+ +DP+N      LY NR    +K      A ED   
+Sbjct: 260 KEDGNKAFKEGNYKLAYELYTEALGIDPNNIKTNAKLYCNRGTVNSKLRKLDDAIEDCTN 319
+
+Query: 63  TVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHE 101
+            V L   + K Y R+A       ++EEA R YE+  + E
+Sbjct: 320 AVKLDDTYIKAYLRRAQCYMDTEQYEEAVRDYEKVYQTE 358
+
+
+
+ Score = 44.3 bits (103), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 29/115 (25%), Positives = 56/115 (48%)
+
+Query: 2   QVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGC 61
+           +    KE+GN   +  + ++A   Y++AI + P N   Y NR+A     G +++A  D  
+Sbjct: 27  EAETFKEQGNAYYAKKDYNEAYNYYTKAIDMCPKNASYYGNRAATLMMLGRFREALGDAQ 86
+
+Query: 62  KTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNMEA 116
+           ++V L   + +G+ R+      L     A R+++  L+ +  N Q ++  +N  A
+Sbjct: 87  QSVRLDDSFVRGHLREGKCHLSLGNAMAACRSFQRALELDHKNAQAQQEFKNANA 141
+
+
+>sp|Q5ZLF0|F10A1_CHICK Hsc70-interacting protein OS=Gallus gallus
+           GN=ST13 PE=2 SV=1
+          Length = 361
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 28/90 (31%), Positives = 48/90 (53%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           +Q NE K +   ALS G++  A+  +++AIKL+P   +LY+ R++ + K      A  D 
+Sbjct: 110 DQANEKKMEAINALSEGDLQKAVNLFTDAIKLNPCLAILYAKRASVFVKLQKPNAAIRDC 169
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEA 90
+            + + + PD  + Y  +  A   L  +EEA
+Sbjct: 170 DRAIKINPDSAQTYKWRGKAHRLLGHWEEA 199
+
+
+>sp|Q8IZP2|F10A4_HUMAN Protein FAM10A4 OS=Homo sapiens GN=FAM10A4
+           PE=1 SV=1
+          Length = 240
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 27/90 (30%), Positives = 49/90 (54%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           +Q N+ K    +AL+ G +  A+  +++AIKL+P   +LY+ R++ + K      A  D 
+Sbjct: 108 DQANDKKVAAIEALNDGELQKAIDLFTDAIKLNPRLAILYAKRASVFVKLQKPNAAIRDC 167
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEA 90
+            + +++ PD  + Y R+  A   L  +EEA
+Sbjct: 168 DRAIEINPDSAQPYKRRGKAHRLLGHWEEA 197
+
+
+>sp|O14085|SEC72_SCHPO Translocation protein sec72
+           OS=Schizosaccharomyces pombe GN=sec72 PE=2 SV=1
+          Length = 192
+
+ Score = 47.0 bits (110), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 33/110 (30%), Positives = 55/110 (50%), Gaps = 13/110 (11%)
+
+Query: 2   QVNELKEKGNKALSVGNIDDALQCYSEAIKL-------------DPHNHVLYSNRSAAYA 48
+           QVN++K+  N+A      ++A + Y  A++L                  V+  NR+AA  
+Sbjct: 61  QVNKMKQTANEAFKRKKYEEAKKLYGLALQLALNRCTWEPSILTREEASVMLCNRAAAEI 120
+
+Query: 49  KKGDYQKAYEDGCKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGL 98
+               + +A  D    + ++ ++GK Y RKA ALE ++R EEAK+   +GL
+Sbjct: 121 ALSQFPEALADANAALKIRNNYGKCYYRKAKALEAMHRIEEAKQVVRDGL 170
+
+
+>sp|Q8BG19|TMTC4_MOUSE Transmembrane and TPR repeat-containing
+           protein 4 OS=Mus musculus GN=Tmtc4 PE=2 SV=1
+          Length = 741
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 25/89 (28%), Positives = 43/89 (48%)
+
+Query: 17  GNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVDLKPDWGKGYSR 76
+           GN   A++ Y EA++L+P      +N      ++ + Q+A E     V ++PD+   +  
+Sbjct: 496 GNQTAAIKYYREAVRLNPKYVHAMNNLGNILKERNELQEAEELLSLAVQIQPDFAAAWMN 555
+
+Query: 77  KAAALEFLNRFEEAKRTYEEGLKHEANNP 105
+                  L RFEEA+++Y   +KH    P
+Sbjct: 556 LGIVQNSLKRFEEAEQSYRTAIKHRRKYP 584
+
+
+>sp|P23231|TOM70_NEUCR Mitochondrial import receptor subunit tom-70
+           OS=Neurospora crassa GN=tom-70 PE=2 SV=2
+          Length = 624
+
+ Score = 46.6 bits (109), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 29/86 (33%), Positives = 47/86 (54%), Gaps = 1/86 (1%)
+
+Query: 5   ELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTV 64
+           +LKE GNKA    + + A+  YS+AI   P + V YSNR+A +     +++   D    +
+Sbjct: 138 KLKELGNKAYGSKDFNKAIDLYSKAIICKP-DPVYYSNRAACHNALAQWEQVVADTTAAL 196
+
+Query: 65  DLKPDWGKGYSRKAAALEFLNRFEEA 90
+            L P + K  +R+A A + L+R+  A
+Sbjct: 197 KLDPHYVKALNRRANAYDQLSRYRHA 222
+
+
+>sp|Q5ZI13|DNJC3_CHICK DnaJ homolog subfamily C member 3 OS=Gallus
+           gallus GN=DNAJC3 PE=2 SV=1
+          Length = 503
+
+ Score = 46.6 bits (109), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 34/109 (31%), Positives = 54/109 (49%), Gaps = 1/109 (0%)
+
+Query: 2   QVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGC 61
+           +V +  E G K L+ G + DAL  +  AI+ D  N++ Y  R+  Y   G  + A  D  
+Sbjct: 36  EVEKQLEMGKKLLAAGQLADALSHFHAAIEGDSDNYIAYYRRATVYLAMGKSKAAIRDLS 95
+
+Query: 62  KTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEG 110
+           K V+LK D+     R    L+   +F+EA+  ++  LK   +N + KE 
+Sbjct: 96  KVVELKQDFTSRLQRGHLLLK-QGKFDEAEDDFKNVLKSNPSNNEEKEA 143
+
+
+>sp|P50503|F10A1_RAT Hsc70-interacting protein OS=Rattus norvegicus
+           GN=St13 PE=1 SV=1
+          Length = 368
+
+ Score = 46.6 bits (109), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 27/92 (29%), Positives = 48/92 (52%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           ++ NE K     AL+ G +  A+  +++AIKL+P   +LY+ R++ + K      A  D 
+Sbjct: 111 DEANEKKGAAIDALNDGELQKAIDLFTDAIKLNPRLAILYAKRASVFVKLQKPNAAIRDC 170
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEAKR 92
+            + +++ PD  + Y  +  A   L  +EEA R
+Sbjct: 171 DRAIEINPDSAQPYKWRGKAHRLLGHWEEAAR 202
+
+
+>sp|Q91Z38|TTC1_MOUSE Tetratricopeptide repeat protein 1 OS=Mus
+           musculus GN=Ttc1 PE=2 SV=1
+          Length = 292
+
+ Score = 46.2 bits (108), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 33/111 (29%), Positives = 58/111 (52%), Gaps = 5/111 (4%)
+
+Query: 5   ELKEKGNKALSVGNIDDALQCYSEAIKLDP-----HNHVLYSNRSAAYAKKGDYQKAYED 59
+           +LKE+GN+    G+  +A   YS+A+++ P        VL+SNR+AA  K+   + A  D
+Sbjct: 118 KLKEEGNERFKRGDYMEAESSYSQALQMCPACFQKDRSVLFSNRAAARMKQDKKETAITD 177
+
+Query: 60  GCKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEG 110
+             K + L P + +   R+A   E  ++ +EA   Y+  L+ + +  Q +E 
+Sbjct: 178 CSKAIQLNPTYIRAILRRAELYEKTDKLDEALEDYKSVLEKDPSVHQAREA 228
+
+
+>sp|Q95LY5|TTC12_MACFA Tetratricopeptide repeat protein 12
+           (Fragment) OS=Macaca fascicularis GN=TTC12 PE=2 SV=1
+          Length = 577
+
+ Score = 46.2 bits (108), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 33/110 (30%), Positives = 57/110 (51%), Gaps = 3/110 (2%)
+
+Query: 4   NELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKT 63
+           + LK+KGN+A + GN + A+  YSE ++      VLY+NR+ AY K  +Y+KA  D    
+Sbjct: 107 DALKDKGNEAFAEGNYETAILHYSEGLEKLKDVKVLYTNRAQAYMKLKNYEKALVDCEWA 166
+
+Query: 64  VDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQN 113
+           +       K Y     A   L  +  ++  Y++ L+    NP+L+  +++
+Sbjct: 167 LKCDEKCTKAYFHMGRANLALKNYSVSRECYKKILE---INPKLQTQVKD 213
+
+
+>sp|Q8HXH0|LONF3_MACFA LON peptidase N-terminal domain and RING
+           finger protein 3 OS=Macaca fascicularis GN=LONRF3 PE=2
+           SV=1
+          Length = 718
+
+ Score = 46.2 bits (108), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 23/67 (34%), Positives = 39/67 (58%)
+
+Query: 2   QVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGC 61
+           + ++L+ +GN+      ++ AL  Y+EA+KL P++H+LYSNRS  Y     ++ A  D  
+Sbjct: 242 RASQLRHEGNRLYRERQVEAALLKYNEAVKLAPNDHLLYSNRSQIYFTLESHENALHDAE 301
+
+Query: 62  KTVDLKP 68
+               L+P
+Sbjct: 302 IACKLRP 308
+
+
+>sp|Q99614|TTC1_HUMAN Tetratricopeptide repeat protein 1 OS=Homo
+           sapiens GN=TTC1 PE=1 SV=1
+          Length = 292
+
+ Score = 45.8 bits (107), Expect = 6e-05,   Method: Composition-based stats.
+ Identities = 33/115 (28%), Positives = 58/115 (50%), Gaps = 5/115 (4%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDP-----HNHVLYSNRSAAYAKKGDYQK 55
+           E+   LKE+GN+    G+  +A   YS A+++ P        +L+SNR+AA  K+   + 
+Sbjct: 114 EESTRLKEEGNEQFKKGDYIEAESSYSRALEMCPSCFQKERSILFSNRAAARMKQDKKEM 173
+
+Query: 56  AYEDGCKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEG 110
+           A  D  K + L P + +   R+A   E  ++ +EA   Y+  L+ + +  Q +E 
+Sbjct: 174 AINDCSKAIQLNPSYIRAILRRAELYEKTDKLDEALEDYKSILEKDPSIHQAREA 228
+
+
+>sp|Q8NFI4|F10A5_HUMAN Protein FAM10A5 OS=Homo sapiens GN=FAM10A5
+           PE=2 SV=1
+          Length = 369
+
+ Score = 45.4 bits (106), Expect = 9e-05,   Method: Composition-based stats.
+ Identities = 25/90 (27%), Positives = 48/90 (53%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           +Q N+ K    + L+ G +  A+  +++AIKL+P   +LY+ R++ + K      A +D 
+Sbjct: 112 DQANDKKVAAIEVLNDGELQKAIDLFTDAIKLNPRLAILYAKRASVFVKLQKPNAAIQDC 171
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEA 90
+            + +++ PD  + Y  +  A   L  +EEA
+Sbjct: 172 DRAIEINPDSAQPYKWRGKAHRLLGHWEEA 201
+
+
+>sp|Q99L47|F10A1_MOUSE Hsc70-interacting protein OS=Mus musculus
+           GN=St13 PE=2 SV=1
+          Length = 371
+
+ Score = 45.4 bits (106), Expect = 9e-05,   Method: Composition-based stats.
+ Identities = 26/90 (28%), Positives = 48/90 (53%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           ++ NE K    +AL+ G +  A+  +++AIKL+P   +LY+ R++ + K      A  D 
+Sbjct: 111 DEANEKKGAAIEALNDGELQKAIDLFTDAIKLNPRLAILYAKRASVFVKLQKPNAAIRDC 170
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEA 90
+            + +++ PD  + Y  +  A   L  +EEA
+Sbjct: 171 DRAIEINPDSAQPYKWRGKAHRLLGHWEEA 200
+
+
+>sp|Q5U2X2|SPAG1_RAT Sperm-associated antigen 1 OS=Rattus norvegicus
+           GN=Spag1 PE=2 SV=1
+          Length = 893
+
+ Score = 45.1 bits (105), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 34/112 (30%), Positives = 56/112 (50%), Gaps = 1/112 (0%)
+
+Query: 4   NELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKT 63
+           N  K KGN+A   G+ ++A+  Y+ ++   P     Y+NR+ A  K   +  A ED  K 
+Sbjct: 214 NREKGKGNEAFYSGDYEEAVMYYTRSLSALP-TATAYNNRAQAEIKLQRWSSALEDCEKA 272
+
+Query: 64  VDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNME 115
+           ++L+P   K   R+A   +  N+F EA     + L+ E +N   K+ L  +E
+Sbjct: 273 LELEPGNIKALLRRATTYKHQNKFLEAVDDLRKVLQAEPDNDLAKKTLSEVE 324
+
+
+
+ Score = 41.6 bits (96), Expect = 0.001,   Method: Composition-based stats.
+ Identities = 34/103 (33%), Positives = 53/103 (51%), Gaps = 8/103 (7%)
+
+Query: 5   ELKEKGNKALSVGNIDDALQCYSEAI-KLDPHNH-------VLYSNRSAAYAKKGDYQKA 56
+           +LK +GN+    G   +A   YS AI +L+P          +LYSNR+A Y K+G+ +  
+Sbjct: 431 DLKSRGNELFRGGQFAEAAVQYSGAIAQLEPTGSENADELSILYSNRAACYLKEGNCRGC 490
+
+Query: 57  YEDGCKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLK 99
+            +D  + ++L+P   K   R+A A E L ++  A   Y   LK
+Sbjct: 491 IQDCDRALELQPFAVKPLLRRAMAYETLEQYRSAYVDYITVLK 533
+
+
+>sp|P50502|F10A1_HUMAN Hsc70-interacting protein OS=Homo sapiens
+           GN=ST13 PE=1 SV=2
+          Length = 369
+
+ Score = 45.1 bits (105), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 26/90 (28%), Positives = 48/90 (53%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           +Q N+ K    +AL+ G +  A+  +++AIKL+P   +LY+ R++ + K      A  D 
+Sbjct: 112 DQANDKKVAAIEALNDGELQKAIDLFTDAIKLNPRLAILYAKRASVFVKLQKPNAAIRDC 171
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEA 90
+            + +++ PD  + Y  +  A   L  +EEA
+Sbjct: 172 DRAIEINPDSAQPYKWRGKAHRLLGHWEEA 201
+
+
+>sp|Q5RF31|F10A1_PONAB Hsc70-interacting protein OS=Pongo abelii
+           GN=ST13 PE=2 SV=1
+          Length = 369
+
+ Score = 44.7 bits (104), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 26/90 (28%), Positives = 48/90 (53%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           +Q N+ K    +AL+ G +  A+  +++AIKL+P   +LY+ R++ + K      A  D 
+Sbjct: 112 DQANDKKVAAIEALNDGELQKAIDLFTDAIKLNPRLAILYAKRASVFVKLQKPNAAIRDC 171
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFEEA 90
+            + +++ PD  + Y  +  A   L  +EEA
+Sbjct: 172 DRAIEINPDSAQPYKWRGKAHRLLGHWEEA 201
+
+
+>sp|Q80ZX8|SPAG1_MOUSE Sperm-associated antigen 1 OS=Mus musculus
+           GN=Spag1 PE=2 SV=1
+          Length = 901
+
+ Score = 44.7 bits (104), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 33/112 (29%), Positives = 56/112 (50%), Gaps = 1/112 (0%)
+
+Query: 4   NELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKT 63
+           N  K KGN+A   G+ ++A+  Y+ ++   P   + Y+NR+ A  K   +  A ED  K 
+Sbjct: 214 NREKGKGNEAFYSGDYEEAVMYYTRSLSALP-TAIAYNNRAQAEIKLQRWSSALEDCEKA 272
+
+Query: 64  VDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNME 115
+           ++L P   K   R+A   +  N+ +EA     + L+ E +N   K+ L  +E
+Sbjct: 273 LELDPGNVKALLRRATTYKHQNKLQEAVDDLRKVLQVEPDNDLAKKTLSEVE 324
+
+
+>sp|Q3ZBR5|TTC1_BOVIN Tetratricopeptide repeat protein 1 OS=Bos
+           taurus GN=TTC1 PE=2 SV=1
+          Length = 292
+
+ Score = 44.7 bits (104), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 33/115 (28%), Positives = 58/115 (50%), Gaps = 5/115 (4%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPH-----NHVLYSNRSAAYAKKGDYQK 55
+           E+ + LKE+GN+    G+  +A   Y+ A++  P        VL+SNR+AA  K+   + 
+Sbjct: 114 EESSRLKEEGNEQFKKGDYIEAESSYTRALQTCPSCFQKDRSVLFSNRAAARMKQEKKEM 173
+
+Query: 56  AYEDGCKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEG 110
+           A  D  K + L P + +   R+A   E  ++ +EA   Y+  L+ + +  Q +E 
+Sbjct: 174 AISDCSKAIQLNPSYIRAILRRAELYEKTDKLDEALEDYKSILEKDPSVHQAREA 228
+
+
+>sp|Q27968|DNJC3_BOVIN DnaJ homolog subfamily C member 3 OS=Bos
+           taurus GN=DNAJC3 PE=1 SV=1
+          Length = 504
+
+ Score = 44.7 bits (104), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 28/103 (27%), Positives = 50/103 (48%)
+
+Query: 8   EKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVDLK 67
+           E G K L+ G + DAL  +  A+  DP N++ Y  R+  +   G  + A  D  K ++LK
+Sbjct: 42  ELGKKLLAAGQLADALSQFHAAVDGDPDNYIAYYRRATVFLAMGKSKAALPDLTKVIELK 101
+
+Query: 68  PDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEG 110
+            D+     ++   L    + +EA+  +++ LK   +  + KE 
+Sbjct: 102 MDFTAARLQRGHLLLKQGKLDEAEDDFKKVLKSNPSENEEKEA 144
+
+
+>sp|Q5T4D3|TMTC4_HUMAN Transmembrane and TPR repeat-containing
+           protein 4 OS=Homo sapiens GN=TMTC4 PE=1 SV=2
+          Length = 741
+
+ Score = 44.7 bits (104), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 24/89 (26%), Positives = 42/89 (47%)
+
+Query: 17  GNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVDLKPDWGKGYSR 76
+           GN   A++ Y EA++L+P      +N      ++ + Q+A E     V ++PD+   +  
+Sbjct: 496 GNQTAAIRYYREAVRLNPKYVHAMNNLGNILKERNELQEAEELLSLAVQIQPDFAAAWMN 555
+
+Query: 77  KAAALEFLNRFEEAKRTYEEGLKHEANNP 105
+                  L RFE A+++Y   +KH    P
+Sbjct: 556 LGIVQNSLKRFEAAEQSYRTAIKHRRKYP 584
+
+
+>sp|Q54M20|TTC4_DICDI Tetratricopeptide repeat protein 4 homolog
+           OS=Dictyostelium discoideum GN=ttc4 PE=3 SV=1
+          Length = 397
+
+ Score = 44.3 bits (103), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 35/123 (28%), Positives = 58/123 (47%), Gaps = 6/123 (4%)
+
+Query: 1   EQVNELKEKGNKALSVGN--IDDALQCYSEAIKLD----PHNHVLYSNRSAAYAKKGDYQ 54
+           E+    K  GN     G    +DAL  Y++A+ +       N +  SNR+A   + G+Y 
+Sbjct: 88  ERAETFKNLGNDYFREGKSRFNDALYYYNKALSVKCNDMTKNSIYLSNRAAINMELGNYG 147
+
+Query: 55  KAYEDGCKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNM 114
+              +D   +V+  P   K YSR A A   L++++++ +T + GL HE  N  L    +N 
+Sbjct: 148 LVIKDCTVSVEFNPLNMKAYSRMARAQLQLSKYQDSIKTCDLGLSHEPTNKDLSTIRENA 207
+
+Query: 115 EAR 117
+             +
+Sbjct: 208 NKK 210
+
+
+>sp|Q75A03|DIA2_ASHGO Protein DIA2 OS=Ashbya gossypii GN=DIA2 PE=3
+           SV=1
+          Length = 685
+
+ Score = 44.3 bits (103), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 24/67 (35%), Positives = 33/67 (49%)
+
+Query: 34  PHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRT 93
+           P   VL  NR+A + K     +A  D    + +     KGY R+   L+ L R+EEA + 
+Sbjct: 67  PRFFVLLDNRAATFEKLNKLDRALADAAYMITVDAYNLKGYIRRGKVLQKLGRYEEALQV 126
+
+Query: 94  YEEGLKH 100
+           YE GLK 
+Sbjct: 127 YENGLKQ 133
+
+
+>sp|Q9R0T3|DNJC3_RAT DnaJ homolog subfamily C member 3 OS=Rattus
+           norvegicus GN=Dnajc3 PE=2 SV=3
+          Length = 504
+
+ Score = 43.9 bits (102), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 28/103 (27%), Positives = 49/103 (47%)
+
+Query: 8   EKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVDLK 67
+           E G K L+ G + DAL  +  A+  DP N++ Y  R+  +   G  + A  D  + ++LK
+Sbjct: 42  ELGKKLLAAGQLADALSQFHAAVDGDPDNYIAYYRRATVFLAMGKSKAALPDLTRVIELK 101
+
+Query: 68  PDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEG 110
+            D+     ++   L    R  EA+  +++ LK   +  + KE 
+Sbjct: 102 MDFTAARLQRGHLLLKQGRLAEAEDDFKKVLKSNPSENEEKEA 144
+
+
+>sp|Q66H45|TTC36_RAT Tetratricopeptide repeat protein 36 OS=Rattus
+           norvegicus GN=Ttc36 PE=2 SV=1
+          Length = 186
+
+ Score = 43.9 bits (102), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 29/103 (28%), Positives = 51/103 (49%), Gaps = 4/103 (3%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           EQ   L+ +G +A   G++  AL+ + +AI L P     Y+NR+ A   +GD   A ED 
+Sbjct: 46  EQSKALELQGVRAAEAGDLHTALERFGKAISLLPERASAYNNRAQARRLQGDVAGALEDL 105
+
+Query: 61  CKTVDLKPDWGKG----YSRKAAALEFLNRFEEAKRTYEEGLK 99
+            + V L    G+     + ++     F  R ++A+R +E+  +
+Sbjct: 106 ERAVTLSGGRGRAARQSFVQRGLLARFQGRDDDARRDFEQAAR 148
+
+
+>sp|O95801|TTC4_HUMAN Tetratricopeptide repeat protein 4 OS=Homo
+           sapiens GN=TTC4 PE=1 SV=3
+          Length = 387
+
+ Score = 43.9 bits (102), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 38/113 (33%), Positives = 53/113 (46%), Gaps = 4/113 (3%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIK---LDPH-NHVLYSNRSAAYAKKGDYQKA 56
+           EQ    K++GN      +   A+  Y+E +K    DP  N VLY+NR+AA    G+++ A
+Sbjct: 77  EQAKTYKDEGNDYFKEKDYKKAVISYTEGLKKKCADPDLNAVLYTNRAAAQYYLGNFRSA 136
+
+Query: 57  YEDGCKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKE 109
+             D      LKP   K   R A     L  F EA    +EGL+ +A   +L E
+Sbjct: 137 LNDVTAARKLKPCHLKAIIRGALCHLELKHFAEAVNWCDEGLQIDAKEKKLLE 189
+
+
+>sp|Q13217|DNJC3_HUMAN DnaJ homolog subfamily C member 3 OS=Homo
+           sapiens GN=DNAJC3 PE=1 SV=1
+          Length = 504
+
+ Score = 43.9 bits (102), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 28/103 (27%), Positives = 49/103 (47%)
+
+Query: 8   EKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVDLK 67
+           E G K L+ G + DAL  +  A+  DP N++ Y  R+  +   G  + A  D  K + LK
+Sbjct: 42  ELGKKLLAAGQLADALSQFHAAVDGDPDNYIAYYRRATVFLAMGKSKAALPDLTKVIQLK 101
+
+Query: 68  PDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEG 110
+            D+     ++   L    + +EA+  +++ LK   +  + KE 
+Sbjct: 102 MDFTAARLQRGHLLLKQGKLDEAEDDFKKVLKSNPSENEEKEA 144
+
+
+>sp|Q06677|SWA2_YEAST Auxilin-like clathrin uncoating factor SWA2
+           OS=Saccharomyces cerevisiae GN=SWA2 PE=1 SV=1
+          Length = 668
+
+ Score = 43.9 bits (102), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 36/132 (27%), Positives = 58/132 (43%), Gaps = 25/132 (18%)
+
+Query: 4   NELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVL----YSNRSAAYAKKGDYQKAYED 59
+           NE K KG      G+  ++LQ Y +++   P NH L     SN  A+  K G+Y K+ E+
+Sbjct: 375 NEFKAKGTSLFKNGDYINSLQEYEKSLNTLPLNHPLRIIALSNIIASQLKIGEYSKSIEN 434
+
+Query: 60  GCKTVDLKPD---------------------WGKGYSRKAAALEFLNRFEEAKRTYEEGL 98
+               ++L P                      W K   R+A + E L  F++A  TY+E +
+Sbjct: 435 SSMALELFPSSKAKWKNKISNSDPERSFNDIWPKIMIRRAESFEHLESFKKALETYQELI 494
+
+Query: 99  KHEANNPQLKEG 110
+           K    + ++ +G
+Sbjct: 495 KKNFFDDKIMQG 506
+
+
+>sp|Q91YW3|DNJC3_MOUSE DnaJ homolog subfamily C member 3 OS=Mus
+           musculus GN=Dnajc3 PE=1 SV=1
+          Length = 504
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 28/103 (27%), Positives = 49/103 (47%)
+
+Query: 8   EKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVDLK 67
+           E G K L+ G + DAL  +  A+  DP N++ Y  R+  +   G  + A  D  K + LK
+Sbjct: 42  ELGKKLLAAGQLADALSQFHAAVDGDPDNYIAYYRRATVFLAMGKSKAALPDLTKVIALK 101
+
+Query: 68  PDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEG 110
+            D+     ++   L    + +EA+  +++ LK   +  + KE 
+Sbjct: 102 MDFTAARLQRGHLLLKQGKLDEAEDDFKKVLKSNPSEQEEKEA 144
+
+
+>sp|Q15785|TOM34_HUMAN Mitochondrial import receptor subunit TOM34
+           OS=Homo sapiens GN=TOMM34 PE=1 SV=2
+          Length = 309
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 36/122 (29%), Positives = 58/122 (47%), Gaps = 8/122 (6%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKL-------DPHNH-VLYSNRSAAYAKKGD 52
+           + V EL+  GN++   G   +A   Y  A+++       DP    VLYSNR+A + K G+
+Sbjct: 7   DSVEELRAAGNESFRNGQYAEASALYGRALRVLQAQGSSDPEEESVLYSNRAACHLKDGN 66
+
+Query: 53  YQKAYEDGCKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQ 112
+            +   +D    + L P   K   R+A+A E L ++  A   Y+  L+ + N     EG+ 
+Sbjct: 67  CRDCIKDCTSALALVPFSIKPLLRRASAYEALEKYPMAYVDYKTVLQIDDNVTSAVEGIN 126
+
+Query: 113 NM 114
+            M
+Sbjct: 127 RM 128
+
+
+>sp|Q863A5|DYXC1_GORGO Dyslexia susceptibility 1 candidate gene 1
+           protein homolog OS=Gorilla gorilla gorilla GN=DYX1C1
+           PE=3 SV=1
+          Length = 420
+
+ Score = 43.1 bits (100), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 34/107 (31%), Positives = 52/107 (48%), Gaps = 8/107 (7%)
+
+Query: 6   LKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVD 65
+           LK+KGNK  +  N   A+  Y+ AI+L+    +LY NR+A + K  +  KA ED  K ++
+Sbjct: 293 LKDKGNKLFATENYLAAINAYNLAIRLNNKMPLLYLNRAACHLKLKNLHKAIEDSSKALE 352
+
+Query: 66  L--------KPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANN 104
+           L             K + R+  A   L  + E  + YE  LK + +N
+Sbjct: 353 LLMPPVTDNANARMKAHVRRGTAFCQLELYVEGLQDYEAALKIDPSN 399
+
+
+>sp|Q8WXU2|DYXC1_HUMAN Dyslexia susceptibility 1 candidate gene 1
+           protein OS=Homo sapiens GN=DYX1C1 PE=2 SV=2
+          Length = 420
+
+ Score = 43.1 bits (100), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 34/107 (31%), Positives = 52/107 (48%), Gaps = 8/107 (7%)
+
+Query: 6   LKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVD 65
+           LK+KGNK  +  N   A+  Y+ AI+L+    +LY NR+A + K  +  KA ED  K ++
+Sbjct: 293 LKDKGNKLFATENYLAAINAYNLAIRLNNKMPLLYLNRAACHLKLKNLHKAIEDSSKALE 352
+
+Query: 66  L--------KPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANN 104
+           L             K + R+  A   L  + E  + YE  LK + +N
+Sbjct: 353 LLMPPVTDNANARMKAHVRRGTAFCQLELYVEGLQDYEAALKIDPSN 399
+
+
+>sp|Q863A7|DYXC1_PANTR Dyslexia susceptibility 1 candidate gene 1
+           protein homolog OS=Pan troglodytes GN=DYX1C1 PE=3 SV=1
+          Length = 420
+
+ Score = 43.1 bits (100), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 34/107 (31%), Positives = 52/107 (48%), Gaps = 8/107 (7%)
+
+Query: 6   LKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVD 65
+           LK+KGNK  +  N   A+  Y+ AI+L+    +LY NR+A + K  +  KA ED  K ++
+Sbjct: 293 LKDKGNKLFATENYLAAINAYNLAIRLNNKMPLLYLNRAACHLKLKNLHKAIEDSSKALE 352
+
+Query: 66  L--------KPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANN 104
+           L             K + R+  A   L  + E  + YE  LK + +N
+Sbjct: 353 LLMPPVTDNANARMKAHVRRGTAFCQLELYVEGLQDYEAALKIDPSN 399
+
+
+>sp|Q863A4|DYXC1_PONPY Dyslexia susceptibility 1 candidate gene 1
+           protein homolog OS=Pongo pygmaeus GN=DYX1C1 PE=3 SV=1
+          Length = 420
+
+ Score = 43.1 bits (100), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 34/107 (31%), Positives = 52/107 (48%), Gaps = 8/107 (7%)
+
+Query: 6   LKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVD 65
+           LK+KGNK  +  N   A+  Y+ AI+L+    +LY NR+A + K  +  KA ED  K ++
+Sbjct: 293 LKDKGNKLFATENYLAAINAYNLAIRLNNKMPLLYLNRAACHLKLKNLHKAIEDSSKALE 352
+
+Query: 66  L--------KPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANN 104
+           L             K + R+  A   L  + E  + YE  LK + +N
+Sbjct: 353 LLMPPVTDNANARMKAHVRRGTAFCQLELYVEGLQDYEAALKIDPSN 399
+
+
+>sp|Q863A6|DYXC1_PANPA Dyslexia susceptibility 1 candidate gene 1
+           protein homolog OS=Pan paniscus GN=DYX1C1 PE=3 SV=1
+          Length = 420
+
+ Score = 43.1 bits (100), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 34/107 (31%), Positives = 52/107 (48%), Gaps = 8/107 (7%)
+
+Query: 6   LKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVD 65
+           LK+KGNK  +  N   A+  Y+ AI+L+    +LY NR+A + K  +  KA ED  K ++
+Sbjct: 293 LKDKGNKLFATENYLAAINAYNLAIRLNNKMPLLYLNRAACHLKLKNLHKAIEDSSKALE 352
+
+Query: 66  L--------KPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANN 104
+           L             K + R+  A   L  + E  + YE  LK + +N
+Sbjct: 353 LLMPPVTDNANARMKAHVRRGTAFCQLELYVEGLQDYEAALKIDPSN 399
+
+
+>sp|P33313|CNS1_YEAST Hsp70/Hsp90 co-chaperone CNS1 OS=Saccharomyces
+           cerevisiae GN=CNS1 PE=1 SV=1
+          Length = 385
+
+ Score = 42.7 bits (99), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 29/95 (30%), Positives = 47/95 (49%), Gaps = 4/95 (4%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPH----NHVLYSNRSAAYAKKGDYQKA 56
+           E     K++GN+        DA + YS+ + ++      N  LY+NR+A   +  +Y++ 
+Sbjct: 81  EIAENFKKQGNELYKAKRFKDARELYSKGLAVECEDKSINESLYANRAACELELKNYRRC 140
+
+Query: 57  YEDGCKTVDLKPDWGKGYSRKAAALEFLNRFEEAK 91
+            ED  K + + P   K Y R + A   LN+ EEAK
+Sbjct: 141 IEDCSKALTINPKNVKCYYRTSKAFFQLNKLEEAK 175
+
+
+>sp|A8MVZ4|TTC3L_HUMAN Putative tetratricopeptide repeat protein
+           3-like OS=Homo sapiens GN=TTC3L PE=5 SV=2
+          Length = 272
+
+ Score = 42.7 bits (99), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 20/54 (37%), Positives = 31/54 (57%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQ 54
+           EQ   +K KGN+  S    D A+  Y+ AI+  P NH+LY NR+  + + G ++
+Sbjct: 219 EQGELMKMKGNEEFSKERFDIAIIYYTRAIEYRPENHLLYGNRALCFLRTGQFR 272
+
+
+>sp|Q8R368|DYXC1_MOUSE Dyslexia susceptibility 1 candidate gene 1
+           protein homolog OS=Mus musculus GN=Dyx1c1 PE=2 SV=1
+          Length = 420
+
+ Score = 42.7 bits (99), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 35/107 (32%), Positives = 52/107 (48%), Gaps = 8/107 (7%)
+
+Query: 6   LKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVD 65
+           LK+KGNK  +  N   A+  Y+ AI+L+    +LY NR+A + K  +  KA ED  K ++
+Sbjct: 291 LKDKGNKLFATENYLAAVDAYNLAIRLNCKIPLLYLNRAACHLKLKNLHKAIEDSSKALE 350
+
+Query: 66  -LKPDWG-------KGYSRKAAALEFLNRFEEAKRTYEEGLKHEANN 104
+            L P          K + R+  A   L  + E  + YE  LK +  N
+Sbjct: 351 LLTPPVADNANARMKAHVRRGTAFCQLELYVEGLQDYEAALKIDPAN 397
+
+
+>sp|Q8R3H9|TTC4_MOUSE Tetratricopeptide repeat protein 4 OS=Mus
+           musculus GN=Ttc4 PE=2 SV=1
+          Length = 386
+
+ Score = 42.7 bits (99), Expect = 6e-04,   Method: Composition-based stats.
+ Identities = 42/127 (33%), Positives = 57/127 (44%), Gaps = 10/127 (7%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIK---LDPH-NHVLYSNRSAAYAKKGDYQKA 56
+           EQ    K++GN      +   A+  YSE +K    DP  N VLY+NR+AA    G+ + +
+Sbjct: 77  EQAKTYKDEGNDYFKEKDYKKAVLSYSEGLKKKCADPDLNAVLYTNRAAAQYYLGNVRSS 136
+
+Query: 57  YEDGCKTVDLKPDWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKE------G 110
+             D      LKP   K   R A     L  F EA    +EGL+ +A   +L E       
+Sbjct: 137 LNDVLAAKKLKPGHLKAIIRGALCHLELKHFAEAVNWCDEGLQIDAKEKKLLEIRAKADK 196
+
+Query: 111 LQNMEAR 117
+           L+ ME R
+Sbjct: 197 LKRMEER 203
+
+
+>sp|Q7ZU45|TTC25_DANRE Tetratricopeptide repeat protein 25 OS=Danio
+           rerio GN=ttc25 PE=2 SV=1
+          Length = 486
+
+ Score = 42.4 bits (98), Expect = 6e-04,   Method: Composition-based stats.
+ Identities = 29/107 (27%), Positives = 50/107 (46%)
+
+Query: 9   KGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVDLKP 68
+           +G++    G    A++ ++ A+ L P N     +RS  Y K GD + A +D   ++    
+Sbjct: 20  EGDQLFQRGEYVKAVESFTTALTLQPDNKNCLVSRSRCYVKLGDAENALKDAESSLKDNK 79
+
+Query: 69  DWGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNME 115
+           ++ KG  +KA AL  +  FE A   Y  G K      + + G+Q  +
+Sbjct: 80  NYFKGLYQKAEALYTMGDFEFALVYYHRGHKLRPELQEFRLGIQKAQ 126
+
+
+>sp|Q9SRS9|CHIP_ARATH E3 ubiquitin-protein ligase CHIP
+           OS=Arabidopsis thaliana GN=CHIP PE=1 SV=1
+          Length = 278
+
+ Score = 42.4 bits (98), Expect = 6e-04,   Method: Composition-based stats.
+ Identities = 30/96 (31%), Positives = 45/96 (46%), Gaps = 4/96 (4%)
+
+Query: 6   LKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVD 65
+           LKE GN          A+  Y+EAI L P+    ++NR+  + K+ D+ K  ED  K + 
+Sbjct: 13  LKEDGNNCFKKERFGAAIDAYTEAIALSPNVPAYWTNRALCHMKRKDWTKVEEDCRKAIQ 72
+
+Query: 66  LKPDWGKGYSRKAAAL----EFLNRFEEAKRTYEEG 97
+           L  +  K +     AL    EF N  +E +R  + G
+Sbjct: 73  LVHNSVKAHYMLGLALLQKKEFTNGVKELQRALDLG 108
+
+
+>sp|O18158|OGT1_CAEEL UDP-N-acetylglucosamine--peptide
+           N-acetylglucosaminyltransferase OS=Caenorhabditis
+           elegans GN=ogt-1 PE=1 SV=2
+          Length = 1151
+
+ Score = 42.4 bits (98), Expect = 6e-04,   Method: Composition-based stats.
+ Identities = 33/105 (31%), Positives = 44/105 (41%), Gaps = 3/105 (2%)
+
+Query: 10  GNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDGCKTVDLKPD 69
+           GN     G + DAL+ Y  A+KL P     Y N +AA    GD ++A       + + PD
+Sbjct: 200 GNYYKEKGQLQDALENYKLAVKLKPEFIDAYINLAAALVSGGDLEQAVTAYFNALQINPD 259
+
+Query: 70  WGKGYSRKAAALEFLNRFEEAKRTYEEGLKHEANNPQLKEGLQNM 114
+                S     L+ + R EEAK  Y   LK     PQ      N+
+Sbjct: 260 LYCVRSDLGNLLKAMGRLEEAKVCY---LKAIETQPQFAVAWSNL 301
+
+
+>sp|Q8VBW8|TTC36_MOUSE Tetratricopeptide repeat protein 36 OS=Mus
+           musculus GN=Ttc36 PE=2 SV=1
+          Length = 186
+
+ Score = 42.0 bits (97), Expect = 8e-04,   Method: Composition-based stats.
+ Identities = 29/103 (28%), Positives = 49/103 (47%), Gaps = 4/103 (3%)
+
+Query: 1   EQVNELKEKGNKALSVGNIDDALQCYSEAIKLDPHNHVLYSNRSAAYAKKGDYQKAYEDG 60
+           E    L+ +G +A   G++  AL+ + +AI L P     Y+NR+ A   +GD   A ED 
+Sbjct: 46  EHSKALELQGVRAAEAGDLHTALEKFGQAISLLPDRASAYNNRAQARRLQGDVAGALEDL 105
+
+Query: 61  CKTVDLKPDWGKGYSRKAAALEFLNRFE----EAKRTYEEGLK 99
+            + V L    G+   +       L RF+    +A+R +E+  +
+Sbjct: 106 ERAVTLSGGRGRAARQSFVQSGLLARFQGRDDDARRDFEKAAR 148
+
+
+  Database: sprot
+    Posted date:  Mar 15, 2009  5:38 PM
+  Number of letters in database: 148,809,765
+  Number of sequences in database:  412,525
+  
+Lambda     K      H
+   0.309    0.129    0.368 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 34,710,588
+Number of Sequences: 412525
+Number of extensions: 1309647
+Number of successful extensions: 3805
+Number of sequences better than 1.0e-03: 129
+Number of HSP's better than  0.0 without gapping: 100
+Number of HSP's successfully gapped in prelim test: 29
+Number of HSP's that attempted gapping in prelim test: 3429
+Number of HSP's gapped (non-prelim): 293
+length of query: 117
+length of database: 148,809,765
+effective HSP length: 85
+effective length of query: 32
+effective length of database: 113,745,140
+effective search space: 3639844480
+effective search space used: 3639844480
+T: 11
+A: 40
+X1: 16 ( 7.1 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 42 (21.7 bits)
+S2: 97 (42.0 bits)

@@ -1,0 +1,343 @@
+command executed: /vol/ek/dattias/rosetta/bin/rosetta.230 -pdbstats sasa_stats -s 1SVZ.pdb
+[T/F  OPT]Default FALSE value for [-no_option_display]
+[T/F  OPT]Default FALSE value for [-args_file]
+[STR  OPT]Default value for [-paths] paths.txt.
+[T/F  OPT]Default FALSE value for [-version]
+[T/F  OPT]Default FALSE value for [-score]
+[T/F  OPT]Default FALSE value for [-abinitio]
+[T/F  OPT]Default FALSE value for [-refine]
+[T/F  OPT]Default FALSE value for [-assemble]
+[T/F  OPT]Default FALSE value for [-idealize]
+[T/F  OPT]Default FALSE value for [-relax]
+[T/F  OPT]Default FALSE value for [-abrelax]
+[T/F  OPT]Default FALSE value for [-abrelax_mode]
+[T/F  OPT]Default FALSE value for [-design]
+[T/F  OPT]Default FALSE value for [-dock]
+[T/F  OPT]Default FALSE value for [-membrane]
+[T/F  OPT]Default FALSE value for [-loops]
+[T/F  OPT]New TRUE value for [-pdbstats]
+[STR  OPT]New value for [-pdbstats] sasa_stats.
+Rosetta mode: pdbstats
+[T/F  OPT]Default FALSE value for [-chain]
+[T/F  OPT]Default FALSE value for [-protein]
+[T/F  OPT]Default FALSE value for [-series]
+[INT  OPT]Default value for [-nstruct]  1
+[T/F  OPT]Default FALSE value for [-concatenate_pdbs]
+[T/F  OPT]Default FALSE value for [-single_silent_writer]
+[T/F  OPT]Default FALSE value for [-read_all_chains]
+[T/F  OPT]Default FALSE value for [-preserve_header]
+[T/F  OPT]Default FALSE value for [-use_pdb_numbering]
+[T/F  OPT]Default FALSE value for [-flip_symmetric_sidechains]
+[T/F  OPT]Default FALSE value for [-repack]
+[T/F  OPT]Default FALSE value for [-no_optH]
+[T/F  OPT]Default FALSE value for [-overwrite]
+[T/F  OPT]Default FALSE value for [-output_pdb_gz]
+[T/F  OPT]Default FALSE value for [-output_silent_gz]
+[T/F  OPT]Default FALSE value for [-output_scorefile_gz]
+[T/F  OPT]Default FALSE value for [-pose_silent_out]
+[T/F  OPT]Default FALSE value for [-sasapack_bvalues]
+[T/F  OPT]Default FALSE value for [-cenlist_values]
+[T/F  OPT]Default FALSE value for [-termini]
+[T/F  OPT]Default FALSE value for [-Nterminus]
+[T/F  OPT]Default FALSE value for [-Cterminus]
+[T/F  OPT]Default FALSE value for [-use_trie]
+[T/F  OPT]Default FALSE value for [-no_trie]
+[T/F  OPT]Default FALSE value for [-use_conformer]
+[T/F  OPT]Default FALSE value for [-use_bbind_conformer]
+[T/F  OPT]Default FALSE value for [-trials_trie]
+[T/F  OPT]Default FALSE value for [-no_trials_trie]
+[T/F  OPT]Default FALSE value for [-pose_relax]
+[T/F  OPT]Default FALSE value for [-output_interaction_graph_memory_usage]
+[T/F  OPT]Default FALSE value for [-read_interaction_graph]
+[T/F  OPT]Default FALSE value for [-write_interaction_graph]
+[STR  OPT]Default value for [-ig_file] .
+[T/F  OPT]Default FALSE value for [-packer_precompute_only]
+[T/F  OPT]Default FALSE value for [-tight_memory_restrictions]
+[T/F  OPT]Default FALSE value for [-lazy_ig]
+[T/F  OPT]Default FALSE value for [-linmem_ig]
+[T/F  OPT]Default FALSE value for [-minimalist_ig]
+[T/F  OPT]Default FALSE value for [-use_sasa_pack_score]
+[T/F  OPT]Default FALSE value for [-output_dot_kinemage]
+[T/F  OPT]Default FALSE value for [-pack_low_temp_annealing]
+[T/F  OPT]Default FALSE value for [-multi_cool_annealer]
+[T/F  OPT]Default FALSE value for [-debug_annealer_design]
+[T/F  OPT]Default FALSE value for [-no_his_his_pairE]
+[T/F  OPT]Default FALSE value for [-silent_input]
+[T/F  OPT]Default FALSE value for [-skip_scorefile_check]
+[T/F  OPT]Default FALSE value for [-timer]
+[T/F  OPT]Default FALSE value for [-count_attempts]
+[T/F  OPT]Default FALSE value for [-status]
+[T/F  OPT]Default FALSE value for [-decoy_status]
+[T/F  OPT]Default FALSE value for [-ise_movie]
+[T/F  OPT]Default FALSE value for [-output_all]
+[T/F  OPT]Default FALSE value for [-output_chi_silent]
+[T/F  OPT]Default FALSE value for [-accept_all]
+[T/F  OPT]Default FALSE value for [-skip_missing_residues]
+[T/F  OPT]Default FALSE value for [-use_input_sc]
+[T/F  OPT]Default FALSE value for [-use_input_cb]
+[STR  OPT]Default value for [-weightfile] none.
+[STR  OPT]Default value for [-cst] cst.
+[STR  OPT]Default value for [-dpl] dpl.
+[STR  OPT]Default value for [-resfile] none.
+[STR  OPT]Default value for [-equiv_resfile] none.
+[T/F  OPT]Default FALSE value for [-auto_resfile]
+[T/F  OPT]Default FALSE value for [-chain_inc]
+WARNING::
+constraints will not be used: query not defined
+by series_code,protein_name,and chain_id
+WARNING:: nstruct > 0 but output_coord F
+no pdb files will be output
+[T/F  OPT]Default FALSE value for [-full_filename]
+[T/F  OPT]Default FALSE value for [-map_sequence]
+[INT  OPT]Default value for [-max_frags]  200
+[T/F  OPT]Default FALSE value for [-output_centroids]
+[STR  OPT]Default value for [-protein_name_prefix] .
+[STR  OPT]Default value for [-frags_name_prefix] .
+[T/F  OPT]Default FALSE value for [-protein_name_prefix_homolog]
+[T/F  OPT]Default FALSE value for [-use_homolog_env_stats]
+[T/F  OPT]Default FALSE value for [-use_homolog_pair_stats]
+[T/F  OPT]Default FALSE value for [-use_homolog_cendist_stats]
+[T/F  OPT]Default FALSE value for [-use_homolog_env_stats_in_farlx]
+[T/F  OPT]Default FALSE value for [-use_homolog_pair_stats_in_farlx]
+[T/F  OPT]Default FALSE value for [-use_homolog_cendist_stats_in_farlx]
+[T/F  OPT]Default FALSE value for [-output_hbond_info]
+[T/F  OPT]Default FALSE value for [-output_interface_hbonds_only]
+[T/F  OPT]Default FALSE value for [-monomer_input]
+[REAL OPT]Default value for [-vdw_reweight]   1
+[REAL OPT]Default value for [-env_reweight]   1
+[REAL OPT]Default value for [-pair_reweight]   1
+[REAL OPT]Default value for [-cb_reweight]   1
+[REAL OPT]Default value for [-sheet_reweight]   1
+[REAL OPT]Default value for [-ss_reweight]   1
+[REAL OPT]Default value for [-hs_reweight]   1
+[REAL OPT]Default value for [-rsigma_reweight]   1
+[REAL OPT]Default value for [-rg_reweight]   1
+[REAL OPT]Default value for [-pc_reweight]   1
+[REAL OPT]Default value for [-fa_atr_reweight]   1
+[REAL OPT]Default value for [-fa_rep_reweight]   1
+[REAL OPT]Default value for [-fa_dun_reweight ]   1
+[REAL OPT]Default value for [-fa_pair_reweight]   1
+[REAL OPT]Default value for [-fa_plane_reweight]   1
+[REAL OPT]Default value for [-fa_solv_reweight]   1
+[REAL OPT]Default value for [-fa_ref_reweight ]   1
+[REAL OPT]Default value for [-fa_pH_reweight]   1
+[REAL OPT]Default value for [-fa_h2o_reweight]   1
+[REAL OPT]Default value for [-fa_prob1b_reweight]   1
+[REAL OPT]Default value for [-fa_gb_elec_reweigh]   1
+[REAL OPT]Default value for [-hb_srbb_reweight]   1
+[REAL OPT]Default value for [-hb_lrbb_reweight]   1
+[REAL OPT]Default value for [-hb_sc_reweight]   1
+[REAL OPT]Default value for [-chainbreak_reweight]   1
+[REAL OPT]Default value for [-electron_density_reweight]   1
+[REAL OPT]Default value for [-dummy_model_reweight]   1
+[REAL OPT]Default value for [-saxs_model_reweight]   1
+[REAL OPT]Default value for [-Wplane_total]   0
+[REAL OPT]Default value for [-barcode_reweight]   1
+[REAL OPT]Default value for [-barcode_energy_reweight]   1
+[T/F  OPT]Default FALSE value for [-fa_max_dis]
+[T/F  OPT]Default FALSE value for [-hydrogen_interaction_cutoff]
+[T/F  OPT]Default FALSE value for [-no_hb_env_dep]
+[T/F  OPT]Default FALSE value for [-find_disulf]
+[T/F  OPT]Default FALSE value for [-fix_disulf]
+[T/F  OPT]Default FALSE value for [-prna]
+[T/F  OPT]Default FALSE value for [-enable_dna]
+[T/F  OPT]Default FALSE value for [-enable_rna]
+[T/F  OPT]Default FALSE value for [-dna_interface]
+[T/F  OPT]Default FALSE value for [-enable_ligand_aa]
+[T/F  OPT]Default FALSE value for [-phospho_ser]
+[T/F  OPT]Default FALSE value for [-surface]
+[T/F  OPT]Default FALSE value for [-loops]
+[T/F  OPT]Default FALSE value for [-taboo]
+[T/F  OPT]Default FALSE value for [-vary_omega]
+[T/F  OPT]Default FALSE value for [-fine_hb_categories]
+[T/F  OPT]Default FALSE value for [-geometric_sol]
+[T/F  OPT]Default FALSE value for [-multi_chain]
+[T/F  OPT]Default FALSE value for [-ex1]
+[T/F  OPT]Default FALSE value for [-ex2]
+[T/F  OPT]Default FALSE value for [-ex3]
+[T/F  OPT]Default FALSE value for [-ex4]
+[T/F  OPT]Default FALSE value for [-ex1aro]
+[T/F  OPT]Default FALSE value for [-ex1aro_half]
+[T/F  OPT]Default FALSE value for [-ex2aro_only]
+[T/F  OPT]Default FALSE value for [-ex1aro_exposed]
+[T/F  OPT]Default FALSE value for [-ex2aro_exposed]
+[T/F  OPT]Default FALSE value for [-exOH]
+[INT  OPT]Default value for [-extrachi_cutoff]  18
+[T/F  OPT]Default FALSE value for [-rot_pert]
+[T/F  OPT]Default FALSE value for [-rot_pert_input]
+[T/F  OPT]Default FALSE value for [-exdb]
+[T/F  OPT]Default FALSE value for [-rotamer_explosion]
+[T/F  OPT]Default FALSE value for [-min_best_rots]
+[T/F  OPT]Default FALSE value for [-rot_opt]
+[T/F  OPT]Default FALSE value for [-use_electrostatic_repulsion]
+[T/F  OPT]Default FALSE value for [-explicit_h2o]
+[T/F  OPT]Default FALSE value for [-solvate]
+[T/F  OPT]Default FALSE value for [-pH]
+[T/F  OPT]Default FALSE value for [-try_both_his_tautomers]
+[T/F  OPT]Default FALSE value for [-hydrate_dna]
+[T/F  OPT]Default FALSE value for [-ex_dna_waters]
+[T/F  OPT]Default FALSE value for [-minimize_rot]
+[T/F  OPT]Default FALSE value for [-read_hetero_h2o]
+[T/F  OPT]Default FALSE value for [-Wint_score_only]
+[T/F  OPT]Default FALSE value for [-Wint_repack_only]
+[T/F  OPT]Default FALSE value for [-ligand]
+[T/F  OPT]Default FALSE value for [-enzyme_design]
+[T/F  OPT]Default FALSE value for [-score_contact_flag]
+[T/F  OPT]Default FALSE value for [-score_contact_weight]
+[T/F  OPT]Default FALSE value for [-score_contact_threshold]
+[T/F  OPT]Default FALSE value for [-scorefxn]
+default centroid scorefxn:  4
+default fullatom scorefxn:  12
+[INT  OPT]Default value for [-run_level]  0
+[T/F  OPT]Default FALSE value for [-silent]
+[T/F  OPT]Default FALSE value for [-output_silent_gz]
+[T/F  OPT]Default FALSE value for [-verbose]
+[T/F  OPT]Default FALSE value for [-gush]
+[T/F  OPT]Default FALSE value for [-yap]
+[T/F  OPT]Default FALSE value for [-chat]
+[T/F  OPT]Default FALSE value for [-inform]
+[T/F  OPT]Default FALSE value for [-quiet]
+run level:  0
+[T/F  OPT]Default FALSE value for [-benchmark]
+[T/F  OPT]Default FALSE value for [-debug]
+[INT  OPT]Default value for [-sym_des_units]  1
+[T/F  OPT]Default FALSE value for [-mj_min]
+[REAL OPT]Default value for [-mod_hhrep_height]   1
+[REAL OPT]Default value for [-mod_hhrep_width]   1
+[REAL OPT]Default value for [-mod_hhrep_center]   2.79999995
+[REAL OPT]Default value for [-mod_hhrep_exponent]   4
+[REAL OPT]Default value for [-smooth_etable_ljweight]   1.15999997
+[REAL OPT]Default value for [-smooth_etable_solvweight]   1.5
+[STR  OPT]New value for [-s] 1SVZ.pdb.
+Starting structure: 1SVZ
+Reading /vol/ek/share/rosetta/rosetta_database/Rama_smooth_dyn.dat_ss_6.4
+Reading /vol/ek/share/rosetta/rosetta_database/phi.theta.36.HS.resmooth
+Reading /vol/ek/share/rosetta/rosetta_database/phi.theta.36.SS.resmooth
+[STR  OPT]Default value for [-atom_vdw_set] default.
+[T/F  OPT]Default FALSE value for [-IUPAC]
+Atom_mode set to all
+[STR  OPT]Default value for [-paircutoffs] paircutoffs.
+Reading /vol/ek/share/rosetta/rosetta_database/paircutoffs
+[T/F  OPT]Default FALSE value for [-interface_ds]
+[T/F  OPT]Default FALSE value for [-decoystats]
+set_decoystats_flag: from,to F F
+[T/F  OPT]Default FALSE value for [-decoyfeatures]
+[T/F  OPT]Default FALSE value for [-t32s3]
+[T/F  OPT]Default FALSE value for [-evolution]
+[T/F  OPT]Default FALSE value for [-evol_recomb]
+[T/F  OPT]Default FALSE value for [-profile]
+[T/F  OPT]Default FALSE value for [-dummy_model]
+[T/F  OPT]Default FALSE value for [-saxs_model]
+ Profile defined from q = 0 to 1.
+[T/F  OPT]Default FALSE value for [-new_centroid_packing]
+[REAL OPT]Default value for [-centroid_pack_weight]   2
+[T/F  OPT]Default FALSE value for [-separate_centroid_pack_score]
+[REAL OPT]Default value for [-cb_weight]   1
+[REAL OPT]Default value for [-localstrandpair_penalty]   0
+[REAL OPT]Default value for [-rsd_wt_helix]   1
+[REAL OPT]Default value for [-rsd_wt_loop]   1
+[REAL OPT]Default value for [-rsd_wt_strand]   1
+[REAL OPT]Default value for [-strand_dist_cutoff]   6.5
+[T/F  OPT]Default FALSE value for [-stretch_strand_dist_cutoff]
+[REAL OPT]Default value for [-seq_sep_scale]   20
+[REAL OPT]Default value for [-max_strand_dist_cutoff]   12
+[T/F  OPT]Default FALSE value for [-ignore_sspair_barcode_in_score]
+[T/F  OPT]Default FALSE value for [-handedness_score]
+[T/F  OPT]Default FALSE value for [-barcode_mode]
+disabling all filters
+[REAL OPT]Default value for [-co]  -1
+[REAL OPT]Default value for [-rms]  -1
+[T/F  OPT]Default FALSE value for [-repeatin]
+[T/F  OPT]Default FALSE value for [-repeatout]
+[T/F  OPT]Default FALSE value for [-clnt]
+reading starting structure: ../../boundSet/mainChain/1SVZ.pdb
+WARNING: 1 missing backbone atoms at 1 residues in pdb file
+allow_missing= 1
+skip_missing= 0
+[T/F  OPT]Default FALSE value for [-use_native_centroid]
+initializing full atom functions
+[T/F  OPT]Default FALSE value for [-dna_weights]
+[T/F  OPT]Default FALSE value for [-soft_rep]
+[T/F  OPT]Default FALSE value for [-soft_rep_design]
+[T/F  OPT]Default FALSE value for [-use_aw]
+[T/F  OPT]Default FALSE value for [-use_bw]
+[T/F  OPT]Default FALSE value for [-use_packing_etables_always]
+[T/F  OPT]Default FALSE value for [-smooth_etable]
+[T/F  OPT]Default FALSE value for [-reduce_templates]
+[T/F  OPT]Default FALSE value for [-gen_born]
+[T/F  OPT]Default FALSE value for [-small_radii]
+[STR  OPT]Default value for [-fa_lj_rep_slope] highres.
+Starting energy table calculation
+Energy table parameter set: polh_aroh  Revision: 14003 Date: 2007-04-06 21:24:40 +0300 (Fri, 06 Apr 2007)
+[T/F  OPT]Default FALSE value for [-mod_hhrep]
+Finished calculating energy tables.
+[T/F  OPT]Default FALSE value for [-mod_etable]
+[T/F  OPT]Default FALSE value for [-input_etables]
+[T/F  OPT]Default FALSE value for [-output_etables]
+Reading /vol/ek/share/rosetta/rosetta_database/bbdep02.May.sortlib
+Reading /vol/ek/share/rosetta/rosetta_database/plane_data_table_1015.dat
+Reading /vol/ek/share/rosetta/rosetta_database/pdbpairstats_fine
+Reading /vol/ek/share/rosetta/rosetta_database/Paa
+Reading /vol/ek/share/rosetta/rosetta_database/Paa_n
+Reading /vol/ek/share/rosetta/rosetta_database/Paa_pp
+Reading /vol/ek/share/rosetta/rosetta_database/avgE_from_pdb
+Filling missing atoms
+optimizing missing atoms
+[T/F  OPT]Default FALSE value for [-disallow_hbond_o4star]
+[T/F  OPT]Default FALSE value for [-disallow_hbond_ho2star]
+[T/F  OPT]Default FALSE value for [-dun_sd_correction]
+Instantiating PDInteractionGraph
+[T/F  OPT]Default FALSE value for [-simple_elec]
+[T/F  OPT]Default FALSE value for [-record_annealer_trajectory]
+[T/F  OPT]Default FALSE value for [-disallow_quench]
+[T/F  OPT]Default FALSE value for [-use_time_as_seed]
+[INT  OPT]Default value for [-seed_offset]  0
+[T/F  OPT]Default FALSE value for [-delay_at_start]
+[T/F  OPT]Default FALSE value for [-constant_seed]
+# =====================================
+# random seed: 1196819501
+# =====================================
+optimizing hydrogen positions
+Instantiating PDInteractionGraph
+WARNING:: end of pdb file reached: angle, secstruct, & res info not found
+Looking for dssp file: ../../boundSet/mainChain/1SVZ.dssp
+dssp file not found
+Looking for secondary structure assignment file: ../../boundSet/mainChain/1SVZ.ssa
+ssa file not found
+calculating secondary structure from torsion angles
+calculating secondary structure from internal DSSP calculation.
+[T/F  OPT]Default FALSE value for [-use_input_bond]
+[T/F  OPT]Default FALSE value for [-regions]
+[T/F  OPT]Default FALSE value for [-apply_filters]
+[T/F  OPT]Default FALSE value for [-knot_filter]
+[T/F  OPT]Default FALSE value for [-poke_filter]
+[T/F  OPT]Default FALSE value for [-score_contact_fullatom]
+[T/F  OPT]Default FALSE value for [-long_range_hb_weight]
+[T/F  OPT]Default FALSE value for [-short_range_hb_weight]
+[T/F  OPT]Default FALSE value for [-rand_envpair_res_wt]
+[REAL OPT]Default value for [-parallel_weight]   1
+[REAL OPT]Default value for [-antiparallel_weight]   1
+[T/F  OPT]Default FALSE value for [-rand_SS_wt]
+[T/F  OPT]Default FALSE value for [-random_parallel_antiparallel]
+[T/F  OPT]Default FALSE value for [-rand_cst_res_wt]
+[T/F  OPT]Default FALSE value for [-use_barcode_to_score]
+[T/F  OPT]Default FALSE value for [-ss_vdw]
+[T/F  OPT]Default FALSE value for [-use_alpha_rama]
+[T/F  OPT]Default FALSE value for [-saxs_model_score]
+[T/F  OPT]Default FALSE value for [-ssweight_for_homolog]
+Reading /vol/ek/share/rosetta/rosetta_database/SASA-masks.dat
+Reading /vol/ek/share/rosetta/rosetta_database/SASA-angles.dat
+========================================
+Reading /vol/ek/share/rosetta/rosetta_database/sasa_offsets.txt
+Reading /vol/ek/share/rosetta/rosetta_database/sasa_prob_cdf.txt
+[T/F  OPT]Default FALSE value for [-t32s3]
+PACKNG: deleting curent protein_sasa oject
+[T/F  OPT]Default FALSE value for [-packing_heavy_atoms_only]
+[T/F  OPT]Default FALSE value for [-movie]
+[T/F  OPT]Default FALSE value for [-trajectory]
+[T/F  OPT]Default FALSE value for [-output_saxs_profile]
+======================================================
+DONE ::     1 starting structures built         1 (nstruct) times
+This process generated      1 decoys from       1 attempts
+                            0 starting pdbs were skipped
+======================================================

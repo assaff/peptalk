@@ -1,0 +1,22 @@
+
+PepSite output
+--------------
+
+When using PepSite please cite:
+Petsalaki E, Stark A, García-Urdiales E, Russell RB, Accurate prediction of peptide binding sites on protein surfaces, PLoS Comput Biol., 2009 Mar;5(3):e1000335.
+
+
+The output comprises two files:
+
+   1. The first file is the pdb file that contains:
+          * The original structure,(chain id you provided)
+          * The predictions for potential binding sites of each individual residue in your peptide (chain U)
+          * The top 9 peptides that were predicted for binding (chains 1-9).
+
+   2. The second file is the predictions of the peptides, where they bind and confidence values to evaluate this.This file contains certain columns as follows:
+          * The first column is labeled 'Template' and shows which residues in your peptide sequence have been matched.
+          * The second column is labeled 'Prediction' and shows the corresponding residues in chain U that have been matched with the residues in your peptide sequence.
+          * The score represents the raw score for the prediction of the binding site of this peptide. It is an average of the scores of each matched residue.
+          * The next column is labeled 'PEPTIDE P-VALUE' and is the probability that a random match would get this score. The lower the p-value the better the prediction. The predictions are colored in the results summary table with red as the most reliable and blue the least reliable prediction.
+          * The next column is labeled 'RESIDUES P-VALUE' and is the average of the p-values for each of the matched residues. This value is useful for fotifying the conclusion about the peptide binding site prediction and in cases of short peptides. (For more details please visit our help page)
+

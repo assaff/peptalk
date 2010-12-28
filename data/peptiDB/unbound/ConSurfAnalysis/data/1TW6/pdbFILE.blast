@@ -1,0 +1,1040 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_A  103
+         (103 letters)
+
+Database: sprot 
+           466,739 sequences; 165,389,953 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|P98170|XIAP_HUMAN Baculoviral IAP repeat-containing protein 4...   230   1e-60
+sp|Q9R0I6|XIAP_RAT Baculoviral IAP repeat-containing protein 4 O...   209   2e-54
+sp|Q60989|XIAP_MOUSE Baculoviral IAP repeat-containing protein 4...   207   1e-53
+sp|Q96P09|BIRC8_HUMAN Baculoviral IAP repeat-containing protein ...   177   2e-44
+sp|Q95M72|BIRC8_PANTR Baculoviral IAP repeat-containing protein ...   174   8e-44
+sp|Q95M71|BIRC8_GORGO Baculoviral IAP repeat-containing protein ...   172   5e-43
+sp|Q13489|BIRC3_HUMAN Baculoviral IAP repeat-containing protein ...   104   1e-22
+sp|O62640|PIAP_PIG Putative inhibitor of apoptosis OS=Sus scrofa...   103   3e-22
+sp|O08863|BIRC3_MOUSE Baculoviral IAP repeat-containing protein ...   101   1e-21
+sp|Q13490|BIRC2_HUMAN Baculoviral IAP repeat-containing protein ...   100   3e-21
+sp|Q62210|BIRC2_MOUSE Baculoviral IAP repeat-containing protein ...   100   3e-21
+sp|A1E2V0|BIRC3_CANFA Baculoviral IAP repeat-containing protein ...    99   6e-21
+sp|Q90660|BIR_CHICK Inhibitor of apoptosis protein OS=Gallus gal...    97   2e-20
+sp|Q96CA5|BIRC7_HUMAN Baculoviral IAP repeat-containing protein ...    94   2e-19
+sp|P41437|IAP3_NPVOP Apoptosis inhibitor 3 OS=Orgyia pseudotsuga...    93   4e-19
+sp|Q24306|IAP1_DROME Apoptosis 1 inhibitor OS=Drosophila melanog...    92   1e-18
+sp|P41436|IAP_GVCP Apoptosis inhibitor IAP OS=Cydia pomonella gr...    87   2e-17
+sp|Q24307|IAP2_DROME Apoptosis 2 inhibitor OS=Drosophila melanog...    83   5e-16
+sp|Q13075|BIRC1_HUMAN Baculoviral IAP repeat-containing protein ...    79   8e-15
+sp|Q9JIB6|BIR1F_MOUSE Baculoviral IAP repeat-containing protein ...    78   1e-14
+sp|Q9R016|BIR1E_MOUSE Baculoviral IAP repeat-containing protein ...    78   2e-14
+sp|Q9QWK5|BIR1A_MOUSE Baculoviral IAP repeat-containing protein ...    77   2e-14
+sp|Q9JIB3|BIR1G_MOUSE Baculoviral IAP repeat-containing protein ...    77   2e-14
+sp|Q9QUK4|BIR1B_MOUSE Baculoviral IAP repeat-containing protein ...    76   5e-14
+sp|P47732|ZFP_IIV6 Zinc finger protein OS=Invertebrate iridescen...    63   4e-10
+sp|P41435|IAP1_NPVAC Apoptosis inhibitor 1 OS=Autographa califor...    60   2e-09
+sp|O10296|IAP1_NPVOP Apoptosis inhibitor 1 OS=Orgyia pseudotsuga...    58   2e-08
+sp|Q9JHY7|BIRC5_RAT Baculoviral IAP repeat-containing protein 5 ...    54   2e-07
+sp|Q9NR09|BIRC6_HUMAN Baculoviral IAP repeat-containing protein ...    51   2e-06
+sp|O70201|BIRC5_MOUSE Baculoviral IAP repeat-containing protein ...    50   5e-06
+sp|Q5RAH9|BIRC5_PONAB Baculoviral IAP repeat-containing protein ...    47   2e-05
+sp|O15392|BIRC5_HUMAN Baculoviral IAP repeat-containing protein ...    47   2e-05
+sp|Q6I6F4|BIRC5_FELCA Baculoviral IAP repeat-containing protein ...    47   2e-05
+sp|Q9GLN5|BIRC5_PIG Baculoviral IAP repeat-containing protein 5 ...    46   5e-05
+sp|Q6J1J1|BIRC5_BOVIN Baculoviral IAP repeat-containing protein ...    46   7e-05
+sp|Q8I009|BIRC5_CANFA Baculoviral IAP repeat-containing protein ...    45   8e-05
+
+>sp|P98170|XIAP_HUMAN Baculoviral IAP repeat-containing protein 4
+           OS=Homo sapiens GN=XIAP PE=1 SV=2
+          Length = 497
+
+ Score =  230 bits (587), Expect = 1e-60,   Method: Composition-based stats.
+ Identities = 103/103 (100%), Positives = 103/103 (100%)
+
+Query: 1   STNLPRNPSMADYEARIFTFGTWIYSVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKP 60
+           STNLPRNPSMADYEARIFTFGTWIYSVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKP
+Sbjct: 253 STNLPRNPSMADYEARIFTFGTWIYSVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKP 312
+
+Query: 61  SEDPWEQHAKWYPGCKYLLEQKGQEYINNIHLTHSLEECLVRT 103
+           SEDPWEQHAKWYPGCKYLLEQKGQEYINNIHLTHSLEECLVRT
+Sbjct: 313 SEDPWEQHAKWYPGCKYLLEQKGQEYINNIHLTHSLEECLVRT 355
+
+
+
+ Score = 74.7 bits (182), Expect = 1e-13,   Method: Composition-based stats.
+ Identities = 33/80 (41%), Positives = 48/80 (60%), Gaps = 2/80 (2%)
+
+Query: 2   TNLPRNPSMADYEARIFTFGTW--IYSVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWK 59
+           T  PRNP+M   EAR+ +F  W     +   +LA AG Y  G GD+V+CF CGG L +W+
+Sbjct: 152 TIYPRNPAMYSEEARLKSFQNWPDYAHLTPRELASAGLYYTGIGDQVQCFCCGGKLKNWE 211
+
+Query: 60  PSEDPWEQHAKWYPGCKYLL 79
+           P +  W +H + +P C ++L
+Sbjct: 212 PCDRAWSEHRRHFPNCFFVL 231
+
+
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 20/52 (38%), Positives = 29/52 (55%)
+
+Query: 27 VNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQHAKWYPGCKYL 78
+          V+   LARAGF   GEGD V+CF C   +  W+  +    +H K  P C+++
+Sbjct: 42 VSASTLARAGFLYTGEGDTVRCFSCHAAVDRWQYGDSAVGRHRKVSPNCRFI 93
+
+
+>sp|Q9R0I6|XIAP_RAT Baculoviral IAP repeat-containing protein 4
+           OS=Rattus norvegicus GN=Xiap PE=2 SV=1
+          Length = 496
+
+ Score =  209 bits (533), Expect = 2e-54,   Method: Composition-based stats.
+ Identities = 92/103 (89%), Positives = 99/103 (96%)
+
+Query: 1   STNLPRNPSMADYEARIFTFGTWIYSVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKP 60
+           STN PRNP+MA+Y+ARI TFGTW+YSVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKP
+Sbjct: 252 STNSPRNPAMAEYDARIVTFGTWLYSVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKP 311
+
+Query: 61  SEDPWEQHAKWYPGCKYLLEQKGQEYINNIHLTHSLEECLVRT 103
+           SEDPWEQHAKWYPGCKYLL++KGQEYINNIHLTHSL E +VRT
+Sbjct: 312 SEDPWEQHAKWYPGCKYLLDEKGQEYINNIHLTHSLGESVVRT 354
+
+
+
+ Score = 74.3 bits (181), Expect = 2e-13,   Method: Composition-based stats.
+ Identities = 33/80 (41%), Positives = 48/80 (60%), Gaps = 2/80 (2%)
+
+Query: 2   TNLPRNPSMADYEARIFTFGTW--IYSVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWK 59
+           T  PRNP+M   EAR+ TF  W     ++  +LA AG Y  G  D+V+CF CGG L +W+
+Sbjct: 152 TIYPRNPAMCSEEARLKTFQNWPDYAHLSPRELASAGLYYTGIDDQVQCFCCGGKLKNWE 211
+
+Query: 60  PSEDPWEQHAKWYPGCKYLL 79
+           P +  W +H + +P C ++L
+Sbjct: 212 PCDRAWSEHRRHFPNCFFVL 231
+
+
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 23/65 (35%), Positives = 35/65 (53%), Gaps = 2/65 (3%)
+
+Query: 16 RIFTFGTWIYS--VNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQHAKWYP 73
+          R+ TF  +  S  V+   LARAGF   GEGD V+CF C   +  W+  +    +H +  P
+Sbjct: 29 RLKTFANFPSSSPVSASTLARAGFLYTGEGDTVQCFSCHAAVDRWQYGDSAVGRHRRISP 88
+
+Query: 74 GCKYL 78
+           C+++
+Sbjct: 89 NCRFI 93
+
+
+>sp|Q60989|XIAP_MOUSE Baculoviral IAP repeat-containing protein 4
+           OS=Mus musculus GN=Xiap PE=1 SV=1
+          Length = 496
+
+ Score =  207 bits (528), Expect = 1e-53,   Method: Composition-based stats.
+ Identities = 93/103 (90%), Positives = 97/103 (94%)
+
+Query: 1   STNLPRNPSMADYEARIFTFGTWIYSVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKP 60
+           STN PRNP+MA+YEARI TFGTW  SVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKP
+Sbjct: 252 STNSPRNPAMAEYEARIVTFGTWTSSVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKP 311
+
+Query: 61  SEDPWEQHAKWYPGCKYLLEQKGQEYINNIHLTHSLEECLVRT 103
+           SEDPWEQHAKWYPGCKYLL++KGQEYINNIHLTHSLEE L RT
+Sbjct: 312 SEDPWEQHAKWYPGCKYLLDEKGQEYINNIHLTHSLEESLGRT 354
+
+
+
+ Score = 73.2 bits (178), Expect = 4e-13,   Method: Composition-based stats.
+ Identities = 32/80 (40%), Positives = 47/80 (58%), Gaps = 2/80 (2%)
+
+Query: 2   TNLPRNPSMADYEARIFTFGTW--IYSVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWK 59
+           T  PRNP+M   EAR+ +F  W     +   +LA AG Y  G  D+V+CF CGG L +W+
+Sbjct: 152 TIYPRNPAMCSEEARLKSFQNWPDYAHLTPRELASAGLYYTGADDQVQCFCCGGKLENWE 211
+
+Query: 60  PSEDPWEQHAKWYPGCKYLL 79
+           P +  W +H + +P C ++L
+Sbjct: 212 PCDRAWSEHRRHFPNCFFVL 231
+
+
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 23/65 (35%), Positives = 35/65 (53%), Gaps = 2/65 (3%)
+
+Query: 16 RIFTFGTWIYS--VNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQHAKWYP 73
+          R+ TF  +  S  V+   LARAGF   GEGD V+CF C   +  W+  +    +H +  P
+Sbjct: 29 RLKTFANFPSSSPVSASTLARAGFLYTGEGDTVQCFSCHAAIDRWQYGDSAVGRHRRISP 88
+
+Query: 74 GCKYL 78
+           C+++
+Sbjct: 89 NCRFI 93
+
+
+>sp|Q96P09|BIRC8_HUMAN Baculoviral IAP repeat-containing protein 8
+           OS=Homo sapiens GN=BIRC8 PE=1 SV=1
+          Length = 236
+
+ Score =  177 bits (449), Expect = 2e-44,   Method: Composition-based stats.
+ Identities = 76/94 (80%), Positives = 84/94 (89%)
+
+Query: 10  MADYEARIFTFGTWIYSVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQHA 69
+           M  YEAR+ TFGTW+YSVNKEQLARAGFYA+G+ DKV+CFHCGGGL +WKP EDPWEQHA
+Sbjct: 1   MTGYEARLITFGTWMYSVNKEQLARAGFYAIGQEDKVQCFHCGGGLANWKPKEDPWEQHA 60
+
+Query: 70  KWYPGCKYLLEQKGQEYINNIHLTHSLEECLVRT 103
+           KWYPGCKYLLE+KG EYINNIHLT SLE  LV+T
+Sbjct: 61  KWYPGCKYLLEEKGHEYINNIHLTRSLEGALVQT 94
+
+
+>sp|Q95M72|BIRC8_PANTR Baculoviral IAP repeat-containing protein 8
+           OS=Pan troglodytes GN=BIRC8 PE=2 SV=1
+          Length = 236
+
+ Score =  174 bits (442), Expect = 8e-44,   Method: Composition-based stats.
+ Identities = 75/94 (79%), Positives = 83/94 (88%)
+
+Query: 10  MADYEARIFTFGTWIYSVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQHA 69
+           M  YEAR+ TFGTW+Y VNKEQLARAGFYA+G+ DKV+CFHCGGGL +WKP EDPWEQHA
+Sbjct: 1   MTGYEARLITFGTWMYFVNKEQLARAGFYAIGQEDKVQCFHCGGGLANWKPKEDPWEQHA 60
+
+Query: 70  KWYPGCKYLLEQKGQEYINNIHLTHSLEECLVRT 103
+           KWYPGCKYLLE+KG EYINNIHLT SLE  LV+T
+Sbjct: 61  KWYPGCKYLLEEKGHEYINNIHLTRSLEGALVQT 94
+
+
+>sp|Q95M71|BIRC8_GORGO Baculoviral IAP repeat-containing protein 8
+           OS=Gorilla gorilla gorilla GN=BIRC8 PE=2 SV=1
+          Length = 236
+
+ Score =  172 bits (435), Expect = 5e-43,   Method: Composition-based stats.
+ Identities = 74/94 (78%), Positives = 83/94 (88%)
+
+Query: 10  MADYEARIFTFGTWIYSVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQHA 69
+           M  YEA + TFGTW+YSVNKEQLARAGFYA+G+ DK++CFHCGGGL +WKP EDPWEQHA
+Sbjct: 1   MTGYEAWLITFGTWMYSVNKEQLARAGFYAIGQEDKIQCFHCGGGLANWKPKEDPWEQHA 60
+
+Query: 70  KWYPGCKYLLEQKGQEYINNIHLTHSLEECLVRT 103
+           KWYPGCKYLLE+KG EYINNIHLT SLE  LV+T
+Sbjct: 61  KWYPGCKYLLEEKGHEYINNIHLTRSLEGALVQT 94
+
+
+>sp|Q13489|BIRC3_HUMAN Baculoviral IAP repeat-containing protein 3
+           OS=Homo sapiens GN=BIRC3 PE=1 SV=2
+          Length = 604
+
+ Score =  104 bits (260), Expect = 1e-22,   Method: Composition-based stats.
+ Identities = 51/98 (52%), Positives = 62/98 (63%), Gaps = 4/98 (4%)
+
+Query: 7   NPSMADYEARIFTFGTWIYSV--NKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDP 64
+           N SM  + AR  TF  W  SV  N EQLA AGFY +G  D VKCF C GGL  W+  +DP
+Sbjct: 249 NLSMQTHAARFKTFFNWPSSVLVNPEQLASAGFYYVGNSDDVKCFCCDGGLRCWESGDDP 308
+
+Query: 65  WEQHAKWYPGCKYLLEQKGQEYINNIHLT--HSLEECL 100
+           W QHAKW+P C+YL+  KGQE+I  +  +  H LE+ L
+Sbjct: 309 WVQHAKWFPRCEYLIRIKGQEFIRQVQASYPHLLEQLL 346
+
+
+
+ Score = 72.0 bits (175), Expect = 8e-13,   Method: Composition-based stats.
+ Identities = 29/74 (39%), Positives = 48/74 (64%), Gaps = 1/74 (1%)
+
+Query: 9   SMADYEARIFTFGTWIYS-VNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQ 67
+           +M +  AR+ TF TW  + ++   LA+AGFY +G GD+V CF CGG L++W+P ++   +
+Sbjct: 165 AMNNENARLLTFQTWPLTFLSPTDLAKAGFYYIGPGDRVACFACGGKLSNWEPKDNAMSE 224
+
+Query: 68  HAKWYPGCKYLLEQ 81
+           H + +P C ++  Q
+Sbjct: 225 HLRHFPKCPFIENQ 238
+
+
+
+ Score = 65.1 bits (157), Expect = 1e-10,   Method: Composition-based stats.
+ Identities = 30/67 (44%), Positives = 41/67 (61%), Gaps = 3/67 (4%)
+
+Query: 27  VNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQHAKWYPGCKYLLEQKGQEY 86
+           V++  LARAGFY  G  DKVKCF CG  L +WK  + P E+H K YP C+++   +    
+Sbjct: 45  VSERSLARAGFYYTGVNDKVKCFCCGLMLDNWKRGDSPTEKHKKLYPSCRFV---QSLNS 101
+
+Query: 87  INNIHLT 93
+           +NN+  T
+Sbjct: 102 VNNLEAT 108
+
+
+>sp|O62640|PIAP_PIG Putative inhibitor of apoptosis OS=Sus scrofa
+           GN=PIAP PE=2 SV=1
+          Length = 358
+
+ Score =  103 bits (256), Expect = 3e-22,   Method: Composition-based stats.
+ Identities = 50/98 (51%), Positives = 63/98 (64%), Gaps = 4/98 (4%)
+
+Query: 7   NPSMADYEARIFTFGTWIYS--VNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDP 64
+           N SM  Y AR  TF  W  S  V+ EQLA AGFY +G  D VKCF C GGL  W+  +DP
+Sbjct: 84  NLSMQTYAARFKTFCNWPSSIPVHPEQLASAGFYYMGHSDDVKCFCCDGGLRCWESGDDP 143
+
+Query: 65  WEQHAKWYPGCKYLLEQKGQEYINNIHLT--HSLEECL 100
+           W +HAKW+P C+YL+  KGQE+I+ +  +  H LE+ L
+Sbjct: 144 WVEHAKWFPRCEYLIRIKGQEFISRVQASYPHLLEQLL 181
+
+
+
+ Score = 68.9 bits (167), Expect = 8e-12,   Method: Composition-based stats.
+ Identities = 28/67 (41%), Positives = 43/67 (64%), Gaps = 1/67 (1%)
+
+Query: 16 RIFTFGTWIYS-VNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQHAKWYPG 74
+          R+ TF  W  + ++   LA+AGFY +G GD+V CF CGG L++W+P +D   +H + +P 
+Sbjct: 7  RLLTFQMWPLTFLSPADLAKAGFYYIGPGDRVACFACGGKLSNWEPKDDAMTEHLRHFPN 66
+
+Query: 75 CKYLLEQ 81
+          C +L  Q
+Sbjct: 67 CPFLGNQ 73
+
+
+>sp|O08863|BIRC3_MOUSE Baculoviral IAP repeat-containing protein 3
+           OS=Mus musculus GN=Birc3 PE=1 SV=1
+          Length = 600
+
+ Score =  101 bits (251), Expect = 1e-21,   Method: Composition-based stats.
+ Identities = 48/98 (48%), Positives = 62/98 (63%), Gaps = 4/98 (4%)
+
+Query: 7   NPSMADYEARIFTFGTWIYS--VNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDP 64
+           N SM  + ARI TF  W  S  V+ ++LA AGFY  G  D VKCF C GGL  W+  +DP
+Sbjct: 247 NLSMQTHAARIRTFSNWPSSALVHSQELASAGFYYTGHSDDVKCFCCDGGLRCWESGDDP 306
+
+Query: 65  WEQHAKWYPGCKYLLEQKGQEYINNIH--LTHSLEECL 100
+           W +HAKW+P C+YLL  KGQE+++ +     H LE+ L
+Sbjct: 307 WVEHAKWFPRCEYLLRIKGQEFVSQVQAGYPHLLEQLL 344
+
+
+
+ Score = 70.5 bits (171), Expect = 3e-12,   Method: Composition-based stats.
+ Identities = 35/96 (36%), Positives = 59/96 (61%), Gaps = 5/96 (5%)
+
+Query: 5   PRNPSMADYEARIFTFGTWIYS-VNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSED 63
+           P + +M   +AR+ T+ TW  S ++  +LA+AGFY +G GD+V CF C G L++W+  +D
+Sbjct: 159 PYHFAMNTEKARLLTYETWPLSFLSPAKLAKAGFYYIGPGDRVACFACDGKLSNWERKDD 218
+
+Query: 64  PWEQHAKWYPGCKYL--LEQKGQEY-INNIHL-THS 95
+              +H + +P C +L  L Q    Y ++N+ + TH+
+Sbjct: 219 AMSEHQRHFPSCPFLKDLGQSASRYTVSNLSMQTHA 254
+
+
+
+ Score = 64.3 bits (155), Expect = 2e-10,   Method: Composition-based stats.
+ Identities = 27/52 (51%), Positives = 34/52 (65%)
+
+Query: 27 VNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQHAKWYPGCKYL 78
+          V++  LARAGFY  G  DKVKCF CG  L +WK  + P E+H K YP C ++
+Sbjct: 43 VSERSLARAGFYYTGANDKVKCFCCGLMLDNWKQGDSPMEKHRKLYPSCNFV 94
+
+
+>sp|Q13490|BIRC2_HUMAN Baculoviral IAP repeat-containing protein 2
+           OS=Homo sapiens GN=BIRC2 PE=1 SV=2
+          Length = 618
+
+ Score =  100 bits (248), Expect = 3e-21,   Method: Composition-based stats.
+ Identities = 48/98 (48%), Positives = 62/98 (63%), Gaps = 4/98 (4%)
+
+Query: 7   NPSMADYEARIFTFGTWIYSV--NKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDP 64
+           N SM  + AR+ TF  W  SV    EQLA AGFY +G  D VKCF C GGL  W+  +DP
+Sbjct: 263 NLSMQTHAARMRTFMYWPSSVPVQPEQLASAGFYYVGRNDDVKCFCCDGGLRCWESGDDP 322
+
+Query: 65  WEQHAKWYPGCKYLLEQKGQEYINNIH--LTHSLEECL 100
+           W +HAKW+P C++L+  KGQE+++ I     H LE+ L
+Sbjct: 323 WVEHAKWFPRCEFLIRMKGQEFVDEIQGRYPHLLEQLL 360
+
+
+
+ Score = 76.6 bits (187), Expect = 4e-14,   Method: Composition-based stats.
+ Identities = 31/75 (41%), Positives = 49/75 (65%), Gaps = 1/75 (1%)
+
+Query: 5   PRNPSMADYEARIFTFGTWIYS-VNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSED 63
+           P + +M+  EAR  T+  W  + ++  +LARAGFY +G GD+V CF CGG L++W+P +D
+Sbjct: 176 PYSYAMSTEEARFLTYHMWPLTFLSPSELARAGFYYIGPGDRVACFACGGKLSNWEPKDD 235
+
+Query: 64  PWEQHAKWYPGCKYL 78
+              +H + +P C +L
+Sbjct: 236 AMSEHRRHFPNCPFL 250
+
+
+
+ Score = 60.8 bits (146), Expect = 2e-09,   Method: Composition-based stats.
+ Identities = 29/82 (35%), Positives = 43/82 (52%), Gaps = 5/82 (6%)
+
+Query: 2   TNLPRNPSMADYEARIFTFGTWI-----YSVNKEQLARAGFYALGEGDKVKCFHCGGGLT 56
+           TN  +     D+   ++   T+        V++  LARAGFY  G  DKVKCF CG  L 
+Sbjct: 32  TNSNKQKMKYDFSCELYRMSTYSTFPAGVPVSERSLARAGFYYTGVNDKVKCFCCGLMLD 91
+
+Query: 57  DWKPSEDPWEQHAKWYPGCKYL 78
+           +WK  + P ++H + YP C ++
+Sbjct: 92  NWKLGDSPIQKHKQLYPSCSFI 113
+
+
+>sp|Q62210|BIRC2_MOUSE Baculoviral IAP repeat-containing protein 2
+           OS=Mus musculus GN=Birc2 PE=1 SV=1
+          Length = 612
+
+ Score =  100 bits (248), Expect = 3e-21,   Method: Composition-based stats.
+ Identities = 48/98 (48%), Positives = 62/98 (63%), Gaps = 4/98 (4%)
+
+Query: 7   NPSMADYEARIFTFGTWIYSV--NKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDP 64
+           N SM  + AR+ TF  W  SV    EQLA AGFY +   D VKCF C GGL  W+P +DP
+Sbjct: 256 NLSMQTHSARLRTFLYWPPSVPVQPEQLASAGFYYVDRNDDVKCFCCDGGLRCWEPGDDP 315
+
+Query: 65  WEQHAKWYPGCKYLLEQKGQEYINNIH--LTHSLEECL 100
+           W +HAKW+P C++L+  KGQE+++ I     H LE+ L
+Sbjct: 316 WIEHAKWFPRCEFLIRMKGQEFVDEIQARYPHLLEQLL 353
+
+
+
+ Score = 76.6 bits (187), Expect = 3e-14,   Method: Composition-based stats.
+ Identities = 32/75 (42%), Positives = 49/75 (65%), Gaps = 1/75 (1%)
+
+Query: 5   PRNPSMADYEARIFTFGTWIYS-VNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSED 63
+           P + +M+  EAR  T+  W  S ++  +LARAGFY +G GD+V CF CGG L++W+P +D
+Sbjct: 169 PCSYAMSTEEARFLTYSMWPLSFLSPAELARAGFYYIGPGDRVACFACGGKLSNWEPKDD 228
+
+Query: 64  PWEQHAKWYPGCKYL 78
+              +H + +P C +L
+Sbjct: 229 AMSEHRRHFPHCPFL 243
+
+
+
+ Score = 62.8 bits (151), Expect = 5e-10,   Method: Composition-based stats.
+ Identities = 26/52 (50%), Positives = 35/52 (67%)
+
+Query: 27  VNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQHAKWYPGCKYL 78
+           V++  LARAGFY  G  DKVKCF CG  L +WK  + P E+H ++YP C ++
+Sbjct: 62  VSERSLARAGFYYTGVNDKVKCFCCGLMLDNWKQGDSPVEKHRQFYPSCSFV 113
+
+
+>sp|A1E2V0|BIRC3_CANFA Baculoviral IAP repeat-containing protein 3
+           OS=Canis familiaris GN=BIRC3 PE=2 SV=1
+          Length = 604
+
+ Score = 99.0 bits (245), Expect = 6e-21,   Method: Composition-based stats.
+ Identities = 49/98 (50%), Positives = 61/98 (62%), Gaps = 4/98 (4%)
+
+Query: 7   NPSMADYEARIFTFGTWI--YSVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDP 64
+           N SM    AR  TF  W     V+ EQLA AGFY +G  D VKCF C GGL  W+  +DP
+Sbjct: 249 NLSMQTLAARSRTFCNWPPRAPVHPEQLASAGFYYMGHSDDVKCFCCDGGLRCWESGDDP 308
+
+Query: 65  WEQHAKWYPGCKYLLEQKGQEYINNIHLT--HSLEECL 100
+           W +HAKW+P C+YL+  KGQE+I+ I  +  H LE+ L
+Sbjct: 309 WVEHAKWFPRCEYLIRIKGQEFISQIQASYPHLLEQLL 346
+
+
+
+ Score = 68.9 bits (167), Expect = 8e-12,   Method: Composition-based stats.
+ Identities = 31/78 (39%), Positives = 45/78 (57%), Gaps = 1/78 (1%)
+
+Query: 5   PRNPSMADYEARIFTFGTWIYSVN-KEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSED 63
+           P   +M   E R+ TF  W  +      LARAGFY +G GD+V CF CGG L++W+P +D
+Sbjct: 161 PSCVTMKSEEDRLCTFQGWPLAFPLPSALARAGFYYVGPGDRVACFACGGKLSNWEPDDD 220
+
+Query: 64  PWEQHAKWYPGCKYLLEQ 81
+              +H + +P C ++  Q
+Sbjct: 221 ALSEHLRHFPDCPFVEGQ 238
+
+
+
+ Score = 57.0 bits (136), Expect = 3e-08,   Method: Composition-based stats.
+ Identities = 23/52 (44%), Positives = 32/52 (61%)
+
+Query: 27 VNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQHAKWYPGCKYL 78
+          V++  LARAGFY  G  D+V+CF CG  L +WK  + P  +H   YP C ++
+Sbjct: 45 VSERSLARAGFYYTGAKDRVRCFCCGLMLDNWKAGDSPTGKHRNLYPSCSFI 96
+
+
+>sp|Q90660|BIR_CHICK Inhibitor of apoptosis protein OS=Gallus gallus
+           GN=ITA PE=2 SV=1
+          Length = 611
+
+ Score = 97.4 bits (241), Expect = 2e-20,   Method: Composition-based stats.
+ Identities = 43/87 (49%), Positives = 56/87 (64%), Gaps = 2/87 (2%)
+
+Query: 7   NPSMADYEARIFTFGTWI--YSVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDP 64
+           N +M  +EAR+ TF  W     V  EQLA AGFY +G  D VKCF C GGL  W+  +DP
+Sbjct: 256 NVTMQTHEARVKTFINWPTRIPVQPEQLADAGFYYVGRNDDVKCFCCDGGLRCWESGDDP 315
+
+Query: 65  WEQHAKWYPGCKYLLEQKGQEYINNIH 91
+           W +HAKW+P C+YLL  KG E+++ + 
+Sbjct: 316 WIEHAKWFPRCEYLLRVKGGEFVSQVQ 342
+
+
+
+ Score = 66.2 bits (160), Expect = 5e-11,   Method: Composition-based stats.
+ Identities = 37/89 (41%), Positives = 54/89 (60%), Gaps = 6/89 (6%)
+
+Query: 16  RIFTFGTWIYSV--NKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQHAKWYP 73
+           R+ TF T+  +V  ++ +LARAGFY  G  DKVKCF CG  L +W+P ++  E+H + YP
+Sbjct: 33  RMSTFSTFPVNVPVSERRLARAGFYYTGVQDKVKCFSCGLVLDNWQPGDNAMEKHKQVYP 92
+
+Query: 74  GCKYLLEQKGQEYINNIHL-THSLEECLV 101
+            C ++   +    +NN+ L THS    LV
+Sbjct: 93  SCSFV---QNMLSLNNLGLSTHSAFSPLV 118
+
+
+
+ Score = 63.2 bits (152), Expect = 4e-10,   Method: Composition-based stats.
+ Identities = 32/100 (32%), Positives = 55/100 (55%), Gaps = 2/100 (2%)
+
+Query: 6   RNPSMADYEARIFTFGTW-IYSVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDP 64
+           +NPSM+  EAR+ T   W +  +   ++A+AG   LG  DKV C +CG  L++W+P ++ 
+Sbjct: 169 QNPSMSTEEARLRTSHAWPLMCLWPAEVAKAGLDDLGTADKVACVNCGVKLSNWEPKDNA 228
+
+Query: 65  WEQHAKWYPGCKYLLE-QKGQEYINNIHLTHSLEECLVRT 103
+             +H + +P C ++    + Q   N  ++T    E  V+T
+Sbjct: 229 MSEHRRHFPNCPFVENLMRDQPSFNVSNVTMQTHEARVKT 268
+
+
+>sp|Q96CA5|BIRC7_HUMAN Baculoviral IAP repeat-containing protein 7
+           OS=Homo sapiens GN=BIRC7 PE=1 SV=2
+          Length = 298
+
+ Score = 94.0 bits (232), Expect = 2e-19,   Method: Composition-based stats.
+ Identities = 42/93 (45%), Positives = 59/93 (63%), Gaps = 2/93 (2%)
+
+Query: 5   PRNPSMADYEARIFTFGTWIYS--VNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSE 62
+           P  P M   E R+ +F  W  +  V  E LA AGF+  G  DKV+CF C GGL  WK  +
+Sbjct: 79  PAFPGMGSEELRLASFYDWPLTAEVPPELLAAAGFFHTGHQDKVRCFFCYGGLQSWKRGD 138
+
+Query: 63  DPWEQHAKWYPGCKYLLEQKGQEYINNIHLTHS 95
+           DPW +HAKW+P C++LL  KG+++++++  THS
+Sbjct: 139 DPWTEHAKWFPSCQFLLRSKGRDFVHSVQETHS 171
+
+
+>sp|P41437|IAP3_NPVOP Apoptosis inhibitor 3 OS=Orgyia pseudotsugata
+           multicapsid polyhedrosis virus GN=IAP3 PE=1 SV=1
+          Length = 268
+
+ Score = 93.2 bits (230), Expect = 4e-19,   Method: Composition-based stats.
+ Identities = 42/98 (42%), Positives = 62/98 (63%), Gaps = 6/98 (6%)
+
+Query: 7   NPSMADYEARIFTFGTWIYSVNK--EQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDP 64
+           +P  A   AR+ TF  W   + +  E+LA AGF+  G+GDK +CF C GGL DW+P + P
+Sbjct: 105 HPQYATEAARLRTFAEWPRGLKQRPEELAEAGFFYTGQGDKTRCFCCDGGLKDWEPDDAP 164
+
+Query: 65  WEQHAKWYPGCKYLLEQKGQEYINNIHLTHSLEECLVR 102
+           W+QHA+WY  C+Y+L  KG++++  +      E C+VR
+Sbjct: 165 WQQHARWYDRCEYVLLVKGRDFVQRV----MTEACVVR 198
+
+
+
+ Score = 55.5 bits (132), Expect = 8e-08,   Method: Composition-based stats.
+ Identities = 24/70 (34%), Positives = 40/70 (57%), Gaps = 1/70 (1%)
+
+Query: 10 MADYEARIFTFGTW-IYSVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQH 68
+          M +  AR+ T+  W +  +   ++A +GFY LG GD+V+C  C   +T+W   +DP   H
+Sbjct: 15 MKNKAARLGTYTNWPVQFLEPSRMAASGFYYLGRGDEVRCAFCKVEITNWVRGDDPETDH 74
+
+Query: 69 AKWYPGCKYL 78
+           +W P C ++
+Sbjct: 75 KRWAPQCPFV 84
+
+
+>sp|Q24306|IAP1_DROME Apoptosis 1 inhibitor OS=Drosophila
+           melanogaster GN=th PE=1 SV=2
+          Length = 438
+
+ Score = 91.7 bits (226), Expect = 1e-18,   Method: Composition-based stats.
+ Identities = 42/97 (43%), Positives = 59/97 (60%), Gaps = 2/97 (2%)
+
+Query: 4   LPRNPSMADYEARIFTFGTWIYSVNKE--QLARAGFYALGEGDKVKCFHCGGGLTDWKPS 61
+            P+ P  A   AR+ TF  W  ++ ++  QLA AGF+  G GD+V+CF CGGGL DW  +
+Sbjct: 217 FPQYPEYAIETARLRTFEAWPRNLKQKPHQLAEAGFFYTGVGDRVRCFSCGGGLMDWNDN 276
+
+Query: 62  EDPWEQHAKWYPGCKYLLEQKGQEYINNIHLTHSLEE 98
+           ++PWEQHA W   C+++   KGQ YI+ +     L E
+Sbjct: 277 DEPWEQHALWLSQCRFVKLMKGQLYIDTVAAKPVLAE 313
+
+
+
+ Score = 58.2 bits (139), Expect = 1e-08,   Method: Composition-based stats.
+ Identities = 29/77 (37%), Positives = 39/77 (50%), Gaps = 1/77 (1%)
+
+Query: 3   NLPRNPSMADYEARIFTFGTWIYS-VNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPS 61
+           N  R   +   E R+ TF  W    ++K QLA+ G Y    GDKVKCF CG  +  W+  
+Sbjct: 34  NKTRMNDLNREETRLKTFTDWPLDWLDKRQLAQTGMYFTHAGDKVKCFFCGVEIGCWEQE 93
+
+Query: 62  EDPWEQHAKWYPGCKYL 78
+           + P  +H +W P C  L
+Sbjct: 94  DQPVPEHQRWSPNCPLL 110
+
+
+>sp|P41436|IAP_GVCP Apoptosis inhibitor IAP OS=Cydia pomonella
+           granulosis virus GN=IAP PE=4 SV=1
+          Length = 275
+
+ Score = 87.4 bits (215), Expect = 2e-17,   Method: Composition-based stats.
+ Identities = 37/88 (42%), Positives = 54/88 (61%), Gaps = 2/88 (2%)
+
+Query: 5   PRNPSMADYEARIFTFGTWIYSVNK--EQLARAGFYALGEGDKVKCFHCGGGLTDWKPSE 62
+           P +P  A   AR+ +F  W   + +  EQ+A AGF+  G GD  KCF+C GGL DW+P +
+Sbjct: 100 PAHPKYAHEAARVKSFHNWPRCMKQRPEQMADAGFFYTGYGDNTKCFYCDGGLKDWEPED 159
+
+Query: 63  DPWEQHAKWYPGCKYLLEQKGQEYINNI 90
+            PWEQH +W+  C Y+   KG++Y+  +
+Sbjct: 160 VPWEQHVRWFDRCAYVQLVKGRDYVQKV 187
+
+
+
+ Score = 57.8 bits (138), Expect = 1e-08,   Method: Composition-based stats.
+ Identities = 27/66 (40%), Positives = 37/66 (56%), Gaps = 1/66 (1%)
+
+Query: 14 EARIFTFGTWIYS-VNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQHAKWY 72
+          E R+ TF  W  S ++ E +A+ GFY LG  D+V+C  C   +  WK  EDP   H KW 
+Sbjct: 8  EVRLNTFEKWPVSFLSPETMAKNGFYYLGRSDEVRCAFCKVEIMRWKEGEDPAADHKKWA 67
+
+Query: 73 PGCKYL 78
+          P C ++
+Sbjct: 68 PQCPFV 73
+
+
+>sp|Q24307|IAP2_DROME Apoptosis 2 inhibitor OS=Drosophila
+           melanogaster GN=Iap2 PE=2 SV=3
+          Length = 498
+
+ Score = 82.8 bits (203), Expect = 5e-16,   Method: Composition-based stats.
+ Identities = 39/94 (41%), Positives = 55/94 (58%), Gaps = 2/94 (2%)
+
+Query: 2   TNLPRNPSMADYEARIFTFGTWIYSVNK--EQLARAGFYALGEGDKVKCFHCGGGLTDWK 59
+           T LP  P  A  +AR+ TF  W  S  +    LA+AG Y    GD+V+CFHC  GL  W+
+Sbjct: 201 TTLPLRPKYACVDARLRTFTDWPISNIQPASALAQAGLYYQKIGDQVRCFHCNIGLRSWQ 260
+
+Query: 60  PSEDPWEQHAKWYPGCKYLLEQKGQEYINNIHLT 93
+             ++PW +HAKW P C+++L  KG  Y++ +  T
+Sbjct: 261 KEDEPWFEHAKWSPKCQFVLLAKGPAYVSEVLAT 294
+
+
+
+ Score = 52.8 bits (125), Expect = 5e-07,   Method: Composition-based stats.
+ Identities = 22/61 (36%), Positives = 37/61 (60%), Gaps = 1/61 (1%)
+
+Query: 16  RIFTFGTWIY-SVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQHAKWYPG 74
+           R+ TF  W   ++  + LA+AGFY L   D VKC  C G +  W+ +++ +E+H +++P 
+Sbjct: 116 RLVTFKDWPNPNITPQALAKAGFYYLNRLDHVKCVWCNGVIAKWEKNDNAFEEHKRFFPQ 175
+
+Query: 75  C 75
+           C
+Sbjct: 176 C 176
+
+
+>sp|Q13075|BIRC1_HUMAN Baculoviral IAP repeat-containing protein 1
+           OS=Homo sapiens GN=NAIP PE=1 SV=3
+          Length = 1403
+
+ Score = 78.6 bits (192), Expect = 8e-15,   Method: Composition-based stats.
+ Identities = 33/77 (42%), Positives = 48/77 (62%), Gaps = 3/77 (3%)
+
+Query: 14  EARIFTFGTWIYSVNKEQ---LARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQHAK 70
+           EAR+ +F  W + V       L+ AGF   G+ D V+CF CGG L +W+  +DPW++HAK
+Sbjct: 160 EARLASFRNWPFYVQGISPCVLSEAGFVFTGKQDTVQCFSCGGCLGNWEEGDDPWKEHAK 219
+
+Query: 71  WYPGCKYLLEQKGQEYI 87
+           W+P C++L  +K  E I
+Sbjct: 220 WFPKCEFLRSKKSSEEI 236
+
+
+
+ Score = 57.8 bits (138), Expect = 2e-08,   Method: Composition-based stats.
+ Identities = 29/79 (36%), Positives = 42/79 (53%), Gaps = 3/79 (3%)
+
+Query: 7   NPSMADYEA-RIFTFGTWI--YSVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSED 63
+           N S+  YE  R+ +F  W    +V    LA+AG +  G  D V+CF CGG L  W+  +D
+Sbjct: 271 NDSIFAYEELRLDSFKDWPRESAVGVAALAKAGLFYTGIKDIVQCFSCGGCLEKWQEGDD 330
+
+Query: 64  PWEQHAKWYPGCKYLLEQK 82
+           P + H + +P C +L   K
+Sbjct: 331 PLDDHTRCFPNCPFLQNMK 349
+
+
+>sp|Q9JIB6|BIR1F_MOUSE Baculoviral IAP repeat-containing protein 1f
+           OS=Mus musculus GN=Naip6 PE=2 SV=1
+          Length = 1403
+
+ Score = 77.8 bits (190), Expect = 1e-14,   Method: Composition-based stats.
+ Identities = 32/77 (41%), Positives = 48/77 (62%), Gaps = 3/77 (3%)
+
+Query: 14  EARIFTFGTW---IYSVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQHAK 70
+           EAR+ +F  W    +  +   L+ AGF   G+ D V+CF CGG L +W+  +DPW++HAK
+Sbjct: 160 EARLESFEDWPFYAHGTSPRALSAAGFVFTGKRDTVQCFSCGGSLGNWEEGDDPWKEHAK 219
+
+Query: 71  WYPGCKYLLEQKGQEYI 87
+           W+P C++L  +K  E I
+Sbjct: 220 WFPKCEFLQSKKSSEEI 236
+
+
+
+ Score = 62.8 bits (151), Expect = 5e-10,   Method: Composition-based stats.
+ Identities = 34/88 (38%), Positives = 45/88 (51%), Gaps = 3/88 (3%)
+
+Query: 14  EARIFTFGTWIYS--VNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQHAKW 71
+           E R+  F  W     V  E L RAGF+  G+ D V+CF CGG L  W   +DP E H K+
+Sbjct: 279 ELRMDMFKDWPQESPVGFEALVRAGFFYTGKKDIVRCFSCGGCLEKWAEGDDPMEDHIKF 338
+
+Query: 72  YPGCKYLLEQKGQ-EYINNIHLTHSLEE 98
+           +P C +L   K   E I  +   ++L E
+Sbjct: 339 FPECVFLQTLKSSAEVIPTLQSQYALPE 366
+
+
+>sp|Q9R016|BIR1E_MOUSE Baculoviral IAP repeat-containing protein 1e
+           OS=Mus musculus GN=Naip5 PE=1 SV=2
+          Length = 1403
+
+ Score = 77.8 bits (190), Expect = 2e-14,   Method: Composition-based stats.
+ Identities = 32/77 (41%), Positives = 48/77 (62%), Gaps = 3/77 (3%)
+
+Query: 14  EARIFTFGTW---IYSVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQHAK 70
+           EAR+ +F  W    +  +   L+ AGF   G+ D V+CF CGG L +W+  +DPW++HAK
+Sbjct: 160 EARLESFEDWPFYAHGTSPRVLSAAGFVFTGKRDTVQCFSCGGSLGNWEEGDDPWKEHAK 219
+
+Query: 71  WYPGCKYLLEQKGQEYI 87
+           W+P C++L  +K  E I
+Sbjct: 220 WFPKCEFLQSKKSSEEI 236
+
+
+
+ Score = 65.1 bits (157), Expect = 1e-10,   Method: Composition-based stats.
+ Identities = 35/91 (38%), Positives = 47/91 (51%), Gaps = 3/91 (3%)
+
+Query: 11  ADYEARIFTFGTWIYS--VNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQH 68
+           A+ E R+  F  W     V  E L RAGF+  G+ D V+CF CGG L  W   +DP E H
+Sbjct: 276 ANEELRMDMFKDWPQESPVGVEALVRAGFFYTGKKDIVRCFSCGGCLEKWAEGDDPMEDH 335
+
+Query: 69  AKWYPGCKYLLEQKGQ-EYINNIHLTHSLEE 98
+            K++P C +L   K   E I  +   ++L E
+Sbjct: 336 IKFFPECVFLQTLKSSAEVIPTLQSQYALPE 366
+
+
+>sp|Q9QWK5|BIR1A_MOUSE Baculoviral IAP repeat-containing protein 1a
+           OS=Mus musculus GN=Naip1 PE=2 SV=2
+          Length = 1403
+
+ Score = 77.4 bits (189), Expect = 2e-14,   Method: Composition-based stats.
+ Identities = 32/77 (41%), Positives = 48/77 (62%), Gaps = 3/77 (3%)
+
+Query: 14  EARIFTFGTW---IYSVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQHAK 70
+           EAR+ +F  W    +  +   L+ AGF   G+ D V+CF CGG L +W+  +DPW++HAK
+Sbjct: 160 EARLESFEDWPFYAHGTSPRVLSAAGFVFTGKRDTVQCFSCGGSLGNWEEGDDPWKEHAK 219
+
+Query: 71  WYPGCKYLLEQKGQEYI 87
+           W+P C++L  +K  E I
+Sbjct: 220 WFPKCEFLQSKKSSEEI 236
+
+
+
+ Score = 54.3 bits (129), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 31/96 (32%), Positives = 49/96 (51%), Gaps = 3/96 (3%)
+
+Query: 11  ADYEARIFTFGTWIYS--VNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQH 68
+           A+ E R+ TF  W +   V  + L RAG +  G+   V+CF CGG +      +DP ++H
+Sbjct: 276 ANEELRMDTFKDWPHESPVAVDALVRAGLFYTGKKGIVQCFSCGGCMEKCTEGDDPIQEH 335
+
+Query: 69  AKWYPGCKYLLEQKGQEYINNIHLTH-SLEECLVRT 103
+            K++P C +L   K    +    L+H +L E +  T
+Sbjct: 336 NKFFPNCIFLQTPKSSAEVIPALLSHCALPEAMETT 371
+
+
+>sp|Q9JIB3|BIR1G_MOUSE Baculoviral IAP repeat-containing protein 1g
+           OS=Mus musculus GN=Naip7 PE=2 SV=1
+          Length = 1402
+
+ Score = 77.4 bits (189), Expect = 2e-14,   Method: Composition-based stats.
+ Identities = 32/77 (41%), Positives = 48/77 (62%), Gaps = 3/77 (3%)
+
+Query: 14  EARIFTFGTW---IYSVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQHAK 70
+           EAR+ +F  W    +  +   L+ AGF   G+ D V+CF CGG L +W+  +DPW++HAK
+Sbjct: 160 EARLESFEDWPFYAHGTSPRVLSAAGFVFTGKRDTVQCFSCGGSLGNWEEGDDPWKEHAK 219
+
+Query: 71  WYPGCKYLLEQKGQEYI 87
+           W+P C++L  +K  E I
+Sbjct: 220 WFPKCEFLQSKKSSEEI 236
+
+
+
+ Score = 64.7 bits (156), Expect = 2e-10,   Method: Composition-based stats.
+ Identities = 35/91 (38%), Positives = 47/91 (51%), Gaps = 3/91 (3%)
+
+Query: 11  ADYEARIFTFGTWIYS--VNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQH 68
+           A+ E R+  F  W     V  E L RAGF+  G+ D V+CF CGG L  W   +DP E H
+Sbjct: 276 ANEELRMDMFKDWPQESPVGVEALVRAGFFYTGKKDIVRCFSCGGCLEKWAEGDDPMEDH 335
+
+Query: 69  AKWYPGCKYLLEQKGQ-EYINNIHLTHSLEE 98
+            K++P C +L   K   E I  +   ++L E
+Sbjct: 336 IKFFPECVFLQTLKSSAEVIPTLQSQYALPE 366
+
+
+>sp|Q9QUK4|BIR1B_MOUSE Baculoviral IAP repeat-containing protein 1b
+           OS=Mus musculus GN=Naip2 PE=2 SV=1
+          Length = 1447
+
+ Score = 76.3 bits (186), Expect = 5e-14,   Method: Composition-based stats.
+ Identities = 32/77 (41%), Positives = 48/77 (62%), Gaps = 3/77 (3%)
+
+Query: 14  EARIFTFGTW---IYSVNKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQHAK 70
+           EAR+ +F  W    +  +   L+ AGF   G+ D V+CF CGG L +W+  +DPW++HAK
+Sbjct: 160 EARLESFEDWPFYAHGTSPRVLSAAGFVFTGKRDTVQCFSCGGCLGNWEEGDDPWKEHAK 219
+
+Query: 71  WYPGCKYLLEQKGQEYI 87
+           W+P C++L  +K  E I
+Sbjct: 220 WFPKCEFLQSKKSPEEI 236
+
+
+
+ Score = 58.2 bits (139), Expect = 1e-08,   Method: Composition-based stats.
+ Identities = 26/70 (37%), Positives = 39/70 (55%), Gaps = 2/70 (2%)
+
+Query: 11  ADYEARIFTFGTWIYSVNK--EQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQH 68
+           A+ E R+ TF  W +      E L +AG +  G+ D V+CF CGG +  W   ++P E H
+Sbjct: 276 ANEELRMDTFKDWPHESPGAVEALVKAGLFYTGKRDIVQCFSCGGCMEKWAEGDNPIEDH 335
+
+Query: 69  AKWYPGCKYL 78
+            K++P C +L
+Sbjct: 336 TKFFPNCVFL 345
+
+
+>sp|P47732|ZFP_IIV6 Zinc finger protein OS=Invertebrate iridescent
+          virus 6 PE=4 SV=2
+          Length = 208
+
+ Score = 63.2 bits (152), Expect = 4e-10,   Method: Composition-based stats.
+ Identities = 29/67 (43%), Positives = 44/67 (65%), Gaps = 2/67 (2%)
+
+Query: 6  RNPSMADYEARIFTFGTWIYSV--NKEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSED 63
+          +N   A Y+ R+ +F  W   +  +KEQL+RAGF  L  GD+V+CF+C   L +WK S++
+Sbjct: 30 KNLPFASYDERLNSFQNWPIQLLPSKEQLSRAGFIYLNIGDQVQCFYCDLKLKEWKRSDN 89
+
+Query: 64 PWEQHAK 70
+          P+E+H K
+Sbjct: 90 PFEEHKK 96
+
+
+>sp|P41435|IAP1_NPVAC Apoptosis inhibitor 1 OS=Autographa
+           californica nuclear polyhedrosis virus GN=IAP1 PE=4 SV=1
+          Length = 286
+
+ Score = 60.5 bits (145), Expect = 2e-09,   Method: Composition-based stats.
+ Identities = 30/89 (33%), Positives = 52/89 (58%), Gaps = 4/89 (4%)
+
+Query: 10  MADYEARIFTFGTWIYSVNKE---QLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWE 66
+           M++ ++R+ TF  +  +  ++    +A AG +  G GD+  CF C   + DW  +ED W+
+Sbjct: 128 MSNLQSRMDTFVNFWPAALRDMITNIAEAGLFYTGRGDETVCFFCDCCVRDWHTNEDTWQ 187
+
+Query: 67  QHAKWYPGCKYLLEQKGQEYI-NNIHLTH 94
+           +HA   P C ++L  KG+E+  N+I +TH
+Sbjct: 188 RHAAENPQCYFVLSVKGKEFCQNSITVTH 216
+
+
+>sp|O10296|IAP1_NPVOP Apoptosis inhibitor 1 OS=Orgyia pseudotsugata
+           multicapsid polyhedrosis virus GN=IAP1 PE=4 SV=1
+          Length = 275
+
+ Score = 57.8 bits (138), Expect = 2e-08,   Method: Composition-based stats.
+ Identities = 28/82 (34%), Positives = 43/82 (52%), Gaps = 2/82 (2%)
+
+Query: 10  MADYEARIFTFGTWIYSVN--KEQLARAGFYALGEGDKVKCFHCGGGLTDWKPSEDPWEQ 67
+           +A   AR  TF  W  ++N     +A AG +    GD+  CF C   + DW P +DPW++
+Sbjct: 123 LAHPSARRATFDHWPAALNALTHDIAEAGMFHTMLGDETACFFCDCRVRDWLPGDDPWQR 182
+
+Query: 68  HAKWYPGCKYLLEQKGQEYINN 89
+           HA   P C +++  KG  + N+
+Sbjct: 183 HALANPQCYFVVCVKGDGFCNS 204
+
+
+>sp|Q9JHY7|BIRC5_RAT Baculoviral IAP repeat-containing protein 5
+          OS=Rattus norvegicus GN=Birc5 PE=2 SV=1
+          Length = 142
+
+ Score = 53.9 bits (128), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 33/92 (35%), Positives = 46/92 (50%), Gaps = 7/92 (7%)
+
+Query: 1  STNLPRNPSMADYEARIFTFGTWIY----SVNKEQLARAGFY---ALGEGDKVKCFHCGG 53
+          +T LP    M   + RI+TF  W +    S   E++A AGF       E D  +CF C  
+Sbjct: 3  ATALPPIWQMYLKDHRIYTFKNWPFLEDCSCTPERMAEAGFIHCPTENEPDLAQCFFCFK 62
+
+Query: 54 GLTDWKPSEDPWEQHAKWYPGCKYLLEQKGQE 85
+           L  W+P ++P E+H K  PGC +L  +K  E
+Sbjct: 63 ELEGWEPDDNPIEEHRKHSPGCAFLTVKKQVE 94
+
+
+>sp|Q9NR09|BIRC6_HUMAN Baculoviral IAP repeat-containing protein 6
+           OS=Homo sapiens GN=BIRC6 PE=1 SV=1
+          Length = 4829
+
+ Score = 51.2 bits (121), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 27/85 (31%), Positives = 45/85 (52%), Gaps = 11/85 (12%)
+
+Query: 19  TFGTWIYS----VNKEQLARAGFY---ALGEGDKVKCFHCGGGLTDWKPSEDPWEQHAKW 71
+           TF +W +        + +A+AGFY   A    D+  CF C   L  W+P+++PW +H + 
+Sbjct: 264 TFTSWPHVGYRWAQPDPMAQAGFYHQPASSGDDRAMCFTCSVCLVCWEPTDEPWSEHERH 323
+
+Query: 72  YPGCKYLLEQKGQEYINNIHLTHSL 96
+            P C ++   KG E+  N+ L+ +L
+Sbjct: 324 SPNCPFV---KG-EHTQNVPLSVTL 344
+
+
+>sp|O70201|BIRC5_MOUSE Baculoviral IAP repeat-containing protein 5
+          OS=Mus musculus GN=Birc5 PE=1 SV=1
+          Length = 140
+
+ Score = 49.7 bits (117), Expect = 5e-06,   Method: Composition-based stats.
+ Identities = 28/77 (36%), Positives = 39/77 (50%), Gaps = 7/77 (9%)
+
+Query: 16 RIFTFGTWIY----SVNKEQLARAGFYAL---GEGDKVKCFHCGGGLTDWKPSEDPWEQH 68
+          RI TF  W +    +   E++A AGF       E D  +CF C   L  W+P ++P E+H
+Sbjct: 18 RIATFKNWPFLEDCACTPERMAEAGFIHCPTENEPDLAQCFFCFKELEGWEPDDNPIEEH 77
+
+Query: 69 AKWYPGCKYLLEQKGQE 85
+           K  PGC +L  +K  E
+Sbjct: 78 RKHSPGCAFLTVKKQME 94
+
+
+>sp|Q5RAH9|BIRC5_PONAB Baculoviral IAP repeat-containing protein 5
+          OS=Pongo abelii GN=BIRC5 PE=2 SV=1
+          Length = 142
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 29/82 (35%), Positives = 41/82 (50%), Gaps = 9/82 (10%)
+
+Query: 8  PSMADYEARIFTFGTWIY----SVNKEQLARAGFY---ALGEGDKVKCFHCGGGLTDWKP 60
+          P + D+  RI TF  W +    +   E++A AGF       E D  +CF C   L  W+P
+Sbjct: 12 PFLKDH--RISTFKNWPFLEGCACTPERMAEAGFIHCPTENEPDLAQCFFCFKELEGWEP 69
+
+Query: 61 SEDPWEQHAKWYPGCKYLLEQK 82
+           +DP E+H K   GC +L  +K
+Sbjct: 70 DDDPIEEHKKHSSGCAFLSVKK 91
+
+
+>sp|O15392|BIRC5_HUMAN Baculoviral IAP repeat-containing protein 5
+          OS=Homo sapiens GN=BIRC5 PE=1 SV=2
+          Length = 142
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 29/82 (35%), Positives = 41/82 (50%), Gaps = 9/82 (10%)
+
+Query: 8  PSMADYEARIFTFGTWIY----SVNKEQLARAGFY---ALGEGDKVKCFHCGGGLTDWKP 60
+          P + D+  RI TF  W +    +   E++A AGF       E D  +CF C   L  W+P
+Sbjct: 12 PFLKDH--RISTFKNWPFLEGCACTPERMAEAGFIHCPTENEPDLAQCFFCFKELEGWEP 69
+
+Query: 61 SEDPWEQHAKWYPGCKYLLEQK 82
+           +DP E+H K   GC +L  +K
+Sbjct: 70 DDDPIEEHKKHSSGCAFLSVKK 91
+
+
+>sp|Q6I6F4|BIRC5_FELCA Baculoviral IAP repeat-containing protein 5
+          OS=Felis silvestris catus GN=BIRC5 PE=2 SV=1
+          Length = 142
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 29/89 (32%), Positives = 44/89 (49%), Gaps = 7/89 (7%)
+
+Query: 1  STNLPRNPSMADYEARIFTFGTWIY----SVNKEQLARAGFYAL---GEGDKVKCFHCGG 53
+          +++LP    +   + RI TF  W +    +   E++A AGF       E D  +CF C  
+Sbjct: 3  ASSLPPAWQLYLKDHRISTFKNWPFLEGCACTPERMAEAGFIHCPTENEPDLAQCFFCFK 62
+
+Query: 54 GLTDWKPSEDPWEQHAKWYPGCKYLLEQK 82
+           L  W+P +DP E+H K   GC +L  +K
+Sbjct: 63 ELEGWEPDDDPIEEHKKHSSGCAFLSVKK 91
+
+
+>sp|Q9GLN5|BIRC5_PIG Baculoviral IAP repeat-containing protein 5
+          OS=Sus scrofa GN=BIRC5 PE=2 SV=1
+          Length = 142
+
+ Score = 46.2 bits (108), Expect = 5e-05,   Method: Composition-based stats.
+ Identities = 27/74 (36%), Positives = 37/74 (50%), Gaps = 7/74 (9%)
+
+Query: 16 RIFTFGTWIY----SVNKEQLARAGFYAL---GEGDKVKCFHCGGGLTDWKPSEDPWEQH 68
+          RI TF  W +    +   E++A AGF       E D  +CF C   L  W+P +DP E+H
+Sbjct: 18 RISTFKNWPFLEGCACTPERMAAAGFIHCPTENEPDLAQCFFCFKELEGWEPDDDPIEEH 77
+
+Query: 69 AKWYPGCKYLLEQK 82
+           K   GC +L  +K
+Sbjct: 78 KKHSSGCAFLSVKK 91
+
+
+>sp|Q6J1J1|BIRC5_BOVIN Baculoviral IAP repeat-containing protein 5
+          OS=Bos taurus GN=BIRC5 PE=2 SV=2
+          Length = 142
+
+ Score = 45.8 bits (107), Expect = 7e-05,   Method: Composition-based stats.
+ Identities = 26/74 (35%), Positives = 37/74 (50%), Gaps = 7/74 (9%)
+
+Query: 16 RIFTFGTWIY----SVNKEQLARAGFYAL---GEGDKVKCFHCGGGLTDWKPSEDPWEQH 68
+          R+ TF  W +    +   E++A AGF       E D  +CF C   L  W+P +DP E+H
+Sbjct: 18 RVSTFKNWPFLEGCACTPERMAAAGFIHCPTENEPDLAQCFFCFKELEGWEPDDDPIEEH 77
+
+Query: 69 AKWYPGCKYLLEQK 82
+           K   GC +L  +K
+Sbjct: 78 KKHSSGCAFLSVKK 91
+
+
+>sp|Q8I009|BIRC5_CANFA Baculoviral IAP repeat-containing protein 5
+          OS=Canis familiaris GN=BIRC5 PE=2 SV=2
+          Length = 142
+
+ Score = 45.4 bits (106), Expect = 8e-05,   Method: Composition-based stats.
+ Identities = 27/89 (30%), Positives = 44/89 (49%), Gaps = 7/89 (7%)
+
+Query: 1  STNLPRNPSMADYEARIFTFGTWIY----SVNKEQLARAGFYAL---GEGDKVKCFHCGG 53
+          +++LP    +   + R+ TF  W +    +   +++A AGF       E D  +CF C  
+Sbjct: 3  ASSLPPAWQLYLKDHRVSTFKNWPFLEGCACTPDRMAEAGFIHCPTENEPDLAQCFFCFK 62
+
+Query: 54 GLTDWKPSEDPWEQHAKWYPGCKYLLEQK 82
+           L  W+P +DP E+H K   GC +L  +K
+Sbjct: 63 ELEGWEPDDDPIEEHKKHSSGCAFLSVKK 91
+
+
+  Database: sprot
+    Posted date:  May 6, 2009 11:11 AM
+  Number of letters in database: 165,389,953
+  Number of sequences in database:  466,739
+  
+Lambda     K      H
+   0.319    0.137    0.461 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 39,300,894
+Number of Sequences: 466739
+Number of extensions: 1594605
+Number of successful extensions: 2660
+Number of sequences better than 1.0e-03: 36
+Number of HSP's better than  0.0 without gapping: 29
+Number of HSP's successfully gapped in prelim test: 7
+Number of HSP's that attempted gapping in prelim test: 2585
+Number of HSP's gapped (non-prelim): 76
+length of query: 103
+length of database: 165,389,953
+effective HSP length: 72
+effective length of query: 31
+effective length of database: 131,784,745
+effective search space: 4085327095
+effective search space used: 4085327095
+T: 11
+A: 40
+X1: 16 ( 7.4 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.7 bits)
+S2: 97 (42.0 bits)

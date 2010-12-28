@@ -1,0 +1,212 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_A  99
+         (99 letters)
+
+Database: sprot 
+           466,739 sequences; 165,389,953 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q9JI78|NGLY1_MOUSE Peptide-N(4)-(N-acetyl-beta-glucosaminyl)a...   189   4e-48
+sp|Q96IV0|NGLY1_HUMAN Peptide-N(4)-(N-acetyl-beta-glucosaminyl)a...   188   7e-48
+sp|Q4R6F3|NGLY1_MACFA Peptide-N(4)-(N-acetyl-beta-glucosaminyl)a...   188   7e-48
+sp|Q5XI55|NGLY1_RAT Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asp...   187   2e-47
+sp|Q5ZJM3|NGLY1_CHICK Peptide-N(4)-(N-acetyl-beta-glucosaminyl)a...   163   3e-40
+sp|Q503I8|NGLY1_DANRE Peptide-N(4)-(N-acetyl-beta-glucosaminyl)a...   150   2e-36
+sp|Q28YQ7|NGLY1_DROPS Peptide-N(4)-(N-acetyl-beta-glucosaminyl)a...    59   6e-09
+sp|Q7KRR5|NGLY1_DROME Peptide-N(4)-(N-acetyl-beta-glucosaminyl)a...    51   2e-06
+
+>sp|Q9JI78|NGLY1_MOUSE
+           Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine
+           amidase OS=Mus musculus GN=Ngly1 PE=1 SV=2
+          Length = 651
+
+ Score =  189 bits (480), Expect = 4e-48,   Method: Composition-based stats.
+ Identities = 92/92 (100%), Positives = 92/92 (100%)
+
+Query: 8   ELCQNTPETFLEASKLLLTYADNILRNPSDEKYRSIRIGNTAFSTRLLPVRGAVECLFEM 67
+           ELCQNTPETFLEASKLLLTYADNILRNPSDEKYRSIRIGNTAFSTRLLPVRGAVECLFEM
+Sbjct: 19  ELCQNTPETFLEASKLLLTYADNILRNPSDEKYRSIRIGNTAFSTRLLPVRGAVECLFEM 78
+
+Query: 68  GFEEGETHLIFPKKASVEQLQKIRDLIAIERS 99
+           GFEEGETHLIFPKKASVEQLQKIRDLIAIERS
+Sbjct: 79  GFEEGETHLIFPKKASVEQLQKIRDLIAIERS 110
+
+
+>sp|Q96IV0|NGLY1_HUMAN
+           Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine
+           amidase OS=Homo sapiens GN=NGLY1 PE=1 SV=1
+          Length = 654
+
+ Score =  188 bits (478), Expect = 7e-48,   Method: Composition-based stats.
+ Identities = 91/92 (98%), Positives = 92/92 (100%)
+
+Query: 8   ELCQNTPETFLEASKLLLTYADNILRNPSDEKYRSIRIGNTAFSTRLLPVRGAVECLFEM 67
+           ELCQNTPETFLEASKLLLTYADNILRNP+DEKYRSIRIGNTAFSTRLLPVRGAVECLFEM
+Sbjct: 19  ELCQNTPETFLEASKLLLTYADNILRNPNDEKYRSIRIGNTAFSTRLLPVRGAVECLFEM 78
+
+Query: 68  GFEEGETHLIFPKKASVEQLQKIRDLIAIERS 99
+           GFEEGETHLIFPKKASVEQLQKIRDLIAIERS
+Sbjct: 79  GFEEGETHLIFPKKASVEQLQKIRDLIAIERS 110
+
+
+>sp|Q4R6F3|NGLY1_MACFA
+           Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine
+           amidase OS=Macaca fascicularis GN=NGLY1 PE=2 SV=1
+          Length = 654
+
+ Score =  188 bits (478), Expect = 7e-48,   Method: Composition-based stats.
+ Identities = 91/92 (98%), Positives = 92/92 (100%)
+
+Query: 8   ELCQNTPETFLEASKLLLTYADNILRNPSDEKYRSIRIGNTAFSTRLLPVRGAVECLFEM 67
+           ELCQNTPETFLEASKLLLTYADNILRNP+DEKYRSIRIGNTAFSTRLLPVRGAVECLFEM
+Sbjct: 19  ELCQNTPETFLEASKLLLTYADNILRNPNDEKYRSIRIGNTAFSTRLLPVRGAVECLFEM 78
+
+Query: 68  GFEEGETHLIFPKKASVEQLQKIRDLIAIERS 99
+           GFEEGETHLIFPKKASVEQLQKIRDLIAIERS
+Sbjct: 79  GFEEGETHLIFPKKASVEQLQKIRDLIAIERS 110
+
+
+>sp|Q5XI55|NGLY1_RAT
+           Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine
+           amidase OS=Rattus norvegicus GN=Ngly1 PE=2 SV=2
+          Length = 651
+
+ Score =  187 bits (474), Expect = 2e-47,   Method: Composition-based stats.
+ Identities = 90/91 (98%), Positives = 91/91 (100%)
+
+Query: 8   ELCQNTPETFLEASKLLLTYADNILRNPSDEKYRSIRIGNTAFSTRLLPVRGAVECLFEM 67
+           ELCQNTPETFLEASKLLLTYADNILRNPSDEKYRSIRIGNTAFSTRLLPVRGAVECLFEM
+Sbjct: 19  ELCQNTPETFLEASKLLLTYADNILRNPSDEKYRSIRIGNTAFSTRLLPVRGAVECLFEM 78
+
+Query: 68  GFEEGETHLIFPKKASVEQLQKIRDLIAIER 98
+           GFEEGETHLIFPKKASVEQLQKIRDLIA+ER
+Sbjct: 79  GFEEGETHLIFPKKASVEQLQKIRDLIAVER 109
+
+
+>sp|Q5ZJM3|NGLY1_CHICK
+           Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine
+           amidase OS=Gallus gallus GN=NGLY1 PE=2 SV=1
+          Length = 651
+
+ Score =  163 bits (412), Expect = 3e-40,   Method: Composition-based stats.
+ Identities = 76/94 (80%), Positives = 88/94 (93%)
+
+Query: 6   VAELCQNTPETFLEASKLLLTYADNILRNPSDEKYRSIRIGNTAFSTRLLPVRGAVECLF 65
+           V ELC+N  +TFLEAS+LLLTYADNILRNP +EKYRSIR GN AFSTRLLPVRGAVECLF
+Sbjct: 16  VRELCKNARDTFLEASRLLLTYADNILRNPYEEKYRSIRNGNPAFSTRLLPVRGAVECLF 75
+
+Query: 66  EMGFEEGETHLIFPKKASVEQLQKIRDLIAIERS 99
+           EMGF+EGETH++FPK+AS+EQL+K+RDLIA+ERS
+Sbjct: 76  EMGFQEGETHMVFPKEASIEQLRKVRDLIAVERS 109
+
+
+>sp|Q503I8|NGLY1_DANRE
+          Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine
+          amidase OS=Danio rerio GN=ngly1 PE=2 SV=1
+          Length = 644
+
+ Score =  150 bits (379), Expect = 2e-36,   Method: Composition-based stats.
+ Identities = 69/97 (71%), Positives = 83/97 (85%)
+
+Query: 2  ASPAVAELCQNTPETFLEASKLLLTYADNILRNPSDEKYRSIRIGNTAFSTRLLPVRGAV 61
+           S  V  LC+NT E FL+ SKLL+TYADNILRNP++EKYRSIRIGN  FST+LLPV+GAV
+Sbjct: 3  GSQGVLALCENTTEVFLDVSKLLITYADNILRNPNEEKYRSIRIGNPTFSTKLLPVKGAV 62
+
+Query: 62 ECLFEMGFEEGETHLIFPKKASVEQLQKIRDLIAIER 98
+          ECLFEMGFEE ETHL+FP+ ASVE+L+++R+ IA ER
+Sbjct: 63 ECLFEMGFEEAETHLVFPRSASVEKLRQVRETIAAER 99
+
+
+>sp|Q28YQ7|NGLY1_DROPS
+           Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine
+           amidase OS=Drosophila pseudoobscura pseudoobscura
+           GN=PNGase PE=3 SV=2
+          Length = 632
+
+ Score = 59.3 bits (142), Expect = 6e-09,   Method: Composition-based stats.
+ Identities = 29/91 (31%), Positives = 51/91 (56%), Gaps = 2/91 (2%)
+
+Query: 11  QNTPETFLEASKLLLTYADNILRNPSDEKYRSIRIGNTAFSTRLLPVRGAVECLFEMGFE 70
+           QN    +LEA ++LL   +N+L  P++ K+R+IR+ N A   +LL + G  + L+ +GF 
+Sbjct: 25  QNVKNAYLEAVRILLVLLENVLSQPNNTKFRTIRLDNKAIKEKLLSLPGCEKLLYAIGFR 84
+
+Query: 71  E--GETHLIFPKKASVEQLQKIRDLIAIERS 99
+                     P + S++Q+QK  D++   R+
+Sbjct: 85  HTPSSNSYTLPGEVSLQQIQKYYDVLRERRT 115
+
+
+>sp|Q7KRR5|NGLY1_DROME
+           Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine
+           amidase OS=Drosophila melanogaster GN=PNGase PE=1 SV=1
+          Length = 631
+
+ Score = 51.2 bits (121), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 28/87 (32%), Positives = 47/87 (54%), Gaps = 2/87 (2%)
+
+Query: 15  ETFLEASKLLLTYADNILRNPSDEKYRSIRIGNTAFSTRLLPVRGAVECLFEMGFEEGET 74
+           E +LEA ++LL   +NIL  P +  +R+IR  N A   +LL + G    L  +GF    +
+Sbjct: 30  EAYLEAVRILLVLLENILAQPENSMFRTIRQENKAIKEKLLSLPGCERLLEAIGFVRAPS 89
+
+Query: 75  H--LIFPKKASVEQLQKIRDLIAIERS 99
+                 P + S++Q++K RD ++  R+
+Sbjct: 90  SNAYTLPTEVSLQQVKKYRDALSERRT 116
+
+
+  Database: sprot
+    Posted date:  May 6, 2009 11:11 AM
+  Number of letters in database: 165,389,953
+  Number of sequences in database:  466,739
+  
+Lambda     K      H
+   0.318    0.133    0.370 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 29,491,841
+Number of Sequences: 466739
+Number of extensions: 1000486
+Number of successful extensions: 2303
+Number of sequences better than 1.0e-03: 8
+Number of HSP's better than  0.0 without gapping: 7
+Number of HSP's successfully gapped in prelim test: 1
+Number of HSP's that attempted gapping in prelim test: 2296
+Number of HSP's gapped (non-prelim): 8
+length of query: 99
+length of database: 165,389,953
+effective HSP length: 68
+effective length of query: 31
+effective length of database: 133,651,701
+effective search space: 4143202731
+effective search space used: 4143202731
+T: 11
+A: 40
+X1: 16 ( 7.3 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.7 bits)
+S2: 97 (42.0 bits)

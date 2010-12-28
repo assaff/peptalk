@@ -1,0 +1,68 @@
+core.init: command: /vol/ek/share/rosetta/mini/build/src/release/linux/2.6/32/x86/gcc/holes.linuxgccrelease -database /vol/ek/share/rosetta/minirosetta_database/ -holes:dalphaball /vol/ek/share/bin/DAlphaBall -holes:make_pdb -holes:make_voids -s 1NX1.mainChain.pdb
+core.init: 'RNG device' seed mode, using '/dev/urandom', seed=-1464514068 seed_offset=0 real_seed=-1464514068
+core.init.random: RandomGenerator:init: Normal mode, seed=-1464514068 RG_type=mt19937
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: standard
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION PATCH: score12
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/pdb_pair_stats_fine
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/P_AA
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/P_AA_n
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/P_AA_pp
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/Rama_smooth_dyn.dat_ss_6.4
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: standard
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION PATCH: score12
+core.io.pdb.file_data: [ WARNING ] discarding 3 atoms at position 1 in file 1NX1.mainChain.pdb. Best match rsd_type:  GLU_p:NtermProteinFull
+core.io.pdb.file_data: [ WARNING ] discarding 4 atoms at position 4 in file 1NX1.mainChain.pdb. Best match rsd_type:  ARG
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 5 in file 1NX1.mainChain.pdb. Best match rsd_type:  GLN
+core.io.pdb.file_data: [ WARNING ] discarding 4 atoms at position 7 in file 1NX1.mainChain.pdb. Best match rsd_type:  ARG
+core.io.pdb.file_data: [ WARNING ] discarding 4 atoms at position 8 in file 1NX1.mainChain.pdb. Best match rsd_type:  ARG
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 12 in file 1NX1.mainChain.pdb. Best match rsd_type:  GLN
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 27 in file 1NX1.mainChain.pdb. Best match rsd_type:  ASN
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 30 in file 1NX1.mainChain.pdb. Best match rsd_type:  ASN
+core.io.pdb.file_data: [ WARNING ] discarding 3 atoms at position 31 in file 1NX1.mainChain.pdb. Best match rsd_type:  LYS
+core.io.pdb.file_data: [ WARNING ] discarding 4 atoms at position 35 in file 1NX1.mainChain.pdb. Best match rsd_type:  ARG
+core.io.pdb.file_data: [ WARNING ] discarding 1 atoms at position 36 in file 1NX1.mainChain.pdb. Best match rsd_type:  HIS
+core.io.pdb.file_data: [ WARNING ] discarding 3 atoms at position 40 in file 1NX1.mainChain.pdb. Best match rsd_type:  LYS
+core.io.pdb.file_data: [ WARNING ] discarding 4 atoms at position 50 in file 1NX1.mainChain.pdb. Best match rsd_type:  ARG
+core.io.pdb.file_data: [ WARNING ] discarding 3 atoms at position 63 in file 1NX1.mainChain.pdb. Best match rsd_type:  LYS
+core.io.pdb.file_data: [ WARNING ] discarding 3 atoms at position 70 in file 1NX1.mainChain.pdb. Best match rsd_type:  LYS
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 74 in file 1NX1.mainChain.pdb. Best match rsd_type:  ASN
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 75 in file 1NX1.mainChain.pdb. Best match rsd_type:  ASN
+core.io.pdb.file_data: [ WARNING ] discarding 3 atoms at position 77 in file 1NX1.mainChain.pdb. Best match rsd_type:  LYS
+core.io.pdb.file_data: [ WARNING ] discarding 3 atoms at position 78 in file 1NX1.mainChain.pdb. Best match rsd_type:  LYS
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 80 in file 1NX1.mainChain.pdb. Best match rsd_type:  GLN
+core.io.pdb.file_data: [ WARNING ] discarding 3 atoms at position 84 in file 1NX1.mainChain.pdb. Best match rsd_type:  LYS
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 85 in file 1NX1.mainChain.pdb. Best match rsd_type:  GLN
+core.io.pdb.file_data: [ WARNING ] discarding 4 atoms at position 90 in file 1NX1.mainChain.pdb. Best match rsd_type:  ARG
+core.io.pdb.file_data: [ WARNING ] discarding 1 atoms at position 109 in file 1NX1.mainChain.pdb. Best match rsd_type:  HIS
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 111 in file 1NX1.mainChain.pdb. Best match rsd_type:  ASN
+core.io.pdb.file_data: [ WARNING ] discarding 1 atoms at position 113 in file 1NX1.mainChain.pdb. Best match rsd_type:  HIS
+core.io.pdb.file_data: [ WARNING ] discarding 4 atoms at position 120 in file 1NX1.mainChain.pdb. Best match rsd_type:  ARG
+core.io.pdb.file_data: [ WARNING ] discarding 4 atoms at position 121 in file 1NX1.mainChain.pdb. Best match rsd_type:  ARG
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 128 in file 1NX1.mainChain.pdb. Best match rsd_type:  ASN
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 133 in file 1NX1.mainChain.pdb. Best match rsd_type:  ASN
+core.io.pdb.file_data: [ WARNING ] discarding 4 atoms at position 140 in file 1NX1.mainChain.pdb. Best match rsd_type:  ARG
+core.io.pdb.file_data: [ WARNING ] discarding 4 atoms at position 146 in file 1NX1.mainChain.pdb. Best match rsd_type:  ARG
+core.io.pdb.file_data: [ WARNING ] discarding 3 atoms at position 149 in file 1NX1.mainChain.pdb. Best match rsd_type:  LYS
+core.io.pdb.file_data: [ WARNING ] discarding 3 atoms at position 153 in file 1NX1.mainChain.pdb. Best match rsd_type:  LYS
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 158 in file 1NX1.mainChain.pdb. Best match rsd_type:  GLN
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 160 in file 1NX1.mainChain.pdb. Best match rsd_type:  GLN
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 162 in file 1NX1.mainChain.pdb. Best match rsd_type:  ASN
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 164 in file 1NX1.mainChain.pdb. Best match rsd_type:  GLN
+core.io.pdb.file_data: [ WARNING ] discarding 2 atoms at position 168 in file 1NX1.mainChain.pdb. Best match rsd_type:  GLN
+core.pack.task: Packer task: initialize from command line() 
+core.scoring.packing.compute_holes_score: compute_holes_surfs try: 1
+core.scoring.packing.compute_holes_score: compute_holes_surfs completed successfully
+core.scoring.packing.compute_holes_score: compute_rosettaholes_score done: 2.01063
+RosettaHoles: 1NX1.mainChain.pdb 2.01063 2.01059 -2.82337core.scoring.dunbrack: Dunbrack library took 0.06 seconds to load from binary
+ 6.91581
+dumping pdb to 1NX1.mainChain.pdb_cavs.pdb
+dumping cavities 
+protocols.packstat: prune raduis 1.4 10626 5710 3681 2705 2190 1867 1687 1580 1522 1488 1459 1442 1433 1426 1421 1417 1415 1415 
+core.conformation.util: Non-ideal residue detected:  Residue #1 atom #1:  Ideal D=1.458, Inspected D=1.49525
+core.io.silent: ERROR: trying to use a 'protein' type silent file for a non-ideal pose
+core.io.silent: consider using the '-out:file:silent_struct_type binary' flag

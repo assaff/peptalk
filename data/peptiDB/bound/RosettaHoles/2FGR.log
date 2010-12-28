@@ -1,0 +1,166 @@
+core.init: command: /vol/ek/share/rosetta/mini/build/src/release/linux/2.6/32/x86/gcc/holes.linuxgccrelease -database /vol/ek/share/rosetta/minirosetta_database/ -holes:dalphaball /vol/ek/share/bin/DAlphaBall -holes:make_pdb -holes:make_voids -s 2FGR.mainChain.pdb
+core.init: 'RNG device' seed mode, using '/dev/urandom', seed=-483586496 seed_offset=0 real_seed=-483586496
+core.init.random: RandomGenerator:init: Normal mode, seed=-483586496 RG_type=mt19937
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: standard
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION PATCH: score12
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/pdb_pair_stats_fine
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/P_AA
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/P_AA_n
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/P_AA_pp
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/Rama_smooth_dyn.dat_ss_6.4
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: standard
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION PATCH: score12
+core.pack.task: Packer task: initialize from command line() 
+RosettaHoles: 2FGR.mainChain.pdb 1.84628 1.8103 -1.01542core.scoring.dunbrack: Dunbrack library took 0.05 seconds to load from binary
+ -135.387
+dumping pdb to 2FGR.mainChain.pdb_cavs.pdb
+dumping cavities 
+protocols.packstat: prune raduis 1.4 15238 8900 6177 4670 3808 3270 2954 2745 2617 2530 2480 2451 2430 2414 2399 2392 2391 2390 2389 2389 
+protocols.packstat: Cavity: 1 volume 8.61448 surf 26.2451 Nballs 7 center 5.00708, 59.1008, 9.32891
+protocols.packstat: Cavity: 2 volume 9.25909 surf 29.1912 Nballs 10 center 5.39378, 61.7637, 11.9279
+protocols.packstat: Cavity: 3 volume 47.5714 surf 128.332 Nballs 63 center 7.08384, 62.2767, -0.214517
+protocols.packstat: Cavity: 4 volume 3.84663 surf 11.326 Nballs 2 center 7.73566, 63.9935, 10.4542
+protocols.packstat: Cavity: 5 volume 7.11101 surf 21.3155 Nballs 8 center 8.85602, 55.489, 10.9859
+protocols.packstat: Cavity: 6 volume 9.04437 surf 28.2759 Nballs 12 center 9.69716, 52.4475, 2.18056
+protocols.packstat: Cavity: 7 volume 57.1197 surf 169.846 Nballs 107 center 12.0782, 68.461, 3.26861
+protocols.packstat: Cavity: 8 volume 2.55097 surf 8.04248 Nballs 1 center 9.01083, 57.7805, 15.6167
+protocols.packstat: Cavity: 9 volume 9.248 surf 28.4543 Nballs 8 center 9.64167, 46.2221, 22.8241
+protocols.packstat: Cavity: 10 volume 19.6625 surf 58.4274 Nballs 13 center 10.7347, 46.882, 10.6437
+protocols.packstat: Cavity: 11 volume 3.87812 surf 11.4253 Nballs 2 center 9.86433, 40.5335, 24.6497
+protocols.packstat: Cavity: 12 volume 3.67016 surf 10.7233 Nballs 2 center 10.2764, 60.7323, 9.68975
+protocols.packstat: Cavity: 13 volume 9.13311 surf 28.7941 Nballs 7 center 10.7288, 69.6491, 12.3142
+protocols.packstat: Cavity: 14 volume 4.23712 surf 12.5439 Nballs 2 center 11.2159, 46.7718, 0.0982158
+protocols.packstat: Cavity: 15 volume 6.5349 surf 20.6026 Nballs 4 center 12.2506, 74.3355, 1.39887
+protocols.packstat: Cavity: 16 volume 6.12548 surf 19.3119 Nballs 5 center 11.7765, 40.8437, -12.4341
+protocols.packstat: Cavity: 17 volume 3.56885 surf 10.1788 Nballs 1 center 11.5819, 38.4182, 16.7102
+protocols.packstat: Cavity: 18 volume 2.55097 surf 8.04248 Nballs 1 center 11.6805, 46.2036, -15.3086
+protocols.packstat: Cavity: 19 volume 3.96818 surf 12.5105 Nballs 2 center 12.5822, 40.3304, -0.0923212
+protocols.packstat: Cavity: 20 volume 59.8912 surf 171.179 Nballs 173 center 16.6369, 46.3847, 4.52794
+protocols.packstat: Cavity: 21 volume 8.00462 surf 24.7992 Nballs 11 center 13.0796, 49.1354, -13.5273
+protocols.packstat: Cavity: 22 volume 6.20655 surf 17.9071 Nballs 6 center 12.8906, 52.7364, 1.2853
+protocols.packstat: Cavity: 23 volume 12.7202 surf 38.0683 Nballs 11 center 13.5577, 43.8489, -5.53164
+protocols.packstat: Cavity: 24 volume 2.55097 surf 8.04248 Nballs 1 center 13.2205, 62.2104, 4.00481
+protocols.packstat: Cavity: 25 volume 5.63734 surf 17.7729 Nballs 4 center 14.2286, 38.8948, -6.41329
+protocols.packstat: Cavity: 26 volume 4.53941 surf 13.477 Nballs 2 center 13.6767, 50.6012, -0.53425
+protocols.packstat: Cavity: 27 volume 5.17517 surf 14.0867 Nballs 3 center 14.1394, 71.855, -2.1912
+protocols.packstat: Cavity: 28 volume 2.55097 surf 8.04248 Nballs 1 center 14.3799, 62.4244, 5.7689
+protocols.packstat: Cavity: 29 volume 2.55097 surf 8.04248 Nballs 1 center 14.5419, 72.9238, 3.18652
+protocols.packstat: Cavity: 30 volume 2.55097 surf 8.04248 Nballs 1 center 14.6657, 66.8932, 7.56247
+protocols.packstat: Cavity: 31 volume 13.2888 surf 38.1141 Nballs 18 center 15.2669, 48.027, -16.1354
+protocols.packstat: Cavity: 32 volume 16.7798 surf 47.7576 Nballs 31 center 16.5864, 43.3902, 9.75292
+protocols.packstat: Cavity: 33 volume 8.41567 surf 25.4461 Nballs 7 center 16.454, 42.9518, -14.8845
+protocols.packstat: Cavity: 34 volume 2.55097 surf 8.04248 Nballs 1 center 15.9475, 48.1157, 0.317489
+protocols.packstat: Cavity: 35 volume 3.68924 surf 10.8629 Nballs 2 center 16.1844, 79.2408, -0.000487429
+protocols.packstat: Cavity: 36 volume 2.55097 surf 8.04248 Nballs 1 center 16.174, 65.1261, 8.87333
+protocols.packstat: Cavity: 37 volume 2.55097 surf 8.04248 Nballs 1 center 16.2388, 39.9825, 9.17669
+protocols.packstat: Cavity: 38 volume 2.55097 surf 8.04248 Nballs 1 center 16.2542, 45.3067, -4.87945
+protocols.packstat: Cavity: 39 volume 2.55097 surf 8.04248 Nballs 1 center 16.5257, 72.7008, 3.45604
+protocols.packstat: Cavity: 40 volume 9.58651 surf 26.5926 Nballs 6 center 17.2275, 44.4245, -1.35272
+protocols.packstat: Cavity: 41 volume 2.55097 surf 8.04248 Nballs 1 center 16.9771, 44.6545, -20.1623
+protocols.packstat: Cavity: 42 volume 3.49578 surf 11.0212 Nballs 2 center 17.2149, 67.5787, 8.32447
+protocols.packstat: Cavity: 43 volume 2.55097 surf 8.04248 Nballs 1 center 17.0247, 39.9503, -4.6704
+protocols.packstat: Cavity: 44 volume 14.032 surf 40.9012 Nballs 13 center 18.4503, 51.2317, -4.77628
+protocols.packstat: Cavity: 45 volume 47.0363 surf 140.517 Nballs 107 center 19.3838, 70.6972, -0.563555
+protocols.packstat: Cavity: 46 volume 2.55097 surf 8.04248 Nballs 1 center 17.4999, 45.4635, -6.55592
+protocols.packstat: Cavity: 47 volume 5.11769 surf 16.1346 Nballs 4 center 17.8417, 45.3683, -9.00012
+protocols.packstat: Cavity: 48 volume 89.0846 surf 256.252 Nballs 131 center 22.6787, 48.0419, -5.37482
+protocols.packstat: Cavity: 49 volume 8.22841 surf 23.5767 Nballs 8 center 18.4702, 76.823, 14.1515
+protocols.packstat: Cavity: 50 volume 2.55097 surf 8.04248 Nballs 1 center 18.2829, 44.1264, -24.2701
+protocols.packstat: Cavity: 51 volume 2.55097 surf 8.04248 Nballs 1 center 18.8308, 52.6705, -19.5753
+protocols.packstat: Cavity: 52 volume 2.55097 surf 8.04248 Nballs 1 center 18.8745, 39.126, -5.25619
+protocols.packstat: Cavity: 53 volume 4.29886 surf 13.5531 Nballs 3 center 19.2586, 39.2275, -2.02802
+protocols.packstat: Cavity: 54 volume 3.51152 surf 11.0708 Nballs 2 center 19.6437, 51.8224, -18.0012
+protocols.packstat: Cavity: 55 volume 18.5577 surf 48.531 Nballs 21 center 19.9693, 40.9613, -7.6759
+protocols.packstat: Cavity: 56 volume 6.77343 surf 20.1597 Nballs 7 center 20.0459, 43.1084, 6.71542
+protocols.packstat: Cavity: 57 volume 5.7948 surf 18.2693 Nballs 6 center 20.9371, 50.3574, -15.5207
+protocols.packstat: Cavity: 58 volume 51.2044 surf 141.414 Nballs 83 center 22.7188, 75.1086, -5.21058
+protocols.packstat: Cavity: 59 volume 13.6011 surf 39.9618 Nballs 16 center 21.8914, 82.1351, -8.70379
+protocols.packstat: Cavity: 60 volume 2.55097 surf 8.04248 Nballs 1 center 20.6997, 39.4071, 14.0796
+protocols.packstat: Cavity: 61 volume 7.42075 surf 21.9772 Nballs 9 center 21.1724, 53.6354, 3.56367
+protocols.packstat: Cavity: 62 volume 118.865 surf 330.179 Nballs 277 center 25.3713, 69.42, 6.52188
+protocols.packstat: Cavity: 63 volume 2.55097 surf 8.04248 Nballs 1 center 20.9045, 78.6389, -13.3554
+protocols.packstat: Cavity: 64 volume 10.637 surf 31.6362 Nballs 14 center 21.7538, 42.1534, -12.5853
+protocols.packstat: Cavity: 65 volume 2.55097 surf 8.04248 Nballs 1 center 21.0604, 74.6725, 16.0849
+protocols.packstat: Cavity: 66 volume 11.1513 surf 33.5941 Nballs 7 center 22.2417, 43.4833, -23.081
+protocols.packstat: Cavity: 67 volume 5.91155 surf 17.3858 Nballs 4 center 21.568, 45.5417, -12.5474
+protocols.packstat: Cavity: 68 volume 2.55097 surf 8.04248 Nballs 1 center 21.7805, 54.3124, 0.862572
+protocols.packstat: Cavity: 69 volume 10.9055 surf 32.92 Nballs 24 center 22.4525, 47.6843, -21.83
+protocols.packstat: Cavity: 70 volume 7.97747 surf 23.8792 Nballs 11 center 22.4823, 39.8067, 9.23824
+protocols.packstat: Cavity: 71 volume 13.6287 surf 42.2455 Nballs 15 center 22.9107, 76.4393, -11.6266
+protocols.packstat: Cavity: 72 volume 3.56885 surf 10.1788 Nballs 1 center 22.1991, 71.7242, -1.9993
+protocols.packstat: Cavity: 73 volume 3.56885 surf 10.1788 Nballs 1 center 22.2849, 47.6875, 6.07698
+protocols.packstat: Cavity: 74 volume 3.81071 surf 12.0141 Nballs 2 center 22.4202, 42.9301, 9.28644
+protocols.packstat: Cavity: 75 volume 2.55097 surf 8.04248 Nballs 1 center 22.3829, 77.4435, 14.9491
+protocols.packstat: Cavity: 76 volume 37.7835 surf 105.586 Nballs 83 center 24.1325, 71.2646, -9.33874
+protocols.packstat: Cavity: 77 volume 2.55097 surf 8.04248 Nballs 1 center 22.6036, 49.1226, -15.5993
+protocols.packstat: Cavity: 78 volume 8.24051 surf 25.4104 Nballs 11 center 23.4323, 43.4851, 2.82763
+protocols.packstat: Cavity: 79 volume 2.55097 surf 8.04248 Nballs 1 center 22.995, 47.2818, -13.4751
+protocols.packstat: Cavity: 80 volume 2.55097 surf 8.04248 Nballs 1 center 24.1116, 40.5066, 3.20266
+protocols.packstat: Cavity: 81 volume 4.09757 surf 11.6867 Nballs 2 center 24.5795, 52.4778, -18.923
+protocols.packstat: Cavity: 82 volume 153.824 surf 414.401 Nballs 284 center 30.141, 65.0672, -4.85761
+protocols.packstat: Cavity: 83 volume 27.4039 surf 77.2739 Nballs 32 center 26.7903, 53.2563, -6.95027
+protocols.packstat: Cavity: 84 volume 65.3527 surf 186.62 Nballs 122 center 28.1505, 47.8299, 1.97194
+protocols.packstat: Cavity: 85 volume 3.4013 surf 10.7233 Nballs 2 center 25.6722, 47.7413, -12.6787
+protocols.packstat: Cavity: 86 volume 51.9272 surf 147.799 Nballs 72 center 29.7013, 55.5388, 1.02707
+protocols.packstat: Cavity: 87 volume 2.55097 surf 8.04248 Nballs 1 center 25.9074, 41.6462, -16.6887
+protocols.packstat: Cavity: 88 volume 2.55097 surf 8.04248 Nballs 1 center 25.956, 51.8826, 1.92255
+protocols.packstat: Cavity: 89 volume 15.3878 surf 45.0877 Nballs 19 center 27.6176, 78.4981, -5.0824
+protocols.packstat: Cavity: 90 volume 19.9097 surf 55.1865 Nballs 35 center 27.9567, 74.8335, -16.5282
+protocols.packstat: Cavity: 91 volume 2.55097 surf 8.04248 Nballs 1 center 26.4647, 40.5275, 5.35575
+protocols.packstat: Cavity: 92 volume 7.66293 surf 20.0922 Nballs 4 center 26.7601, 49.0182, -11.1205
+protocols.packstat: Cavity: 93 volume 21.9319 surf 61.1424 Nballs 39 center 28.4162, 52.3522, -12.9344
+protocols.packstat: Cavity: 94 volume 3.65325 surf 11.5176 Nballs 2 center 27.3159, 71.8561, 15.9111
+protocols.packstat: Cavity: 95 volume 15.7542 surf 46.7927 Nballs 20 center 28.1758, 43.9222, -13.3214
+protocols.packstat: Cavity: 96 volume 3.76347 surf 11.8651 Nballs 2 center 27.5074, 57.0078, -2.13139
+protocols.packstat: Cavity: 97 volume 2.55097 surf 8.04248 Nballs 1 center 27.7457, 39.7315, 6.48371
+protocols.packstat: Cavity: 98 volume 3.96818 surf 12.5105 Nballs 2 center 27.8314, 72.3147, -3.67168
+protocols.packstat: Cavity: 99 volume 5.54286 surf 17.475 Nballs 4 center 28.4265, 75.3731, 16.3414
+protocols.packstat: Cavity: 100 volume 4.50357 surf 14.1984 Nballs 2 center 28.4663, 61.6372, -10.4047
+protocols.packstat: Cavity: 101 volume 21.1707 surf 59.003 Nballs 42 center 30.0568, 70.4991, -11.0792
+protocols.packstat: Cavity: 102 volume 2.55097 surf 8.04248 Nballs 1 center 28.1609, 42.8775, 8.44306
+protocols.packstat: Cavity: 103 volume 5.84204 surf 18.4183 Nballs 5 center 29.4075, 66.7509, 6.79147
+protocols.packstat: Cavity: 104 volume 5.11459 surf 13.9844 Nballs 2 center 28.8302, 51.4175, 8.40043
+protocols.packstat: Cavity: 105 volume 2.55097 surf 8.04248 Nballs 1 center 29.0655, 73.3563, 4.94472
+protocols.packstat: Cavity: 106 volume 22.2733 surf 60.3806 Nballs 49 center 31.1558, 54.1262, -7.31231
+protocols.packstat: Cavity: 107 volume 4.82549 surf 12.5664 Nballs 1 center 29.7593, 73.6737, -13.1628
+protocols.packstat: Cavity: 108 volume 5.8263 surf 18.3686 Nballs 3 center 30.4321, 68.8876, -16.4151
+protocols.packstat: Cavity: 109 volume 3.56885 surf 10.1788 Nballs 1 center 30.3862, 63.0129, -15.6839
+protocols.packstat: Cavity: 110 volume 5.14484 surf 15.7103 Nballs 4 center 30.9813, 76.3037, -2.53756
+protocols.packstat: Cavity: 111 volume 2.55097 surf 8.04248 Nballs 1 center 30.5523, 44.6693, -2.97086
+protocols.packstat: Cavity: 112 volume 30.7045 surf 82.4455 Nballs 44 center 32.2174, 59.0541, 2.81666
+protocols.packstat: Cavity: 113 volume 6.87 surf 20.8578 Nballs 5 center 31.0387, 70.8849, -4.90437
+protocols.packstat: Cavity: 114 volume 9.73048 surf 28.5381 Nballs 6 center 31.349, 58.018, 8.9123
+protocols.packstat: Cavity: 115 volume 12.5204 surf 38.8572 Nballs 17 center 32.1524, 54.3404, -16.1792
+protocols.packstat: Cavity: 116 volume 2.55097 surf 8.04248 Nballs 1 center 31.3844, 48.3294, -15.6512
+protocols.packstat: Cavity: 117 volume 2.55097 surf 8.04248 Nballs 1 center 31.8427, 69.823, 16.2384
+protocols.packstat: Cavity: 118 volume 2.55097 surf 8.04248 Nballs 1 center 31.8992, 73.6531, 9.97231
+protocols.packstat: Cavity: 119 volume 3.81071 surf 12.0141 Nballs 2 center 32.2097, 50.8301, 5.39613
+protocols.packstat: Cavity: 120 volume 47.6017 surf 137.453 Nballs 75 center 34.1926, 63.326, 7.64526
+protocols.packstat: Cavity: 121 volume 2.55097 surf 8.04248 Nballs 1 center 32.5013, 58.562, -10.6364
+protocols.packstat: Cavity: 122 volume 2.55097 surf 8.04248 Nballs 1 center 33.1123, 43.4634, 14.1716
+protocols.packstat: Cavity: 123 volume 3.90961 surf 11.5246 Nballs 2 center 33.3958, 46.0395, 18.1844
+protocols.packstat: Cavity: 124 volume 3.56885 surf 10.1788 Nballs 1 center 33.4213, 60.9352, -15.8395
+protocols.packstat: Cavity: 125 volume 3.56885 surf 10.1788 Nballs 1 center 33.6721, 47.7527, -11.8701
+protocols.packstat: Cavity: 126 volume 4.73977 surf 14.9431 Nballs 2 center 33.8801, 59.6553, -4.2221
+protocols.packstat: Cavity: 127 volume 3.99967 surf 12.6098 Nballs 2 center 34.1837, 47.2615, 2.55208
+protocols.packstat: Cavity: 128 volume 2.55097 surf 8.04248 Nballs 1 center 33.9392, 62.1521, -19.162
+protocols.packstat: Cavity: 129 volume 2.55097 surf 8.04248 Nballs 1 center 34.238, 67.1974, -17.2725
+protocols.packstat: Cavity: 130 volume 2.55097 surf 8.04248 Nballs 1 center 34.4476, 55.9771, -2.08356
+protocols.packstat: Cavity: 131 volume 3.56885 surf 10.1788 Nballs 1 center 34.9956, 71.171, 4.78552
+protocols.packstat: Cavity: 132 volume 6.14635 surf 17.5301 Nballs 3 center 35.4793, 48.481, 13.1615
+protocols.packstat: Cavity: 133 volume 16.4553 surf 49.112 Nballs 12 center 37.0713, 53.5922, -12.1065
+protocols.packstat: Cavity: 134 volume 6.75535 surf 21.2977 Nballs 5 center 37.2392, 55.375, -2.55948
+protocols.packstat: Cavity: 135 volume 2.55097 surf 8.04248 Nballs 1 center 37.3419, 56.6658, -16.9201
+protocols.packstat: Cavity: 136 volume 12.5862 surf 38.9123 Nballs 19 center 38.3154, 66.8997, -11.6561
+protocols.packstat: Cavity: 137 volume 3.65325 surf 11.5176 Nballs 2 center 37.8303, 53.7728, 14.5257
+protocols.packstat: Cavity: 138 volume 3.96671 surf 11.8768 Nballs 3 center 37.8873, 64.9233, 12.1446
+protocols.packstat: Cavity: 139 volume 2.55097 surf 8.04248 Nballs 1 center 37.981, 67.8256, -4.79445
+protocols.packstat: Cavity: 140 volume 2.55097 surf 8.04248 Nballs 1 center 38.6018, 60.9257, 14.5428
+protocols.packstat: Cavity: 141 volume 2.55097 surf 8.04248 Nballs 1 center 38.777, 60.739, 6.57838
+protocols.packstat: Cavity: 142 volume 2.55097 surf 8.04248 Nballs 1 center 38.9302, 64.1113, -6.23899
+protocols.packstat: Cavity: 143 volume 2.55097 surf 8.04248 Nballs 1 center 40.1828, 60.5585, -10.198

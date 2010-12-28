@@ -1,0 +1,5 @@
+foreach f ( `ls /vol/ek/londonir/CleanPeptiDB/db/????.pdb | sed 's/.*\(....\).pdb.*/\1/'` )
+foreach?  echo $f
+foreach? ln -s /vol/ek/londonir/CleanPeptiDB/db/$f.pdb $f.pdb
+foreach? /cs/alum/londonir/lab/rosetta/mini/bin/holes.linuxgccrelease -database /vol/ek/londonir/rosetta/minirosetta_database/ -holes:dalphaball /vol/ek/share/bin/DAlphaBall -holes:make_pdb -holes:make_voids -s $f.pdb > $f.log
+foreach? end

@@ -1,0 +1,29 @@
+core.init: command: /vol/ek/share/rosetta/mini/build/src/release/linux/2.6/32/x86/gcc/holes.linuxgccrelease -database /vol/ek/share/rosetta/minirosetta_database/ -holes:dalphaball /vol/ek/share/bin/DAlphaBall -holes:make_pdb -holes:make_voids -s 2FMF.mainChain.pdb
+core.init: 'RNG device' seed mode, using '/dev/urandom', seed=655828259 seed_offset=0 real_seed=655828259
+core.init.random: RandomGenerator:init: Normal mode, seed=655828259 RG_type=mt19937
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: standard
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION PATCH: score12
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/pdb_pair_stats_fine
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/P_AA
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/P_AA_n
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/P_AA_pp
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/Rama_smooth_dyn.dat_ss_6.4
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: standard
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION PATCH: score12
+core.pack.task: Packer task: initialize from command line() 
+core.scoring.packing.compute_holes_score: compute_holes_surfs try: 1
+core.scoring.packing.compute_holes_score: compute_holes_surfs completed successfully
+core.scoring.packing.compute_holes_score: compute_rosettaholes_score done: 1.56695
+RosettaHoles: 2FMF.mainChain.pdb 1.56695 1.55565 -1.32476core.scoring.dunbrack: Dunbrack library took 0.04 seconds to load from binary
+ -202.688
+dumping pdb to 2FMF.mainChain.pdb_cavs.pdb
+dumping cavities 
+protocols.packstat: prune raduis 1.4 6560 3675 2456 1905 1633 1470 1375 1305 1265 1241 1219 1202 1191 1185 1182 1179 1179 
+core.conformation.util: Non-ideal residue detected:  Residue #1 atom #3:  Ideal theta=1.20079, Inspected theta=1.18742 (in Radians)
+core.io.silent: ERROR: trying to use a 'protein' type silent file for a non-ideal pose
+core.io.silent: consider using the '-out:file:silent_struct_type binary' flag

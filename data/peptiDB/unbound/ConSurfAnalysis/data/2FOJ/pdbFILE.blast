@@ -1,0 +1,395 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_A  144
+         (144 letters)
+
+Database: sprot 
+           466,739 sequences; 165,389,953 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q93009|UBP7_HUMAN Ubiquitin carboxyl-terminal hydrolase 7 OS=...   314   8e-86
+sp|Q4VSI4|UBP7_RAT Ubiquitin carboxyl-terminal hydrolase 7 OS=Ra...   313   2e-85
+sp|Q6A4J8|UBP7_MOUSE Ubiquitin carboxyl-terminal hydrolase 7 OS=...   311   8e-85
+sp|Q6U7I1|UBP7_CHICK Ubiquitin carboxyl-terminal hydrolase 7 OS=...   305   4e-83
+sp|Q9VYQ8|UBP7_DROME Ubiquitin carboxyl-terminal hydrolase 7 OS=...   158   9e-39
+sp|Q60MK8|UBP7_CAEBR Ubiquitin carboxyl-terminal hydrolase 7 OS=...    83   5e-16
+sp|Q7JKC3|UBP7_CAEEL Ubiquitin carboxyl-terminal hydrolase 7 OS=...    82   8e-16
+sp|Q20681|BAT38_CAEEL BTB and MATH domain-containing protein 38 ...    76   5e-14
+sp|Q84WU2|UBP13_ARATH Ubiquitin carboxyl-terminal hydrolase 13 O...    59   1e-08
+sp|Q9FPT1|UBP12_ARATH Ubiquitin carboxyl-terminal hydrolase 12 O...    58   1e-08
+sp|Q9XWB9|BAT36_CAEEL BTB and MATH domain-containing protein 36 ...    49   1e-05
+sp|Q8T126|FNKC_DICDI Probable inactive serine/threonine-protein ...    45   1e-04
+sp|Q9UTT1|UBP21_SCHPO Ubiquitin carboxyl-terminal hydrolase 21 O...    44   3e-04
+sp|P90846|BAT39_CAEEL BTB and MATH domain-containing protein 39 ...    43   4e-04
+sp|P50101|UBP15_YEAST Ubiquitin carboxyl-terminal hydrolase 15 O...    43   5e-04
+sp|A8X2W2|BAT39_CAEBR BTB and MATH domain-containing protein 39 ...    43   6e-04
+
+>sp|Q93009|UBP7_HUMAN Ubiquitin carboxyl-terminal hydrolase 7
+           OS=Homo sapiens GN=USP7 PE=1 SV=2
+          Length = 1102
+
+ Score =  314 bits (805), Expect = 8e-86,   Method: Composition-based stats.
+ Identities = 144/144 (100%), Positives = 144/144 (100%)
+
+Query: 1   TSWRSEATFQFTVERFSRLSESVLSPPCFVRNLPWKIMVMPRFYPDRPHQKSVGFFLQCN 60
+           TSWRSEATFQFTVERFSRLSESVLSPPCFVRNLPWKIMVMPRFYPDRPHQKSVGFFLQCN
+Sbjct: 63  TSWRSEATFQFTVERFSRLSESVLSPPCFVRNLPWKIMVMPRFYPDRPHQKSVGFFLQCN 122
+
+Query: 61  AESDSTSWSCHAQAVLKIINYRDDEKSFSRRISHLFFHKENDWGFSNFMAWSEVTDPEKG 120
+           AESDSTSWSCHAQAVLKIINYRDDEKSFSRRISHLFFHKENDWGFSNFMAWSEVTDPEKG
+Sbjct: 123 AESDSTSWSCHAQAVLKIINYRDDEKSFSRRISHLFFHKENDWGFSNFMAWSEVTDPEKG 182
+
+Query: 121 FIDDDKVTFEVFVQADAPHGVAWD 144
+           FIDDDKVTFEVFVQADAPHGVAWD
+Sbjct: 183 FIDDDKVTFEVFVQADAPHGVAWD 206
+
+
+>sp|Q4VSI4|UBP7_RAT Ubiquitin carboxyl-terminal hydrolase 7
+           OS=Rattus norvegicus GN=Usp7 PE=1 SV=1
+          Length = 1103
+
+ Score =  313 bits (801), Expect = 2e-85,   Method: Composition-based stats.
+ Identities = 143/144 (99%), Positives = 144/144 (100%)
+
+Query: 1   TSWRSEATFQFTVERFSRLSESVLSPPCFVRNLPWKIMVMPRFYPDRPHQKSVGFFLQCN 60
+           TSWRSEATFQFTVERFSRLSESVLSPPCFVRNLPWKIMVMPRFYPDRPHQKSVGFFLQCN
+Sbjct: 64  TSWRSEATFQFTVERFSRLSESVLSPPCFVRNLPWKIMVMPRFYPDRPHQKSVGFFLQCN 123
+
+Query: 61  AESDSTSWSCHAQAVLKIINYRDDEKSFSRRISHLFFHKENDWGFSNFMAWSEVTDPEKG 120
+           AESDSTSWSCHAQAVLKIINYRDD+KSFSRRISHLFFHKENDWGFSNFMAWSEVTDPEKG
+Sbjct: 124 AESDSTSWSCHAQAVLKIINYRDDDKSFSRRISHLFFHKENDWGFSNFMAWSEVTDPEKG 183
+
+Query: 121 FIDDDKVTFEVFVQADAPHGVAWD 144
+           FIDDDKVTFEVFVQADAPHGVAWD
+Sbjct: 184 FIDDDKVTFEVFVQADAPHGVAWD 207
+
+
+>sp|Q6A4J8|UBP7_MOUSE Ubiquitin carboxyl-terminal hydrolase 7 OS=Mus
+           musculus GN=Usp7 PE=1 SV=1
+          Length = 1103
+
+ Score =  311 bits (796), Expect = 8e-85,   Method: Composition-based stats.
+ Identities = 142/144 (98%), Positives = 144/144 (100%)
+
+Query: 1   TSWRSEATFQFTVERFSRLSESVLSPPCFVRNLPWKIMVMPRFYPDRPHQKSVGFFLQCN 60
+           TSWRSEATFQFTVERFSRLSESVLSPPCFVRNLPWKIMVMPRFYPDRPHQKSVGFFLQCN
+Sbjct: 64  TSWRSEATFQFTVERFSRLSESVLSPPCFVRNLPWKIMVMPRFYPDRPHQKSVGFFLQCN 123
+
+Query: 61  AESDSTSWSCHAQAVLKIINYRDDEKSFSRRISHLFFHKENDWGFSNFMAWSEVTDPEKG 120
+           AESDSTSWSCHAQAVLKIINYRDD+KSFSRRISHLFFH+ENDWGFSNFMAWSEVTDPEKG
+Sbjct: 124 AESDSTSWSCHAQAVLKIINYRDDDKSFSRRISHLFFHEENDWGFSNFMAWSEVTDPEKG 183
+
+Query: 121 FIDDDKVTFEVFVQADAPHGVAWD 144
+           FIDDDKVTFEVFVQADAPHGVAWD
+Sbjct: 184 FIDDDKVTFEVFVQADAPHGVAWD 207
+
+
+>sp|Q6U7I1|UBP7_CHICK Ubiquitin carboxyl-terminal hydrolase 7
+           OS=Gallus gallus GN=USP7 PE=2 SV=1
+          Length = 1101
+
+ Score =  305 bits (782), Expect = 4e-83,   Method: Composition-based stats.
+ Identities = 138/144 (95%), Positives = 143/144 (99%)
+
+Query: 1   TSWRSEATFQFTVERFSRLSESVLSPPCFVRNLPWKIMVMPRFYPDRPHQKSVGFFLQCN 60
+           TSWRSEATFQFTVERF+RLSESVLSPPCFVRNLPWKIMVMPR YPDRPHQKSVGFFLQCN
+Sbjct: 63  TSWRSEATFQFTVERFNRLSESVLSPPCFVRNLPWKIMVMPRLYPDRPHQKSVGFFLQCN 122
+
+Query: 61  AESDSTSWSCHAQAVLKIINYRDDEKSFSRRISHLFFHKENDWGFSNFMAWSEVTDPEKG 120
+           AESDSTSWSCHAQAVLKIINY+DDEKSFSRRISHLFFHKENDWGFSNFMAWSEVTDPEKG
+Sbjct: 123 AESDSTSWSCHAQAVLKIINYKDDEKSFSRRISHLFFHKENDWGFSNFMAWSEVTDPEKG 182
+
+Query: 121 FIDDDKVTFEVFVQADAPHGVAWD 144
+           FI++DKVTFEV+VQADAPHGVAWD
+Sbjct: 183 FIEEDKVTFEVYVQADAPHGVAWD 206
+
+
+>sp|Q9VYQ8|UBP7_DROME Ubiquitin carboxyl-terminal hydrolase 7
+           OS=Drosophila melanogaster GN=Usp7 PE=1 SV=1
+          Length = 1129
+
+ Score =  158 bits (400), Expect = 9e-39,   Method: Composition-based stats.
+ Identities = 73/143 (51%), Positives = 101/143 (70%), Gaps = 8/143 (5%)
+
+Query: 3   WRSEATFQFTVERFSRLSESVLSPPCFVRNLPWKIMVMPRFYPDRPHQKSVGFFLQCNAE 62
+           +RSE TF FTVE   +L    LSPP +VR LPW+IMV+P       + +++GFFLQCN E
+Sbjct: 98  FRSETTFSFTVENVVQLKSQRLSPPVYVRMLPWRIMVIP-------NDRALGFFLQCNGE 150
+
+Query: 63  SDSTSWSCHAQAVLKIINYRDDEKSFSR-RISHLFFHKENDWGFSNFMAWSEVTDPEKGF 121
+           +DS +WSC+A A L++  ++ D + F+R RI HLF+ KEND+G+SNF+ W E+ D EK +
+Sbjct: 151 NDSPTWSCNAIAELRLKCHKPDAQPFTRARIKHLFYSKENDYGYSNFITWQELKDSEKSY 210
+
+Query: 122 IDDDKVTFEVFVQADAPHGVAWD 144
+           + ++ +T EV V ADAPHGV WD
+Sbjct: 211 VHNNSITLEVHVVADAPHGVLWD 233
+
+
+>sp|Q60MK8|UBP7_CAEBR Ubiquitin carboxyl-terminal hydrolase 7
+           OS=Caenorhabditis briggsae GN=usp-7 PE=3 SV=1
+          Length = 1129
+
+ Score = 82.8 bits (203), Expect = 5e-16,   Method: Composition-based stats.
+ Identities = 47/156 (30%), Positives = 73/156 (46%), Gaps = 19/156 (12%)
+
+Query: 6   EATFQFTVERFSRL----SESVLSPPCFVRNLPWKIMVMPRFYPDRP--------HQKSV 53
+           E      +ERFS         ++S P  VR +PW+I+ + R   +          +  + 
+Sbjct: 29  EGHLALDIERFSSFMNKPDSRIMSKPVIVRGIPWRILAICRHQQNNRQVATSRSRNNYNF 88
+
+Query: 54  GFFLQCNAE---SDSTSWSCHAQAVLKIINYRDDEKSFSRRISHLFFHKENDWGFSNFMA 110
+           GFFLQCN +        W C+ QA L+++N   +     ++I H F + E DWGFSN+  
+Sbjct: 89  GFFLQCNNDDLLQKRGMWRCYGQATLEVLNA--NGPPIQKKIHHSFHNTEVDWGFSNYDQ 146
+
+Query: 111 WSEVTDPEKGFIDDDKVTFEVFVQADAPHGV--AWD 144
+           +  +T P+ G++ DD +       AD P G    WD
+Sbjct: 147 YDTLTSPKDGYVIDDVIRLRCRFTADVPTGANYMWD 182
+
+
+>sp|Q7JKC3|UBP7_CAEEL Ubiquitin carboxyl-terminal hydrolase 7
+           OS=Caenorhabditis elegans GN=usp-7 PE=2 SV=1
+          Length = 1135
+
+ Score = 82.4 bits (202), Expect = 8e-16,   Method: Composition-based stats.
+ Identities = 45/142 (31%), Positives = 69/142 (48%), Gaps = 16/142 (11%)
+
+Query: 17  SRLSESVLSPPCFVRNLPWKIMVMPRFYPDRPHQKS---------VGFFLQCNAE---SD 64
+           SR    ++S P  VR +PW+I+ + R      H  +          GFFLQCN +     
+Sbjct: 46  SRSDNRIMSKPIIVRGIPWRILAICRNQQGSRHSMNSRVNRSNFNFGFFLQCNNDELLQK 105
+
+Query: 65  STSWSCHAQAVLKIINYRDDEKSFSRRISHLFFHKENDWGFSNFMAWSEVTDPEKGFIDD 124
+              W C+  AVL+++N   D  S  ++I H F + E DWGFSN+  +  + +P+ G++ +
+Sbjct: 106 RGMWRCYGTAVLEVLNA--DGPSIQKKIHHSFHNTEVDWGFSNYDQYDTLCNPKDGYVVN 163
+
+Query: 125 DKVTFEVFVQADAPHGV--AWD 144
+           D +       AD P G    WD
+Sbjct: 164 DTIKLRCRFTADVPTGANYMWD 185
+
+
+>sp|Q20681|BAT38_CAEEL BTB and MATH domain-containing protein 38
+           OS=Caenorhabditis elegans GN=bath-38 PE=2 SV=1
+          Length = 387
+
+ Score = 76.3 bits (186), Expect = 5e-14,   Method: Composition-based stats.
+ Identities = 40/131 (30%), Positives = 64/131 (48%)
+
+Query: 4   RSEATFQFTVERFSRLSESVLSPPCFVRNLPWKIMVMPRFYPDRPHQKSVGFFLQCNAES 63
+           R+E   +  +  FS L   V +P  ++ NLPW++             K    ++ CN ES
+Sbjct: 77  RTEGMLKLEIPNFSNLRSKVSTPFQYIGNLPWRLAAKTEKTKRTSDVKFFSVYIDCNPES 136
+
+Query: 64  DSTSWSCHAQAVLKIINYRDDEKSFSRRISHLFFHKENDWGFSNFMAWSEVTDPEKGFID 123
+           +ST WSC A    ++++       FSR+ ++ F +  N+WGF +FMAW +V +      +
+Sbjct: 137 ESTLWSCDAVVEFRLVSRNRTIPPFSRQFTNKFNYNSNNWGFPSFMAWEDVNNSNYVRNE 196
+
+Query: 124 DDKVTFEVFVQ 134
+              VT  V VQ
+Sbjct: 197 MVTVTARVVVQ 207
+
+
+>sp|Q84WU2|UBP13_ARATH Ubiquitin carboxyl-terminal hydrolase 13
+           OS=Arabidopsis thaliana GN=UBP13 PE=1 SV=1
+          Length = 1115
+
+ Score = 58.5 bits (140), Expect = 1e-08,   Method: Composition-based stats.
+ Identities = 35/127 (27%), Positives = 65/127 (51%), Gaps = 6/127 (4%)
+
+Query: 9   FQFTVERFSRLSESVLSPPCFV-RNLPWKIMVMPRFYPDRPHQKSVGFFLQ-CNAESDST 66
+           F +T+  F+RL+        FV     W+I++    +P   +   +  +L   +A +   
+Sbjct: 56  FTWTIPMFTRLNTRKHYSDVFVVGGYKWRILI----FPKGNNVDHLSMYLDVADAANLPY 111
+
+Query: 67  SWSCHAQAVLKIINYRDDEKSFSRRISHLFFHKENDWGFSNFMAWSEVTDPEKGFIDDDK 126
+            WS ++Q  L ++N  ++  S  +   H F  +E+DWGF++FM  SE+ +P +G++ +D 
+Sbjct: 112 GWSRYSQFSLAVVNQVNNRYSIRKETQHQFNARESDWGFTSFMPLSELYEPTRGYLVNDT 171
+
+Query: 127 VTFEVFV 133
+           V  E  V
+Sbjct: 172 VLIEAEV 178
+
+
+>sp|Q9FPT1|UBP12_ARATH Ubiquitin carboxyl-terminal hydrolase 12
+           OS=Arabidopsis thaliana GN=UBP12 PE=2 SV=2
+          Length = 1116
+
+ Score = 58.2 bits (139), Expect = 1e-08,   Method: Composition-based stats.
+ Identities = 37/127 (29%), Positives = 62/127 (48%), Gaps = 6/127 (4%)
+
+Query: 9   FQFTVERFSRLSESVLSPPCFV-RNLPWKIMVMPRFYPDRPHQKSVGFFLQC-NAESDST 66
+           F +T+  FSR +        FV     W+I++    +P   +   +  +L   +A S   
+Sbjct: 57  FTWTIPNFSRQNTRKHYSDVFVVGGYKWRILI----FPKGNNVDHLSMYLDVSDAASLPY 112
+
+Query: 67  SWSCHAQAVLKIINYRDDEKSFSRRISHLFFHKENDWGFSNFMAWSEVTDPEKGFIDDDK 126
+            WS +AQ  L ++N      +  +   H F  +E+DWGF++FM  SE+ DP +G++ +D 
+Sbjct: 113 GWSRYAQFSLAVVNQIHTRYTVRKETQHQFNARESDWGFTSFMPLSELYDPSRGYLVNDT 172
+
+Query: 127 VTFEVFV 133
+           V  E  V
+Sbjct: 173 VLVEAEV 179
+
+
+>sp|Q9XWB9|BAT36_CAEEL BTB and MATH domain-containing protein 36
+           OS=Caenorhabditis elegans GN=bath-36 PE=2 SV=1
+          Length = 320
+
+ Score = 48.5 bits (114), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 31/139 (22%), Positives = 58/139 (41%), Gaps = 2/139 (1%)
+
+Query: 5   SEATFQFTVERFSRLSESVLSPPCFVRNLPWKIMVMPRFYPDRPHQKSVGFFLQCNAESD 64
+           ++ + +F ++ FS L+++    P  + ++ W +           + K +G  L+CN E  
+Sbjct: 6   NKGSIRFEIQNFSGLAKATEHKPVQIGHVEWILGAFTSTSDATNNAKHLGIHLKCNEELR 65
+
+Query: 65  STSWSCHAQAVLKI--INYRDDEKSFSRRISHLFFHKENDWGFSNFMAWSEVTDPEKGFI 122
+           S  WSC A     +  +N  +D+ +FS      F         +NF  W E    +  F+
+Sbjct: 66  SNLWSCDASIRFSLLRLNSNEDDDAFSMEFQQKFDDLNKIVVVNNFKNWEEAICYDNRFV 125
+
+Query: 123 DDDKVTFEVFVQADAPHGV 141
+            D     EV +  +   G+
+Sbjct: 126 LDKHAVLEVQITVNKIAGI 144
+
+
+>sp|Q8T126|FNKC_DICDI Probable inactive serine/threonine-protein
+            kinase fnkC OS=Dictyostelium discoideum GN=fnkC PE=3 SV=1
+          Length = 1304
+
+ Score = 45.1 bits (105), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 31/130 (23%), Positives = 56/130 (43%), Gaps = 8/130 (6%)
+
+Query: 9    FQFTVERFSRLSESVLSPPCFVRNLPWKIMVMPRFYPDRPHQKSVGFFLQCNAESDSTSW 68
+            F ++V   S+ SE  +SP        W I + P     +P    +  FL+   E +    
+Sbjct: 1175 FSYSVPMMSKKSEPFISPIFMSCGRKWIIKIYPM---GQPSSNYMSVFLEYRDEGEE--- 1228
+
+Query: 69   SCHAQAVLKIINYRDDEKSFSRRISHLFFHKENDWGFSNFMAWSEVTDPEKGFIDDDKVT 128
+              +    L++I+    E+S    + + F  K N +G+  F+  S + DP+ GF+ +D + 
+Sbjct: 1229 --NVHFSLELISQLYPEQSIKYWVQYRFNSKSNSFGYPKFIGVSTLMDPDMGFLVNDTII 1286
+
+Query: 129  FEVFVQADAP 138
+              V +    P
+Sbjct: 1287 LNVSILQLKP 1296
+
+
+>sp|Q9UTT1|UBP21_SCHPO Ubiquitin carboxyl-terminal hydrolase 21
+           OS=Schizosaccharomyces pombe GN=ubp21 PE=2 SV=2
+          Length = 1129
+
+ Score = 43.9 bits (102), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 36/166 (21%), Positives = 67/166 (40%), Gaps = 27/166 (16%)
+
+Query: 5   SEATFQFTVERFSRLSESVLSPPCFVRNLPWKIMVMPRFYPDRPHQKS-VGFFLQCNAES 63
+           + A++ + V+ FS L +   SP     +  W+I++ P+      +    + +  QC  E+
+Sbjct: 50  AHASYSWVVKNFSTLEDKTYSPLFKAGHTTWRIVLFPKGCNQTEYASVFLEYLPQCKVEA 109
+
+Query: 64  ---------------------DSTSWSCHAQAVLKIINYRDDEKSFSRRISHLFFHKEND 102
+                                +  ++SC AQ  L + N +D          H F  +  D
+Sbjct: 110 IRKYEAELAAGKTPTIDPEIVNDETYSCCAQFALSLSNVQDPTVMQINTSHHRFRSEVKD 169
+
+Query: 103 WGFSNFMAWSEVTDPEKG----FIDDDKVTFEVFVQA-DAPHGVAW 143
+           WGF+ F+   ++  P       F+++D++   V V+    P GV W
+Sbjct: 170 WGFTRFVDLRKIAVPTPEFPVPFLENDEICISVTVRVLQDPTGVLW 215
+
+
+>sp|P90846|BAT39_CAEEL BTB and MATH domain-containing protein 39
+           OS=Caenorhabditis elegans GN=bath-39 PE=2 SV=2
+          Length = 370
+
+ Score = 43.1 bits (100), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 23/96 (23%), Positives = 40/96 (41%), Gaps = 1/96 (1%)
+
+Query: 47  RPHQKSVGFFLQCNAESDSTSWSCHAQAVLKIIN-YRDDEKSFSRRISHLFFHKENDWGF 105
+           +  ++ V  +L CN  + S  WS       +IIN +       S   +H F   E   G 
+Sbjct: 90  KSQKRRVSIYLVCNPNNSSPDWSVTTSFGFRIINSWGKSRNKISTLFNHTFTSNETSKGT 149
+
+Query: 106 SNFMAWSEVTDPEKGFIDDDKVTFEVFVQADAPHGV 141
+           S +  W E+T    GF+ + +   E  +  ++  G+
+Sbjct: 150 SGYCTWDELTAANSGFLVEGRFQIEFDLNVNSSTGI 185
+
+
+>sp|P50101|UBP15_YEAST Ubiquitin carboxyl-terminal hydrolase 15
+           OS=Saccharomyces cerevisiae GN=UBP15 PE=1 SV=1
+          Length = 1230
+
+ Score = 43.1 bits (100), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 37/156 (23%), Positives = 68/156 (43%), Gaps = 22/156 (14%)
+
+Query: 6   EATFQFTVERFSRLSESVLSPPCF-VRNLPWKIMVMPRFYPDRPHQKSVGFFLQCNAES- 63
+           E +F + +  ++ L+    + P F + +  W I++    +P   H K V  +L+ + E  
+Sbjct: 39  EDSFTWNIPDWNELTNPKYNSPRFRIGDFEWDILL----FPQGNHNKGVAVYLEPHPEEK 94
+
+Query: 64  -DSTS---------WSCHAQAVLKIINYRD-DEKSFSRRISHLFFHKENDWGFSNFMAWS 112
+            D T+         W C AQ  + I    + D  +   +  H F   + DWGF+N +  +
+Sbjct: 95  LDETTGEMVPVDPDWYCCAQFAIGISRPGNGDTINLINKSHHRFNALDTDWGFANLIDLN 154
+
+Query: 113 EVTDPEKG----FIDDDKVTFEVFVQA-DAPHGVAW 143
+            +  P KG    F+++  +    +V+    P GV W
+Sbjct: 155 NLKHPSKGRPLSFLNEGTLNITAYVRILKDPTGVLW 190
+
+
+>sp|A8X2W2|BAT39_CAEBR BTB and MATH domain-containing protein 39
+           OS=Caenorhabditis briggsae GN=bath-39 PE=4 SV=2
+          Length = 335
+
+ Score = 42.7 bits (99), Expect = 6e-04,   Method: Composition-based stats.
+ Identities = 22/82 (26%), Positives = 38/82 (46%), Gaps = 1/82 (1%)
+
+Query: 50  QKSVGFFLQCNAESDSTSWSCHAQAVLKIINYRDDEKS-FSRRISHLFFHKENDWGFSNF 108
+           ++ +  +L C   +D+  WS       + +N   + K+  S   +H F  K+N  G S F
+Sbjct: 57  KRRLSVYLVCFPATDNPEWSISTSFAFRFLNSWGNSKTKISPLCTHTFTAKDNSKGASGF 116
+
+Query: 109 MAWSEVTDPEKGFIDDDKVTFE 130
+            AW ++  P  GF+ +   T E
+Sbjct: 117 CAWDDIVTPNSGFLVNGVFTIE 138
+
+
+  Database: sprot
+    Posted date:  May 6, 2009 11:11 AM
+  Number of letters in database: 165,389,953
+  Number of sequences in database:  466,739
+  
+Lambda     K      H
+   0.323    0.135    0.448 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 47,741,901
+Number of Sequences: 466739
+Number of extensions: 1800706
+Number of successful extensions: 4269
+Number of sequences better than 1.0e-03: 16
+Number of HSP's better than  0.0 without gapping: 10
+Number of HSP's successfully gapped in prelim test: 6
+Number of HSP's that attempted gapping in prelim test: 4247
+Number of HSP's gapped (non-prelim): 17
+length of query: 144
+length of database: 165,389,953
+effective HSP length: 105
+effective length of query: 39
+effective length of database: 116,382,358
+effective search space: 4538911962
+effective search space used: 4538911962
+T: 11
+A: 40
+X1: 16 ( 7.5 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 40 (21.5 bits)
+S2: 98 (42.4 bits)

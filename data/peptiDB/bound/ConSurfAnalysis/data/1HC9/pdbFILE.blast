@@ -1,0 +1,1307 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_A  74
+         (74 letters)
+
+Database: sprot 
+           412,525 sequences; 148,809,765 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|P60616|NXL1V_BUNMU Alpha-bungarotoxin isoform V31 OS=Bungarus...   118   9e-27
+sp|P60615|NXL1A_BUNMU Alpha-bungarotoxin isoform A31 OS=Bungarus...   116   3e-26
+sp|Q7T3J2|NXLA_BUNCA Alpha-bungarotoxin, isoform A31 OS=Bungarus...   116   3e-26
+sp|P85140|NXLN3_BUNCA Alpha-bungarotoxin N3 OS=Bungarus candidus...   106   4e-23
+sp|Q2VBP8|NXLX1_OPHHA Long neurotoxin LNTX1 OS=Ophiophagus hanna...    87   3e-17
+sp|Q2VBP6|NXLX8_OPHHA Long neurotoxin LNTX8 OS=Ophiophagus hanna...    83   5e-16
+sp|Q2VBP3|NXL3X_OPHHA Long neurotoxin LNTX37 OS=Ophiophagus hann...    81   2e-15
+sp|Q53B59|NXL37_OPHHA Long neurotoxin OH-37 OS=Ophiophagus hanna...    77   2e-14
+sp|P80156|NXL4_OPHHA Long neurotoxin 4 OS=Ophiophagus hannah PE=...    77   2e-14
+sp|Q53B56|NXL57_OPHHA Long neurotoxin OH-57 OS=Ophiophagus hanna...    76   4e-14
+sp|P01383|NXL1_NAJME Long neurotoxin 1 OS=Naja melanoleuca PE=1 ...    76   5e-14
+sp|Q2VBP4|NXL28_OPHHA Long neurotoxin LNTX28 OS=Ophiophagus hann...    75   8e-14
+sp|P82662|NXL6_OPHHA Long neurotoxin OH-6A/OH-6B OS=Ophiophagus ...    75   8e-14
+sp|P01382|NXL1_NAJOX Long neurotoxin 1 OS=Naja oxiana PE=1 SV=1        75   8e-14
+sp|P80965|NXL5_OPHHA Long neurotoxin OH-5 OS=Ophiophagus hannah ...    75   1e-13
+sp|P01384|NXL1_NOTSC Long neurotoxin 1 OS=Notechis scutatus scut...    73   3e-13
+sp|Q8UW29|NXL1_LAPHA Long neurotoxin 1 OS=Lapemis hardwickii PE=...    73   3e-13
+sp|P34073|NXLD_ACAAN Acanthophin-D OS=Acanthophis antarcticus PE...    73   4e-13
+sp|A3FM53|NXL2_LAPHA Long neurotoxin 2 OS=Lapemis hardwickii PE=...    72   6e-13
+sp|Q7T2I3|NXLL_LATLA Long neurotoxin LlLong (Fragment) OS=Latica...    71   1e-12
+sp|Q53B53|NXL34_OPHHA Long neurotoxin OH-34 (Fragment) OS=Ophiop...    70   3e-12
+sp|P01385|NXL1_ACAAN Long neurotoxin 1 OS=Acanthophis antarcticu...    69   5e-12
+sp|A8N285|NXL2H_OPHHA Long neurotoxin LNTX-2 homolog OS=Ophiopha...    69   5e-12
+sp|P25670|NXL1_ASPSC Long neurotoxin 1 OS=Aspidelaps scutatus PE...    69   5e-12
+sp|A6MFK4|NXL1_DEMVE Long neurotoxin LNTX-1 OS=Demansia vestigia...    69   8e-12
+sp|Q53B54|NXL17_OPHHA Long neurotoxin OH-17 OS=Ophiophagus hanna...    67   2e-11
+sp|A6MFK5|NXL2_DEMVE Long neurotoxin LNTX-2 OS=Demansia vestigia...    67   2e-11
+sp|Q53B57|NXL56_OPHHA Long neurotoxin OH-56 OS=Ophiophagus hanna...    67   3e-11
+sp|Q8UW28|NXL3_LAPHA Long neurotoxin 3 OS=Lapemis hardwickii PE=...    66   4e-11
+sp|Q2VBP5|NXL22_OPHHA Long neurotoxin LNTX22 OS=Ophiophagus hann...    66   4e-11
+sp|P01389|NXL1_NAJHC Long neurotoxin 1 OS=Naja haje anchietae PE...    66   5e-11
+sp|Q53B58|NXL55_OPHHA Long neurotoxin OH-55 OS=Ophiophagus hanna...    65   9e-11
+sp|P01393|NXL1_DENJA Long neurotoxin 1 OS=Dendroaspis jamesoni k...    65   9e-11
+sp|P01386|NXL2_OPHHA Long neurotoxin 2 OS=Ophiophagus hannah PE=...    65   9e-11
+sp|P01397|NXL2_DENPO Long neurotoxin 2 OS=Dendroaspis polylepis ...    64   2e-10
+sp|P25667|NXL3_DENPO Long neurotoxin 3 OS=Dendroaspis polylepis ...    64   2e-10
+sp|P01387|NXL1_OPHHA Long neurotoxin 1 OS=Ophiophagus hannah PE=...    64   2e-10
+sp|P01396|NXL1_DENPO Long neurotoxin 1 OS=Dendroaspis polylepis ...    63   3e-10
+sp|P01381|NXL2_ASTST Long neurotoxin 2 OS=Astrotia stokesii PE=1...    63   4e-10
+sp|P01379|NXL1_LATSE Long neurotoxin Ls3 OS=Laticauda semifascia...    63   4e-10
+sp|P01395|NXL2_DENVI Long neurotoxin 2 OS=Dendroaspis viridis PE...    63   5e-10
+sp|O42257|NXL7_NAJSP Long neurotoxin 7 OS=Naja sputatrix GN=LNTX...    62   6e-10
+sp|P01380|NXL1_ASTST Long neurotoxin 1 OS=Astrotia stokesii PE=1...    62   1e-09
+sp|P25674|NXL1_NAJHH Long neurotoxin 1 OS=Naja haje haje PE=1 SV=1     61   1e-09
+sp|P0C8R6|NXL1_LATCO Long neurotoxin 1 OS=Laticauda colubrina PE...    61   2e-09
+sp|A7X4Q3|NXL1_OXYMI Long neurotoxin 3FTx-Oxy1 OS=Oxyuranus micr...    61   2e-09
+sp|Q9W7J5|NXLP_PSETE Pseudonajatoxin b homolog OS=Pseudonaja tex...    60   3e-09
+sp|P01394|NXL1_DENVI Long neurotoxin 1 OS=Dendroaspis viridis PE...    60   4e-09
+sp|P01390|NXL1_NAJNI Long neurotoxin 1 OS=Naja nivea PE=1 SV=1         59   5e-09
+sp|P0C8R7|NXLA_LATCO Toxin Lc a OS=Laticauda colubrina PE=1 SV=1       59   6e-09
+sp|P0C8R8|NXLB_LATCO Toxin Lc b OS=Laticauda colubrina PE=1 SV=1       59   8e-09
+sp|P01391|NXL1_NAJKA Long neurotoxin 1 OS=Naja kaouthia PE=1 SV=1      58   1e-08
+sp|P01388|NXL2_NAJME Long neurotoxin 2 OS=Naja melanoleuca PE=1 ...    57   2e-08
+sp|P34074|NXL1_BOUAN Long neurotoxin 1 OS=Boulengerina annulata ...    57   2e-08
+sp|P25669|NXL2_NAJNA Long neurotoxin 2 OS=Naja naja PE=1 SV=1          57   2e-08
+sp|P25671|NXL3_NAJNA Long neurotoxin 3 OS=Naja naja PE=1 SV=1          57   3e-08
+sp|Q9W729|NXL6_BUNMU Kappa-6-bungarotoxin OS=Bungarus multicinct...    57   3e-08
+sp|P25668|NXL1_NAJNA Long neurotoxin 1 OS=Naja naja PE=1 SV=1          56   5e-08
+sp|P25673|NXL5_NAJNA Long neurotoxin 5 OS=Naja naja PE=1 SV=1          56   5e-08
+sp|P13495|NXLB_PSETE Pseudonajatoxin b OS=Pseudonaja textilis PE...    55   7e-08
+sp|P25672|NXL4_NAJNA Long neurotoxin 4 OS=Naja naja PE=1 SV=1          55   1e-07
+sp|P15817|NXLR1_BUNMU Kappa-3-bungarotoxin OS=Bungarus multicinc...    54   2e-07
+sp|A7X4R0|NXL2_OXYMI Long neurotoxin 3FTx-Oxy2 OS=Oxyuranus micr...    53   5e-07
+sp|P07526|NXL3_OPHHA Long neurotoxin 3 OS=Ophiophagus hannah PE=...    50   2e-06
+sp|P14612|NXLH_PSEAU Long neurotoxin homolog Pa ID OS=Pseudechis...    50   4e-06
+sp|Q8AY56|NXKA_BUNCA Kappa 1a-bungarotoxin OS=Bungarus candidus ...    50   4e-06
+sp|P01398|NXL1_BUNMU Kappa-1-bungarotoxin OS=Bungarus multicinct...    50   4e-06
+sp|Q8AY55|NXKB_BUNCA Kappa 1b-bungarotoxin OS=Bungarus candidus ...    49   5e-06
+sp|P15815|NXL2_BUNFL Long neurotoxin 2 OS=Bungarus flaviceps fla...    48   1e-05
+sp|Q53B55|NXL31_OPHHA Long neurotoxin-like OH-31 OS=Ophiophagus ...    47   2e-05
+sp|O12961|NXL4_BUNMU Kappa-4-bungarotoxin OS=Bungarus multicinct...    47   4e-05
+sp|O12962|NXL5_BUNMU Kappa-5-bungarotoxin OS=Bungarus multicinct...    46   4e-05
+sp|Q2VBN1|TXM6_OPHHA Muscarinic toxin MTX6 OS=Ophiophagus hannah...    46   6e-05
+sp|P15816|NXLB1_BUNMU Kappa-2-bungarotoxin OS=Bungarus multicinc...    45   1e-04
+sp|Q9YGX1|NXSED_LATSE Short neurotoxin OKI-Ed OS=Laticauda semif...    43   4e-04
+sp|Q7T2I1|NXS10_LATLA Short neurotoxin OKI-10 (Fragment) OS=Lati...    43   4e-04
+sp|Q9YGC2|NXS1_LATLA Short neurotoxin OKI-17/NCA-06 OS=Laticauda...    42   6e-04
+sp|Q9YGW8|NXS4_LATLA Short neurotoxin VAN-29 OS=Laticauda latica...    42   7e-04
+sp|A7X3M3|TX1_PSAMO Toxin 3FTx-Psa1 OS=Psammophis mossambicus PE...    42   8e-04
+sp|Q53B61|TXW72_OPHHA Weak neurotoxin OH-72 (Fragment) OS=Ophiop...    42   0.001
+sp|Q6IZ95|NTX4_BUNCA Neurotoxin Ntx4 OS=Bungarus candidus PE=2 SV=1    42   0.001
+sp|A2CKF7|NTXLT_BUNFA Neurotoxin 3FTx-LT OS=Bungarus fasciatus P...    42   0.001
+
+>sp|P60616|NXL1V_BUNMU Alpha-bungarotoxin isoform V31 OS=Bungarus
+          multicinctus PE=1 SV=1
+          Length = 95
+
+ Score =  118 bits (295), Expect = 9e-27,   Method: Composition-based stats.
+ Identities = 74/74 (100%), Positives = 74/74 (100%)
+
+Query: 1  IVCHTTATSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCC 60
+          IVCHTTATSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCC
+Sbjct: 22 IVCHTTATSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCC 81
+
+Query: 61 STDKCNPHPKQRPG 74
+          STDKCNPHPKQRPG
+Sbjct: 82 STDKCNPHPKQRPG 95
+
+
+>sp|P60615|NXL1A_BUNMU Alpha-bungarotoxin isoform A31 OS=Bungarus
+          multicinctus PE=1 SV=1
+          Length = 95
+
+ Score =  116 bits (291), Expect = 3e-26,   Method: Composition-based stats.
+ Identities = 73/74 (98%), Positives = 73/74 (98%)
+
+Query: 1  IVCHTTATSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCC 60
+          IVCHTTATSPISAVTCPPGENLCYRKMWCD FCSSRGKVVELGCAATCPSKKPYEEVTCC
+Sbjct: 22 IVCHTTATSPISAVTCPPGENLCYRKMWCDAFCSSRGKVVELGCAATCPSKKPYEEVTCC 81
+
+Query: 61 STDKCNPHPKQRPG 74
+          STDKCNPHPKQRPG
+Sbjct: 82 STDKCNPHPKQRPG 95
+
+
+>sp|Q7T3J2|NXLA_BUNCA Alpha-bungarotoxin, isoform A31 OS=Bungarus
+          candidus PE=1 SV=2
+          Length = 95
+
+ Score =  116 bits (291), Expect = 3e-26,   Method: Composition-based stats.
+ Identities = 73/74 (98%), Positives = 73/74 (98%)
+
+Query: 1  IVCHTTATSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCC 60
+          IVCHTTATSPISAVTCPPGENLCYRKMWCD FCSSRGKVVELGCAATCPSKKPYEEVTCC
+Sbjct: 22 IVCHTTATSPISAVTCPPGENLCYRKMWCDAFCSSRGKVVELGCAATCPSKKPYEEVTCC 81
+
+Query: 61 STDKCNPHPKQRPG 74
+          STDKCNPHPKQRPG
+Sbjct: 82 STDKCNPHPKQRPG 95
+
+
+>sp|P85140|NXLN3_BUNCA Alpha-bungarotoxin N3 OS=Bungarus candidus
+          PE=1 SV=1
+          Length = 74
+
+ Score =  106 bits (264), Expect = 4e-23,   Method: Composition-based stats.
+ Identities = 70/74 (94%), Positives = 71/74 (95%)
+
+Query: 1  IVCHTTATSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCC 60
+          IVCHTTATSPISAVTCPPGENLCYRKM+CD  CSSRGKVVELGCAATCPSKKPYEEVTCC
+Sbjct: 1  IVCHTTATSPISAVTCPPGENLCYRKMFCDAICSSRGKVVELGCAATCPSKKPYEEVTCC 60
+
+Query: 61 STDKCNPHPKQRPG 74
+          S DKCNPHPKQRPG
+Sbjct: 61 SNDKCNPHPKQRPG 74
+
+
+>sp|Q2VBP8|NXLX1_OPHHA Long neurotoxin LNTX1 OS=Ophiophagus hannah
+          PE=2 SV=1
+          Length = 94
+
+ Score = 86.7 bits (213), Expect = 3e-17,   Method: Composition-based stats.
+ Identities = 46/70 (65%), Positives = 56/70 (80%), Gaps = 1/70 (1%)
+
+Query: 3  CHTTATSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCST 62
+          C+ T    IS  TCPPG++LCY K WCDVFC SRG+V+ELGC ATCP+ KP+E++TCCST
+Sbjct: 24 CYKTGERIISE-TCPPGQDLCYMKTWCDVFCGSRGRVIELGCTATCPTVKPHEQITCCST 82
+
+Query: 63 DKCNPHPKQR 72
+          D CNPHPK +
+Sbjct: 83 DNCNPHPKMK 92
+
+
+>sp|Q2VBP6|NXLX8_OPHHA Long neurotoxin LNTX8 OS=Ophiophagus hannah
+          PE=2 SV=1
+          Length = 94
+
+ Score = 82.8 bits (203), Expect = 5e-16,   Method: Composition-based stats.
+ Identities = 47/70 (67%), Positives = 56/70 (80%), Gaps = 1/70 (1%)
+
+Query: 3  CHTTATSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCST 62
+          C+ T    IS  TCPPG++LCY K WCDVFC SRG+VVELGC ATCP+ KP+E++TCCST
+Sbjct: 24 CYKTGERIISE-TCPPGQDLCYMKTWCDVFCGSRGRVVELGCTATCPTVKPHEQITCCST 82
+
+Query: 63 DKCNPHPKQR 72
+          D CNPHPK +
+Sbjct: 83 DNCNPHPKMK 92
+
+
+>sp|Q2VBP3|NXL3X_OPHHA Long neurotoxin LNTX37 OS=Ophiophagus
+          hannah PE=2 SV=1
+          Length = 94
+
+ Score = 80.9 bits (198), Expect = 2e-15,   Method: Composition-based stats.
+ Identities = 45/70 (64%), Positives = 55/70 (78%), Gaps = 1/70 (1%)
+
+Query: 3  CHTTATSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCST 62
+          C+ T    IS  TCPPG++LCY K WCDVFC SRG+V+ELGC ATCP+ K +E++TCCST
+Sbjct: 24 CYKTGERIISE-TCPPGQDLCYMKTWCDVFCGSRGRVIELGCTATCPTVKHHEQITCCST 82
+
+Query: 63 DKCNPHPKQR 72
+          D CNPHPK +
+Sbjct: 83 DNCNPHPKMK 92
+
+
+>sp|Q53B59|NXL37_OPHHA Long neurotoxin OH-37 OS=Ophiophagus hannah
+          PE=1 SV=1
+          Length = 91
+
+ Score = 77.4 bits (189), Expect = 2e-14,   Method: Composition-based stats.
+ Identities = 40/65 (61%), Positives = 47/65 (72%)
+
+Query: 9  SPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPH 68
+          SP  +VTC PGEN+C+ K WCD +C SRGK +  GCAATCP   P  ++ CCSTD CNPH
+Sbjct: 27 SPHDSVTCAPGENVCFLKSWCDAWCGSRGKKLSFGCAATCPKVNPGIDIECCSTDNCNPH 86
+
+Query: 69 PKQRP 73
+          PK RP
+Sbjct: 87 PKLRP 91
+
+
+>sp|P80156|NXL4_OPHHA Long neurotoxin 4 OS=Ophiophagus hannah PE=1
+          SV=1
+          Length = 72
+
+ Score = 77.0 bits (188), Expect = 2e-14,   Method: Composition-based stats.
+ Identities = 41/62 (66%), Positives = 52/62 (83%)
+
+Query: 11 ISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPHPK 70
+          I +  CPPG++LCY K WCDVFC +RG+V+ELGC ATCP+ KP+E++TCCSTD CNPHPK
+Sbjct: 10 IISEACPPGQDLCYMKTWCDVFCGTRGRVIELGCTATCPTVKPHEQITCCSTDNCNPHPK 69
+
+Query: 71 QR 72
+           +
+Sbjct: 70 MK 71
+
+
+>sp|Q53B56|NXL57_OPHHA Long neurotoxin OH-57 OS=Ophiophagus hannah
+          PE=2 SV=1
+          Length = 91
+
+ Score = 76.3 bits (186), Expect = 4e-14,   Method: Composition-based stats.
+ Identities = 40/59 (67%), Positives = 45/59 (76%)
+
+Query: 15 TCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPHPKQRP 73
+          TCP G+NLCY K WCD+FC SRG+ +E GCAATCP  KP   + CCSTD CNPHPK RP
+Sbjct: 33 TCPDGQNLCYLKSWCDIFCGSRGERLEFGCAATCPEVKPGVNIECCSTDNCNPHPKLRP 91
+
+
+>sp|P01383|NXL1_NAJME Long neurotoxin 1 OS=Naja melanoleuca PE=1
+          SV=1
+          Length = 71
+
+ Score = 75.9 bits (185), Expect = 5e-14,   Method: Composition-based stats.
+ Identities = 44/66 (66%), Positives = 53/66 (80%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T  + + TCPPGE+LCY K WC  +C+SRGKV+ELGC ATCP  KPYE++TCCSTD CNP
+Sbjct: 6  TPDLKSQTCPPGEDLCYTKKWCADWCTSRGKVIELGCVATCPKVKPYEQITCCSTDNCNP 65
+
+Query: 68 HPKQRP 73
+          HPK +P
+Sbjct: 66 HPKMKP 71
+
+
+>sp|Q2VBP4|NXL28_OPHHA Long neurotoxin LNTX28 OS=Ophiophagus
+          hannah PE=2 SV=1
+          Length = 91
+
+ Score = 75.5 bits (184), Expect = 8e-14,   Method: Composition-based stats.
+ Identities = 38/61 (62%), Positives = 45/61 (73%)
+
+Query: 13 AVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPHPKQR 72
+          +VTC PGEN+C+ K WCD +C SRGK +  GCAATCP   P  ++ CCSTD CNPHPK R
+Sbjct: 31 SVTCAPGENVCFLKSWCDAWCGSRGKKLSFGCAATCPRVNPGIDIECCSTDNCNPHPKLR 90
+
+Query: 73 P 73
+          P
+Sbjct: 91 P 91
+
+
+>sp|P82662|NXL6_OPHHA Long neurotoxin OH-6A/OH-6B OS=Ophiophagus
+          hannah PE=1 SV=2
+          Length = 91
+
+ Score = 75.1 bits (183), Expect = 8e-14,   Method: Composition-based stats.
+ Identities = 38/61 (62%), Positives = 45/61 (73%)
+
+Query: 13 AVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPHPKQR 72
+          +VTC PGEN+C+ K WCD +C SRGK +  GCAATCP   P  ++ CCSTD CNPHPK R
+Sbjct: 31 SVTCAPGENVCFLKSWCDAWCGSRGKKLSFGCAATCPKVNPGIDIECCSTDNCNPHPKLR 90
+
+Query: 73 P 73
+          P
+Sbjct: 91 P 91
+
+
+>sp|P01382|NXL1_NAJOX Long neurotoxin 1 OS=Naja oxiana PE=1 SV=1
+          Length = 73
+
+ Score = 75.1 bits (183), Expect = 8e-14,   Method: Composition-based stats.
+ Identities = 42/63 (66%), Positives = 53/63 (84%)
+
+Query: 10 PISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPHP 69
+          PI++ TC PG+NLCY K WCD +C SRGKV+ELGCAATCP+ + Y+++ CCSTD CNPHP
+Sbjct: 9  PITSETCAPGQNLCYTKTWCDAWCGSRGKVIELGCAATCPTVESYQDIKCCSTDDCNPHP 68
+
+Query: 70 KQR 72
+          KQ+
+Sbjct: 69 KQK 71
+
+
+>sp|P80965|NXL5_OPHHA Long neurotoxin OH-5 OS=Ophiophagus hannah
+          PE=1 SV=1
+          Length = 72
+
+ Score = 74.7 bits (182), Expect = 1e-13,   Method: Composition-based stats.
+ Identities = 39/60 (65%), Positives = 50/60 (83%)
+
+Query: 11 ISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPHPK 70
+          I +  CPPG++LCY K WCDVFC +RG+V+ELGC ATCP+ KP+E++TCCSTD C+PH K
+Sbjct: 10 IISEACPPGQDLCYMKTWCDVFCGTRGRVIELGCTATCPTVKPHEQITCCSTDNCDPHHK 69
+
+
+>sp|P01384|NXL1_NOTSC Long neurotoxin 1 OS=Notechis scutatus
+          scutatus PE=1 SV=1
+          Length = 73
+
+ Score = 73.2 bits (178), Expect = 3e-13,   Method: Composition-based stats.
+ Identities = 45/60 (75%), Positives = 48/60 (80%)
+
+Query: 10 PISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPHP 69
+          P +  TCP G+NLCY K WCD FCSSRGKVVELGCAATCP  K YE+VTCCSTD CNP P
+Sbjct: 7  PKTPRTCPRGQNLCYTKTWCDAFCSSRGKVVELGCAATCPIAKSYEDVTCCSTDNCNPFP 66
+
+
+>sp|Q8UW29|NXL1_LAPHA Long neurotoxin 1 OS=Lapemis hardwickii PE=2
+          SV=1
+          Length = 92
+
+ Score = 73.2 bits (178), Expect = 3e-13,   Method: Composition-based stats.
+ Identities = 38/62 (61%), Positives = 47/62 (75%)
+
+Query: 5  TTATSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDK 64
+          T   +P    TCPPG+NLCY+K WCD FCSSRGKV+ELGC A CP+ K  +++TCC+TD 
+Sbjct: 23 TCFRTPYKPETCPPGQNLCYKKSWCDAFCSSRGKVIELGCTAKCPTVKDGKDITCCATDN 82
+
+Query: 65 CN 66
+          CN
+Sbjct: 83 CN 84
+
+
+>sp|P34073|NXLD_ACAAN Acanthophin-D OS=Acanthophis antarcticus
+          PE=1 SV=1
+          Length = 74
+
+ Score = 72.8 bits (177), Expect = 4e-13,   Method: Composition-based stats.
+ Identities = 43/58 (74%), Positives = 49/58 (84%)
+
+Query: 15 TCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPHPKQR 72
+          TCP GEN+CY KMWCD FC+SRGKVVELGCAATCP +KP  EV CCST+KCN  PK++
+Sbjct: 13 TCPDGENVCYTKMWCDGFCTSRGKVVELGCAATCPIRKPGNEVKCCSTNKCNHPPKRK 70
+
+
+>sp|A3FM53|NXL2_LAPHA Long neurotoxin 2 OS=Lapemis hardwickii PE=2
+          SV=1
+          Length = 93
+
+ Score = 72.4 bits (176), Expect = 6e-13,   Method: Composition-based stats.
+ Identities = 37/59 (62%), Positives = 45/59 (76%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCN 66
+          T P    TCPPG+NLCY+K WCD FCSSRGKV+ELGC A CP+ K  +++ CC+TD CN
+Sbjct: 27 THPYKPETCPPGQNLCYKKSWCDAFCSSRGKVIELGCTAKCPTVKHGKDINCCATDNCN 85
+
+
+>sp|Q7T2I3|NXLL_LATLA Long neurotoxin LlLong (Fragment)
+          OS=Laticauda laticaudata PE=2 SV=1
+          Length = 87
+
+ Score = 71.2 bits (173), Expect = 1e-12,   Method: Composition-based stats.
+ Identities = 40/62 (64%), Positives = 46/62 (74%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T  + + TCPPG+ LCY K WCD FCS RGKV+ELGC ATCP  +P E+ TCCS D CNP
+Sbjct: 26 TPYVKSETCPPGQELCYTKTWCDRFCSIRGKVIELGCTATCPRAEPKEDTTCCSKDNCNP 85
+
+Query: 68 HP 69
+          HP
+Sbjct: 86 HP 87
+
+
+>sp|Q53B53|NXL34_OPHHA Long neurotoxin OH-34 (Fragment)
+          OS=Ophiophagus hannah PE=1 SV=1
+          Length = 90
+
+ Score = 70.1 bits (170), Expect = 3e-12,   Method: Composition-based stats.
+ Identities = 39/64 (60%), Positives = 47/64 (73%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T  + + TCP GEN+CY K WCDV+C SRG+ V+LGCAATCP  KP   + CCSTD CNP
+Sbjct: 26 TPDVKSETCPDGENICYTKTWCDVWCGSRGRRVDLGCAATCPIVKPGVNINCCSTDNCNP 85
+
+Query: 68 HPKQ 71
+           PK+
+Sbjct: 86 FPKR 89
+
+
+>sp|P01385|NXL1_ACAAN Long neurotoxin 1 OS=Acanthophis antarcticus
+          PE=1 SV=1
+          Length = 73
+
+ Score = 69.3 bits (168), Expect = 5e-12,   Method: Composition-based stats.
+ Identities = 41/52 (78%), Positives = 44/52 (84%)
+
+Query: 15 TCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCN 66
+          TCPPGEN+C+ + WCD FCSSRGKVVELGCAATCP  K Y EV CCSTDKCN
+Sbjct: 12 TCPPGENVCFTRTWCDAFCSSRGKVVELGCAATCPIVKSYNEVKCCSTDKCN 63
+
+
+>sp|A8N285|NXL2H_OPHHA Long neurotoxin LNTX-2 homolog
+          OS=Ophiophagus hannah PE=2 SV=1
+          Length = 93
+
+ Score = 69.3 bits (168), Expect = 5e-12,   Method: Composition-based stats.
+ Identities = 39/60 (65%), Positives = 46/60 (76%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T   ++ TCP GEN+CY K WCDVFCSSRGK ++LGCAATCP  KP  ++ CCSTD CNP
+Sbjct: 27 TPDATSQTCPDGENICYTKSWCDVFCSSRGKRIDLGCAATCPKVKPGVDIKCCSTDNCNP 86
+
+
+>sp|P25670|NXL1_ASPSC Long neurotoxin 1 OS=Aspidelaps scutatus
+          PE=1 SV=1
+          Length = 68
+
+ Score = 69.3 bits (168), Expect = 5e-12,   Method: Composition-based stats.
+ Identities = 38/62 (61%), Positives = 46/62 (74%)
+
+Query: 9  SPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPH 68
+          +P    TC  GEN+CY K WCD +CSSRGK +E GCAATCP+ KP  +++CC TD CNPH
+Sbjct: 6  APYDHKTCAAGENICYLKAWCDAWCSSRGKKLEFGCAATCPTVKPGVDISCCDTDNCNPH 65
+
+Query: 69 PK 70
+          PK
+Sbjct: 66 PK 67
+
+
+>sp|A6MFK4|NXL1_DEMVE Long neurotoxin LNTX-1 OS=Demansia
+          vestigiata PE=1 SV=1
+          Length = 88
+
+ Score = 68.6 bits (166), Expect = 8e-12,   Method: Composition-based stats.
+ Identities = 38/62 (61%), Positives = 47/62 (75%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T  + +  CPPG+ +CY K WCD  CS RGKV+ELGCAATCP ++P +E+TCCSTD CN 
+Sbjct: 27 TPEVKSEPCPPGQEVCYTKAWCDRMCSFRGKVIELGCAATCPRQEPGKEITCCSTDDCNT 86
+
+Query: 68 HP 69
+          HP
+Sbjct: 87 HP 88
+
+
+>sp|Q53B54|NXL17_OPHHA Long neurotoxin OH-17 OS=Ophiophagus hannah
+          PE=1 SV=1
+          Length = 72
+
+ Score = 67.0 bits (162), Expect = 2e-11,   Method: Composition-based stats.
+ Identities = 38/60 (63%), Positives = 46/60 (76%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T  + + TCP GEN+CY K WCDVFC+SRGK ++LGCAATCP  KP  ++ CCSTD CNP
+Sbjct: 6  TPDVKSETCPDGENICYTKSWCDVFCTSRGKRIDLGCAATCPKVKPGVDIKCCSTDNCNP 65
+
+
+>sp|A6MFK5|NXL2_DEMVE Long neurotoxin LNTX-2 OS=Demansia
+          vestigiata PE=1 SV=1
+          Length = 88
+
+ Score = 67.0 bits (162), Expect = 2e-11,   Method: Composition-based stats.
+ Identities = 37/62 (59%), Positives = 46/62 (74%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T  + +  CPPG+ +CY K W D  CS RGKV+ELGCAATCP ++P +E+TCCSTD CN 
+Sbjct: 27 TPEVKSEPCPPGQEVCYTKAWRDRMCSFRGKVIELGCAATCPRQEPGKEITCCSTDDCNT 86
+
+Query: 68 HP 69
+          HP
+Sbjct: 87 HP 88
+
+
+>sp|Q53B57|NXL56_OPHHA Long neurotoxin OH-56 OS=Ophiophagus hannah
+          PE=2 SV=1
+          Length = 91
+
+ Score = 67.0 bits (162), Expect = 3e-11,   Method: Composition-based stats.
+ Identities = 36/64 (56%), Positives = 46/64 (71%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T  +++ TCP G+N+CY + WCD +C SRGK V LGCAATCP   P  ++ CCSTD CNP
+Sbjct: 27 TPDVTSQTCPDGQNICYTETWCDAWCGSRGKRVNLGCAATCPKVNPGVDIICCSTDNCNP 86
+
+Query: 68 HPKQ 71
+           PK+
+Sbjct: 87 FPKR 90
+
+
+>sp|Q8UW28|NXL3_LAPHA Long neurotoxin 3 OS=Lapemis hardwickii PE=2
+          SV=1
+          Length = 92
+
+ Score = 66.2 bits (160), Expect = 4e-11,   Method: Composition-based stats.
+ Identities = 33/54 (61%), Positives = 42/54 (77%)
+
+Query: 15 TCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPH 68
+          TCPPGE +C+ K WCD FC SRGK +E+GCAATCP+ K   ++TCC+TD CN +
+Sbjct: 33 TCPPGEKVCFVKSWCDAFCGSRGKRIEMGCAATCPTVKDGIDITCCATDNCNTY 86
+
+
+>sp|Q2VBP5|NXL22_OPHHA Long neurotoxin LNTX22 OS=Ophiophagus
+          hannah PE=2 SV=1
+          Length = 93
+
+ Score = 66.2 bits (160), Expect = 4e-11,   Method: Composition-based stats.
+ Identities = 36/60 (60%), Positives = 45/60 (75%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T  + + TCP GEN+CY K WC+VFC+SRGK ++LG AATCP  KP  ++ CCSTD CNP
+Sbjct: 27 TPDVKSETCPDGENICYTKSWCEVFCTSRGKRIDLGRAATCPKVKPGVDIKCCSTDNCNP 86
+
+
+>sp|P01389|NXL1_NAJHC Long neurotoxin 1 OS=Naja haje anchietae
+          PE=1 SV=1
+          Length = 72
+
+ Score = 65.9 bits (159), Expect = 5e-11,   Method: Composition-based stats.
+ Identities = 36/64 (56%), Positives = 46/64 (71%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T  +++  CP G+N+CY K WCD FC  RGK V+LGCAATCP+ KP  ++ CCSTD CNP
+Sbjct: 6  TPDVTSQACPDGQNICYTKTWCDNFCGMRGKRVDLGCAATCPTVKPGVDIKCCSTDNCNP 65
+
+Query: 68 HPKQ 71
+           P +
+Sbjct: 66 FPTR 69
+
+
+>sp|Q53B58|NXL55_OPHHA Long neurotoxin OH-55 OS=Ophiophagus hannah
+          PE=1 SV=1
+          Length = 93
+
+ Score = 65.1 bits (157), Expect = 9e-11,   Method: Composition-based stats.
+ Identities = 36/65 (55%), Positives = 47/65 (72%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T  + + TCP G+++CY + WCD +C+SRGK V LGCAATCP  KP  E+ CCSTD CNP
+Sbjct: 27 TPDVKSETCPAGQDICYTETWCDAWCTSRGKRVNLGCAATCPIVKPGVEIKCCSTDNCNP 86
+
+Query: 68 HPKQR 72
+           P ++
+Sbjct: 87 FPTRK 91
+
+
+>sp|P01393|NXL1_DENJA Long neurotoxin 1 OS=Dendroaspis jamesoni
+          kaimosae PE=1 SV=1
+          Length = 72
+
+ Score = 65.1 bits (157), Expect = 9e-11,   Method: Composition-based stats.
+ Identities = 39/59 (66%), Positives = 42/59 (71%)
+
+Query: 15 TCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPHPKQRP 73
+          TCP GE++CY K WCD FCS RGK VELGCAATCP  K   E+ CCSTD CNP P   P
+Sbjct: 13 TCPRGEDICYTKTWCDGFCSQRGKRVELGCAATCPKVKTGVEIKCCSTDYCNPFPVWNP 71
+
+
+>sp|P01386|NXL2_OPHHA Long neurotoxin 2 OS=Ophiophagus hannah PE=1
+          SV=1
+          Length = 73
+
+ Score = 65.1 bits (157), Expect = 9e-11,   Method: Composition-based stats.
+ Identities = 37/62 (59%), Positives = 46/62 (74%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T   ++ TCP G+++CY K WCD FCSSRGK ++LGCAATCP  KP  ++ CCSTD CNP
+Sbjct: 6  TPDATSQTCPDGQDICYTKTWCDGFCSSRGKRIDLGCAATCPKVKPGVDIKCCSTDNCNP 65
+
+Query: 68 HP 69
+           P
+Sbjct: 66 FP 67
+
+
+>sp|P01397|NXL2_DENPO Long neurotoxin 2 OS=Dendroaspis polylepis
+          polylepis PE=1 SV=2
+          Length = 72
+
+ Score = 64.3 bits (155), Expect = 2e-10,   Method: Composition-based stats.
+ Identities = 37/58 (63%), Positives = 42/58 (72%)
+
+Query: 16 CPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPHPKQRP 73
+          CPPGEN+CY K WCD +CS RGK+VELGCAATCP  K   E+ CCSTD CN     +P
+Sbjct: 14 CPPGENICYTKTWCDAWCSQRGKIVELGCAATCPKVKAGVEIKCCSTDNCNKFKFGKP 71
+
+
+>sp|P25667|NXL3_DENPO Long neurotoxin 3 OS=Dendroaspis polylepis
+          polylepis PE=1 SV=1
+          Length = 72
+
+ Score = 64.3 bits (155), Expect = 2e-10,   Method: Composition-based stats.
+ Identities = 35/51 (68%), Positives = 39/51 (76%)
+
+Query: 16 CPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCN 66
+          CPPGEN+CY K WCD +CS RGK+VELGCAATCP  K    + CCSTD CN
+Sbjct: 14 CPPGENICYTKTWCDAWCSRRGKIVELGCAATCPKVKAGVGIKCCSTDNCN 64
+
+
+>sp|P01387|NXL1_OPHHA Long neurotoxin 1 OS=Ophiophagus hannah PE=1
+          SV=1
+          Length = 73
+
+ Score = 63.9 bits (154), Expect = 2e-10,   Method: Composition-based stats.
+ Identities = 37/65 (56%), Positives = 47/65 (72%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T  + + TCP G+++CY + WCD +C+SRGK V+LGCAATCP  KP  E+ CCSTD CNP
+Sbjct: 6  TPDVKSETCPAGQDICYTETWCDAWCTSRGKRVDLGCAATCPIVKPGVEIKCCSTDNCNP 65
+
+Query: 68 HPKQR 72
+           P  R
+Sbjct: 66 FPTWR 70
+
+
+>sp|P01396|NXL1_DENPO Long neurotoxin 1 OS=Dendroaspis polylepis
+          polylepis PE=1 SV=1
+          Length = 72
+
+ Score = 63.2 bits (152), Expect = 3e-10,   Method: Composition-based stats.
+ Identities = 36/58 (62%), Positives = 41/58 (70%)
+
+Query: 16 CPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPHPKQRP 73
+          CPPGEN+CY K WCD +CS RGK VELGCAATCP  K   E+ CCSTD C+     +P
+Sbjct: 14 CPPGENICYTKTWCDAWCSQRGKRVELGCAATCPKVKAGVEIKCCSTDDCDKFQFGKP 71
+
+
+>sp|P01381|NXL2_ASTST Long neurotoxin 2 OS=Astrotia stokesii PE=1
+          SV=1
+          Length = 72
+
+ Score = 63.2 bits (152), Expect = 4e-10,   Method: Composition-based stats.
+ Identities = 34/60 (56%), Positives = 43/60 (71%)
+
+Query: 15 TCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPHPKQRPG 74
+          TCPPGEN+C+ K WCD FCS+RG+ + +GCAATCP+ K    + CCSTD CN + K   G
+Sbjct: 12 TCPPGENVCFVKTWCDAFCSTRGERIVMGCAATCPTAKSGVHIACCSTDNCNIYTKWGSG 71
+
+
+>sp|P01379|NXL1_LATSE Long neurotoxin Ls3 OS=Laticauda
+          semifasciata PE=1 SV=2
+          Length = 87
+
+ Score = 63.2 bits (152), Expect = 4e-10,   Method: Composition-based stats.
+ Identities = 35/61 (57%), Positives = 43/61 (70%)
+
+Query: 9  SPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPH 68
+          +P    TCP G+ +CY K WC+ +CSSRGKV+E GCAATCPS     E+ CCS DKCN +
+Sbjct: 27 NPHDTQTCPSGQEICYVKSWCNAWCSSRGKVLEFGCAATCPSVNTGTEIKCCSADKCNTY 86
+
+Query: 69 P 69
+          P
+Sbjct: 87 P 87
+
+
+>sp|P01395|NXL2_DENVI Long neurotoxin 2 OS=Dendroaspis viridis
+          PE=1 SV=1
+          Length = 73
+
+ Score = 62.8 bits (151), Expect = 5e-10,   Method: Composition-based stats.
+ Identities = 38/66 (57%), Positives = 43/66 (65%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T  +   TCP GEN+CY + WCD +CS RGK VELGCAATCP  K    + CCSTD CNP
+Sbjct: 6  TPSVKPETCPHGENICYTETWCDAWCSQRGKRVELGCAATCPKVKAGVGIKCCSTDNCNP 65
+
+Query: 68 HPKQRP 73
+           P   P
+Sbjct: 66 FPVWNP 71
+
+
+>sp|O42257|NXL7_NAJSP Long neurotoxin 7 OS=Naja sputatrix GN=LNTX7
+          PE=1 SV=1
+          Length = 90
+
+ Score = 62.4 bits (150), Expect = 6e-10,   Method: Composition-based stats.
+ Identities = 37/64 (57%), Positives = 47/64 (73%), Gaps = 1/64 (1%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T  +++  CP G ++CY K WCD FCSSRG+ VELGCAATCP+ KP  ++ CCSTD CNP
+Sbjct: 27 TPDVTSTDCPNG-HVCYTKTWCDGFCSSRGRRVELGCAATCPTVKPGVDIQCCSTDNCNP 85
+
+Query: 68 HPKQ 71
+           P +
+Sbjct: 86 FPTR 89
+
+
+>sp|P01380|NXL1_ASTST Long neurotoxin 1 OS=Astrotia stokesii PE=1
+          SV=1
+          Length = 70
+
+ Score = 61.6 bits (148), Expect = 1e-09,   Method: Composition-based stats.
+ Identities = 32/56 (57%), Positives = 42/56 (75%)
+
+Query: 15 TCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPHPK 70
+          TCPPGEN+C+ K WCD FC++RG+ + +GCAATCP+ K    + CCSTD CN + K
+Sbjct: 12 TCPPGENVCFVKTWCDGFCNTRGERIIMGCAATCPTAKSGVHIACCSTDNCNIYAK 67
+
+
+>sp|P25674|NXL1_NAJHH Long neurotoxin 1 OS=Naja haje haje PE=1
+          SV=1
+          Length = 71
+
+ Score = 61.2 bits (147), Expect = 1e-09,   Method: Composition-based stats.
+ Identities = 36/65 (55%), Positives = 47/65 (72%), Gaps = 1/65 (1%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T  +++  CP G ++CY KMWCD FC  RGK V+LGCAATCP+ KP  ++ CCSTD CNP
+Sbjct: 6  TPDVTSQACPDG-HVCYTKMWCDNFCGMRGKRVDLGCAATCPTVKPGVDIKCCSTDNCNP 64
+
+Query: 68 HPKQR 72
+           P ++
+Sbjct: 65 FPTRK 69
+
+
+>sp|P0C8R6|NXL1_LATCO Long neurotoxin 1 OS=Laticauda colubrina
+          PE=1 SV=1
+          Length = 69
+
+ Score = 60.8 bits (146), Expect = 2e-09,   Method: Composition-based stats.
+ Identities = 34/62 (54%), Positives = 42/62 (67%)
+
+Query: 9  SPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPH 68
+          +P     C PG+ +CY K W D   S +GK +E GCAATCP+ KP  ++ CCSTDKCNPH
+Sbjct: 6  APRDTQICAPGQEICYLKSWDDGSGSIKGKRLEFGCAATCPTVKPGIDIKCCSTDKCNPH 65
+
+Query: 69 PK 70
+          PK
+Sbjct: 66 PK 67
+
+
+>sp|A7X4Q3|NXL1_OXYMI Long neurotoxin 3FTx-Oxy1 OS=Oxyuranus
+          microlepidotus PE=2 SV=1
+          Length = 92
+
+ Score = 60.8 bits (146), Expect = 2e-09,   Method: Composition-based stats.
+ Identities = 36/64 (56%), Positives = 44/64 (68%), Gaps = 1/64 (1%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPS-KKPYEEVTCCSTDKCN 66
+          T  + +  CPPG+ +CY K WCD FC SRGK V+LGCAATCP+ KK   ++ CCS D CN
+Sbjct: 27 TPDVRSERCPPGQEVCYTKTWCDGFCGSRGKRVDLGCAATCPTPKKKGIDIICCSKDNCN 86
+
+Query: 67 PHPK 70
+            PK
+Sbjct: 87 TFPK 90
+
+
+>sp|Q9W7J5|NXLP_PSETE Pseudonajatoxin b homolog OS=Pseudonaja
+          textilis PE=1 SV=1
+          Length = 103
+
+ Score = 60.1 bits (144), Expect = 3e-09,   Method: Composition-based stats.
+ Identities = 35/63 (55%), Positives = 43/63 (68%), Gaps = 1/63 (1%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPS-KKPYEEVTCCSTDKCN 66
+          T  + +  CPPG+ +CY K WCD FC  RGK V+LGCAATCP+ KK   ++ CCSTD CN
+Sbjct: 27 TPDVKSKPCPPGQEVCYTKTWCDGFCGIRGKRVDLGCAATCPTPKKTGIDIICCSTDDCN 86
+
+Query: 67 PHP 69
+            P
+Sbjct: 87 TFP 89
+
+
+>sp|P01394|NXL1_DENVI Long neurotoxin 1 OS=Dendroaspis viridis
+          PE=1 SV=1
+          Length = 72
+
+ Score = 59.7 bits (143), Expect = 4e-09,   Method: Composition-based stats.
+ Identities = 36/66 (54%), Positives = 43/66 (65%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T  +   TCP GEN+CY + WCD +CS RGK  ELGCAATCP  K    + CCSTD C+P
+Sbjct: 6  TPSVKPETCPHGENICYTETWCDAWCSQRGKREELGCAATCPKVKAGVGIKCCSTDNCDP 65
+
+Query: 68 HPKQRP 73
+           P + P
+Sbjct: 66 FPVKNP 71
+
+
+>sp|P01390|NXL1_NAJNI Long neurotoxin 1 OS=Naja nivea PE=1 SV=1
+          Length = 71
+
+ Score = 59.3 bits (142), Expect = 5e-09,   Method: Composition-based stats.
+ Identities = 35/65 (53%), Positives = 44/65 (67%), Gaps = 1/65 (1%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T  +++  CP G ++CY KMWCD FC  RGK V+LGCAATCP  KP   + CCS D CNP
+Sbjct: 6  TPDVTSQACPDG-HVCYTKMWCDNFCGMRGKRVDLGCAATCPKVKPGVNIKCCSRDNCNP 64
+
+Query: 68 HPKQR 72
+           P ++
+Sbjct: 65 FPTRK 69
+
+
+>sp|P0C8R7|NXLA_LATCO Toxin Lc a OS=Laticauda colubrina PE=1 SV=1
+          Length = 69
+
+ Score = 58.9 bits (141), Expect = 6e-09,   Method: Composition-based stats.
+ Identities = 32/62 (51%), Positives = 40/62 (64%)
+
+Query: 9  SPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPH 68
+          +P     C PG+ +CY K W D     +G  +E GCAATCP+ KP  ++ CCSTDKCNPH
+Sbjct: 6  APRDTQICAPGQEICYLKSWDDGTGFLKGNRLEFGCAATCPTVKPGIDIKCCSTDKCNPH 65
+
+Query: 69 PK 70
+          PK
+Sbjct: 66 PK 67
+
+
+>sp|P0C8R8|NXLB_LATCO Toxin Lc b OS=Laticauda colubrina PE=1 SV=1
+          Length = 69
+
+ Score = 58.5 bits (140), Expect = 8e-09,   Method: Composition-based stats.
+ Identities = 33/62 (53%), Positives = 39/62 (62%)
+
+Query: 9  SPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPH 68
+          +P     C PG+ +CY K W D   S RG  +E GCAATCP+ K    + CCSTDKCNPH
+Sbjct: 6  APRDTQICAPGQEICYLKSWDDGTGSIRGNRLEFGCAATCPTVKRGIHIKCCSTDKCNPH 65
+
+Query: 69 PK 70
+          PK
+Sbjct: 66 PK 67
+
+
+>sp|P01391|NXL1_NAJKA Long neurotoxin 1 OS=Naja kaouthia PE=1 SV=1
+          Length = 71
+
+ Score = 57.8 bits (138), Expect = 1e-08,   Method: Composition-based stats.
+ Identities = 36/65 (55%), Positives = 46/65 (70%), Gaps = 1/65 (1%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T  I++  CP G ++CY K WCD FCS RGK V+LGCAATCP+ K   ++ CCSTD CNP
+Sbjct: 6  TPDITSKDCPNG-HVCYTKTWCDAFCSIRGKRVDLGCAATCPTVKTGVDIQCCSTDNCNP 64
+
+Query: 68 HPKQR 72
+           P ++
+Sbjct: 65 FPTRK 69
+
+
+>sp|P01388|NXL2_NAJME Long neurotoxin 2 OS=Naja melanoleuca PE=1
+          SV=1
+          Length = 71
+
+ Score = 57.4 bits (137), Expect = 2e-08,   Method: Composition-based stats.
+ Identities = 32/51 (62%), Positives = 39/51 (76%)
+
+Query: 21 NLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPHPKQ 71
+          ++CY K WCD FC+SRGK V+LGCAATCP+ KP   + CCSTD CNP P +
+Sbjct: 18 HVCYTKTWCDNFCASRGKRVDLGCAATCPTVKPGVNIKCCSTDNCNPFPTR 68
+
+
+>sp|P34074|NXL1_BOUAN Long neurotoxin 1 OS=Boulengerina annulata
+          annulata PE=1 SV=2
+          Length = 71
+
+ Score = 57.0 bits (136), Expect = 2e-08,   Method: Composition-based stats.
+ Identities = 35/65 (53%), Positives = 45/65 (69%), Gaps = 1/65 (1%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T  +S+  CP G ++CY K WCD FC   GK V+LGCAATCP+ KP  ++ CCSTD CNP
+Sbjct: 6  TPRVSSQACPDG-HVCYTKTWCDNFCGINGKRVDLGCAATCPTVKPGVDIKCCSTDNCNP 64
+
+Query: 68 HPKQR 72
+           P ++
+Sbjct: 65 FPTRK 69
+
+
+>sp|P25669|NXL2_NAJNA Long neurotoxin 2 OS=Naja naja PE=1 SV=1
+          Length = 71
+
+ Score = 57.0 bits (136), Expect = 2e-08,   Method: Composition-based stats.
+ Identities = 35/65 (53%), Positives = 47/65 (72%), Gaps = 1/65 (1%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T  I++  CP G ++CY K WCD FCSSRGK V+LGCAATCP+ +   ++ CCSTD C+P
+Sbjct: 6  TPDITSKDCPNG-HVCYTKTWCDGFCSSRGKRVDLGCAATCPTVRTGVDIQCCSTDDCDP 64
+
+Query: 68 HPKQR 72
+           P ++
+Sbjct: 65 FPTRK 69
+
+
+>sp|P25671|NXL3_NAJNA Long neurotoxin 3 OS=Naja naja PE=1 SV=1
+          Length = 71
+
+ Score = 56.6 bits (135), Expect = 3e-08,   Method: Composition-based stats.
+ Identities = 35/65 (53%), Positives = 46/65 (70%), Gaps = 1/65 (1%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T  I++  CP G ++CY K WCD FCS RGK V+LGCAATCP+ K   ++ CCSTD C+P
+Sbjct: 6  TPDITSKDCPNG-HVCYTKTWCDAFCSIRGKRVDLGCAATCPTVKTGVDIQCCSTDDCDP 64
+
+Query: 68 HPKQR 72
+           P ++
+Sbjct: 65 FPTRK 69
+
+
+>sp|Q9W729|NXL6_BUNMU Kappa-6-bungarotoxin OS=Bungarus
+          multicinctus PE=2 SV=1
+          Length = 87
+
+ Score = 56.6 bits (135), Expect = 3e-08,   Method: Composition-based stats.
+ Identities = 33/66 (50%), Positives = 43/66 (65%), Gaps = 3/66 (4%)
+
+Query: 3  CHTTATSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPS-KKPYEEVTCCS 61
+          CH + +S  +  TCP G+++C+RK  CD FCS RG V+E GC ATCP  +  Y  + CC 
+Sbjct: 24 CHISTSS--TPQTCPKGQDICFRKTQCDKFCSIRGAVIEQGCVATCPEFRSNYRSLLCCR 81
+
+Query: 62 TDKCNP 67
+          TD CNP
+Sbjct: 82 TDNCNP 87
+
+
+>sp|P25668|NXL1_NAJNA Long neurotoxin 1 OS=Naja naja PE=1 SV=1
+          Length = 71
+
+ Score = 55.8 bits (133), Expect = 5e-08,   Method: Composition-based stats.
+ Identities = 34/65 (52%), Positives = 46/65 (70%), Gaps = 1/65 (1%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T  I++  CP G ++CY K WCD FCS RGK V+LGCAATCP+ +   ++ CCSTD C+P
+Sbjct: 6  TPDITSKDCPNG-HVCYTKTWCDGFCSIRGKRVDLGCAATCPTVRTGVDIQCCSTDDCDP 64
+
+Query: 68 HPKQR 72
+           P ++
+Sbjct: 65 FPTRK 69
+
+
+>sp|P25673|NXL5_NAJNA Long neurotoxin 5 OS=Naja naja PE=1 SV=1
+          Length = 71
+
+ Score = 55.8 bits (133), Expect = 5e-08,   Method: Composition-based stats.
+ Identities = 34/65 (52%), Positives = 46/65 (70%), Gaps = 1/65 (1%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T  I++  CP G ++CY K WCD FCS RG+ V+LGCAATCP+ K   ++ CCSTD C+P
+Sbjct: 6  TPDITSKDCPNG-HVCYTKTWCDGFCSRRGERVDLGCAATCPTVKTGVDIQCCSTDDCDP 64
+
+Query: 68 HPKQR 72
+           P ++
+Sbjct: 65 FPTRK 69
+
+
+>sp|P13495|NXLB_PSETE Pseudonajatoxin b OS=Pseudonaja textilis
+          PE=1 SV=1
+          Length = 71
+
+ Score = 55.5 bits (132), Expect = 7e-08,   Method: Composition-based stats.
+ Identities = 35/63 (55%), Positives = 43/63 (68%), Gaps = 1/63 (1%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPS-KKPYEEVTCCSTDKCN 66
+          T  + +  CPPG+ +CY + WCD FC  RGK VELGCAATCP+ KK   ++ CCSTD CN
+Sbjct: 6  TPDVKSKPCPPGQEVCYTETWCDGFCGIRGKRVELGCAATCPTPKKTGIDIQCCSTDDCN 65
+
+Query: 67 PHP 69
+            P
+Sbjct: 66 TFP 68
+
+
+>sp|P25672|NXL4_NAJNA Long neurotoxin 4 OS=Naja naja PE=1 SV=1
+          Length = 71
+
+ Score = 54.7 bits (130), Expect = 1e-07,   Method: Composition-based stats.
+ Identities = 33/65 (50%), Positives = 45/65 (69%), Gaps = 1/65 (1%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T  I++  CP G ++CY K WCD FC  RG+ V+LGCAATCP+ K   ++ CCSTD C+P
+Sbjct: 6  TPDITSKDCPNG-HVCYTKTWCDGFCRIRGERVDLGCAATCPTVKTGVDIQCCSTDDCDP 64
+
+Query: 68 HPKQR 72
+           P ++
+Sbjct: 65 FPTRK 69
+
+
+>sp|P15817|NXLR1_BUNMU Kappa-3-bungarotoxin OS=Bungarus
+          multicinctus PE=1 SV=1
+          Length = 87
+
+ Score = 53.9 bits (128), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 29/53 (54%), Positives = 36/53 (67%), Gaps = 1/53 (1%)
+
+Query: 15 TCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPS-KKPYEEVTCCSTDKCN 66
+          TCP G+++C+RK  CD FC SRG V+E GC ATCP  +  Y  + CC TD CN
+Sbjct: 34 TCPNGQDICFRKAQCDNFCHSRGPVIEQGCVATCPQFRSNYRSLLCCRTDNCN 86
+
+
+>sp|A7X4R0|NXL2_OXYMI Long neurotoxin 3FTx-Oxy2 OS=Oxyuranus
+          microlepidotus PE=2 SV=1
+          Length = 92
+
+ Score = 52.8 bits (125), Expect = 5e-07,   Method: Composition-based stats.
+ Identities = 32/64 (50%), Positives = 40/64 (62%), Gaps = 1/64 (1%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYE-EVTCCSTDKCN 66
+          T  + +  CPPG+ +CY K W D    SRGK V+LGCAATCP+ K  + +  CCS D CN
+Sbjct: 27 TPSVRSERCPPGQEVCYTKTWTDGHGGSRGKRVDLGCAATCPTPKKKDIKTICCSKDNCN 86
+
+Query: 67 PHPK 70
+            PK
+Sbjct: 87 TFPK 90
+
+
+>sp|P07526|NXL3_OPHHA Long neurotoxin 3 OS=Ophiophagus hannah PE=1
+          SV=1
+          Length = 73
+
+ Score = 50.4 bits (119), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 30/62 (48%), Positives = 38/62 (61%)
+
+Query: 8  TSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNP 67
+          T  + + TCP G++LCY + WC  +C+ RGK V L CAA CP   P   + CCSTD C P
+Sbjct: 6  TPDVKSETCPAGQDLCYTETWCVAWCTVRGKRVSLTCAAICPIVPPKVSIKCCSTDACGP 65
+
+Query: 68 HP 69
+           P
+Sbjct: 66 FP 67
+
+
+>sp|P14612|NXLH_PSEAU Long neurotoxin homolog Pa ID OS=Pseudechis
+          australis PE=1 SV=1
+          Length = 68
+
+ Score = 50.1 bits (118), Expect = 4e-06,   Method: Composition-based stats.
+ Identities = 29/58 (50%), Positives = 37/58 (63%)
+
+Query: 12 SAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPHP 69
+          S+ TC   + LC  K WCD +C  RG  +E+GC ATCP + P  + TCC+TD CNP P
+Sbjct: 10 SSETCRSEQELCCTKTWCDQWCQDRGPRLEMGCTATCPRRMPGLDFTCCTTDNCNPVP 67
+
+
+>sp|Q8AY56|NXKA_BUNCA Kappa 1a-bungarotoxin OS=Bungarus candidus
+          PE=2 SV=1
+          Length = 87
+
+ Score = 49.7 bits (117), Expect = 4e-06,   Method: Composition-based stats.
+ Identities = 28/53 (52%), Positives = 36/53 (67%), Gaps = 1/53 (1%)
+
+Query: 15 TCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPS-KKPYEEVTCCSTDKCN 66
+          TCP G+++C+ K  CD FCS RG V+E GC ATCP  +  Y  + CC+TD CN
+Sbjct: 34 TCPQGQDICFLKAQCDKFCSIRGPVIEQGCVATCPQFRSNYRSLLCCTTDNCN 86
+
+
+>sp|P01398|NXL1_BUNMU Kappa-1-bungarotoxin OS=Bungarus
+          multicinctus PE=1 SV=2
+          Length = 87
+
+ Score = 49.7 bits (117), Expect = 4e-06,   Method: Composition-based stats.
+ Identities = 28/53 (52%), Positives = 36/53 (67%), Gaps = 1/53 (1%)
+
+Query: 15 TCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPS-KKPYEEVTCCSTDKCN 66
+          TCP G+++C+ K  CD FCS RG V+E GC ATCP  +  Y  + CC+TD CN
+Sbjct: 34 TCPNGQDICFLKAQCDKFCSIRGPVIEQGCVATCPQFRSNYRSLLCCTTDNCN 86
+
+
+>sp|Q8AY55|NXKB_BUNCA Kappa 1b-bungarotoxin OS=Bungarus candidus
+          PE=2 SV=1
+          Length = 87
+
+ Score = 49.3 bits (116), Expect = 5e-06,   Method: Composition-based stats.
+ Identities = 28/53 (52%), Positives = 35/53 (66%), Gaps = 1/53 (1%)
+
+Query: 15 TCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPS-KKPYEEVTCCSTDKCN 66
+          TCP G+ +C+ K  CD FCS RG V+E GC ATCP  +  Y  + CC+TD CN
+Sbjct: 34 TCPQGQGICFLKAQCDKFCSIRGPVIEQGCVATCPQFRSNYRSLLCCTTDNCN 86
+
+
+>sp|P15815|NXL2_BUNFL Long neurotoxin 2 OS=Bungarus flaviceps
+          flaviceps PE=1 SV=1
+          Length = 66
+
+ Score = 48.1 bits (113), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 29/56 (51%), Positives = 41/56 (73%), Gaps = 1/56 (1%)
+
+Query: 12 SAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPS-KKPYEEVTCCSTDKCN 66
+          ++ TCP G+++C+ K +CD +CSSRG V+E GCAATCP     Y+ + CC+TD CN
+Sbjct: 10 TSQTCPKGQDICFTKAFCDRWCSSRGPVIEQGCAATCPEFTSRYKSLLCCTTDNCN 65
+
+
+>sp|Q53B55|NXL31_OPHHA Long neurotoxin-like OH-31 OS=Ophiophagus
+          hannah PE=2 SV=1
+          Length = 94
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 25/39 (64%), Positives = 29/39 (74%)
+
+Query: 33 CSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCNPHPKQ 71
+          C SRG+ V+LGCAATCP  KP   + CCSTD CNP PK+
+Sbjct: 55 CGSRGRRVDLGCAATCPIVKPGVNINCCSTDNCNPFPKR 93
+
+
+>sp|O12961|NXL4_BUNMU Kappa-4-bungarotoxin OS=Bungarus
+          multicinctus PE=2 SV=1
+          Length = 87
+
+ Score = 46.6 bits (109), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 27/53 (50%), Positives = 35/53 (66%), Gaps = 1/53 (1%)
+
+Query: 15 TCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPS-KKPYEEVTCCSTDKCN 66
+          TCP GE++C  K  CD +C  RG ++E GCAATCP  +  Y  + CC+TD CN
+Sbjct: 34 TCPKGEDICIVKARCDEWCLRRGPLIERGCAATCPEFRSNYRSLLCCTTDNCN 86
+
+
+>sp|O12962|NXL5_BUNMU Kappa-5-bungarotoxin OS=Bungarus
+          multicinctus PE=2 SV=1
+          Length = 87
+
+ Score = 46.2 bits (108), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 27/53 (50%), Positives = 34/53 (64%), Gaps = 1/53 (1%)
+
+Query: 15 TCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPS-KKPYEEVTCCSTDKCN 66
+          TCP G++ C+ K  CD  C  RG V+E GCAATCP  +  Y  + CC+TD CN
+Sbjct: 34 TCPQGQDTCFLKALCDKLCPIRGPVIEQGCAATCPEFRSNYRSLLCCTTDNCN 86
+
+
+>sp|Q2VBN1|TXM6_OPHHA Muscarinic toxin MTX6 OS=Ophiophagus hannah
+          PE=2 SV=1
+          Length = 86
+
+ Score = 45.8 bits (107), Expect = 6e-05,   Method: Composition-based stats.
+ Identities = 30/52 (57%), Positives = 34/52 (65%), Gaps = 3/52 (5%)
+
+Query: 15 TCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCN 66
+          TC  G+NLCY K W  VF  +R    + GCAATCP K P E V CC+TDKCN
+Sbjct: 37 TCSDGQNLCYAK-WFAVFPGARRP--DGGCAATCPDKVPLEIVNCCTTDKCN 85
+
+
+>sp|P15816|NXLB1_BUNMU Kappa-2-bungarotoxin OS=Bungarus
+          multicinctus PE=1 SV=1
+          Length = 87
+
+ Score = 45.1 bits (105), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 26/53 (49%), Positives = 37/53 (69%), Gaps = 1/53 (1%)
+
+Query: 15 TCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYE-EVTCCSTDKCN 66
+          TCP G+++C+ K+ C+ FC  RG V+E GCAATCP  +  +  + CC+TD CN
+Sbjct: 34 TCPQGQDICFLKVSCEQFCPIRGPVIEQGCAATCPEFRSNDRSLLCCTTDNCN 86
+
+
+>sp|Q9YGX1|NXSED_LATSE Short neurotoxin OKI-Ed OS=Laticauda
+          semifasciata PE=2 SV=1
+          Length = 83
+
+ Score = 43.1 bits (100), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 26/60 (43%), Positives = 37/60 (61%), Gaps = 6/60 (10%)
+
+Query: 7  ATSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCN 66
+          ++ P +  +CPPGEN CYRK W D     RG ++E GC   CP+ KP  ++ CC ++ CN
+Sbjct: 29 SSEPQTNKSCPPGENSCYRKQWRD----HRGTIIERGCG--CPTVKPGIKLRCCESEDCN 82
+
+
+>sp|Q7T2I1|NXS10_LATLA Short neurotoxin OKI-10 (Fragment)
+          OS=Laticauda laticaudata PE=2 SV=1
+          Length = 82
+
+ Score = 43.1 bits (100), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 26/60 (43%), Positives = 37/60 (61%), Gaps = 6/60 (10%)
+
+Query: 7  ATSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCN 66
+          ++ P +  +CPPGEN CYRK W D     RG ++E GC   CP+ KP  ++ CC ++ CN
+Sbjct: 28 SSEPQTNKSCPPGENSCYRKQWRD----HRGTIIERGCG--CPTVKPGVKLRCCESEDCN 81
+
+
+>sp|Q9YGC2|NXS1_LATLA Short neurotoxin OKI-17/NCA-06 OS=Laticauda
+          laticaudata PE=2 SV=1
+          Length = 83
+
+ Score = 42.4 bits (98), Expect = 6e-04,   Method: Composition-based stats.
+ Identities = 26/60 (43%), Positives = 37/60 (61%), Gaps = 6/60 (10%)
+
+Query: 7  ATSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCN 66
+          ++ P +  +CPPGEN CY K W D     RG ++E GC   CP+ KP  ++TCC ++ CN
+Sbjct: 29 SSQPQTNKSCPPGENSCYNKQWRD----HRGTIIERGCG--CPTVKPGIKLTCCQSEDCN 82
+
+
+>sp|Q9YGW8|NXS4_LATLA Short neurotoxin VAN-29 OS=Laticauda
+          laticaudata PE=2 SV=1
+          Length = 83
+
+ Score = 42.4 bits (98), Expect = 7e-04,   Method: Composition-based stats.
+ Identities = 26/60 (43%), Positives = 35/60 (58%), Gaps = 6/60 (10%)
+
+Query: 7  ATSPISAVTCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCN 66
+          ++ P +  +CPPGEN CY K W D     RG ++E GC   CP  K   ++TCC +D CN
+Sbjct: 29 SSEPQTNKSCPPGENSCYNKQWRD----HRGTIIERGCG--CPQVKSGIKLTCCQSDDCN 82
+
+
+>sp|A7X3M3|TX1_PSAMO Toxin 3FTx-Psa1 OS=Psammophis mossambicus
+          PE=2 SV=1
+          Length = 90
+
+ Score = 42.0 bits (97), Expect = 8e-04,   Method: Composition-based stats.
+ Identities = 28/52 (53%), Positives = 32/52 (61%), Gaps = 5/52 (9%)
+
+Query: 16 CPPGENLCY-RKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCN 66
+          C  GEN+C+ RK    VF    G  V  GCAA+CPS    EEV+CCSTD CN
+Sbjct: 36 CSEGENVCFQRKNGTGVF----GMRVVRGCAASCPSPIGGEEVSCCSTDNCN 83
+
+
+>sp|Q53B61|TXW72_OPHHA Weak neurotoxin OH-72 (Fragment)
+          OS=Ophiophagus hannah PE=2 SV=1
+          Length = 81
+
+ Score = 42.0 bits (97), Expect = 0.001,   Method: Composition-based stats.
+ Identities = 26/52 (50%), Positives = 31/52 (59%), Gaps = 3/52 (5%)
+
+Query: 15 TCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCN 66
+          TC  GEN+C++  +        GK    GCAATCP  KP E V CCSTD+CN
+Sbjct: 32 TCRDGENVCFKGFYEG---KQLGKQFRRGCAATCPEGKPNEIVQCCSTDECN 80
+
+
+>sp|Q6IZ95|NTX4_BUNCA Neurotoxin Ntx4 OS=Bungarus candidus PE=2
+          SV=1
+          Length = 86
+
+ Score = 41.6 bits (96), Expect = 0.001,   Method: Composition-based stats.
+ Identities = 28/52 (53%), Positives = 32/52 (61%), Gaps = 3/52 (5%)
+
+Query: 15 TCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCN 66
+          TC  GENLC ++ +        GK    GCAATCP  KP+E V CCSTDKCN
+Sbjct: 37 TCRDGENLCVKRFYEG---KRFGKKYPRGCAATCPEAKPHEIVECCSTDKCN 85
+
+
+>sp|A2CKF7|NTXLT_BUNFA Neurotoxin 3FTx-LT OS=Bungarus fasciatus
+          PE=1 SV=1
+          Length = 86
+
+ Score = 41.6 bits (96), Expect = 0.001,   Method: Composition-based stats.
+ Identities = 28/52 (53%), Positives = 32/52 (61%), Gaps = 3/52 (5%)
+
+Query: 15 TCPPGENLCYRKMWCDVFCSSRGKVVELGCAATCPSKKPYEEVTCCSTDKCN 66
+          TC  GENLC ++ +        GK    GCAATCP  KP+E V CCSTDKCN
+Sbjct: 37 TCRDGENLCVKRFYEG---KRFGKKYPRGCAATCPEAKPHEIVECCSTDKCN 85
+
+
+  Database: sprot
+    Posted date:  Mar 15, 2009  5:38 PM
+  Number of letters in database: 148,809,765
+  Number of sequences in database:  412,525
+  
+Lambda     K      H
+   0.321    0.134    0.479 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 23,808,439
+Number of Sequences: 412525
+Number of extensions: 806801
+Number of successful extensions: 2226
+Number of sequences better than 1.0e-03: 320
+Number of HSP's better than  0.0 without gapping: 113
+Number of HSP's successfully gapped in prelim test: 207
+Number of HSP's that attempted gapping in prelim test: 1873
+Number of HSP's gapped (non-prelim): 320
+length of query: 74
+length of database: 148,809,765
+effective HSP length: 46
+effective length of query: 28
+effective length of database: 129,833,615
+effective search space: 3635341220
+effective search space used: 3635341220
+T: 11
+A: 40
+X1: 16 ( 7.4 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.9 bits)
+S2: 97 (42.0 bits)

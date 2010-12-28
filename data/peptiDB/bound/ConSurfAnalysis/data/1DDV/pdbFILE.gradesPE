@@ -1,0 +1,123 @@
+	 Amino Acid Conservation Scores
+	===============================
+
+- POS: The position of the AA in the SEQRES derived sequence.
+- SEQ: The SEQRES derived sequence in one letter code.
+- 3LATOM: The ATOM derived sequence in three letter code, including the AA's positions as they appear in the PDB file and the chain identifier.
+- SCORE: The normalized conservation scores.
+- COLOR: The color scale representing the conservation scores (9 - conserved, 1 - variable).
+- CONFIDENCE INTERVAL: When using the bayesian method for calculating rates, a confidence interval is assigned to each of the inferred evolutionary conservation scores.
+- CONFIDENCE INTERVAL COLORS: When using the bayesian method for calculating rates. The color scale representing the lower and upper bounds of the confidence interval.
+- MSA DATA: The number of aligned sequences having an amino acid (non-gapped) from the overall number of sequences at each position.
+- RESIDUE VARIETY: The residues variety at each position of the multiple sequence alignment.
+
+ POS	 SEQ	    3LATOM	SCORE		COLOR	CONFIDENCE INTERVAL	CONFIDENCE INTERVAL COLORS	MSA DATA	RESIDUE VARIETY
+    	    	        	(normalized)	        	               
+   1	   I	    ILE1:A	-1.050		  8	-1.502,-0.593			    9,7			   17/17	I,V               
+   2	   F	    PHE2:A	 0.372		  4*	-0.593, 1.173			    7,2			   17/17	C,F,I             
+   3	   S	    SER3:A	 2.232		  1	 1.173, 3.499			    2,1			   17/17	G,N,Q,S,T         
+   4	   T	    THR4:A	-0.568		  7	-1.142,-0.166			    8,5			   17/17	A,S,T             
+   5	   R	    ARG5:A	-0.754		  7	-1.319,-0.389			    9,6			   17/17	R,T               
+   6	   A	    ALA6:A	-0.946		  8	-1.502,-0.593			    9,7			   17/17	A,G               
+   7	   H	    HIS7:A	 0.743		  3	-0.166, 1.173			    5,2			   17/17	A,H,Q,S,T         
+   8	   V	    VAL8:A	-1.426		  9	-1.973,-1.142			    9,8			   17/17	V                 
+   9	   F	    PHE9:A	-0.584		  7*	-1.319,-0.166			    9,5			   17/17	F,M               
+  10	   Q	   GLN10:A	 1.277		  1*	 0.084, 1.841			    5,1			   17/17	I,L,Q,T,V         
+  11	   I	   ILE11:A	-0.475		  6*	-1.319, 0.084			    9,5			   17/17	I,Y               
+  12	   D	   ASP12:A	-0.706		  7*	-1.319,-0.166			    9,5			   17/17	D,S               
+  13	   P	   PRO13:A	-0.504		  6*	-1.319, 0.084			    9,5			   17/17	D,P               
+  14	   N	   ASN14:A	 2.942		  1	 1.841, 3.499			    1,1			   17/17	A,G,N,Q,S,T       
+  15	   T	   THR15:A	 0.072		  5*	-0.784, 0.721			    7,3			   17/17	N,Q,S,T           
+  16	   K	   LYS16:A	-0.798		  7	-1.502,-0.389			    9,6			   17/17	K,R               
+  17	   K	   LYS17:A	 0.257		  4*	-0.593, 0.721			    7,3			   17/17	K,N,R             
+  18	   N	   ASN18:A	-0.475		  6*	-1.319, 0.084			    9,5			    7/17	N                 
+  19	   W	   TRP19:A	-0.794		  7	-1.502,-0.389			    9,6			   17/17	W                 
+  20	   V	   VAL20:A	 0.086		  5*	-0.784, 0.721			    7,3			   17/17	I,L,M,V           
+  21	   P	   PRO21:A	-1.195		  9	-1.703,-0.784			    9,7			   17/17	P                 
+  22	   T	   THR22:A	 0.737		  3	-0.166, 1.173			    5,2			   17/17	A,I,S,T           
+  23	   S	   SER23:A	 0.554		  3*	-0.389, 1.173			    6,2			   17/17	G,K,S             
+  24	   K	   LYS24:A	 1.320		  1	 0.372, 1.841			    4,1			   17/17	G,K,N,P,S,T       
+  25	   H	   HIS25:A	 1.709		  1	 0.721, 3.499			    3,1			   17/17	G,H,Q,S,V         
+  26	   A	   ALA26:A	 1.064		  2*	 0.084, 1.841			    5,1			   17/17	A,P,Q,S,T         
+  27	   V	   VAL27:A	-0.044		  5	-0.784, 0.372			    7,4			   17/17	A,L,S,V           
+  28	   T	   THR28:A	-0.319		  6	-1.142, 0.084			    8,5			   17/17	K,R,T             
+  29	   V	   VAL29:A	-0.354		  6	-1.142, 0.084			    8,5			   17/17	I,L,V             
+  30	   S	   SER30:A	 0.463		  4*	-0.389, 1.173			    6,2			   17/17	H,N,Q,S           
+  31	   Y	   TYR31:A	-0.142		  5*	-0.965, 0.372			    8,4			   17/17	I,M,Y             
+  32	   F	   PHE32:A	-0.516		  7*	-1.319, 0.084			    9,5			   17/17	F,Y               
+  33	   Y	   TYR33:A	-0.263		  6*	-0.965, 0.372			    8,4			   17/17	F,H,Y             
+  34	   D	   ASP34:A	 0.012		  5*	-0.784, 0.721			    7,3			   17/17	D,H,N             
+  35	   S	   SER35:A	 1.755		  1	 0.721, 3.499			    3,1			   17/17	A,P,Q,S,T,V       
+  36	   T	   THR36:A	 1.402		  1	 0.372, 1.841			    4,1			   17/17	A,G,Q,T           
+  37	   R	   ARG37:A	 1.374		  1	 0.372, 1.841			    4,1			   17/17	A,N,R,S           
+  38	   N	   ASN38:A	-1.112		  8	-1.703,-0.784			    9,7			   17/17	N,S               
+  39	   V	   VAL39:A	-0.035		  5	-0.784, 0.372			    7,4			   17/17	S,T,V             
+  40	   Y	   TYR40:A	-0.507		  7*	-1.319, 0.084			    9,5			   17/17	F,Y               
+  41	   R	   ARG41:A	-1.356		  9	-1.973,-1.142			    9,8			   17/17	R                 
+  42	   I	   ILE42:A	-0.989		  8	-1.502,-0.593			    9,7			   17/17	I,V               
+  43	   I	   ILE43:A	-0.981		  8	-1.502,-0.593			    9,7			   17/17	I,V               
+  44	   S	   SER44:A	-0.686		  7*	-1.319,-0.166			    9,5			   17/17	G,S               
+  45	   L	   LEU45:A	 1.311		  1*	 0.084, 1.841			    5,1			   17/17	I,L,R,V           
+  46	   D	   ASP46:A	 0.846		  2*	-0.166, 1.841			    5,1			   17/17	A,D,G,K           
+  47	   G	   GLY47:A	 1.293		  1*	 0.084, 1.841			    5,1			   17/17	G,I,L,M           
+  48	   S	   SER48:A	 0.550		  3*	-0.389, 1.173			    6,2			   17/17	A,D,Q,S           
+  49	   K	   LYS49:A	 0.282		  4*	-0.593, 0.721			    7,3			   17/17	E,K,N,Q           
+  50	   A	   ALA50:A	-0.087		  5*	-0.965, 0.372			    8,4			   17/17	A,F,V             
+  51	   I	   ILE51:A	-0.493		  6	-1.142, 0.084			    8,5			   17/17	I,L,V             
+  52	   I	   ILE52:A	-1.443		  9	-1.973,-1.142			    9,8			   17/17	I                 
+  53	   N	   ASN53:A	-1.472		  9	-1.973,-1.142			    9,8			   17/17	N                 
+  54	   S	   SER54:A	 0.560		  3*	-0.389, 1.173			    6,2			   17/17	C,F,S,Y           
+  55	   T	   THR55:A	-0.018		  5*	-0.784, 0.721			    7,3			   17/17	A,S,T             
+  56	   I	   ILE56:A	-0.105		  5	-0.784, 0.372			    7,4			   17/17	I,L,V             
+  57	   T	   THR57:A	 1.947		  1	 0.721, 3.499			    3,1			   17/17	I,K,L,P,T,V       
+  58	   P	   PRO58:A	 0.660		  3*	-0.389, 1.173			    6,2			   17/17	K,P,R,S           
+  59	   N	   ASN59:A	 0.122		  5*	-0.784, 0.721			    7,3			   17/17	E,G,N             
+  60	   M	   MET60:A	 0.350		  4*	-0.593, 1.173			    7,2			   17/17	L,M,V             
+  61	   T	   THR61:A	-0.049		  5*	-0.784, 0.721			    7,3			   17/17	K,T,V             
+  62	   F	   PHE62:A	-0.516		  7*	-1.319, 0.084			    9,5			   17/17	F,Y               
+  63	   T	   THR63:A	-0.649		  7*	-1.319,-0.166			    9,5			   17/17	N,S,T             
+  64	   K	   LYS64:A	-0.390		  6	-1.142, 0.084			    8,5			   17/17	K,Q,R             
+  65	   T	   THR65:A	-1.014		  8	-1.502,-0.593			    9,7			   17/17	A,T               
+  66	   S	   SER66:A	-1.062		  8	-1.502,-0.784			    9,7			   17/17	S,T               
+  67	   Q	   GLN67:A	 0.825		  3*	-0.166, 1.841			    5,1			   17/17	A,E,P,Q           
+  68	   K	   LYS68:A	 0.833		  3*	-0.166, 1.841			    5,1			   17/17	I,K,N,T           
+  69	   F	   PHE69:A	-1.122		  8	-1.703,-0.784			    9,7			   17/17	F                 
+  70	   G	   GLY70:A	-0.735		  7*	-1.319,-0.166			    9,5			   17/17	G,H               
+  71	   Q	   GLN71:A	-1.376		  9	-1.973,-1.142			    9,8			   17/17	Q                 
+  72	   W	   TRP72:A	-0.041		  5*	-0.965, 0.721			    8,3			   17/17	F,W               
+  73	   A	   ALA73:A	-0.306		  6*	-0.965, 0.372			    8,4			   17/17	A,R,T             
+  74	   D	   ASP74:A	-1.354		  9	-1.973,-1.142			    9,8			   17/17	D                 
+  75	   S	   SER75:A	 0.028		  5*	-0.784, 0.721			    7,3			   17/17	A,Q,S             
+  76	   R	   ARG76:A	-0.914		  8	-1.502,-0.593			    9,7			   17/17	K,R               
+  77	   A	   ALA77:A	-0.467		  6*	-1.319, 0.084			    9,5			    7/17	A                 
+  78	   N	   ASN78:A	-0.475		  6*	-1.319, 0.084			    9,5			    7/17	N                 
+  79	   T	   THR79:A	 0.069		  5*	-0.784, 0.721			    7,3			   17/17	F,Q,T             
+  80	   V	   VAL80:A	-0.638		  7*	-1.319,-0.166			    9,5			   17/17	H,V               
+  81	   Y	   TYR81:A	 0.745		  3*	-0.166, 1.841			    5,1			   17/17	F,W,Y             
+  82	   G	   GLY82:A	-1.132		  8	-1.703,-0.784			    9,7			   17/17	G                 
+  83	   L	   LEU83:A	-0.535		  7*	-1.319, 0.084			    9,5			   17/17	I,L               
+  84	   G	   GLY84:A	-0.870		  8	-1.502,-0.389			    9,6			   17/17	G,N               
+  85	   F	   PHE85:A	-1.122		  8	-1.703,-0.784			    9,7			   17/17	F                 
+  86	   S	   SER86:A	 1.781		  1	 0.721, 3.499			    3,1			   17/17	A,G,S,T           
+  87	   S	   SER87:A	-1.518		  9	-1.973,-1.319			    9,9			   17/17	S                 
+  88	   E	   GLU88:A	-0.175		  6*	-0.965, 0.372			    8,4			   17/17	E,K,Q             
+  89	   H	   HIS89:A	 1.480		  1	 0.372, 3.499			    4,1			   17/17	E,G,H,L,N,Q       
+  90	   H	   HIS90:A	 1.090		  2*	 0.084, 1.841			    5,1			   17/17	D,E,H,Q           
+  91	   L	   LEU91:A	-0.711		  7*	-1.319,-0.166			    9,5			   17/17	A,L               
+  92	   S	   SER92:A	 2.378		  1	 1.173, 3.499			    2,1			   17/17	A,D,E,I,N,S,T     
+  93	   K	   LYS93:A	 1.936		  1	 0.721, 3.499			    3,1			   17/17	K,N,Q,T,V         
+  94	   F	   PHE94:A	-1.122		  8	-1.703,-0.784			    9,7			   17/17	F                 
+  95	   A	   ALA95:A	-0.461		  6	-1.142, 0.084			    8,5			   17/17	A,G,S             
+  96	   E	   GLU96:A	 1.819		  1	 0.721, 3.499			    3,1			   11/17	A,E,G,N,T         
+  97	   K	   LYS97:A	-0.039		  5*	-0.965, 0.721			    8,3			   11/17	G,K               
+  98	   F	   PHE98:A	-0.095		  5*	-0.965, 0.721			    8,3			   11/17	F,M               
+  99	   Q	   GLN99:A	 0.204		  4*	-0.784, 0.721			    7,3			   11/17	A,E,Q             
+ 100	   E	  GLU100:A	 0.902		  2*	-0.166, 1.841			    5,1			   10/17	E,N,S             
+ 101	   F	  PHE101:A	 0.444		  4*	-0.593, 1.173			    7,2			   10/17	A,F,V             
+ 102	   K	  LYS102:A	 1.248		  1*	 0.084, 1.841			    5,1			   10/17	K,L,R             
+ 103	   E	  GLU103:A	-0.929		  8	-1.703,-0.389			    9,6			   10/17	E                 
+ 104	   A	  ALA104:A	-1.060		  8	-1.703,-0.593			    9,7			   10/17	A                 
+
+
+*Below the confidence cut-off - The calculations for this site were performed on less than 6 non-gaped homologue sequences,
+or the confidence interval for the estimated score is equal to- or larger than- 4 color grades.

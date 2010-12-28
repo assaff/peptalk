@@ -1,0 +1,62 @@
+core.init: command: /vol/ek/share/rosetta/mini/build/src/release/linux/2.6/32/x86/gcc/holes.linuxgccrelease -database /vol/ek/share/rosetta/minirosetta_database/ -holes:dalphaball /vol/ek/share/bin/DAlphaBall -holes:make_pdb -holes:make_voids -s 2P0W.mainChain.pdb
+core.init: 'RNG device' seed mode, using '/dev/urandom', seed=-144026658 seed_offset=0 real_seed=-144026658
+core.init.random: RandomGenerator:init: Normal mode, seed=-144026658 RG_type=mt19937
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: standard
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION PATCH: score12
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/pdb_pair_stats_fine
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/P_AA
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/P_AA_n
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/P_AA_pp
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/Rama_smooth_dyn.dat_ss_6.4
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: standard
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION PATCH: score12
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue LYS 270
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD  on residue LYS 270
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CE  on residue LYS 270
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  NZ  on residue LYS 270
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue HIS 271
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  ND1 on residue HIS 271
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD2 on residue HIS 271
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CE1 on residue HIS 271
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  NE2 on residue HIS 271
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD2 on residue HIS 271
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OG  on residue SER 272
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue ASP 273
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OD1 on residue ASP 273
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OD2 on residue ASP 273
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue LEU 274
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD1 on residue LEU 274
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD2 on residue LEU 274
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OG  on residue SER 275
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue ASN 305
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OD1 on residue ASN 305
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  ND2 on residue ASN 305
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OG  on residue SER_p:CtermProteinFull 306
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_missing_sidechains: packing residue number 270 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 271 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 272 because of missing atom number 6 atom name  OG 
+core.pack.pack_missing_sidechains: packing residue number 273 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 274 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 275 because of missing atom number 6 atom name  OG 
+core.pack.pack_missing_sidechains: packing residue number 305 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 306 because of missing atom number 7 atom name  OG 
+core.scoring.dunbrack: Dunbrack library took 0.05 seconds to load from binary
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.pack_rotamers: built 68 rotamers at 8 positions.
+core.pack.pack_rotamers: IG: 10344 bytes
+core.scoring.packing.compute_holes_score: compute_holes_surfs try: 1
+core.scoring.packing.compute_holes_score: compute_holes_surfs completed successfully
+core.scoring.packing.compute_holes_score: compute_rosettaholes_score done: 2.12598
+RosettaHoles: 2P0W.mainChain.pdb 2.12598 2.12591 -2.65487 148.644
+dumping pdb to 2P0W.mainChain.pdb_cavs.pdb
+dumping cavities 
+protocols.packstat: prune raduis 1.4 18099 10489 7106 5450 4564 4088 3771 3564 3416 3338 3283 3255 3247 3238 3233 3229 3228 3228 
+core.conformation.util: Non-ideal residue detected:  Residue #1 atom #1:  Ideal D=1.458, Inspected D=1.48969
+core.io.silent: ERROR: trying to use a 'protein' type silent file for a non-ideal pose
+core.io.silent: consider using the '-out:file:silent_struct_type binary' flag

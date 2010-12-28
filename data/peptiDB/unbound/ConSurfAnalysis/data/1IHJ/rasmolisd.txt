@@ -1,0 +1,85 @@
+select all
+color [200,200,200]
+
+
+select   GLY1737, ALA1760, GLY1764, ASP1770, ASN1776, VAL1788
+select selected and :A
+color [160,37,96]
+spacefill
+
+define CON9 selected
+
+
+select    GLY1735, LEU1736, SER1739, ILE1740, VAL1749, VAL1751, ILE1754, GLY1758, ARG1765, LEU1766
+select selected or GLY1769, VAL1775, GLY1777, LEU1792, VAL1799, VAL1803, ARG1805
+select selected and :A
+color [240,125,171]
+spacefill
+
+define CON8 selected
+
+
+select    GLY1742, SER1752, ASP1763, ILE1772, LEU1773, GLN1785, GLU1786, ALA1789, LEU1801, GLY1804
+select selected and :A
+color [250,201,222]
+spacefill
+
+define CON7 selected
+
+
+select    ASP1722, LEU1738, VAL1741, LYS1743, GLY1748, GLY1757, GLN1771, LYS1793, SER1807
+select selected and :A
+color [252,237,244]
+spacefill
+
+define CON6 selected
+
+
+select    THR1723, PHE1750, MET1774, ASP1779, VAL1780, THR1784, SER1795
+select selected and :A
+color [255,255,255]
+spacefill
+
+define CON5 selected
+
+
+select    LEU1724, LEU1728, LYS1731, ARG1744, ASN1745, ASP1753, ALA1783, ALA1790, CYS1794, THR1800
+select selected and :A
+color [234,255,255]
+spacefill
+
+define CON4 selected
+
+
+select    ILE1726, GLY1733, ASP1746, LYS1756, ILE1759, ALA1787
+select selected and :A
+color [215,255,255]
+spacefill
+
+define CON3 selected
+
+
+select    GLY1727, GLN1729, VAL1755, ASP1761, ALA1762, LEU1791, GLU1802
+select selected and :A
+color [140,255,255]
+spacefill
+
+define CON2 selected
+
+
+select    THR1725, LYS1730, PRO1732, LYS1734, THR1747, MET1767, GLN1768, GLU1778, ARG1781, ASN1782
+select selected or LEU1796, GLY1797, THR1798, ILE1806
+select selected and :A
+color [16,200,209]
+spacefill
+
+define CON1 selected
+
+
+select    THR1808, TYR1809, VAL1810
+select selected and :A
+color [255,255,150]
+spacefill
+
+define CON10 selected
+

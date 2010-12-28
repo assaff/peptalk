@@ -1,0 +1,80 @@
+core.init: command: /vol/ek/share/rosetta/mini/build/src/release/linux/2.6/32/x86/gcc/holes.linuxgccrelease -database /vol/ek/share/rosetta/minirosetta_database/ -holes:dalphaball /vol/ek/share/bin/DAlphaBall -holes:make_pdb -holes:make_voids -s 1U00.mainChain.pdb
+core.init: 'RNG device' seed mode, using '/dev/urandom', seed=-236677611 seed_offset=0 real_seed=-236677611
+core.init.random: RandomGenerator:init: Normal mode, seed=-236677611 RG_type=mt19937
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: standard
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION PATCH: score12
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/pdb_pair_stats_fine
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/P_AA
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/P_AA_n
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/P_AA_pp
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/Rama_smooth_dyn.dat_ss_6.4
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: standard
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION PATCH: score12
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue LYS 39
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD  on residue LYS 39
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CE  on residue LYS 39
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  NZ  on residue LYS 39
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue LYS 111
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD  on residue LYS 111
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CE  on residue LYS 111
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  NZ  on residue LYS 111
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue GLU 120
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD  on residue GLU 120
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OE1 on residue GLU 120
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OE2 on residue GLU 120
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue GLU 133
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD  on residue GLU 133
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OE1 on residue GLU 133
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OE2 on residue GLU 133
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue GLN 195
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD  on residue GLN 195
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OE1 on residue GLN 195
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  NE2 on residue GLN 195
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue LYS 198
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD  on residue LYS 198
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CE  on residue LYS 198
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  NZ  on residue LYS 198
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue LYS 202
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD  on residue LYS 202
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CE  on residue LYS 202
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  NZ  on residue LYS 202
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue GLN 205
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD  on residue GLN 205
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OE1 on residue GLN 205
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  NE2 on residue GLN 205
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG1 on residue VAL 225
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG2 on residue VAL 225
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue ASP 226
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OD1 on residue ASP 226
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OD2 on residue ASP 226
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OXT on residue GLU_p:CtermProteinFull 227
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_missing_sidechains: packing residue number 39 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 111 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 120 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 133 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 195 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 198 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 202 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 205 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 225 because of missing atom number 6 atom name  CG1
+core.pack.pack_missing_sidechains: packing residue number 226 because of missing atom number 6 atom name  CG 
+core.scoring.dunbrack: Dunbrack library took 0.05 seconds to load from binary
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.pack_rotamers: built 148 rotamers at 10 positions.
+core.pack.pack_rotamers: IG: 12196 bytes
+core.scoring.packing.compute_holes_score: compute_holes_surfs try: 1
+core.scoring.packing.compute_holes_score: compute_holes_surfs completed successfully
+core.scoring.packing.compute_holes_score: compute_rosettaholes_score done: 1.75152
+RosettaHoles: 1U00.mainChain.pdb 1.75152 1.73132 -1.16995 -133.968
+dumping pdb to 1U00.mainChain.pdb_cavs.pdb
+dumping cavities 
+protocols.packstat: prune raduis 1.4 13417 7132 4364 3023 2316 1919 1688 1558 1474 1430 1398 1375 1360 1351 1348 1346 1345 1345 
+core.conformation.util: Non-ideal residue detected:  Residue #1 atom #1:  Ideal D=1.458, Inspected D=1.49217
+core.io.silent: ERROR: trying to use a 'protein' type silent file for a non-ideal pose
+core.io.silent: consider using the '-out:file:silent_struct_type binary' flag

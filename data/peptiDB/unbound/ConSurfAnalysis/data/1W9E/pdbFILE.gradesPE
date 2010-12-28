@@ -1,0 +1,101 @@
+	 Amino Acid Conservation Scores
+	===============================
+
+- POS: The position of the AA in the SEQRES derived sequence.
+- SEQ: The SEQRES derived sequence in one letter code.
+- 3LATOM: The ATOM derived sequence in three letter code, including the AA's positions as they appear in the PDB file and the chain identifier.
+- SCORE: The normalized conservation scores.
+- COLOR: The color scale representing the conservation scores (9 - conserved, 1 - variable).
+- CONFIDENCE INTERVAL: When using the bayesian method for calculating rates, a confidence interval is assigned to each of the inferred evolutionary conservation scores.
+- CONFIDENCE INTERVAL COLORS: When using the bayesian method for calculating rates. The color scale representing the lower and upper bounds of the confidence interval.
+- MSA DATA: The number of aligned sequences having an amino acid (non-gapped) from the overall number of sequences at each position.
+- RESIDUE VARIETY: The residues variety at each position of the multiple sequence alignment.
+
+ POS	 SEQ	    3LATOM	SCORE		COLOR	CONFIDENCE INTERVAL	CONFIDENCE INTERVAL COLORS	MSA DATA	RESIDUE VARIETY
+    	    	        	(normalized)	        	               
+   1	   G	  GLY192:A	-0.165		  6*	-1.287, 0.881			    9,2			    1/12	G                 
+   2	   A	  ALA193:A	-0.165		  6*	-1.287, 0.881			    9,2			    1/12	A                 
+   3	   M	  MET194:A	-0.165		  6*	-1.287, 0.881			    9,2			    1/12	M                 
+   4	   D	  ASP195:A	-0.165		  6*	-1.287, 0.881			    9,2			    1/12	D                 
+   5	   P	  PRO196:A	-0.165		  6*	-1.492, 0.881			    9,2			    1/12	P                 
+   6	   R	  ARG197:A	-0.587		  7*	-1.705, 0.139			    9,5			    6/12	R                 
+   7	   T	  THR198:A	-0.688		  7*	-1.705,-0.151			    9,5			    6/12	T                 
+   8	   I	  ILE199:A	 0.360		  4*	-0.869, 1.406			    8,1			    6/12	I,V               
+   9	   T	  THR200:A	-0.688		  7*	-1.705,-0.151			    9,5			    6/12	T                 
+  10	   M	  MET201:A	-0.646		  7*	-1.705, 0.139			    9,5			    6/12	M                 
+  11	   H	  HIS202:A	-0.630		  7*	-1.705, 0.139			    9,5			    6/12	H                 
+  12	   K	  LYS203:A	-0.541		  7*	-1.492, 0.139			    9,5			    6/12	K                 
+  13	   D	  ASP204:A	-1.082		  8	-1.939,-0.648			    9,7			    7/12	D                 
+  14	   S	  SER205:A	-0.541		  7*	-1.492, 0.139			    9,5			    7/12	S,T               
+  15	   T	  THR206:A	 1.956		  1	 0.475, 4.111			    4,1			    7/12	K,M,S,T           
+  16	   G	  GLY207:A	 0.736		  3*	-0.648, 1.406			    7,1			    7/12	G,Y               
+  17	   H	  HIS208:A	-0.016		  5*	-0.869, 0.881			    8,2			   12/12	H,Q               
+  18	   V	  VAL209:A	-0.369		  6*	-1.287, 0.139			    9,5			   12/12	L,V               
+  19	   G	  GLY210:A	-1.016		  8	-1.939,-0.410			    9,6			   12/12	G                 
+  20	   F	  PHE211:A	-1.006		  8	-1.705,-0.410			    9,6			   12/12	F                 
+  21	   I	  ILE212:A	 1.948		  1	 0.475, 4.111			    4,1			   12/12	C,I,S,V           
+  22	   F	  PHE213:A	 0.042		  5*	-0.869, 0.881			    8,2			   12/12	F,I,V             
+  23	   K	  LYS214:A	 0.272		  4*	-0.869, 0.881			    8,2			   12/12	E,K,Q             
+  24	   N	  ASN215:A	 1.617		  1	 0.475, 2.183			    4,1			   12/12	D,K,N,S           
+  25	   G	  GLY216:A	-1.016		  8	-1.939,-0.410			    9,6			   12/12	G                 
+  26	   K	  LYS217:A	 0.591		  3*	-0.648, 1.406			    7,1			   12/12	I,K,V             
+  27	   I	  ILE218:A	-1.367		  9	-1.939,-0.869			    9,8			   12/12	I                 
+  28	   T	  THR219:A	 0.800		  3*	-0.410, 1.406			    6,1			   12/12	C,T,V             
+  29	   S	  SER220:A	-1.462		  9	-1.939,-1.080			    9,8			   12/12	S                 
+  30	   I	  ILE221:A	 1.050		  2*	-0.151, 2.183			    5,1			   12/12	I,L,V             
+  31	   V	  VAL222:A	 0.460		  4*	-0.648, 1.406			    7,1			   12/12	L,M,V             
+  32	   K	  LYS223:A	-0.587		  7*	-1.492, 0.139			    9,5			   12/12	K,R               
+  33	   D	  ASP224:A	-0.168		  6*	-1.287, 0.475			    9,4			   12/12	D,G               
+  34	   S	  SER225:A	 0.213		  4*	-0.869, 0.881			    8,2			   12/12	G,S               
+  35	   S	  SER226:A	 0.494		  3*	-0.648, 1.406			    7,1			   12/12	A,I,S             
+  36	   A	  ALA227:A	-1.373		  9	-1.939,-0.869			    9,8			   12/12	A                 
+  37	   A	  ALA228:A	-0.471		  6*	-1.287, 0.139			    9,5			   12/12	A,E               
+  38	   R	  ARG229:A	-1.266		  9	-1.939,-0.869			    9,8			   12/12	R                 
+  39	   N	  ASN230:A	-0.278		  6*	-1.287, 0.475			    9,4			   12/12	G,N               
+  40	   G	  GLY231:A	-1.016		  8	-1.939,-0.410			    9,6			   12/12	G                 
+  41	   L	  LEU232:A	 1.135		  2*	-0.151, 2.183			    5,1			   12/12	I,L,V             
+  42	   L	  LEU233:A	-0.176		  6*	-1.287, 0.475			    9,4			   12/12	L,R               
+  43	   T	  THR234:A	-0.539		  7*	-1.492, 0.139			    9,5			   12/12	T,V               
+  44	   E	  GLU235:A	 1.290		  1*	 0.139, 2.183			    5,1			   12/12	D,E,G,N           
+  45	   H	  HIS236:A	-1.352		  9	-1.939,-0.869			    9,8			   12/12	H                 
+  46	   N	  ASN237:A	 1.004		  2*	-0.151, 2.183			    5,1			   12/12	H,N,R,Y           
+  47	   I	  ILE238:A	-0.637		  7*	-1.492,-0.151			    9,5			   12/12	I,V               
+  48	   C	  CYS239:A	-0.017		  5*	-1.080, 0.881			    8,2			   12/12	C,I               
+  49	   E	  GLU240:A	-1.200		  9	-1.939,-0.648			    9,7			   12/12	E                 
+  50	   I	  ILE241:A	 0.101		  5*	-0.869, 0.881			    8,2			   12/12	I,V               
+  51	   N	  ASN242:A	-0.828		  8	-1.492,-0.410			    9,6			   12/12	D,N               
+  52	   G	  GLY243:A	-1.016		  8	-1.939,-0.410			    9,6			   12/12	G                 
+  53	   Q	  GLN244:A	-0.616		  7*	-1.492,-0.151			    9,5			   12/12	Q,T               
+  54	   N	  ASN245:A	-0.857		  8	-1.705,-0.410			    9,6			   12/12	N,S               
+  55	   V	  VAL246:A	-1.347		  9	-1.939,-0.869			    9,8			   12/12	V                 
+  56	   I	  ILE247:A	-0.803		  7*	-1.492,-0.151			    9,5			   12/12	I,V               
+  57	   G	  GLY248:A	-0.462		  6*	-1.287, 0.139			    9,5			   12/12	A,G               
+  58	   L	  LEU249:A	 1.633		  1	 0.475, 2.183			    4,1			   12/12	L,M,T,V           
+  59	   K	  LYS250:A	 1.639		  1	 0.475, 2.183			    4,1			   12/12	A,K,P             
+  60	   D	  ASP251:A	-0.464		  6*	-1.287, 0.139			    9,5			   12/12	D,H               
+  61	   S	  SER252:A	 2.415		  1	 0.881, 4.111			    2,1			   12/12	A,D,E,K,S         
+  62	   Q	  GLN253:A	 0.965		  2*	-0.151, 2.183			    5,1			   12/12	K,Q,R             
+  63	   I	  ILE254:A	-0.674		  7*	-1.492,-0.151			    9,5			   12/12	I,V               
+  64	   A	  ALA255:A	 1.543		  1*	 0.139, 2.183			    5,1			   12/12	A,I,M,T,V         
+  65	   D	  ASP256:A	 2.649		  1	 1.406, 4.111			    1,1			   12/12	D,E,H,N,Q         
+  66	   I	  ILE257:A	 1.373		  1*	 0.139, 2.183			    5,1			   12/12	A,I,L,M           
+  67	   L	  LEU258:A	-1.014		  8	-1.939,-0.410			    9,6			   12/12	L                 
+  68	   S	  SER259:A	 1.489		  1*	 0.139, 2.183			    5,1			   12/12	A,S,T             
+  69	   T	  THR260:A	 0.733		  3*	-0.410, 1.406			    6,1			   12/12	E,N,T             
+  70	   S	  SER261:A	 0.664		  3*	-0.410, 1.406			    6,1			   12/12	A,S,T             
+  71	   G	  GLY262:A	 1.049		  2*	-0.151, 2.183			    5,1			   10/12	G,V,Y             
+  72	   T	  THR263:A	 2.170		  1	 0.881, 4.111			    2,1			   12/12	D,G,N,R,T         
+  73	   V	  VAL264:A	-0.359		  6*	-1.287, 0.475			    9,4			   12/12	E,V               
+  74	   V	  VAL265:A	 0.607		  3*	-0.410, 1.406			    6,1			   12/12	I,V               
+  75	   T	  THR266:A	-0.400		  6*	-1.287, 0.139			    9,5			   12/12	H,T               
+  76	   I	  ILE267:A	 0.491		  3*	-0.648, 1.406			    7,1			   12/12	I,L,M             
+  77	   T	  THR268:A	-0.483		  6*	-1.287, 0.139			    9,5			   12/12	K,T               
+  78	   I	  ILE269:A	-0.718		  7*	-1.492,-0.151			    9,5			   12/12	I,T               
+  79	   M	  MET270:A	-0.727		  7*	-1.492,-0.151			    9,5			   12/12	I,M               
+  80	   P	  PRO271:A	-1.087		  8	-1.939,-0.648			    9,7			   12/12	P                 
+  81	   A	  ALA272:A	 0.162		  5*	-0.869, 0.881			    8,2			   10/12	A,S,T             
+  82	   F	  PHE273:A	-0.234		  6*	-1.492, 0.475			    9,4			    4/12	F                 
+
+
+*Below the confidence cut-off - The calculations for this site were performed on less than 6 non-gaped homologue sequences,
+or the confidence interval for the estimated score is equal to- or larger than- 4 color grades.

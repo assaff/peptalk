@@ -1,0 +1,504 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_A  173
+         (173 letters)
+
+Database: sprot 
+           412,525 sequences; 148,809,765 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|P07360|CO8G_HUMAN Complement component C8 gamma chain OS=Homo...   331   9e-91
+sp|Q28679|CO8G_RABIT Complement component C8 gamma chain OS=Oryc...   277   2e-74
+sp|Q8VCG4|CO8G_MOUSE Complement component C8 gamma chain OS=Mus ...   271   9e-73
+sp|P00978|AMBP_BOVIN Protein AMBP OS=Bos taurus GN=AMBP PE=1 SV=2      70   4e-12
+sp|P04366|AMBP_PIG Protein AMBP (Fragment) OS=Sus scrofa GN=AMBP...    69   8e-12
+sp|Q07456|AMBP_MOUSE Protein AMBP OS=Mus musculus GN=Ambp PE=1 SV=2    69   1e-11
+sp|Q6UWW0|YA002_HUMAN Uncharacterized lipocalin UNQ2541/PRO6093 ...    65   3e-10
+sp|P02760|AMBP_HUMAN Protein AMBP OS=Homo sapiens GN=AMBP PE=1 SV=1    64   3e-10
+sp|Q64240|AMBP_RAT Protein AMBP OS=Rattus norvegicus GN=Ambp PE=...    64   4e-10
+sp|Q60559|AMBP_MESAU Protein AMBP OS=Mesocricetus auratus GN=AMB...    63   8e-10
+sp|P36992|AMBP_PLEPL Protein AMBP (Fragment) OS=Pleuronectes pla...    62   1e-09
+sp|Q62577|AMBP_MERUN Protein AMBP OS=Meriones unguiculatus GN=AM...    61   2e-09
+sp|Q01584|LIPO_BUFMA Lipocalin OS=Bufo marinus PE=1 SV=1               57   4e-08
+sp|Q9XSM0|PTGDS_SHEEP Prostaglandin-H2 D-isomerase OS=Ovis aries...    49   1e-05
+sp|P35578|ESP4_LACVV Epididymal secretory protein 4 OS=Lacerta v...    46   8e-05
+sp|Q8WNM1|PTGDS_GORGO Prostaglandin-H2 D-isomerase OS=Gorilla go...    46   1e-04
+sp|P41222|PTGDS_HUMAN Prostaglandin-H2 D-isomerase OS=Homo sapie...    46   1e-04
+sp|Q8WNM0|PTGDS_PONPY Prostaglandin-H2 D-isomerase OS=Pongo pygm...    45   1e-04
+sp|O02853|PTGDS_BOVIN Prostaglandin-H2 D-isomerase OS=Bos taurus...    45   2e-04
+sp|Q29095|PTGDS_PIG Prostaglandin-H2 D-isomerase OS=Sus scrofa G...    44   5e-04
+sp|Q9TUI1|PTGDS_MACFU Prostaglandin-H2 D-isomerase OS=Macaca fus...    43   7e-04
+
+>sp|P07360|CO8G_HUMAN Complement component C8 gamma chain OS=Homo
+           sapiens GN=C8G PE=1 SV=3
+          Length = 202
+
+ Score =  331 bits (849), Expect = 9e-91,   Method: Composition-based stats.
+ Identities = 171/173 (98%), Positives = 171/173 (98%)
+
+Query: 1   ASPISTIQPKANFDAQQFAGTWLLVAVGSAARFLQEQGHRAEATTLHVAPQGTAMAVSTF 60
+           ASPISTIQPKANFDAQQFAGTWLLVAVGSA RFLQEQGHRAEATTLHVAPQGTAMAVSTF
+Sbjct: 30  ASPISTIQPKANFDAQQFAGTWLLVAVGSACRFLQEQGHRAEATTLHVAPQGTAMAVSTF 89
+
+Query: 61  RKLDGICWQVRQLYGDTGVLGRFLLQARGARGAVHVVVAETDYQSFAVLYLERAGQLSVK 120
+           RKLDGICWQVRQLYGDTGVLGRFLLQAR ARGAVHVVVAETDYQSFAVLYLERAGQLSVK
+Sbjct: 90  RKLDGICWQVRQLYGDTGVLGRFLLQARDARGAVHVVVAETDYQSFAVLYLERAGQLSVK 149
+
+Query: 121 LYARSLPVSDSVLSGFEQRVQEAHLTEDQIFYFPKYGFCEAADQFHVLDEVRR 173
+           LYARSLPVSDSVLSGFEQRVQEAHLTEDQIFYFPKYGFCEAADQFHVLDEVRR
+Sbjct: 150 LYARSLPVSDSVLSGFEQRVQEAHLTEDQIFYFPKYGFCEAADQFHVLDEVRR 202
+
+
+>sp|Q28679|CO8G_RABIT Complement component C8 gamma chain
+           OS=Oryctolagus cuniculus GN=C8G PE=2 SV=1
+          Length = 202
+
+ Score =  277 bits (709), Expect = 2e-74,   Method: Composition-based stats.
+ Identities = 144/172 (83%), Positives = 150/172 (87%)
+
+Query: 2   SPISTIQPKANFDAQQFAGTWLLVAVGSAARFLQEQGHRAEATTLHVAPQGTAMAVSTFR 61
+           S IS IQPKANFDAQQFAGTWLL AVGSA  FLQEQGHRAEAT LHVAPQG AMAVSTFR
+Sbjct: 31  SAISAIQPKANFDAQQFAGTWLLAAVGSACHFLQEQGHRAEATALHVAPQGAAMAVSTFR 90
+
+Query: 62  KLDGICWQVRQLYGDTGVLGRFLLQARGARGAVHVVVAETDYQSFAVLYLERAGQLSVKL 121
+           KLDGICWQV Q YG TGV GRFLL ARG RGAVHVV AETDY SFAVLYLERA QLSVKL
+Sbjct: 91  KLDGICWQVSQRYGATGVPGRFLLPARGPRGAVHVVAAETDYHSFAVLYLERARQLSVKL 150
+
+Query: 122 YARSLPVSDSVLSGFEQRVQEAHLTEDQIFYFPKYGFCEAADQFHVLDEVRR 173
+           Y RSLPVSDSVL  FEQRV +A+LT+DQ+ +FP YGFCEAADQFH+LDEVRR
+Sbjct: 151 YVRSLPVSDSVLGAFEQRVAQANLTQDQVLFFPTYGFCEAADQFHILDEVRR 202
+
+
+>sp|Q8VCG4|CO8G_MOUSE Complement component C8 gamma chain OS=Mus
+           musculus GN=C8g PE=1 SV=1
+          Length = 202
+
+ Score =  271 bits (694), Expect = 9e-73,   Method: Composition-based stats.
+ Identities = 134/172 (77%), Positives = 150/172 (87%)
+
+Query: 2   SPISTIQPKANFDAQQFAGTWLLVAVGSAARFLQEQGHRAEATTLHVAPQGTAMAVSTFR 61
+           SPISTIQ + NF AQ+FAGTWLLVAVGS+ RFLQEQGHRAEATTLH APQG AMAVSTFR
+Sbjct: 31  SPISTIQAQVNFSAQKFAGTWLLVAVGSSCRFLQEQGHRAEATTLHAAPQGAAMAVSTFR 90
+
+Query: 62  KLDGICWQVRQLYGDTGVLGRFLLQARGARGAVHVVVAETDYQSFAVLYLERAGQLSVKL 121
+           KLDGICWQVRQL+ +TGV GRFL Q   ARG VH+VVAETDYQSFA+LYLE+  +LSVKL
+Sbjct: 91  KLDGICWQVRQLFENTGVPGRFLFQVSRARGPVHMVVAETDYQSFAILYLEQGRKLSVKL 150
+
+Query: 122 YARSLPVSDSVLSGFEQRVQEAHLTEDQIFYFPKYGFCEAADQFHVLDEVRR 173
+           Y RSLPV+DSVL  FE+RV+EA+LTEDQI +FPKYGFCE ADQ H+L+EV R
+Sbjct: 151 YVRSLPVNDSVLDVFERRVREANLTEDQILFFPKYGFCETADQLHILNEVPR 202
+
+
+>sp|P00978|AMBP_BOVIN Protein AMBP OS=Bos taurus GN=AMBP PE=1 SV=2
+          Length = 352
+
+ Score = 70.5 bits (171), Expect = 4e-12,   Method: Composition-based stats.
+ Identities = 44/165 (26%), Positives = 72/165 (43%), Gaps = 7/165 (4%)
+
+Query: 7   IQPKANFDAQQFAGTWLLVAVGSAARFLQEQGHRAEATT--LHVAPQGTAMAVSTFRKLD 64
+           IQ + NFD  +  G W  VAVGS   +L+    +   +T  L   P    ++V+   +  
+Sbjct: 29  IQVQENFDLSRIYGKWFNVAVGSTCPWLKRFKEKMTMSTVVLIAGPTSKEISVTNTHRRK 88
+
+Query: 65  GICWQVRQLYGDTGVLGRFLLQARGARGAVHVVVAETDYQSFAVLYLERAGQ-----LSV 119
+           G+C  +   Y  T   G+FL         +   V  T+Y  +A+   ++  +     ++V
+Sbjct: 89  GVCESISGTYEKTSADGKFLYHKAKWNITMESYVVHTNYDEYAIFLTKKLSRRHGPTITV 148
+
+Query: 120 KLYARSLPVSDSVLSGFEQRVQEAHLTEDQIFYFPKYGFCEAADQ 164
+           KLY R   + +S+L  F +      + ED IF  P  G C   +Q
+Sbjct: 149 KLYGREPQLRESLLEEFREVALGVGIPEDAIFTMPDRGECVPGEQ 193
+
+
+>sp|P04366|AMBP_PIG Protein AMBP (Fragment) OS=Sus scrofa GN=AMBP
+           PE=1 SV=2
+          Length = 337
+
+ Score = 69.3 bits (168), Expect = 8e-12,   Method: Composition-based stats.
+ Identities = 49/175 (28%), Positives = 76/175 (43%), Gaps = 11/175 (6%)
+
+Query: 1   ASPIST----IQPKANFDAQQFAGTWLLVAVGSAARFLQEQGHRAEATTLHVAPQGTA-- 54
+           ASP+ T    IQ + NFD  +  G W  VAVGS   +L+    +    TL +    T   
+Sbjct: 4   ASPVLTLPNDIQVQENFDLSRIYGKWFHVAVGSTCPWLKRFKDKMTMGTLMLGEGATERE 63
+
+Query: 55  MAVSTFRKLDGICWQVRQLYGDTGVLGRFLLQARGARGAVHVVVAETDYQSFAVLYLERA 114
+           ++V+   +  GIC  +   Y  T   G+FL         +   V  T+Y  +A+   ++ 
+Sbjct: 64  ISVTKTHRRKGICEVISGAYEKTSTDGKFLYHKSKWNITMESYVVHTNYDEYAIFLTKKF 123
+
+Query: 115 GQ-----LSVKLYARSLPVSDSVLSGFEQRVQEAHLTEDQIFYFPKYGFCEAADQ 164
+            +     L+ KLY R   + +S+L  F +      + ED IF  P  G C   +Q
+Sbjct: 124 SRRHGPTLTAKLYGREPQLRESLLEEFREVALGVGIPEDSIFTMPDRGECVPGEQ 178
+
+
+>sp|Q07456|AMBP_MOUSE Protein AMBP OS=Mus musculus GN=Ambp PE=1 SV=2
+          Length = 349
+
+ Score = 68.9 bits (167), Expect = 1e-11,   Method: Composition-based stats.
+ Identities = 44/172 (25%), Positives = 79/172 (45%), Gaps = 9/172 (5%)
+
+Query: 1   ASPISTIQPKANFDAQQFAGTWLLVAVGSAARFLQEQGHRAEATTLHVAPQG---TAMAV 57
+           AS +  IQ + NF   +  G W  +AVGS   +L     +   +TL V  +G   T +++
+Sbjct: 22  ASTLPDIQVQENFSESRIYGKWYNLAVGSTCPWLSRIKDKMSVSTL-VLQEGATETEISM 80
+
+Query: 58  STFRKLDGICWQVRQLYGDTGVLGRFLLQARGARGAVHVVVAETDYQSFAVLYLERAGQ- 116
+           ++ R   G+C ++   Y  T + G+FL         +   V  T+Y  +A+   +++   
+Sbjct: 81  TSTRWRRGVCEEITGAYQKTDIDGKFLYHKSKWNITLESYVVHTNYDEYAIFLTKKSSHH 140
+
+Query: 117 ----LSVKLYARSLPVSDSVLSGFEQRVQEAHLTEDQIFYFPKYGFCEAADQ 164
+               ++ KLY R   + DS+L  F+       ++E+ I + P  G C   D+
+Sbjct: 141 HGLTITAKLYGREPQLRDSLLQEFKDVALNVGISENSIIFMPDRGECVPGDR 192
+
+
+>sp|Q6UWW0|YA002_HUMAN Uncharacterized lipocalin UNQ2541/PRO6093
+           OS=Homo sapiens GN=UNQ2541/PRO6093 PE=2 SV=1
+          Length = 184
+
+ Score = 64.7 bits (156), Expect = 3e-10,   Method: Composition-based stats.
+ Identities = 53/159 (33%), Positives = 80/159 (50%), Gaps = 12/159 (7%)
+
+Query: 7   IQPKANFDAQQFAGTWLLVAVGSAAR-FLQEQGHRAEAT-TLHVAPQGTAMAVSTFRKLD 64
+           +QP  +F+A++F+G W +V++ S  R FL ++ H + +T  +    +G       F   D
+Sbjct: 24  LQP--DFNAEKFSGLWYVVSMASDCRVFLGKKDHLSMSTRAIRPTEEGGLHVHMEFPGAD 81
+
+Query: 65  GICWQVRQLYGDTGVLGRFLLQARGARGAVHVVVAETDYQSFAVLYL--ERAGQLS--VK 120
+           G C QV   Y   G  G F + A G    + V + +TDY SFAVLY+  E  G LS  V+
+Sbjct: 82  G-CNQVDAEYLKVGSEGHFRVPALGY---LDVRIVDTDYSSFAVLYIYKELEGALSTMVQ 137
+
+Query: 121 LYARSLPVSDSVLSGFEQRVQEAHLTEDQIFYFPKYGFC 159
+           LY+R+  VS   L  F+       L +D +   P+   C
+Sbjct: 138 LYSRTQDVSPQALKSFQDFYPTLGLPKDMMVMLPQSDAC 176
+
+
+>sp|P02760|AMBP_HUMAN Protein AMBP OS=Homo sapiens GN=AMBP PE=1 SV=1
+          Length = 352
+
+ Score = 63.9 bits (154), Expect = 3e-10,   Method: Composition-based stats.
+ Identities = 42/170 (24%), Positives = 74/170 (43%), Gaps = 7/170 (4%)
+
+Query: 2   SPISTIQPKANFDAQQFAGTWLLVAVGSAARFLQEQGHRAEATTLHVAPQGTAMAVS--T 59
+           +P   IQ + NF+  +  G W  +A+GS   +L++   R   +TL +    T   +S  +
+Sbjct: 24  TPPDNIQVQENFNISRIYGKWYNLAIGSTCPWLKKIMDRMTVSTLVLGEGATEAEISMTS 83
+
+Query: 60  FRKLDGICWQVRQLYGDTGVLGRFLLQARGARGAVHVVVAETDYQSFAVLYLERAGQ--- 116
+            R   G+C +    Y  T   G+FL         +   V  T+Y  +A+   ++  +   
+Sbjct: 84  TRWRKGVCEETSGAYEKTDTDGKFLYHKSKWNITMESYVVHTNYDEYAIFLTKKFSRHHG 143
+
+Query: 117 --LSVKLYARSLPVSDSVLSGFEQRVQEAHLTEDQIFYFPKYGFCEAADQ 164
+             ++ KLY R+  + +++L  F    Q   + ED IF     G C   +Q
+Sbjct: 144 PTITAKLYGRAPQLRETLLQDFRVVAQGVGIPEDSIFTMADRGECVPGEQ 193
+
+
+>sp|Q64240|AMBP_RAT Protein AMBP OS=Rattus norvegicus GN=Ambp PE=1
+           SV=1
+          Length = 349
+
+ Score = 63.9 bits (154), Expect = 4e-10,   Method: Composition-based stats.
+ Identities = 41/165 (24%), Positives = 76/165 (46%), Gaps = 7/165 (4%)
+
+Query: 7   IQPKANFDAQQFAGTWLLVAVGSAARFLQEQGHRAEATTLHVAPQGT--AMAVSTFRKLD 64
+           IQ + NF+  +  G W  +AVGS   +L+   ++   +TL +    T   ++V++ +   
+Sbjct: 28  IQVQENFNEARIYGKWFNLAVGSTCPWLRRIKNKMSVSTLVLQEGATEAEISVTSTQWRK 87
+
+Query: 65  GICWQVRQLYGDTGVLGRFLLQARGARGAVHVVVAETDYQSFAVL----YLERAG-QLSV 119
+           G+C ++  +Y  T + G+FL         +   V  T+Y  +A+     +  R G  ++ 
+Sbjct: 88  GVCEEISGVYQKTDIDGKFLYHKSKWNATLESYVVHTNYDEYAIFLTKKFSHRHGPTITA 147
+
+Query: 120 KLYARSLPVSDSVLSGFEQRVQEAHLTEDQIFYFPKYGFCEAADQ 164
+           KLY R   + DS+L  F +      + E+ I +    G C   D+
+Sbjct: 148 KLYGREPQLRDSLLQEFREVALSVGIPENSIVFMADRGECVPGDR 192
+
+
+>sp|Q60559|AMBP_MESAU Protein AMBP OS=Mesocricetus auratus GN=AMBP
+           PE=1 SV=1
+          Length = 349
+
+ Score = 62.8 bits (151), Expect = 8e-10,   Method: Composition-based stats.
+ Identities = 42/164 (25%), Positives = 71/164 (43%), Gaps = 7/164 (4%)
+
+Query: 7   IQPKANFDAQQFAGTWLLVAVGSAARFLQEQGHRAEATTLHVAPQGTAMAVST--FRKLD 64
+           IQ + NF+  +  G W  +AVGS   +L    ++   +TL +    T   +ST   R   
+Sbjct: 28  IQVQENFNESRIYGKWFNLAVGSTCPWLSRIKNKMSMSTLVLREGATGAEISTTSTRWRR 87
+
+Query: 65  GICWQVRQLYGDTGVLGRFLLQARGARGAVHVVVAETDYQSFAVLYLERAGQ-----LSV 119
+           G+C +V   Y  T + G+FL         +   V  T+Y  +A+   ++  +     ++ 
+Sbjct: 88  GVCEEVSGTYEKTDMDGKFLYHKSKWNVTLESYVVHTNYDEYAIFLTKKFSRHHGPTITA 147
+
+Query: 120 KLYARSLPVSDSVLSGFEQRVQEAHLTEDQIFYFPKYGFCEAAD 163
+           KLY R   + DS+L  F +      + E+ I +    G C   D
+Sbjct: 148 KLYGREPQLRDSLLQEFREVALSVGIPENSIVFMEDRGECVPGD 191
+
+
+>sp|P36992|AMBP_PLEPL Protein AMBP (Fragment) OS=Pleuronectes
+           platessa PE=2 SV=1
+          Length = 355
+
+ Score = 62.4 bits (150), Expect = 1e-09,   Method: Composition-based stats.
+ Identities = 44/163 (26%), Positives = 74/163 (45%), Gaps = 10/163 (6%)
+
+Query: 10  KANFDAQQFAGTWLLVAVGSAARFLQEQGHRAEATTLHVAPQ---GTAMAVSTFRKLDGI 66
+           + NFD  +F GTW  VA+ S+   +Q   +RA+A    +  +   G  + V+  R   G 
+Sbjct: 34  QENFDLTRFVGTWHDVALTSSCPHMQR--NRADAAIGKLVLEKDTGNKLKVTRTRLRHGT 91
+
+Query: 67  CWQVRQLYGDTGVLGRFLLQARGARGAVHVVVAETDYQSFAVLYLERA-----GQLSVKL 121
+           C ++   Y  T   GR           V   V  T+Y  +A++ + +         S+KL
+Sbjct: 92  CVEMSGEYELTSTPGRIFYHIDRWDADVDAYVVHTNYDEYAIIIMSKQKTSGENSTSLKL 151
+
+Query: 122 YARSLPVSDSVLSGFEQRVQEAHLTEDQIFYFPKYGFCEAADQ 164
+           Y+R++ V D+VL  F+  V+   +++D I      G C   +Q
+Sbjct: 152 YSRTMSVRDTVLDDFKTLVRHQGMSDDTIIIKQNKGDCIPGEQ 194
+
+
+>sp|Q62577|AMBP_MERUN Protein AMBP OS=Meriones unguiculatus GN=AMBP
+           PE=2 SV=1
+          Length = 346
+
+ Score = 61.2 bits (147), Expect = 2e-09,   Method: Composition-based stats.
+ Identities = 42/171 (24%), Positives = 73/171 (42%), Gaps = 7/171 (4%)
+
+Query: 1   ASPISTIQPKANFDAQQFAGTWLLVAVGSAARFLQEQGHRAEATTLHVAPQGTAMAVS-- 58
+           A+ +  IQ + NF      G W  +AVGS   +L+    +   +TL +    T   +S  
+Sbjct: 22  AATLPDIQVQENFIESLIYGKWFNLAVGSTCPWLRRIKDKMSMSTLVLQEGATEAEISMT 81
+
+Query: 59  TFRKLDGICWQVRQLYGDTGVLGRFLLQARGARGAVHVVVAETDYQSFAVLYLERAGQ-- 116
+           + R   G+C ++   Y  T + G+FL         +   V  T+Y  +A+   ++     
+Sbjct: 82  STRWRRGVCEEISGAYEKTDIDGKFLYHKSKWNITLETYVVHTNYDEYAIFLTKKFSHYH 141
+
+Query: 117 ---LSVKLYARSLPVSDSVLSGFEQRVQEAHLTEDQIFYFPKYGFCEAADQ 164
+              +++KLY R   + DS+L  F +      + E+ I +    G C   DQ
+Sbjct: 142 GPTITLKLYGREPKLRDSLLLEFREVALSMGIPENSIVFMADKGECVPGDQ 192
+
+
+>sp|Q01584|LIPO_BUFMA Lipocalin OS=Bufo marinus PE=1 SV=1
+          Length = 183
+
+ Score = 57.4 bits (137), Expect = 4e-08,   Method: Composition-based stats.
+ Identities = 45/161 (27%), Positives = 78/161 (48%), Gaps = 13/161 (8%)
+
+Query: 7   IQPKANFDAQQFAGTWLLVAVGSAARFLQEQGHRAEATTLHVAP--QGTAMAVSTFRKLD 64
+           IQP  +F   +  G W  + + S + + Q +  + +  T  + P   G    V+TF KLD
+Sbjct: 24  IQP--DFQEDKILGKWYGIGLASNSNWFQSKKQQLKMCTTVITPTADGNLDVVATFPKLD 81
+
+Query: 65  GICWQVRQLYGDTGVLGRFLLQARGAR-GAVHVV-VAETDYQSFAVLYL--ERAGQLS-- 118
+             C +    Y  T   GRFL  ++  R G+ HV+ V E++Y  + +++    +  +++  
+Sbjct: 82  R-CEKKSMTYIKTEQPGRFL--SKSPRYGSDHVIRVVESNYDEYTLMHTIKTKGNEVNTI 138
+
+Query: 119 VKLYARSLPVSDSVLSGFEQRVQEAHLTEDQIFYFPKYGFC 159
+           V L+ R   +S  +L  F+Q  +E  LT+D I   P+   C
+Sbjct: 139 VSLFGRRKTLSPELLDKFQQFAKEQGLTDDNILILPQTDSC 179
+
+
+>sp|Q9XSM0|PTGDS_SHEEP Prostaglandin-H2 D-isomerase OS=Ovis aries
+           GN=PTGDS PE=1 SV=1
+          Length = 191
+
+ Score = 48.9 bits (115), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 44/162 (27%), Positives = 64/162 (39%), Gaps = 10/162 (6%)
+
+Query: 5   STIQPKANFDAQQFAGTWLLVAVGSAARFLQEQGHRAEATTLHVAP--QGTAMAVSTFRK 62
+           + +QP  NF+  +F G W    + S + +  E+          VAP   G     STF +
+Sbjct: 28  AALQP--NFEEDKFLGRWFTSGLASNSSWFLEKRKVLSMCKSEVAPAADGGLNVTSTFLR 85
+
+Query: 63  LDGICWQVRQLYGDTGVLGRFLLQARGARGAVHVVVAETDYQSFAVLYLERA-----GQL 117
+            D  C     L    G  G +   +        V VAETDY+++A+LY E         L
+Sbjct: 86  KDQ-CETRTLLLRPAGPPGCYSYTSPHWSSTHEVSVAETDYETYALLYTESVRGPGPDSL 144
+
+Query: 118 SVKLYARSLPVSDSVLSGFEQRVQEAHLTEDQIFYFPKYGFC 159
+              LY+R+      V   F    +    TE+ I + PK   C
+Sbjct: 145 MATLYSRTQTPRAEVKEKFTTFARSLGFTEEGIVFLPKTDKC 186
+
+
+>sp|P35578|ESP4_LACVV Epididymal secretory protein 4 OS=Lacerta
+           vivipara PE=1 SV=1
+          Length = 172
+
+ Score = 46.2 bits (108), Expect = 8e-05,   Method: Composition-based stats.
+ Identities = 37/152 (24%), Positives = 64/152 (42%), Gaps = 8/152 (5%)
+
+Query: 3   PISTIQPKA-NFDAQQFAGTWLLVAVGSAARFLQEQGHRAEATTLHVAPQGTAMAVSTFR 61
+           P+S   P   NFDAQ+  G W  + + S    + E   +       V      M + T  
+Sbjct: 18  PVSADIPVVPNFDAQKTVGKWHPIGMASKLPEVPEYEQKISPMDHMVELTDGDMKL-TAN 76
+
+Query: 62  KLDGICWQVRQLYGDTGVLGRFLLQARGARGAVHVVVAETDYQSFAVLYLERAGQLSVKL 121
+            +DG+C +   +   T   G F       R      + + DY+ + ++Y++++   ++ L
+Sbjct: 77  YMDGVCKEATAMLKHTDKPGVFKFTGGEIR------MMDIDYEKYLIMYMKKSTFEAMYL 130
+
+Query: 122 YARSLPVSDSVLSGFEQRVQEAHLTEDQIFYF 153
+            AR   V D +   F++ V E +  E  I YF
+Sbjct: 131 SARGSDVGDDIKEKFKKLVLEQNFPEAHIKYF 162
+
+
+>sp|Q8WNM1|PTGDS_GORGO Prostaglandin-H2 D-isomerase OS=Gorilla
+           gorilla gorilla GN=PTGDS PE=2 SV=1
+          Length = 190
+
+ Score = 45.8 bits (107), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 41/166 (24%), Positives = 66/166 (39%), Gaps = 8/166 (4%)
+
+Query: 1   ASPISTIQPKANFDAQQFAGTWLLVAVGSAARFLQEQGHRAEATTLHVAP--QGTAMAVS 58
+           A+P + +  + NF   +F G W    + S + +L+E+          VAP   G     S
+Sbjct: 22  AAPEAQVSVQPNFQQDKFLGRWFSAGLASNSSWLREKKAALSMCKSVVAPAADGGLNLTS 81
+
+Query: 59  TFRKLDGICWQVRQLYGDTGVLGRFLLQARGARGAVHVVVAETDYQSFAVLYLERAGQLS 118
+           TF + +  C     L    G LG +  ++        V V ETDY  +A+LY + +    
+Sbjct: 82  TFLRKNQ-CETRTMLLQTAGSLGSYSYRSPHWGSTYSVSVVETDYDQYALLYSQGSKGPG 140
+
+Query: 119 -----VKLYARSLPVSDSVLSGFEQRVQEAHLTEDQIFYFPKYGFC 159
+                  LY+R+      +   F    +    TED I + P+   C
+Sbjct: 141 EDFRMATLYSRTQTPRAELKEKFTAFCKAQGFTEDTIVFLPQTDKC 186
+
+
+>sp|P41222|PTGDS_HUMAN Prostaglandin-H2 D-isomerase OS=Homo sapiens
+           GN=PTGDS PE=1 SV=1
+          Length = 190
+
+ Score = 45.8 bits (107), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 41/166 (24%), Positives = 66/166 (39%), Gaps = 8/166 (4%)
+
+Query: 1   ASPISTIQPKANFDAQQFAGTWLLVAVGSAARFLQEQGHRAEATTLHVAP--QGTAMAVS 58
+           A+P + +  + NF   +F G W    + S + +L+E+          VAP   G     S
+Sbjct: 22  AAPEAQVSVQPNFQQDKFLGRWFSAGLASNSSWLREKKAALSMCKSVVAPATDGGLNLTS 81
+
+Query: 59  TFRKLDGICWQVRQLYGDTGVLGRFLLQARGARGAVHVVVAETDYQSFAVLYLERAGQLS 118
+           TF + +  C     L    G LG +  ++        V V ETDY  +A+LY + +    
+Sbjct: 82  TFLRKNQ-CETRTMLLQPAGSLGSYSYRSPHWGSTYSVSVVETDYDQYALLYSQGSKGPG 140
+
+Query: 119 -----VKLYARSLPVSDSVLSGFEQRVQEAHLTEDQIFYFPKYGFC 159
+                  LY+R+      +   F    +    TED I + P+   C
+Sbjct: 141 EDFRMATLYSRTQTPRAELKEKFTAFCKAQGFTEDTIVFLPQTDKC 186
+
+
+>sp|Q8WNM0|PTGDS_PONPY Prostaglandin-H2 D-isomerase OS=Pongo
+           pygmaeus GN=PTGDS PE=2 SV=1
+          Length = 190
+
+ Score = 45.4 bits (106), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 41/166 (24%), Positives = 66/166 (39%), Gaps = 8/166 (4%)
+
+Query: 1   ASPISTIQPKANFDAQQFAGTWLLVAVGSAARFLQEQGHRAEATTLHVAP--QGTAMAVS 58
+           A+P + +  + NF   +F G W    + S + +L+E+          VAP   G     S
+Sbjct: 22  AAPEAQVSVQPNFQQDKFLGRWFSAGLASNSSWLREKKAALSMCKSVVAPAADGGLNLTS 81
+
+Query: 59  TFRKLDGICWQVRQLYGDTGVLGRFLLQARGARGAVHVVVAETDYQSFAVLYLERAGQLS 118
+           TF + +  C     L    G LG +  ++        V V ETDY  +A+LY + +    
+Sbjct: 82  TFLRKNQ-CETRTMLLQPAGSLGSYSYRSPHWGSTYSVSVVETDYDQYALLYSQGSKGPG 140
+
+Query: 119 -----VKLYARSLPVSDSVLSGFEQRVQEAHLTEDQIFYFPKYGFC 159
+                  LY+R+      +   F    +    TED I + P+   C
+Sbjct: 141 EDFRMATLYSRTQTPRAELKEKFTAFCKAQGFTEDTIVFLPQTDKC 186
+
+
+>sp|O02853|PTGDS_BOVIN Prostaglandin-H2 D-isomerase OS=Bos taurus
+           GN=PTGDS PE=1 SV=1
+          Length = 191
+
+ Score = 45.4 bits (106), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 46/162 (28%), Positives = 65/162 (40%), Gaps = 10/162 (6%)
+
+Query: 5   STIQPKANFDAQQFAGTWLLVAVGSAARFLQEQGHRAEATTLHVAP--QGTAMAVSTFRK 62
+           + +QP  NF+  +F G W    + S + +  E+          VAP   G     STF +
+Sbjct: 28  AALQP--NFEEDKFLGRWFTSGLASNSSWFLEKKKVLSMCKSVVAPAADGGLNLTSTFLR 85
+
+Query: 63  LDGICWQVRQLYGDTGVLGRFLLQARGARGAVHVVVAETDYQSFAVLYLERA---GQ--L 117
+            D  C     L    G  G +   +        V VAETDY+++A+LY E     GQ   
+Sbjct: 86  KDQ-CETRTLLLRPAGPPGCYSYTSPHWSSTHEVSVAETDYETYALLYTEGVRGPGQDFR 144
+
+Query: 118 SVKLYARSLPVSDSVLSGFEQRVQEAHLTEDQIFYFPKYGFC 159
+              LY+RS      V   F    +    TE+ I + PK   C
+Sbjct: 145 MATLYSRSQNPRAEVKEHFTTFAKSLGFTEEGIVFLPKTDKC 186
+
+
+>sp|Q29095|PTGDS_PIG Prostaglandin-H2 D-isomerase OS=Sus scrofa
+           GN=PTGDS PE=1 SV=1
+          Length = 189
+
+ Score = 43.5 bits (101), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 42/162 (25%), Positives = 69/162 (42%), Gaps = 10/162 (6%)
+
+Query: 5   STIQPKANFDAQQFAGTWLLVAVGS-AARFLQEQGHRAEATTLHV-APQGTAMAVSTFRK 62
+           +++QP  NF   +F G W    + S ++ FL+++   +   +L   AP G     STF +
+Sbjct: 26  ASLQP--NFQEDKFLGRWFTSGLASNSSWFLEKKKVLSMCKSLVAPAPDGGFNLTSTFLR 83
+
+Query: 63  LDGICWQVRQLYGDTGVLGRFLLQARGARGAVHVVVAETDYQSFAVLYLERAGQLS---- 118
+            D  C     +    G  G +   +      + V V ETDY+++A+L+ E          
+Sbjct: 84  KDQ-CVTRTLMLRPAGPPGCYSYTSPHGGSNLEVSVVETDYKNYALLHTESGPSPGPAFR 142
+
+Query: 119 -VKLYARSLPVSDSVLSGFEQRVQEAHLTEDQIFYFPKYGFC 159
+              LY+RS     +V   F    +    TED I + P+   C
+Sbjct: 143 MATLYSRSQAPGAAVREKFTAFAKARGFTEDGIVFLPRNEKC 184
+
+
+>sp|Q9TUI1|PTGDS_MACFU Prostaglandin-H2 D-isomerase OS=Macaca
+           fuscata fuscata GN=PTGDS PE=2 SV=1
+          Length = 190
+
+ Score = 43.1 bits (100), Expect = 7e-04,   Method: Composition-based stats.
+ Identities = 41/166 (24%), Positives = 64/166 (38%), Gaps = 8/166 (4%)
+
+Query: 1   ASPISTIQPKANFDAQQFAGTWLLVAVGSAARFLQEQGHRAEATTLHVAP--QGTAMAVS 58
+           A+P + +  + NF   +F G W    + S + +LQE+          VAP   G     S
+Sbjct: 22  AAPEAQVSVQPNFQPDKFLGRWFSAGLASNSSWLQEKKAALSMCKSVVAPATDGGLNLTS 81
+
+Query: 59  TFRKLDGICWQVRQLYGDTGVLGRFLLQARGARGAVHVVVAETDYQSFAVLYLERAGQLS 118
+           TF + +  C     L      LG +   +        V V ETDY  +A+LY + +    
+Sbjct: 82  TFLRKNQ-CETRTMLLQPGESLGSYSYGSPHWGSTYSVSVVETDYDHYALLYSQGSKGPG 140
+
+Query: 119 -----VKLYARSLPVSDSVLSGFEQRVQEAHLTEDQIFYFPKYGFC 159
+                  LY+R+      +   F    +    TED I + P+   C
+Sbjct: 141 EDFRMATLYSRTQTPRAELKEKFSAFCKAQGFTEDSIVFLPQTDKC 186
+
+
+  Database: sprot
+    Posted date:  Mar 15, 2009  5:38 PM
+  Number of letters in database: 148,809,765
+  Number of sequences in database:  412,525
+  
+Lambda     K      H
+   0.323    0.135    0.399 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 46,901,439
+Number of Sequences: 412525
+Number of extensions: 1722680
+Number of successful extensions: 4948
+Number of sequences better than 1.0e-03: 21
+Number of HSP's better than  0.0 without gapping: 3
+Number of HSP's successfully gapped in prelim test: 18
+Number of HSP's that attempted gapping in prelim test: 4918
+Number of HSP's gapped (non-prelim): 22
+length of query: 173
+length of database: 148,809,765
+effective HSP length: 108
+effective length of query: 65
+effective length of database: 104,257,065
+effective search space: 6776709225
+effective search space used: 6776709225
+T: 11
+A: 40
+X1: 16 ( 7.5 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 40 (21.5 bits)
+S2: 99 (42.7 bits)

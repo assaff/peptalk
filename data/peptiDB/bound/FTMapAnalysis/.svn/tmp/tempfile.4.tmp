@@ -1,0 +1,3 @@
+select within (0.5,(*:B and not backbone)) and not (*:B or *:A)
+show selected
+quit

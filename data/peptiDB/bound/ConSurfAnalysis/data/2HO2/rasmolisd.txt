@@ -1,0 +1,14 @@
+select all
+color [200,200,200]
+
+
+select    SER1, ASP2, LEU3, PRO4, ALA5, GLY6, TRP7, MET8, ARG9, VAL10
+select selected or GLN11, ASP12, THR13, SER14, GLY15, THR16, TYR17, TYR18, TRP19, HIS20
+select selected or ILE21, PRO22, THR23, GLY24, THR25, THR26, GLN27, TRP28, GLU29, PRO30
+select selected or PRO31, GLY32, ARG33
+select selected and :A
+color [255,255,150]
+spacefill
+
+define CON10 selected
+

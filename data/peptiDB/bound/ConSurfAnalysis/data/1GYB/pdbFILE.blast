@@ -1,0 +1,638 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_A  122
+         (122 letters)
+
+Database: sprot 
+           412,525 sequences; 148,809,765 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|P33331|NTF2_YEAST Nuclear transport factor 2 OS=Saccharomyces...   219   3e-57
+sp|Q6FRC6|NTF2_CANGA Nuclear transport factor 2 OS=Candida glabr...   209   4e-54
+sp|Q75AA5|NTF2_ASHGO Nuclear transport factor 2 OS=Ashbya gossyp...   204   1e-52
+sp|Q6CQX4|NTF2_KLULA Nuclear transport factor 2 OS=Kluyveromyces...   202   5e-52
+sp|Q6BWC0|NTF2_DEBHA Nuclear transport factor 2 OS=Debaryomyces ...   194   8e-50
+sp|Q9P926|NTF2_CANAL Nuclear transport factor 2 OS=Candida albic...   194   8e-50
+sp|Q10100|NTF2_SCHPO Nuclear transport factor 2 OS=Schizosacchar...   161   7e-40
+sp|Q6CC82|NTF2_YARLI Nuclear transport factor 2 OS=Yarrowia lipo...   158   8e-39
+sp|Q96VN3|NTF2_EMENI Nuclear transport factor 2 OS=Emericella ni...   147   1e-35
+sp|Q8NJ52|NTF2_CLAHE Nuclear transport factor 2 OS=Cladosporium ...   137   1e-32
+sp|Q9C7F5|NTF2_ARATH Nuclear transport factor 2 OS=Arabidopsis t...   122   4e-28
+sp|Q9XJ54|NTF2_ORYSJ Nuclear transport factor 2 OS=Oryza sativa ...   118   8e-27
+sp|P87102|NTF2_NEUCR Nuclear transport factor 2 OS=Neurospora cr...   116   4e-26
+sp|Q32KP9|NTF2_BOVIN Nuclear transport factor 2 OS=Bos taurus GN...    91   1e-18
+sp|P61970|NTF2_HUMAN Nuclear transport factor 2 OS=Homo sapiens ...    91   1e-18
+sp|P61971|NTF2_MOUSE Nuclear transport factor 2 OS=Mus musculus ...    91   1e-18
+sp|Q5R8G4|NTF2_PONAB Nuclear transport factor 2 OS=Pongo abelii ...    91   1e-18
+sp|P61972|NTF2_RAT Nuclear transport factor 2 OS=Rattus norvegic...    91   1e-18
+sp|O42242|NTF2_XENLA Nuclear transport factor 2 OS=Xenopus laevi...    83   3e-16
+sp|Q86HW7|NTF2_DICDI Nuclear transport factor 2 OS=Dictyostelium...    80   3e-15
+sp|Q21735|NTF2_CAEEL Probable nuclear transport factor 2 OS=Caen...    73   4e-13
+sp|O94260|G3BP_SCHPO Putative G3BP-like protein OS=Schizosacchar...    49   7e-06
+sp|Q9V3H8|NXT1_DROME NTF2-related export protein OS=Drosophila m...    49   8e-06
+sp|Q9U757|NXT1_CAEEL NTF2-related export protein OS=Caenorhabdit...    45   1e-04
+sp|Q9UN86|G3BP2_HUMAN Ras GTPase-activating protein-binding prot...    45   1e-04
+sp|Q5R9L3|G3BP2_PONAB Ras GTPase-activating protein-binding prot...    45   1e-04
+sp|P97379|G3BP2_MOUSE Ras GTPase-activating protein-binding prot...    45   1e-04
+sp|Q13283|G3BP1_HUMAN Ras GTPase-activating protein-binding prot...    44   3e-04
+sp|Q5RB87|G3BP1_PONAB Ras GTPase-activating protein-binding prot...    44   3e-04
+sp|P97855|G3BP1_MOUSE Ras GTPase-activating protein-binding prot...    44   3e-04
+sp|Q32LC7|G3BP1_BOVIN Ras GTPase-activating protein-binding prot...    43   3e-04
+
+>sp|P33331|NTF2_YEAST Nuclear transport factor 2 OS=Saccharomyces
+           cerevisiae GN=NTF2 PE=1 SV=2
+          Length = 125
+
+ Score =  219 bits (558), Expect = 3e-57,   Method: Composition-based stats.
+ Identities = 121/122 (99%), Positives = 121/122 (99%)
+
+Query: 1   LDFNTLAQNFTQFYYNQFDTDRSQLGNLYRNESMLTFETSQLQGAKDIVEKLVSLPFQKV 60
+           LDFNTLAQNFTQFYYNQFDTDRSQLGNLYRNESMLTFETSQLQGAKDIVEKLVSLPFQKV
+Sbjct: 3   LDFNTLAQNFTQFYYNQFDTDRSQLGNLYRNESMLTFETSQLQGAKDIVEKLVSLPFQKV 62
+
+Query: 61  QHRITTLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHLIPDGNSYYVFNDIFRLN 120
+           QHRITTLDAQPASP GDVLVMITGDLLIDEEQNPQRFSQVFHLIPDGNSYYVFNDIFRLN
+Sbjct: 63  QHRITTLDAQPASPNGDVLVMITGDLLIDEEQNPQRFSQVFHLIPDGNSYYVFNDIFRLN 122
+
+Query: 121 YS 122
+           YS
+Sbjct: 123 YS 124
+
+
+>sp|Q6FRC6|NTF2_CANGA Nuclear transport factor 2 OS=Candida glabrata
+           GN=NTF2 PE=3 SV=1
+          Length = 125
+
+ Score =  209 bits (531), Expect = 4e-54,   Method: Composition-based stats.
+ Identities = 112/122 (91%), Positives = 117/122 (95%)
+
+Query: 1   LDFNTLAQNFTQFYYNQFDTDRSQLGNLYRNESMLTFETSQLQGAKDIVEKLVSLPFQKV 60
+           +DFN LAQ FT+FYYNQFD+DRSQLGNLYR+ESMLTFETSQLQGAK IVEKLVSLPFQKV
+Sbjct: 3   MDFNALAQQFTEFYYNQFDSDRSQLGNLYRDESMLTFETSQLQGAKSIVEKLVSLPFQKV 62
+
+Query: 61  QHRITTLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHLIPDGNSYYVFNDIFRLN 120
+            HRITTLDAQPASP GDVLVMITGDLLID+EQNPQRFSQVFHLIPDGNSYYVFNDIFRLN
+Sbjct: 63  AHRITTLDAQPASPNGDVLVMITGDLLIDDEQNPQRFSQVFHLIPDGNSYYVFNDIFRLN 122
+
+Query: 121 YS 122
+           YS
+Sbjct: 123 YS 124
+
+
+>sp|Q75AA5|NTF2_ASHGO Nuclear transport factor 2 OS=Ashbya gossypii
+           GN=NTF2 PE=3 SV=1
+          Length = 125
+
+ Score =  204 bits (518), Expect = 1e-52,   Method: Composition-based stats.
+ Identities = 110/122 (90%), Positives = 118/122 (96%)
+
+Query: 1   LDFNTLAQNFTQFYYNQFDTDRSQLGNLYRNESMLTFETSQLQGAKDIVEKLVSLPFQKV 60
+           +DF+ LAQ FT+FYYNQFDTDRSQLGNLYR++SMLTFETSQLQGAKDIVEKLVSLPFQKV
+Sbjct: 3   MDFSALAQQFTEFYYNQFDTDRSQLGNLYRDQSMLTFETSQLQGAKDIVEKLVSLPFQKV 62
+
+Query: 61  QHRITTLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHLIPDGNSYYVFNDIFRLN 120
+           QHRITTLDAQPASP GDVLVMITGDLLID+EQN QRFSQVFHL+P+GNSYYVFNDIFRLN
+Sbjct: 63  QHRITTLDAQPASPNGDVLVMITGDLLIDDEQNAQRFSQVFHLMPEGNSYYVFNDIFRLN 122
+
+Query: 121 YS 122
+           YS
+Sbjct: 123 YS 124
+
+
+>sp|Q6CQX4|NTF2_KLULA Nuclear transport factor 2 OS=Kluyveromyces
+           lactis GN=NTF2 PE=3 SV=1
+          Length = 125
+
+ Score =  202 bits (513), Expect = 5e-52,   Method: Composition-based stats.
+ Identities = 106/122 (86%), Positives = 118/122 (96%)
+
+Query: 1   LDFNTLAQNFTQFYYNQFDTDRSQLGNLYRNESMLTFETSQLQGAKDIVEKLVSLPFQKV 60
+           +DF++LAQ FT+FYYNQFD+DR+QLGNLYR +SMLTFET+QLQGAKDIVEKLVSLPFQKV
+Sbjct: 3   VDFSSLAQQFTEFYYNQFDSDRTQLGNLYREQSMLTFETTQLQGAKDIVEKLVSLPFQKV 62
+
+Query: 61  QHRITTLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHLIPDGNSYYVFNDIFRLN 120
+            HRITTLDAQPASP GDVLVMITGDLLIDEEQNPQRFSQVFHL+P+G+SYYV+NDIFRLN
+Sbjct: 63  AHRITTLDAQPASPNGDVLVMITGDLLIDEEQNPQRFSQVFHLMPEGSSYYVYNDIFRLN 122
+
+Query: 121 YS 122
+           YS
+Sbjct: 123 YS 124
+
+
+>sp|Q6BWC0|NTF2_DEBHA Nuclear transport factor 2 OS=Debaryomyces
+           hansenii GN=NTF2 PE=3 SV=1
+          Length = 124
+
+ Score =  194 bits (494), Expect = 8e-50,   Method: Composition-based stats.
+ Identities = 100/122 (81%), Positives = 112/122 (91%)
+
+Query: 1   LDFNTLAQNFTQFYYNQFDTDRSQLGNLYRNESMLTFETSQLQGAKDIVEKLVSLPFQKV 60
+           +DFNT+A  F  FYY QFD+DR+QLGNLYR +SMLTFETSQLQGAKDIVEKLVSLPFQKV
+Sbjct: 3   VDFNTVASEFCNFYYQQFDSDRTQLGNLYREQSMLTFETSQLQGAKDIVEKLVSLPFQKV 62
+
+Query: 61  QHRITTLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHLIPDGNSYYVFNDIFRLN 120
+            HRI+TLDAQP SP GD+LVM+TG+L+ID+EQN QR+SQVFHLIPDGNSYYVFNDIFRLN
+Sbjct: 63  AHRISTLDAQPGSPNGDILVMVTGELIIDDEQNAQRYSQVFHLIPDGNSYYVFNDIFRLN 122
+
+Query: 121 YS 122
+           YS
+Sbjct: 123 YS 124
+
+
+>sp|Q9P926|NTF2_CANAL Nuclear transport factor 2 OS=Candida albicans
+           GN=NTF2 PE=3 SV=1
+          Length = 124
+
+ Score =  194 bits (494), Expect = 8e-50,   Method: Composition-based stats.
+ Identities = 101/122 (82%), Positives = 110/122 (90%)
+
+Query: 1   LDFNTLAQNFTQFYYNQFDTDRSQLGNLYRNESMLTFETSQLQGAKDIVEKLVSLPFQKV 60
+           +DFN +A  F  FYYNQFD+DRSQLGNLYRNESMLTFETSQLQGA+DIVEKL SLPFQKV
+Sbjct: 3   VDFNAVATEFCNFYYNQFDSDRSQLGNLYRNESMLTFETSQLQGARDIVEKLASLPFQKV 62
+
+Query: 61  QHRITTLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHLIPDGNSYYVFNDIFRLN 120
+            HRI+TLDAQPAS  GD+LVM+TG+LLIDEEQN QR+SQVFHLIPD  SYYVFNDIFRLN
+Sbjct: 63  AHRISTLDAQPASANGDILVMVTGELLIDEEQNAQRYSQVFHLIPDNGSYYVFNDIFRLN 122
+
+Query: 121 YS 122
+           YS
+Sbjct: 123 YS 124
+
+
+>sp|Q10100|NTF2_SCHPO Nuclear transport factor 2
+           OS=Schizosaccharomyces pombe GN=ntf2 PE=2 SV=2
+          Length = 123
+
+ Score =  161 bits (408), Expect = 7e-40,   Method: Composition-based stats.
+ Identities = 83/120 (69%), Positives = 99/120 (82%)
+
+Query: 2   DFNTLAQNFTQFYYNQFDTDRSQLGNLYRNESMLTFETSQLQGAKDIVEKLVSLPFQKVQ 61
+           D+N LA  FTQFYY  FD+DRSQL +LYR ESML+FE +QLQG K IVEKLVSLPFQ+VQ
+Sbjct: 3   DYNALATQFTQFYYQTFDSDRSQLSSLYREESMLSFEGAQLQGTKAIVEKLVSLPFQRVQ 62
+
+Query: 62  HRITTLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHLIPDGNSYYVFNDIFRLNY 121
+           HRI+TLDAQP    G V+VM+TG+LL+DEEQ  QR+SQVFHL+ +  +YYV ND+FRLNY
+Sbjct: 63  HRISTLDAQPTGTTGSVIVMVTGELLLDEEQMAQRYSQVFHLVNNNGNYYVLNDLFRLNY 122
+
+
+>sp|Q6CC82|NTF2_YARLI Nuclear transport factor 2 OS=Yarrowia
+           lipolytica GN=NTF2 PE=3 SV=1
+          Length = 123
+
+ Score =  158 bits (399), Expect = 8e-39,   Method: Composition-based stats.
+ Identities = 81/121 (66%), Positives = 101/121 (83%), Gaps = 2/121 (1%)
+
+Query: 1   LDFNTLAQNFTQFYYNQFDTDRSQLGNLYRNESMLTFETSQLQGAKDIVEKLVSLPFQKV 60
+           +DFNTLA+ F +FYY  FDTDRSQLGNLYR+ SMLTF  +Q QGA+ IVEKLV LPF +V
+Sbjct: 3   VDFNTLAKQFCEFYYQTFDTDRSQLGNLYRDHSMLTFTGTQHQGAQAIVEKLVGLPFGQV 62
+
+Query: 61  QHRITTLDAQPASPYG-DVLVMITGDLLIDEEQNPQRFSQVFHLIPDGNSYYVFNDIFRL 119
+           +H+I+ +DAQPAS  G DV+V++TG+L +D + NP  ++QVFHLIPDG+SYYVFNDIFRL
+Sbjct: 63  RHKISDIDAQPASAQGGDVIVLVTGELCVDGD-NPLPYAQVFHLIPDGSSYYVFNDIFRL 121
+
+Query: 120 N 120
+           N
+Sbjct: 122 N 122
+
+
+>sp|Q96VN3|NTF2_EMENI Nuclear transport factor 2 OS=Emericella
+           nidulans GN=ntf2 PE=3 SV=1
+          Length = 125
+
+ Score =  147 bits (371), Expect = 1e-35,   Method: Composition-based stats.
+ Identities = 71/122 (58%), Positives = 94/122 (77%), Gaps = 1/122 (0%)
+
+Query: 2   DFNTLAQNFTQFYYNQFDTDRSQLGNLYRNESMLTFETSQLQGAKDIVEKLVSLPFQKVQ 61
+           DF ++AQ F  FYY  FD +R+ L  LYR+ SMLTFETS +QG   I+EKL SLPFQKVQ
+Sbjct: 3   DFQSIAQQFVTFYYQTFDGNRAGLAPLYRDHSMLTFETSAIQGVAGIIEKLTSLPFQKVQ 62
+
+Query: 62  HRITTLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHLIPDG-NSYYVFNDIFRLN 120
+           H+++TLDAQP+  +G +LV++TG LL+DEE+NP  ++Q F L+PDG  SY+V ND+FRL 
+Sbjct: 63  HQVSTLDAQPSGEHGGILVLVTGALLVDEEKNPMNYTQTFQLMPDGAGSYFVLNDVFRLI 122
+
+Query: 121 YS 122
+           Y+
+Sbjct: 123 YN 124
+
+
+>sp|Q8NJ52|NTF2_CLAHE Nuclear transport factor 2 OS=Cladosporium
+           herbarum GN=NTF2 PE=1 SV=1
+          Length = 125
+
+ Score =  137 bits (345), Expect = 1e-32,   Method: Composition-based stats.
+ Identities = 65/120 (54%), Positives = 89/120 (74%)
+
+Query: 2   DFNTLAQNFTQFYYNQFDTDRSQLGNLYRNESMLTFETSQLQGAKDIVEKLVSLPFQKVQ 61
+           DFN +AQ FT+FYY  FDTDR+QL  LYR  SMLTFE S   G  +IV KL  LPFQ+++
+Sbjct: 3   DFNAIAQQFTEFYYKTFDTDRAQLAPLYRENSMLTFEQSPFLGTANIVGKLQELPFQRIE 62
+
+Query: 62  HRITTLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHLIPDGNSYYVFNDIFRLNY 121
+           H++ T+DAQP++  G +LV+++G LL++EE+ P  ++Q F L+P   +YYVFND+FRL Y
+Sbjct: 63  HQVATVDAQPSNESGGILVVVSGALLVEEERRPMSYTQTFQLLPADGAYYVFNDVFRLVY 122
+
+
+>sp|Q9C7F5|NTF2_ARATH Nuclear transport factor 2 OS=Arabidopsis
+           thaliana GN=NTF2 PE=2 SV=1
+          Length = 126
+
+ Score =  122 bits (306), Expect = 4e-28,   Method: Composition-based stats.
+ Identities = 59/123 (47%), Positives = 88/123 (71%), Gaps = 1/123 (0%)
+
+Query: 1   LDFNTLAQNFTQFYYNQFDTDRSQLGNLYRNESMLTFETSQLQGAKDIVEKLVSLPFQKV 60
+           +D + +++ F + YY+ FDT+R  L  LY+  SMLTFE  ++QG + IV KL SLPFQ+ 
+Sbjct: 4   MDPDAVSKAFVEHYYSTFDTNRVGLAGLYQEASMLTFEGQKIQGVQSIVAKLTSLPFQQC 63
+
+Query: 61  QHRITTLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHLIPDGN-SYYVFNDIFRL 119
+           +H I+T+D QP+ P   +LV ++G+L +  E++  +FSQ+FHL+P    S+YVFNDIFRL
+Sbjct: 64  KHHISTVDCQPSGPASGMLVFVSGNLQLAGEEHALKFSQMFHLMPTPQGSFYVFNDIFRL 123
+
+Query: 120 NYS 122
+           NY+
+Sbjct: 124 NYA 126
+
+
+>sp|Q9XJ54|NTF2_ORYSJ Nuclear transport factor 2 OS=Oryza sativa
+           subsp. japonica GN=NTF2 PE=2 SV=1
+          Length = 122
+
+ Score =  118 bits (296), Expect = 8e-27,   Method: Composition-based stats.
+ Identities = 57/121 (47%), Positives = 81/121 (66%)
+
+Query: 1   LDFNTLAQNFTQFYYNQFDTDRSQLGNLYRNESMLTFETSQLQGAKDIVEKLVSLPFQKV 60
+           +D + +A+ F + YY  FDT+R  L +LY++ SMLTFE  Q  GA  I  KL SLPF + 
+Sbjct: 1   MDADAVAKAFVEHYYRTFDTNRPALVSLYQDGSMLTFEGQQFLGAAAIAGKLGSLPFAQC 60
+
+Query: 61  QHRITTLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHLIPDGNSYYVFNDIFRLN 120
+            H I T+D QP+ P G +LV ++G L    +++P +FSQ+F L+P G ++YV ND+FRLN
+Sbjct: 61  HHDINTVDCQPSGPQGGMLVFVSGSLRTGPDEHPLKFSQMFQLLPAGGNFYVQNDMFRLN 120
+
+Query: 121 Y 121
+           Y
+Sbjct: 121 Y 121
+
+
+>sp|P87102|NTF2_NEUCR Nuclear transport factor 2 OS=Neurospora
+           crassa GN=ntf-2 PE=2 SV=1
+          Length = 124
+
+ Score =  116 bits (290), Expect = 4e-26,   Method: Composition-based stats.
+ Identities = 60/120 (50%), Positives = 81/120 (67%), Gaps = 2/120 (1%)
+
+Query: 1   LDFNTLAQNFTQFYYNQFDTDRSQLGNLYRNESMLTFETSQLQGAKDIVEKLVSLPFQKV 60
+           LDF  +A  F   YY+ FD+DR  L  LYR+ SMLTFE +Q  GA+ I EKL SLPFQKV
+Sbjct: 3   LDFTAIATQFVAHYYSTFDSDRKNLAGLYRDNSMLTFEGAQSLGAQGITEKLTSLPFQKV 62
+
+Query: 61  QHRITTLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHLIPDGN-SYYVFNDIFRL 119
+           +H     DAQP +  G +++++TG L++D+EQ P  +SQ F L  D +  ++VFNDIF+L
+Sbjct: 63  KHEYGPPDAQPTAT-GGIIILVTGQLIVDDEQRPLGYSQAFQLSQDASGQWFVFNDIFKL 121
+
+
+>sp|Q32KP9|NTF2_BOVIN Nuclear transport factor 2 OS=Bos taurus
+           GN=NUTF2 PE=2 SV=1
+          Length = 127
+
+ Score = 91.3 bits (225), Expect = 1e-18,   Method: Composition-based stats.
+ Identities = 52/114 (45%), Positives = 69/114 (60%), Gaps = 2/114 (1%)
+
+Query: 6   LAQNFTQFYYNQFDTDRSQLGNLYRNESMLTFETSQLQGAKDIVEKLVSLPFQKVQHRIT 65
+           +  +F Q YY  FD DR+QLG +Y + S LT+E  Q QG   IVEKL SLPFQK+QH IT
+Sbjct: 10  IGSSFIQHYYQLFDNDRTQLGAIYIDASCLTWEGQQFQGKAAIVEKLSSLPFQKIQHSIT 69
+
+Query: 66  TLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHLIPDGNSYYVFNDIFRL 119
+             D QP +P   ++ M+ G L  DE+     F Q+F L    +++   ND+FRL
+Sbjct: 70  AQDHQP-TPDSCIISMVVGQLKADEDP-IMGFHQMFLLKNINDAWVCTNDMFRL 121
+
+
+>sp|P61970|NTF2_HUMAN Nuclear transport factor 2 OS=Homo sapiens
+           GN=NUTF2 PE=1 SV=1
+          Length = 127
+
+ Score = 91.3 bits (225), Expect = 1e-18,   Method: Composition-based stats.
+ Identities = 52/114 (45%), Positives = 69/114 (60%), Gaps = 2/114 (1%)
+
+Query: 6   LAQNFTQFYYNQFDTDRSQLGNLYRNESMLTFETSQLQGAKDIVEKLVSLPFQKVQHRIT 65
+           +  +F Q YY  FD DR+QLG +Y + S LT+E  Q QG   IVEKL SLPFQK+QH IT
+Sbjct: 10  IGSSFIQHYYQLFDNDRTQLGAIYIDASCLTWEGQQFQGKAAIVEKLSSLPFQKIQHSIT 69
+
+Query: 66  TLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHLIPDGNSYYVFNDIFRL 119
+             D QP +P   ++ M+ G L  DE+     F Q+F L    +++   ND+FRL
+Sbjct: 70  AQDHQP-TPDSCIISMVVGQLKADEDP-IMGFHQMFLLKNINDAWVCTNDMFRL 121
+
+
+>sp|P61971|NTF2_MOUSE Nuclear transport factor 2 OS=Mus musculus
+           GN=Nutf2 PE=2 SV=1
+          Length = 127
+
+ Score = 91.3 bits (225), Expect = 1e-18,   Method: Composition-based stats.
+ Identities = 52/114 (45%), Positives = 69/114 (60%), Gaps = 2/114 (1%)
+
+Query: 6   LAQNFTQFYYNQFDTDRSQLGNLYRNESMLTFETSQLQGAKDIVEKLVSLPFQKVQHRIT 65
+           +  +F Q YY  FD DR+QLG +Y + S LT+E  Q QG   IVEKL SLPFQK+QH IT
+Sbjct: 10  IGSSFIQHYYQLFDNDRTQLGAIYIDASCLTWEGQQFQGKAAIVEKLSSLPFQKIQHSIT 69
+
+Query: 66  TLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHLIPDGNSYYVFNDIFRL 119
+             D QP +P   ++ M+ G L  DE+     F Q+F L    +++   ND+FRL
+Sbjct: 70  AQDHQP-TPDSCIISMVVGQLKADEDP-IMGFHQMFLLKNINDAWVCTNDMFRL 121
+
+
+>sp|Q5R8G4|NTF2_PONAB Nuclear transport factor 2 OS=Pongo abelii
+           GN=NUTF2 PE=2 SV=1
+          Length = 127
+
+ Score = 91.3 bits (225), Expect = 1e-18,   Method: Composition-based stats.
+ Identities = 52/114 (45%), Positives = 69/114 (60%), Gaps = 2/114 (1%)
+
+Query: 6   LAQNFTQFYYNQFDTDRSQLGNLYRNESMLTFETSQLQGAKDIVEKLVSLPFQKVQHRIT 65
+           +  +F Q YY  FD DR+QLG +Y + S LT+E  Q QG   IVEKL SLPFQK+QH IT
+Sbjct: 10  IGSSFIQHYYQLFDNDRTQLGAIYIDASCLTWEGQQFQGKAAIVEKLSSLPFQKIQHSIT 69
+
+Query: 66  TLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHLIPDGNSYYVFNDIFRL 119
+             D QP +P   ++ M+ G L  DE+     F Q+F L    +++   ND+FRL
+Sbjct: 70  AQDHQP-TPDSCIISMVVGQLKADEDP-IMGFHQMFLLKNINDAWVCTNDMFRL 121
+
+
+>sp|P61972|NTF2_RAT Nuclear transport factor 2 OS=Rattus norvegicus
+           GN=Nutf2 PE=1 SV=1
+          Length = 127
+
+ Score = 91.3 bits (225), Expect = 1e-18,   Method: Composition-based stats.
+ Identities = 52/114 (45%), Positives = 69/114 (60%), Gaps = 2/114 (1%)
+
+Query: 6   LAQNFTQFYYNQFDTDRSQLGNLYRNESMLTFETSQLQGAKDIVEKLVSLPFQKVQHRIT 65
+           +  +F Q YY  FD DR+QLG +Y + S LT+E  Q QG   IVEKL SLPFQK+QH IT
+Sbjct: 10  IGSSFIQHYYQLFDNDRTQLGAIYIDASCLTWEGQQFQGKAAIVEKLSSLPFQKIQHSIT 69
+
+Query: 66  TLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHLIPDGNSYYVFNDIFRL 119
+             D QP +P   ++ M+ G L  DE+     F Q+F L    +++   ND+FRL
+Sbjct: 70  AQDHQP-TPDSCIISMVVGQLKADEDP-IMGFHQMFLLKNINDAWVCTNDMFRL 121
+
+
+>sp|O42242|NTF2_XENLA Nuclear transport factor 2 OS=Xenopus laevis
+           GN=ntf2 PE=2 SV=1
+          Length = 127
+
+ Score = 83.2 bits (204), Expect = 3e-16,   Method: Composition-based stats.
+ Identities = 49/114 (42%), Positives = 67/114 (58%), Gaps = 2/114 (1%)
+
+Query: 6   LAQNFTQFYYNQFDTDRSQLGNLYRNESMLTFETSQLQGAKDIVEKLVSLPFQKVQHRIT 65
+           +  +F Q YY  FD DR+QL  +Y + S LT+E  Q  G   IVEKL  LPFQK+QH IT
+Sbjct: 10  IGASFIQQYYQTFDADRTQLAVIYTDASCLTWEGQQYHGKAAIVEKLSLLPFQKIQHSIT 69
+
+Query: 66  TLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHLIPDGNSYYVFNDIFRL 119
+           + D QP +P   ++ M+ G L  D++     F QVF L    +++   ND+FRL
+Sbjct: 70  SQDHQP-TPDSCIISMVVGQLKADDDP-IMGFHQVFLLKNIQDAWVCTNDMFRL 121
+
+
+>sp|Q86HW7|NTF2_DICDI Nuclear transport factor 2 OS=Dictyostelium
+           discoideum GN=nutf2 PE=1 SV=1
+          Length = 127
+
+ Score = 80.1 bits (196), Expect = 3e-15,   Method: Composition-based stats.
+ Identities = 43/115 (37%), Positives = 71/115 (61%), Gaps = 2/115 (1%)
+
+Query: 6   LAQNFTQFYYNQFDTDRSQLGNLYRNESMLTFETSQLQGAKDIVEKLVSLPFQKVQHRIT 65
+           + + F + YY  FD++R+ L  +Y+ ++ LT+E   L GA  IV+ +V LPFQ+   +I 
+Sbjct: 11  VGKQFVEHYYGIFDSNRAGLTQIYQQQTTLTWEGKFLSGADAIVKHIVELPFQQTNRKIN 70
+
+Query: 66  TLDAQPASPYGDVLVMITGDLLID-EEQNPQRFSQVFHLIPDGNSYYVFNDIFRL 119
+           ++D Q     G +++ +TG L+ID E +N  +F QVF+L  +  S+ + ND FRL
+Sbjct: 71  SIDCQQTYQPG-IMITVTGTLIIDGEAKNQLKFVQVFNLASNNGSFLLINDFFRL 124
+
+
+>sp|Q21735|NTF2_CAEEL Probable nuclear transport factor 2
+           OS=Caenorhabditis elegans GN=ran-4 PE=2 SV=1
+          Length = 133
+
+ Score = 73.2 bits (178), Expect = 4e-13,   Method: Composition-based stats.
+ Identities = 54/127 (42%), Positives = 78/127 (61%), Gaps = 11/127 (8%)
+
+Query: 2   DFNTLAQNFTQFYYNQFDT----DRSQ-LGNLYRNE-SMLTFETSQLQGAKDIVEKLVSL 55
+           D+ ++A+ F Q YY++FD      R+Q L +LY  E S +TFE  Q +G   I++K  +L
+Sbjct: 6   DYESVAKAFIQHYYSKFDVGDGMSRAQGLSDLYDPENSYMTFEGQQAKGRDGILQKFTTL 65
+
+Query: 56  PFQKVQHRITTLDAQPASPYGDVLVMITGDLLIDEEQ-NPQRFSQVFHLIPDGN-SYYVF 113
+            F K+Q  IT +D+QP    G + VM+ G L  DE+  NP  FSQVF L P+   SY++ 
+Sbjct: 66  GFTKIQRAITVIDSQPLYD-GSIQVMVLGQLKTDEDPINP--FSQVFILRPNNQGSYFIG 122
+
+Query: 114 NDIFRLN 120
+           N+IFRL+
+Sbjct: 123 NEIFRLD 129
+
+
+>sp|O94260|G3BP_SCHPO Putative G3BP-like protein
+           OS=Schizosaccharomyces pombe GN=nxt3 PE=1 SV=1
+          Length = 434
+
+ Score = 48.9 bits (115), Expect = 7e-06,   Method: Composition-based stats.
+ Identities = 33/115 (28%), Positives = 59/115 (51%), Gaps = 7/115 (6%)
+
+Query: 10  FTQFYYNQFDTDRSQLGNLYRNESMLTF-----ETSQLQGAKDIVEKLVSLPFQKVQHRI 64
+           F Q YY   + + ++L   Y  +S L         S   G ++I  K++ L FQ  +  I
+Sbjct: 22  FVQEYYTYLNKEPNRLHCFYTKKSTLIHGDEGESISLCHGQQEIHNKILDLDFQNCKVLI 81
+
+Query: 65  TTLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHLIPDGNSYYVFNDIFRL 119
+           + +D+  AS  G +++ + G++  ++ +  ++F+Q F L    N Y+V NDIFR 
+Sbjct: 82  SNVDSL-ASSNGGIVIQVLGEM-SNKGKLSRKFAQTFFLAEQPNGYFVLNDIFRF 134
+
+
+>sp|Q9V3H8|NXT1_DROME NTF2-related export protein OS=Drosophila
+           melanogaster GN=Nxt1 PE=2 SV=1
+          Length = 133
+
+ Score = 48.9 bits (115), Expect = 8e-06,   Method: Composition-based stats.
+ Identities = 34/118 (28%), Positives = 58/118 (49%), Gaps = 8/118 (6%)
+
+Query: 7   AQNFTQFYYNQFDTDRSQLGNLYRNESMLTFETSQLQGAKDIVEKLVSLPFQKVQHRITT 66
+           A  FT+ YY   D  R Q+G LY + + L++  +   G + I      LP     H++ T
+Sbjct: 16  ADTFTRLYYASVDNRRQQIGRLYLDNATLSWNGNGAIGRQMIESYFQELP--SSNHQLNT 73
+
+Query: 67  LDAQP-----ASPYGDVLVMITGDLLIDEEQNPQRFSQVFHLIPDGNSYYVFNDIFRL 119
+           LDAQP      S     L+M +G +   ++Q  ++F Q F +  + + + V +D +R+
+Sbjct: 74  LDAQPIVDQAVSNQLAYLIMASGSVKFADQQ-LRKFQQTFIVTAENDKWKVVSDCYRM 130
+
+
+>sp|Q9U757|NXT1_CAEEL NTF2-related export protein OS=Caenorhabditis
+           elegans GN=nxt-1 PE=2 SV=1
+          Length = 137
+
+ Score = 45.1 bits (105), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 35/118 (29%), Positives = 56/118 (47%), Gaps = 9/118 (7%)
+
+Query: 7   AQNFTQFYYNQFDTDRSQLGNLYRNESMLTFETSQLQGAKDIVEKLVSLPFQKVQHRITT 66
+           ++ F   YY+  D  R ++G LY   S   +  + + G   I E + +LP    QH I +
+Sbjct: 20  SKKFMDVYYDVMDRKREKIGFLYTQVSNAVWNGNPINGYDSICEFMKALP--STQHDIQS 77
+
+Query: 67  LDAQ--PASPYGD----VLVMITGDLLIDEEQNPQRFSQVFHLIPDGNSYYVFNDIFR 118
+           LDAQ  P    GD    +L+ + G + +D +   + F+Q   L  +   Y V +D FR
+Sbjct: 78  LDAQRLPEGVTGDMSGGMLLNVAGAVTVDGDSK-RAFTQTLLLGVEDGKYKVKSDRFR 134
+
+
+>sp|Q9UN86|G3BP2_HUMAN Ras GTPase-activating protein-binding protein
+           2 OS=Homo sapiens GN=G3BP2 PE=1 SV=2
+          Length = 482
+
+ Score = 44.7 bits (104), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 30/78 (38%), Positives = 43/78 (55%), Gaps = 5/78 (6%)
+
+Query: 44  GAKDIVEKLVSLPFQKVQHRITTLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHL 103
+           G  DI  K++SL F +   +I  +DA      G V+V + G LL +  Q  ++F Q F L
+Sbjct: 57  GQNDIHHKVLSLNFSECHTKIRHVDAHATLSDG-VVVQVMG-LLSNSGQPERKFMQTFVL 114
+
+Query: 104 IPDG---NSYYVFNDIFR 118
+            P+G   N +YV ND+FR
+Sbjct: 115 APEGSVPNKFYVHNDMFR 132
+
+
+>sp|Q5R9L3|G3BP2_PONAB Ras GTPase-activating protein-binding protein
+           2 OS=Pongo abelii GN=G3BP2 PE=2 SV=1
+          Length = 482
+
+ Score = 44.7 bits (104), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 30/78 (38%), Positives = 43/78 (55%), Gaps = 5/78 (6%)
+
+Query: 44  GAKDIVEKLVSLPFQKVQHRITTLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHL 103
+           G  DI  K++SL F +   +I  +DA      G V+V + G LL +  Q  ++F Q F L
+Sbjct: 57  GQNDIHHKVLSLNFSECHTKIRHVDAHATLSDG-VVVQVMG-LLSNSGQPERKFMQTFVL 114
+
+Query: 104 IPDG---NSYYVFNDIFR 118
+            P+G   N +YV ND+FR
+Sbjct: 115 APEGSVPNKFYVHNDMFR 132
+
+
+>sp|P97379|G3BP2_MOUSE Ras GTPase-activating protein-binding protein
+           2 OS=Mus musculus GN=G3bp2 PE=1 SV=2
+          Length = 482
+
+ Score = 44.7 bits (104), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 30/78 (38%), Positives = 43/78 (55%), Gaps = 5/78 (6%)
+
+Query: 44  GAKDIVEKLVSLPFQKVQHRITTLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHL 103
+           G  DI  K++SL F +   +I  +DA      G V+V + G LL +  Q  ++F Q F L
+Sbjct: 57  GQNDIHHKVLSLNFSECHTKIRHVDAHATLSDG-VVVQVMG-LLSNSGQPERKFMQTFVL 114
+
+Query: 104 IPDG---NSYYVFNDIFR 118
+            P+G   N +YV ND+FR
+Sbjct: 115 APEGSVPNKFYVHNDMFR 132
+
+
+>sp|Q13283|G3BP1_HUMAN Ras GTPase-activating protein-binding protein
+           1 OS=Homo sapiens GN=G3BP1 PE=1 SV=1
+          Length = 466
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 31/78 (39%), Positives = 43/78 (55%), Gaps = 5/78 (6%)
+
+Query: 44  GAKDIVEKLVSLPFQKVQHRITTLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHL 103
+           G K+I  K++S  F     +I  +DA  A+    V+V + G LL +  Q  +RF Q F L
+Sbjct: 57  GQKEIHRKVMSQNFTNCHTKIRHVDAH-ATLNDGVVVQVMG-LLSNNNQALRRFMQTFVL 114
+
+Query: 104 IPDG---NSYYVFNDIFR 118
+            P+G   N +YV NDIFR
+Sbjct: 115 APEGSVANKFYVHNDIFR 132
+
+
+>sp|Q5RB87|G3BP1_PONAB Ras GTPase-activating protein-binding protein
+           1 OS=Pongo abelii GN=G3BP1 PE=2 SV=1
+          Length = 466
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 31/78 (39%), Positives = 43/78 (55%), Gaps = 5/78 (6%)
+
+Query: 44  GAKDIVEKLVSLPFQKVQHRITTLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHL 103
+           G K+I  K++S  F     +I  +DA  A+    V+V + G LL +  Q  +RF Q F L
+Sbjct: 57  GQKEIHRKVMSQNFTNCHTKIRHVDAH-ATLNDGVVVQVMG-LLSNNNQALRRFMQTFVL 114
+
+Query: 104 IPDG---NSYYVFNDIFR 118
+            P+G   N +YV NDIFR
+Sbjct: 115 APEGSVANKFYVHNDIFR 132
+
+
+>sp|P97855|G3BP1_MOUSE Ras GTPase-activating protein-binding protein
+           1 OS=Mus musculus GN=G3bp1 PE=1 SV=1
+          Length = 465
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 31/78 (39%), Positives = 43/78 (55%), Gaps = 5/78 (6%)
+
+Query: 44  GAKDIVEKLVSLPFQKVQHRITTLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHL 103
+           G K+I  K++S  F     +I  +DA  A+    V+V + G LL +  Q  +RF Q F L
+Sbjct: 57  GQKEIHRKVMSQNFTNCHTKIRHVDAH-ATLNDGVVVQVMG-LLSNNNQALRRFMQTFVL 114
+
+Query: 104 IPDG---NSYYVFNDIFR 118
+            P+G   N +YV NDIFR
+Sbjct: 115 APEGSVANKFYVHNDIFR 132
+
+
+>sp|Q32LC7|G3BP1_BOVIN Ras GTPase-activating protein-binding protein
+           1 OS=Bos taurus GN=G3BP PE=2 SV=1
+          Length = 465
+
+ Score = 43.1 bits (100), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 31/78 (39%), Positives = 43/78 (55%), Gaps = 5/78 (6%)
+
+Query: 44  GAKDIVEKLVSLPFQKVQHRITTLDAQPASPYGDVLVMITGDLLIDEEQNPQRFSQVFHL 103
+           G K+I  K++S  F     +I  +DA  A+    V+V + G LL +  Q  +RF Q F L
+Sbjct: 57  GQKEIHRKVMSQNFTNCHTKIRHVDAH-ATLNDGVVVQVMG-LLSNNNQALRRFMQTFVL 114
+
+Query: 104 IPDG---NSYYVFNDIFR 118
+            P+G   N +YV NDIFR
+Sbjct: 115 APEGSVANKFYVHNDIFR 132
+
+
+  Database: sprot
+    Posted date:  Mar 15, 2009  5:38 PM
+  Number of letters in database: 148,809,765
+  Number of sequences in database:  412,525
+  
+Lambda     K      H
+   0.321    0.138    0.396 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 35,029,366
+Number of Sequences: 412525
+Number of extensions: 1284601
+Number of successful extensions: 2964
+Number of sequences better than 1.0e-03: 31
+Number of HSP's better than  0.0 without gapping: 20
+Number of HSP's successfully gapped in prelim test: 11
+Number of HSP's that attempted gapping in prelim test: 2928
+Number of HSP's gapped (non-prelim): 31
+length of query: 122
+length of database: 148,809,765
+effective HSP length: 89
+effective length of query: 33
+effective length of database: 112,095,040
+effective search space: 3699136320
+effective search space used: 3699136320
+T: 11
+A: 40
+X1: 16 ( 7.4 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.9 bits)
+S2: 97 (42.0 bits)

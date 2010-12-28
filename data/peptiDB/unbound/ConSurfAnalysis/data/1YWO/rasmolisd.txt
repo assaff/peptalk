@@ -1,0 +1,83 @@
+select all
+color [200,200,200]
+
+
+select   ALA798, ASP808, GLU809, LEU810, ILE818, GLY831, PRO842, VAL846
+select selected and :A
+color [160,37,96]
+spacefill
+
+define CON9 selected
+
+
+select    VAL796, TRP828, LEU839, PHE841, ASN844
+select selected and :A
+color [240,125,171]
+spacefill
+
+define CON8 selected
+
+
+select    PHE800, ALA804, SER815, GLY835, TYR845, GLU848
+select selected and :A
+color [250,201,222]
+spacefill
+
+define CON7 selected
+
+
+select    LYS797, LEU799, ASP801, TYR802, THR811, PHE812, GLY827, TRP829, SER843, MET849
+select selected and :A
+color [252,237,244]
+spacefill
+
+define CON6 selected
+
+
+select    LYS793, LYS814, ALA816, ASN820, VAL821, LYS823, GLY834, GLU847
+select selected and :A
+color [255,255,255]
+spacefill
+
+define CON5 selected
+
+
+select    ARG806, ASP825, ILE850
+select selected and :A
+color [234,255,255]
+spacefill
+
+define CON4 selected
+
+
+select    GLN805, ILE817, ASP832
+select selected and :A
+color [215,255,255]
+spacefill
+
+define CON3 selected
+
+
+select    GLU822, GLN824, GLY826, TYR833
+select selected and :A
+color [140,255,255]
+spacefill
+
+define CON2 selected
+
+
+select    SER794, ALA795, LYS803, GLU807, THR813, GLN819, ARG830, LYS836, LYS837, TRP840
+select selected and :A
+color [16,200,209]
+spacefill
+
+define CON1 selected
+
+
+select    THR791, PHE792, GLN838, ASN851
+select selected and :A
+color [255,255,150]
+spacefill
+
+define CON10 selected
+

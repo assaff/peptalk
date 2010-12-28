@@ -1,0 +1,324 @@
+Graph START
+
+Adding vertex (chain-A, position-1, res-LYS)
+New vertex id: 0
+1 2 3 4 5 
+Adding vertex (chain-A, position-2, res-LEU)
+New vertex id: 1
+6 7 8 9 10 11 12 13 
+Adding vertex (chain-A, position-3, res-LEU)
+New vertex id: 2
+14 15 16 17 18 19 20 21 
+Adding vertex (chain-A, position-4, res-TYR)
+New vertex id: 3
+22 23 24 25 26 27 28 29 30 31 32 33 
+Adding vertex (chain-A, position-5, res-CYS)
+New vertex id: 4
+34 35 36 37 38 39 
+Adding vertex (chain-A, position-6, res-SER)
+New vertex id: 5
+40 41 42 43 44 45 
+Adding vertex (chain-A, position-7, res-PHE)
+New vertex id: 6
+46 47 48 49 50 51 52 53 54 55 56 
+Adding vertex (chain-A, position-8, res-CYS)
+New vertex id: 7
+57 58 59 60 61 62 
+Adding vertex (chain-A, position-9, res-GLY)
+New vertex id: 8
+63 64 65 66 
+Adding vertex (chain-A, position-10, res-LYS)
+New vertex id: 9
+67 68 69 70 71 72 73 74 75 
+Adding vertex (chain-A, position-11, res-SER)
+New vertex id: 10
+76 77 78 79 80 81 
+Adding vertex (chain-A, position-12, res-GLN)
+New vertex id: 11
+82 83 84 85 86 87 88 89 90 
+Adding vertex (chain-A, position-13, res-HIS)
+New vertex id: 12
+91 92 93 94 95 96 97 98 99 100 
+Adding vertex (chain-A, position-14, res-GLU)
+New vertex id: 13
+101 102 103 104 105 106 107 108 109 
+Adding vertex (chain-A, position-15, res-VAL)
+New vertex id: 14
+110 111 112 113 114 115 116 
+Adding vertex (chain-A, position-16, res-ARG)
+New vertex id: 15
+117 118 119 120 121 122 123 124 125 126 127 
+Adding vertex (chain-A, position-17, res-LYS)
+New vertex id: 16
+128 129 130 131 132 133 134 135 136 
+Adding vertex (chain-A, position-18, res-LEU)
+New vertex id: 17
+137 138 139 140 141 142 143 144 
+Adding vertex (chain-A, position-19, res-ILE)
+New vertex id: 18
+145 146 147 148 149 150 151 152 
+Adding vertex (chain-A, position-20, res-ALA)
+New vertex id: 19
+153 154 155 156 157 
+Adding vertex (chain-A, position-21, res-GLY)
+New vertex id: 20
+158 159 160 161 
+Adding vertex (chain-A, position-22, res-PRO)
+New vertex id: 21
+162 163 164 165 166 167 168 
+Adding vertex (chain-A, position-23, res-SER)
+New vertex id: 22
+169 170 171 172 173 174 
+Adding vertex (chain-A, position-24, res-VAL)
+New vertex id: 23
+175 176 177 178 179 180 181 
+Adding vertex (chain-A, position-25, res-TYR)
+New vertex id: 24
+182 183 184 185 186 187 188 189 190 191 192 193 
+Adding vertex (chain-A, position-26, res-ILE)
+New vertex id: 25
+194 195 196 197 198 199 200 201 
+Adding vertex (chain-A, position-27, res-CYS)
+New vertex id: 26
+202 203 204 205 206 207 
+Adding vertex (chain-A, position-28, res-ASP)
+New vertex id: 27
+208 209 210 211 212 213 214 215 
+Adding vertex (chain-A, position-29, res-GLU)
+New vertex id: 28
+216 217 218 219 220 221 222 223 224 
+Adding vertex (chain-A, position-30, res-CYS)
+New vertex id: 29
+225 226 227 228 229 230 
+Adding vertex (chain-A, position-31, res-VAL)
+New vertex id: 30
+231 232 233 234 235 236 237 
+Adding vertex (chain-A, position-32, res-ASP)
+New vertex id: 31
+238 239 240 241 242 243 244 245 
+Adding vertex (chain-A, position-33, res-LEU)
+New vertex id: 32
+246 247 248 249 250 251 252 253 
+Adding vertex (chain-A, position-34, res-CYS)
+New vertex id: 33
+254 255 256 257 258 259 
+Adding vertex (chain-A, position-35, res-ASN)
+New vertex id: 34
+260 261 262 263 264 265 266 267 
+Adding vertex (chain-A, position-36, res-ASP)
+New vertex id: 35
+268 269 270 271 272 273 274 275 
+Adding vertex (chain-A, position-37, res-ILE)
+New vertex id: 36
+276 277 278 279 280 281 282 283 
+Adding vertex (chain-A, position-38, res-ILE)
+New vertex id: 37
+284 285 286 287 288 289 290 291 
+Adding vertex (chain-A, position-39, res-ARG)
+New vertex id: 38
+292 293 294 295 296 297 298 299 300 301 302 
+Adding vertex (chain-A, position-40, res-GLU)
+New vertex id: 39
+303 304 305 306 307 308 309 310 311 
+Adding vertex (chain-A, position-41, res-GLU)
+New vertex id: 40
+312 313 314 315 316 
+Graph DONE
+
+( reduce -FLIPs 2DS8.pdb > 2DS8.H.pdb ) >& /dev/null
+Reduce (-FLIPs) returned 0
+( bndlst -Radius0.3 2DS8.H.pdb > 2DS8.H.bndlst ) >& /dev/null
+BndLst returned 0
+Parsing 2DS8.H.bndlst
+
+bndlst START
+Adding bndlst edge: (A_K1_MC -> A_L2_MC) type[cov], weight[1.00] from 0 to 1 dist[1.33]
+Adding bndlst edge: (A_L2_MC -> A_L3_MC) type[cov], weight[1.00] from 1 to 2 dist[1.33]
+Adding bndlst edge: (A_L3_MC -> A_Y4_MC) type[cov], weight[1.00] from 2 to 3 dist[1.33]
+Adding bndlst edge: (A_L3_MC -> A_Q12_MC) type[hb], weight[0.91] from 2 to 11 dist[2.10]
+Adding bndlst edge: (A_L3_MC -> A_Q12_SC) type[hb], weight[1.22] from 2 to 11 dist[1.81]
+Adding bndlst edge: (A_Y4_MC -> A_C5_MC) type[cov], weight[1.00] from 3 to 4 dist[1.33]
+Adding bndlst edge: (A_C5_MC -> A_S6_MC) type[cov], weight[1.00] from 4 to 5 dist[1.33]
+Adding bndlst edge: (A_C5_MC -> A_G9_MC) type[hb], weight[0.89] from 4 to 8 dist[2.12]
+Adding bndlst edge: (A_C5_SC -> A_C27_MC) type[hb], weight[0.62] from 4 to 26 dist[2.54]
+Adding bndlst edge: (A_C5_SC -> A_C8_MC) type[hb], weight[0.62] from 4 to 7 dist[2.55]
+Adding bndlst edge: (A_C5_SC -> A_F7_MC) type[hb], weight[0.65] from 4 to 6 dist[2.48]
+Adding bndlst edge: (A_C5_SC -> A_C30_SC) type[hb], weight[0.35] from 4 to 29 dist[3.37]
+Adding bndlst edge: (A_C5_SC -> A_C27_SC) type[hb], weight[0.35] from 4 to 26 dist[3.37]
+Adding bndlst edge: (A_C5_SC -> A_C8_SC) type[hb], weight[0.61] from 4 to 7 dist[2.56]
+Adding bndlst edge: (A_C5_MC -> A_K10_MC) type[hb], weight[1.21] from 4 to 9 dist[1.81]
+Adding bndlst edge: (A_C5_SC -> A_C30_SC) type[hb], weight[0.49] from 4 to 29 dist[2.87]
+Adding bndlst edge: (A_C5_SC -> A_C27_SC) type[hb], weight[0.48] from 4 to 26 dist[2.89]
+Adding bndlst edge: (A_C5_SC -> A_C8_SC) type[hb], weight[0.38] from 4 to 7 dist[3.25]
+Adding bndlst edge: (A_S6_MC -> A_F7_MC) type[cov], weight[1.00] from 5 to 6 dist[1.33]
+Adding bndlst edge: (A_S6_SC -> A_Y25_MC) type[hb], weight[1.05] from 5 to 24 dist[1.95]
+Adding bndlst edge: (A_S6_MC -> A_Y25_MC) type[hb], weight[1.14] from 5 to 24 dist[1.87]
+Adding bndlst edge: (A_F7_MC -> A_C8_MC) type[cov], weight[1.00] from 6 to 7 dist[1.33]
+Adding bndlst edge: (A_C8_MC -> A_G9_MC) type[cov], weight[1.00] from 7 to 8 dist[1.33]
+Adding bndlst edge: (A_C8_SC -> A_K10_MC) type[hb], weight[0.63] from 7 to 9 dist[2.52]
+Adding bndlst edge: (A_C8_SC -> A_C30_SC) type[hb], weight[0.49] from 7 to 29 dist[2.86]
+Adding bndlst edge: (A_C8_SC -> A_C27_SC) type[hb], weight[0.58] from 7 to 26 dist[2.63]
+Adding bndlst edge: (A_C8_SC -> A_C27_SC) type[hb], weight[0.37] from 7 to 26 dist[3.29]
+Adding bndlst edge: (A_G9_MC -> A_K10_MC) type[cov], weight[1.00] from 8 to 9 dist[1.33]
+Adding bndlst edge: (A_K10_MC -> A_S11_MC) type[cov], weight[1.00] from 9 to 10 dist[1.33]
+Adding bndlst edge: (A_K10_SC -> A_E29_SC) type[salt], weight[0.47] from 9 to 28 dist[2.76]
+Adding bndlst edge: (A_K10_SC -> A_E29_SC) type[salt], weight[0.96] from 9 to 28 dist[1.94]
+Adding bndlst edge: (A_S11_MC -> A_Q12_MC) type[cov], weight[1.00] from 10 to 11 dist[1.33]
+Adding bndlst edge: (A_S11_MC -> A_V15_MC) type[hb], weight[0.48] from 10 to 14 dist[2.88]
+Adding bndlst edge: (A_S11_MC -> A_E14_MC) type[hb], weight[1.09] from 10 to 13 dist[1.91]
+Adding bndlst edge: (A_S11_SC -> A_H13_MC) type[hb], weight[0.60] from 10 to 12 dist[2.59]
+Adding bndlst edge: (A_S11_MC -> A_E14_SC) type[hb], weight[0.83] from 10 to 13 dist[2.20]
+Adding bndlst edge: (A_Q12_MC -> A_H13_MC) type[cov], weight[1.00] from 11 to 12 dist[1.33]
+Adding bndlst edge: (A_Q12_MC -> A_V15_MC) type[hb], weight[0.61] from 11 to 14 dist[2.57]
+Adding bndlst edge: (A_H13_MC -> A_E14_MC) type[cov], weight[1.00] from 12 to 13 dist[1.33]
+Adding bndlst edge: (A_E14_MC -> A_V15_MC) type[cov], weight[1.00] from 13 to 14 dist[1.33]
+Adding bndlst edge: (A_V15_MC -> A_R16_MC) type[cov], weight[1.00] from 14 to 15 dist[1.33]
+Adding bndlst edge: (A_R16_MC -> A_K17_MC) type[cov], weight[1.00] from 15 to 16 dist[1.33]
+Adding bndlst edge: (A_R16_MC -> A_D28_SC) type[hb], weight[0.75] from 15 to 27 dist[2.31]
+Adding bndlst edge: (A_K17_MC -> A_L18_MC) type[cov], weight[1.00] from 16 to 17 dist[1.33]
+Adding bndlst edge: (A_K17_MC -> A_D28_MC) type[hb], weight[0.72] from 16 to 27 dist[2.36]
+Adding bndlst edge: (A_K17_MC -> A_D28_SC) type[hb], weight[1.04] from 16 to 27 dist[1.96]
+Adding bndlst edge: (A_L18_MC -> A_I19_MC) type[cov], weight[1.00] from 17 to 18 dist[1.33]
+Adding bndlst edge: (A_I19_MC -> A_A20_MC) type[cov], weight[1.00] from 18 to 19 dist[1.33]
+Adding bndlst edge: (A_I19_MC -> A_I26_MC) type[hb], weight[1.09] from 18 to 25 dist[1.92]
+Adding bndlst edge: (A_I19_MC -> A_I26_MC) type[hb], weight[1.13] from 18 to 25 dist[1.88]
+Adding bndlst edge: (A_A20_MC -> A_G21_MC) type[cov], weight[1.00] from 19 to 20 dist[1.33]
+Adding bndlst edge: (A_G21_MC -> A_P22_MC) type[cov], weight[1.00] from 20 to 21 dist[1.34]
+Adding bndlst edge: (A_G21_MC -> A_V24_MC) type[hb], weight[0.61] from 20 to 23 dist[2.56]
+Adding bndlst edge: (A_G21_MC -> A_S23_MC) type[hb], weight[0.53] from 20 to 22 dist[2.75]
+Adding bndlst edge: (A_G21_MC -> A_V24_MC) type[hb], weight[1.30] from 20 to 23 dist[1.75]
+Adding bndlst edge: (A_P22_MC -> A_S23_MC) type[cov], weight[1.00] from 21 to 22 dist[1.33]
+Adding bndlst edge: (A_S23_MC -> A_V24_MC) type[cov], weight[1.00] from 22 to 23 dist[1.33]
+Adding bndlst edge: (A_V24_MC -> A_Y25_MC) type[cov], weight[1.00] from 23 to 24 dist[1.33]
+Adding bndlst edge: (A_Y25_MC -> A_I26_MC) type[cov], weight[1.00] from 24 to 25 dist[1.33]
+Adding bndlst edge: (A_I26_MC -> A_C27_MC) type[cov], weight[1.00] from 25 to 26 dist[1.33]
+Adding bndlst edge: (A_C27_MC -> A_D28_MC) type[cov], weight[1.00] from 26 to 27 dist[1.33]
+Adding bndlst edge: (A_C27_MC -> A_C30_MC) type[hb], weight[0.55] from 26 to 29 dist[2.71]
+Adding bndlst edge: (A_C27_MC -> A_V31_MC) type[hb], weight[0.97] from 26 to 30 dist[2.03]
+Adding bndlst edge: (A_C27_SC -> A_C30_SC) type[hb], weight[0.50] from 26 to 29 dist[2.83]
+Adding bndlst edge: (A_C27_SC -> A_C30_MC) type[hb], weight[0.63] from 26 to 29 dist[2.52]
+Adding bndlst edge: (A_C27_SC -> A_E29_MC) type[hb], weight[0.53] from 26 to 28 dist[2.74]
+Adding bndlst edge: (A_D28_MC -> A_E29_MC) type[cov], weight[1.00] from 27 to 28 dist[1.33]
+Adding bndlst edge: (A_D28_MC -> A_D32_MC) type[hb], weight[1.08] from 27 to 31 dist[1.93]
+Adding bndlst edge: (A_D28_MC -> A_V31_MC) type[hb], weight[0.46] from 27 to 30 dist[2.94]
+Adding bndlst edge: (A_D28_SC -> A_E29_MC) type[hb], weight[0.47] from 27 to 28 dist[2.92]
+Adding bndlst edge: (A_E29_MC -> A_C30_MC) type[cov], weight[1.00] from 28 to 29 dist[1.33]
+Adding bndlst edge: (A_E29_MC -> A_L33_MC) type[hb], weight[0.82] from 28 to 32 dist[2.21]
+Adding bndlst edge: (A_E29_MC -> A_D32_MC) type[hb], weight[0.49] from 28 to 31 dist[2.84]
+Adding bndlst edge: (A_C30_MC -> A_V31_MC) type[cov], weight[1.00] from 29 to 30 dist[1.33]
+Adding bndlst edge: (A_C30_MC -> A_C34_SC) type[hb], weight[0.80] from 29 to 33 dist[2.24]
+Adding bndlst edge: (A_C30_MC -> A_C34_MC) type[hb], weight[1.12] from 29 to 33 dist[1.89]
+Adding bndlst edge: (A_C30_MC -> A_L33_MC) type[hb], weight[0.56] from 29 to 32 dist[2.67]
+Adding bndlst edge: (A_V31_MC -> A_D32_MC) type[cov], weight[1.00] from 30 to 31 dist[1.33]
+Adding bndlst edge: (A_V31_MC -> A_C34_MC) type[hb], weight[0.58] from 30 to 33 dist[2.63]
+Adding bndlst edge: (A_V31_MC -> A_N35_MC) type[hb], weight[0.94] from 30 to 34 dist[2.06]
+Adding bndlst edge: (A_D32_MC -> A_L33_MC) type[cov], weight[1.00] from 31 to 32 dist[1.33]
+Adding bndlst edge: (A_D32_MC -> A_D36_MC) type[hb], weight[0.75] from 31 to 35 dist[2.31]
+Adding bndlst edge: (A_D32_MC -> A_N35_MC) type[hb], weight[0.61] from 31 to 34 dist[2.56]
+Adding bndlst edge: (A_L33_MC -> A_C34_MC) type[cov], weight[1.00] from 32 to 33 dist[1.33]
+Adding bndlst edge: (A_L33_MC -> A_D36_MC) type[hb], weight[0.67] from 32 to 35 dist[2.45]
+Adding bndlst edge: (A_L33_MC -> A_I37_MC) type[hb], weight[0.95] from 32 to 36 dist[2.05]
+Adding bndlst edge: (A_C34_MC -> A_N35_MC) type[cov], weight[1.00] from 33 to 34 dist[1.33]
+Adding bndlst edge: (A_C34_MC -> A_I38_MC) type[hb], weight[1.06] from 33 to 37 dist[1.94]
+Adding bndlst edge: (A_C34_MC -> A_I37_MC) type[hb], weight[0.55] from 33 to 36 dist[2.70]
+Adding bndlst edge: (A_N35_MC -> A_D36_MC) type[cov], weight[1.00] from 34 to 35 dist[1.33]
+Adding bndlst edge: (A_N35_MC -> A_I38_MC) type[hb], weight[0.49] from 34 to 37 dist[2.86]
+Adding bndlst edge: (A_N35_MC -> A_R39_MC) type[hb], weight[1.15] from 34 to 38 dist[1.86]
+Adding bndlst edge: (A_D36_MC -> A_I37_MC) type[cov], weight[1.00] from 35 to 36 dist[1.33]
+Adding bndlst edge: (A_D36_MC -> A_R39_MC) type[hb], weight[0.48] from 35 to 38 dist[2.89]
+Adding bndlst edge: (A_D36_MC -> A_E40_MC) type[hb], weight[0.75] from 35 to 39 dist[2.31]
+Adding bndlst edge: (A_I37_MC -> A_I38_MC) type[cov], weight[1.00] from 36 to 37 dist[1.33]
+Adding bndlst edge: (A_I37_MC -> A_E41_MC) type[hb], weight[0.70] from 36 to 40 dist[2.39]
+Adding bndlst edge: (A_I37_MC -> A_E40_MC) type[hb], weight[0.76] from 36 to 39 dist[2.30]
+Adding bndlst edge: (A_I38_MC -> A_R39_MC) type[cov], weight[1.00] from 37 to 38 dist[1.33]
+Adding bndlst edge: (A_R39_MC -> A_E40_MC) type[cov], weight[1.00] from 38 to 39 dist[1.33]
+Adding bndlst edge: (A_E40_MC -> A_E41_MC) type[cov], weight[1.00] from 39 to 40 dist[1.33]
+
+bndlst DONE
+
+Producing PAJEK network
+printing pajek edge (A_34_CYS,A_35_ASN)
+printing pajek edge (A_34_CYS,A_37_ILE)
+printing pajek edge (A_34_CYS,A_38_ILE)
+printing pajek edge (A_33_LEU,A_36_ASP)
+printing pajek edge (A_33_LEU,A_34_CYS)
+printing pajek edge (A_33_LEU,A_37_ILE)
+printing pajek edge (A_22_PRO,A_23_SER)
+printing pajek edge (A_8_CYS,A_9_GLY)
+printing pajek edge (A_8_CYS,A_27_CYS)
+printing pajek edge (A_8_CYS,A_10_LYS)
+printing pajek edge (A_8_CYS,A_30_CYS)
+printing pajek edge (A_27_CYS,A_28_ASP)
+printing pajek edge (A_27_CYS,A_29_GLU)
+printing pajek edge (A_27_CYS,A_31_VAL)
+printing pajek edge (A_27_CYS,A_30_CYS)
+printing pajek edge (A_18_LEU,A_19_ILE)
+printing pajek edge (A_3_LEU,A_12_GLN)
+printing pajek edge (A_3_LEU,A_4_TYR)
+printing pajek edge (A_2_LEU,A_3_LEU)
+printing pajek edge (A_19_ILE,A_26_ILE)
+printing pajek edge (A_19_ILE,A_20_ALA)
+printing pajek edge (A_31_VAL,A_34_CYS)
+printing pajek edge (A_31_VAL,A_35_ASN)
+printing pajek edge (A_31_VAL,A_32_ASP)
+printing pajek edge (A_17_LYS,A_28_ASP)
+printing pajek edge (A_17_LYS,A_18_LEU)
+printing pajek edge (A_28_ASP,A_29_GLU)
+printing pajek edge (A_28_ASP,A_29_GLU)
+printing pajek edge (A_28_ASP,A_31_VAL)
+printing pajek edge (A_28_ASP,A_32_ASP)
+printing pajek edge (A_26_ILE,A_27_CYS)
+printing pajek edge (A_29_GLU,A_33_LEU)
+printing pajek edge (A_29_GLU,A_32_ASP)
+printing pajek edge (A_29_GLU,A_30_CYS)
+printing pajek edge (A_21_GLY,A_23_SER)
+printing pajek edge (A_21_GLY,A_22_PRO)
+printing pajek edge (A_21_GLY,A_24_VAL)
+printing pajek edge (A_15_VAL,A_16_ARG)
+printing pajek edge (A_25_TYR,A_26_ILE)
+printing pajek edge (A_11_SER,A_12_GLN)
+printing pajek edge (A_11_SER,A_14_GLU)
+printing pajek edge (A_11_SER,A_13_HIS)
+printing pajek edge (A_11_SER,A_15_VAL)
+printing pajek edge (A_32_ASP,A_36_ASP)
+printing pajek edge (A_32_ASP,A_33_LEU)
+printing pajek edge (A_32_ASP,A_35_ASN)
+printing pajek edge (A_36_ASP,A_39_ARG)
+printing pajek edge (A_36_ASP,A_40_GLU)
+printing pajek edge (A_36_ASP,A_37_ILE)
+printing pajek edge (A_12_GLN,A_13_HIS)
+printing pajek edge (A_12_GLN,A_15_VAL)
+printing pajek edge (A_23_SER,A_24_VAL)
+printing pajek edge (A_1_LYS,A_2_LEU)
+printing pajek edge (A_14_GLU,A_15_VAL)
+printing pajek edge (A_24_VAL,A_25_TYR)
+printing pajek edge (A_30_CYS,A_33_LEU)
+printing pajek edge (A_30_CYS,A_34_CYS)
+printing pajek edge (A_30_CYS,A_31_VAL)
+printing pajek edge (A_7_PHE,A_8_CYS)
+printing pajek edge (A_40_GLU,A_41_GLU)
+printing pajek edge (A_37_ILE,A_40_GLU)
+printing pajek edge (A_37_ILE,A_41_GLU)
+printing pajek edge (A_37_ILE,A_38_ILE)
+printing pajek edge (A_4_TYR,A_5_CYS)
+printing pajek edge (A_10_LYS,A_29_GLU)
+printing pajek edge (A_10_LYS,A_11_SER)
+printing pajek edge (A_13_HIS,A_14_GLU)
+printing pajek edge (A_16_ARG,A_28_ASP)
+printing pajek edge (A_16_ARG,A_17_LYS)
+printing pajek edge (A_39_ARG,A_40_GLU)
+printing pajek edge (A_9_GLY,A_10_LYS)
+printing pajek edge (A_5_CYS,A_7_PHE)
+printing pajek edge (A_5_CYS,A_9_GLY)
+printing pajek edge (A_5_CYS,A_8_CYS)
+printing pajek edge (A_5_CYS,A_10_LYS)
+printing pajek edge (A_5_CYS,A_27_CYS)
+printing pajek edge (A_5_CYS,A_30_CYS)
+printing pajek edge (A_5_CYS,A_6_SER)
+printing pajek edge (A_35_ASN,A_39_ARG)
+printing pajek edge (A_35_ASN,A_36_ASP)
+printing pajek edge (A_35_ASN,A_38_ILE)
+printing pajek edge (A_38_ILE,A_39_ARG)
+printing pajek edge (A_20_ALA,A_21_GLY)
+printing pajek edge (A_6_SER,A_7_PHE)
+printing pajek edge (A_6_SER,A_25_TYR)

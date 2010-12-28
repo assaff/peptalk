@@ -1,0 +1,231 @@
+core.init: command: /cs/alum/londonir/lab/rosetta/mini/bin/holes.linuxgccrelease -database /vol/ek/londonir/rosetta/minirosetta_database/ -holes:dalphaball /vol/ek/share/bin/DAlphaBall -holes:make_pdb -holes:make_voids -s 2FNT.pdb
+core.init: 'RNG device' seed mode, using '/dev/urandom', seed=-1281996411 seed_offset=0 real_seed=-1281996411
+core.init.random: RandomGenerator:init: Normal mode, seed=-1281996411 RG_type=mt19937
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: standard
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION PATCH: score12
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+core.io.database: Database file opened: /vol/ek/londonir/rosetta/minirosetta_database/pdb_pair_stats_fine
+core.io.database: Database file opened: /vol/ek/londonir/rosetta/minirosetta_database/P_AA
+core.io.database: Database file opened: /vol/ek/londonir/rosetta/minirosetta_database/P_AA_n
+core.io.database: Database file opened: /vol/ek/londonir/rosetta/minirosetta_database/P_AA_pp
+core.io.database: Database file opened: /vol/ek/londonir/rosetta/minirosetta_database/Rama_smooth_dyn.dat_ss_6.4
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: standard
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION PATCH: score12
+core.io.pdb.file_data: [ WARNING ] discarding 1 atoms at position 99 in file 2FNT.pdb. Best match rsd_type:  PHE
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue GLU 21
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD  on residue GLU 21
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OE1 on residue GLU 21
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OE2 on residue GLU 21
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue ASN 37
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OD1 on residue ASN 37
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  ND2 on residue ASN 37
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD  on residue LYS 41
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CE  on residue LYS 41
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  NZ  on residue LYS 41
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CE  on residue LYS 43
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  NZ  on residue LYS 43
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD  on residue LYS 55
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CE  on residue LYS 55
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  NZ  on residue LYS 55
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue LYS 70
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD  on residue LYS 70
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CE  on residue LYS 70
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  NZ  on residue LYS 70
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CE  on residue LYS 106
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  NZ  on residue LYS 106
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue LYS 140
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD  on residue LYS 140
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CE  on residue LYS 140
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  NZ  on residue LYS 140
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue LYS 142
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD  on residue LYS 142
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CE  on residue LYS 142
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  NZ  on residue LYS 142
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue LYS 144
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD  on residue LYS 144
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CE  on residue LYS 144
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  NZ  on residue LYS 144
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CE  on residue LYS 154
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  NZ  on residue LYS 154
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue GLU 164
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD  on residue GLU 164
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OE1 on residue GLU 164
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OE2 on residue GLU 164
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue LYS 169
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD  on residue LYS 169
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CE  on residue LYS 169
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  NZ  on residue LYS 169
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue ARG_p:NtermProteinFull 199
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD  on residue ARG_p:NtermProteinFull 199
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  NE  on residue ARG_p:NtermProteinFull 199
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CZ  on residue ARG_p:NtermProteinFull 199
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  NH1 on residue ARG_p:NtermProteinFull 199
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  NH2 on residue ARG_p:NtermProteinFull 199
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue GLN 200
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD  on residue GLN 200
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OE1 on residue GLN 200
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  NE2 on residue GLN 200
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OXT on residue GLY_p:CtermProteinFull 205
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_missing_sidechains: packing residue number 21 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 37 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 41 because of missing atom number 7 atom name  CD 
+core.pack.pack_missing_sidechains: packing residue number 43 because of missing atom number 8 atom name  CE 
+core.pack.pack_missing_sidechains: packing residue number 55 because of missing atom number 7 atom name  CD 
+core.pack.pack_missing_sidechains: packing residue number 70 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 106 because of missing atom number 8 atom name  CE 
+core.pack.pack_missing_sidechains: packing residue number 140 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 142 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 144 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 154 because of missing atom number 8 atom name  CE 
+core.pack.pack_missing_sidechains: packing residue number 164 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 169 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 199 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 200 because of missing atom number 6 atom name  CG 
+core.scoring.dunbrack: Dunbrack library took 0.05 seconds to load from binary
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.pack_rotamers: built 257 rotamers at 15 positions.
+core.pack.pack_rotamers: IG: 19776 bytes
+core.io.pdb.file_data: [ WARNING ] can't find atom for res 99 atom  OXT (trying to set temp)
+RosettaHoles: 2FNT.pdb 1.86072 1.86042 -2.28345 -51.9661
+dumping pdb to 2FNT.pdb_cavs.pdb
+dumping cavities 
+protocols.packstat: prune raduis 1.4 10471 5772 3923 3080 2640 2374 2217 2136 2083 2060 2044 2034 2026 2020 2015 2008 2006 2003 2002 2002 
+protocols.packstat: Cavity: 1 volume 2.55097 surf 8.04248 Nballs 1 center -2.80222, 33.6547, 17.7554
+protocols.packstat: Cavity: 2 volume 2.55097 surf 8.04248 Nballs 1 center -2.22865, 32.0904, 17.4588
+protocols.packstat: Cavity: 3 volume 2.55097 surf 8.04248 Nballs 1 center -1.70381, 35.0446, 17.6138
+protocols.packstat: Cavity: 4 volume 7.35443 surf 20.9315 Nballs 6 center -0.0692556, 25.9561, 24.9444
+protocols.packstat: Cavity: 5 volume 1.46988 surf 4.26326 Nballs 2 center 1.0417, 24.1009, 14.9824
+protocols.packstat: Cavity: 6 volume 75.3783 surf 215.416 Nballs 180 center 4.11466, 25.5422, 16.3818
+protocols.packstat: Cavity: 7 volume 23.0878 surf 65.7206 Nballs 38 center 2.52696, 29.7704, 15.5443
+protocols.packstat: Cavity: 8 volume 4.29886 surf 13.5531 Nballs 3 center 1.41002, 23.053, 25.2776
+protocols.packstat: Cavity: 9 volume 3.56885 surf 10.1788 Nballs 1 center 2.56822, 34.0451, 15.7128
+protocols.packstat: Cavity: 10 volume 1.90536 surf 6.00704 Nballs 1 center 2.99794, 23.0037, 19.8041
+protocols.packstat: Cavity: 11 volume 20.2062 surf 57.5757 Nballs 16 center 4.83648, 30.2979, 22.3921
+protocols.packstat: Cavity: 12 volume 1.24399 surf 3.92195 Nballs 1 center 3.53694, 30.8002, 21.886
+protocols.packstat: Cavity: 13 volume 2.14156 surf 6.75171 Nballs 2 center 3.87084, 28.6216, 17.9925
+protocols.packstat: Cavity: 14 volume 2.20454 surf 6.95029 Nballs 1 center 4.25847, 41.1493, 11.791
+protocols.packstat: Cavity: 15 volume 4.5823 surf 14.4467 Nballs 3 center 4.5064, 41.9535, 10.5539
+protocols.packstat: Cavity: 16 volume 7.53765 surf 22.9561 Nballs 11 center 5.4855, 23.6216, 25.2975
+protocols.packstat: Cavity: 17 volume 2.01558 surf 6.35455 Nballs 1 center 5.30194, 25.6891, 23.4739
+protocols.packstat: Cavity: 18 volume 3.52727 surf 11.1205 Nballs 2 center 5.56597, 37.3824, 17.5237
+protocols.packstat: Cavity: 19 volume 16.3056 surf 49.4882 Nballs 24 center 6.22404, 25.5299, 12.5115
+protocols.packstat: Cavity: 20 volume 2.55097 surf 8.04248 Nballs 1 center 5.80173, 25.7641, 28.1891
+protocols.packstat: Cavity: 21 volume 5.30215 surf 15.7685 Nballs 7 center 6.14614, 26.6015, 22.7043
+protocols.packstat: Cavity: 22 volume 2.55097 surf 8.04248 Nballs 1 center 6.19906, 32.1744, 23.5109
+protocols.packstat: Cavity: 23 volume 4.42934 surf 13.1962 Nballs 2 center 6.69843, 24.5615, 19.7671
+protocols.packstat: Cavity: 24 volume 11.4558 surf 29.8203 Nballs 8 center 6.84569, 19.4441, 20.6921
+protocols.packstat: Cavity: 25 volume 2.55097 surf 8.04248 Nballs 1 center 6.49717, 40.6012, 13.4154
+protocols.packstat: Cavity: 26 volume 3.56885 surf 10.1788 Nballs 1 center 6.78105, 42.4001, 9.7455
+protocols.packstat: Cavity: 27 volume 2.86591 surf 9.03538 Nballs 2 center 6.89831, 32.0903, 18.0698
+protocols.packstat: Cavity: 28 volume 4.59991 surf 13.9525 Nballs 3 center 7.52836, 39.1495, 14.8414
+protocols.packstat: Cavity: 29 volume 3.21234 surf 10.1276 Nballs 2 center 7.36104, 29.1245, 26.3474
+protocols.packstat: Cavity: 30 volume 2.11006 surf 6.65242 Nballs 2 center 7.7128, 21.4122, 26.0462
+protocols.packstat: Cavity: 31 volume 92.8372 surf 264.797 Nballs 177 center 14.0318, 22.2805, 24.3181
+protocols.packstat: Cavity: 32 volume 11.1058 surf 32.8347 Nballs 12 center 8.93808, 34.1231, 19.9488
+protocols.packstat: Cavity: 33 volume 10.6993 surf 33.4902 Nballs 16 center 8.91368, 20.0533, 25.5127
+protocols.packstat: Cavity: 34 volume 2.55097 surf 8.04248 Nballs 1 center 8.70199, 21.0569, 17.1945
+protocols.packstat: Cavity: 35 volume 2.78717 surf 8.78715 Nballs 2 center 9.33124, 23.8181, 22.1909
+protocols.packstat: Cavity: 36 volume 9.76516 surf 30.3695 Nballs 7 center 10.8924, 22.4901, 18.4405
+protocols.packstat: Cavity: 37 volume 2.55097 surf 8.04248 Nballs 1 center 9.15325, 20.8749, 29.0302
+protocols.packstat: Cavity: 38 volume 5.75191 surf 17.2997 Nballs 3 center 9.5796, 22.5448, 20.7199
+protocols.packstat: Cavity: 39 volume 3.46428 surf 10.9219 Nballs 2 center 9.87869, 19.7331, 30.2905
+protocols.packstat: Cavity: 40 volume 4.02302 surf 11.8954 Nballs 2 center 10.018, 37.3758, 18.4734
+protocols.packstat: Cavity: 41 volume 154.478 surf 400.157 Nballs 352 center 17.5162, 32.0733, 10.8828
+protocols.packstat: Cavity: 42 volume 25.8603 surf 73.573 Nballs 29 center 12.529, 18.7071, 22.2767
+protocols.packstat: Cavity: 43 volume 3.98393 surf 12.5602 Nballs 3 center 10.3664, 36.0026, 8.07369
+protocols.packstat: Cavity: 44 volume 2.34627 surf 7.39709 Nballs 3 center 10.7265, 34.1461, 16.1311
+protocols.packstat: Cavity: 45 volume 21.9939 surf 64.7339 Nballs 37 center 12.3332, 34.075, 15.5894
+protocols.packstat: Cavity: 46 volume 2.55097 surf 8.04248 Nballs 1 center 11.5639, 39.4643, 12.0003
+protocols.packstat: Cavity: 47 volume 1.27176 surf 3.76448 Nballs 2 center 13.5272, 32.7695, 8.4709
+protocols.packstat: Cavity: 48 volume 4.3776 surf 13.8013 Nballs 3 center 13.8294, 40.4313, 16.6771
+protocols.packstat: Cavity: 49 volume 9.44409 surf 27.0092 Nballs 13 center 14.9744, 16.871, 26.48
+protocols.packstat: Cavity: 50 volume 2.55097 surf 8.04248 Nballs 1 center 14.2245, 20.4217, 15.663
+protocols.packstat: Cavity: 51 volume 14.1777 surf 43.416 Nballs 27 center 15.2203, 36.773, 17.5348
+protocols.packstat: Cavity: 52 volume 2.55097 surf 8.04248 Nballs 1 center 14.6581, 28.8033, 26.8409
+protocols.packstat: Cavity: 53 volume 5.64269 surf 17.3858 Nballs 5 center 14.9909, 26.7715, 28.4418
+protocols.packstat: Cavity: 54 volume 2.59821 surf 8.19141 Nballs 4 center 15.5467, 24.1086, 22.9792
+protocols.packstat: Cavity: 55 volume 3.56885 surf 10.1788 Nballs 1 center 15.3824, 25.8167, 16.2653
+protocols.packstat: Cavity: 56 volume 12.1395 surf 36.8846 Nballs 18 center 16.7115, 27.9559, 24.3317
+protocols.packstat: Cavity: 57 volume 2.55097 surf 8.04248 Nballs 1 center 15.7992, 40.8453, 14.4002
+protocols.packstat: Cavity: 58 volume 1.54318 surf 4.8652 Nballs 1 center 16.1792, 28.4015, 22.8884
+protocols.packstat: Cavity: 59 volume 8.12338 surf 24.2376 Nballs 11 center 17.917, 26.2871, 14.5845
+protocols.packstat: Cavity: 60 volume 4.94448 surf 15.5885 Nballs 3 center 17.9691, 26.0738, 30.6907
+protocols.packstat: Cavity: 61 volume 36.1083 surf 97.6942 Nballs 75 center 19.7988, 22.131, 13.6871
+protocols.packstat: Cavity: 62 volume 2.09432 surf 6.60277 Nballs 1 center 18.5914, 21.7346, 16.8479
+protocols.packstat: Cavity: 63 volume 35.5926 surf 95.599 Nballs 71 center 20.5218, 33.0409, 21.9036
+protocols.packstat: Cavity: 64 volume 10.2602 surf 30.8442 Nballs 20 center 20.0801, 30.2165, 27.4576
+protocols.packstat: Cavity: 65 volume 2.07857 surf 6.55313 Nballs 1 center 19.3112, 29.5408, 25.3118
+protocols.packstat: Cavity: 66 volume 8.54839 surf 26.0566 Nballs 12 center 20.3291, 17.8054, 18.7475
+protocols.packstat: Cavity: 67 volume 4.35153 surf 13.3483 Nballs 5 center 20.32, 21.5235, 26.4322
+protocols.packstat: Cavity: 68 volume 12.537 surf 36.9257 Nballs 22 center 21.0955, 26.9921, 28.1527
+protocols.packstat: Cavity: 69 volume 2.55097 surf 8.04248 Nballs 1 center 20.2197, 28.1365, 15.7372
+protocols.packstat: Cavity: 70 volume 11.9455 surf 35.4969 Nballs 11 center 20.9834, 35.8433, 14.5082
+protocols.packstat: Cavity: 71 volume 15.6368 surf 48.0865 Nballs 18 center 22.8313, 20.9428, 19.6205
+protocols.packstat: Cavity: 72 volume 2.26753 surf 7.14887 Nballs 1 center 21.2171, 27.2425, 25.8345
+protocols.packstat: Cavity: 73 volume 6.88738 surf 20.2637 Nballs 4 center 22.3861, 19.9516, 24.1691
+protocols.packstat: Cavity: 74 volume 2.55097 surf 8.04248 Nballs 1 center 22.0428, 26.8653, 24.523
+protocols.packstat: Cavity: 75 volume 3.65325 surf 11.5176 Nballs 2 center 22.3864, 16.083, 23.8827
+protocols.packstat: Cavity: 76 volume 3.77922 surf 11.9148 Nballs 2 center 22.5333, 29.0659, 20.5201
+protocols.packstat: Cavity: 77 volume 6.34229 surf 18.2825 Nballs 14 center 23.2117, 24.5338, 22.8115
+protocols.packstat: Cavity: 78 volume 3.56885 surf 10.1788 Nballs 1 center 22.8812, 33.7341, 4.67272
+protocols.packstat: Cavity: 79 volume 18.0907 surf 51.0582 Nballs 33 center 24.2337, 23.3593, 23.7561
+protocols.packstat: Cavity: 80 volume 5.54169 surf 15.7747 Nballs 7 center 24.1429, 26.596, 7.66639
+protocols.packstat: Cavity: 81 volume 31.0745 surf 94.6969 Nballs 40 center 25.9808, 30.3622, 12.9138
+protocols.packstat: Cavity: 82 volume 1.79513 surf 5.65952 Nballs 1 center 24.0346, 30.0428, 9.85429
+protocols.packstat: Cavity: 83 volume 4.88149 surf 15.3899 Nballs 2 center 24.4599, 30.7178, 18.4595
+protocols.packstat: Cavity: 84 volume 2.55097 surf 8.04248 Nballs 1 center 24.2349, 26.1871, 27.9748
+protocols.packstat: Cavity: 85 volume 35.6901 surf 98.0642 Nballs 45 center 25.7916, 27.5723, 8.34367
+protocols.packstat: Cavity: 86 volume 1.98409 surf 6.25526 Nballs 1 center 24.616, 31.1813, 5.93113
+protocols.packstat: Cavity: 87 volume 2.55097 surf 8.04248 Nballs 1 center 24.8178, 34.8402, 15.3488
+protocols.packstat: Cavity: 88 volume 9.11101 surf 27.1558 Nballs 6 center 25.6489, 35.1589, 9.86379
+protocols.packstat: Cavity: 89 volume 11.1829 surf 32.3514 Nballs 12 center 25.3851, 23.7743, 28.4043
+protocols.packstat: Cavity: 90 volume 2.55097 surf 8.04248 Nballs 1 center 25.3641, 22.0171, 30.7127
+protocols.packstat: Cavity: 91 volume 3.65759 surf 10.6969 Nballs 2 center 25.6264, 18.2961, 21.9635
+protocols.packstat: Cavity: 92 volume 3.5441 surf 10.2928 Nballs 2 center 25.8125, 18.9289, 19.7655
+protocols.packstat: Cavity: 93 volume 3.56885 surf 10.1788 Nballs 1 center 26.2709, 28.5707, 27.6245
+protocols.packstat: Cavity: 94 volume 6.56531 surf 20.235 Nballs 6 center 27.0157, 25.795, 21.7789
+protocols.packstat: Cavity: 95 volume 23.4782 surf 63.0987 Nballs 36 center 28.934, 24.0742, 25.7268
+protocols.packstat: Cavity: 96 volume 2.1888 surf 6.90064 Nballs 1 center 28.3409, 25.8119, 28.1602
+protocols.packstat: Cavity: 97 volume 14.0115 surf 40.4203 Nballs 13 center 29.9457, 23.6372, 23.3538
+protocols.packstat: Cavity: 98 volume 2.55097 surf 8.04248 Nballs 1 center 29.3826, 21.6226, 12.6895
+protocols.packstat: Cavity: 99 volume 4.67678 surf 14.7445 Nballs 3 center 29.8509, 33.4782, 8.48457
+protocols.packstat: Cavity: 100 volume 4.82549 surf 12.5664 Nballs 1 center 29.664, 34.3775, 5.0622
+protocols.packstat: Cavity: 101 volume 5.30665 surf 16.7303 Nballs 4 center 29.8331, 33.7121, 25.9988
+protocols.packstat: Cavity: 102 volume 2.55097 surf 8.04248 Nballs 1 center 30.1228, 28.8312, 9.17815
+protocols.packstat: Cavity: 103 volume 77.2865 surf 215.81 Nballs 196 center 34.9875, 29.349, 18.8795
+protocols.packstat: Cavity: 104 volume 18.2107 surf 52.9882 Nballs 29 center 32.0324, 23.877, 12.4949
+protocols.packstat: Cavity: 105 volume 1.78784 surf 5.21272 Nballs 2 center 31.2666, 23.4536, 10.4672
+protocols.packstat: Cavity: 106 volume 3.70498 surf 10.9126 Nballs 2 center 32.5346, 26.1915, 6.42267
+protocols.packstat: Cavity: 107 volume 1.4487 surf 4.56733 Nballs 1 center 32.4524, 25.3692, 19.1044
+protocols.packstat: Cavity: 108 volume 2.55097 surf 8.04248 Nballs 1 center 32.6686, 33.5611, 6.71478
+protocols.packstat: Cavity: 109 volume 3.56885 surf 10.1788 Nballs 1 center 32.7268, 21.0468, 21.5233
+protocols.packstat: Cavity: 110 volume 3.81071 surf 12.0141 Nballs 3 center 33.0514, 27.3234, 26.4826
+protocols.packstat: Cavity: 111 volume 5.11777 surf 12.6354 Nballs 9 center 33.2378, 25.4825, 20.1343
+protocols.packstat: Cavity: 112 volume 0.992045 surf 3.12763 Nballs 1 center 33.0949, 31.3065, 19.8656
+protocols.packstat: Cavity: 113 volume 0.929058 surf 2.92905 Nballs 1 center 33.6289, 32.0903, 21.1883
+protocols.packstat: Cavity: 114 volume 2.55097 surf 8.04248 Nballs 1 center 33.6571, 19.0602, 18.9259
+protocols.packstat: Cavity: 115 volume 8.23989 surf 25.1436 Nballs 9 center 34.8438, 22.8509, 16.3529
+protocols.packstat: Cavity: 116 volume 21.4399 surf 62.3439 Nballs 39 center 36.1302, 30.3594, 2.04551
+protocols.packstat: Cavity: 117 volume 20.0022 surf 56.6619 Nballs 42 center 36.0484, 21.8435, 18.9183
+protocols.packstat: Cavity: 118 volume 2.55097 surf 8.04248 Nballs 1 center 34.4199, 35.0697, 10.7361
+protocols.packstat: Cavity: 119 volume 1.13377 surf 3.57443 Nballs 1 center 34.5782, 21.9762, 24.5099
+protocols.packstat: Cavity: 120 volume 7.67278 surf 23.2563 Nballs 10 center 35.0797, 22.1112, 23.3051
+protocols.packstat: Cavity: 121 volume 5.30813 surf 13.7617 Nballs 5 center 35.272, 34.1803, 17.7788
+protocols.packstat: Cavity: 122 volume 2.44075 surf 7.69496 Nballs 2 center 35.4067, 19.426, 18.7506
+protocols.packstat: Cavity: 123 volume 4.73977 surf 14.9431 Nballs 2 center 36.485, 33.0667, 7.57235
+protocols.packstat: Cavity: 124 volume 3.99967 surf 12.6098 Nballs 3 center 36.7265, 22.2107, 4.5991
+protocols.packstat: Cavity: 125 volume 31.2762 surf 97.2738 Nballs 42 center 40.2933, 27.7216, 13.9927
+protocols.packstat: Cavity: 126 volume 10.8096 surf 31.7285 Nballs 11 center 37.8234, 28.0818, 11.6723
+protocols.packstat: Cavity: 127 volume 6.91282 surf 21.7941 Nballs 4 center 38.1263, 22.4631, 27.33
+protocols.packstat: Cavity: 128 volume 8.56065 surf 25.9496 Nballs 10 center 38.2995, 31.1127, 22.4172
+protocols.packstat: Cavity: 129 volume 11.1956 surf 33.8198 Nballs 12 center 40.3131, 31.5149, 11.027
+protocols.packstat: Cavity: 130 volume 2.55097 surf 8.04248 Nballs 1 center 39.7156, 31.0108, 25.4706
+protocols.packstat: Cavity: 131 volume 2.67695 surf 8.43964 Nballs 2 center 39.9409, 32.3562, 20.8868
+protocols.packstat: Cavity: 132 volume 7.52695 surf 23.7303 Nballs 10 center 40.9919, 32.4104, 19.1272
+protocols.packstat: Cavity: 133 volume 2.55097 surf 8.04248 Nballs 1 center 40.7457, 25.0375, 7.86436
+protocols.packstat: Cavity: 134 volume 2.55097 surf 8.04248 Nballs 1 center 42.1861, 31.1505, 26.4425

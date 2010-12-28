@@ -1,0 +1,84 @@
+select all
+color [200,200,200]
+
+
+select   ALA33, THR34, ILE46, CYS50, GLU51, HIS92, CYS93, GLY94, VAL127
+select selected and :A
+color [160,37,96]
+spacefill
+
+define CON9 selected
+
+
+select    ASP42, TRP43, PHE49, VAL53, THR61, ALA82, LEU83, GLU100, VAL101, PHE106
+select selected or ILE148, GLY159, PRO165
+select selected and :A
+color [240,125,171]
+spacefill
+
+define CON8 selected
+
+
+select    SER25, LEU26, PRO60, ALA63, LYS70, GLN75, LYS77, GLU78, VAL85, MET90
+select selected or HIS98, ARG130, TRP138, GLU144, LEU155, GLN163
+select selected and :A
+color [250,201,222]
+spacefill
+
+define CON7 selected
+
+
+select    GLU27, LEU30, LYS32, ASN54, HIS69, ILE71, GLN72, SER73, GLU76, ALA79
+select selected or THR84, GLU87, PHE97, ALA102, LYS103, ARG105, LYS112, LEU119, GLY120, THR124
+select selected or LYS128, VAL131, ILE132, LEU135, PHE142, ALA151, TYR152, ASP164
+select selected and :A
+color [252,237,244]
+spacefill
+
+define CON6 selected
+
+
+select    ASN31, ASP35, GLN41, LEU66, PRO74, LEU86, MET88, CYS89, ASN91, ASN108
+select selected or ILE111, SER115, LYS117, SER121, LYS126, ILE134, PRO143, LYS156, LYS166, LEU167
+select selected and :A
+color [255,255,255]
+spacefill
+
+define CON5 selected
+
+
+select    TRP29, PRO36, SER37, SER39, GLU40, GLN47, GLY59, PRO64, ALA68, LEU80
+select selected or TYR81, LEU107, GLU109, PRO116, TYR118, TRP122, SER137, THR139, TRP141, ASP150
+select selected or GLN158, ILE160
+select selected and :A
+color [234,255,255]
+spacefill
+
+define CON4 selected
+
+
+select    MET38, ALA45, PHE104, GLU133, ILE146, ARG149, GLN153, ILE161, LYS162
+select selected and :A
+color [215,255,255]
+spacefill
+
+define CON3 selected
+
+
+select    SER44, ASN48, GLN52, ASP56, HIS62, LEU67, LYS96, LEU110, LEU114, ALA123
+select selected or ASP145, LYS147, MET154
+select selected and :A
+color [140,255,255]
+spacefill
+
+define CON2 selected
+
+
+select    LEU28, THR55, PRO57, ASN58, TRP65, GLU95, SER99, VAL113, GLY125, GLY129
+select selected or PHE136, VAL140, LYS157
+select selected and :A
+color [16,200,209]
+spacefill
+
+define CON1 selected
+

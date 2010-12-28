@@ -1,0 +1,1523 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_A  56
+         (56 letters)
+
+Database: sprot 
+           466,739 sequences; 165,389,953 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q96BD5|PF21A_HUMAN PHD finger protein 21A OS=Homo sapiens GN=...   119   6e-27
+sp|Q6ZPK0|PF21A_MOUSE PHD finger protein 21A OS=Mus musculus GN=...   116   3e-26
+sp|O16102|CHD3_DROME Chromodomain-helicase-DNA-binding protein 3...    79   9e-15
+sp|Q8C966|PF21B_MOUSE PHD finger protein 21B OS=Mus musculus GN=...    78   1e-14
+sp|Q8TDI0|CHD5_HUMAN Chromodomain-helicase-DNA-binding protein 5...    78   2e-14
+sp|Q14839|CHD4_HUMAN Chromodomain-helicase-DNA-binding protein 4...    77   3e-14
+sp|Q6PDQ2|CHD4_MOUSE Chromodomain-helicase-DNA-binding protein 4...    77   3e-14
+sp|O97159|CHDM_DROME Chromodomain-helicase-DNA-binding protein M...    76   4e-14
+sp|Q12873|CHD3_HUMAN Chromodomain-helicase-DNA-binding protein 3...    76   5e-14
+sp|Q96EK2|PF21B_HUMAN PHD finger protein 21B OS=Homo sapiens GN=...    73   5e-13
+sp|Q22516|CHD3_CAEEL Chromodomain-helicase-DNA-binding protein 3...    72   1e-12
+sp|Q12830|BPTF_HUMAN Nucleosome-remodeling factor subunit BPTF O...    66   7e-11
+sp|Q04779|RCO1_YEAST Transcriptional regulatory protein RCO1 OS=...    65   9e-11
+sp|Q9W0T1|NU301_DROME Nucleosome-remodeling factor subunit NURF3...    62   6e-10
+sp|O43918|AIRE_HUMAN Autoimmune regulator OS=Homo sapiens GN=AIR...    62   9e-10
+sp|Q8BRB7|MYST4_MOUSE Histone acetyltransferase MYST4 OS=Mus mus...    61   2e-09
+sp|Q8WYB5|MYST4_HUMAN Histone acetyltransferase MYST4 OS=Homo sa...    61   2e-09
+sp|Q92794|MYST3_HUMAN Histone acetyltransferase MYST3 OS=Homo sa...    61   2e-09
+sp|Q8WML3|MYST4_MACFA Histone acetyltransferase MYST4 OS=Macaca ...    60   3e-09
+sp|Q9UIG0|BAZ1B_HUMAN Bromodomain adjacent to zinc finger domain...    60   3e-09
+sp|Q8BZ21|MYST3_MOUSE Histone acetyltransferase MYST3 OS=Mus mus...    60   3e-09
+sp|Q5TKR9|MYST3_RAT Histone acetyltransferase MYST3 OS=Rattus no...    60   3e-09
+sp|Q9Z0E3|AIRE_MOUSE Autoimmune regulator OS=Mus musculus GN=Air...    60   4e-09
+sp|Q9Z277|BAZ1B_MOUSE Bromodomain adjacent to zinc finger domain...    60   4e-09
+sp|O15164|TIF1A_HUMAN Transcription intermediary factor 1-alpha ...    59   6e-09
+sp|Q924W6|TRI66_MOUSE Tripartite motif-containing protein 66 OS=...    59   8e-09
+sp|Q64127|TIF1A_MOUSE Transcription intermediary factor 1-alpha ...    59   9e-09
+sp|P47156|JHD2_YEAST Histone demethylase JHD2 OS=Saccharomyces c...    59   1e-08
+sp|Q56R14|TRI33_XENLA E3 ubiquitin-protein ligase TRIM33 OS=Xeno...    59   1e-08
+sp|Q6E2N3|TRI33_DANRE E3 ubiquitin-protein ligase TRIM33 OS=Dani...    58   1e-08
+sp|Q9NRL2|BAZ1A_HUMAN Bromodomain adjacent to zinc finger domain...    58   2e-08
+sp|Q9UPN9|TRI33_HUMAN E3 ubiquitin-protein ligase TRIM33 OS=Homo...    58   2e-08
+sp|O15016|TRI66_HUMAN Tripartite motif-containing protein 66 OS=...    58   2e-08
+sp|A6H619|PHRF1_MOUSE PHD and RING finger domain-containing prot...    57   2e-08
+sp|Q99PP7|TRI33_MOUSE E3 ubiquitin-protein ligase TRIM33 OS=Mus ...    57   2e-08
+sp|Q9P1Y6|PHRF1_HUMAN PHD and RING finger domain-containing prot...    57   3e-08
+sp|Q63625|PHRF1_RAT PHD and RING finger domain-containing protei...    57   4e-08
+sp|Q9VMJ7|JAD1_DROME Histone demethylase lid OS=Drosophila melan...    56   5e-08
+sp|O88379|BAZ1A_MOUSE Bromodomain adjacent to zinc finger domain...    55   8e-08
+sp|Q62240|JAD1D_MOUSE Histone demethylase JARID1D OS=Mus musculu...    55   1e-07
+sp|Q30DN6|JAD1D_CANFA Histone demethylase JARID1D OS=Canis famil...    55   1e-07
+sp|P41230|JAD1C_MOUSE Histone demethylase JARID1C OS=Mus musculu...    55   1e-07
+sp|Q38JA7|JAD1C_CANFA Histone demethylase JARID1C OS=Canis famil...    55   1e-07
+sp|Q8UVR5|BAZ1A_XENLA Bromodomain adjacent to zinc finger domain...    55   2e-07
+sp|P41229|JAD1C_HUMAN Histone demethylase JARID1C OS=Homo sapien...    54   2e-07
+sp|A1YVX4|JAD1C_PIG Histone demethylase JARID1C OS=Sus scrofa GN...    54   2e-07
+sp|Q8NEZ4|MLL3_HUMAN Histone-lysine N-methyltransferase MLL3 OS=...    54   2e-07
+sp|Q96QT6|PHF12_HUMAN PHD finger protein 12 OS=Homo sapiens GN=P...    54   2e-07
+sp|Q5XUN4|JAD1D_PANTR Histone demethylase JARID1D OS=Pan troglod...    54   2e-07
+sp|Q8BRH4|MLL3_MOUSE Histone-lysine N-methyltransferase MLL3 OS=...    54   2e-07
+sp|Q9BY66|JAD1D_HUMAN Histone demethylase JARID1D OS=Homo sapien...    54   3e-07
+sp|Q5SPL2|PHF12_MOUSE PHD finger protein 12 OS=Mus musculus GN=P...    54   3e-07
+sp|Q9HDV4|LID2_SCHPO Lid2 complex component lid2 OS=Schizosaccha...    54   3e-07
+sp|Q9FNE9|ATXR6_ARATH Histone-lysine N-methyltransferase ATXR6 O...    53   4e-07
+sp|P29375|JAD1A_HUMAN Histone demethylase JARID1A OS=Homo sapien...    53   4e-07
+sp|Q3UXZ9|JAD1A_MOUSE Histone demethylase JARID1A OS=Mus musculu...    53   4e-07
+sp|Q9ULU4|PKCB1_HUMAN Protein kinase C-binding protein 1 OS=Homo...    52   6e-07
+sp|Q09698|YA27_SCHPO Uncharacterized protein C2F7.07c OS=Schizos...    52   7e-07
+sp|Q96T23|RSF1_HUMAN Remodeling and spacing factor 1 OS=Homo sap...    52   8e-07
+sp|Q6IQX0|JA1BB_DANRE Histone demethylase JARID1B-B OS=Danio rer...    52   1e-06
+sp|O14686|MLL2_HUMAN Histone-lysine N-methyltransferase MLL2 OS=...    51   2e-06
+sp|Q9S775|PKL_ARATH CHD3-type chromatin-remodeling factor PICKLE...    51   2e-06
+sp|Q9UGL1|JAD1B_HUMAN Histone demethylase JARID1B OS=Homo sapien...    51   2e-06
+sp|Q80Y84|JAD1B_MOUSE Histone demethylase JARID1B OS=Mus musculu...    51   2e-06
+sp|Q9UIF8|BAZ2B_HUMAN Bromodomain adjacent to zinc finger domain...    50   3e-06
+sp|Q5F3R2|JAD1B_CHICK Histone demethylase JARID1B OS=Gallus gall...    50   3e-06
+sp|Q9DE13|BAZ2B_CHICK Bromodomain adjacent to zinc finger domain...    50   5e-06
+sp|Q9H930|LY10L_HUMAN Nuclear body protein SP140-like protein OS...    49   6e-06
+sp|Q13342|LY10_HUMAN Nuclear body protein SP140 OS=Homo sapiens ...    49   1e-05
+sp|A9LMC0|DPF3_DANRE Zinc finger protein DPF3 OS=Danio rerio GN=...    48   1e-05
+sp|Q9HB58|SP110_HUMAN Sp110 nuclear body protein OS=Homo sapiens...    48   2e-05
+sp|Q13263|TIF1B_HUMAN Transcription intermediary factor 1-beta O...    47   2e-05
+sp|Q09819|YAC5_SCHPO Uncharacterized protein C16C9.05 OS=Schizos...    47   2e-05
+sp|O08629|TIF1B_RAT Transcription intermediary factor 1-beta OS=...    47   2e-05
+sp|Q62318|TIF1B_MOUSE Transcription intermediary factor 1-beta O...    47   2e-05
+sp|P58270|DPF3_CHICK Zinc finger protein DPF3 OS=Gallus gallus G...    47   3e-05
+sp|O94880|PHF14_HUMAN PHD finger protein 14 OS=Homo sapiens GN=P...    47   3e-05
+sp|Q9D4H9|PHF14_MOUSE PHD finger protein 14 OS=Mus musculus GN=P...    47   3e-05
+sp|Q96T88|UHRF1_HUMAN E3 ubiquitin-protein ligase UHRF1 OS=Homo ...    47   4e-05
+sp|P58268|REQU_CHICK Zinc finger protein ubi-d4 OS=Gallus gallus...    46   5e-05
+sp|Q92784|DPF3_HUMAN Zinc finger protein DPF3 OS=Homo sapiens GN...    46   6e-05
+sp|P58269|DPF3_MOUSE Zinc finger protein DPF3 OS=Mus musculus GN...    46   6e-05
+sp|Q9W636|REQUB_XENLA Zinc finger protein ubi-d4 B (Fragment) OS...    45   8e-05
+sp|Q8VZJ1|ATXR5_ARATH Histone-lysine N-methyltransferase ATXR5 O...    45   8e-05
+sp|Q9QX66|DPF1_MOUSE Zinc finger protein neuro-d4 OS=Mus musculu...    45   1e-04
+sp|Q91YE5|BAZ2A_MOUSE Bromodomain adjacent to zinc finger domain...    45   1e-04
+sp|P48785|PRH_ARATH Pathogenesis-related homeodomain protein OS=...    45   1e-04
+sp|Q9UIF9|BAZ2A_HUMAN Bromodomain adjacent to zinc finger domain...    45   1e-04
+sp|Q9W638|REQUA_XENLA Zinc finger protein ubi-d4 A OS=Xenopus la...    45   1e-04
+sp|Q9VWF2|SAYP_DROME Supporter of activation of yellow protein O...    45   1e-04
+sp|P58267|DPF1_CHICK Zinc finger protein neuro-d4 OS=Gallus gall...    45   2e-04
+sp|Q6P2L6|NSD3_MOUSE Histone-lysine N-methyltransferase NSD3 OS=...    45   2e-04
+sp|Q7TMI3|UHRF2_MOUSE E3 ubiquitin-protein ligase UHRF2 OS=Mus m...    44   2e-04
+sp|Q96PU4|UHRF2_HUMAN E3 ubiquitin-protein ligase UHRF2 OS=Homo ...    44   2e-04
+sp|P46605|HOX1A_MAIZE Homeobox protein HOX1A OS=Zea mays GN=HOX1...    44   2e-04
+sp|Q9BZ95|NSD3_HUMAN Histone-lysine N-methyltransferase NSD3 OS=...    44   2e-04
+sp|Q61103|REQU_MOUSE Zinc finger protein ubi-d4 OS=Mus musculus ...    44   3e-04
+sp|Q92785|REQU_HUMAN Zinc finger protein ubi-d4 OS=Homo sapiens ...    44   3e-04
+sp|P56163|DPF1_RAT Zinc finger protein neuro-d4 OS=Rattus norveg...    43   4e-04
+sp|Q8VDF2|UHRF1_MOUSE E3 ubiquitin-protein ligase UHRF1 OS=Mus m...    43   5e-04
+sp|Q92782|DPF1_HUMAN Zinc finger protein neuro-d4 OS=Homo sapien...    43   6e-04
+sp|Q5PNS0|Y3228_ARATH PHD finger protein At3g20280 OS=Arabidopsi...    42   7e-04
+sp|Q23541|JAD1_CAEEL Histone demethylase rbr-2 OS=Caenorhabditis...    42   9e-04
+
+>sp|Q96BD5|PF21A_HUMAN PHD finger protein 21A OS=Homo sapiens
+           GN=PHF21A PE=1 SV=1
+          Length = 680
+
+ Score =  119 bits (297), Expect = 6e-27,   Method: Composition-based stats.
+ Identities = 49/49 (100%), Positives = 49/49 (100%)
+
+Query: 8   HEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQDQ 56
+           HEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQDQ
+Sbjct: 487 HEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQDQ 535
+
+
+>sp|Q6ZPK0|PF21A_MOUSE PHD finger protein 21A OS=Mus musculus
+           GN=Phf21a PE=1 SV=2
+          Length = 659
+
+ Score =  116 bits (291), Expect = 3e-26,   Method: Composition-based stats.
+ Identities = 48/49 (97%), Positives = 49/49 (100%)
+
+Query: 8   HEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQDQ 56
+           HEDFCSVCRKSGQLLMCDTCSRVYHLDCL+PPLKTIPKGMWICPRCQDQ
+Sbjct: 467 HEDFCSVCRKSGQLLMCDTCSRVYHLDCLEPPLKTIPKGMWICPRCQDQ 515
+
+
+>sp|O16102|CHD3_DROME Chromodomain-helicase-DNA-binding protein 3
+          OS=Drosophila melanogaster GN=Chd3 PE=2 SV=3
+          Length = 892
+
+ Score = 78.6 bits (192), Expect = 9e-15,   Method: Composition-based stats.
+ Identities = 29/45 (64%), Positives = 33/45 (73%)
+
+Query: 9  EDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+          E++C VC   G LL CD+C  VYH  CL PPLK+IPKG WICPRC
+Sbjct: 35 EEYCKVCSDGGDLLCCDSCPSVYHRTCLSPPLKSIPKGDWICPRC 79
+
+
+>sp|Q8C966|PF21B_MOUSE PHD finger protein 21B OS=Mus musculus
+           GN=Phf21b PE=2 SV=1
+          Length = 487
+
+ Score = 78.2 bits (191), Expect = 1e-14,   Method: Composition-based stats.
+ Identities = 29/51 (56%), Positives = 37/51 (72%)
+
+Query: 4   GSSGHEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQ 54
+           G   H++FC+ C++   L  C TCS  YHL CLDPPLKT PKG+W+CP+CQ
+Sbjct: 302 GEITHDEFCAACKRGASLQPCGTCSGAYHLSCLDPPLKTPPKGLWVCPKCQ 352
+
+
+>sp|Q8TDI0|CHD5_HUMAN Chromodomain-helicase-DNA-binding protein 5
+           OS=Homo sapiens GN=CHD5 PE=2 SV=1
+          Length = 1954
+
+ Score = 77.8 bits (190), Expect = 2e-14,   Method: Composition-based stats.
+ Identities = 26/56 (46%), Positives = 39/56 (69%)
+
+Query: 1   GSSGSSGHEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQDQ 56
+           G    + H+D+C VC++ G++++CDTC R YHL CLDP L+  P+G W CP C+ +
+Sbjct: 335 GDGYETDHQDYCEVCQQGGEIILCDTCPRAYHLVCLDPELEKAPEGKWSCPHCEKE 390
+
+
+
+ Score = 75.9 bits (185), Expect = 7e-14,   Method: Composition-based stats.
+ Identities = 27/46 (58%), Positives = 32/46 (69%)
+
+Query: 8   HEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           H +FC VC+  G+LL CD C   YHL CL+PPL  IP G W+CPRC
+Sbjct: 415 HMEFCRVCKDGGELLCCDACPSSYHLHCLNPPLPEIPNGEWLCPRC 460
+
+
+>sp|Q14839|CHD4_HUMAN Chromodomain-helicase-DNA-binding protein 4
+           OS=Homo sapiens GN=CHD4 PE=1 SV=1
+          Length = 1912
+
+ Score = 77.0 bits (188), Expect = 3e-14,   Method: Composition-based stats.
+ Identities = 27/46 (58%), Positives = 33/46 (71%)
+
+Query: 8   HEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           H +FC VC+  G+LL CDTC   YH+ CL+PPL  IP G W+CPRC
+Sbjct: 448 HMEFCRVCKDGGELLCCDTCPSSYHIHCLNPPLPEIPNGEWLCPRC 493
+
+
+
+ Score = 75.5 bits (184), Expect = 7e-14,   Method: Composition-based stats.
+ Identities = 23/51 (45%), Positives = 38/51 (74%)
+
+Query: 6   SGHEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQDQ 56
+           + H+D+C VC++ G++++CDTC R YH+ CLDP ++  P+G W CP C+ +
+Sbjct: 367 TDHQDYCEVCQQGGEIILCDTCPRAYHMVCLDPDMEKAPEGKWSCPHCEKE 417
+
+
+>sp|Q6PDQ2|CHD4_MOUSE Chromodomain-helicase-DNA-binding protein 4
+           OS=Mus musculus GN=Chd4 PE=1 SV=1
+          Length = 1915
+
+ Score = 77.0 bits (188), Expect = 3e-14,   Method: Composition-based stats.
+ Identities = 27/46 (58%), Positives = 33/46 (71%)
+
+Query: 8   HEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           H +FC VC+  G+LL CDTC   YH+ CL+PPL  IP G W+CPRC
+Sbjct: 441 HMEFCRVCKDGGELLCCDTCPSSYHIHCLNPPLPEIPNGEWLCPRC 486
+
+
+
+ Score = 75.5 bits (184), Expect = 7e-14,   Method: Composition-based stats.
+ Identities = 23/51 (45%), Positives = 38/51 (74%)
+
+Query: 6   SGHEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQDQ 56
+           + H+D+C VC++ G++++CDTC R YH+ CLDP ++  P+G W CP C+ +
+Sbjct: 360 TDHQDYCEVCQQGGEIILCDTCPRAYHMVCLDPDMEKAPEGKWSCPHCEKE 410
+
+
+>sp|O97159|CHDM_DROME Chromodomain-helicase-DNA-binding protein Mi-2
+           homolog OS=Drosophila melanogaster GN=Mi-2 PE=1 SV=2
+          Length = 1982
+
+ Score = 76.3 bits (186), Expect = 4e-14,   Method: Composition-based stats.
+ Identities = 26/53 (49%), Positives = 36/53 (67%)
+
+Query: 1   GSSGSSGHEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           G  G   H+D+C VC++ G++++CDTC R YHL CL+P L   P+G W CP C
+Sbjct: 369 GEDGEHEHQDYCEVCQQGGEIILCDTCPRAYHLVCLEPELDEPPEGKWSCPHC 421
+
+
+
+ Score = 75.9 bits (185), Expect = 7e-14,   Method: Composition-based stats.
+ Identities = 27/46 (58%), Positives = 33/46 (71%)
+
+Query: 8   HEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           H++FC VC+  G+LL CD+C   YH  CL+PPL TIP G W CPRC
+Sbjct: 436 HQEFCRVCKDGGELLCCDSCPSAYHTFCLNPPLDTIPDGDWRCPRC 481
+
+
+>sp|Q12873|CHD3_HUMAN Chromodomain-helicase-DNA-binding protein 3
+           OS=Homo sapiens GN=CHD3 PE=1 SV=3
+          Length = 2000
+
+ Score = 75.9 bits (185), Expect = 5e-14,   Method: Composition-based stats.
+ Identities = 25/51 (49%), Positives = 37/51 (72%)
+
+Query: 6   SGHEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQDQ 56
+           + H+D+C VC++ G++++CDTC R YHL CLDP L   P+G W CP C+ +
+Sbjct: 376 TDHQDYCEVCQQGGEIILCDTCPRAYHLVCLDPELDRAPEGKWSCPHCEKE 426
+
+
+
+ Score = 72.4 bits (176), Expect = 6e-13,   Method: Composition-based stats.
+ Identities = 25/46 (54%), Positives = 32/46 (69%)
+
+Query: 8   HEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           H ++C VC+  G+LL CD C   YH+ CL+PPL  IP G W+CPRC
+Sbjct: 455 HMEYCRVCKDGGELLCCDACISSYHIHCLNPPLPDIPNGEWLCPRC 500
+
+
+>sp|Q96EK2|PF21B_HUMAN PHD finger protein 21B OS=Homo sapiens
+           GN=PHF21B PE=2 SV=1
+          Length = 531
+
+ Score = 72.8 bits (177), Expect = 5e-13,   Method: Composition-based stats.
+ Identities = 26/49 (53%), Positives = 35/49 (71%)
+
+Query: 8   HEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQDQ 56
+           H++ C+ C++   L  C TC   YHL CL+PPLKT PKG+W+CPRCQ +
+Sbjct: 351 HDEHCAACKRGANLQPCGTCPGAYHLSCLEPPLKTAPKGVWVCPRCQQK 399
+
+
+>sp|Q22516|CHD3_CAEEL Chromodomain-helicase-DNA-binding protein 3
+           homolog OS=Caenorhabditis elegans GN=chd-3 PE=2 SV=2
+          Length = 1787
+
+ Score = 71.6 bits (174), Expect = 1e-12,   Method: Composition-based stats.
+ Identities = 23/44 (52%), Positives = 32/44 (72%)
+
+Query: 10  DFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           D+C +C+++  +L+CDTC   YH  C+DPPL  IP+G W CPRC
+Sbjct: 329 DYCRICKETSNILLCDTCPSSYHAYCIDPPLTEIPEGEWSCPRC 372
+
+
+
+ Score = 68.2 bits (165), Expect = 1e-11,   Method: Composition-based stats.
+ Identities = 21/49 (42%), Positives = 35/49 (71%)
+
+Query: 8   HEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQDQ 56
+           H++ C VC + G+L++CDTC+R YH+ C+D  ++  P+G W CP C++ 
+Sbjct: 264 HQENCEVCNQDGELMLCDTCTRAYHVACIDENMEQPPEGDWSCPHCEEH 312
+
+
+>sp|Q12830|BPTF_HUMAN Nucleosome-remodeling factor subunit BPTF
+           OS=Homo sapiens GN=BPTF PE=1 SV=3
+          Length = 3046
+
+ Score = 65.9 bits (159), Expect = 7e-11,   Method: Composition-based stats.
+ Identities = 26/52 (50%), Positives = 34/52 (65%)
+
+Query: 2   SSGSSGHEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           S G   ++D C VC K G LL C+TCS VYHL+C+ PPL+ +P+  W C  C
+Sbjct: 383 SEGVIQYDDHCRVCHKLGDLLCCETCSAVYHLECVKPPLEEVPEDEWQCEVC 434
+
+
+>sp|Q04779|RCO1_YEAST Transcriptional regulatory protein RCO1
+           OS=Saccharomyces cerevisiae GN=RCO1 PE=1 SV=1
+          Length = 684
+
+ Score = 65.5 bits (158), Expect = 9e-11,   Method: Composition-based stats.
+ Identities = 25/49 (51%), Positives = 32/49 (65%), Gaps = 2/49 (4%)
+
+Query: 8   HEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPL--KTIPKGMWICPRCQ 54
+           +EDFCS C +SG  L CDTC + +H  CLDPP+    +PKG W C  C+
+Sbjct: 259 NEDFCSACNQSGSFLCCDTCPKSFHFLCLDPPIDPNNLPKGDWHCNECK 307
+
+
+>sp|Q9W0T1|NU301_DROME Nucleosome-remodeling factor subunit NURF301
+           OS=Drosophila melanogaster GN=E(bx) PE=1 SV=2
+          Length = 2669
+
+ Score = 62.4 bits (150), Expect = 6e-10,   Method: Composition-based stats.
+ Identities = 23/53 (43%), Positives = 32/53 (60%)
+
+Query: 4   GSSGHEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQDQ 56
+           G   ++D C VC + G LL C+TC  VYHL+C+DPP+  +P   W C  C+  
+Sbjct: 334 GPIHYDDHCRVCHRLGDLLCCETCPAVYHLECVDPPMNDVPTEDWQCGLCRSH 386
+
+
+>sp|O43918|AIRE_HUMAN Autoimmune regulator OS=Homo sapiens GN=AIRE
+           PE=1 SV=1
+          Length = 545
+
+ Score = 62.0 bits (149), Expect = 9e-10,   Method: Composition-based stats.
+ Identities = 25/46 (54%), Positives = 31/46 (67%)
+
+Query: 8   HEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           +ED C+VCR  G+L+ CD C R +HL CL PPL+ IP G W C  C
+Sbjct: 295 NEDECAVCRDGGELICCDGCPRAFHLACLSPPLREIPSGTWRCSSC 340
+
+
+>sp|Q8BRB7|MYST4_MOUSE Histone acetyltransferase MYST4 OS=Mus
+           musculus GN=Myst4 PE=2 SV=2
+          Length = 1872
+
+ Score = 60.8 bits (146), Expect = 2e-09,   Method: Composition-based stats.
+ Identities = 24/47 (51%), Positives = 32/47 (68%), Gaps = 4/47 (8%)
+
+Query: 12  CSVCRKSGQ----LLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQ 54
+           CS CR  G+    +L CD+C R +H++C DPPL  +PKGMWIC  C+
+Sbjct: 273 CSACRVQGKNADNMLFCDSCDRGFHMECCDPPLSRMPKGMWICQVCR 319
+
+
+>sp|Q8WYB5|MYST4_HUMAN Histone acetyltransferase MYST4 OS=Homo
+           sapiens GN=MYST4 PE=1 SV=3
+          Length = 2073
+
+ Score = 60.8 bits (146), Expect = 2e-09,   Method: Composition-based stats.
+ Identities = 24/47 (51%), Positives = 32/47 (68%), Gaps = 4/47 (8%)
+
+Query: 12  CSVCRKSGQ----LLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQ 54
+           CS CR  G+    +L CD+C R +H++C DPPL  +PKGMWIC  C+
+Sbjct: 272 CSACRVQGRNADNMLFCDSCDRGFHMECCDPPLSRMPKGMWICQVCR 318
+
+
+>sp|Q92794|MYST3_HUMAN Histone acetyltransferase MYST3 OS=Homo
+           sapiens GN=MYST3 PE=1 SV=2
+          Length = 2004
+
+ Score = 60.8 bits (146), Expect = 2e-09,   Method: Composition-based stats.
+ Identities = 24/47 (51%), Positives = 32/47 (68%), Gaps = 4/47 (8%)
+
+Query: 12  CSVCRKSGQ----LLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQ 54
+           CS CR  G+    +L CD+C R +H++C DPPL  +PKGMWIC  C+
+Sbjct: 265 CSSCRDQGKNADNMLFCDSCDRGFHMECCDPPLTRMPKGMWICQICR 311
+
+
+>sp|Q8WML3|MYST4_MACFA Histone acetyltransferase MYST4 OS=Macaca
+           fascicularis GN=MYST4 PE=2 SV=1
+          Length = 1784
+
+ Score = 60.5 bits (145), Expect = 3e-09,   Method: Composition-based stats.
+ Identities = 24/47 (51%), Positives = 32/47 (68%), Gaps = 4/47 (8%)
+
+Query: 12  CSVCRKSGQ----LLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQ 54
+           CS CR  G+    +L CD+C R +H++C DPPL  +PKGMWIC  C+
+Sbjct: 272 CSACRVQGRNADNMLFCDSCDRGFHMECCDPPLSRMPKGMWICQVCR 318
+
+
+>sp|Q9UIG0|BAZ1B_HUMAN Bromodomain adjacent to zinc finger domain
+            protein 1B OS=Homo sapiens GN=BAZ1B PE=1 SV=2
+          Length = 1483
+
+ Score = 60.5 bits (145), Expect = 3e-09,   Method: Composition-based stats.
+ Identities = 23/46 (50%), Positives = 30/46 (65%), Gaps = 3/46 (6%)
+
+Query: 12   CSVCRKSGQ---LLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQ 54
+            C VCRK G+   L++CD C++ +HL CL P L  +P G W CP CQ
+Sbjct: 1187 CKVCRKKGEDDKLILCDECNKAFHLFCLRPALYEVPDGEWQCPACQ 1232
+
+
+>sp|Q8BZ21|MYST3_MOUSE Histone acetyltransferase MYST3 OS=Mus
+           musculus GN=Myst3 PE=1 SV=2
+          Length = 2003
+
+ Score = 60.1 bits (144), Expect = 3e-09,   Method: Composition-based stats.
+ Identities = 24/47 (51%), Positives = 32/47 (68%), Gaps = 4/47 (8%)
+
+Query: 12  CSVCRKSGQ----LLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQ 54
+           CS CR  G+    +L CD+C R +H++C DPPL  +PKGMWIC  C+
+Sbjct: 265 CSSCRDQGKNADNMLFCDSCDRGFHMECCDPPLTRMPKGMWICQICR 311
+
+
+>sp|Q5TKR9|MYST3_RAT Histone acetyltransferase MYST3 OS=Rattus
+           norvegicus GN=Myst3 PE=2 SV=2
+          Length = 1998
+
+ Score = 60.1 bits (144), Expect = 3e-09,   Method: Composition-based stats.
+ Identities = 24/47 (51%), Positives = 32/47 (68%), Gaps = 4/47 (8%)
+
+Query: 12  CSVCRKSGQ----LLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQ 54
+           CS CR  G+    +L CD+C R +H++C DPPL  +PKGMWIC  C+
+Sbjct: 265 CSSCRDQGKNADNMLFCDSCDRGFHMECCDPPLTRMPKGMWICQICR 311
+
+
+>sp|Q9Z0E3|AIRE_MOUSE Autoimmune regulator OS=Mus musculus GN=Aire
+           PE=1 SV=1
+          Length = 552
+
+ Score = 60.1 bits (144), Expect = 4e-09,   Method: Composition-based stats.
+ Identities = 24/46 (52%), Positives = 31/46 (67%)
+
+Query: 8   HEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           +ED C+VC   G+L+ CD C R +HL CL PPL+ IP G+W C  C
+Sbjct: 297 NEDECAVCHDGGELICCDGCPRAFHLACLSPPLQEIPSGLWRCSCC 342
+
+
+>sp|Q9Z277|BAZ1B_MOUSE Bromodomain adjacent to zinc finger domain
+            protein 1B OS=Mus musculus GN=Baz1b PE=1 SV=1
+          Length = 1479
+
+ Score = 59.7 bits (143), Expect = 4e-09,   Method: Composition-based stats.
+ Identities = 23/46 (50%), Positives = 30/46 (65%), Gaps = 3/46 (6%)
+
+Query: 12   CSVCRKSGQ---LLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQ 54
+            C VCRK G+   L++CD C++ +HL CL P L  +P G W CP CQ
+Sbjct: 1187 CKVCRKKGEDDKLILCDECNKAFHLFCLRPALYEVPDGEWQCPACQ 1232
+
+
+>sp|O15164|TIF1A_HUMAN Transcription intermediary factor 1-alpha
+           OS=Homo sapiens GN=TRIM24 PE=1 SV=3
+          Length = 1050
+
+ Score = 59.3 bits (142), Expect = 6e-09,   Method: Composition-based stats.
+ Identities = 23/48 (47%), Positives = 32/48 (66%)
+
+Query: 8   HEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQD 55
+           +ED+C+VC+  G+LL C+ C +V+HL C  P L   P G WIC  C+D
+Sbjct: 825 NEDWCAVCQNGGELLCCEKCPKVFHLSCHVPTLTNFPSGEWICTFCRD 872
+
+
+>sp|Q924W6|TRI66_MOUSE Tripartite motif-containing protein 66 OS=Mus
+            musculus GN=Trim66 PE=1 SV=2
+          Length = 1242
+
+ Score = 58.9 bits (141), Expect = 8e-09,   Method: Composition-based stats.
+ Identities = 24/47 (51%), Positives = 31/47 (65%)
+
+Query: 8    HEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQ 54
+            +EDFC+VC   G+LL CD C +VYHL C  P L + P G W+C  C+
+Sbjct: 995  NEDFCAVCINGGELLCCDRCPKVYHLSCHVPALLSFPGGEWVCTLCR 1041
+
+
+>sp|Q64127|TIF1A_MOUSE Transcription intermediary factor 1-alpha
+           OS=Mus musculus GN=Trim24 PE=1 SV=1
+          Length = 1051
+
+ Score = 58.5 bits (140), Expect = 9e-09,   Method: Composition-based stats.
+ Identities = 23/48 (47%), Positives = 32/48 (66%)
+
+Query: 8   HEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQD 55
+           +ED+C+VC+  G+LL C+ C +V+HL C  P L   P G WIC  C+D
+Sbjct: 826 NEDWCAVCQNGGELLCCEKCPKVFHLTCHVPTLTNFPSGEWICTFCRD 873
+
+
+>sp|P47156|JHD2_YEAST Histone demethylase JHD2 OS=Saccharomyces
+           cerevisiae GN=JHD2 PE=1 SV=1
+          Length = 728
+
+ Score = 58.5 bits (140), Expect = 1e-08,   Method: Composition-based stats.
+ Identities = 23/56 (41%), Positives = 34/56 (60%), Gaps = 3/56 (5%)
+
+Query: 1   GSSGSSGHEDFCSVCRKSG---QLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           GS      +D C VCRK+    + ++CD+C + +H+ CL PPL+ +P G WIC  C
+Sbjct: 227 GSDFEEDDDDACIVCRKTNDPKRTILCDSCDKPFHIYCLSPPLERVPSGDWICNTC 282
+
+
+>sp|Q56R14|TRI33_XENLA E3 ubiquitin-protein ligase TRIM33 OS=Xenopus
+           laevis GN=trim33 PE=1 SV=1
+          Length = 1091
+
+ Score = 58.5 bits (140), Expect = 1e-08,   Method: Composition-based stats.
+ Identities = 23/48 (47%), Positives = 32/48 (66%)
+
+Query: 8   HEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQD 55
+           +ED+C+VC+  G LL C+ C +V+HL C  P L + P G WIC  C+D
+Sbjct: 849 NEDWCAVCQNGGDLLCCEKCPKVFHLTCHVPTLLSFPSGEWICTFCRD 896
+
+
+>sp|Q6E2N3|TRI33_DANRE E3 ubiquitin-protein ligase TRIM33 OS=Danio
+           rerio GN=trim33 PE=2 SV=1
+          Length = 1163
+
+ Score = 58.2 bits (139), Expect = 1e-08,   Method: Composition-based stats.
+ Identities = 22/48 (45%), Positives = 34/48 (70%)
+
+Query: 8   HEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQD 55
+           +ED+C+VC+  G+LL CD C +V+H+ C  P LK+ P G W+C  C++
+Sbjct: 920 NEDWCAVCQNGGELLCCDHCPKVFHITCHIPTLKSSPSGDWMCTFCRN 967
+
+
+>sp|Q9NRL2|BAZ1A_HUMAN Bromodomain adjacent to zinc finger domain
+            protein 1A OS=Homo sapiens GN=BAZ1A PE=1 SV=2
+          Length = 1556
+
+ Score = 57.8 bits (138), Expect = 2e-08,   Method: Composition-based stats.
+ Identities = 21/46 (45%), Positives = 30/46 (65%), Gaps = 3/46 (6%)
+
+Query: 12   CSVCRKSG---QLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQ 54
+            C +CRK G    +++CD C R +H  C+ P LKT+P+G W CP C+
+Sbjct: 1151 CKICRKKGDAENMVLCDGCDRGHHTYCVRPKLKTVPEGDWFCPECR 1196
+
+
+>sp|Q9UPN9|TRI33_HUMAN E3 ubiquitin-protein ligase TRIM33 OS=Homo
+           sapiens GN=TRIM33 PE=1 SV=2
+          Length = 1127
+
+ Score = 57.8 bits (138), Expect = 2e-08,   Method: Composition-based stats.
+ Identities = 23/48 (47%), Positives = 32/48 (66%)
+
+Query: 8   HEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQD 55
+           +ED+C+VC+  G LL C+ C +V+HL C  P L + P G WIC  C+D
+Sbjct: 886 NEDWCAVCQNGGDLLCCEKCPKVFHLTCHVPTLLSFPSGDWICTFCRD 933
+
+
+>sp|O15016|TRI66_HUMAN Tripartite motif-containing protein 66 OS=Homo
+            sapiens GN=TRIM66 PE=2 SV=3
+          Length = 1214
+
+ Score = 57.8 bits (138), Expect = 2e-08,   Method: Composition-based stats.
+ Identities = 23/47 (48%), Positives = 31/47 (65%)
+
+Query: 8    HEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQ 54
+            +EDFC+VC   G+LL CD C +V+HL C  P L + P G W+C  C+
+Sbjct: 967  NEDFCAVCLNGGELLCCDRCPKVFHLSCHVPALLSFPGGEWVCTLCR 1013
+
+
+>sp|A6H619|PHRF1_MOUSE PHD and RING finger domain-containing protein
+           1 OS=Mus musculus GN=Phrf1 PE=2 SV=2
+          Length = 1682
+
+ Score = 57.4 bits (137), Expect = 2e-08,   Method: Composition-based stats.
+ Identities = 23/46 (50%), Positives = 30/46 (65%), Gaps = 3/46 (6%)
+
+Query: 11  FCSVCRKSGQ---LLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           FC VC +S +   LL+CD C   YH++CLDPPL+ +P   W CP C
+Sbjct: 187 FCEVCGRSDREDRLLLCDGCDAGYHMECLDPPLQEVPVDEWFCPEC 232
+
+
+>sp|Q99PP7|TRI33_MOUSE E3 ubiquitin-protein ligase TRIM33 OS=Mus
+           musculus GN=Trim33 PE=2 SV=2
+          Length = 1142
+
+ Score = 57.4 bits (137), Expect = 2e-08,   Method: Composition-based stats.
+ Identities = 23/48 (47%), Positives = 32/48 (66%)
+
+Query: 8   HEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQD 55
+           +ED+C+VC+  G LL C+ C +V+HL C  P L + P G WIC  C+D
+Sbjct: 901 NEDWCAVCQNGGDLLCCEKCPKVFHLTCHVPTLLSFPSGDWICTFCRD 948
+
+
+>sp|Q9P1Y6|PHRF1_HUMAN PHD and RING finger domain-containing protein
+           1 OS=Homo sapiens GN=PHRF1 PE=1 SV=2
+          Length = 1649
+
+ Score = 57.0 bits (136), Expect = 3e-08,   Method: Composition-based stats.
+ Identities = 26/57 (45%), Positives = 34/57 (59%), Gaps = 5/57 (8%)
+
+Query: 2   SSGSSGHED--FCSVCRKSGQ---LLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           +  S   ED  FC VC +S +   LL+CD C   YH++CLDPPL+ +P   W CP C
+Sbjct: 174 TKASEEEEDPTFCEVCGRSDREDRLLLCDGCDAGYHMECLDPPLQEVPVDEWFCPEC 230
+
+
+>sp|Q63625|PHRF1_RAT PHD and RING finger domain-containing protein 1
+           OS=Rattus norvegicus GN=Phrf1 PE=1 SV=2
+          Length = 1685
+
+ Score = 56.6 bits (135), Expect = 4e-08,   Method: Composition-based stats.
+ Identities = 23/46 (50%), Positives = 30/46 (65%), Gaps = 3/46 (6%)
+
+Query: 11  FCSVCRKSGQ---LLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           FC VC +S +   LL+CD C   YH++CLDPPL+ +P   W CP C
+Sbjct: 190 FCEVCGRSDREDRLLLCDGCDAGYHMECLDPPLQEVPVDEWFCPEC 235
+
+
+>sp|Q9VMJ7|JAD1_DROME Histone demethylase lid OS=Drosophila
+           melanogaster GN=lid PE=1 SV=1
+          Length = 1838
+
+ Score = 56.2 bits (134), Expect = 5e-08,   Method: Composition-based stats.
+ Identities = 22/45 (48%), Positives = 28/45 (62%), Gaps = 3/45 (6%)
+
+Query: 12  CSVCRKSG---QLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           C +C +      +L+CD C   YH  CL PPL +IPKG W+CPRC
+Sbjct: 451 CHICNRGDVEESMLLCDGCDDSYHTFCLLPPLTSIPKGEWLCPRC 495
+
+
+>sp|O88379|BAZ1A_MOUSE Bromodomain adjacent to zinc finger domain
+            protein 1A OS=Mus musculus GN=Baz1a PE=1 SV=2
+          Length = 1555
+
+ Score = 55.5 bits (132), Expect = 8e-08,   Method: Composition-based stats.
+ Identities = 20/46 (43%), Positives = 28/46 (60%), Gaps = 3/46 (6%)
+
+Query: 12   CSVCRKSG---QLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQ 54
+            C +CRK G    +++CD C R +H  C+ P LK +P G W CP C+
+Sbjct: 1152 CKICRKKGDAENMVLCDGCDRGHHTYCVRPKLKAVPDGDWFCPECR 1197
+
+
+>sp|Q62240|JAD1D_MOUSE Histone demethylase JARID1D OS=Mus musculus
+           GN=Jarid1d PE=2 SV=2
+          Length = 1548
+
+ Score = 55.1 bits (131), Expect = 1e-07,   Method: Composition-based stats.
+ Identities = 21/45 (46%), Positives = 30/45 (66%), Gaps = 3/45 (6%)
+
+Query: 12  CSVCRKSGQL---LMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           C +C +  ++   L+CD CS  YH+ CL PPL  +PKG+W CP+C
+Sbjct: 326 CRICSRGDEVDKFLLCDGCSDNYHIFCLLPPLSEVPKGVWRCPKC 370
+
+
+>sp|Q30DN6|JAD1D_CANFA Histone demethylase JARID1D OS=Canis
+           familiaris GN=JARID1D PE=2 SV=1
+          Length = 1545
+
+ Score = 54.7 bits (130), Expect = 1e-07,   Method: Composition-based stats.
+ Identities = 21/45 (46%), Positives = 29/45 (64%), Gaps = 3/45 (6%)
+
+Query: 12  CSVCRKSGQ---LLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           C +C +  +   LL+CD C   YH+ CL PPL  IP+G+W CP+C
+Sbjct: 320 CRICSRGDEDDKLLLCDGCDDTYHIFCLIPPLPEIPRGVWRCPKC 364
+
+
+>sp|P41230|JAD1C_MOUSE Histone demethylase JARID1C OS=Mus musculus
+           GN=Jarid1c PE=2 SV=4
+          Length = 1554
+
+ Score = 54.7 bits (130), Expect = 1e-07,   Method: Composition-based stats.
+ Identities = 22/42 (52%), Positives = 28/42 (66%)
+
+Query: 12  CSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           CS   +  +LL+CD C   YH+ CL PPL  IPKG+W CP+C
+Sbjct: 330 CSRGDEDDKLLLCDGCDDNYHIFCLLPPLPEIPKGVWRCPKC 371
+
+
+>sp|Q38JA7|JAD1C_CANFA Histone demethylase JARID1C OS=Canis
+           familiaris GN=JARID1C PE=2 SV=1
+          Length = 1556
+
+ Score = 54.7 bits (130), Expect = 1e-07,   Method: Composition-based stats.
+ Identities = 22/42 (52%), Positives = 28/42 (66%)
+
+Query: 12  CSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           CS   +  +LL+CD C   YH+ CL PPL  IPKG+W CP+C
+Sbjct: 330 CSRGDEDDKLLLCDGCDDNYHIFCLLPPLPEIPKGVWRCPKC 371
+
+
+>sp|Q8UVR5|BAZ1A_XENLA Bromodomain adjacent to zinc finger domain
+           protein 1A (Fragment) OS=Xenopus laevis GN=baz1a PE=2
+           SV=1
+          Length = 627
+
+ Score = 54.7 bits (130), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 21/46 (45%), Positives = 29/46 (63%), Gaps = 3/46 (6%)
+
+Query: 12  CSVCRKSG---QLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQ 54
+           C VCRK G    +++CD C R +H+ C+ P LK +P+G W CP C 
+Sbjct: 225 CKVCRKKGDGESMVLCDGCDRGHHIYCVRPKLKYVPEGDWFCPECH 270
+
+
+>sp|P41229|JAD1C_HUMAN Histone demethylase JARID1C OS=Homo sapiens
+           GN=JARID1C PE=1 SV=2
+          Length = 1560
+
+ Score = 54.3 bits (129), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 22/42 (52%), Positives = 28/42 (66%)
+
+Query: 12  CSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           CS   +  +LL+CD C   YH+ CL PPL  IPKG+W CP+C
+Sbjct: 330 CSRGDEDDKLLLCDGCDDNYHIFCLLPPLPEIPKGVWRCPKC 371
+
+
+>sp|A1YVX4|JAD1C_PIG Histone demethylase JARID1C OS=Sus scrofa
+           GN=JARID1C PE=2 SV=1
+          Length = 1516
+
+ Score = 54.3 bits (129), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 22/42 (52%), Positives = 28/42 (66%)
+
+Query: 12  CSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           CS   +  +LL+CD C   YH+ CL PPL  IPKG+W CP+C
+Sbjct: 289 CSRGDEDDKLLLCDGCDDNYHIFCLLPPLPEIPKGVWRCPKC 330
+
+
+>sp|Q8NEZ4|MLL3_HUMAN Histone-lysine N-methyltransferase MLL3 OS=Homo
+            sapiens GN=MLL3 PE=1 SV=3
+          Length = 4911
+
+ Score = 54.3 bits (129), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 24/45 (53%), Positives = 29/45 (64%), Gaps = 3/45 (6%)
+
+Query: 12   CSVCRKS---GQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+            C  C K+   G+LL+CD C   YH  CLDPPL+T+PKG W C  C
+Sbjct: 1010 CEACGKATDPGRLLLCDDCDISYHTYCLDPPLQTVPKGGWKCKWC 1054
+
+
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 19/46 (41%), Positives = 29/46 (63%), Gaps = 3/46 (6%)
+
+Query: 12  CSVCRKSGQ---LLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQ 54
+           C  C++SG+   +L+CDTC + YH  CL P +K++P   W C  C+
+Sbjct: 391 CQNCKQSGEDSKMLVCDTCDKGYHTFCLQPVMKSVPTNGWKCKNCR 436
+
+
+>sp|Q96QT6|PHF12_HUMAN PHD finger protein 12 OS=Homo sapiens
+           GN=PHF12 PE=1 SV=2
+          Length = 1004
+
+ Score = 53.9 bits (128), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 23/53 (43%), Positives = 32/53 (60%), Gaps = 2/53 (3%)
+
+Query: 3   SGSSGHEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPL--KTIPKGMWICPRC 53
+           SG + + D C  C++ G LL CD C   +HL C +PPL  + +P G W+C RC
+Sbjct: 50  SGRATNHDSCDSCKEGGDLLCCDHCPAAFHLQCCNPPLSEEMLPPGEWMCHRC 102
+
+
+
+ Score = 48.5 bits (114), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 19/43 (44%), Positives = 27/43 (62%), Gaps = 3/43 (6%)
+
+Query: 12  CSVCRKS---GQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICP 51
+           C  C +S     L+ CD C  ++H+DCL+PPL  +P G W+CP
+Sbjct: 274 CFTCNRSCRVAPLIQCDYCPLLFHMDCLEPPLTAMPLGRWMCP 316
+
+
+>sp|Q5XUN4|JAD1D_PANTR Histone demethylase JARID1D OS=Pan
+           troglodytes GN=JARID1D PE=2 SV=1
+          Length = 1535
+
+ Score = 53.9 bits (128), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 22/45 (48%), Positives = 28/45 (62%), Gaps = 3/45 (6%)
+
+Query: 12  CSVCRKSGQ---LLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           C VC +  +   LL CD C   YH+ CL PPL  IP+G+W CP+C
+Sbjct: 317 CQVCSRGDEDDKLLFCDGCDDNYHIFCLLPPLPEIPRGIWRCPKC 361
+
+
+>sp|Q8BRH4|MLL3_MOUSE Histone-lysine N-methyltransferase MLL3 OS=Mus
+            musculus GN=Mll3 PE=2 SV=2
+          Length = 4903
+
+ Score = 53.9 bits (128), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 24/45 (53%), Positives = 29/45 (64%), Gaps = 3/45 (6%)
+
+Query: 12   CSVCRKS---GQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+            C  C K+   G+LL+CD C   YH  CLDPPL+T+PKG W C  C
+Sbjct: 1003 CEACGKATDPGRLLLCDDCDISYHTYCLDPPLQTVPKGGWKCKWC 1047
+
+
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 19/46 (41%), Positives = 29/46 (63%), Gaps = 3/46 (6%)
+
+Query: 12  CSVCRKSGQ---LLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQ 54
+           C  C++SG+   +L+CDTC + YH  CL P +K++P   W C  C+
+Sbjct: 390 CQNCKQSGEDSKMLVCDTCDKGYHTFCLQPVMKSVPTNGWKCKNCR 435
+
+
+>sp|Q9BY66|JAD1D_HUMAN Histone demethylase JARID1D OS=Homo sapiens
+           GN=JARID1D PE=1 SV=2
+          Length = 1539
+
+ Score = 53.9 bits (128), Expect = 3e-07,   Method: Composition-based stats.
+ Identities = 22/45 (48%), Positives = 28/45 (62%), Gaps = 3/45 (6%)
+
+Query: 12  CSVCRKSGQ---LLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           C VC +  +   LL CD C   YH+ CL PPL  IP+G+W CP+C
+Sbjct: 317 CQVCSRGDEDDKLLFCDGCDDNYHIFCLLPPLPEIPRGIWRCPKC 361
+
+
+>sp|Q5SPL2|PHF12_MOUSE PHD finger protein 12 OS=Mus musculus
+           GN=Phf12 PE=2 SV=1
+          Length = 1003
+
+ Score = 53.5 bits (127), Expect = 3e-07,   Method: Composition-based stats.
+ Identities = 23/53 (43%), Positives = 32/53 (60%), Gaps = 2/53 (3%)
+
+Query: 3   SGSSGHEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPL--KTIPKGMWICPRC 53
+           SG + + D C  C++ G LL CD C   +HL C +PPL  + +P G W+C RC
+Sbjct: 50  SGRATNHDSCDSCKEGGDLLCCDHCPAAFHLQCCNPPLSEEMLPPGEWMCHRC 102
+
+
+
+ Score = 48.1 bits (113), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 19/43 (44%), Positives = 27/43 (62%), Gaps = 3/43 (6%)
+
+Query: 12  CSVCRKS---GQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICP 51
+           C  C +S     L+ CD C  ++H+DCL+PPL  +P G W+CP
+Sbjct: 274 CFTCNRSCRVAPLIQCDYCPLLFHMDCLEPPLTAMPLGRWMCP 316
+
+
+>sp|Q9HDV4|LID2_SCHPO Lid2 complex component lid2
+           OS=Schizosaccharomyces pombe GN=lid2 PE=1 SV=1
+          Length = 1513
+
+ Score = 53.5 bits (127), Expect = 3e-07,   Method: Composition-based stats.
+ Identities = 19/45 (42%), Positives = 27/45 (60%)
+
+Query: 10  DFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQ 54
+           ++C + +    +L+CD C   YH  CLDPPL +IPK  W C  C+
+Sbjct: 272 EYCGLDKNPETILLCDGCEAAYHTSCLDPPLTSIPKEDWYCDACK 316
+
+
+>sp|Q9FNE9|ATXR6_ARATH Histone-lysine N-methyltransferase ATXR6
+          OS=Arabidopsis thaliana GN=ATXR6 PE=2 SV=1
+          Length = 349
+
+ Score = 53.1 bits (126), Expect = 4e-07,   Method: Composition-based stats.
+ Identities = 20/42 (47%), Positives = 28/42 (66%)
+
+Query: 12 CSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+          CS  ++  +LL+CD C + +HL CL P L ++PKG W CP C
+Sbjct: 38 CSSGKQPAKLLLCDKCDKGFHLFCLRPILVSVPKGSWFCPSC 79
+
+
+>sp|P29375|JAD1A_HUMAN Histone demethylase JARID1A OS=Homo sapiens
+           GN=JARID1A PE=1 SV=3
+          Length = 1690
+
+ Score = 53.1 bits (126), Expect = 4e-07,   Method: Composition-based stats.
+ Identities = 21/43 (48%), Positives = 25/43 (58%)
+
+Query: 11  FCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           FC       +LL+CD C   YH  CL PPL  +PKG W CP+C
+Sbjct: 298 FCGRGNNEDKLLLCDGCDDSYHTFCLIPPLPDVPKGDWRCPKC 340
+
+
+>sp|Q3UXZ9|JAD1A_MOUSE Histone demethylase JARID1A OS=Mus musculus
+           GN=Jarid1a PE=1 SV=2
+          Length = 1690
+
+ Score = 53.1 bits (126), Expect = 4e-07,   Method: Composition-based stats.
+ Identities = 21/43 (48%), Positives = 25/43 (58%)
+
+Query: 11  FCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           FC       +LL+CD C   YH  CL PPL  +PKG W CP+C
+Sbjct: 298 FCGRGNNEDKLLLCDGCDDSYHTFCLLPPLPDVPKGDWRCPKC 340
+
+
+>sp|Q9ULU4|PKCB1_HUMAN Protein kinase C-binding protein 1 OS=Homo
+           sapiens GN=ZMYND8 PE=1 SV=2
+          Length = 1186
+
+ Score = 52.4 bits (124), Expect = 6e-07,   Method: Composition-based stats.
+ Identities = 24/49 (48%), Positives = 30/49 (61%), Gaps = 3/49 (6%)
+
+Query: 7   GHEDF-CSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQ 54
+           G  DF C VC + GQ+L C+ C RVYH  CL   L + P+G W CP C+
+Sbjct: 85  GRNDFYCWVCHREGQVLCCELCPRVYHAKCLR--LTSEPEGDWFCPECE 131
+
+
+>sp|Q09698|YA27_SCHPO Uncharacterized protein C2F7.07c
+           OS=Schizosaccharomyces pombe GN=SPAC2F7.07c PE=2 SV=1
+          Length = 607
+
+ Score = 52.4 bits (124), Expect = 7e-07,   Method: Composition-based stats.
+ Identities = 19/49 (38%), Positives = 27/49 (55%), Gaps = 2/49 (4%)
+
+Query: 8   HEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPL--KTIPKGMWICPRCQ 54
+           + D+CS C   G  L C+TC   +H  C+DPP+  K +P   W C  C+
+Sbjct: 262 NNDYCSACHGPGNFLCCETCPNSFHFTCIDPPIEEKNLPDDAWYCNECK 310
+
+
+
+ Score = 46.6 bits (109), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 23/57 (40%), Positives = 29/57 (50%), Gaps = 6/57 (10%)
+
+Query: 6   SGHEDFCSVCRKSG----QLLMCDTCSRVYHLDCLDPPLKTIPKGM--WICPRCQDQ 56
+           SG    C  C KS      +L CD C+  +H DCL+PPL T+P  +  W CP   D 
+Sbjct: 403 SGTPILCFRCHKSALVSQSILACDYCNSYWHPDCLNPPLATLPSNLRKWKCPNHSDH 459
+
+
+>sp|Q96T23|RSF1_HUMAN Remodeling and spacing factor 1 OS=Homo
+           sapiens GN=RSF1 PE=1 SV=1
+          Length = 1431
+
+ Score = 52.4 bits (124), Expect = 8e-07,   Method: Composition-based stats.
+ Identities = 22/48 (45%), Positives = 27/48 (56%), Gaps = 6/48 (12%)
+
+Query: 15  CRKSGQ------LLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQDQ 56
+           C+K G       +L+CD+C   YH  CL PPL  IP G W CP CQ +
+Sbjct: 884 CKKCGLPNHPELILLCDSCDSGYHTACLRPPLMIIPDGEWFCPPCQHK 931
+
+
+>sp|Q6IQX0|JA1BB_DANRE Histone demethylase JARID1B-B OS=Danio rerio
+           GN=jarid1bb PE=2 SV=2
+          Length = 1503
+
+ Score = 51.6 bits (122), Expect = 1e-06,   Method: Composition-based stats.
+ Identities = 24/48 (50%), Positives = 28/48 (58%), Gaps = 3/48 (6%)
+
+Query: 12  CSVCRKSG---QLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQDQ 56
+           C VC K     +LL+CD C   YH  CL PPL  +PKG W CP+C  Q
+Sbjct: 298 CLVCGKGNDEDRLLLCDGCDDSYHTFCLIPPLTDVPKGDWRCPKCLTQ 345
+
+
+>sp|O14686|MLL2_HUMAN Histone-lysine N-methyltransferase MLL2 OS=Homo
+            sapiens GN=MLL2 PE=1 SV=1
+          Length = 5262
+
+ Score = 51.2 bits (121), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 25/48 (52%), Positives = 27/48 (56%), Gaps = 6/48 (12%)
+
+Query: 12   CSVCRKSGQ------LLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+            C VC   GQ      LL+CD C   YH  CLDPPL T+PKG W C  C
+Sbjct: 1152 CIVCEVCGQASDPSRLLLCDDCDISYHTYCLDPPLLTVPKGGWKCKWC 1199
+
+
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 19/46 (41%), Positives = 28/46 (60%), Gaps = 3/46 (6%)
+
+Query: 12  CSVCRKSG---QLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQ 54
+           C  CRK G   ++L+C+TC + YH  CL PP++ +P   W C  C+
+Sbjct: 276 CQACRKPGNDSKMLVCETCDKGYHTFCLKPPMEELPAHSWKCKACR 321
+
+
+>sp|Q9S775|PKL_ARATH CHD3-type chromatin-remodeling factor PICKLE
+          OS=Arabidopsis thaliana GN=PKL PE=1 SV=1
+          Length = 1384
+
+ Score = 51.2 bits (121), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 19/49 (38%), Positives = 26/49 (53%)
+
+Query: 5  SSGHEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+          +   E+ C  C +S  L+ C+TC+  +H  CL PPLK      W CP C
+Sbjct: 45 TDAKENACQACGESTNLVSCNTCTYAFHAKCLVPPLKDASVENWRCPEC 93
+
+
+>sp|Q9UGL1|JAD1B_HUMAN Histone demethylase JARID1B OS=Homo sapiens
+           GN=JARID1B PE=1 SV=2
+          Length = 1544
+
+ Score = 50.8 bits (120), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 21/46 (45%), Positives = 25/46 (54%)
+
+Query: 11  FCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQDQ 56
+            C       +LL+CD C   YH  CL PPL  +PKG W CP+C  Q
+Sbjct: 314 LCGSGNDEDRLLLCDGCDDSYHTFCLIPPLHDVPKGDWRCPKCLAQ 359
+
+
+>sp|Q80Y84|JAD1B_MOUSE Histone demethylase JARID1B OS=Mus musculus
+           GN=Jarid1b PE=1 SV=1
+          Length = 1544
+
+ Score = 50.8 bits (120), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 21/46 (45%), Positives = 25/46 (54%)
+
+Query: 11  FCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQDQ 56
+            C       +LL+CD C   YH  CL PPL  +PKG W CP+C  Q
+Sbjct: 314 LCGSGNDEDRLLLCDGCDDSYHTFCLVPPLHDVPKGDWRCPKCLAQ 359
+
+
+>sp|Q9UIF8|BAZ2B_HUMAN Bromodomain adjacent to zinc finger domain
+            protein 2B OS=Homo sapiens GN=BAZ2B PE=1 SV=3
+          Length = 2168
+
+ Score = 50.4 bits (119), Expect = 3e-06,   Method: Composition-based stats.
+ Identities = 20/46 (43%), Positives = 25/46 (54%), Gaps = 3/46 (6%)
+
+Query: 11   FCSVCRKSGQ---LLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+            +C +CRK      LL+CD C +  H  C  P + TIP G W CP C
+Sbjct: 1933 YCQICRKGDNEELLLLCDGCDKGCHTYCHRPKITTIPDGDWFCPAC 1978
+
+
+>sp|Q5F3R2|JAD1B_CHICK Histone demethylase JARID1B OS=Gallus gallus
+           GN=jarid1b PE=2 SV=1
+          Length = 1522
+
+ Score = 50.1 bits (118), Expect = 3e-06,   Method: Composition-based stats.
+ Identities = 21/46 (45%), Positives = 25/46 (54%)
+
+Query: 11  FCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQDQ 56
+            C       +LL+CD C   YH  CL PPL  +PKG W CP+C  Q
+Sbjct: 289 LCGSGNDEDRLLLCDGCDDSYHTFCLIPPLHDVPKGDWRCPQCLAQ 334
+
+
+>sp|Q9DE13|BAZ2B_CHICK Bromodomain adjacent to zinc finger domain
+            protein 2B OS=Gallus gallus GN=BAZ2B PE=2 SV=1
+          Length = 2130
+
+ Score = 49.7 bits (117), Expect = 5e-06,   Method: Composition-based stats.
+ Identities = 20/46 (43%), Positives = 25/46 (54%), Gaps = 3/46 (6%)
+
+Query: 11   FCSVCRKSGQ---LLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+            +C +CRK      LL+CD C +  H  C  P + TIP G W CP C
+Sbjct: 1897 YCQICRKGDNEELLLLCDGCDKGCHTYCHRPKITTIPDGDWFCPAC 1942
+
+
+>sp|Q9H930|LY10L_HUMAN Nuclear body protein SP140-like protein
+           OS=Homo sapiens GN=SP140L PE=2 SV=2
+          Length = 438
+
+ Score = 49.3 bits (116), Expect = 6e-06,   Method: Composition-based stats.
+ Identities = 19/33 (57%), Positives = 24/33 (72%)
+
+Query: 10  DFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKT 42
+           D C VCR  G+L  CDTCSRV+H DC  PP+++
+Sbjct: 404 DECEVCRDGGELFCCDTCSRVFHEDCHIPPVES 436
+
+
+>sp|Q13342|LY10_HUMAN Nuclear body protein SP140 OS=Homo sapiens
+           GN=SP140 PE=2 SV=2
+          Length = 867
+
+ Score = 48.5 bits (114), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 22/45 (48%), Positives = 28/45 (62%), Gaps = 1/45 (2%)
+
+Query: 10  DFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQ 54
+           D C VCR  G+L  CDTCSRV+H DC  PP++   +  W C  C+
+Sbjct: 691 DECEVCRDGGELFCCDTCSRVFHEDCHIPPVEA-ERTPWNCIFCR 734
+
+
+>sp|A9LMC0|DPF3_DANRE Zinc finger protein DPF3 OS=Danio rerio
+           GN=dpf3 PE=2 SV=1
+          Length = 391
+
+ Score = 48.1 bits (113), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 23/47 (48%), Positives = 28/47 (59%), Gaps = 3/47 (6%)
+
+Query: 12  CSVCRKS---GQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQD 55
+           CS+C  S    QLL CD C R YH+ CL PP+   P+G W C  CQ+
+Sbjct: 333 CSLCGTSENDDQLLFCDDCDRGYHMYCLKPPMTQPPEGSWSCHLCQN 379
+
+
+>sp|Q9HB58|SP110_HUMAN Sp110 nuclear body protein OS=Homo sapiens
+           GN=SP110 PE=1 SV=4
+          Length = 689
+
+ Score = 47.8 bits (112), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 21/47 (44%), Positives = 29/47 (61%), Gaps = 1/47 (2%)
+
+Query: 8   HEDFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQ 54
+           + D C VC + GQLL C TC RV+H DC  PP++   + +W C  C+
+Sbjct: 533 NSDECEVCCQGGQLLCCGTCPRVFHEDCHIPPVEA-KRMLWSCTFCR 578
+
+
+>sp|Q13263|TIF1B_HUMAN Transcription intermediary factor 1-beta
+           OS=Homo sapiens GN=TRIM28 PE=1 SV=5
+          Length = 835
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 19/43 (44%), Positives = 25/43 (58%)
+
+Query: 12  CSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQ 54
+           C VC+K G L+MC+ C   +HLDC  P L+ +P   W C  C 
+Sbjct: 628 CRVCQKPGDLVMCNQCEFCFHLDCHLPALQDVPGEEWSCSLCH 670
+
+
+>sp|Q09819|YAC5_SCHPO Uncharacterized protein C16C9.05
+           OS=Schizosaccharomyces pombe GN=SPAC16C9.05 PE=1 SV=1
+          Length = 404
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 20/46 (43%), Positives = 27/46 (58%), Gaps = 2/46 (4%)
+
+Query: 10  DFCSVCRKSGQLLMCDTCSRVYHLDCLDPPL--KTIPKGMWICPRC 53
+           D+CS C   G  + C+ C   +HL CL+PPL  + IP+G W C  C
+Sbjct: 118 DYCSACGGRGLFICCEGCPCSFHLSCLEPPLTPENIPEGSWFCVTC 163
+
+
+>sp|O08629|TIF1B_RAT Transcription intermediary factor 1-beta
+           OS=Rattus norvegicus GN=Trim28 PE=1 SV=2
+          Length = 835
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 19/43 (44%), Positives = 25/43 (58%)
+
+Query: 12  CSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQ 54
+           C VC+K G L+MC+ C   +HLDC  P L+ +P   W C  C 
+Sbjct: 629 CRVCQKPGDLVMCNQCEFCFHLDCHLPSLQDVPGEEWSCSLCH 671
+
+
+>sp|Q62318|TIF1B_MOUSE Transcription intermediary factor 1-beta
+           OS=Mus musculus GN=Trim28 PE=1 SV=3
+          Length = 834
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 19/43 (44%), Positives = 25/43 (58%)
+
+Query: 12  CSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQ 54
+           C VC+K G L+MC+ C   +HLDC  P L+ +P   W C  C 
+Sbjct: 628 CRVCQKPGDLVMCNQCEFCFHLDCHLPALQDVPGEEWSCSLCH 670
+
+
+>sp|P58270|DPF3_CHICK Zinc finger protein DPF3 OS=Gallus gallus
+           GN=DPF3 PE=2 SV=1
+          Length = 427
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 22/47 (46%), Positives = 29/47 (61%), Gaps = 3/47 (6%)
+
+Query: 12  CSVCRKS---GQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQD 55
+           CS+C  S    QLL CD C R YH+ CL+PP+   P+G W C  C++
+Sbjct: 368 CSLCGTSENDDQLLFCDDCDRGYHMYCLNPPVFEPPEGSWSCHLCRE 414
+
+
+>sp|O94880|PHF14_HUMAN PHD finger protein 14 OS=Homo sapiens
+           GN=PHF14 PE=1 SV=1
+          Length = 888
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 22/49 (44%), Positives = 28/49 (57%), Gaps = 7/49 (14%)
+
+Query: 12  CSVCRKSGQ---LLMCDTCSRVYHLDCLDPPLKTIPK----GMWICPRC 53
+           C +C+K+     LL+CDTC   YHL CLDPPL  +P+      W C  C
+Sbjct: 728 CGICKKNHDQHLLLLCDTCKLHYHLGCLDPPLTRMPRKTKNSYWQCSEC 776
+
+
+>sp|Q9D4H9|PHF14_MOUSE PHD finger protein 14 OS=Mus musculus
+           GN=Phf14 PE=1 SV=1
+          Length = 881
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 22/49 (44%), Positives = 28/49 (57%), Gaps = 7/49 (14%)
+
+Query: 12  CSVCRKSGQ---LLMCDTCSRVYHLDCLDPPLKTIPK----GMWICPRC 53
+           C +C+K+     LL+CDTC   YHL CLDPPL  +P+      W C  C
+Sbjct: 721 CGICKKNHDQHLLLLCDTCKLHYHLGCLDPPLTRMPRKTKNSYWQCSEC 769
+
+
+>sp|Q96T88|UHRF1_HUMAN E3 ubiquitin-protein ligase UHRF1 OS=Homo
+           sapiens GN=UHRF1 PE=1 SV=1
+          Length = 793
+
+ Score = 46.6 bits (109), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 19/48 (39%), Positives = 29/48 (60%), Gaps = 4/48 (8%)
+
+Query: 12  CSVC---RKSGQLLMCDTCSRVYHLDCLDPPLKTIP-KGMWICPRCQD 55
+           C +C   +   + LMCD C   +H+ CLDPPL ++P +  W CP C++
+Sbjct: 318 CHLCGGRQDPDKQLMCDECDMAFHIYCLDPPLSSVPSEDEWYCPECRN 365
+
+
+>sp|P58268|REQU_CHICK Zinc finger protein ubi-d4 OS=Gallus gallus
+           GN=REQ PE=2 SV=1
+          Length = 405
+
+ Score = 46.2 bits (108), Expect = 5e-05,   Method: Composition-based stats.
+ Identities = 20/46 (43%), Positives = 24/46 (52%)
+
+Query: 10  DFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQD 55
+           + C       QLL CD C R YH+ CL PP+   P+G W C  C D
+Sbjct: 345 NICGTSENDDQLLFCDDCDRGYHMYCLTPPMSEPPEGSWSCHLCLD 390
+
+
+>sp|Q92784|DPF3_HUMAN Zinc finger protein DPF3 OS=Homo sapiens
+           GN=DPF3 PE=1 SV=3
+          Length = 378
+
+ Score = 45.8 bits (107), Expect = 6e-05,   Method: Composition-based stats.
+ Identities = 19/43 (44%), Positives = 23/43 (53%)
+
+Query: 11  FCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+            C       QLL CD C R YH+ CL+PP+   P+G W C  C
+Sbjct: 321 LCGTSENDDQLLFCDDCDRGYHMYCLNPPVAEPPEGSWSCHLC 363
+
+
+>sp|P58269|DPF3_MOUSE Zinc finger protein DPF3 OS=Mus musculus
+           GN=Dpf3 PE=2 SV=2
+          Length = 378
+
+ Score = 45.8 bits (107), Expect = 6e-05,   Method: Composition-based stats.
+ Identities = 19/43 (44%), Positives = 23/43 (53%)
+
+Query: 11  FCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+            C       QLL CD C R YH+ CL+PP+   P+G W C  C
+Sbjct: 321 LCGTSENDDQLLFCDDCDRGYHMYCLNPPVAEPPEGSWSCHLC 363
+
+
+>sp|Q9W636|REQUB_XENLA Zinc finger protein ubi-d4 B (Fragment)
+           OS=Xenopus laevis GN=req-B PE=2 SV=2
+          Length = 366
+
+ Score = 45.4 bits (106), Expect = 8e-05,   Method: Composition-based stats.
+ Identities = 20/46 (43%), Positives = 24/46 (52%)
+
+Query: 10  DFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQD 55
+           + C       QLL CD C R YH+ CL PP+   P+G W C  C D
+Sbjct: 308 NICGTSENDDQLLFCDDCDRGYHMYCLSPPVAEPPEGSWSCHLCLD 353
+
+
+>sp|Q8VZJ1|ATXR5_ARATH Histone-lysine N-methyltransferase ATXR5
+           OS=Arabidopsis thaliana GN=ATXR5 PE=2 SV=1
+          Length = 352
+
+ Score = 45.4 bits (106), Expect = 8e-05,   Method: Composition-based stats.
+ Identities = 18/45 (40%), Positives = 25/45 (55%)
+
+Query: 12  CSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQDQ 56
+           C       +LL+CD C R +H+ CL P +  +P G W+C  C DQ
+Sbjct: 70  CGSGEGDDELLLCDKCDRGFHMKCLRPIVVRVPIGTWLCVDCSDQ 114
+
+
+>sp|Q9QX66|DPF1_MOUSE Zinc finger protein neuro-d4 OS=Mus musculus
+           GN=Dpf1 PE=2 SV=2
+          Length = 387
+
+ Score = 45.1 bits (105), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 22/45 (48%), Positives = 26/45 (57%), Gaps = 3/45 (6%)
+
+Query: 12  CSVCRKS---GQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           CS+C  S    QLL CD C R YH+ CL PP+   P+G W C  C
+Sbjct: 328 CSLCGTSENDDQLLFCDDCDRGYHMYCLSPPMAEPPEGSWSCHLC 372
+
+
+>sp|Q91YE5|BAZ2A_MOUSE Bromodomain adjacent to zinc finger domain
+            protein 2A OS=Mus musculus GN=Baz2a PE=1 SV=1
+          Length = 1850
+
+ Score = 45.1 bits (105), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 20/48 (41%), Positives = 26/48 (54%), Gaps = 3/48 (6%)
+
+Query: 12   CSVCRKSGQ---LLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQDQ 56
+            C VCRK      LL+CD C R  H+ C  P ++ +P+G W C  C  Q
+Sbjct: 1626 CLVCRKGDNDEFLLLCDGCDRGCHIYCHRPKMEAVPEGDWFCAVCLSQ 1673
+
+
+>sp|P48785|PRH_ARATH Pathogenesis-related homeodomain protein
+           OS=Arabidopsis thaliana GN=PRH PE=2 SV=1
+          Length = 796
+
+ Score = 45.1 bits (105), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 26/64 (40%), Positives = 34/64 (53%), Gaps = 11/64 (17%)
+
+Query: 1   GSSGSSGHED-FCSVCRK-----SGQLLMCD-TCSRVYHLDCLDPPLKT--IPKG--MWI 49
+            S GS  H+  FC+ C          +++CD TC+R +H  CLDPPL+T  IP G   W 
+Sbjct: 181 ASDGSIHHDHIFCAECNSREAFPDNDIILCDGTCNRAFHQKCLDPPLETESIPPGDQGWF 240
+
+Query: 50  CPRC 53
+           C  C
+Sbjct: 241 CKFC 244
+
+
+>sp|Q9UIF9|BAZ2A_HUMAN Bromodomain adjacent to zinc finger domain
+            protein 2A OS=Homo sapiens GN=BAZ2A PE=1 SV=3
+          Length = 1878
+
+ Score = 45.1 bits (105), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 20/48 (41%), Positives = 26/48 (54%), Gaps = 3/48 (6%)
+
+Query: 12   CSVCRKSGQ---LLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQDQ 56
+            C VCRK      LL+CD C R  H+ C  P ++ +P+G W C  C  Q
+Sbjct: 1652 CLVCRKGDNDEFLLLCDGCDRGCHIYCHRPKMEAVPEGDWFCTVCLAQ 1699
+
+
+>sp|Q9W638|REQUA_XENLA Zinc finger protein ubi-d4 A OS=Xenopus
+           laevis GN=req-A PE=2 SV=1
+          Length = 388
+
+ Score = 45.1 bits (105), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 20/46 (43%), Positives = 24/46 (52%)
+
+Query: 10  DFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQD 55
+           + C       QLL CD C R YH+ CL PP+   P+G W C  C D
+Sbjct: 330 NICGTSENDDQLLFCDDCDRGYHMYCLVPPVAEPPEGSWSCHLCLD 375
+
+
+>sp|Q9VWF2|SAYP_DROME Supporter of activation of yellow protein
+            OS=Drosophila melanogaster GN=e(y)3 PE=2 SV=3
+          Length = 2006
+
+ Score = 44.7 bits (104), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 21/45 (46%), Positives = 27/45 (60%), Gaps = 5/45 (11%)
+
+Query: 12   CSVCRKS---GQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+            C  CR S   G++L C+ C R YH+ CL   L+T+P G W C RC
+Sbjct: 1751 CIKCRSSQRPGKMLYCEQCDRGYHIYCLG--LRTVPDGRWSCERC 1793
+
+
+>sp|P58267|DPF1_CHICK Zinc finger protein neuro-d4 OS=Gallus gallus
+           GN=DPF1 PE=2 SV=1
+          Length = 380
+
+ Score = 44.7 bits (104), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 21/48 (43%), Positives = 26/48 (54%), Gaps = 3/48 (6%)
+
+Query: 12  CSVC---RKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQDQ 56
+           CS+C       QLL CD C R YH+ C+ PP+   P+G W C  C  Q
+Sbjct: 321 CSLCGSAENDEQLLFCDDCDRGYHMYCISPPVAEPPEGTWSCHLCLRQ 368
+
+
+>sp|Q6P2L6|NSD3_MOUSE Histone-lysine N-methyltransferase NSD3 OS=Mus
+            musculus GN=Whsc1l1 PE=1 SV=2
+          Length = 1439
+
+ Score = 44.7 bits (104), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 24/52 (46%), Positives = 30/52 (57%), Gaps = 6/52 (11%)
+
+Query: 8    HEDFCSVCRKSGQLLMCDT--CSRVYHLDCLDPPLKTIPKGMWICP--RCQD 55
+            HED+C  C   G+L+MCD   C + YHL CL+  L   P G W CP  RC +
+Sbjct: 1322 HEDYCFQCGDGGELVMCDKKDCPKAYHLLCLN--LTQPPHGKWECPWHRCDE 1371
+
+
+>sp|Q7TMI3|UHRF2_MOUSE E3 ubiquitin-protein ligase UHRF2 OS=Mus
+           musculus GN=Uhrf2 PE=2 SV=1
+          Length = 803
+
+ Score = 44.3 bits (103), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 18/44 (40%), Positives = 24/44 (54%), Gaps = 1/44 (2%)
+
+Query: 12  CSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIP-KGMWICPRCQ 54
+           C   R     L+CD C+  YH+ CL PPL  +P +  W CP C+
+Sbjct: 351 CGEKRDPNMQLLCDECNMAYHIYCLSPPLDKVPEEEYWYCPSCK 394
+
+
+>sp|Q96PU4|UHRF2_HUMAN E3 ubiquitin-protein ligase UHRF2 OS=Homo
+           sapiens GN=UHRF2 PE=1 SV=1
+          Length = 802
+
+ Score = 44.3 bits (103), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 20/51 (39%), Positives = 28/51 (54%), Gaps = 4/51 (7%)
+
+Query: 8   HEDFCSVC---RKSGQLLMCDTCSRVYHLDCLDPPLKTIP-KGMWICPRCQ 54
+           H   C VC    +    L+CD C+  YH+ CL+PPL  +P +  W CP C+
+Sbjct: 343 HSCSCRVCGGKHEPNMQLLCDECNVAYHIYCLNPPLDKVPEEEYWYCPSCK 393
+
+
+>sp|P46605|HOX1A_MAIZE Homeobox protein HOX1A OS=Zea mays GN=HOX1A
+           PE=2 SV=1
+          Length = 719
+
+ Score = 44.3 bits (103), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 26/63 (41%), Positives = 35/63 (55%), Gaps = 11/63 (17%)
+
+Query: 2   SSGSSGHED-FCSVCRKS-----GQLLMCD-TCSRVYHLDCLDPPLKT--IPKG--MWIC 50
+           S G    ED FCS C  +       +++CD  C R +H +CL+PPL+T  IP G   W+C
+Sbjct: 201 SEGEISCEDIFCSTCGSNDATLGNDIILCDGACDRGFHQNCLNPPLRTEDIPMGDEGWLC 260
+
+Query: 51  PRC 53
+           P C
+Sbjct: 261 PAC 263
+
+
+>sp|Q9BZ95|NSD3_HUMAN Histone-lysine N-methyltransferase NSD3 OS=Homo
+            sapiens GN=WHSC1L1 PE=1 SV=1
+          Length = 1437
+
+ Score = 43.9 bits (102), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 22/46 (47%), Positives = 27/46 (58%), Gaps = 4/46 (8%)
+
+Query: 8    HEDFCSVCRKSGQLLMCDT--CSRVYHLDCLDPPLKTIPKGMWICP 51
+            HED+C  C   G+L+MCD   C + YHL CL+  L   P G W CP
+Sbjct: 1320 HEDYCFQCGDGGELVMCDKKDCPKAYHLLCLN--LTQPPYGKWECP 1363
+
+
+>sp|Q61103|REQU_MOUSE Zinc finger protein ubi-d4 OS=Mus musculus
+           GN=Dpf2 PE=1 SV=1
+          Length = 391
+
+ Score = 43.9 bits (102), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 19/46 (41%), Positives = 23/46 (50%)
+
+Query: 10  DFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQD 55
+           + C       QLL CD C R YH+ CL P +   P+G W C  C D
+Sbjct: 331 NLCGTSENDDQLLFCDDCDRGYHMYCLTPSMSEPPEGSWSCHLCLD 376
+
+
+>sp|Q92785|REQU_HUMAN Zinc finger protein ubi-d4 OS=Homo sapiens
+           GN=DPF2 PE=1 SV=2
+          Length = 391
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 19/46 (41%), Positives = 23/46 (50%)
+
+Query: 10  DFCSVCRKSGQLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRCQD 55
+           + C       QLL CD C R YH+ CL P +   P+G W C  C D
+Sbjct: 331 NICGTSENDDQLLFCDDCDRGYHMYCLTPSMSEPPEGSWSCHLCLD 376
+
+
+>sp|P56163|DPF1_RAT Zinc finger protein neuro-d4 OS=Rattus
+           norvegicus GN=Dpf1 PE=2 SV=1
+          Length = 397
+
+ Score = 43.1 bits (100), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 18/34 (52%), Positives = 21/34 (61%)
+
+Query: 20  QLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           QLL CD C R YH+ CL PP+   P+G W C  C
+Sbjct: 349 QLLFCDDCDRGYHMYCLSPPMAEPPEGSWSCHLC 382
+
+
+>sp|Q8VDF2|UHRF1_MOUSE E3 ubiquitin-protein ligase UHRF1 OS=Mus
+           musculus GN=Uhrf1 PE=1 SV=2
+          Length = 782
+
+ Score = 43.1 bits (100), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 19/47 (40%), Positives = 26/47 (55%), Gaps = 4/47 (8%)
+
+Query: 12  CSVC---RKSGQLLMCDTCSRVYHLDCLDPPLKTI-PKGMWICPRCQ 54
+           C VC       + L+CD C   +HL CL PPL ++ P+  W CP C+
+Sbjct: 323 CHVCGGREAPEKQLLCDECDMAFHLYCLKPPLTSVPPEPEWYCPSCR 369
+
+
+>sp|Q92782|DPF1_HUMAN Zinc finger protein neuro-d4 OS=Homo sapiens
+           GN=DPF1 PE=2 SV=1
+          Length = 353
+
+ Score = 42.7 bits (99), Expect = 6e-04,   Method: Composition-based stats.
+ Identities = 18/34 (52%), Positives = 21/34 (61%)
+
+Query: 20  QLLMCDTCSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           QLL CD C R YH+ CL PP+   P+G W C  C
+Sbjct: 305 QLLFCDDCDRGYHMYCLSPPMAEPPEGSWSCHLC 338
+
+
+>sp|Q5PNS0|Y3228_ARATH PHD finger protein At3g20280 OS=Arabidopsis
+          thaliana GN=At3g20280 PE=2 SV=1
+          Length = 482
+
+ Score = 42.4 bits (98), Expect = 7e-04,   Method: Composition-based stats.
+ Identities = 19/47 (40%), Positives = 25/47 (53%), Gaps = 5/47 (10%)
+
+Query: 12 CSVCR----KSGQLLMCDTCSRVYHLDCLD-PPLKTIPKGMWICPRC 53
+          C +C     +   LL+CD C + YHL CL    +K +PK  W C RC
+Sbjct: 48 CQICEVTINEMDTLLICDACEKAYHLKCLQGNNMKGVPKSEWHCSRC 94
+
+
+>sp|Q23541|JAD1_CAEEL Histone demethylase rbr-2 OS=Caenorhabditis
+           elegans GN=rbr-2 PE=1 SV=2
+          Length = 1477
+
+ Score = 42.0 bits (97), Expect = 9e-04,   Method: Composition-based stats.
+ Identities = 19/48 (39%), Positives = 25/48 (52%), Gaps = 5/48 (10%)
+
+Query: 11  FCSVCRKSGQ---LLMCDT--CSRVYHLDCLDPPLKTIPKGMWICPRC 53
+           FC  C +      LL+CD   C+   H  C DP L  +P+G W CP+C
+Sbjct: 321 FCVACNEGKDEDLLLLCDIDGCNNGRHTYCCDPVLDEVPEGEWRCPKC 368
+
+
+  Database: sprot
+    Posted date:  May 6, 2009 11:11 AM
+  Number of letters in database: 165,389,953
+  Number of sequences in database:  466,739
+  
+Lambda     K      H
+   0.324    0.140    0.501 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 19,394,727
+Number of Sequences: 466739
+Number of extensions: 573431
+Number of successful extensions: 2323
+Number of sequences better than 1.0e-03: 115
+Number of HSP's better than  0.0 without gapping: 89
+Number of HSP's successfully gapped in prelim test: 26
+Number of HSP's that attempted gapping in prelim test: 2137
+Number of HSP's gapped (non-prelim): 196
+length of query: 56
+length of database: 165,389,953
+effective HSP length: 29
+effective length of query: 27
+effective length of database: 151,854,522
+effective search space: 4100072094
+effective search space used: 4100072094
+T: 11
+A: 40
+X1: 15 ( 7.0 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 40 (21.6 bits)
+S2: 97 (42.0 bits)

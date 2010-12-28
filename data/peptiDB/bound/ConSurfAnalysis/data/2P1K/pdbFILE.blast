@@ -1,0 +1,594 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_A  87
+         (87 letters)
+
+Database: sprot 
+           412,525 sequences; 148,809,765 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q24117|DYL1_DROME Dynein light chain 1, cytoplasmic OS=Drosop...   173   2e-43
+sp|O96860|DYL2_DROME Dynein light chain 2, cytoplasmic OS=Drosop...   172   3e-43
+sp|Q3MHR3|DYL2_BOVIN Dynein light chain 2, cytoplasmic OS=Bos ta...   169   5e-42
+sp|Q96FJ2|DYL2_HUMAN Dynein light chain 2, cytoplasmic OS=Homo s...   169   5e-42
+sp|Q9D0M5|DYL2_MOUSE Dynein light chain 2, cytoplasmic OS=Mus mu...   169   5e-42
+sp|Q78P75|DYL2_RAT Dynein light chain 2, cytoplasmic OS=Rattus n...   169   5e-42
+sp|Q22799|DYL1_CAEEL Dynein light chain 1, cytoplasmic OS=Caenor...   168   7e-42
+sp|P61285|DYL1_BOVIN Dynein light chain 1, cytoplasmic OS=Bos ta...   167   1e-41
+sp|P63167|DYL1_HUMAN Dynein light chain 1, cytoplasmic OS=Homo s...   167   1e-41
+sp|P61273|DYL1_MACFA Dynein light chain 1, cytoplasmic OS=Macaca...   167   1e-41
+sp|P63168|DYL1_MOUSE Dynein light chain 1, cytoplasmic OS=Mus mu...   167   1e-41
+sp|P63169|DYL1_RABIT Dynein light chain 1, cytoplasmic OS=Orycto...   167   1e-41
+sp|P63170|DYL1_RAT Dynein light chain 1, cytoplasmic OS=Rattus n...   167   1e-41
+sp|O02414|DYL1_ANTCR Dynein light chain LC6, flagellar outer arm...   167   2e-41
+sp|Q39580|DYL1_CHLRE Dynein 8 kDa light chain, flagellar outer a...   165   6e-41
+sp|Q9UR05|DYL1_SCHPO Dynein light chain 1, cytoplasmic OS=Schizo...   139   4e-33
+sp|Q94748|DYL2_SCHMA Probable dynein light chain OS=Schistosoma ...   132   5e-31
+sp|Q94758|DYL1_SCHMA Dynein light chain OS=Schistosoma mansoni G...   130   2e-30
+sp|O94111|DYL1_EMENI Dynein light chain, cytoplasmic OS=Emericel...   123   2e-28
+sp|Q86A88|DYL_DICDI Dynein light chain, cytoplasmic OS=Dictyoste...   117   2e-26
+sp|Q759T0|DYL1_ASHGO Dynein light chain 1, cytoplasmic OS=Ashbya...   102   7e-22
+sp|Q6BZF8|DYL1_DEBHA Dynein light chain 1, cytoplasmic OS=Debary...   101   1e-21
+sp|Q02647|DYL1_YEAST Dynein light chain 1, cytoplasmic OS=Saccha...    98   1e-20
+sp|Q6FUJ0|DYL1_CANGA Dynein light chain 1, cytoplasmic OS=Candid...    98   1e-20
+sp|Q6CWX4|DYL1_KLULA Dynein light chain 1, cytoplasmic OS=Kluyve...    92   8e-19
+sp|Q21557|DYL2_CAEEL Probable dynein light chain 2, cytoplasmic ...    74   2e-13
+sp|Q39579|DYL2_CHLRE Dynein 11 kDa light chain, flagellar outer ...    69   5e-12
+sp|Q32KN5|DNAL4_BOVIN Dynein light chain 4, axonemal OS=Bos taur...    63   5e-10
+sp|O96015|DNAL4_HUMAN Dynein light chain 4, axonemal OS=Homo sap...    63   5e-10
+sp|A4F4L4|DNAL4_PIG Dynein light chain 4, axonemal OS=Sus scrofa...    63   5e-10
+sp|Q9DCM4|DNAL4_MOUSE Dynein light chain 4, axonemal OS=Mus musc...    63   5e-10
+
+>sp|Q24117|DYL1_DROME Dynein light chain 1, cytoplasmic
+          OS=Drosophila melanogaster GN=ctp PE=1 SV=1
+          Length = 89
+
+ Score =  173 bits (438), Expect = 2e-43,   Method: Composition-based stats.
+ Identities = 87/87 (100%), Positives = 87/87 (100%)
+
+Query: 1  DRKAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 60
+          DRKAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF
+Sbjct: 3  DRKAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 62
+
+Query: 61 GSYVTHETRHFIYFYLGQVAILLFKSG 87
+          GSYVTHETRHFIYFYLGQVAILLFKSG
+Sbjct: 63 GSYVTHETRHFIYFYLGQVAILLFKSG 89
+
+
+>sp|O96860|DYL2_DROME Dynein light chain 2, cytoplasmic
+          OS=Drosophila melanogaster GN=Cdlc2 PE=1 SV=1
+          Length = 89
+
+ Score =  172 bits (437), Expect = 3e-43,   Method: Composition-based stats.
+ Identities = 86/87 (98%), Positives = 87/87 (100%)
+
+Query: 1  DRKAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 60
+          DRKAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAA+IKKEFDKKYNPTWHCIVGRNF
+Sbjct: 3  DRKAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAFIKKEFDKKYNPTWHCIVGRNF 62
+
+Query: 61 GSYVTHETRHFIYFYLGQVAILLFKSG 87
+          GSYVTHETRHFIYFYLGQVAILLFKSG
+Sbjct: 63 GSYVTHETRHFIYFYLGQVAILLFKSG 89
+
+
+>sp|Q3MHR3|DYL2_BOVIN Dynein light chain 2, cytoplasmic OS=Bos
+          taurus GN=DYNLL2 PE=3 SV=1
+          Length = 89
+
+ Score =  169 bits (427), Expect = 5e-42,   Method: Composition-based stats.
+ Identities = 84/87 (96%), Positives = 87/87 (100%)
+
+Query: 1  DRKAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 60
+          DRKAVIKNADMSE+MQQDAVDCATQA+EKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF
+Sbjct: 3  DRKAVIKNADMSEDMQQDAVDCATQAMEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 62
+
+Query: 61 GSYVTHETRHFIYFYLGQVAILLFKSG 87
+          GSYVTHET+HFIYFYLGQVAILLFKSG
+Sbjct: 63 GSYVTHETKHFIYFYLGQVAILLFKSG 89
+
+
+>sp|Q96FJ2|DYL2_HUMAN Dynein light chain 2, cytoplasmic OS=Homo
+          sapiens GN=DYNLL2 PE=1 SV=1
+          Length = 89
+
+ Score =  169 bits (427), Expect = 5e-42,   Method: Composition-based stats.
+ Identities = 84/87 (96%), Positives = 87/87 (100%)
+
+Query: 1  DRKAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 60
+          DRKAVIKNADMSE+MQQDAVDCATQA+EKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF
+Sbjct: 3  DRKAVIKNADMSEDMQQDAVDCATQAMEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 62
+
+Query: 61 GSYVTHETRHFIYFYLGQVAILLFKSG 87
+          GSYVTHET+HFIYFYLGQVAILLFKSG
+Sbjct: 63 GSYVTHETKHFIYFYLGQVAILLFKSG 89
+
+
+>sp|Q9D0M5|DYL2_MOUSE Dynein light chain 2, cytoplasmic OS=Mus
+          musculus GN=Dynll2 PE=1 SV=1
+          Length = 89
+
+ Score =  169 bits (427), Expect = 5e-42,   Method: Composition-based stats.
+ Identities = 84/87 (96%), Positives = 87/87 (100%)
+
+Query: 1  DRKAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 60
+          DRKAVIKNADMSE+MQQDAVDCATQA+EKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF
+Sbjct: 3  DRKAVIKNADMSEDMQQDAVDCATQAMEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 62
+
+Query: 61 GSYVTHETRHFIYFYLGQVAILLFKSG 87
+          GSYVTHET+HFIYFYLGQVAILLFKSG
+Sbjct: 63 GSYVTHETKHFIYFYLGQVAILLFKSG 89
+
+
+>sp|Q78P75|DYL2_RAT Dynein light chain 2, cytoplasmic OS=Rattus
+          norvegicus GN=Dynll2 PE=1 SV=1
+          Length = 89
+
+ Score =  169 bits (427), Expect = 5e-42,   Method: Composition-based stats.
+ Identities = 84/87 (96%), Positives = 87/87 (100%)
+
+Query: 1  DRKAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 60
+          DRKAVIKNADMSE+MQQDAVDCATQA+EKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF
+Sbjct: 3  DRKAVIKNADMSEDMQQDAVDCATQAMEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 62
+
+Query: 61 GSYVTHETRHFIYFYLGQVAILLFKSG 87
+          GSYVTHET+HFIYFYLGQVAILLFKSG
+Sbjct: 63 GSYVTHETKHFIYFYLGQVAILLFKSG 89
+
+
+>sp|Q22799|DYL1_CAEEL Dynein light chain 1, cytoplasmic
+          OS=Caenorhabditis elegans GN=dlc-1 PE=1 SV=1
+          Length = 89
+
+ Score =  168 bits (426), Expect = 7e-42,   Method: Composition-based stats.
+ Identities = 83/87 (95%), Positives = 87/87 (100%)
+
+Query: 1  DRKAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 60
+          DRKAVIKNADMS++MQQDA+DCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF
+Sbjct: 3  DRKAVIKNADMSDDMQQDAIDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 62
+
+Query: 61 GSYVTHETRHFIYFYLGQVAILLFKSG 87
+          GSYVTHET+HFIYFYLGQVAILLFKSG
+Sbjct: 63 GSYVTHETKHFIYFYLGQVAILLFKSG 89
+
+
+>sp|P61285|DYL1_BOVIN Dynein light chain 1, cytoplasmic OS=Bos
+          taurus GN=DYNLL1 PE=3 SV=1
+          Length = 89
+
+ Score =  167 bits (424), Expect = 1e-41,   Method: Composition-based stats.
+ Identities = 83/87 (95%), Positives = 87/87 (100%)
+
+Query: 1  DRKAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 60
+          DRKAVIKNADMSEEMQQD+V+CATQALEKYNIEKDIAA+IKKEFDKKYNPTWHCIVGRNF
+Sbjct: 3  DRKAVIKNADMSEEMQQDSVECATQALEKYNIEKDIAAHIKKEFDKKYNPTWHCIVGRNF 62
+
+Query: 61 GSYVTHETRHFIYFYLGQVAILLFKSG 87
+          GSYVTHET+HFIYFYLGQVAILLFKSG
+Sbjct: 63 GSYVTHETKHFIYFYLGQVAILLFKSG 89
+
+
+>sp|P63167|DYL1_HUMAN Dynein light chain 1, cytoplasmic OS=Homo
+          sapiens GN=DYNLL1 PE=1 SV=1
+          Length = 89
+
+ Score =  167 bits (424), Expect = 1e-41,   Method: Composition-based stats.
+ Identities = 83/87 (95%), Positives = 87/87 (100%)
+
+Query: 1  DRKAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 60
+          DRKAVIKNADMSEEMQQD+V+CATQALEKYNIEKDIAA+IKKEFDKKYNPTWHCIVGRNF
+Sbjct: 3  DRKAVIKNADMSEEMQQDSVECATQALEKYNIEKDIAAHIKKEFDKKYNPTWHCIVGRNF 62
+
+Query: 61 GSYVTHETRHFIYFYLGQVAILLFKSG 87
+          GSYVTHET+HFIYFYLGQVAILLFKSG
+Sbjct: 63 GSYVTHETKHFIYFYLGQVAILLFKSG 89
+
+
+>sp|P61273|DYL1_MACFA Dynein light chain 1, cytoplasmic OS=Macaca
+          fascicularis GN=DYNLL1 PE=3 SV=1
+          Length = 89
+
+ Score =  167 bits (424), Expect = 1e-41,   Method: Composition-based stats.
+ Identities = 83/87 (95%), Positives = 87/87 (100%)
+
+Query: 1  DRKAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 60
+          DRKAVIKNADMSEEMQQD+V+CATQALEKYNIEKDIAA+IKKEFDKKYNPTWHCIVGRNF
+Sbjct: 3  DRKAVIKNADMSEEMQQDSVECATQALEKYNIEKDIAAHIKKEFDKKYNPTWHCIVGRNF 62
+
+Query: 61 GSYVTHETRHFIYFYLGQVAILLFKSG 87
+          GSYVTHET+HFIYFYLGQVAILLFKSG
+Sbjct: 63 GSYVTHETKHFIYFYLGQVAILLFKSG 89
+
+
+>sp|P63168|DYL1_MOUSE Dynein light chain 1, cytoplasmic OS=Mus
+          musculus GN=Dynll1 PE=1 SV=1
+          Length = 89
+
+ Score =  167 bits (424), Expect = 1e-41,   Method: Composition-based stats.
+ Identities = 83/87 (95%), Positives = 87/87 (100%)
+
+Query: 1  DRKAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 60
+          DRKAVIKNADMSEEMQQD+V+CATQALEKYNIEKDIAA+IKKEFDKKYNPTWHCIVGRNF
+Sbjct: 3  DRKAVIKNADMSEEMQQDSVECATQALEKYNIEKDIAAHIKKEFDKKYNPTWHCIVGRNF 62
+
+Query: 61 GSYVTHETRHFIYFYLGQVAILLFKSG 87
+          GSYVTHET+HFIYFYLGQVAILLFKSG
+Sbjct: 63 GSYVTHETKHFIYFYLGQVAILLFKSG 89
+
+
+>sp|P63169|DYL1_RABIT Dynein light chain 1, cytoplasmic
+          OS=Oryctolagus cuniculus GN=DYNLL1 PE=1 SV=1
+          Length = 89
+
+ Score =  167 bits (424), Expect = 1e-41,   Method: Composition-based stats.
+ Identities = 83/87 (95%), Positives = 87/87 (100%)
+
+Query: 1  DRKAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 60
+          DRKAVIKNADMSEEMQQD+V+CATQALEKYNIEKDIAA+IKKEFDKKYNPTWHCIVGRNF
+Sbjct: 3  DRKAVIKNADMSEEMQQDSVECATQALEKYNIEKDIAAHIKKEFDKKYNPTWHCIVGRNF 62
+
+Query: 61 GSYVTHETRHFIYFYLGQVAILLFKSG 87
+          GSYVTHET+HFIYFYLGQVAILLFKSG
+Sbjct: 63 GSYVTHETKHFIYFYLGQVAILLFKSG 89
+
+
+>sp|P63170|DYL1_RAT Dynein light chain 1, cytoplasmic OS=Rattus
+          norvegicus GN=Dynll1 PE=1 SV=1
+          Length = 89
+
+ Score =  167 bits (424), Expect = 1e-41,   Method: Composition-based stats.
+ Identities = 83/87 (95%), Positives = 87/87 (100%)
+
+Query: 1  DRKAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 60
+          DRKAVIKNADMSEEMQQD+V+CATQALEKYNIEKDIAA+IKKEFDKKYNPTWHCIVGRNF
+Sbjct: 3  DRKAVIKNADMSEEMQQDSVECATQALEKYNIEKDIAAHIKKEFDKKYNPTWHCIVGRNF 62
+
+Query: 61 GSYVTHETRHFIYFYLGQVAILLFKSG 87
+          GSYVTHET+HFIYFYLGQVAILLFKSG
+Sbjct: 63 GSYVTHETKHFIYFYLGQVAILLFKSG 89
+
+
+>sp|O02414|DYL1_ANTCR Dynein light chain LC6, flagellar outer arm
+          OS=Anthocidaris crassispina PE=3 SV=1
+          Length = 89
+
+ Score =  167 bits (422), Expect = 2e-41,   Method: Composition-based stats.
+ Identities = 81/87 (93%), Positives = 86/87 (98%)
+
+Query: 1  DRKAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 60
+          +RKAVIKNADM E+MQQDAVDCATQALEK+NIEKDIAAYIKKEFDKKYNPTWHCIVGRNF
+Sbjct: 3  ERKAVIKNADMPEDMQQDAVDCATQALEKFNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 62
+
+Query: 61 GSYVTHETRHFIYFYLGQVAILLFKSG 87
+          GSYVTHET+HFIYFYLGQVA+LLFKSG
+Sbjct: 63 GSYVTHETKHFIYFYLGQVAVLLFKSG 89
+
+
+>sp|Q39580|DYL1_CHLRE Dynein 8 kDa light chain, flagellar outer
+          arm OS=Chlamydomonas reinhardtii PE=1 SV=1
+          Length = 91
+
+ Score =  165 bits (418), Expect = 6e-41,   Method: Composition-based stats.
+ Identities = 81/85 (95%), Positives = 84/85 (98%)
+
+Query: 3  KAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNFGS 62
+          KAVIKNADMSEEMQ DAVDCATQALEKYNIEKDIAAYIKKEFD+K+NPTWHCIVGRNFGS
+Sbjct: 7  KAVIKNADMSEEMQADAVDCATQALEKYNIEKDIAAYIKKEFDRKHNPTWHCIVGRNFGS 66
+
+Query: 63 YVTHETRHFIYFYLGQVAILLFKSG 87
+          YVTHET+HFIYFYLGQVAILLFKSG
+Sbjct: 67 YVTHETKHFIYFYLGQVAILLFKSG 91
+
+
+>sp|Q9UR05|DYL1_SCHPO Dynein light chain 1, cytoplasmic
+          OS=Schizosaccharomyces pombe GN=dlc2 PE=2 SV=1
+          Length = 85
+
+ Score =  139 bits (350), Expect = 4e-33,   Method: Composition-based stats.
+ Identities = 65/84 (77%), Positives = 76/84 (90%)
+
+Query: 4  AVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNFGSY 63
+          AVIK  DMSE+MQQ+A+  A QA+EK+ IEKDIAA+IK+EFDKK++PTWHCIVGRNFGS+
+Sbjct: 2  AVIKAVDMSEKMQQEAIHAAVQAMEKFTIEKDIAAFIKREFDKKFSPTWHCIVGRNFGSF 61
+
+Query: 64 VTHETRHFIYFYLGQVAILLFKSG 87
+          VTHE+RHFIYFYLG VA LLFKSG
+Sbjct: 62 VTHESRHFIYFYLGTVAFLLFKSG 85
+
+
+>sp|Q94748|DYL2_SCHMA Probable dynein light chain OS=Schistosoma
+          mansoni PE=3 SV=1
+          Length = 89
+
+ Score =  132 bits (332), Expect = 5e-31,   Method: Composition-based stats.
+ Identities = 66/87 (75%), Positives = 76/87 (87%)
+
+Query: 1  DRKAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 60
+          +RKAVIKNADM E+MQ+ AV  A  AL+KY IEKD+AAYIKKEFD+KYNP WHCIVG++F
+Sbjct: 3  ERKAVIKNADMHEDMQETAVHTAAAALDKYEIEKDVAAYIKKEFDRKYNPNWHCIVGKHF 62
+
+Query: 61 GSYVTHETRHFIYFYLGQVAILLFKSG 87
+          GSYVTHET+HFIYFYL + A LLFKSG
+Sbjct: 63 GSYVTHETQHFIYFYLQERAFLLFKSG 89
+
+
+>sp|Q94758|DYL1_SCHMA Dynein light chain OS=Schistosoma mansoni
+          GN=DLC PE=1 SV=1
+          Length = 89
+
+ Score =  130 bits (326), Expect = 2e-30,   Method: Composition-based stats.
+ Identities = 64/87 (73%), Positives = 77/87 (88%)
+
+Query: 1  DRKAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 60
+          +RKAVIKNADMSEEMQ+DA+  A  A++K+++EKDIAA IKK+FD+KY+PTWHCIVGR+F
+Sbjct: 3  ERKAVIKNADMSEEMQEDAIHIAAGAIDKHDLEKDIAANIKKDFDRKYHPTWHCIVGRHF 62
+
+Query: 61 GSYVTHETRHFIYFYLGQVAILLFKSG 87
+          GSYVTHET +FIYFYL   A LLFKSG
+Sbjct: 63 GSYVTHETHNFIYFYLDDRAFLLFKSG 89
+
+
+>sp|O94111|DYL1_EMENI Dynein light chain, cytoplasmic
+          OS=Emericella nidulans GN=nudG PE=3 SV=1
+          Length = 94
+
+ Score =  123 bits (309), Expect = 2e-28,   Method: Composition-based stats.
+ Identities = 58/81 (71%), Positives = 71/81 (87%)
+
+Query: 6  IKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNFGSYVT 65
+          IK+ DMSE+MQQ+AV+ A +A+EKY+IEKDIA YIK+EFD +   TWHC+VGRNFGS+VT
+Sbjct: 13 IKSVDMSEDMQQEAVEVAIEAMEKYHIEKDIAQYIKREFDSRKGATWHCVVGRNFGSFVT 72
+
+Query: 66 HETRHFIYFYLGQVAILLFKS 86
+          HET+HFIYFYLG  AILLFK+
+Sbjct: 73 HETKHFIYFYLGHCAILLFKT 93
+
+
+>sp|Q86A88|DYL_DICDI Dynein light chain, cytoplasmic
+          OS=Dictyostelium discoideum GN=dlcB PE=3 SV=1
+          Length = 91
+
+ Score =  117 bits (292), Expect = 2e-26,   Method: Composition-based stats.
+ Identities = 53/82 (64%), Positives = 70/82 (85%)
+
+Query: 6  IKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNFGSYVT 65
+          +KNADM + MQQDA +C  +A E+ NIE+DIA  IKKEFDKKY+PTWHCIVG++FGS+VT
+Sbjct: 10 VKNADMPDFMQQDATECTIKAFEETNIERDIAMIIKKEFDKKYSPTWHCIVGKSFGSFVT 69
+
+Query: 66 HETRHFIYFYLGQVAILLFKSG 87
+          HET++FIYF + + ++LLFK+G
+Sbjct: 70 HETKNFIYFNINKHSVLLFKAG 91
+
+
+>sp|Q759T0|DYL1_ASHGO Dynein light chain 1, cytoplasmic OS=Ashbya
+          gossypii GN=DYN2 PE=3 SV=1
+          Length = 88
+
+ Score =  102 bits (253), Expect = 7e-22,   Method: Composition-based stats.
+ Identities = 43/86 (50%), Positives = 67/86 (77%)
+
+Query: 2  RKAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNFG 61
+          + A++K +D+++E++ +    + QA+E++ +E+++AAYIKKE D K+  TWH IVG+NFG
+Sbjct: 3  KPAILKASDITDELRDEIFGISVQAVEQFQLEREVAAYIKKELDSKHGQTWHVIVGKNFG 62
+
+Query: 62 SYVTHETRHFIYFYLGQVAILLFKSG 87
+          SYVTHE  HFIYFY+G +A L+FK+ 
+Sbjct: 63 SYVTHEKGHFIYFYIGPLAFLVFKTA 88
+
+
+>sp|Q6BZF8|DYL1_DEBHA Dynein light chain 1, cytoplasmic
+          OS=Debaryomyces hansenii GN=DYN2 PE=3 SV=1
+          Length = 91
+
+ Score =  101 bits (252), Expect = 1e-21,   Method: Composition-based stats.
+ Identities = 46/87 (52%), Positives = 64/87 (73%)
+
+Query: 1  DRKAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 60
+          +++ ++K +D+ EEMQ    + + +A+  Y IEKDIA Y+KKE D+ Y  TWH IVG++F
+Sbjct: 5  EQEPILKASDLPEEMQTRIFELSNEAVSNYKIEKDIATYLKKELDQLYGATWHVIVGKSF 64
+
+Query: 61 GSYVTHETRHFIYFYLGQVAILLFKSG 87
+          GSYVTHE   F YFY+GQ+A L+FKSG
+Sbjct: 65 GSYVTHEQGFFTYFYIGQLAFLIFKSG 91
+
+
+>sp|Q02647|DYL1_YEAST Dynein light chain 1, cytoplasmic
+          OS=Saccharomyces cerevisiae GN=DYN2 PE=1 SV=1
+          Length = 92
+
+ Score = 98.2 bits (243), Expect = 1e-20,   Method: Composition-based stats.
+ Identities = 41/83 (49%), Positives = 64/83 (77%)
+
+Query: 5  VIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNFGSYV 64
+          ++K +D+++++++D +  +  AL+KY +E+DIA  +KK+ D KY  TWH IVG+NFGSYV
+Sbjct: 10 IVKASDITDKLKEDILTISKDALDKYQLERDIAGTVKKQLDVKYGNTWHVIVGKNFGSYV 69
+
+Query: 65 THETRHFIYFYLGQVAILLFKSG 87
+          THE  HF+YFY+G +A L+FK+ 
+Sbjct: 70 THEKGHFVYFYIGPLAFLVFKTA 92
+
+
+>sp|Q6FUJ0|DYL1_CANGA Dynein light chain 1, cytoplasmic OS=Candida
+          glabrata GN=DYN2 PE=3 SV=1
+          Length = 86
+
+ Score = 97.8 bits (242), Expect = 1e-20,   Method: Composition-based stats.
+ Identities = 42/84 (50%), Positives = 64/84 (76%)
+
+Query: 3  KAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNFGS 62
+          + ++K +DM +EMQQ+    A +A+ ++ +E++IA+ IKKE D +Y  TWH IVGR+FGS
+Sbjct: 3  QVIVKASDMGDEMQQEVFRIAEEAMREHTLEREIASVIKKEMDSRYGHTWHVIVGRSFGS 62
+
+Query: 63 YVTHETRHFIYFYLGQVAILLFKS 86
+          YVTHE   F+YFY+G +A+L+FK+
+Sbjct: 63 YVTHEKGKFVYFYVGPLALLVFKT 86
+
+
+>sp|Q6CWX4|DYL1_KLULA Dynein light chain 1, cytoplasmic
+          OS=Kluyveromyces lactis GN=DYN2 PE=3 SV=1
+          Length = 87
+
+ Score = 92.0 bits (227), Expect = 8e-19,   Method: Composition-based stats.
+ Identities = 40/85 (47%), Positives = 62/85 (72%)
+
+Query: 3  KAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNFGS 62
+          K V+K +D+++E++ +  + ++ A   Y +E++IAAYIKK+ D     TWH IVG+NFGS
+Sbjct: 3  KPVLKASDITDELRDEIFELSSNATANYKLEREIAAYIKKQLDVSQGETWHVIVGKNFGS 62
+
+Query: 63 YVTHETRHFIYFYLGQVAILLFKSG 87
+          YVTHE  +F+YFY+G +A L+FK+ 
+Sbjct: 63 YVTHEKGYFVYFYIGPLAFLVFKTA 87
+
+
+>sp|Q21557|DYL2_CAEEL Probable dynein light chain 2, cytoplasmic
+          OS=Caenorhabditis elegans GN=dlc-2 PE=2 SV=2
+          Length = 90
+
+ Score = 73.6 bits (179), Expect = 2e-13,   Method: Composition-based stats.
+ Identities = 33/87 (37%), Positives = 53/87 (60%)
+
+Query: 1  DRKAVIKNADMSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKYNPTWHCIVGRNF 60
+          + K  +K  DM +  +   +    +A   YNI+KD+AA++K+E DKK+  TWH I G+ F
+Sbjct: 3  EEKIEVKETDMEDPQRDMVISVVREAQRLYNIDKDVAAFVKEELDKKFGATWHVICGKCF 62
+
+Query: 61 GSYVTHETRHFIYFYLGQVAILLFKSG 87
+          GS V++E  HFI     +V ++++K G
+Sbjct: 63 GSRVSYEMGHFILLKCNKVNVMIYKCG 89
+
+
+>sp|Q39579|DYL2_CHLRE Dynein 11 kDa light chain, flagellar outer arm
+           OS=Chlamydomonas reinhardtii PE=1 SV=1
+          Length = 120
+
+ Score = 69.3 bits (168), Expect = 5e-12,   Method: Composition-based stats.
+ Identities = 39/83 (46%), Positives = 52/83 (62%), Gaps = 7/83 (8%)
+
+Query: 11  MSEEMQQDAVDCATQALEKYNIEKDIAAYIKKEFDKKY-------NPTWHCIVGRNFGSY 63
+           M E  +QDAV  A  A++KY   KDIA YIK E+DKKY          +HCIVG++F S 
+Sbjct: 28  MPESFEQDAVQIALIAVDKYRQLKDIAFYIKHEYDKKYPGSGKATEGVYHCIVGKSFASA 87
+
+Query: 64  VTHETRHFIYFYLGQVAILLFKS 86
+           V+HETR FI+  +    ++L+KS
+Sbjct: 88  VSHETRQFIHMKVDTYHVILWKS 110
+
+
+>sp|Q32KN5|DNAL4_BOVIN Dynein light chain 4, axonemal OS=Bos taurus
+           GN=DNAL4 PE=3 SV=1
+          Length = 105
+
+ Score = 62.8 bits (151), Expect = 5e-10,   Method: Composition-based stats.
+ Identities = 28/83 (33%), Positives = 52/83 (62%), Gaps = 2/83 (2%)
+
+Query: 5   VIKNADMSEEMQQDAVDCATQALEKY-NIEKDIAAYIKKEFDKKYNPTWHCIVGRNFGSY 63
+           +++++DM EEM+ + ++    A EK+ N  +  A  IK+  DKK+  +WH ++G  FG  
+Sbjct: 21  LVRHSDMPEEMRVETMELCVTACEKFSNNNESAAKMIKETMDKKFGSSWHVVIGEGFGFE 80
+
+Query: 64  VTHETRHFIYFYL-GQVAILLFK 85
+           +THE ++ +Y Y  G +A+ ++K
+Sbjct: 81  ITHEVKNLLYLYFGGTLAVCVWK 103
+
+
+>sp|O96015|DNAL4_HUMAN Dynein light chain 4, axonemal OS=Homo
+           sapiens GN=DNAL4 PE=2 SV=1
+          Length = 105
+
+ Score = 62.8 bits (151), Expect = 5e-10,   Method: Composition-based stats.
+ Identities = 28/83 (33%), Positives = 52/83 (62%), Gaps = 2/83 (2%)
+
+Query: 5   VIKNADMSEEMQQDAVDCATQALEKY-NIEKDIAAYIKKEFDKKYNPTWHCIVGRNFGSY 63
+           +++++DM EEM+ + ++    A EK+ N  +  A  IK+  DKK+  +WH ++G  FG  
+Sbjct: 21  LVRHSDMPEEMRVETMELCVTACEKFSNNNESAAKMIKETMDKKFGSSWHVVIGEGFGFE 80
+
+Query: 64  VTHETRHFIYFYL-GQVAILLFK 85
+           +THE ++ +Y Y  G +A+ ++K
+Sbjct: 81  ITHEVKNLLYLYFGGTLAVCVWK 103
+
+
+>sp|A4F4L4|DNAL4_PIG Dynein light chain 4, axonemal OS=Sus scrofa
+           GN=DNAL4 PE=3 SV=1
+          Length = 105
+
+ Score = 62.8 bits (151), Expect = 5e-10,   Method: Composition-based stats.
+ Identities = 28/83 (33%), Positives = 52/83 (62%), Gaps = 2/83 (2%)
+
+Query: 5   VIKNADMSEEMQQDAVDCATQALEKY-NIEKDIAAYIKKEFDKKYNPTWHCIVGRNFGSY 63
+           +++++DM EEM+ + ++    A EK+ N  +  A  IK+  DKK+  +WH ++G  FG  
+Sbjct: 21  LVRHSDMPEEMRVETMELCVTACEKFSNNNESAAKMIKETMDKKFGSSWHVVIGEGFGFE 80
+
+Query: 64  VTHETRHFIYFYL-GQVAILLFK 85
+           +THE ++ +Y Y  G +A+ ++K
+Sbjct: 81  ITHEVKNLLYLYFGGTLAVCVWK 103
+
+
+>sp|Q9DCM4|DNAL4_MOUSE Dynein light chain 4, axonemal OS=Mus
+           musculus GN=Dnal4 PE=2 SV=2
+          Length = 105
+
+ Score = 62.8 bits (151), Expect = 5e-10,   Method: Composition-based stats.
+ Identities = 28/83 (33%), Positives = 52/83 (62%), Gaps = 2/83 (2%)
+
+Query: 5   VIKNADMSEEMQQDAVDCATQALEKY-NIEKDIAAYIKKEFDKKYNPTWHCIVGRNFGSY 63
+           +++++DM EEM+ + ++    A EK+ N  +  A  IK+  DKK+  +WH ++G  FG  
+Sbjct: 21  LVRHSDMPEEMRVETMELCVTACEKFSNNNESAAKMIKETMDKKFGSSWHVVIGEGFGFE 80
+
+Query: 64  VTHETRHFIYFYL-GQVAILLFK 85
+           +THE ++ +Y Y  G +A+ ++K
+Sbjct: 81  ITHEVKNLLYLYFGGTLAVCVWK 103
+
+
+  Database: sprot
+    Posted date:  Mar 15, 2009  5:38 PM
+  Number of letters in database: 148,809,765
+  Number of sequences in database:  412,525
+  
+Lambda     K      H
+   0.322    0.136    0.410 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 24,242,734
+Number of Sequences: 412525
+Number of extensions: 870759
+Number of successful extensions: 2418
+Number of sequences better than 1.0e-03: 31
+Number of HSP's better than  0.0 without gapping: 31
+Number of HSP's successfully gapped in prelim test: 0
+Number of HSP's that attempted gapping in prelim test: 2382
+Number of HSP's gapped (non-prelim): 31
+length of query: 87
+length of database: 148,809,765
+effective HSP length: 57
+effective length of query: 30
+effective length of database: 125,295,840
+effective search space: 3758875200
+effective search space used: 3758875200
+T: 11
+A: 40
+X1: 16 ( 7.4 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.9 bits)
+S2: 97 (42.0 bits)

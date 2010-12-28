@@ -1,0 +1,421 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_A  168
+         (168 letters)
+
+Database: sprot 
+           412,525 sequences; 148,809,765 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q12933|TRAF2_HUMAN TNF receptor-associated factor 2 OS=Homo s...   363   e-100
+sp|P39429|TRAF2_MOUSE TNF receptor-associated factor 2 OS=Mus mu...   349   4e-96
+sp|Q13077|TRAF1_HUMAN TNF receptor-associated factor 1 OS=Homo s...   235   7e-62
+sp|P39428|TRAF1_MOUSE TNF receptor-associated factor 1 OS=Mus mu...   233   4e-61
+sp|Q13114|TRAF3_HUMAN TNF receptor-associated factor 3 OS=Homo s...   214   2e-55
+sp|Q60803|TRAF3_MOUSE TNF receptor-associated factor 3 OS=Mus mu...   214   2e-55
+sp|O00463|TRAF5_HUMAN TNF receptor-associated factor 5 OS=Homo s...   209   6e-54
+sp|P70191|TRAF5_MOUSE TNF receptor-associated factor 5 OS=Mus mu...   203   3e-52
+sp|Q9BUZ4|TRAF4_HUMAN TNF receptor-associated factor 4 OS=Homo s...   141   2e-33
+sp|Q61382|TRAF4_MOUSE TNF receptor-associated factor 4 OS=Mus mu...   135   1e-31
+sp|P70196|TRAF6_MOUSE TNF receptor-associated factor 6 OS=Mus mu...    98   2e-20
+sp|Q9Y4K3|TRAF6_HUMAN TNF receptor-associated factor 6 OS=Homo s...    92   2e-18
+sp|Q61847|MEP1B_MOUSE Meprin A subunit beta OS=Mus musculus GN=M...    50   6e-06
+sp|P28825|MEP1A_MOUSE Meprin A subunit alpha OS=Mus musculus GN=...    49   1e-05
+sp|Q64230|MEP1A_RAT Meprin A subunit alpha OS=Rattus norvegicus ...    49   1e-05
+sp|P28826|MEP1B_RAT Meprin A subunit beta OS=Rattus norvegicus G...    47   3e-05
+sp|Q16820|MEP1B_HUMAN Meprin A subunit beta OS=Homo sapiens GN=M...    47   6e-05
+sp|Q16819|MEP1A_HUMAN Meprin A subunit alpha OS=Homo sapiens GN=...    44   3e-04
+
+>sp|Q12933|TRAF2_HUMAN TNF receptor-associated factor 2 OS=Homo
+           sapiens GN=TRAF2 PE=1 SV=2
+          Length = 501
+
+ Score =  363 bits (933), Expect = e-100,   Method: Composition-based stats.
+ Identities = 167/168 (99%), Positives = 167/168 (99%)
+
+Query: 1   AMADLEQKVLEMEASTYDGVFIWKISDFPRKRQEAVAGRIPAIFSPAFYTSRYGYKMCLR 60
+           AMADLEQKVLEMEASTYDGVFIWKISDF RKRQEAVAGRIPAIFSPAFYTSRYGYKMCLR
+Sbjct: 334 AMADLEQKVLEMEASTYDGVFIWKISDFARKRQEAVAGRIPAIFSPAFYTSRYGYKMCLR 393
+
+Query: 61  IYLNGDGTGRGTHLSLFFVVMKGPNDALLRWPFNQKVTLMLLDQNNREHVIDAFRPDVTS 120
+           IYLNGDGTGRGTHLSLFFVVMKGPNDALLRWPFNQKVTLMLLDQNNREHVIDAFRPDVTS
+Sbjct: 394 IYLNGDGTGRGTHLSLFFVVMKGPNDALLRWPFNQKVTLMLLDQNNREHVIDAFRPDVTS 453
+
+Query: 121 SSFQRPVNDMNIASGCPLFCPVSKMEAKNSYVRDDAIFIKAIVDLTGL 168
+           SSFQRPVNDMNIASGCPLFCPVSKMEAKNSYVRDDAIFIKAIVDLTGL
+Sbjct: 454 SSFQRPVNDMNIASGCPLFCPVSKMEAKNSYVRDDAIFIKAIVDLTGL 501
+
+
+>sp|P39429|TRAF2_MOUSE TNF receptor-associated factor 2 OS=Mus
+           musculus GN=Traf2 PE=1 SV=1
+          Length = 501
+
+ Score =  349 bits (895), Expect = 4e-96,   Method: Composition-based stats.
+ Identities = 159/168 (94%), Positives = 163/168 (97%)
+
+Query: 1   AMADLEQKVLEMEASTYDGVFIWKISDFPRKRQEAVAGRIPAIFSPAFYTSRYGYKMCLR 60
+           AMADLEQKV E+E STYDGVFIWKISDF RKRQEAVAGR PAIFSPAFYTSRYGYKMCLR
+Sbjct: 334 AMADLEQKVSELEVSTYDGVFIWKISDFTRKRQEAVAGRTPAIFSPAFYTSRYGYKMCLR 393
+
+Query: 61  IYLNGDGTGRGTHLSLFFVVMKGPNDALLRWPFNQKVTLMLLDQNNREHVIDAFRPDVTS 120
+           +YLNGDGTGRGTHLSLFFVVMKGPNDALL+WPFNQKVTLMLLD NNREHVIDAFRPDVTS
+Sbjct: 394 VYLNGDGTGRGTHLSLFFVVMKGPNDALLQWPFNQKVTLMLLDHNNREHVIDAFRPDVTS 453
+
+Query: 121 SSFQRPVNDMNIASGCPLFCPVSKMEAKNSYVRDDAIFIKAIVDLTGL 168
+           SSFQRPV+DMNIASGCPLFCPVSKMEAKNSYVRDDAIFIKAIVDLTGL
+Sbjct: 454 SSFQRPVSDMNIASGCPLFCPVSKMEAKNSYVRDDAIFIKAIVDLTGL 501
+
+
+>sp|Q13077|TRAF1_HUMAN TNF receptor-associated factor 1 OS=Homo
+           sapiens GN=TRAF1 PE=1 SV=1
+          Length = 416
+
+ Score =  235 bits (600), Expect = 7e-62,   Method: Composition-based stats.
+ Identities = 100/167 (59%), Positives = 136/167 (81%), Gaps = 1/167 (0%)
+
+Query: 1   AMADLEQKVLEMEASTYDGVFIWKISDFPRKRQEAVAGRIPAIFSPAFYTSRYGYKMCLR 60
+           A+  LEQ +  ME +++DG F+WKI++  R+  E+  GR  ++FSPAFYT++YGYK+CLR
+Sbjct: 249 ALGKLEQSLRLMEEASFDGTFLWKITNVTRRCHESACGRTVSLFSPAFYTAKYGYKLCLR 308
+
+Query: 61  IYLNGDGTGRGTHLSLFFVVMKGPNDALLRWPFNQKVTLMLLDQNNREHVIDAFRPDVTS 120
+           +YLNGDGTG+ THLSLF V+M+G  DALL WPF  KVT MLLDQNNREH IDAFRPD++S
+Sbjct: 309 LYLNGDGTGKRTHLSLFIVIMRGEYDALLPWPFRNKVTFMLLDQNNREHAIDAFRPDLSS 368
+
+Query: 121 SSFQRPVNDMNIASGCPLFCPVSKMEA-KNSYVRDDAIFIKAIVDLT 166
+           +SFQRP ++ N+ASGCPLF P+SK+++ K++YV+DD +F+K IV+ +
+Sbjct: 369 ASFQRPQSETNVASGCPLFFPLSKLQSPKHAYVKDDTMFLKCIVETS 415
+
+
+>sp|P39428|TRAF1_MOUSE TNF receptor-associated factor 1 OS=Mus
+           musculus GN=Traf1 PE=1 SV=1
+          Length = 409
+
+ Score =  233 bits (593), Expect = 4e-61,   Method: Composition-based stats.
+ Identities = 98/167 (58%), Positives = 135/167 (80%), Gaps = 1/167 (0%)
+
+Query: 2   MADLEQKVLEMEASTYDGVFIWKISDFPRKRQEAVAGRIPAIFSPAFYTSRYGYKMCLRI 61
+           +  LE  +  ME +++DG F+WKI++  ++  E+V GR  ++FSPAFYT++YGYK+CLR+
+Sbjct: 243 LGKLEHSLRLMEEASFDGTFLWKITNVTKRCHESVCGRTVSLFSPAFYTAKYGYKLCLRL 302
+
+Query: 62  YLNGDGTGRGTHLSLFFVVMKGPNDALLRWPFNQKVTLMLLDQNNREHVIDAFRPDVTSS 121
+           YLNGDG+G+ THLSLF V+M+G  DALL WPF  KVT MLLDQNNREH IDAFRPD++S+
+Sbjct: 303 YLNGDGSGKKTHLSLFIVIMRGEYDALLPWPFRNKVTFMLLDQNNREHAIDAFRPDLSSA 362
+
+Query: 122 SFQRPVNDMNIASGCPLFCPVSKMEA-KNSYVRDDAIFIKAIVDLTG 167
+           SFQRP ++ N+ASGCPLF P+SK+++ K++YV+DD +F+K IVD + 
+Sbjct: 363 SFQRPQSETNVASGCPLFFPLSKLQSPKHAYVKDDTMFLKCIVDTSA 409
+
+
+>sp|Q13114|TRAF3_HUMAN TNF receptor-associated factor 3 OS=Homo
+           sapiens GN=TRAF3 PE=1 SV=2
+          Length = 568
+
+ Score =  214 bits (545), Expect = 2e-55,   Method: Composition-based stats.
+ Identities = 94/168 (55%), Positives = 129/168 (76%), Gaps = 2/168 (1%)
+
+Query: 2   MADLEQKVLEMEASTYDGVFIWKISDFPRKRQEAVAGRIPAIFSPAFYTSRYGYKMCLRI 61
+           +AD++ +   +E ++Y+GV IWKI D+ R++QEAV G+  +++S  FYT  +GYKMC R+
+Sbjct: 399 LADMDLRFQVLETASYNGVLIWKIRDYKRRKQEAVMGKTLSLYSQPFYTGYFGYKMCARV 458
+
+Query: 62  YLNGDGTGRGTHLSLFFVVMKGPNDALLRWPFNQKVTLMLLDQ-NNREHVIDAFRPDVTS 120
+           YLNGDG G+GTHLSLFFV+M+G  DALL WPF QKVTLML+DQ ++R H+ DAF+PD  S
+Sbjct: 459 YLNGDGMGKGTHLSLFFVIMRGEYDALLPWPFKQKVTLMLMDQGSSRRHLGDAFKPDPNS 518
+
+Query: 121 SSFQRPVNDMNIASGCPLFCPVSKMEAKNSYVRDDAIFIKAIVDLTGL 168
+           SSF++P  +MNIASGCP+F   + +E   +Y++DD IFIK IVD + L
+Sbjct: 519 SSFKKPTGEMNIASGCPVFVAQTVLE-NGTYIKDDTIFIKVIVDTSDL 565
+
+
+>sp|Q60803|TRAF3_MOUSE TNF receptor-associated factor 3 OS=Mus
+           musculus GN=Traf3 PE=1 SV=1
+          Length = 567
+
+ Score =  214 bits (545), Expect = 2e-55,   Method: Composition-based stats.
+ Identities = 94/168 (55%), Positives = 129/168 (76%), Gaps = 2/168 (1%)
+
+Query: 2   MADLEQKVLEMEASTYDGVFIWKISDFPRKRQEAVAGRIPAIFSPAFYTSRYGYKMCLRI 61
+           +AD++ +   +E ++Y+GV IWKI D+ R++QEAV G+  +++S  FYT  +GYKMC R+
+Sbjct: 398 LADMDLRFQVLETASYNGVLIWKIRDYKRRKQEAVMGKTLSLYSQPFYTGYFGYKMCARV 457
+
+Query: 62  YLNGDGTGRGTHLSLFFVVMKGPNDALLRWPFNQKVTLMLLDQ-NNREHVIDAFRPDVTS 120
+           YLNGDG G+GTHLSLFFV+M+G  DALL WPF QKVTLML+DQ ++R H+ DAF+PD  S
+Sbjct: 458 YLNGDGMGKGTHLSLFFVIMRGEYDALLPWPFKQKVTLMLMDQGSSRRHLGDAFKPDPNS 517
+
+Query: 121 SSFQRPVNDMNIASGCPLFCPVSKMEAKNSYVRDDAIFIKAIVDLTGL 168
+           SSF++P  +MNIASGCP+F   + +E   +Y++DD IFIK IVD + L
+Sbjct: 518 SSFKKPTGEMNIASGCPVFVAQTVLE-NGTYIKDDTIFIKVIVDTSDL 564
+
+
+>sp|O00463|TRAF5_HUMAN TNF receptor-associated factor 5 OS=Homo
+           sapiens GN=TRAF5 PE=1 SV=2
+          Length = 557
+
+ Score =  209 bits (531), Expect = 6e-54,   Method: Composition-based stats.
+ Identities = 91/164 (55%), Positives = 128/164 (78%), Gaps = 1/164 (0%)
+
+Query: 6   EQKVLEMEASTYDGVFIWKISDFPRKRQEAVAGRIPAIFSPAFYTSRYGYKMCLRIYLNG 65
+           E++   +E + Y+G  IWK++D+  K++EAV G   +IFS +FYTSR GY++C R YLNG
+Sbjct: 391 EERFKLLEGTCYNGKLIWKVTDYKMKKREAVDGHTVSIFSQSFYTSRCGYRLCARAYLNG 450
+
+Query: 66  DGTGRGTHLSLFFVVMKGPNDALLRWPFNQKVTLMLLDQNNREHVIDAFRPDVTSSSFQR 125
+           DG+GRG+HLSL+FVVM+G  D+LL+WPF Q+VTLMLLDQ+ ++++++ F+PD  SSSF+R
+Sbjct: 451 DGSGRGSHLSLYFVVMRGEFDSLLQWPFRQRVTLMLLDQSGKKNIMETFKPDPNSSSFKR 510
+
+Query: 126 PVNDMNIASGCPLFCPVSKME-AKNSYVRDDAIFIKAIVDLTGL 168
+           P  +MNIASGCP F   S +E AKN+Y++DD +F+K  VDLT L
+Sbjct: 511 PDGEMNIASGCPRFVAHSVLENAKNAYIKDDTLFLKVAVDLTDL 554
+
+
+>sp|P70191|TRAF5_MOUSE TNF receptor-associated factor 5 OS=Mus
+           musculus GN=Traf5 PE=1 SV=1
+          Length = 558
+
+ Score =  203 bits (516), Expect = 3e-52,   Method: Composition-based stats.
+ Identities = 89/165 (53%), Positives = 126/165 (76%), Gaps = 2/165 (1%)
+
+Query: 6   EQKVLEMEASTYDGVFIWKISDFPRKRQEAVAGRIPAIFSPAFYTSRYGYKMCLRIYLNG 65
+           E++  ++E + Y G  IWK++D+  K++EAV G   ++FS  FYTSR GY++C R YLNG
+Sbjct: 391 EERFKQLEGACYSGKLIWKVTDYRVKKREAVEGHTVSVFSQPFYTSRCGYRLCARAYLNG 450
+
+Query: 66  DGTGRGTHLSLFFVVMKGPNDALLRWPFNQKVTLMLLDQNNRE-HVIDAFRPDVTSSSFQ 124
+           DG+G+GTHLSL+FVVM+G  D+LL+WPF Q+VTLMLLDQ+ ++ H+++ F+ D  SSSF+
+Sbjct: 451 DGSGKGTHLSLYFVVMRGEFDSLLQWPFRQRVTLMLLDQSGKKNHIVETFKADPNSSSFK 510
+
+Query: 125 RPVNDMNIASGCPLFCPVSKME-AKNSYVRDDAIFIKAIVDLTGL 168
+           RP  +MNIASGCP F   S +E +KN+Y++DD +F+K  VDLT L
+Sbjct: 511 RPDGEMNIASGCPRFVSHSTLENSKNTYIKDDTLFLKVAVDLTDL 555
+
+
+>sp|Q9BUZ4|TRAF4_HUMAN TNF receptor-associated factor 4 OS=Homo
+           sapiens GN=TRAF4 PE=1 SV=1
+          Length = 470
+
+ Score =  141 bits (355), Expect = 2e-33,   Method: Composition-based stats.
+ Identities = 73/175 (41%), Positives = 108/175 (61%), Gaps = 13/175 (7%)
+
+Query: 2   MADLEQKVLEMEASTYDGVFIWKISDFPRKRQEAVAGRIPAIFSPAFYTSRYGYKMCLRI 61
+           + +L +++ E+   + DGV IWKI  + R+ QEA A      FSPAFYT +YGYK+ +  
+Sbjct: 292 LQELRRELEELSVGS-DGVLIWKIGSYGRRLQEAKAKPNLECFSPAFYTHKYGYKLQVSA 350
+
+Query: 62  YLNGDGTGRGTHLSLFFVVMKGPNDALLRWPFNQKVTLMLLDQNN-----REHVIDAFRP 116
+           +LNG+G+G GTHLSL+  V+ G  D LL WPF ++VT  LLDQ++      +HV + F P
+Sbjct: 351 FLNGNGSGEGTHLSLYIRVLPGAFDNLLEWPFARRVTFSLLDQSDPGLAKPQHVTETFHP 410
+
+Query: 117 DVTSSSFQRP------VNDMNIASGCPLFCPVSKMEAKNSYVRDDAIFIKAIVDL 165
+           D    +FQ+P      +++ ++  G P F     +  +N YVRDDA+FI+A V+L
+Sbjct: 411 DPNWKNFQKPGTWRGSLDESSLGFGYPKFISHQDIRKRN-YVRDDAVFIRAAVEL 464
+
+
+>sp|Q61382|TRAF4_MOUSE TNF receptor-associated factor 4 OS=Mus
+           musculus GN=Traf4 PE=2 SV=1
+          Length = 470
+
+ Score =  135 bits (340), Expect = 1e-31,   Method: Composition-based stats.
+ Identities = 71/175 (40%), Positives = 106/175 (60%), Gaps = 13/175 (7%)
+
+Query: 2   MADLEQKVLEMEASTYDGVFIWKISDFPRKRQEAVAGRIPAIFSPAFYTSRYGYKMCLRI 61
+           + +L +++ E+   + DGV IWKI  + R+ QEA A      FSPAFYT +YGYK+ +  
+Sbjct: 292 LQELRRELEELSIGS-DGVLIWKIGSYGRRLQEAKAKPNLECFSPAFYTHKYGYKLQVSA 350
+
+Query: 62  YLNGDGTGRGTHLSLFFVVMKGPNDALLRWPFNQKVTLMLLDQNN-----REHVIDAFRP 116
+            LNG+G+G GTHLS++  V+ G  D LL WP  ++VT  LLDQ++      +HV + F P
+Sbjct: 351 SLNGNGSGEGTHLSIYIRVLPGAFDNLLEWPLARRVTFSLLDQSDPGLAKPQHVTETFHP 410
+
+Query: 117 DVTSSSFQRP------VNDMNIASGCPLFCPVSKMEAKNSYVRDDAIFIKAIVDL 165
+           D    +FQ+P      +++ ++  G P F     +  +N YVRDDA+FI+A V+L
+Sbjct: 411 DPNWKNFQKPGTWRGSLDESSLGFGYPKFISHQDIRKRN-YVRDDAVFIRASVEL 464
+
+
+>sp|P70196|TRAF6_MOUSE TNF receptor-associated factor 6 OS=Mus
+           musculus GN=Traf6 PE=1 SV=1
+          Length = 530
+
+ Score = 98.2 bits (243), Expect = 2e-20,   Method: Composition-based stats.
+ Identities = 62/176 (35%), Positives = 93/176 (52%), Gaps = 16/176 (9%)
+
+Query: 5   LEQKVLEMEASTYDGVFIWKISDFPRKRQEAVAGRIPAIFSPAFYTSRYGYKMCLRIYLN 64
+           LE KV EMEA   +G++IWKI  F    +     R   I SP FYT R GYK+C+R++L 
+Sbjct: 345 LEDKVAEMEAQQCNGIYIWKIGKFGMHLKSQEEERPVVIHSPGFYTGRPGYKLCMRLHLQ 404
+
+Query: 65  GDGTGR-GTHLSLFFVVMKGPNDALLRWPFNQKVTLMLLDQN------NREHVIDAFRPD 117
+                R   ++SLF   M+G  D+ L WPF   + L +LDQ+      N E V+DA +P+
+Sbjct: 405 LPTAQRCANYISLFVHTMQGEYDSHLPWPFQGTIRLTILDQSEALIRQNHEEVMDA-KPE 463
+
+Query: 118 VTSSSFQRPVNDMNIAS-GCPLFCPVSKMEAKNSYVRDDAIFIKAIV----DLTGL 168
+           +   +FQRP    N    G   F  +  +  + ++++DD + ++  V    D+ GL
+Sbjct: 464 LL--AFQRPTIPRNPKGFGYVTFMHLEALR-QGTFIKDDTLLVRCEVSTRFDMGGL 516
+
+
+>sp|Q9Y4K3|TRAF6_HUMAN TNF receptor-associated factor 6 OS=Homo
+           sapiens GN=TRAF6 PE=1 SV=1
+          Length = 522
+
+ Score = 91.7 bits (226), Expect = 2e-18,   Method: Composition-based stats.
+ Identities = 55/167 (32%), Positives = 90/167 (53%), Gaps = 12/167 (7%)
+
+Query: 5   LEQKVLEMEASTYDGVFIWKISDFPRKRQEAVAGRIPAIFSPAFYTSRYGYKMCLRIYLN 64
+           LE KV E+EA   +G++IWKI +F    +     +   I SP FYT + GYK+C+R++L 
+Sbjct: 337 LEDKVAEIEAQQCNGIYIWKIGNFGMHLKCQEEEKPVVIHSPGFYTGKPGYKLCMRLHLQ 396
+
+Query: 65  GDGTGR-GTHLSLFFVVMKGPNDALLRWPFNQKVTLMLLDQN------NREHVIDAFRPD 117
+                R   ++SLF   M+G  D+ L WPF   + L +LDQ+      N E ++DA +P+
+Sbjct: 397 LPTAQRCANYISLFVHTMQGEYDSHLPWPFQGTIRLTILDQSEAPVRQNHEEIMDA-KPE 455
+
+Query: 118 VTSSSFQRPVNDMNIAS-GCPLFCPVSKMEAKNSYVRDDAIFIKAIV 163
+           +   +FQRP    N    G   F  +  +  + ++++DD + ++  V
+Sbjct: 456 LL--AFQRPTIPRNPKGFGYVTFMHLEALRQR-TFIKDDTLLVRCEV 499
+
+
+>sp|Q61847|MEP1B_MOUSE Meprin A subunit beta OS=Mus musculus
+           GN=Mep1b PE=1 SV=1
+          Length = 704
+
+ Score = 50.1 bits (118), Expect = 6e-06,   Method: Composition-based stats.
+ Identities = 34/108 (31%), Positives = 57/108 (52%), Gaps = 22/108 (20%)
+
+Query: 22  IWKISDFPRKRQEAVAGRIPAIFSPAFYTSRYGYKMCLRIYLNGDGTGRGTHLSLFFVVM 81
+           IW I +F     + + G+  +++SP FY+S+ GY    +IY++       T++ ++F ++
+Sbjct: 432 IWHIQNF----TQILGGQDTSVYSPPFYSSK-GY--AFQIYMD---LRYSTNVGIYFHLI 481
+
+Query: 82  KGPNDALLRWPFN-QKVTLMLLDQNNREHVIDAFRPDVTSSSF-QRPV 127
+            G ND  L+WP   Q+ T+ LLDQN          PD+    F QR +
+Sbjct: 482 SGANDDQLQWPCPWQQATMTLLDQN----------PDIRQRMFNQRSI 519
+
+
+>sp|P28825|MEP1A_MOUSE Meprin A subunit alpha OS=Mus musculus
+           GN=Mep1a PE=1 SV=3
+          Length = 747
+
+ Score = 48.9 bits (115), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 29/84 (34%), Positives = 43/84 (51%), Gaps = 4/84 (4%)
+
+Query: 22  IWKISDFPRKRQEAVAGRIPAIFSPAFYTSRYGYKMCLRIYLNGDGTGRGTHLSLFFVVM 81
+           +W I +  +  +  V G    + SP FY S  GY + + +Y NG  T     L L F + 
+Sbjct: 434 VWTIRNISQILENTVKG--DKLVSPRFYNSE-GYGVGVTLYPNGRITSNSGLLGLTFHLY 490
+
+Query: 82  KGPNDALLRWPF-NQKVTLMLLDQ 104
+            G NDA+L WP  N++  + +LDQ
+Sbjct: 491 SGDNDAILEWPVENRQAIMTILDQ 514
+
+
+>sp|Q64230|MEP1A_RAT Meprin A subunit alpha OS=Rattus norvegicus
+           GN=Mep1a PE=1 SV=1
+          Length = 748
+
+ Score = 48.9 bits (115), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 28/84 (33%), Positives = 42/84 (50%), Gaps = 4/84 (4%)
+
+Query: 22  IWKISDFPRKRQEAVAGRIPAIFSPAFYTSRYGYKMCLRIYLNGDGTGRGTHLSLFFVVM 81
+           +W I +  +  +  V G    + SP FY S  GY   + +Y NG  T    +L L F + 
+Sbjct: 436 VWTIRNISQVLENTVKG--DRLVSPRFYNSE-GYGFGVTLYPNGRITSNSGYLGLAFHLY 492
+
+Query: 82  KGPNDALLRWPF-NQKVTLMLLDQ 104
+            G ND +L WP  N++  + +LDQ
+Sbjct: 493 SGDNDVILEWPVENEQAIMTILDQ 516
+
+
+>sp|P28826|MEP1B_RAT Meprin A subunit beta OS=Rattus norvegicus
+           GN=Mep1b PE=1 SV=2
+          Length = 704
+
+ Score = 47.4 bits (111), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 29/85 (34%), Positives = 46/85 (54%), Gaps = 12/85 (14%)
+
+Query: 22  IWKISDFPRKRQEAVAGRIPAIFSPAFYTSRYGYKMCLRIYLNGDGTGRGTHLSLFFVVM 81
+           IW I +F +     + G    ++SP FY+S+ GY   + + L        T++ L+F ++
+Sbjct: 432 IWHIQNFTQ-----LLGGQTTVYSPPFYSSK-GYAFQINLDLTSP-----TNVGLYFHLI 480
+
+Query: 82  KGPNDALLRWPFN-QKVTLMLLDQN 105
+            G ND  L+WP   Q+ T+ LLDQN
+Sbjct: 481 SGANDDQLQWPCPWQQATMTLLDQN 505
+
+
+>sp|Q16820|MEP1B_HUMAN Meprin A subunit beta OS=Homo sapiens
+           GN=MEP1B PE=1 SV=2
+          Length = 701
+
+ Score = 46.6 bits (109), Expect = 6e-05,   Method: Composition-based stats.
+ Identities = 30/85 (35%), Positives = 46/85 (54%), Gaps = 11/85 (12%)
+
+Query: 22  IWKISDFPRKRQEAVAGRIPAIFSPAFYTSRYGYKMCLRIYLNGDGTGRGTHLSLFFVVM 81
+           IW I +F     + +      ++SP FY+S+ GY    +IYLN       T+  ++F ++
+Sbjct: 431 IWHIRNF----TQFIGSPNGTLYSPPFYSSK-GY--AFQIYLN---LAHVTNAGIYFHLI 480
+
+Query: 82  KGPNDALLRWPFN-QKVTLMLLDQN 105
+            G ND  L+WP   Q+ T+ LLDQN
+Sbjct: 481 SGANDDQLQWPCPWQQATMTLLDQN 505
+
+
+>sp|Q16819|MEP1A_HUMAN Meprin A subunit alpha OS=Homo sapiens
+           GN=MEP1A PE=2 SV=2
+          Length = 746
+
+ Score = 44.3 bits (103), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 39/118 (33%), Positives = 56/118 (47%), Gaps = 16/118 (13%)
+
+Query: 22  IWKISDFPRKRQEAVAGRIPAIFSPAFYTSRYGYKMCLRIYLNG-DGTGRGTHLSLFFVV 80
+           +W + +F +  +    G    + SP FY S  GY   + +Y N  + +G   +L L F V
+Sbjct: 435 VWTVRNFSQVLENTSKG--DKLQSPRFYNSE-GYGFGVTLYPNSRESSG---YLRLAFHV 488
+
+Query: 81  MKGPNDALLRWPF-NQKVTLMLLDQN----NREHVIDAFRPDVTSSSFQRP-VNDMNI 132
+             G NDA+L WP  N++V + +LDQ     NR      F    TS S   P +ND  I
+Sbjct: 489 CSGENDAILEWPVENRQVIITILDQEPDVRNRMSSSMVF---TTSKSHTSPAINDTVI 543
+
+
+  Database: sprot
+    Posted date:  Mar 15, 2009  5:38 PM
+  Number of letters in database: 148,809,765
+  Number of sequences in database:  412,525
+  
+Lambda     K      H
+   0.324    0.139    0.423 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 48,287,027
+Number of Sequences: 412525
+Number of extensions: 1932432
+Number of successful extensions: 3869
+Number of sequences better than 1.0e-03: 18
+Number of HSP's better than  0.0 without gapping: 11
+Number of HSP's successfully gapped in prelim test: 7
+Number of HSP's that attempted gapping in prelim test: 3840
+Number of HSP's gapped (non-prelim): 19
+length of query: 168
+length of database: 148,809,765
+effective HSP length: 107
+effective length of query: 61
+effective length of database: 104,669,590
+effective search space: 6384844990
+effective search space used: 6384844990
+T: 11
+A: 40
+X1: 15 ( 7.0 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 40 (21.6 bits)
+S2: 99 (42.7 bits)

@@ -1,0 +1,52 @@
+	 Amino Acid Conservation Scores
+	===============================
+
+- POS: The position of the AA in the SEQRES derived sequence.
+- SEQ: The SEQRES derived sequence in one letter code.
+- 3LATOM: The ATOM derived sequence in three letter code, including the AA's positions as they appear in the PDB file and the chain identifier.
+- SCORE: The normalized conservation scores.
+- COLOR: The color scale representing the conservation scores (9 - conserved, 1 - variable).
+- CONFIDENCE INTERVAL: When using the bayesian method for calculating rates, a confidence interval is assigned to each of the inferred evolutionary conservation scores.
+- CONFIDENCE INTERVAL COLORS: When using the bayesian method for calculating rates. The color scale representing the lower and upper bounds of the confidence interval.
+- MSA DATA: The number of aligned sequences having an amino acid (non-gapped) from the overall number of sequences at each position.
+- RESIDUE VARIETY: The residues variety at each position of the multiple sequence alignment.
+
+ POS	 SEQ	    3LATOM	SCORE		COLOR	CONFIDENCE INTERVAL	CONFIDENCE INTERVAL COLORS	MSA DATA	RESIDUE VARIETY
+    	    	        	(normalized)	        	               
+   1	   S	    SER1:A	 0.444		  3*	-1.462, 1.651			    9,1			     2/5	S,T               
+   2	   D	    ASP2:A	 0.654		  2*	-1.108, 2.441			    9,1			     4/5	D,G               
+   3	   L	    LEU3:A	-0.622		  8*	-2.171, 0.509			    9,3			     5/5	L                 
+   4	   P	    PRO4:A	-0.680		  8*	-2.171, 0.509			    9,3			     5/5	P                 
+   5	   A	    ALA5:A	 0.630		  2*	-1.462, 2.441			    9,1			     5/5	A,P               
+   6	   G	    GLY6:A	-0.618		  8*	-2.171, 0.509			    9,3			     5/5	G                 
+   7	   W	    TRP7:A	-0.359		  7*	-2.171, 1.031			    9,1			     5/5	W                 
+   8	   M	    MET8:A	 1.773		  1*	-0.360, 3.597			    7,1			     5/5	K,M,R             
+   9	   R	    ARG9:A	 0.412		  3*	-1.462, 1.651			    9,1			     5/5	K,R               
+  10	   V	   VAL10:A	 0.223		  4*	-1.462, 1.651			    9,1			     5/5	I,V               
+  11	   Q	   GLN11:A	 3.811		  1*	 1.651, 6.385			    1,1			     5/5	H,N,Q,R,S         
+  12	   D	   ASP12:A	-0.866		  9*	-2.555, 0.509			    9,3			     5/5	D                 
+  13	   T	   THR13:A	 1.921		  1*	-0.360, 3.597			    7,1			     5/5	A,I,T             
+  14	   S	   SER14:A	 0.271		  4*	-1.462, 1.651			    9,1			     5/5	A,S               
+  15	   G	   GLY15:A	-0.618		  8*	-2.171, 0.509			    9,3			     5/5	G                 
+  16	   T	   THR16:A	-1.055		  9*	-2.555, 0.053			    9,5			     5/5	T                 
+  17	   Y	   TYR17:A	-0.585		  7*	-2.171, 0.509			    9,3			     5/5	Y                 
+  18	   Y	   TYR18:A	-0.585		  7*	-2.171, 0.509			    9,3			     5/5	Y                 
+  19	   W	   TRP19:A	-0.359		  7*	-2.171, 1.031			    9,1			     5/5	W                 
+  20	   H	   HIS20:A	-0.959		  9*	-2.555, 0.053			    9,5			     5/5	H                 
+  21	   I	   ILE21:A	 0.211		  4*	-1.462, 1.651			    9,1			     5/5	I,V               
+  22	   P	   PRO22:A	-0.680		  8*	-2.171, 0.509			    9,3			     5/5	P                 
+  23	   T	   THR23:A	 0.190		  4*	-1.462, 1.651			    9,1			     5/5	S,T               
+  24	   G	   GLY24:A	-0.618		  8*	-2.171, 0.509			    9,3			     5/5	G                 
+  25	   T	   THR25:A	 0.190		  4*	-1.462, 1.651			    9,1			     5/5	S,T               
+  26	   T	   THR26:A	-1.055		  9*	-2.555, 0.053			    9,5			     5/5	T                 
+  27	   Q	   GLN27:A	-0.893		  9*	-2.555, 0.053			    9,5			     5/5	Q                 
+  28	   W	   TRP28:A	-0.359		  7*	-2.171, 1.031			    9,1			     5/5	W                 
+  29	   E	   GLU29:A	 0.465		  3*	-1.462, 1.651			    9,1			     5/5	E,Q               
+  30	   P	   PRO30:A	 0.548		  3*	-1.462, 1.651			    9,1			     5/5	P,R               
+  31	   P	   PRO31:A	-0.680		  8*	-2.171, 0.509			    9,3			     5/5	P                 
+  32	   G	   GLY32:A	-0.075		  5*	-2.171, 1.031			    9,1			     1/5	G                 
+  33	   R	   ARG33:A	-0.075		  5*	-2.171, 1.651			    9,1			     1/5	R                 
+
+
+*Below the confidence cut-off - The calculations for this site were performed on less than 6 non-gaped homologue sequences,
+or the confidence interval for the estimated score is equal to- or larger than- 4 color grades.

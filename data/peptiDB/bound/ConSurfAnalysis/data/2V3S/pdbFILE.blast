@@ -1,0 +1,186 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_A  96
+         (96 letters)
+
+Database: sprot 
+           412,525 sequences; 148,809,765 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q5R495|OXSR1_PONAB Serine/threonine-protein kinase OSR1 OS=Po...   184   1e-46
+sp|O95747|OXSR1_HUMAN Serine/threonine-protein kinase OSR1 OS=Ho...   184   2e-46
+sp|Q6P9R2|OXSR1_MOUSE Serine/threonine-protein kinase OSR1 OS=Mu...   183   2e-46
+sp|Q863I2|OXSR1_PIG Serine/threonine-protein kinase OSR1 OS=Sus ...   182   5e-46
+sp|Q9UEW8|STK39_HUMAN STE20/SPS1-related proline-alanine-rich pr...   150   1e-36
+sp|Q9Z1W9|STK39_MOUSE STE20/SPS1-related proline-alanine-rich pr...   150   1e-36
+sp|O88506|STK39_RAT STE20/SPS1-related proline-alanine-rich prot...   150   3e-36
+
+>sp|Q5R495|OXSR1_PONAB Serine/threonine-protein kinase OSR1 OS=Pongo
+           abelii GN=OXSR1 PE=2 SV=1
+          Length = 527
+
+ Score =  184 bits (466), Expect = 1e-46,   Method: Composition-based stats.
+ Identities = 95/95 (100%), Positives = 95/95 (100%)
+
+Query: 2   PISLVLRLRNSKKELNDIRFEFTPGRDTAEGVSQELISAGLVDGRDLVIVAANLQKIVEE 61
+           PISLVLRLRNSKKELNDIRFEFTPGRDTAEGVSQELISAGLVDGRDLVIVAANLQKIVEE
+Sbjct: 433 PISLVLRLRNSKKELNDIRFEFTPGRDTAEGVSQELISAGLVDGRDLVIVAANLQKIVEE 492
+
+Query: 62  PQSNRSVTFKLASGVEGSDIPDDGKLIGFAQLSIS 96
+           PQSNRSVTFKLASGVEGSDIPDDGKLIGFAQLSIS
+Sbjct: 493 PQSNRSVTFKLASGVEGSDIPDDGKLIGFAQLSIS 527
+
+
+>sp|O95747|OXSR1_HUMAN Serine/threonine-protein kinase OSR1 OS=Homo
+           sapiens GN=OXSR1 PE=1 SV=1
+          Length = 527
+
+ Score =  184 bits (466), Expect = 2e-46,   Method: Composition-based stats.
+ Identities = 95/95 (100%), Positives = 95/95 (100%)
+
+Query: 2   PISLVLRLRNSKKELNDIRFEFTPGRDTAEGVSQELISAGLVDGRDLVIVAANLQKIVEE 61
+           PISLVLRLRNSKKELNDIRFEFTPGRDTAEGVSQELISAGLVDGRDLVIVAANLQKIVEE
+Sbjct: 433 PISLVLRLRNSKKELNDIRFEFTPGRDTAEGVSQELISAGLVDGRDLVIVAANLQKIVEE 492
+
+Query: 62  PQSNRSVTFKLASGVEGSDIPDDGKLIGFAQLSIS 96
+           PQSNRSVTFKLASGVEGSDIPDDGKLIGFAQLSIS
+Sbjct: 493 PQSNRSVTFKLASGVEGSDIPDDGKLIGFAQLSIS 527
+
+
+>sp|Q6P9R2|OXSR1_MOUSE Serine/threonine-protein kinase OSR1 OS=Mus
+           musculus GN=Oxsr1 PE=1 SV=1
+          Length = 527
+
+ Score =  183 bits (465), Expect = 2e-46,   Method: Composition-based stats.
+ Identities = 95/95 (100%), Positives = 95/95 (100%)
+
+Query: 2   PISLVLRLRNSKKELNDIRFEFTPGRDTAEGVSQELISAGLVDGRDLVIVAANLQKIVEE 61
+           PISLVLRLRNSKKELNDIRFEFTPGRDTAEGVSQELISAGLVDGRDLVIVAANLQKIVEE
+Sbjct: 433 PISLVLRLRNSKKELNDIRFEFTPGRDTAEGVSQELISAGLVDGRDLVIVAANLQKIVEE 492
+
+Query: 62  PQSNRSVTFKLASGVEGSDIPDDGKLIGFAQLSIS 96
+           PQSNRSVTFKLASGVEGSDIPDDGKLIGFAQLSIS
+Sbjct: 493 PQSNRSVTFKLASGVEGSDIPDDGKLIGFAQLSIS 527
+
+
+>sp|Q863I2|OXSR1_PIG Serine/threonine-protein kinase OSR1 OS=Sus
+           scrofa GN=OXSR1 PE=2 SV=1
+          Length = 529
+
+ Score =  182 bits (461), Expect = 5e-46,   Method: Composition-based stats.
+ Identities = 94/95 (98%), Positives = 94/95 (98%)
+
+Query: 2   PISLVLRLRNSKKELNDIRFEFTPGRDTAEGVSQELISAGLVDGRDLVIVAANLQKIVEE 61
+           PISLVLRLRNSKKELNDIRFEFTPGRDTAEGVSQELISAGLVDGRDLVIVAANLQKIVEE
+Sbjct: 435 PISLVLRLRNSKKELNDIRFEFTPGRDTAEGVSQELISAGLVDGRDLVIVAANLQKIVEE 494
+
+Query: 62  PQSNRSVTFKLASGVEGSDIPDDGKLIGFAQLSIS 96
+           PQSNRSVTFKLASGVEGSDIPDD KLIGFAQLSIS
+Sbjct: 495 PQSNRSVTFKLASGVEGSDIPDDSKLIGFAQLSIS 529
+
+
+>sp|Q9UEW8|STK39_HUMAN STE20/SPS1-related proline-alanine-rich
+           protein kinase OS=Homo sapiens GN=STK39 PE=1 SV=2
+          Length = 547
+
+ Score =  150 bits (380), Expect = 1e-36,   Method: Composition-based stats.
+ Identities = 73/94 (77%), Positives = 89/94 (94%)
+
+Query: 3   ISLVLRLRNSKKELNDIRFEFTPGRDTAEGVSQELISAGLVDGRDLVIVAANLQKIVEEP 62
+           ++LVLRLRNS+KELNDIRFEFTPGRDTA+GVSQEL SAGLVDG D+VIVAANLQKIV++P
+Sbjct: 454 VNLVLRLRNSRKELNDIRFEFTPGRDTADGVSQELFSAGLVDGHDVVIVAANLQKIVDDP 513
+
+Query: 63  QSNRSVTFKLASGVEGSDIPDDGKLIGFAQLSIS 96
+           ++ +++TFKLASG +GS+IPD+ KLIGFAQLS+S
+Sbjct: 514 KALKTLTFKLASGCDGSEIPDEVKLIGFAQLSVS 547
+
+
+>sp|Q9Z1W9|STK39_MOUSE STE20/SPS1-related proline-alanine-rich
+           protein kinase OS=Mus musculus GN=Stk39 PE=1 SV=1
+          Length = 556
+
+ Score =  150 bits (380), Expect = 1e-36,   Method: Composition-based stats.
+ Identities = 75/98 (76%), Positives = 91/98 (92%), Gaps = 2/98 (2%)
+
+Query: 1   GP--ISLVLRLRNSKKELNDIRFEFTPGRDTAEGVSQELISAGLVDGRDLVIVAANLQKI 58
+           GP  ++LVLRLRNS+KELNDIRFEFTPGRDTA+GVSQEL SAGLVDG D+VIVAANLQKI
+Sbjct: 459 GPCAVNLVLRLRNSRKELNDIRFEFTPGRDTADGVSQELFSAGLVDGHDVVIVAANLQKI 518
+
+Query: 59  VEEPQSNRSVTFKLASGVEGSDIPDDGKLIGFAQLSIS 96
+           V++P++ +++TFKLASG +GS+IPD+ KLIGFAQLS+S
+Sbjct: 519 VDDPKALKTLTFKLASGCDGSEIPDEVKLIGFAQLSVS 556
+
+
+>sp|O88506|STK39_RAT STE20/SPS1-related proline-alanine-rich protein
+           kinase OS=Rattus norvegicus GN=Stk39 PE=2 SV=2
+          Length = 553
+
+ Score =  150 bits (378), Expect = 3e-36,   Method: Composition-based stats.
+ Identities = 74/98 (75%), Positives = 91/98 (92%), Gaps = 2/98 (2%)
+
+Query: 1   GP--ISLVLRLRNSKKELNDIRFEFTPGRDTAEGVSQELISAGLVDGRDLVIVAANLQKI 58
+           GP  ++LVLRLRNS+KELNDIRFEFTPGRDTA+GVSQEL SAGLVDG D+VIVAANLQKI
+Sbjct: 456 GPCAVNLVLRLRNSRKELNDIRFEFTPGRDTADGVSQELFSAGLVDGHDVVIVAANLQKI 515
+
+Query: 59  VEEPQSNRSVTFKLASGVEGSDIPDDGKLIGFAQLSIS 96
+           V++P++ +++TFKLASG +G++IPD+ KLIGFAQLS+S
+Sbjct: 516 VDDPKALKTLTFKLASGCDGAEIPDEVKLIGFAQLSVS 553
+
+
+  Database: sprot
+    Posted date:  Mar 15, 2009  5:38 PM
+  Number of letters in database: 148,809,765
+  Number of sequences in database:  412,525
+  
+Lambda     K      H
+   0.314    0.136    0.364 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 25,443,601
+Number of Sequences: 412525
+Number of extensions: 886405
+Number of successful extensions: 2073
+Number of sequences better than 1.0e-03: 7
+Number of HSP's better than  0.0 without gapping: 7
+Number of HSP's successfully gapped in prelim test: 0
+Number of HSP's that attempted gapping in prelim test: 2066
+Number of HSP's gapped (non-prelim): 7
+length of query: 96
+length of database: 148,809,765
+effective HSP length: 66
+effective length of query: 30
+effective length of database: 121,583,115
+effective search space: 3647493450
+effective search space used: 3647493450
+T: 11
+A: 40
+X1: 16 ( 7.3 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 42 (21.9 bits)
+S2: 97 (42.0 bits)

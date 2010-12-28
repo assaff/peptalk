@@ -1,0 +1,47 @@
+Creating a graph of CA vertices. Edged include covalent bonds and polar interactions.
+
+Program parameters: [/vol/ek/dattias/PeptideDocking/bin/protGraph/protGraph.pl]
+===========================
+Working directory: /a/miro/home/ek/dattias/PeptideDocking/PlacementProtocol/unbound/GeometricalMotifs/data/2D0N
+Input File: 2D0N.pdb
+Output File Prefix: 2D0N
+Include Side Chain Interactions: ON
+Always run reduce (including for NMR): ON
+PDB chains: B
+Selected chains: B
+covalent_threshold: 1.65
+BndLst options
+	 executable: bndlst
+	 radius: 0.3
+	 relevant_bondTypes: cov hb
+	 HBnd_weight: 2
+	 HBnd_DistFadeCoeff: 2
+	 CovBnd_weight: 1
+	 SaltBridge_weight: 1.9
+	 SaltBridge_DistFadeCoeff: 2
+Reduce options
+	 executable: reduce
+	 trim: 0
+Pajek options
+	 norm_inter: 1
+	 vCOLORS: Blue Red Green White Purple Yellow Orange
+	 vTYPES_2_vSHAPES: 
+		SC => triangle
+		MC => ellipse
+		CO => ellipse
+		het => box
+		CA => diamond
+	 vCHAIN_CLASS_2_vSHAPES: 
+		A => triangle
+		B => ellipse
+	 eTYPES_2_eCOLORS_intrachain: 
+		salt => Orange
+		cov => Black
+		hb => Red
+	 eTYPES_2_eCOLORS_interchain: 
+		salt => White
+		cov => Grey
+		hb => Purple
+Epsilon: 0.0001
+Chain classification: OFF
+Classify interface residues: OFF

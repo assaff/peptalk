@@ -1,0 +1,849 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_A  130
+         (130 letters)
+
+Database: sprot 
+           412,525 sequences; 148,809,765 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|P47068|BBC1_YEAST Myosin tail region-interacting protein MTI1...   131   9e-31
+sp|O42854|YFHH_SCHPO SH3 domain-containing protein C23A1.17 OS=S...    57   3e-08
+sp|Q91X43|SH319_MOUSE SH3 domain-containing protein 19 OS=Mus mu...    54   3e-07
+sp|Q9Z0R6|ITSN2_MOUSE Intersectin-2 OS=Mus musculus GN=Itsn2 PE=...    52   6e-07
+sp|Q8BZT2|SH3R2_MOUSE Putative E3 ubiquitin-protein ligase SH3RF...    52   8e-07
+sp|P34258|YKA7_CAEEL Uncharacterized protein B0303.7 OS=Caenorha...    51   2e-06
+sp|O35413|SRBS2_RAT Sorbin and SH3 domain-containing protein 2 O...    50   2e-06
+sp|Q498M5|SH3R2_RAT Putative E3 ubiquitin-protein ligase SH3RF2 ...    50   2e-06
+sp|Q9NZM3|ITSN2_HUMAN Intersectin-2 OS=Homo sapiens GN=ITSN2 PE=...    50   5e-06
+sp|Q5RBR0|SH3R1_PONAB Putative E3 ubiquitin-protein ligase SH3RF...    49   5e-06
+sp|Q7Z6J0|SH3R1_HUMAN Putative E3 ubiquitin-protein ligase SH3RF...    49   6e-06
+sp|Q8TEC5|SH3R2_HUMAN Putative E3 ubiquitin-protein ligase SH3RF...    49   7e-06
+sp|Q71F54|SH3R1_RAT Putative E3 ubiquitin-protein ligase SH3RF1 ...    49   8e-06
+sp|Q62417|SRBS1_MOUSE Sorbin and SH3 domain-containing protein 1...    49   9e-06
+sp|A5D8S5|SH3R1_DANRE Putative E3 ubiquitin-protein ligase SH3RF...    49   1e-05
+sp|Q69ZI1|SH3R1_MOUSE Putative E3 ubiquitin-protein ligase SH3RF...    48   1e-05
+sp|Q5HYK7|SH319_HUMAN SH3 domain-containing protein 19 OS=Homo s...    48   1e-05
+sp|Q28E95|SH3R1_XENTR Putative E3 ubiquitin-protein ligase SH3RF...    48   2e-05
+sp|Q3UTJ2|SRBS2_MOUSE Sorbin and SH3 domain-containing protein 2...    47   2e-05
+sp|Q6NRD3|SH3R1_XENLA Putative E3 ubiquitin-protein ligase SH3RF...    47   3e-05
+sp|O60504|VINEX_HUMAN Vinexin OS=Homo sapiens GN=SORBS3 PE=1 SV=1      46   5e-05
+sp|O94875|SRBS2_HUMAN Sorbin and SH3 domain-containing protein 2...    46   6e-05
+sp|Q9R1Z8|VINEX_MOUSE Vinexin OS=Mus musculus GN=Sorbs3 PE=1 SV=1      46   6e-05
+sp|A5D7F8|SH3R1_BOVIN Putative E3 ubiquitin-protein ligase SH3RF...    45   8e-05
+sp|Q9BX66|SRBS1_HUMAN Sorbin and SH3 domain-containing protein 1...    45   8e-05
+sp|Q8C120|SH3R3_MOUSE SH3 domain-containing RING finger protein ...    44   2e-04
+sp|Q8TEJ3|SH3R3_HUMAN SH3 domain-containing RING finger protein ...    44   3e-04
+sp|Q15811|ITSN1_HUMAN Intersectin-1 OS=Homo sapiens GN=ITSN1 PE=...    44   3e-04
+sp|O42287|ITSN1_XENLA Intersectin-1 OS=Xenopus laevis GN=itsn1 P...    43   4e-04
+sp|Q9WVE9|ITSN1_RAT Intersectin-1 OS=Rattus norvegicus GN=Itsn1 ...    43   4e-04
+sp|Q9Z0R4|ITSN1_MOUSE Intersectin-1 OS=Mus musculus GN=Itsn1 PE=...    43   5e-04
+sp|O43639|NCK2_HUMAN Cytoplasmic protein NCK2 OS=Homo sapiens GN...    42   0.001
+
+>sp|P47068|BBC1_YEAST Myosin tail region-interacting protein MTI1
+          OS=Saccharomyces cerevisiae GN=BBC1 PE=1 SV=2
+          Length = 1157
+
+ Score =  131 bits (330), Expect = 9e-31,   Method: Composition-based stats.
+ Identities = 67/69 (97%), Positives = 67/69 (97%)
+
+Query: 1  EPEVPFKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKS 60
+          EPEVPFKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKS
+Sbjct: 3  EPEVPFKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKS 62
+
+Query: 61 FVAVQEPEV 69
+          FVAVQ  EV
+Sbjct: 63 FVAVQGSEV 71
+
+
+
+ Score =  129 bits (325), Expect = 3e-30,   Method: Composition-based stats.
+ Identities = 65/67 (97%), Positives = 66/67 (98%)
+
+Query: 64  VQEPEVPFKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFP 123
+           + EPEVPFKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFP
+Sbjct: 1   MSEPEVPFKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFP 60
+
+Query: 124 KSFVAVQ 130
+           KSFVAVQ
+Sbjct: 61  KSFVAVQ 67
+
+
+>sp|O42854|YFHH_SCHPO SH3 domain-containing protein C23A1.17
+          OS=Schizosaccharomyces pombe GN=SPAC23A1.17 PE=1 SV=1
+          Length = 1611
+
+ Score = 56.6 bits (135), Expect = 3e-08,   Method: Composition-based stats.
+ Identities = 30/65 (46%), Positives = 38/65 (58%)
+
+Query: 5  PFKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSFVAV 64
+          P +VVA +PY+S + DDL F+  Q I V S  D +WY G Y DS+G+   G FPK F   
+Sbjct: 5  PTRVVALYPYRSSFSDDLEFDPGQVIDVVSNLDGDWYTGTYVDSDGNRKIGSFPKDFTEP 64
+
+Query: 65 QEPEV 69
+           E  V
+Sbjct: 65 AEDAV 69
+
+
+
+ Score = 55.8 bits (133), Expect = 6e-08,   Method: Composition-based stats.
+ Identities = 28/57 (49%), Positives = 36/57 (63%)
+
+Query: 70  PFKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSF 126
+           P +VVA +PY+S + DDL F+  Q I V S  D +WY G Y DS+G+   G FPK F
+Sbjct: 5   PTRVVALYPYRSSFSDDLEFDPGQVIDVVSNLDGDWYTGTYVDSDGNRKIGSFPKDF 61
+
+
+>sp|Q91X43|SH319_MOUSE SH3 domain-containing protein 19 OS=Mus
+           musculus GN=Sh3d19 PE=1 SV=2
+          Length = 789
+
+ Score = 53.5 bits (127), Expect = 3e-07,   Method: Composition-based stats.
+ Identities = 41/146 (28%), Positives = 67/146 (45%), Gaps = 30/146 (20%)
+
+Query: 7   KVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNG----DVIE--GIFPKS 60
+           + VA+F Y  D +D+L+F + + II+T   + EW  GE +D +G    + +E  G  P S
+Sbjct: 574 RCVARFEYIGDQKDELSFSEGEVIILTEYVNEEWGRGEIRDRSGIFPLNFVELVGDHPTS 633
+
+Query: 61  FVAVQEPEVPFKVVAQFP-------------------YKSDYEDDLNFEKDQEIIVTSVE 101
+              +   +VP K   + P                   + ++  +DL F++   I++    
+Sbjct: 634 GANILSTKVPPKTKNEDPGSNSQDSSPPGEWCKALHSFTAETSEDLPFKRGDRILILERL 693
+
+Query: 102 DAEWYFGEYQDSNGDVIEGIFPKSFV 127
+           D++WY G   D      EGIFP  FV
+Sbjct: 694 DSDWYRGRLHDR-----EGIFPAVFV 714
+
+
+
+ Score = 50.4 bits (119), Expect = 3e-06,   Method: Composition-based stats.
+ Identities = 40/135 (29%), Positives = 65/135 (48%), Gaps = 26/135 (19%)
+
+Query: 9   VAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSFVA--VQE 66
+           VA   + ++  DDL+    + + +    DAEWY G+ ++       G+FP ++V   V  
+Sbjct: 500 VALHDFPAEQADDLSLTSGEIVYLLEKIDAEWYRGKCRNQT-----GVFPANYVKVIVDI 554
+
+Query: 67  PEVPF--------------KVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQD 112
+           PE                 + VA+F Y  D +D+L+F + + II+T   + EW  GE +D
+Sbjct: 555 PEGRSGKRESFSSHCAKGPRCVARFEYIGDQKDELSFSEGEVIILTEYVNEEWGRGEIRD 614
+
+Query: 113 SNGDVIEGIFPKSFV 127
+            +     GIFP +FV
+Sbjct: 615 RS-----GIFPLNFV 624
+
+
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 35/123 (28%), Positives = 55/123 (44%), Gaps = 19/123 (15%)
+
+Query: 14  YKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSFVAVQEPE----- 68
+           + ++  +DL F++   I++    D++WY G   D      EGIFP  FV     E     
+Sbjct: 671 FTAETSEDLPFKRGDRILILERLDSDWYRGRLHDR-----EGIFPAVFVQPCPAEAKGVA 725
+
+Query: 69  --VP--FKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPK 124
+             +P   KV A + +  + ED+L+F+    I      D  W  GE          G+FPK
+Sbjct: 726 SAIPKGRKVKALYDFLGENEDELSFKAGDVITELEPIDDAWMRGELMGR-----AGMFPK 780
+
+Query: 125 SFV 127
+           ++V
+Sbjct: 781 NYV 783
+
+
+>sp|Q9Z0R6|ITSN2_MOUSE Intersectin-2 OS=Mus musculus GN=Itsn2 PE=1
+            SV=1
+          Length = 1658
+
+ Score = 52.4 bits (124), Expect = 6e-07,   Method: Composition-based stats.
+ Identities = 37/123 (30%), Positives = 62/123 (50%), Gaps = 14/123 (11%)
+
+Query: 14   YKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSFVAVQEPE----V 69
+            Y +   + L+    Q I++     + W+ GE Q       +G FP S V +  P     +
+Sbjct: 1024 YAASGTEQLSLAPGQLILILKKNTSGWWQGELQARGKKRQKGWFPASHVKLLGPSSERTM 1083
+
+Query: 70   PF-----KVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPK 124
+            P      +V+A + Y ++ ED+LNF K Q I V + +D +W+ GE   +NG  + G+FP 
+Sbjct: 1084 PTFHAVCQVIAMYDYMANNEDELNFSKGQLINVMNKDDPDWWQGE---TNG--LTGLFPS 1138
+
+Query: 125  SFV 127
+            ++V
+Sbjct: 1139 NYV 1141
+
+
+
+ Score = 42.7 bits (99), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 23/64 (35%), Positives = 39/64 (60%), Gaps = 5/64 (7%)
+
+Query: 7    KVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSFVAVQE 66
+            +V+A + Y ++ ED+LNF K Q I V + +D +W+ GE   +NG  + G+FP ++V +  
+Sbjct: 1091 QVIAMYDYMANNEDELNFSKGQLINVMNKDDPDWWQGE---TNG--LTGLFPSNYVKMTT 1145
+
+Query: 67   PEVP 70
+               P
+Sbjct: 1146 DSDP 1149
+
+
+>sp|Q8BZT2|SH3R2_MOUSE Putative E3 ubiquitin-protein ligase SH3RF2
+           OS=Mus musculus GN=Sh3rf2 PE=1 SV=2
+          Length = 735
+
+ Score = 52.0 bits (123), Expect = 8e-07,   Method: Composition-based stats.
+ Identities = 45/122 (36%), Positives = 56/122 (45%), Gaps = 18/122 (14%)
+
+Query: 14  YKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSFVAV--QEPEVPF 71
+           Y+     DL F K   I++    D  WY GE    NG  + GIFP S V V  Q P+ P 
+Sbjct: 136 YRGKNPGDLKFNKGDVILLRRQLDENWYQGEI---NG--VSGIFPASSVEVIKQLPQPPP 190
+
+Query: 72  KVVAQFPY------KSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKS 125
+              A + +      KS+ +D L F KD  I V S  D  W  G+     GD + GIFP  
+Sbjct: 191 LCRALYNFDLRDKDKSENQDCLTFLKDDVITVISRVDENWAEGKL----GDKV-GIFPIL 245
+
+Query: 126 FV 127
+           FV
+Sbjct: 246 FV 247
+
+
+>sp|P34258|YKA7_CAEEL Uncharacterized protein B0303.7
+           OS=Caenorhabditis elegans GN=B0303.7 PE=2 SV=5
+          Length = 493
+
+ Score = 50.8 bits (120), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 37/137 (27%), Positives = 61/137 (44%), Gaps = 26/137 (18%)
+
+Query: 9   VAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSFVAVQEP- 67
+           +A+F Y     D++       ++++   DAEW++GE Q+       GI P S++ ++ P 
+Sbjct: 197 IAKFDYAPTQSDEMGLRIGDTVLISKKVDAEWFYGENQNQR---TFGIVPSSYLDIKIPL 253
+
+Query: 68  -----EVPFK------------VVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEY 110
+                 +P +              A + Y S+   DLNF    +I+VT+  + EW  GE 
+Sbjct: 254 KEAFTALPPRPAAPSGSSSGTYATAIYDYNSNEAGDLNFAVGSQIMVTARVNEEWLEGEC 313
+
+Query: 111 QDSNGDVIEGIFPKSFV 127
+              +     GIFP  FV
+Sbjct: 314 FGRS-----GIFPSQFV 325
+
+
+>sp|O35413|SRBS2_RAT Sorbin and SH3 domain-containing protein 2
+            OS=Rattus norvegicus GN=Sorbs2 PE=1 SV=2
+          Length = 1196
+
+ Score = 50.4 bits (119), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 40/144 (27%), Positives = 64/144 (44%), Gaps = 23/144 (15%)
+
+Query: 1    EPEVPFKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKS 60
+            E EV     A + +K+    +L+F+K   + +    D  WY GE+   +G V  GIFP S
+Sbjct: 957  EKEVKLPAKAVYDFKAQTSKELSFKKGDTVYILRKIDQNWYEGEH---HGRV--GIFPIS 1011
+
+Query: 61   FVAVQEPEVPF---------------KVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEW 105
+            +V    P                   + +A++ + +D   +L+  K   II+    D  W
+Sbjct: 1012 YVEKLTPPEKAQPARPPPPVQPGEIGEAIAKYNFNADTNVELSLRKGDRIILLKRVDQNW 1071
+
+Query: 106  YFGEYQDSNGDVIEGIFPKSFVAV 129
+            Y G+   +N    +GIFP S+V V
+Sbjct: 1072 YEGKIPGTNR---QGIFPVSYVEV 1092
+
+
+>sp|Q498M5|SH3R2_RAT Putative E3 ubiquitin-protein ligase SH3RF2
+           OS=Rattus norvegicus GN=Sh3rf2 PE=2 SV=1
+          Length = 735
+
+ Score = 50.4 bits (119), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 44/122 (36%), Positives = 55/122 (45%), Gaps = 18/122 (14%)
+
+Query: 14  YKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSFVAV--QEPEVPF 71
+           Y+     DL F K   I++    D  WY GE    NG  + G FP S V V  Q P+ P 
+Sbjct: 136 YRGKNPGDLKFNKGDVILLQRQLDENWYQGEI---NG--VSGFFPASSVEVIKQLPQPPP 190
+
+Query: 72  KVVAQFPY------KSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKS 125
+              A + +      KS+ +D L F KD  I V S  D  W  G+     GD + GIFP  
+Sbjct: 191 LCRALYNFDLRDKDKSENQDCLTFLKDDVITVISRVDENWAEGKL----GDKV-GIFPIL 245
+
+Query: 126 FV 127
+           FV
+Sbjct: 246 FV 247
+
+
+>sp|Q9NZM3|ITSN2_HUMAN Intersectin-2 OS=Homo sapiens GN=ITSN2 PE=1
+            SV=2
+          Length = 1696
+
+ Score = 49.7 bits (117), Expect = 5e-06,   Method: Composition-based stats.
+ Identities = 35/123 (28%), Positives = 59/123 (47%), Gaps = 14/123 (11%)
+
+Query: 14   YKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSFVAVQEPEVP--- 70
+            Y +   + L+    Q I++     + W+ GE Q       +G FP S V +  P      
+Sbjct: 1063 YVASGSEQLSLAPGQLILILKKNTSGWWQGELQARGKKRQKGWFPASHVKLLGPSSERAT 1122
+
+Query: 71   ------FKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPK 124
+                   +V+A + Y ++ ED+L+F K Q I V + +D +W+ GE    NG  + G+FP 
+Sbjct: 1123 PAFHPVCQVIAMYDYAANNEDELSFSKGQLINVMNKDDPDWWQGEI---NG--VTGLFPS 1177
+
+Query: 125  SFV 127
+            ++V
+Sbjct: 1178 NYV 1180
+
+
+
+ Score = 45.4 bits (106), Expect = 7e-05,   Method: Composition-based stats.
+ Identities = 36/134 (26%), Positives = 57/134 (42%), Gaps = 19/134 (14%)
+
+Query: 9    VAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSFVAVQEPE 68
+            +A +PY S    DL F + +EI+VT  +D EW+ G   D +     GIFP ++V  ++ E
+Sbjct: 986  IALYPYSSVEPGDLTFTEGEEILVTQ-KDGEWWTGSIGDRS-----GIFPSNYVKPKDQE 1039
+
+Query: 69   V-------------PFKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNG 115
+                          P        Y +   + L+    Q I++     + W+ GE Q    
+Sbjct: 1040 SFGSASKSGASNKKPEIAQVTSAYVASGSEQLSLAPGQLILILKKNTSGWWQGELQARGK 1099
+
+Query: 116  DVIEGIFPKSFVAV 129
+               +G FP S V +
+Sbjct: 1100 KRQKGWFPASHVKL 1113
+
+
+>sp|Q5RBR0|SH3R1_PONAB Putative E3 ubiquitin-protein ligase SH3RF1
+           OS=Pongo abelii GN=SH3RF1 PE=2 SV=1
+          Length = 888
+
+ Score = 49.3 bits (116), Expect = 5e-06,   Method: Composition-based stats.
+ Identities = 44/132 (33%), Positives = 59/132 (44%), Gaps = 17/132 (12%)
+
+Query: 2   PEVPFKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSF 61
+           P++P    A + Y+     DL F K   II+    D  WY GE    NG  I G FP +F
+Sbjct: 134 PQLPC-AKALYNYEGKEPGDLKFSKGDIIILRRQVDENWYHGEV---NG--IHGFFPTNF 187
+
+Query: 62  VAVQE--PEVPFKVVAQFPYK-SDYEDD---LNFEKDQEIIVTSVEDAEWYFGEYQDSNG 115
+           V + +  P+ P +  A + ++  D E D   L F KD  + V    D  W  G   D   
+Sbjct: 188 VQIIKPLPQPPPQCKALYDFEVKDKEADKDCLPFAKDDVLTVIRRVDENWAEGMLADK-- 245
+
+Query: 116 DVIEGIFPKSFV 127
+               GIFP S+V
+Sbjct: 246 ---IGIFPISYV 254
+
+
+>sp|Q7Z6J0|SH3R1_HUMAN Putative E3 ubiquitin-protein ligase SH3RF1
+           OS=Homo sapiens GN=SH3RF1 PE=1 SV=2
+          Length = 888
+
+ Score = 49.3 bits (116), Expect = 6e-06,   Method: Composition-based stats.
+ Identities = 44/132 (33%), Positives = 59/132 (44%), Gaps = 17/132 (12%)
+
+Query: 2   PEVPFKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSF 61
+           P++P    A + Y+     DL F K   II+    D  WY GE    NG  I G FP +F
+Sbjct: 134 PQLPC-AKALYNYEGKEPGDLKFSKGDIIILRRQVDENWYHGEV---NG--IHGFFPTNF 187
+
+Query: 62  VAVQE--PEVPFKVVAQFPYK-SDYEDD---LNFEKDQEIIVTSVEDAEWYFGEYQDSNG 115
+           V + +  P+ P +  A + ++  D E D   L F KD  + V    D  W  G   D   
+Sbjct: 188 VQIIKPLPQPPPQCKALYDFEVKDKEADKDCLPFAKDDVLTVIRRVDENWAEGMLADK-- 245
+
+Query: 116 DVIEGIFPKSFV 127
+               GIFP S+V
+Sbjct: 246 ---IGIFPISYV 254
+
+
+>sp|Q8TEC5|SH3R2_HUMAN Putative E3 ubiquitin-protein ligase SH3RF2
+           OS=Homo sapiens GN=SH3RF2 PE=2 SV=2
+          Length = 729
+
+ Score = 48.9 bits (115), Expect = 7e-06,   Method: Composition-based stats.
+ Identities = 45/122 (36%), Positives = 55/122 (45%), Gaps = 18/122 (14%)
+
+Query: 14  YKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSFVAV--QEPEVPF 71
+           Y+     DL F K   I++    D  WY GE    NG  I G FP S V V  Q P+ P 
+Sbjct: 136 YRGQNPGDLRFNKGDIILLRRQLDENWYQGEI---NG--ISGNFPASSVEVIKQLPQPPP 190
+
+Query: 72  KVVAQFPY------KSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKS 125
+              A + +      KS+ +D L F KD  I V S  D  W  G+     GD + GIFP  
+Sbjct: 191 LCRALYNFDLRGKDKSENQDCLTFLKDDIITVISRVDENWAEGKL----GDKV-GIFPIL 245
+
+Query: 126 FV 127
+           FV
+Sbjct: 246 FV 247
+
+
+>sp|Q71F54|SH3R1_RAT Putative E3 ubiquitin-protein ligase SH3RF1
+           OS=Rattus norvegicus GN=Sh3rf1 PE=1 SV=1
+          Length = 894
+
+ Score = 48.5 bits (114), Expect = 8e-06,   Method: Composition-based stats.
+ Identities = 43/132 (32%), Positives = 59/132 (44%), Gaps = 17/132 (12%)
+
+Query: 2   PEVPFKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSF 61
+           P++P    A + Y+     DL F K   II+    D  WY GE    NG  + G FP +F
+Sbjct: 134 PQLPC-AKALYNYEGKEPGDLKFSKGDIIILRRQVDENWYHGEV---NG--VHGFFPTNF 187
+
+Query: 62  VAVQE--PEVPFKVVAQFPYK-SDYEDD---LNFEKDQEIIVTSVEDAEWYFGEYQDSNG 115
+           V + +  P+ P +  A + ++  D E D   L F KD  + V    D  W  G   D   
+Sbjct: 188 VQIIKPLPQPPPQCKALYDFEVKDKEADKDCLPFAKDDVLTVIRRVDENWAEGMLADK-- 245
+
+Query: 116 DVIEGIFPKSFV 127
+               GIFP S+V
+Sbjct: 246 ---IGIFPISYV 254
+
+
+>sp|Q62417|SRBS1_MOUSE Sorbin and SH3 domain-containing protein 1
+            OS=Mus musculus GN=Sorbs1 PE=1 SV=2
+          Length = 1290
+
+ Score = 48.5 bits (114), Expect = 9e-06,   Method: Composition-based stats.
+ Identities = 36/134 (26%), Positives = 63/134 (47%), Gaps = 22/134 (16%)
+
+Query: 10   AQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSFVAVQEPE- 68
+            A+F +K+    +L  +K   + +    D  WY GE+   +G V  GIFP++++ +  P  
+Sbjct: 1056 AKFDFKAQTLKELPLQKGDVVYIYRQIDQNWYEGEH---HGRV--GIFPRTYIELLPPAE 1110
+
+Query: 69   -------VPFKV------VAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNG 115
+                    P +V      +A+F +  D + +++F K + I +    D  WY G      G
+Sbjct: 1111 KAQPRKLAPVQVLEYGEAIAKFNFNGDTQVEMSFRKGERITLLRQVDENWYEGRIP---G 1167
+
+Query: 116  DVIEGIFPKSFVAV 129
+               +GIFP ++V V
+Sbjct: 1168 TSRQGIFPITYVDV 1181
+
+
+>sp|A5D8S5|SH3R1_DANRE Putative E3 ubiquitin-protein ligase SH3RF1
+           OS=Danio rerio GN=sh3rf1 PE=2 SV=2
+          Length = 867
+
+ Score = 48.5 bits (114), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 45/136 (33%), Positives = 57/136 (41%), Gaps = 23/136 (16%)
+
+Query: 5   PFKVVAQFP-------YKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIF 57
+           P + V Q P       Y      DL F K   II+    D  WY GE        + G F
+Sbjct: 127 PVRGVPQLPCAKALYNYDGKEPGDLKFSKGDIIILRRQVDENWYHGEMGG-----VHGFF 181
+
+Query: 58  PKSFVAVQE--PEVPFKVVAQFPYK-SDYEDD---LNFEKDQEIIVTSVEDAEWYFGEYQ 111
+           P +FV V +  P+ P +  A + ++  D E D   L F KD  + V    D  W  G   
+Sbjct: 182 PTNFVQVIKPLPQPPPQCKALYDFELKDKEADKDCLPFSKDDILTVIRRVDENWAEGML- 240
+
+Query: 112 DSNGDVIEGIFPKSFV 127
+              GD I GIFP S+V
+Sbjct: 241 ---GDKI-GIFPISYV 252
+
+
+>sp|Q69ZI1|SH3R1_MOUSE Putative E3 ubiquitin-protein ligase SH3RF1
+           OS=Mus musculus GN=Sh3rf1 PE=1 SV=2
+          Length = 892
+
+ Score = 48.1 bits (113), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 41/132 (31%), Positives = 57/132 (43%), Gaps = 17/132 (12%)
+
+Query: 2   PEVPFKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSF 61
+           P++P    A + Y+     DL F K   II+    D  WY GE        + G FP +F
+Sbjct: 134 PQLPC-AKALYNYEGKEPGDLKFSKGDIIILRRQVDENWYHGEVSG-----VHGFFPTNF 187
+
+Query: 62  VAVQE--PEVPFKVVAQFPYK-SDYEDD---LNFEKDQEIIVTSVEDAEWYFGEYQDSNG 115
+           V + +  P+ P +  A + ++  D E D   L F KD  + V    D  W  G   D   
+Sbjct: 188 VQIIKPLPQPPPQCKALYDFEVKDKEADKDCLPFAKDDVLTVIRRVDENWAEGMLADK-- 245
+
+Query: 116 DVIEGIFPKSFV 127
+               GIFP S+V
+Sbjct: 246 ---IGIFPISYV 254
+
+
+>sp|Q5HYK7|SH319_HUMAN SH3 domain-containing protein 19 OS=Homo
+           sapiens GN=SH3D19 PE=1 SV=2
+          Length = 790
+
+ Score = 48.1 bits (113), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 40/146 (27%), Positives = 65/146 (44%), Gaps = 30/146 (20%)
+
+Query: 7   KVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNG----DVIEGI--FPKS 60
+           + VA+F Y  + +D+L+F + + II+    + EW  GE +   G    + +E +  +P S
+Sbjct: 575 RCVARFEYIGEQKDELSFSEGEIIILKEYVNEEWARGEVRGRTGIFPLNFVEPVEDYPTS 634
+
+Query: 61  FVAVQEPEVPFKV----------VAQFP---------YKSDYEDDLNFEKDQEIIVTSVE 101
+              V   +VP K           V   P         + ++  DDL+F++   I +    
+Sbjct: 635 GANVLSTKVPLKTKKEDSGSNSQVNSLPAEWCEALHSFTAETSDDLSFKRGDRIQILERL 694
+
+Query: 102 DAEWYFGEYQDSNGDVIEGIFPKSFV 127
+           D++W  G  QD      EGIFP  FV
+Sbjct: 695 DSDWCRGRLQDR-----EGIFPAVFV 715
+
+
+
+ Score = 46.2 bits (108), Expect = 5e-05,   Method: Composition-based stats.
+ Identities = 36/123 (29%), Positives = 57/123 (46%), Gaps = 19/123 (15%)
+
+Query: 14  YKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSFVAVQEPE----- 68
+           + ++  DDL+F++   I +    D++W  G  QD      EGIFP  FV     E     
+Sbjct: 672 FTAETSDDLSFKRGDRIQILERLDSDWCRGRLQDR-----EGIFPAVFVRPCPAEAKSML 726
+
+Query: 69  --VP--FKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPK 124
+             VP   K  A + ++ + ED+L+F+    I      D +W  GE    +     GIFPK
+Sbjct: 727 AIVPKGRKAKALYDFRGENEDELSFKAGDIITELESVDDDWMSGELMGKS-----GIFPK 781
+
+Query: 125 SFV 127
+           +++
+Sbjct: 782 NYI 784
+
+
+>sp|Q28E95|SH3R1_XENTR Putative E3 ubiquitin-protein ligase SH3RF1
+           OS=Xenopus tropicalis GN=sh3rf1 PE=2 SV=1
+          Length = 861
+
+ Score = 47.8 bits (112), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 46/136 (33%), Positives = 60/136 (44%), Gaps = 23/136 (16%)
+
+Query: 5   PFKVVAQFP-------YKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIF 57
+           P + V Q P       Y+     DL F K   I++    D  WY GE    NG  I G F
+Sbjct: 127 PVRGVPQLPCAKALYNYEGKEPGDLKFNKGDIIVLRRQVDENWYHGEI---NG--IHGFF 181
+
+Query: 58  PKSFVAVQE--PEVPFKVVAQFPYK-SDYEDD---LNFEKDQEIIVTSVEDAEWYFGEYQ 111
+           P +FV + +  P+ P +  A + ++  D E D   L F KD  + V    D  W  G   
+Sbjct: 182 PTNFVQIIKPLPQPPPQCKALYDFEVKDKEADKDCLPFLKDDILTVIRRVDENWAEGML- 240
+
+Query: 112 DSNGDVIEGIFPKSFV 127
+              GD I GIFP S+V
+Sbjct: 241 ---GDKI-GIFPISYV 252
+
+
+>sp|Q3UTJ2|SRBS2_MOUSE Sorbin and SH3 domain-containing protein 2
+            OS=Mus musculus GN=Sorbs2 PE=1 SV=2
+          Length = 1180
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 39/142 (27%), Positives = 65/142 (45%), Gaps = 25/142 (17%)
+
+Query: 3    EVPFKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSFV 62
+            ++P K V  + +K+    +L+F+K   + +    D  WY GE+   +G V  GIFP S+V
+Sbjct: 945  KLPAKAV--YDFKAQTSKELSFKKGDTVYILRKIDQNWYEGEH---HGRV--GIFPISYV 997
+
+Query: 63   AVQEPEVPF---------------KVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYF 107
+                P                   + +A++ + +D   +L+  K   II+    D  WY 
+Sbjct: 998  EKLTPPEKAQPARPPPPVQPGEIGEAIAKYNFNADTNVELSLRKGDRIILLKRVDQNWYE 1057
+
+Query: 108  GEYQDSNGDVIEGIFPKSFVAV 129
+            G+   +N    +GIFP S+V V
+Sbjct: 1058 GKIPGTNR---QGIFPVSYVEV 1076
+
+
+>sp|Q6NRD3|SH3R1_XENLA Putative E3 ubiquitin-protein ligase SH3RF1
+           OS=Xenopus laevis GN=sh3rf1 PE=2 SV=1
+          Length = 826
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 46/136 (33%), Positives = 60/136 (44%), Gaps = 23/136 (16%)
+
+Query: 5   PFKVVAQFP-------YKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIF 57
+           P + V Q P       Y+     DL F K   I++    D  WY GE    NG  I G F
+Sbjct: 127 PVRGVPQLPCAKALYNYEGKEPGDLKFNKGDIIVLRRQVDENWYHGEI---NG--IHGFF 181
+
+Query: 58  PKSFVAVQE--PEVPFKVVAQFPYK-SDYEDD---LNFEKDQEIIVTSVEDAEWYFGEYQ 111
+           P +FV + +  P+ P +  A + ++  D E D   L F KD  + V    D  W  G   
+Sbjct: 182 PTNFVQIIKPLPQPPPQCKALYDFEVKDKEADKDCLPFLKDDILTVIRRVDENWAEGML- 240
+
+Query: 112 DSNGDVIEGIFPKSFV 127
+              GD I GIFP S+V
+Sbjct: 241 ---GDKI-GIFPISYV 252
+
+
+>sp|O60504|VINEX_HUMAN Vinexin OS=Homo sapiens GN=SORBS3 PE=1 SV=1
+          Length = 671
+
+ Score = 45.8 bits (107), Expect = 5e-05,   Method: Composition-based stats.
+ Identities = 37/133 (27%), Positives = 57/133 (42%), Gaps = 22/133 (16%)
+
+Query: 11  QFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSFVAV---QEP 67
+           +F +++    +L  +K   + +    D  W  GE+         GIFP ++V V    E 
+Sbjct: 388 KFDFQAQSPKELTLQKGDIVYIHKEVDKNWLEGEHHGR-----LGIFPANYVEVLPADEI 442
+
+Query: 68  EVPFK-----------VVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGD 116
+             P K            VAQ+ +K D E +L+F K + I +    +  WY G      G 
+Sbjct: 443 PKPIKPPTYQVLEYGEAVAQYTFKGDLEVELSFRKGEHICLIRKVNENWYEGRI---TGT 499
+
+Query: 117 VIEGIFPKSFVAV 129
+             +GIFP S+V V
+Sbjct: 500 GRQGIFPASYVQV 512
+
+
+>sp|O94875|SRBS2_HUMAN Sorbin and SH3 domain-containing protein 2
+           OS=Homo sapiens GN=SORBS2 PE=1 SV=3
+          Length = 1100
+
+ Score = 45.8 bits (107), Expect = 6e-05,   Method: Composition-based stats.
+ Identities = 38/142 (26%), Positives = 65/142 (45%), Gaps = 25/142 (17%)
+
+Query: 3   EVPFKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSFV 62
+           ++P K V  + +K+    +L+F+K   + +    D  WY GE+   +G V  GIFP S+V
+Sbjct: 865 KLPAKAV--YDFKAQTSKELSFKKGDTVYILRKIDQNWYEGEH---HGRV--GIFPISYV 917
+
+Query: 63  AVQEPEVPF---------------KVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYF 107
+               P                   + +A++ + +D   +L+  K   +I+    D  WY 
+Sbjct: 918 EKLTPPEKAQPARPPPPAQPGEIGEAIAKYNFNADTNVELSLRKGDRVILLKRVDQNWYE 977
+
+Query: 108 GEYQDSNGDVIEGIFPKSFVAV 129
+           G+   +N    +GIFP S+V V
+Sbjct: 978 GKIPGTNR---QGIFPVSYVEV 996
+
+
+>sp|Q9R1Z8|VINEX_MOUSE Vinexin OS=Mus musculus GN=Sorbs3 PE=1 SV=1
+          Length = 733
+
+ Score = 45.8 bits (107), Expect = 6e-05,   Method: Composition-based stats.
+ Identities = 36/133 (27%), Positives = 58/133 (43%), Gaps = 22/133 (16%)
+
+Query: 11  QFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSFVAV---QEP 67
+           +F +++    +L+ +K   + +    D  W  GE+         GIFP ++V V    E 
+Sbjct: 452 KFDFQAQSPKELSLQKGDIVYIHKEVDKNWLEGEHHGR-----LGIFPANYVEVLPADEI 506
+
+Query: 68  EVPFK-----------VVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGD 116
+             P K            VAQ+ +K D E +L+F K + I +    +  WY G      G 
+Sbjct: 507 PKPIKPPTYQVLEYGDAVAQYTFKGDLEVELSFRKGERICLIRKVNEHWYEGRI---TGT 563
+
+Query: 117 VIEGIFPKSFVAV 129
+             +GIFP S+V +
+Sbjct: 564 GRQGIFPASYVQI 576
+
+
+>sp|A5D7F8|SH3R1_BOVIN Putative E3 ubiquitin-protein ligase SH3RF1
+           OS=Bos taurus GN=SH3RF1 PE=2 SV=1
+          Length = 840
+
+ Score = 45.4 bits (106), Expect = 8e-05,   Method: Composition-based stats.
+ Identities = 40/132 (30%), Positives = 57/132 (43%), Gaps = 17/132 (12%)
+
+Query: 2   PEVPFKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSF 61
+           P++P    A + Y+     DL F K   I++    D  WY GE        + G FP +F
+Sbjct: 134 PQLPC-AKALYNYEGKEPGDLKFSKGDIIVLRRQVDENWYHGEVGG-----VHGFFPTNF 187
+
+Query: 62  VAVQE--PEVPFKVVAQFPYK-SDYEDD---LNFEKDQEIIVTSVEDAEWYFGEYQDSNG 115
+           V + +  P+ P +  A + ++  D E D   L F KD  + V    D  W  G   D   
+Sbjct: 188 VQIIKPLPQPPPQCKALYDFEVKDKEADKDCLPFAKDDVLTVIRRVDENWAEGMLADK-- 245
+
+Query: 116 DVIEGIFPKSFV 127
+               GIFP S+V
+Sbjct: 246 ---IGIFPISYV 254
+
+
+>sp|Q9BX66|SRBS1_HUMAN Sorbin and SH3 domain-containing protein 1
+           OS=Homo sapiens GN=SORBS1 PE=1 SV=2
+          Length = 1292
+
+ Score = 45.4 bits (106), Expect = 8e-05,   Method: Composition-based stats.
+ Identities = 36/134 (26%), Positives = 63/134 (47%), Gaps = 22/134 (16%)
+
+Query: 10  AQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSFVAVQEPE- 68
+           A+F +K+    +L  +K   + +    D  WY GE+   +G V  GIFP++++ +  P  
+Sbjct: 800 AKFDFKAQTLKELPLQKGDIVYIYKQIDQNWYEGEH---HGRV--GIFPRTYIELLPPAE 854
+
+Query: 69  -------VPFKV------VAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNG 115
+                   P +V      +A+F +  D + +++F K + I +    D  WY G      G
+Sbjct: 855 KAQPKKLTPVQVLEYGEAIAKFNFNGDTQVEMSFRKGERITLLRQVDENWYEGRIP---G 911
+
+Query: 116 DVIEGIFPKSFVAV 129
+              +GIFP ++V V
+Sbjct: 912 TSRQGIFPITYVDV 925
+
+
+>sp|Q8C120|SH3R3_MOUSE SH3 domain-containing RING finger protein 3
+           OS=Mus musculus GN=Sh3rf3 PE=2 SV=2
+          Length = 878
+
+ Score = 44.3 bits (103), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 43/134 (32%), Positives = 55/134 (41%), Gaps = 23/134 (17%)
+
+Query: 7   KVVAQFPYKS---DYED----DLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPK 59
+           K ++Q PY      YE     DL F K   II+    D  WY GE Q      + G  P 
+Sbjct: 184 KTLSQLPYAKALYSYEGKEPGDLKFNKGDIIILRRKVDENWYHGELQG-----MHGFLPA 238
+
+Query: 60  SFVAVQEP---EVP-FKVVAQFPYKSDYEDD--LNFEKDQEIIVTSVEDAEWYFGEYQDS 113
+           S++    P    +P  K +  F  K   +D   L F KD+ + V    D  W  G     
+Sbjct: 239 SYIQCVRPLPQALPQGKALYDFEMKDRDQDKDCLTFTKDEVLTVIRRVDDNWAEGML--- 295
+
+Query: 114 NGDVIEGIFPKSFV 127
+            GD I GIFP  +V
+Sbjct: 296 -GDKI-GIFPLLYV 307
+
+
+>sp|Q8TEJ3|SH3R3_HUMAN SH3 domain-containing RING finger protein 3
+           OS=Homo sapiens GN=SH3RF3 PE=1 SV=2
+          Length = 882
+
+ Score = 43.9 bits (102), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 36/124 (29%), Positives = 53/124 (42%), Gaps = 16/124 (12%)
+
+Query: 10  AQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSFVAVQE--P 67
+           A + Y+     DL F K   I++    D +WY GE   +     +G  P S++   +  P
+Sbjct: 201 ALYSYEGKEPGDLKFNKGDIIVLRRKVDEQWYHGELHGT-----QGFLPASYIQCIQPLP 255
+
+Query: 68  EVPFKVVAQFPY----KSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFP 123
+             P +  A + +    K   +D L F KD+ + V    D  W  G      GD I GIFP
+Sbjct: 256 HAPPQGKALYDFEMKDKDQDKDCLTFTKDEILTVLRRVDENWAEGML----GDKI-GIFP 310
+
+Query: 124 KSFV 127
+             +V
+Sbjct: 311 LLYV 314
+
+
+>sp|Q15811|ITSN1_HUMAN Intersectin-1 OS=Homo sapiens GN=ITSN1 PE=1
+            SV=3
+          Length = 1721
+
+ Score = 43.9 bits (102), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 40/145 (27%), Positives = 65/145 (44%), Gaps = 24/145 (16%)
+
+Query: 1    EPEVPFKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKS 60
+            +PE+  +V+A   Y +   + L     Q I++       W+ GE Q        G FP +
+Sbjct: 1075 KPEIA-QVIAS--YTATGPEQLTLAPGQLILIRKKNPGGWWEGELQARGKKRQIGWFPAN 1131
+
+Query: 61   FVAVQEP--------EVP--------FKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAE 104
+            +V +  P        E P         +V+  + Y +  +D+L F K Q I V + ED +
+Sbjct: 1132 YVKLLSPGTSKITPTEPPKSTALAAVCQVIGMYDYTAQNDDELAFNKGQIINVLNKEDPD 1191
+
+Query: 105  WYFGEYQDSNGDVIEGIFPKSFVAV 129
+            W+ GE    NG V  G+FP ++V +
+Sbjct: 1192 WWKGEV---NGQV--GLFPSNYVKL 1211
+
+
+>sp|O42287|ITSN1_XENLA Intersectin-1 OS=Xenopus laevis GN=itsn1 PE=1
+            SV=1
+          Length = 1270
+
+ Score = 43.1 bits (100), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 40/145 (27%), Positives = 65/145 (44%), Gaps = 24/145 (16%)
+
+Query: 1    EPEVPFKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKS 60
+            +PE+  +V+A   Y +   + L     Q I++       W+ GE Q        G FP +
+Sbjct: 1059 KPEIA-QVIAS--YAATAPEQLTLAPGQLILIRKKNPGGWWEGELQARGKKRQIGWFPAN 1115
+
+Query: 61   FVAV----------QEPEVPF------KVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAE 104
+            +V +           EP  P       +V+  + Y +  +D+L F K Q I V + ED +
+Sbjct: 1116 YVKLLSPGTNKSTPTEPPKPTSLPPTCQVIGMYDYIAQNDDELAFSKGQVINVLNKEDPD 1175
+
+Query: 105  WYFGEYQDSNGDVIEGIFPKSFVAV 129
+            W+ GE    NG V  G+FP ++V +
+Sbjct: 1176 WWKGEL---NGHV--GLFPSNYVKL 1195
+
+
+
+ Score = 42.7 bits (99), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 36/148 (24%), Positives = 65/148 (43%), Gaps = 42/148 (28%)
+
+Query: 10   AQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSFVAV----- 64
+            A +P+++  ++ LNF K+  I V   +D  W+FGE Q       +G FPKS+V +     
+Sbjct: 904  ALYPWRAKKDNHLNFNKNDVITVLEQQDM-WWFGEVQGQ-----KGWFPKSYVKLISGPL 957
+
+Query: 65   --------QEPEVPFKV-----------------VAQFPYKSDYEDDLNFEKDQEIIVTS 99
+                       E P  +                 ++ + Y+S+ + DL F++   I+V  
+Sbjct: 958  RKSTSIDSTSSESPASLKRVSSPAFKPAIQGEEYISMYTYESNEQGDLTFQQGDLIVVIK 1017
+
+Query: 100  VEDAEWYFGEYQDSNGDVIEGIFPKSFV 127
+             +D +W+ G   +       G+FP ++V
+Sbjct: 1018 -KDGDWWTGTVGEKT-----GVFPSNYV 1039
+
+
+>sp|Q9WVE9|ITSN1_RAT Intersectin-1 OS=Rattus norvegicus GN=Itsn1 PE=2
+            SV=1
+          Length = 1217
+
+ Score = 43.1 bits (100), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 40/145 (27%), Positives = 66/145 (45%), Gaps = 24/145 (16%)
+
+Query: 1    EPEVPFKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKS 60
+            +PE+  +V+A   Y +   + L     Q I++       W+ GE Q        G FP +
+Sbjct: 1072 KPEIA-QVIAS--YTATGPEQLTLAPGQLILIRKKNPGGWWEGELQARGKKRQIGWFPAN 1128
+
+Query: 61   FVAVQEP--------EVP--------FKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAE 104
+            +V +  P        E+P         +V+  + Y +  +D+L F K Q I V S ED +
+Sbjct: 1129 YVKLLSPGTSKITPTELPKTAVQPAVCQVIGMYDYTAQNDDELAFSKGQIINVLSKEDPD 1188
+
+Query: 105  WYFGEYQDSNGDVIEGIFPKSFVAV 129
+            W+ GE    +G V  G+FP ++V +
+Sbjct: 1189 WWKGEV---SGQV--GLFPSNYVKL 1208
+
+
+>sp|Q9Z0R4|ITSN1_MOUSE Intersectin-1 OS=Mus musculus GN=Itsn1 PE=1
+            SV=1
+          Length = 1714
+
+ Score = 42.7 bits (99), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 39/145 (26%), Positives = 66/145 (45%), Gaps = 24/145 (16%)
+
+Query: 1    EPEVPFKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKS 60
+            +PE+  +V+A   Y +   + L     Q I++       W+ GE Q        G FP +
+Sbjct: 1068 KPEIA-QVIAS--YAATGPEQLTLAPGQLILIRKKNPGGWWEGELQARGKKRQIGWFPAN 1124
+
+Query: 61   FVAVQEP--------EVP--------FKVVAQFPYKSDYEDDLNFEKDQEIIVTSVEDAE 104
+            +V +  P        E+P         +V+  + Y +  +D+L F K Q I V + ED +
+Sbjct: 1125 YVKLLSPGTSKITPTELPKTAVQPAVCQVIGMYDYTAQNDDELAFSKGQIINVLNKEDPD 1184
+
+Query: 105  WYFGEYQDSNGDVIEGIFPKSFVAV 129
+            W+ GE    +G V  G+FP ++V +
+Sbjct: 1185 WWKGEV---SGQV--GLFPSNYVKL 1204
+
+
+>sp|O43639|NCK2_HUMAN Cytoplasmic protein NCK2 OS=Homo sapiens
+           GN=NCK2 PE=1 SV=2
+          Length = 380
+
+ Score = 42.0 bits (97), Expect = 0.001,   Method: Composition-based stats.
+ Identities = 40/145 (27%), Positives = 65/145 (44%), Gaps = 35/145 (24%)
+
+Query: 11  QFPYKSDYEDDLNFEKDQEIIVTSVEDAEWYFGEYQDSNGDVIEGIFPKSFV-------A 63
+           +F Y ++ ED+L+  K   + V       W+ G Y   NG +  G FP ++V       A
+Sbjct: 119 KFAYVAEREDELSLVKGSRVTVMEKCSDGWWRGSY---NGQI--GWFPSNYVLEEVDEAA 173
+
+Query: 64  VQEP-----------------EVPFKVVAQFPYKSDYEDDLNFEKDQ--EIIVTSVEDAE 104
+            + P                  V   V   +P+ S  E++LNFEK +  E+I     D E
+Sbjct: 174 AESPSFLSLRKGASLSNGQGSRVLHVVQTLYPFSSVTEEELNFEKGETMEVIEKPENDPE 233
+
+Query: 105 WYFGEYQDSNGDVIEGIFPKSFVAV 129
+           W+  + +++ G V  G+ PK++V V
+Sbjct: 234 WW--KCKNARGQV--GLVPKNYVVV 254
+
+
+  Database: sprot
+    Posted date:  Mar 15, 2009  5:38 PM
+  Number of letters in database: 148,809,765
+  Number of sequences in database:  412,525
+  
+Lambda     K      H
+   0.314    0.137    0.404 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 40,947,074
+Number of Sequences: 412525
+Number of extensions: 1690617
+Number of successful extensions: 4331
+Number of sequences better than 1.0e-03: 37
+Number of HSP's better than  0.0 without gapping: 2
+Number of HSP's successfully gapped in prelim test: 35
+Number of HSP's that attempted gapping in prelim test: 4206
+Number of HSP's gapped (non-prelim): 107
+length of query: 130
+length of database: 148,809,765
+effective HSP length: 96
+effective length of query: 34
+effective length of database: 109,207,365
+effective search space: 3713050410
+effective search space used: 3713050410
+T: 11
+A: 40
+X1: 16 ( 7.3 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 42 (21.9 bits)
+S2: 97 (42.0 bits)

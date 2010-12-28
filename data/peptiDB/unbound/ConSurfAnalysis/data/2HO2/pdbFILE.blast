@@ -1,0 +1,173 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_A  50
+         (50 letters)
+
+Database: sprot 
+           466,739 sequences; 165,389,953 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|P46933|APBB1_RAT Amyloid beta A4 precursor protein-binding fa...   107   2e-23
+sp|Q9QXJ1|APBB1_MOUSE Amyloid beta A4 precursor protein-binding ...   107   2e-23
+sp|O00213|APBB1_HUMAN Amyloid beta A4 precursor protein-binding ...   107   2e-23
+sp|Q92870|APBB2_HUMAN Amyloid beta A4 precursor protein-binding ...    68   2e-11
+sp|Q9DBR4|APBB2_MOUSE Amyloid beta A4 precursor protein-binding ...    68   2e-11
+sp|O95704|APBB3_HUMAN Amyloid beta A4 precursor protein-binding ...    59   8e-09
+sp|O35827|APBB3_RAT Amyloid beta A4 precursor protein-binding fa...    58   1e-08
+sp|Q8R1C9|APBB3_MOUSE Amyloid beta A4 precursor protein-binding ...    58   1e-08
+
+>sp|P46933|APBB1_RAT Amyloid beta A4 precursor protein-binding
+           family B member 1 OS=Rattus norvegicus GN=Apbb1 PE=1
+           SV=3
+          Length = 711
+
+ Score =  107 bits (268), Expect = 2e-23,   Method: Composition-based stats.
+ Identities = 50/50 (100%), Positives = 50/50 (100%)
+
+Query: 1   DSFWNPNAFETDSDLPAGWMRVQDTSGTYYWHIPTGTTQWEPPGRASPSQ 50
+           DSFWNPNAFETDSDLPAGWMRVQDTSGTYYWHIPTGTTQWEPPGRASPSQ
+Sbjct: 242 DSFWNPNAFETDSDLPAGWMRVQDTSGTYYWHIPTGTTQWEPPGRASPSQ 291
+
+
+>sp|Q9QXJ1|APBB1_MOUSE Amyloid beta A4 precursor protein-binding
+           family B member 1 OS=Mus musculus GN=Apbb1 PE=1 SV=2
+          Length = 710
+
+ Score =  107 bits (267), Expect = 2e-23,   Method: Composition-based stats.
+ Identities = 50/50 (100%), Positives = 50/50 (100%)
+
+Query: 1   DSFWNPNAFETDSDLPAGWMRVQDTSGTYYWHIPTGTTQWEPPGRASPSQ 50
+           DSFWNPNAFETDSDLPAGWMRVQDTSGTYYWHIPTGTTQWEPPGRASPSQ
+Sbjct: 241 DSFWNPNAFETDSDLPAGWMRVQDTSGTYYWHIPTGTTQWEPPGRASPSQ 290
+
+
+>sp|O00213|APBB1_HUMAN Amyloid beta A4 precursor protein-binding
+           family B member 1 OS=Homo sapiens GN=APBB1 PE=1 SV=2
+          Length = 710
+
+ Score =  107 bits (266), Expect = 2e-23,   Method: Composition-based stats.
+ Identities = 50/50 (100%), Positives = 50/50 (100%)
+
+Query: 1   DSFWNPNAFETDSDLPAGWMRVQDTSGTYYWHIPTGTTQWEPPGRASPSQ 50
+           DSFWNPNAFETDSDLPAGWMRVQDTSGTYYWHIPTGTTQWEPPGRASPSQ
+Sbjct: 241 DSFWNPNAFETDSDLPAGWMRVQDTSGTYYWHIPTGTTQWEPPGRASPSQ 290
+
+
+>sp|Q92870|APBB2_HUMAN Amyloid beta A4 precursor protein-binding
+           family B member 2 OS=Homo sapiens GN=APBB2 PE=1 SV=2
+          Length = 758
+
+ Score = 67.8 bits (164), Expect = 2e-11,   Method: Composition-based stats.
+ Identities = 28/40 (70%), Positives = 33/40 (82%)
+
+Query: 4   WNPNAFETDSDLPAGWMRVQDTSGTYYWHIPTGTTQWEPP 43
+           W+ ++F+TD DLP GW RV D +GTYYWHIPTGTTQWE P
+Sbjct: 281 WSDHSFQTDPDLPPGWKRVSDIAGTYYWHIPTGTTQWERP 320
+
+
+>sp|Q9DBR4|APBB2_MOUSE Amyloid beta A4 precursor protein-binding
+           family B member 2 OS=Mus musculus GN=Apbb2 PE=1 SV=2
+          Length = 760
+
+ Score = 67.8 bits (164), Expect = 2e-11,   Method: Composition-based stats.
+ Identities = 28/40 (70%), Positives = 33/40 (82%)
+
+Query: 4   WNPNAFETDSDLPAGWMRVQDTSGTYYWHIPTGTTQWEPP 43
+           W+ ++F+TD DLP GW RV D +GTYYWHIPTGTTQWE P
+Sbjct: 281 WSDHSFQTDPDLPPGWKRVNDIAGTYYWHIPTGTTQWERP 320
+
+
+>sp|O95704|APBB3_HUMAN Amyloid beta A4 precursor protein-binding
+          family B member 3 OS=Homo sapiens GN=APBB3 PE=1 SV=1
+          Length = 486
+
+ Score = 58.9 bits (141), Expect = 8e-09,   Method: Composition-based stats.
+ Identities = 20/43 (46%), Positives = 31/43 (72%)
+
+Query: 1  DSFWNPNAFETDSDLPAGWMRVQDTSGTYYWHIPTGTTQWEPP 43
+          D  W  ++ E ++ LP GW ++ D +GTYYWH+P+G+TQW+ P
+Sbjct: 17 DDLWGDHSLEVEAGLPPGWRKIHDAAGTYYWHVPSGSTQWQRP 59
+
+
+>sp|O35827|APBB3_RAT Amyloid beta A4 precursor protein-binding
+          family B member 3 OS=Rattus norvegicus GN=Apbb3 PE=1
+          SV=1
+          Length = 504
+
+ Score = 58.2 bits (139), Expect = 1e-08,   Method: Composition-based stats.
+ Identities = 20/43 (46%), Positives = 30/43 (69%)
+
+Query: 1  DSFWNPNAFETDSDLPAGWMRVQDTSGTYYWHIPTGTTQWEPP 43
+          D  W     E ++ LP GW +++D +GTYYWH+P+G+TQW+ P
+Sbjct: 17 DDLWGDQNLEGETGLPPGWRKIRDAAGTYYWHVPSGSTQWQRP 59
+
+
+>sp|Q8R1C9|APBB3_MOUSE Amyloid beta A4 precursor protein-binding
+          family B member 3 OS=Mus musculus GN=Apbb3 PE=2 SV=1
+          Length = 486
+
+ Score = 58.2 bits (139), Expect = 1e-08,   Method: Composition-based stats.
+ Identities = 20/43 (46%), Positives = 30/43 (69%)
+
+Query: 1  DSFWNPNAFETDSDLPAGWMRVQDTSGTYYWHIPTGTTQWEPP 43
+          D  W     E ++ LP GW +++D +GTYYWH+P+G+TQW+ P
+Sbjct: 17 DDLWGDQNLEGETGLPPGWRKIRDAAGTYYWHVPSGSTQWQRP 59
+
+
+  Database: sprot
+    Posted date:  May 6, 2009 11:11 AM
+  Number of letters in database: 165,389,953
+  Number of sequences in database:  466,739
+  
+Lambda     K      H
+   0.313    0.130    0.467 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 20,659,318
+Number of Sequences: 466739
+Number of extensions: 675656
+Number of successful extensions: 846
+Number of sequences better than 1.0e-03: 8
+Number of HSP's better than  0.0 without gapping: 8
+Number of HSP's successfully gapped in prelim test: 0
+Number of HSP's that attempted gapping in prelim test: 838
+Number of HSP's gapped (non-prelim): 8
+length of query: 50
+length of database: 165,389,953
+effective HSP length: 23
+effective length of query: 27
+effective length of database: 154,654,956
+effective search space: 4175683812
+effective search space used: 4175683812
+T: 11
+A: 40
+X1: 16 ( 7.2 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 42 (21.9 bits)
+S2: 97 (42.0 bits)

@@ -1,0 +1,6 @@
+foreach f ( `ls ../../unboundSet/*.pdb | sed 's/.*\(....\).pdb.*/\1/'` )
+
+/vol/ek/dattias/rosetta/bin/rosetta.230 -pdbstats sasa_stats -s $f.pdb > data/$f.log
+mv sasa_stats data/$f.sasaStats
+
+end

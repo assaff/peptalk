@@ -1,0 +1,95 @@
+select all
+color [200,200,200]
+
+
+select   ASN743, GLN785, PRO799, VAL888, ASN909
+select selected and :A
+color [160,37,96]
+spacefill
+
+define CON9 selected
+
+
+select    GLY714, VAL715, LEU716, GLN723, ILE724, SER728, GLU729, GLN782, GLN784, GLY809
+select selected or LYS824, PRO828, PHE836, ARG839, SER844, ASP881, ASN886, ILE892, ILE893, ARG905
+select selected or GLU907, ARG916, LEU917, THR918, ARG920
+select selected and :A
+color [240,125,171]
+spacefill
+
+define CON8 selected
+
+
+select    PHE717, ASN719, LYS727, ARG731, ARG736, ILE739, TYR741, THR745, ASN751, THR755
+select selected or ALA781, GLU790, ILE803, PHE805, LEU818, PRO819, ASN823, THR829, TRP840, LYS855
+select selected or GLY871, VAL880, GLY891, THR895, GLY901, CYS902, LEU906, GLN911, ALA912, MET914
+select selected or LEU934
+select selected and :A
+color [250,201,222]
+spacefill
+
+define CON7 selected
+
+
+select    ALA890, LEU903
+select selected and :A
+color [252,237,244]
+spacefill
+
+define CON6 selected
+
+
+select    VAL709, LYS711, GLN732, ASN733, LYS771, VAL777, ALA798, PHE826, MET831, ILE900
+select selected and :A
+color [255,255,255]
+spacefill
+
+define CON5 selected
+
+
+select    LYS817, GLU863
+select selected and :A
+color [234,255,255]
+spacefill
+
+define CON4 selected
+
+
+select    PRO772, ASP778, TYR807, GLN834, ASN845, ILE864, GLU879
+select selected and :A
+color [140,255,255]
+spacefill
+
+define CON2 selected
+
+
+select    PHE738, THR747, LEU750, CYS758, LEU762, GLN763, THR764, ASN765, VAL786, ILE787
+select selected or ILE792, THR796, ASN802, PHE811, VAL850, ASN852, LYS857, THR862, ALA885, THR898
+select selected or LEU910, SER935
+select selected and :A
+color [16,200,209]
+spacefill
+
+define CON1 selected
+
+
+select    GLU702, ASP703, ASN704, PHE705, ALA706, ARG707, PHE708, CYS710, ASN712, ASN713
+select selected or GLU718, GLN720, LEU721, LEU722, GLY725, LEU726, PHE730, LEU734, GLY735, MET737
+select selected or PHE740, GLY742, LYS744, SER746, GLN748, PHE749, PHE752, THR753, PRO754, LEU756
+select selected or ILE757, ALA759, ASP760, ASP761, LEU766, ASN767, LEU768, GLN769, THR770, VAL773
+select selected or ASP774, PRO775, THR776, GLY779, GLY780, VAL783, ASN788, ILE789, CYS791, SER793
+select selected or ASP794, PHE795, GLU797, VAL800, LEU801, GLN804, ARG806, GLY808, THR810, GLN812
+select selected or ASN813, VAL814, SER815, VAL816, ILE820, THR821, LEU822, PHE825, GLN827, GLU830
+select selected or ALA832, SER833, ASP835, PHE837, GLN838, LYS841, GLN842, LEU843, PRO846, GLN847
+select selected or GLN848, GLU849, GLN851, ILE853, PHE854, ALA856, HIS858, PRO859, MET860, ASP861
+select selected or THR865, LYS866, ALA867, LYS868, ILE869, ILE870, PHE872, GLY873, SER874, ALA875
+select selected or LEU876, LEU877, GLU878, PRO882, ASN883, PRO884, PHE887, GLY889, HIS894, LYS896
+select selected or THR897, GLN899, LEU904, PRO908, GLN913, TYR915, LEU919, THR921, SER922, LYS923
+select selected or ASP924, THR925, VAL926, SER927, GLN928, ARG929, LEU930, CYS931, GLU932, LEU933
+select selected or GLU936, GLN937, PHE938
+select selected and :A
+color [255,255,150]
+spacefill
+
+define CON10 selected
+

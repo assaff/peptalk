@@ -1,0 +1,11 @@
+select within (0.5,(*:B and not backbone)) and not (*:B or *:A)
+show selected
+
+cat 2FOJ.map.pdb ../../../db/2FOJ.pdb > ! ~/tmp 
+
+Raw DB: /vol/ek/londonir/CleanPeptiDB/db
+FTMap data: /vol/ek/londonir/CleanPeptiDB/analysis/soaking/bound
+
+
+
+Cluster header: HEADER crosscluster.NUM.NUM.pdb

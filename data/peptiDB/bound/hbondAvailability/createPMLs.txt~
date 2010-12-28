@@ -1,0 +1,8 @@
+foreach f(`\ls /vol/ek/londonir/CleanPeptiDB/db/ | grep "^....\.pdb" | sed 's/\.pdb//'`)
+	echo $f
+	extract_chains_and_range.pl -p /vol/ek/londonir/CleanPeptiDB/db/$f.pdb -c A -o $f.A.pdb
+	#(reduce -FLIPs $f.A.pdb > $f.A.H.pdb) >& /dev/null
+	#(bndlst -Radius0.3 $f.A.H.pdb > $f.A.bndlst) >& /dev/null
+	(hbplus $f.A.pdb) >& /dev/null
+	../colorByHBondAvailability.pl $f.A
+end

@@ -1,0 +1,17 @@
+cartoon on
+wireframe off
+color chain
+
+select *:B
+color green
+cartoon off
+wireframe 50
+
+select */1
+spacefill 200
+color yellow
+
+select within (3.0, (*:B and */0)) and */1
+color red
+show selected
+

@@ -1,0 +1,323 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_A  82
+         (82 letters)
+
+Database: sprot 
+           466,739 sequences; 165,389,953 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|O00560|SDCB1_HUMAN Syntenin-1 OS=Homo sapiens GN=SDCBP PE=1 SV=1   152   7e-37
+sp|Q9JI92|SDCB1_RAT Syntenin-1 OS=Rattus norvegicus GN=Sdcbp PE=...   143   3e-34
+sp|O08992|SDCB1_MOUSE Syntenin-1 OS=Mus musculus GN=Sdcbp PE=2 SV=1   142   6e-34
+sp|Q9H190|SDCB2_HUMAN Syntenin-2 OS=Homo sapiens GN=SDCBP2 PE=2 ...   117   3e-26
+sp|Q99JZ0|SDCB2_MOUSE Syntenin-2 OS=Mus musculus GN=Sdcbp2 PE=2 ...   111   1e-24
+sp|O70248|APBA3_RAT Amyloid beta A4 precursor protein-binding fa...    48   1e-05
+sp|Q02410|APBA1_HUMAN Amyloid beta A4 precursor protein-binding ...    48   2e-05
+sp|O35430|APBA1_RAT Amyloid beta A4 precursor protein-binding fa...    48   2e-05
+sp|Q5RD33|APBA2_PONAB Amyloid beta A4 precursor protein-binding ...    47   3e-05
+sp|Q99767|APBA2_HUMAN Amyloid beta A4 precursor protein-binding ...    47   3e-05
+sp|O96018|APBA3_HUMAN Amyloid beta A4 precursor protein-binding ...    47   3e-05
+sp|P98084|APBA2_MOUSE Amyloid beta A4 precursor protein-binding ...    47   4e-05
+sp|O35431|APBA2_RAT Amyloid beta A4 precursor protein-binding fa...    47   4e-05
+sp|O17583|LIN10_CAEEL Protein lin-10 OS=Caenorhabditis elegans G...    45   1e-04
+sp|O88888|APBA3_MOUSE Amyloid beta A4 precursor protein-binding ...    45   2e-04
+
+>sp|O00560|SDCB1_HUMAN Syntenin-1 OS=Homo sapiens GN=SDCBP PE=1 SV=1
+          Length = 298
+
+ Score =  152 bits (383), Expect = 7e-37,   Method: Composition-based stats.
+ Identities = 77/77 (100%), Positives = 77/77 (100%)
+
+Query: 6   RTITMHKDSTGHVGFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIAD 65
+           RTITMHKDSTGHVGFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIAD
+Sbjct: 197 RTITMHKDSTGHVGFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIAD 256
+
+Query: 66  ILSTSGTVVTITIMPAF 82
+           ILSTSGTVVTITIMPAF
+Sbjct: 257 ILSTSGTVVTITIMPAF 273
+
+
+>sp|Q9JI92|SDCB1_RAT Syntenin-1 OS=Rattus norvegicus GN=Sdcbp PE=1
+           SV=1
+          Length = 300
+
+ Score =  143 bits (360), Expect = 3e-34,   Method: Composition-based stats.
+ Identities = 70/77 (90%), Positives = 77/77 (100%)
+
+Query: 6   RTITMHKDSTGHVGFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIAD 65
+           RT+TMHKDS+GHVGFIFK+GKITSIVKDSSAARNGLLT+H+ICEINGQNVIGLKD+QIAD
+Sbjct: 199 RTVTMHKDSSGHVGFIFKSGKITSIVKDSSAARNGLLTDHHICEINGQNVIGLKDAQIAD 258
+
+Query: 66  ILSTSGTVVTITIMPAF 82
+           ILST+GTVVTITIMPAF
+Sbjct: 259 ILSTAGTVVTITIMPAF 275
+
+
+>sp|O08992|SDCB1_MOUSE Syntenin-1 OS=Mus musculus GN=Sdcbp PE=2 SV=1
+          Length = 299
+
+ Score =  142 bits (357), Expect = 6e-34,   Method: Composition-based stats.
+ Identities = 69/77 (89%), Positives = 76/77 (98%)
+
+Query: 6   RTITMHKDSTGHVGFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIAD 65
+           RT+TMHKDS+GHVGFIFK+GKITSIVKDSSAARNGLLT+H+ICEINGQNVIGLKD+QIAD
+Sbjct: 198 RTVTMHKDSSGHVGFIFKSGKITSIVKDSSAARNGLLTDHHICEINGQNVIGLKDAQIAD 257
+
+Query: 66  ILSTSGTVVTITIMPAF 82
+           ILST+GTVVTITIMP F
+Sbjct: 258 ILSTAGTVVTITIMPTF 274
+
+
+>sp|Q9H190|SDCB2_HUMAN Syntenin-2 OS=Homo sapiens GN=SDCBP2 PE=2
+           SV=2
+          Length = 292
+
+ Score =  117 bits (292), Expect = 3e-26,   Method: Composition-based stats.
+ Identities = 53/76 (69%), Positives = 66/76 (86%)
+
+Query: 6   RTITMHKDSTGHVGFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIAD 65
+           RT+TMHKDS GHVGF+ K GKI S+VK SSAARNGLLT H +CE++GQNVIGLKD +I +
+Sbjct: 191 RTVTMHKDSMGHVGFVIKKGKIVSLVKGSSAARNGLLTNHYVCEVDGQNVIGLKDKKIME 250
+
+Query: 66  ILSTSGTVVTITIMPA 81
+           IL+T+G VVT+TI+P+
+Sbjct: 251 ILATAGNVVTLTIIPS 266
+
+
+>sp|Q99JZ0|SDCB2_MOUSE Syntenin-2 OS=Mus musculus GN=Sdcbp2 PE=2
+           SV=1
+          Length = 292
+
+ Score =  111 bits (277), Expect = 1e-24,   Method: Composition-based stats.
+ Identities = 51/75 (68%), Positives = 64/75 (85%)
+
+Query: 6   RTITMHKDSTGHVGFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIAD 65
+           RT+TMHKDS+G VGF  K GKI S+VK SSAARNGLLT H +CE+NGQNVIGLKD ++ +
+Sbjct: 191 RTVTMHKDSSGQVGFSIKKGKIVSVVKGSSAARNGLLTNHYVCEVNGQNVIGLKDKKVTE 250
+
+Query: 66  ILSTSGTVVTITIMP 80
+           IL+T+G V+T+TI+P
+Sbjct: 251 ILTTAGDVITLTIIP 265
+
+
+>sp|O70248|APBA3_RAT Amyloid beta A4 precursor protein-binding
+           family A member 3 OS=Rattus norvegicus GN=Apba3 PE=2
+           SV=1
+          Length = 569
+
+ Score = 48.1 bits (113), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 24/65 (36%), Positives = 39/65 (60%), Gaps = 1/65 (1%)
+
+Query: 17  HVGFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIADILSTSGTVVTI 76
+            +GF  +NG I S+++ S+A R G+   H I E+NGQ+V+ +  ++I  +L T    + I
+Sbjct: 491 QLGFCVENGIICSLLRGSAAERGGVRVGHRIIEVNGQSVVAMPHARIIQLL-TETREIHI 549
+
+Query: 77  TIMPA 81
+             MPA
+Sbjct: 550 KTMPA 554
+
+
+>sp|Q02410|APBA1_HUMAN Amyloid beta A4 precursor protein-binding
+           family A member 1 OS=Homo sapiens GN=APBA1 PE=1 SV=3
+          Length = 837
+
+ Score = 47.8 bits (112), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 24/65 (36%), Positives = 36/65 (55%)
+
+Query: 17  HVGFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIADILSTSGTVVTI 76
+            +GF  +NG I S+++   A R G+   H I EINGQ+V+     +I  ILS +   + +
+Sbjct: 758 QLGFSVQNGIICSLMRGGIAERGGVRVGHRIIEINGQSVVATPHEKIVHILSNAVGEIHM 817
+
+Query: 77  TIMPA 81
+             MPA
+Sbjct: 818 KTMPA 822
+
+
+>sp|O35430|APBA1_RAT Amyloid beta A4 precursor protein-binding
+           family A member 1 OS=Rattus norvegicus GN=Apba1 PE=1
+           SV=1
+          Length = 839
+
+ Score = 47.8 bits (112), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 24/65 (36%), Positives = 36/65 (55%)
+
+Query: 17  HVGFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIADILSTSGTVVTI 76
+            +GF  +NG I S+++   A R G+   H I EINGQ+V+     +I  ILS +   + +
+Sbjct: 760 QLGFSVQNGIICSLMRGGIAERGGVRVGHRIIEINGQSVVATPHEKIVHILSNAVGEIHM 819
+
+Query: 77  TIMPA 81
+             MPA
+Sbjct: 820 KTMPA 824
+
+
+>sp|Q5RD33|APBA2_PONAB Amyloid beta A4 precursor protein-binding
+           family A member 2 OS=Pongo abelii GN=APBA2 PE=2 SV=1
+          Length = 749
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 24/65 (36%), Positives = 35/65 (53%)
+
+Query: 17  HVGFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIADILSTSGTVVTI 76
+            +GF  +NG I S+++   A R G+   H I EINGQ+V+     +I   LS S   + +
+Sbjct: 670 QLGFSVQNGIICSLMRGGIAERGGVRVGHRIIEINGQSVVATAHEKIVQALSNSVGEIHM 729
+
+Query: 77  TIMPA 81
+             MPA
+Sbjct: 730 KTMPA 734
+
+
+>sp|Q99767|APBA2_HUMAN Amyloid beta A4 precursor protein-binding
+           family A member 2 OS=Homo sapiens GN=APBA2 PE=1 SV=3
+          Length = 749
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 24/65 (36%), Positives = 35/65 (53%)
+
+Query: 17  HVGFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIADILSTSGTVVTI 76
+            +GF  +NG I S+++   A R G+   H I EINGQ+V+     +I   LS S   + +
+Sbjct: 670 QLGFSVQNGIICSLMRGGIAERGGVRVGHRIIEINGQSVVATAHEKIVQALSNSVGEIHM 729
+
+Query: 77  TIMPA 81
+             MPA
+Sbjct: 730 KTMPA 734
+
+
+>sp|O96018|APBA3_HUMAN Amyloid beta A4 precursor protein-binding
+           family A member 3 OS=Homo sapiens GN=APBA3 PE=1 SV=1
+          Length = 575
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 23/65 (35%), Positives = 38/65 (58%)
+
+Query: 17  HVGFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIADILSTSGTVVTI 76
+            +GF  ++G I S+++   A R G+   H I EINGQ+V+    ++I ++L+ +   V I
+Sbjct: 496 QLGFCVEDGIICSLLRGGIAERGGIRVGHRIIEINGQSVVATPHARIIELLTEAYGEVHI 555
+
+Query: 77  TIMPA 81
+             MPA
+Sbjct: 556 KTMPA 560
+
+
+>sp|P98084|APBA2_MOUSE Amyloid beta A4 precursor protein-binding
+           family A member 2 OS=Mus musculus GN=Apba2 PE=1 SV=2
+          Length = 750
+
+ Score = 46.6 bits (109), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 24/65 (36%), Positives = 35/65 (53%)
+
+Query: 17  HVGFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIADILSTSGTVVTI 76
+            +GF  +NG I S+++   A R G+   H I EINGQ+V+     +I   LS S   + +
+Sbjct: 671 QLGFSVQNGIICSLMRGGIAERGGVRVGHRIIEINGQSVVATAHEKIVQALSNSVGEIHM 730
+
+Query: 77  TIMPA 81
+             MPA
+Sbjct: 731 KTMPA 735
+
+
+>sp|O35431|APBA2_RAT Amyloid beta A4 precursor protein-binding
+           family A member 2 OS=Rattus norvegicus GN=Apba2 PE=1
+           SV=1
+          Length = 750
+
+ Score = 46.6 bits (109), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 24/65 (36%), Positives = 35/65 (53%)
+
+Query: 17  HVGFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIADILSTSGTVVTI 76
+            +GF  +NG I S+++   A R G+   H I EINGQ+V+     +I   LS S   + +
+Sbjct: 671 QLGFSVQNGIICSLMRGGIAERGGVRVGHRIIEINGQSVVATAHEKIVQALSNSVGEIHM 730
+
+Query: 77  TIMPA 81
+             MPA
+Sbjct: 731 KTMPA 735
+
+
+>sp|O17583|LIN10_CAEEL Protein lin-10 OS=Caenorhabditis elegans
+           GN=lin-10 PE=2 SV=1
+          Length = 982
+
+ Score = 45.1 bits (105), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 22/68 (32%), Positives = 39/68 (57%)
+
+Query: 13  DSTGHVGFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIADILSTSGT 72
+           D+   +GF  +NG I S+++   A R G+   H I EING +V+ +   +I ++L+T+  
+Sbjct: 899 DTKYQLGFSVQNGVICSLLRGGIAERGGIRVGHRIIEINGTSVVAVAHDRIVNMLATAVG 958
+
+Query: 73  VVTITIMP 80
+            + +  MP
+Sbjct: 959 EIHMKTMP 966
+
+
+>sp|O88888|APBA3_MOUSE Amyloid beta A4 precursor protein-binding
+           family A member 3 OS=Mus musculus GN=Apba3 PE=1 SV=1
+          Length = 571
+
+ Score = 44.7 bits (104), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 22/65 (33%), Positives = 38/65 (58%), Gaps = 1/65 (1%)
+
+Query: 17  HVGFIFKNGKITSIVKDSSAARNGLLTEHNICEINGQNVIGLKDSQIADILSTSGTVVTI 76
+            +GF  ++G I S+++  +A R G+   H I E+NGQ+V+ +  ++I  +L T    + I
+Sbjct: 493 QLGFCVEDGIICSLLRGGAAERGGVRVGHRIIEVNGQSVVAMPHARIIQLL-TETREIHI 551
+
+Query: 77  TIMPA 81
+             MPA
+Sbjct: 552 KTMPA 556
+
+
+  Database: sprot
+    Posted date:  May 6, 2009 11:11 AM
+  Number of letters in database: 165,389,953
+  Number of sequences in database:  466,739
+  
+Lambda     K      H
+   0.317    0.133    0.375 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 25,216,180
+Number of Sequences: 466739
+Number of extensions: 829990
+Number of successful extensions: 2309
+Number of sequences better than 1.0e-03: 15
+Number of HSP's better than  0.0 without gapping: 14
+Number of HSP's successfully gapped in prelim test: 1
+Number of HSP's that attempted gapping in prelim test: 2292
+Number of HSP's gapped (non-prelim): 18
+length of query: 82
+length of database: 165,389,953
+effective HSP length: 53
+effective length of query: 29
+effective length of database: 140,652,786
+effective search space: 4078930794
+effective search space used: 4078930794
+T: 11
+A: 40
+X1: 16 ( 7.3 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.7 bits)
+S2: 97 (42.0 bits)

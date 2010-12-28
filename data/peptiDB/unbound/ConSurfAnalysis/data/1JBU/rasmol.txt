@@ -1,0 +1,122 @@
+select all
+color [200,200,200]
+
+
+select   VAL17, GLY19, GLY25, PRO28, GLN30, LEU33, CYS42, GLY43, ALA55, ALA56
+select selected or HIS57, CYS58, GLY69, ASP102, ILE103, ALA104, LEU108, PRO120, CYS122, SER139
+select selected or GLY140, GLY142, LEU155, PRO161, CYS168, MET180, CYS182, ALA183, ASP189, CYS191
+select selected or GLY193, ASP194, SER195, GLY196, GLY197, PRO198, GLY211, SER214, GLY216, CYS220
+select selected or GLY226, TYR228, THR229, VAL231, TRP237, LEU238
+select selected or (atomno >= 2843 and atomno <= 2849)
+select selected and :H
+color [160,37,96]
+spacefill
+
+define CON9 selected
+
+
+select    TRP29, VAL31, GLY44, LEU46, VAL53, SER54, VAL85, PRO91, TYR94, PRO111
+select selected or VAL118, LEU121, LEU123, PRO124, SER136, VAL138, TRP141, MET156, ILE176, SER190
+select selected or HIS199, LEU209, THR210, TRP215, PRO255
+select selected or (atomno >= 1984 and atomno <= 1999)
+select selected and :H
+color [240,125,171]
+spacefill
+
+define CON8 selected
+
+
+select    ILE16, GLY18, GLU26, THR45, ILE47, VAL52, ALA66, LEU68, GLU70, GLU80
+select selected or LEU105, VAL112, THR115, VAL119, ALA152, VAL160, THR177, TYR179, ALA200, THR201
+select selected or THR206, ILE212, VAL213, GLN217, GLY219, VAL227, ARG230, SER232, TYR234, PRO257
+select selected or (atomno >= 1882 and atomno <= 1896)
+select selected or (atomno >= 2850 and atomno <= 2870)
+select selected or (atomno >= 3430 and atomno <= 3439)
+select selected and :H
+color [250,201,222]
+spacefill
+
+define CON7 selected
+
+
+select    CYS27, GLN40, ASN48, TRP51, ILE89, LEU106, GLY149, ARG162, MET164, THR165
+select selected or GLN166, GLY187, LYS192, GLY205, GLY223, HIS224, PHE225, MET242
+select selected or (atomno >= 1871 and atomno <= 1881)
+select selected or (atomno >= 1935 and atomno <= 1953)
+select selected or (atomno >= 2586 and atomno <= 2596)
+select selected and :H
+color [252,237,244]
+spacefill
+
+define CON6 selected
+
+
+select    CYS22, LEU41, VAL67, ASP72, SER74, ARG83, THR99, HIS101, ARG107, PHE128
+select selected or ARG134, VAL157, LEU158, LEU163, ASP167, PHE181, ASP186, TRP207, TYR208, ILE235
+select selected or ARG243, ARG253
+select selected or (atomno >= 1954 and atomno <= 1963)
+select selected or (atomno >= 2689 and atomno <= 2702)
+select selected or (atomno >= 2912 and atomno <= 2933)
+select selected and :H
+color [255,255,255]
+spacefill
+
+define CON5 selected
+
+
+select    PHE59, LEU64, ASP77, GLN87, VAL88, THR98, ASN100, HIS109, VAL113, ASP116
+select selected or HIS117, GLU125, ALA150, VAL222, GLN239
+select selected or (atomno >= 2569 and atomno <= 2585)
+select selected or (atomno >= 2901 and atomno <= 2911)
+select selected and :H
+color [234,255,255]
+spacefill
+
+define CON4 selected
+
+
+select    GLY38, ILE50, ILE65, HIS71, ALA86, SER92, GLN110, LEU114, LEU137, ARG204
+select selected or GLU236, PRO248, LEU252, PHE256
+select selected or (atomno >= 665 and atomno <= 686)
+select selected or (atomno >= 1921 and atomno <= 1934)
+select selected and :H
+color [215,255,255]
+spacefill
+
+define CON3 selected
+
+
+select    LEU32, LEU34, THR49, LEU73, GLN81, ILE90, THR93, VAL95, ARG126, THR127
+select selected or PHE135, GLN143, LEU153, LEU169, GLU178, HIS202, TYR203, GLN233, GLU245, GLY249
+select selected or VAL250
+select selected or (atomno >= 728 and atomno <= 740)
+select selected or (atomno >= 2552 and atomno <= 2568)
+select selected or (atomno >= 2621 and atomno <= 2642)
+select selected or (atomno >= 2666 and atomno <= 2677)
+select selected or (atomno >= 3440 and atomno <= 3453)
+select selected and :H
+color [140,255,255]
+spacefill
+
+define CON2 selected
+
+
+select    LYS20, VAL21, PRO23, LYS24, VAL35, ASN37, ALA39, TRP61, ARG62, ASN63
+select selected or GLU75, HIS76, GLY78, ASP79, SER82, ARG84, PRO96, GLY97, LEU144, LEU145
+select selected or ASP146, ARG147, THR151, GLU154, ASN159, ASN175, SER185, LYS240, LEU241, SER244
+select selected or PRO246, ARG247, LEU251, ALA254
+select selected or (atomno >= 653 and atomno <= 664)
+select selected or (atomno >= 687 and atomno <= 705)
+select selected or (atomno >= 706 and atomno <= 727)
+select selected or (atomno >= 1897 and atomno <= 1920)
+select selected or (atomno >= 1964 and atomno <= 1983)
+select selected or (atomno >= 2597 and atomno <= 2620)
+select selected or (atomno >= 2643 and atomno <= 2658)
+select selected or (atomno >= 2659 and atomno <= 2665)
+select selected or (atomno >= 2678 and atomno <= 2688)
+select selected and :H
+color [16,200,209]
+spacefill
+
+define CON1 selected
+

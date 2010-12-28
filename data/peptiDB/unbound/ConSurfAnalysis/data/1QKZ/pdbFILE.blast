@@ -1,0 +1,2981 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_B  214
+         (214 letters)
+
+Database: sprot 
+           466,739 sequences; 165,389,953 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|P84751|HVM63_MOUSE Ig heavy chain Mem5 (Fragment) OS=Mus musc...   277   3e-74
+sp|P18526|HVM55_MOUSE Ig heavy chain V region 345 OS=Mus musculu...   178   2e-44
+sp|P18525|HVM54_MOUSE Ig heavy chain V region 5-84 OS=Mus muscul...   176   9e-44
+sp|P18529|HVM58_MOUSE Ig heavy chain V region 5-76 OS=Mus muscul...   174   4e-43
+sp|P18528|HVM57_MOUSE Ig heavy chain V region 6.96 OS=Mus muscul...   172   1e-42
+sp|P01783|HVM16_MOUSE Ig heavy chain V region MOPC 21 (Fragment)...   167   3e-41
+sp|P01864|GCAB_MOUSE Ig gamma-2A chain C region secreted form OS...   167   4e-41
+sp|P18524|HVM53_MOUSE Ig heavy chain V region RF OS=Mus musculus...   166   1e-40
+sp|P18530|HVM59_MOUSE Ig heavy chain V region 7-39 OS=Mus muscul...   164   3e-40
+sp|P18527|HVM56_MOUSE Ig heavy chain V region 914 OS=Mus musculu...   161   2e-39
+sp|P01863|GCAA_MOUSE Ig gamma-2A chain C region, A allele OS=Mus...   160   4e-39
+sp|P01865|GCAM_MOUSE Ig gamma-2A chain C region, membrane-bound ...   160   4e-39
+sp|P01781|HV320_HUMAN Ig heavy chain V-III region GAL OS=Homo sa...   160   5e-39
+sp|P01768|HV307_HUMAN Ig heavy chain V-III region CAM OS=Homo sa...   158   2e-38
+sp|P20759|IGHG1_RAT Ig gamma-1 chain C region OS=Rattus norvegic...   156   1e-37
+sp|P01782|HV321_HUMAN Ig heavy chain V-III region DOB OS=Homo sa...   155   2e-37
+sp|P01810|HVM40_MOUSE Ig heavy chain V region J539 OS=Mus muscul...   154   3e-37
+sp|P01764|HV303_HUMAN Ig heavy chain V-III region VH26 OS=Homo s...   154   3e-37
+sp|P01785|HV02_CANFA Ig heavy chain V region MOO OS=Canis famili...   153   6e-37
+sp|P01771|HV310_HUMAN Ig heavy chain V-III region HIL OS=Homo sa...   152   1e-36
+sp|P20760|IGG2A_RAT Ig gamma-2A chain C region OS=Rattus norvegi...   150   4e-36
+sp|P01807|HVM37_MOUSE Ig heavy chain V region X44 OS=Mus musculu...   150   6e-36
+sp|P01770|HV309_HUMAN Ig heavy chain V-III region NIE OS=Homo sa...   149   1e-35
+sp|P01762|HV301_HUMAN Ig heavy chain V-III region TRO OS=Homo sa...   147   4e-35
+sp|P01784|HV01_CANFA Ig heavy chain V region GOM OS=Canis famili...   147   5e-35
+sp|P01805|HVR01_RAT Ig heavy chain V region IR2 OS=Rattus norveg...   146   9e-35
+sp|P01801|HVM32_MOUSE Ig heavy chain V-III region J606 OS=Mus mu...   145   2e-34
+sp|P01763|HV302_HUMAN Ig heavy chain V-III region WEA OS=Homo sa...   145   2e-34
+sp|P01799|HVM30_MOUSE Ig heavy chain V-III region ABE-47N OS=Mus...   145   2e-34
+sp|P01869|IGH1M_MOUSE Ig gamma-1 chain C region, membrane-bound ...   144   3e-34
+sp|P01786|HVM17_MOUSE Ig heavy chain V region MOPC 47A OS=Mus mu...   144   4e-34
+sp|P19181|HV05_CARAU Ig heavy chain V region 5A OS=Carassius aur...   144   5e-34
+sp|P01796|HVM27_MOUSE Ig heavy chain V-III region A4 OS=Mus musc...   143   7e-34
+sp|P01868|IGHG1_MOUSE Ig gamma-1 chain C region secreted form OS...   143   9e-34
+sp|P01800|HVM31_MOUSE Ig heavy chain V-III region T957 OS=Mus mu...   143   9e-34
+sp|P01802|HVM33_MOUSE Ig heavy chain V-III region W3082 OS=Mus m...   143   9e-34
+sp|P01774|HV313_HUMAN Ig heavy chain V-III region POM OS=Homo sa...   142   2e-33
+sp|P01798|HVM29_MOUSE Ig heavy chain V-III region E109 OS=Mus mu...   142   2e-33
+sp|P01775|HV314_HUMAN Ig heavy chain V-III region LAY OS=Homo sa...   141   2e-33
+sp|P01767|HV306_HUMAN Ig heavy chain V-III region BUT OS=Homo sa...   141   2e-33
+sp|P01797|HVM28_MOUSE Ig heavy chain V-III region U61 OS=Mus mus...   141   3e-33
+sp|P01766|HV305_HUMAN Ig heavy chain V-III region BRO OS=Homo sa...   140   4e-33
+sp|P01776|HV315_HUMAN Ig heavy chain V-III region WAS OS=Homo sa...   140   4e-33
+sp|P01808|HVM38_MOUSE Ig heavy chain V region T601 OS=Mus muscul...   140   4e-33
+sp|P01811|HVM41_MOUSE Ig heavy chain V region UPC10 OS=Mus muscu...   140   5e-33
+sp|P01773|HV312_HUMAN Ig heavy chain V-III region BUR OS=Homo sa...   140   6e-33
+sp|P01769|HV308_HUMAN Ig heavy chain V-III region GA OS=Homo sap...   139   1e-32
+sp|P19180|HV03_CARAU Ig heavy chain V region 3 OS=Carassius aura...   137   3e-32
+sp|P01806|HVM36_MOUSE Ig heavy chain V region 441 OS=Mus musculu...   137   4e-32
+sp|P01812|HVM42_MOUSE Ig heavy chain V region MOPC 173 OS=Mus mu...   137   5e-32
+sp|P01809|HVM39_MOUSE Ig heavy chain V region X24 OS=Mus musculu...   136   9e-32
+sp|P01795|HVM26_MOUSE Ig heavy chain V region M167 OS=Mus muscul...   136   1e-31
+sp|P20761|IGG2B_RAT Ig gamma-2B chain C region OS=Rattus norvegi...   135   1e-31
+sp|P01867|IGG2B_MOUSE Ig gamma-2B chain C region OS=Mus musculus...   135   2e-31
+sp|P01804|HVM35_MOUSE Ig heavy chain V-III region HPC76 (Fragmen...   134   3e-31
+sp|P01789|HVM20_MOUSE Ig heavy chain V region M603 OS=Mus muscul...   133   7e-31
+sp|P01794|HVM25_MOUSE Ig heavy chain V region HPCG14 OS=Mus musc...   132   1e-30
+sp|P01791|HVM22_MOUSE Ig heavy chain V region HPCM6 OS=Mus muscu...   132   2e-30
+sp|P01803|HVM34_MOUSE Ig heavy chain V region AMPC1 OS=Mus muscu...   131   3e-30
+sp|P03987|IGHG3_MOUSE Ig gamma-3 chain C region OS=Mus musculus ...   131   3e-30
+sp|P01790|HVM21_MOUSE Ig heavy chain V region M511 OS=Mus muscul...   130   4e-30
+sp|P01777|HV316_HUMAN Ig heavy chain V-III region TEI OS=Homo sa...   130   8e-30
+sp|P01772|HV311_HUMAN Ig heavy chain V-III region KOL OS=Homo sa...   130   8e-30
+sp|P01788|HVM19_MOUSE Ig heavy chain V region H8 OS=Mus musculus...   130   8e-30
+sp|P01793|HVM24_MOUSE Ig heavy chain V region HPCG13 OS=Mus musc...   129   9e-30
+sp|P01779|HV318_HUMAN Ig heavy chain V-III region TUR OS=Homo sa...   129   1e-29
+sp|P01765|HV304_HUMAN Ig heavy chain V-III region TIL OS=Homo sa...   129   2e-29
+sp|P01792|HVM23_MOUSE Ig heavy chain V region HPCG8 OS=Mus muscu...   128   2e-29
+sp|P01787|HVM18_MOUSE Ig heavy chain V regions TEPC 15/S107/HPCM...   128   2e-29
+sp|P01862|IGHG2_CAVPO Ig gamma-2 chain C region OS=Cavia porcell...   127   4e-29
+sp|P01813|HV01_CAICR Ig heavy chain V region C3 OS=Caiman crocod...   127   5e-29
+sp|P80419|HV322_HUMAN Ig heavy chain V-III region GAR OS=Homo sa...   127   5e-29
+sp|P01778|HV317_HUMAN Ig heavy chain V-III region ZAP OS=Homo sa...   126   9e-29
+sp|P20762|IGG2C_RAT Ig gamma-2C chain C region OS=Rattus norvegi...   124   3e-28
+sp|P01780|HV319_HUMAN Ig heavy chain V-III region JON OS=Homo sa...   123   8e-28
+sp|P01746|HVM02_MOUSE Ig heavy chain V region 93G7 OS=Mus muscul...   121   4e-27
+sp|P01751|HVM07_MOUSE Ig heavy chain V region B1-8/186-2 OS=Mus ...   120   6e-27
+sp|P03982|HV03_CAICR Ig heavy chain V region G4 OS=Caiman crocod...   120   9e-27
+sp|P20957|HV02_XENLA Ig heavy chain V region XIG14 (Fragment) OS...   117   5e-26
+sp|P01747|HVM03_MOUSE Ig heavy chain V region 36-65 OS=Mus muscu...   116   9e-26
+sp|P01745|HVM01_MOUSE Ig heavy chain V region MPC 11 OS=Mus musc...   115   2e-25
+sp|P01859|IGHG2_HUMAN Ig gamma-2 chain C region OS=Homo sapiens ...   114   4e-25
+sp|P03980|HVM48_MOUSE Ig heavy chain V region TEPC 1017 OS=Mus m...   113   9e-25
+sp|P01755|HVM11_MOUSE Ig heavy chain V region S43 OS=Mus musculu...   112   2e-24
+sp|P01743|HV102_HUMAN Ig heavy chain V-I region HG3 OS=Homo sapi...   110   6e-24
+sp|P06330|HVM51_MOUSE Ig heavy chain V region AC38 205.12 OS=Mus...   110   8e-24
+sp|P01757|HVM13_MOUSE Ig heavy chain V region J558 OS=Mus muscul...   109   1e-23
+sp|P01756|HVM12_MOUSE Ig heavy chain V region MOPC 104E OS=Mus m...   109   1e-23
+sp|P06329|HVM50_MOUSE Ig heavy chain V region AC38 15.3 OS=Mus m...   108   3e-23
+sp|P01759|HVM15_MOUSE Ig heavy chain V region BCL1 OS=Mus muscul...   108   3e-23
+sp|P01741|HVM00_MOUSE Ig heavy chain V region OS=Mus musculus PE...   108   3e-23
+sp|P01819|HVM43_MOUSE Ig heavy chain V region MOPC 141 OS=Mus mu...   107   6e-23
+sp|P20956|HV01_XENLA Ig heavy chain V region XIG8 (Fragment) OS=...   106   9e-23
+sp|P01748|HVM04_MOUSE Ig heavy chain V region 23 OS=Mus musculus...   104   3e-22
+sp|P06326|HV107_HUMAN Ig heavy chain V-I region Mot OS=Homo sapi...   104   3e-22
+sp|P01857|IGHG1_HUMAN Ig gamma-1 chain C region OS=Homo sapiens ...   104   5e-22
+sp|P03981|HV02_CAICR Ig heavy chain V region E1 OS=Caiman crocod...   102   1e-21
+sp|P06327|HVM52_MOUSE Ig heavy chain V region VH558 A1/A4 OS=Mus...   102   1e-21
+sp|P01860|IGHG3_HUMAN Ig gamma-3 chain C region OS=Homo sapiens ...   102   2e-21
+sp|P01753|HVM09_MOUSE Ig heavy chain V region 186-1 OS=Mus muscu...   101   3e-21
+sp|A6NDP1|VSIG7_HUMAN Putative V-set and immunoglobulin domain-c...   101   4e-21
+sp|P23083|HV103_HUMAN Ig heavy chain V-I region V35 OS=Homo sapi...   100   5e-21
+sp|A6NJS3|VSIGL_HUMAN Putative V-set and immunoglobulin domain-c...   100   6e-21
+sp|P01744|HV104_HUMAN Ig heavy chain V-I region ND (Fragments) O...   100   6e-21
+sp|P01861|IGHG4_HUMAN Ig gamma-4 chain C region OS=Homo sapiens ...   100   7e-21
+sp|P01870|IGHG_RABIT Ig gamma chain C region OS=Oryctolagus cuni...   100   7e-21
+sp|P06328|HVM49_MOUSE Ig heavy chain V region VH558 B4 OS=Mus mu...   100   9e-21
+sp|P06331|HV209_HUMAN Ig heavy chain V-II region ARH-77 OS=Homo ...   100   9e-21
+sp|P01749|HVM05_MOUSE Ig heavy chain V region 3 OS=Mus musculus ...   100   9e-21
+sp|P01758|HVM14_MOUSE Ig heavy chain V region 108A OS=Mus muscul...   100   1e-20
+sp|P01823|HVM47_MOUSE Ig heavy chain V region 36-60 OS=Mus muscu...    99   1e-20
+sp|P01754|HVM10_MOUSE Ig heavy chain V region 145 OS=Mus musculu...    99   2e-20
+sp|P01750|HVM06_MOUSE Ig heavy chain V region 102 OS=Mus musculu...    99   3e-20
+sp|P01822|HVM46_MOUSE Ig heavy chain V region MOPC 315 OS=Mus mu...    98   3e-20
+sp|P01821|HVM45_MOUSE Ig heavy chain V region MC101 OS=Mus muscu...    98   3e-20
+sp|P01820|HVM44_MOUSE Ig heavy chain V region PJ14 OS=Mus muscul...    98   4e-20
+sp|P18532|HVM61_MOUSE Ig heavy chain V region 1B43 OS=Mus muscul...    96   1e-19
+sp|P01829|HV2C_RABIT Ig heavy chain V-A2 region P-MU-3 OS=Orycto...    95   3e-19
+sp|P01761|HV106_HUMAN Ig heavy chain V-I region SIE OS=Homo sapi...    95   3e-19
+sp|P01760|HV105_HUMAN Ig heavy chain V-I region WOL OS=Homo sapi...    95   3e-19
+sp|P01742|HV101_HUMAN Ig heavy chain V-I region EU OS=Homo sapie...    92   2e-18
+sp|P18531|HVM60_MOUSE Ig heavy chain V region M315 OS=Mus muscul...    92   3e-18
+sp|P03983|HV01_HETFR Ig heavy chain V region OS=Heterodontus fra...    91   4e-18
+sp|P80421|HV108_HUMAN Ig heavy chain V-I region DOT OS=Homo sapi...    91   7e-18
+sp|P01817|HV204_HUMAN Ig heavy chain V-II region MCE OS=Homo sap...    89   2e-17
+sp|P01826|HV1A_RABIT Ig heavy chain V-A1 region BS-5 OS=Oryctola...    87   6e-17
+sp|P18533|HVM62_MOUSE Ig heavy chain V region 733 OS=Mus musculu...    87   7e-17
+sp|P01814|HV201_HUMAN Ig heavy chain V-II region OU OS=Homo sapi...    87   8e-17
+sp|P01824|HV206_HUMAN Ig heavy chain V-II region WAH OS=Homo sap...    86   2e-16
+sp|P04438|HV208_HUMAN Ig heavy chain V-II region SESS OS=Homo sa...    86   2e-16
+sp|P01816|HV203_HUMAN Ig heavy chain V-II region DAW OS=Homo sap...    86   2e-16
+sp|P01827|HV2A_RABIT Ig heavy chain V-A2 region BS-1 OS=Oryctola...    84   7e-16
+sp|P83907|IGW3_HETFR IgW heavy chain V region W26 (Fragment) OS=...    83   1e-15
+sp|P01828|HV2B_RABIT Ig heavy chain V-A2 region K-25 OS=Oryctola...    83   1e-15
+sp|P01815|HV202_HUMAN Ig heavy chain V-II region COR OS=Homo sap...    81   5e-15
+sp|P01825|HV207_HUMAN Ig heavy chain V-II region NEWM OS=Homo sa...    80   8e-15
+sp|P04215|HV02_HETFR Ig heavy chain V region HC-3 (Fragment) OS=...    76   2e-13
+sp|P01818|HV205_HUMAN Ig heavy chain V-II region HE OS=Homo sapi...    75   3e-13
+sp|P01855|IGHE_RAT Ig epsilon chain C region OS=Rattus norvegicu...    74   9e-13
+sp|A6NJ16|VSIG6_HUMAN Putative V-set and immunoglobulin domain-c...    72   2e-12
+sp|P01854|IGHE_HUMAN Ig epsilon chain C region OS=Homo sapiens G...    71   4e-12
+sp|P06336|IGHE_MOUSE Ig epsilon chain C region OS=Mus musculus P...    67   8e-11
+sp|P20758|IGHA1_GORGO Ig alpha-1 chain C region OS=Gorilla goril...    54   6e-07
+sp|P01880|IGHD_HUMAN Ig delta chain C region OS=Homo sapiens GN=...    54   1e-06
+sp|P01877|IGHA2_HUMAN Ig alpha-2 chain C region OS=Homo sapiens ...    53   1e-06
+sp|P01876|IGHA1_HUMAN Ig alpha-1 chain C region OS=Homo sapiens ...    52   3e-06
+sp|P01721|LV601_HUMAN Ig lambda chain V-VI region AR OS=Homo sap...    52   4e-06
+sp|P11364|TCB_FLV T-cell receptor beta chain T17T-22 OS=Feline l...    50   7e-06
+sp|P13373|VPRE2_MOUSE Immunoglobulin omega chain OS=Mus musculus...    46   1e-04
+sp|P06317|LV603_HUMAN Ig lambda chain V-VI region SUT OS=Homo sa...    46   1e-04
+sp|P01871|IGHM_HUMAN Ig mu chain C region OS=Homo sapiens GN=IGH...    45   3e-04
+sp|P13372|VPRE1_MOUSE Immunoglobulin iota chain OS=Mus musculus ...    45   4e-04
+sp|P15814|IGLL1_HUMAN Immunoglobulin lambda-like polypeptide 1 O...    45   5e-04
+sp|P01874|IGHM_CANFA Ig mu chain C region OS=Canis familiaris PE...    44   5e-04
+sp|Q9UKI3|VPRE3_HUMAN Pre-B lymphocyte protein 3 OS=Homo sapiens...    44   6e-04
+sp|P20768|IGHM_SUNMU Ig mu chain C region OS=Suncus murinus PE=4...    44   8e-04
+sp|P01740|TVC1_MOUSE T-cell receptor gamma chain V region V108A ...    44   0.001
+
+>sp|P84751|HVM63_MOUSE Ig heavy chain Mem5 (Fragment) OS=Mus
+           musculus PE=1 SV=1
+          Length = 237
+
+ Score =  277 bits (709), Expect = 3e-74,   Method: Composition-based stats.
+ Identities = 170/222 (76%), Positives = 186/222 (83%), Gaps = 10/222 (4%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISN-GGGYTY 59
+           EV+LVESGG LV+PGGSL LSCA SGF+F  Y MSW RQ P K LEW+  I N G GYT 
+Sbjct: 1   EVKLVESGGGLVQPGGSLSLSCATSGFTFIDYYMSWFRQPPGKALEWLGLIRNKGNGYTM 60
+
+Query: 60  -YPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTV 118
+            Y  S+KGRFTISRDN+++ +YL M++L +EDSA YYCAR + Y  N + YWGQGT +TV
+Sbjct: 61  EYSASLKGRFTISRDNSQSIVYLHMNTLTAEDSATYYCARVD-YGTN-YDYWGQGTTLTV 118
+
+Query: 119 SAAKTTAPSVYPLAPV------SSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQ 172
+           S+AKTTAPSVYPLAPV      SSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQ
+Sbjct: 119 SSAKTTAPSVYPLAPVCGDTTGSSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQ 178
+
+Query: 173 SDLYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIEPR 214
+           SDLYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIEPR
+Sbjct: 179 SDLYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIEPR 220
+
+
+>sp|P18526|HVM55_MOUSE Ig heavy chain V region 345 OS=Mus musculus
+           PE=4 SV=1
+          Length = 117
+
+ Score =  178 bits (452), Expect = 2e-44,   Method: Composition-based stats.
+ Identities = 89/98 (90%), Positives = 94/98 (95%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EVQLVESGG LVKPGGSLKLSCAASGF+FSSY MSWVRQTP+KRLEWVA IS+GGG TYY
+Sbjct: 20  EVQLVESGGGLVKPGGSLKLSCAASGFAFSSYDMSWVRQTPEKRLEWVAYISSGGGSTYY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+           PD+VKGRFTISRDNAKNTLYLQMSSLKSED+AMYYCAR
+Sbjct: 80  PDTVKGRFTISRDNAKNTLYLQMSSLKSEDTAMYYCAR 117
+
+
+>sp|P18525|HVM54_MOUSE Ig heavy chain V region 5-84 OS=Mus musculus
+           PE=1 SV=1
+          Length = 117
+
+ Score =  176 bits (446), Expect = 9e-44,   Method: Composition-based stats.
+ Identities = 87/98 (88%), Positives = 93/98 (94%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EV+LVESGG LV+PGGSLKLSCAASGF+FSSY MSWVRQTP+KRLEWVA ISNGGG TYY
+Sbjct: 20  EVKLVESGGGLVQPGGSLKLSCAASGFTFSSYTMSWVRQTPEKRLEWVAYISNGGGSTYY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+           PD+VKGRFTISRDNAKN LYLQMSSLKSED+AMYYCAR
+Sbjct: 80  PDTVKGRFTISRDNAKNNLYLQMSSLKSEDTAMYYCAR 117
+
+
+>sp|P18529|HVM58_MOUSE Ig heavy chain V region 5-76 OS=Mus musculus
+           PE=1 SV=1
+          Length = 117
+
+ Score =  174 bits (440), Expect = 4e-43,   Method: Composition-based stats.
+ Identities = 84/98 (85%), Positives = 90/98 (91%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EV LVESGG LVKPGGSLKLSC  SGF+F+ Y MSWVRQTP+KRLEWVATIS+GG YTYY
+Sbjct: 20  EVHLVESGGGLVKPGGSLKLSCVVSGFTFNKYAMSWVRQTPEKRLEWVATISSGGLYTYY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+           PDSVKGRFTISRDNA NTLYLQMSSL+SED+AMYYCAR
+Sbjct: 80  PDSVKGRFTISRDNAGNTLYLQMSSLRSEDTAMYYCAR 117
+
+
+>sp|P18528|HVM57_MOUSE Ig heavy chain V region 6.96 OS=Mus
+          musculus PE=4 SV=1
+          Length = 98
+
+ Score =  172 bits (436), Expect = 1e-42,   Method: Composition-based stats.
+ Identities = 88/98 (89%), Positives = 92/98 (93%)
+
+Query: 1  EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+          EVQLVESGG LVKPGGSLKLSCAASGF+FS Y M WVRQTP+KRLEWVATIS+GG YTYY
+Sbjct: 1  EVQLVESGGGLVKPGGSLKLSCAASGFTFSDYYMYWVRQTPEKRLEWVATISDGGSYTYY 60
+
+Query: 61 PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+          PDSVKGRFTISRDNAKN LYLQMSSLKSED+AMYYCAR
+Sbjct: 61 PDSVKGRFTISRDNAKNNLYLQMSSLKSEDTAMYYCAR 98
+
+
+>sp|P01783|HVM16_MOUSE Ig heavy chain V region MOPC 21 (Fragment)
+           OS=Mus musculus PE=1 SV=1
+          Length = 136
+
+ Score =  167 bits (424), Expect = 3e-41,   Method: Composition-based stats.
+ Identities = 85/120 (70%), Positives = 98/120 (81%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQLVESGG LV+PGGS KLSCAASGF+FSS+GM WVRQ P+K LEWVA IS+G    +Y
+Sbjct: 17  DVQLVESGGGLVQPGGSRKLSCAASGFTFSSFGMHWVRQAPEKGLEWVAYISSGSSTLHY 76
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+            D+VKGRFTISRDN KNTL+LQM+SL+SED+AMYYCAR   Y      YWGQGT VTVS+
+Sbjct: 77  ADTVKGRFTISRDNPKNTLFLQMTSLRSEDTAMYYCARWGNYPYYAMDYWGQGTSVTVSS 136
+
+
+>sp|P01864|GCAB_MOUSE Ig gamma-2A chain C region secreted form
+           OS=Mus musculus PE=1 SV=1
+          Length = 335
+
+ Score =  167 bits (423), Expect = 4e-41,   Method: Composition-based stats.
+ Identities = 89/100 (89%), Positives = 92/100 (92%), Gaps = 6/100 (6%)
+
+Query: 121 AKTTAPSVYPLAPV------SSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSD 174
+           AKTTAPSVYPL PV      SSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPA+LQS 
+Sbjct: 1   AKTTAPSVYPLVPVCGGTTGSSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPALLQSG 60
+
+Query: 175 LYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIEPR 214
+           LYTLSSSVTVTS+TWPSQ+ITCNVAHPASSTKVDKKIEPR
+Sbjct: 61  LYTLSSSVTVTSNTWPSQTITCNVAHPASSTKVDKKIEPR 100
+
+
+>sp|P18524|HVM53_MOUSE Ig heavy chain V region RF OS=Mus musculus
+           PE=4 SV=1
+          Length = 117
+
+ Score =  166 bits (420), Expect = 1e-40,   Method: Composition-based stats.
+ Identities = 82/98 (83%), Positives = 91/98 (92%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +V+LVESGG LVK GGSLKLSCAASGF+FSSY MSWVRQTP+KRLE VA I++ GG TYY
+Sbjct: 20  DVKLVESGGGLVKLGGSLKLSCAASGFTFSSYYMSWVRQTPEKRLELVAAINSNGGSTYY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+           PD+VKGRFTISRDNAKNTLYLQMSSLKSED+A+YYCAR
+Sbjct: 80  PDTVKGRFTISRDNAKNTLYLQMSSLKSEDTALYYCAR 117
+
+
+>sp|P18530|HVM59_MOUSE Ig heavy chain V region 7-39 OS=Mus musculus
+           PE=4 SV=1
+          Length = 117
+
+ Score =  164 bits (415), Expect = 3e-40,   Method: Composition-based stats.
+ Identities = 81/98 (82%), Positives = 89/98 (90%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EV+ VESGG  VKPGGSLKLSC ASGF+FS+YGMSWVRQTP+KRLEWVA+IS G  YTYY
+Sbjct: 20  EVKWVESGGGSVKPGGSLKLSCEASGFTFSNYGMSWVRQTPEKRLEWVASISGGVSYTYY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+           PDSVKGRFTISRDNAKN LYLQM+SL SED+A+YYCAR
+Sbjct: 80  PDSVKGRFTISRDNAKNNLYLQMNSLTSEDTALYYCAR 117
+
+
+>sp|P18527|HVM56_MOUSE Ig heavy chain V region 914 OS=Mus musculus
+          PE=1 SV=1
+          Length = 97
+
+ Score =  161 bits (408), Expect = 2e-39,   Method: Composition-based stats.
+ Identities = 85/98 (86%), Positives = 93/98 (94%), Gaps = 1/98 (1%)
+
+Query: 1  EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+          EV+LVESGG LVKPGGSLKLSCAASGF+FSSY MSWVRQTP+KRLEWVA+IS+GG  TYY
+Sbjct: 1  EVKLVESGGGLVKPGGSLKLSCAASGFTFSSYAMSWVRQTPEKRLEWVASISSGGS-TYY 59
+
+Query: 61 PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+          PDSVKGRFTISRDNA+N LYLQMSSL+SED+AMYYCAR
+Sbjct: 60 PDSVKGRFTISRDNARNILYLQMSSLRSEDTAMYYCAR 97
+
+
+>sp|P01863|GCAA_MOUSE Ig gamma-2A chain C region, A allele OS=Mus
+           musculus GN=Ighg PE=1 SV=1
+          Length = 330
+
+ Score =  160 bits (406), Expect = 4e-39,   Method: Composition-based stats.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 121 AKTTAPSVYPLAPV------SSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSD 174
+           AKTTAPSVYPLAPV      SSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSD
+Sbjct: 1   AKTTAPSVYPLAPVCGDTTGSSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSD 60
+
+Query: 175 LYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIEPR 214
+           LYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIEPR
+Sbjct: 61  LYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIEPR 100
+
+
+>sp|P01865|GCAM_MOUSE Ig gamma-2A chain C region, membrane-bound
+           form OS=Mus musculus GN=Igh-1a PE=1 SV=3
+          Length = 398
+
+ Score =  160 bits (406), Expect = 4e-39,   Method: Composition-based stats.
+ Identities = 93/99 (93%), Positives = 93/99 (93%), Gaps = 6/99 (6%)
+
+Query: 122 KTTAPSVYPLAPV------SSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSDL 175
+           KTTAPSVYPLAPV      SSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSDL
+Sbjct: 1   KTTAPSVYPLAPVCGDTTGSSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSDL 60
+
+Query: 176 YTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIEPR 214
+           YTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIEPR
+Sbjct: 61  YTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIEPR 99
+
+
+>sp|P01781|HV320_HUMAN Ig heavy chain V-III region GAL OS=Homo
+           sapiens PE=1 SV=1
+          Length = 116
+
+ Score =  160 bits (405), Expect = 5e-39,   Method: Composition-based stats.
+ Identities = 84/119 (70%), Positives = 92/119 (77%), Gaps = 4/119 (3%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EVQLVESGGDLV+PG SL+LSCAASGF F   GM+WVRQ P K LEWVA I   G    Y
+Sbjct: 1   EVQLVESGGDLVQPGRSLRLSCAASGFBFBBLGMTWVRQAPGKGLEWVANIKZBGSZZBY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVS 119
+            DSVKGRFTISRDNAKN+LYLQM+SL+ ED+A+YYCAR       G  YWGQGTLVTVS
+Sbjct: 61  VDSVKGRFTISRDNAKNSLYLQMNSLRVEDTALYYCAR----GWGGGDYWGQGTLVTVS 115
+
+
+>sp|P01768|HV307_HUMAN Ig heavy chain V-III region CAM OS=Homo
+           sapiens PE=1 SV=1
+          Length = 122
+
+ Score =  158 bits (399), Expect = 2e-38,   Method: Composition-based stats.
+ Identities = 81/122 (66%), Positives = 100/122 (81%), Gaps = 2/122 (1%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +V+LVESGG +V+PG SL+LSCAASGF+FS+Y M WVRQ P K LEWVA IS  G   YY
+Sbjct: 1   QVELVESGGGVVZPGRSLRLSCAASGFTFSNYAMHWVRQPPGKGLEWVAVISYBGBBKYY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR-RERY-DENGFAYWGQGTLVTV 118
+            BSVKGRFTISRDB+KBTLYLQM+SL++EB+A+YYCAR R  Y B   F YWGQGTLVTV
+Sbjct: 61  ABSVKGRFTISRDBSKBTLYLQMNSLRAEBTAVYYCARDRPLYGBYRAFNYWGQGTLVTV 120
+
+Query: 119 SA 120
+           S+
+Sbjct: 121 SS 122
+
+
+>sp|P20759|IGHG1_RAT Ig gamma-1 chain C region OS=Rattus norvegicus
+           PE=1 SV=1
+          Length = 326
+
+ Score =  156 bits (394), Expect = 1e-37,   Method: Composition-based stats.
+ Identities = 83/100 (83%), Positives = 89/100 (89%), Gaps = 6/100 (6%)
+
+Query: 121 AKTTAPSVYPLAP------VSSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSD 174
+           A+TTAPSVYPLAP       S VTLGCLVKGYFPEPVT+TWNSG+LSSGVHTFPAVLQS 
+Sbjct: 1   AETTAPSVYPLAPGTALKSNSMVTLGCLVKGYFPEPVTVTWNSGALSSGVHTFPAVLQSG 60
+
+Query: 175 LYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIEPR 214
+           LYTL+SSVTV SSTWPSQ++TCNVAHPASSTKVDKKI PR
+Sbjct: 61  LYTLTSSVTVPSSTWPSQTVTCNVAHPASSTKVDKKIVPR 100
+
+
+>sp|P01782|HV321_HUMAN Ig heavy chain V-III region DOB OS=Homo
+           sapiens PE=1 SV=1
+          Length = 120
+
+ Score =  155 bits (391), Expect = 2e-37,   Method: Composition-based stats.
+ Identities = 78/120 (65%), Positives = 93/120 (77%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EVQLVESGGDLV+PG SL+LSCAASGF+F  Y M W+RQ P K  EWV+TI+  GG   Y
+Sbjct: 1   EVQLVESGGDLVQPGRSLRLSCAASGFNFHEYNMHWLRQGPGKGPEWVSTITWNGGSVLY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+            DSVKGRF ISRDNA+ TLYLQ++ L+ ED+A YYCA+   ++ N F  WGQGTLVTVS+
+Sbjct: 61  ADSVKGRFAISRDNAQKTLYLQLNILRPEDTAFYYCAKGYIWNGNWFDSWGQGTLVTVSS 120
+
+
+>sp|P01810|HVM40_MOUSE Ig heavy chain V region J539 OS=Mus musculus
+           PE=1 SV=1
+          Length = 119
+
+ Score =  154 bits (390), Expect = 3e-37,   Method: Composition-based stats.
+ Identities = 81/120 (67%), Positives = 92/120 (76%), Gaps = 2/120 (1%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EV+L+ESGG LV+PGGSLKLSCAASGF FS Y MSWVRQ P K LEW+  I    G   Y
+Sbjct: 1   EVKLLESGGGLVQPGGSLKLSCAASGFDFSKYWMSWVRQAPGKGLEWIGEIHPDSGTINY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+             S+K +F ISRDNAKN+LYLQMS ++SED+A+YYCAR   Y  N  AYWGQGTLVTVSA
+Sbjct: 61  TPSLKDKFIISRDNAKNSLYLQMSKVRSEDTALYYCARLHYYGYN--AYWGQGTLVTVSA 118
+
+
+>sp|P01764|HV303_HUMAN Ig heavy chain V-III region VH26 OS=Homo
+           sapiens PE=1 SV=1
+          Length = 117
+
+ Score =  154 bits (390), Expect = 3e-37,   Method: Composition-based stats.
+ Identities = 76/98 (77%), Positives = 88/98 (89%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EVQL+ESGG LV+PGGSL+LSCAASGF+FSSY MSWVRQ P K LEWV+ IS  GG TYY
+Sbjct: 20  EVQLLESGGGLVQPGGSLRLSCAASGFTFSSYAMSWVRQAPGKGLEWVSAISGSGGSTYY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+            DSVKGRFTISRDN+KNTLYLQM+SL++ED+A+YYCA+
+Sbjct: 80  GDSVKGRFTISRDNSKNTLYLQMNSLRAEDTAVYYCAK 117
+
+
+>sp|P01785|HV02_CANFA Ig heavy chain V region MOO OS=Canis
+           familiaris PE=1 SV=1
+          Length = 117
+
+ Score =  153 bits (387), Expect = 6e-37,   Method: Composition-based stats.
+ Identities = 83/120 (69%), Positives = 97/120 (80%), Gaps = 3/120 (2%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EV+LVESGGDLVKPGGSL+LSC ASGF+FSS GMSWVRQ P + L+WVA IS+  G TYY
+Sbjct: 1   EVKLVESGGDLVKPGGSLRLSCVASGFTFSSNGMSWVRQDPGEGLQWVADISS-SGQTYY 59
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+            D+VKGRF+ISRDNAKNTLYLQM  L+ ED+A+YYCA     D     Y+GQGT+VTVS+
+Sbjct: 60  ADAVKGRFSISRDNAKNTLYLQMEDLRVEDTAVYYCATEG--DIEIPRYFGQGTIVTVSS 117
+
+
+>sp|P01771|HV310_HUMAN Ig heavy chain V-III region HIL OS=Homo
+           sapiens PE=1 SV=1
+          Length = 121
+
+ Score =  152 bits (385), Expect = 1e-36,   Method: Composition-based stats.
+ Identities = 77/121 (63%), Positives = 96/121 (79%), Gaps = 1/121 (0%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +V+LV++GG +V+PG SL+LSC ASGF+FS+YGM WVRQ P K LEWVA I   G  TYY
+Sbjct: 1   QVKLVQAGGGVVQPGRSLRLSCIASGFTFSNYGMHWVRQAPGKGLEWVAVIWYNGSRTYY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARR-ERYDENGFAYWGQGTLVTVS 119
+            DSVKGRFTISRDN+K TLY+ZM+SL++ED+A+YYCAR  +      F YWGQG LVTVS
+Sbjct: 61  GDSVKGRFTISRDNSKRTLYMZMNSLRTEDTAVYYCARDPDILTAFSFDYWGQGVLVTVS 120
+
+Query: 120 A 120
+           +
+Sbjct: 121 S 121
+
+
+>sp|P20760|IGG2A_RAT Ig gamma-2A chain C region OS=Rattus norvegicus
+           GN=Igg-2a PE=1 SV=1
+          Length = 322
+
+ Score =  150 bits (380), Expect = 4e-36,   Method: Composition-based stats.
+ Identities = 82/100 (82%), Positives = 88/100 (88%), Gaps = 6/100 (6%)
+
+Query: 121 AKTTAPSVYPLAP------VSSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSD 174
+           A+TTAPSVYPLAP       S VTLGCLVKGYFPEPVT+TWNSG+LSSGVHTFPAVLQS 
+Sbjct: 1   AETTAPSVYPLAPGTALKSNSMVTLGCLVKGYFPEPVTVTWNSGALSSGVHTFPAVLQSG 60
+
+Query: 175 LYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIEPR 214
+           LYTL+SSVTV SSTW SQ++TCNVAHPASSTKVDKKI PR
+Sbjct: 61  LYTLTSSVTVPSSTWSSQAVTCNVAHPASSTKVDKKIVPR 100
+
+
+>sp|P01807|HVM37_MOUSE Ig heavy chain V region X44 OS=Mus musculus
+           PE=1 SV=1
+          Length = 119
+
+ Score =  150 bits (379), Expect = 6e-36,   Method: Composition-based stats.
+ Identities = 81/121 (66%), Positives = 93/121 (76%), Gaps = 4/121 (3%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EV+L+ESGG LV+PGGSLKLSCAASGF FS Y MSWVRQ P K LEW+  I+       Y
+Sbjct: 1   EVKLLESGGGLVQPGGSLKLSCAASGFDFSRYWMSWVRQAPGKGLEWIGEINPDSSTINY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGF-AYWGQGTLVTVS 119
+             S+K +F ISRDNAKNTLYLQMS ++SED+A+YYCAR   Y   G+ AYWGQGTLVTVS
+Sbjct: 61  TPSLKDKFIISRDNAKNTLYLQMSKVRSEDTALYYCARLHYY---GYAAYWGQGTLVTVS 117
+
+Query: 120 A 120
+           A
+Sbjct: 118 A 118
+
+
+>sp|P01770|HV309_HUMAN Ig heavy chain V-III region NIE OS=Homo
+           sapiens PE=1 SV=1
+          Length = 119
+
+ Score =  149 bits (375), Expect = 1e-35,   Method: Composition-based stats.
+ Identities = 77/120 (64%), Positives = 95/120 (79%), Gaps = 1/120 (0%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQLV+SGG +V+PG SL+LSCAASGF+FS Y + WVRQ P K LEWVA +S  G   +Y
+Sbjct: 1   QVQLVQSGGGVVQPGRSLRLSCAASGFTFSRYTIHWVRQAPGKGLEWVAVMSYBGBBKHY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+            DSV GRFTISR+++KNTLYL M+SL+ ED+A+YYCAR  R     FA+WGQGTLVTVS+
+Sbjct: 61  ADSVNGRFTISRNDSKNTLYLNMNSLRPEDTAVYYCARI-RDTAMFFAHWGQGTLVTVSS 119
+
+
+>sp|P01762|HV301_HUMAN Ig heavy chain V-III region TRO OS=Homo
+           sapiens PE=1 SV=1
+          Length = 122
+
+ Score =  147 bits (371), Expect = 4e-35,   Method: Composition-based stats.
+ Identities = 73/122 (59%), Positives = 97/122 (79%), Gaps = 2/122 (1%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQLV+SGG LVKPGGSL+LSC ASGFSF  + MSW+RZTP K LZWV+ I   G   YY
+Sbjct: 1   QVQLVQSGGGLVKPGGSLRLSCVASGFSFRDFYMSWIRZTPGKGLZWVSYIGGSGSTLYY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFA--YWGQGTLVTV 118
+            DSVKGRFTISRDNA+ +LYLZM SL++ZB+A+YYCA  + +B + F+  YWGZG LVTV
+Sbjct: 61  ADSVKGRFTISRDNAQKSLYLZMBSLRTZBTAVYYCAATBBFBWSTFSLBYWGZGBLVTV 120
+
+Query: 119 SA 120
+           S+
+Sbjct: 121 SS 122
+
+
+>sp|P01784|HV01_CANFA Ig heavy chain V region GOM OS=Canis
+           familiaris PE=1 SV=1
+          Length = 114
+
+ Score =  147 bits (371), Expect = 5e-35,   Method: Composition-based stats.
+ Identities = 77/120 (64%), Positives = 93/120 (77%), Gaps = 6/120 (5%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EVQLVESGGDLVKPGGSL+LSC ASG +FS Y M WVRQ P K L+ VA  ++      Y
+Sbjct: 1   EVQLVESGGDLVKPGGSLRLSCVASGITFSGYDMQWVRQAPGKGLQKVAYFNDALSAQGY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+            D+VKGRFTIS+DNAK++LYLQM+SL++ED+A+YYCA  +      F YWGQGTLVTVS+
+Sbjct: 61  ADAVKGRFTISKDNAKDSLYLQMNSLRAEDTAVYYCAPWQ------FEYWGQGTLVTVSS 114
+
+
+>sp|P01805|HVR01_RAT Ig heavy chain V region IR2 OS=Rattus
+           norvegicus PE=4 SV=1
+          Length = 142
+
+ Score =  146 bits (368), Expect = 9e-35,   Method: Composition-based stats.
+ Identities = 75/123 (60%), Positives = 93/123 (75%), Gaps = 3/123 (2%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGG--YT 58
+           EV+L ESGG LV+PG S+KLSCA SGF+FS Y M WVRQ P K LEWVA I N       
+Sbjct: 20  EVKLEESGGGLVQPGMSVKLSCATSGFTFSDYWMEWVRQAPGKGLEWVAEIRNKANNYVA 79
+
+Query: 59  YYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR-RERYDENGFAYWGQGTLVT 117
+           YY  S+KGRFT+SRD++K+ +YLQM++++SED+ +YYC+R    Y EN F YWGQGTLVT
+Sbjct: 80  YYGKSLKGRFTLSRDDSKSIVYLQMNNIRSEDTGIYYCSRGYGGYSENWFVYWGQGTLVT 139
+
+Query: 118 VSA 120
+           VS+
+Sbjct: 140 VSS 142
+
+
+>sp|P01801|HVM32_MOUSE Ig heavy chain V-III region J606 OS=Mus
+           musculus PE=1 SV=1
+          Length = 115
+
+ Score =  145 bits (366), Expect = 2e-34,   Method: Composition-based stats.
+ Identities = 76/122 (62%), Positives = 98/122 (80%), Gaps = 9/122 (7%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATI--SNGGGYT 58
+           EV+L ESGG LV+PGGS+KLSC ASGF+FS+Y M+WVRQ+P+K LEWVA I   +    T
+Sbjct: 1   EVKLEESGGGLVQPGGSMKLSCVASGFTFSNYWMNWVRQSPEKGLEWVAEIRLKSNNYAT 60
+
+Query: 59  YYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTV 118
+           +Y +SVKGRFTISRD++K+++YLQM++L++ED+ +YYC         GFAYWGQGTLVTV
+Sbjct: 61  HYAESVKGRFTISRDDSKSSVYLQMNNLRAEDTGIYYCT-------TGFAYWGQGTLVTV 113
+
+Query: 119 SA 120
+           SA
+Sbjct: 114 SA 115
+
+
+>sp|P01763|HV302_HUMAN Ig heavy chain V-III region WEA OS=Homo
+           sapiens PE=1 SV=1
+          Length = 114
+
+ Score =  145 bits (366), Expect = 2e-34,   Method: Composition-based stats.
+ Identities = 76/120 (63%), Positives = 95/120 (79%), Gaps = 6/120 (5%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQLV+SGG LV+PGGSL+LSC+ASGF+FS+  M+WVRQ P K LEW++ I   G   YY
+Sbjct: 1   QVQLVDSGGGLVEPGGSLRLSCSASGFTFSANDMNWVRQAPGKGLEWLSFIGGSGSTIYY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+            DSVKGRFTISR+B+KN+LYLQMSSL++ED+A+YYCAR           WGQGTLVTVS+
+Sbjct: 61  ADSVKGRFTISRNBSKNSLYLQMSSLRAEDTAVYYCAR------GWLLNWGQGTLVTVSS 114
+
+
+>sp|P01799|HVM30_MOUSE Ig heavy chain V-III region ABE-47N OS=Mus
+           musculus PE=1 SV=1
+          Length = 113
+
+ Score =  145 bits (365), Expect = 2e-34,   Method: Composition-based stats.
+ Identities = 75/120 (62%), Positives = 98/120 (81%), Gaps = 9/120 (7%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATI--SNGGGYT 58
+           EV+L ESGG LV+PGGS+KLSC ASGF+FS+Y M+WVRQ+P+K LEWVA I   +    T
+Sbjct: 1   EVKLEESGGGLVQPGGSMKLSCVASGFTFSNYWMNWVRQSPEKGLEWVAEIRLKSHNYAT 60
+
+Query: 59  YYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTV 118
+           +Y +SVKGRFTISRD++K+++YLQM++L++ED+A+YYC+        GFAYWGQGTLVTV
+Sbjct: 61  HYAESVKGRFTISRDDSKSSVYLQMNNLRAEDTAIYYCS-------TGFAYWGQGTLVTV 113
+
+
+>sp|P01869|IGH1M_MOUSE Ig gamma-1 chain C region, membrane-bound
+           form OS=Mus musculus GN=Ighg1 PE=1 SV=2
+          Length = 393
+
+ Score =  144 bits (364), Expect = 3e-34,   Method: Composition-based stats.
+ Identities = 83/100 (83%), Positives = 88/100 (88%), Gaps = 6/100 (6%)
+
+Query: 121 AKTTAPSVYPLAPVSS------VTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSD 174
+           AKTT PSVYPLAP S+      VTLGCLVKGYFPEPVT+TWNSGSLSSGVHTFPAVLQSD
+Sbjct: 1   AKTTPPSVYPLAPGSAAQTNSMVTLGCLVKGYFPEPVTVTWNSGSLSSGVHTFPAVLQSD 60
+
+Query: 175 LYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIEPR 214
+           LYTLSSSVTV SS  PS+++TCNVAHPASSTKVDKKI PR
+Sbjct: 61  LYTLSSSVTVPSSPRPSETVTCNVAHPASSTKVDKKIVPR 100
+
+
+>sp|P01786|HVM17_MOUSE Ig heavy chain V region MOPC 47A OS=Mus
+           musculus PE=1 SV=1
+          Length = 117
+
+ Score =  144 bits (363), Expect = 4e-34,   Method: Composition-based stats.
+ Identities = 76/121 (62%), Positives = 94/121 (77%), Gaps = 5/121 (4%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISN-GGGYTY 59
+           EV+LVESGG LV+PGGSL+LSCA SGF+F+ Y MSWVRQ P K LEW+  I N   GYT 
+Sbjct: 1   EVKLVESGGGLVQPGGSLRLSCATSGFTFTDYYMSWVRQPPGKALEWLGFIRNKABGYTT 60
+
+Query: 60  YPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVS 119
+              +VKGRFTISRBB++  LYLQM++L+++DSA YYCAR    D   FAYWGZGTLVTVS
+Sbjct: 61  EYSAVKGRFTISRBBSZGILYLQMNTLRAQDSATYYCAR----DITEFAYWGZGTLVTVS 116
+
+Query: 120 A 120
+           +
+Sbjct: 117 S 117
+
+
+>sp|P19181|HV05_CARAU Ig heavy chain V region 5A OS=Carassius
+           auratus PE=4 SV=1
+          Length = 116
+
+ Score =  144 bits (362), Expect = 5e-34,   Method: Composition-based stats.
+ Identities = 74/98 (75%), Positives = 86/98 (87%), Gaps = 1/98 (1%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EVQLVESGG L++PGGSL+LSCAASGF+ SS  MSWVRQ P K LEWV+ I +GG  TYY
+Sbjct: 20  EVQLVESGGGLIQPGGSLRLSCAASGFTVSSNYMSWVRQPPGKGLEWVSVIYSGGS-TYY 78
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+            DSVKGRFTISRDN+KNTLYLQM+SL++ED+A+YYCAR
+Sbjct: 79  ADSVKGRFTISRDNSKNTLYLQMNSLRAEDTAVYYCAR 116
+
+
+>sp|P01796|HVM27_MOUSE Ig heavy chain V-III region A4 OS=Mus
+           musculus PE=1 SV=1
+          Length = 113
+
+ Score =  143 bits (361), Expect = 7e-34,   Method: Composition-based stats.
+ Identities = 74/120 (61%), Positives = 96/120 (80%), Gaps = 9/120 (7%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATI--SNGGGYT 58
+           EV+L ESGG LV+PGGS+KLSC ASGF+FS+Y M+WVRQ+P+K LEWVA I   +    T
+Sbjct: 1   EVKLEESGGGLVQPGGSMKLSCVASGFTFSNYWMNWVRQSPEKGLEWVAEIRLKSHNYAT 60
+
+Query: 59  YYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTV 118
+           +Y +SVKGRFTISRD++K+++YLQM++L++ED+ +YYC         GFAYWGQGTLVTV
+Sbjct: 61  HYAESVKGRFTISRDDSKSSVYLQMNNLRAEDTGIYYCT-------TGFAYWGQGTLVTV 113
+
+
+>sp|P01868|IGHG1_MOUSE Ig gamma-1 chain C region secreted form
+           OS=Mus musculus GN=Ighg1 PE=1 SV=1
+          Length = 324
+
+ Score =  143 bits (360), Expect = 9e-34,   Method: Composition-based stats.
+ Identities = 83/100 (83%), Positives = 88/100 (88%), Gaps = 6/100 (6%)
+
+Query: 121 AKTTAPSVYPLAPVSS------VTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSD 174
+           AKTT PSVYPLAP S+      VTLGCLVKGYFPEPVT+TWNSGSLSSGVHTFPAVLQSD
+Sbjct: 1   AKTTPPSVYPLAPGSAAQTNSMVTLGCLVKGYFPEPVTVTWNSGSLSSGVHTFPAVLQSD 60
+
+Query: 175 LYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIEPR 214
+           LYTLSSSVTV SS  PS+++TCNVAHPASSTKVDKKI PR
+Sbjct: 61  LYTLSSSVTVPSSPRPSETVTCNVAHPASSTKVDKKIVPR 100
+
+
+>sp|P01800|HVM31_MOUSE Ig heavy chain V-III region T957 OS=Mus
+           musculus PE=1 SV=2
+          Length = 113
+
+ Score =  143 bits (360), Expect = 9e-34,   Method: Composition-based stats.
+ Identities = 74/120 (61%), Positives = 95/120 (79%), Gaps = 9/120 (7%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATI--SNGGGYT 58
+           EV+L ESGG LV+PGGS+KLSC ASGF+FS+Y M+WVRQ+P+K LEWVA I   +    T
+Sbjct: 1   EVKLEESGGGLVQPGGSMKLSCVASGFTFSNYWMNWVRQSPEKGLEWVAEIRLKSHNYET 60
+
+Query: 59  YYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTV 118
+           +Y +SVKGRFTISRD++K+++YLQM+ L++ED+ +YYC         GFAYWGQGTLVTV
+Sbjct: 61  HYAESVKGRFTISRDDSKSSVYLQMNILRAEDTGIYYCT-------TGFAYWGQGTLVTV 113
+
+
+>sp|P01802|HVM33_MOUSE Ig heavy chain V-III region W3082 OS=Mus
+           musculus PE=1 SV=1
+          Length = 115
+
+ Score =  143 bits (360), Expect = 9e-34,   Method: Composition-based stats.
+ Identities = 75/122 (61%), Positives = 97/122 (79%), Gaps = 9/122 (7%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATI--SNGGGYT 58
+           EV+L ESGG LV+PGGS+KLSC ASGF+FS+Y M+WVRQ+P+K LEWVA I   +    T
+Sbjct: 1   EVKLEESGGGLVQPGGSMKLSCVASGFTFSNYWMNWVRQSPEKGLEWVAEIRLKSHNYAT 60
+
+Query: 59  YYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTV 118
+           +Y +SVKGRFTISRD++K+++YL+M++L+ ED+ +YYC         GFAYWGQGTLVTV
+Sbjct: 61  HYAESVKGRFTISRDDSKSSVYLRMNNLRPEDTGIYYCT-------TGFAYWGQGTLVTV 113
+
+Query: 119 SA 120
+           SA
+Sbjct: 114 SA 115
+
+
+>sp|P01774|HV313_HUMAN Ig heavy chain V-III region POM OS=Homo
+           sapiens PE=1 SV=1
+          Length = 119
+
+ Score =  142 bits (357), Expect = 2e-33,   Method: Composition-based stats.
+ Identities = 75/119 (63%), Positives = 92/119 (77%), Gaps = 2/119 (1%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EVQL+ESGG LV+PGGSL+LSCAASGF+FSS  MSWVRQ P K LEWVA     G   +Y
+Sbjct: 1   EVQLLESGGGLVQPGGSLRLSCAASGFTFSSSAMSWVRQAPGKGLEWVAWKYENGNDKHY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRE--RYDENGFAYWGQGTLVT 117
+            DSV GRFTISR+++KNTLYL M+SL++ZB+A+YYCAR          FA++GQGTLVT
+Sbjct: 61  ADSVNGRFTISRNDSKNTLYLLMNSLQAZBTALYYCARDAGPYVSPTFFAHYGQGTLVT 119
+
+
+>sp|P01798|HVM29_MOUSE Ig heavy chain V-III region E109 OS=Mus
+           musculus PE=1 SV=1
+          Length = 113
+
+ Score =  142 bits (357), Expect = 2e-33,   Method: Composition-based stats.
+ Identities = 71/120 (59%), Positives = 96/120 (80%), Gaps = 9/120 (7%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATI--SNGGGYT 58
+           EV+L ESGG LV+PGGS+KLSC ASGF+FS+Y M+WVRQ+P+K LEW+A I   +    T
+Sbjct: 1   EVKLEESGGGLVQPGGSMKLSCVASGFTFSNYWMNWVRQSPEKGLEWIAEIRLKSHNYAT 60
+
+Query: 59  YYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTV 118
+           +Y +SVKGRFTISRD++K++++LQM++L++ED+ ++YC         GFAYWGQGTLVTV
+Sbjct: 61  HYAESVKGRFTISRDDSKSSVFLQMNNLRAEDTGIHYCT-------TGFAYWGQGTLVTV 113
+
+
+>sp|P01775|HV314_HUMAN Ig heavy chain V-III region LAY OS=Homo
+           sapiens PE=1 SV=1
+          Length = 119
+
+ Score =  141 bits (356), Expect = 2e-33,   Method: Composition-based stats.
+ Identities = 75/118 (63%), Positives = 90/118 (76%), Gaps = 2/118 (1%)
+
+Query: 2   VQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYYP 61
+           VQL+ESGG LV+PGGSL+LSCAASGF+FS+  MSWVRQ P K LEWVA     G   +Y 
+Sbjct: 2   VQLLESGGGLVQPGGSLRLSCAASGFTFSASAMSWVRQAPGKGLEWVAWKYENGNDKHYA 61
+
+Query: 62  DSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRE--RYDENGFAYWGQGTLVT 117
+           DSV GRFTISR+++KNTLYLQM+ L++Z SA+YYCAR          FA+WGQGTLVT
+Sbjct: 62  DSVNGRFTISRNDSKNTLYLQMNGLQAZVSAIYYCARDAGPYVSPTFFAHWGQGTLVT 119
+
+
+>sp|P01767|HV306_HUMAN Ig heavy chain V-III region BUT OS=Homo
+           sapiens PE=1 SV=1
+          Length = 115
+
+ Score =  141 bits (356), Expect = 2e-33,   Method: Composition-based stats.
+ Identities = 75/120 (62%), Positives = 95/120 (79%), Gaps = 5/120 (4%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EVQLVE+GG L++PGGSL+LSCAASGF+ S + MSWVRQ P K LZWV+ I  GG  TYY
+Sbjct: 1   EVQLVETGGGLIQPGGSLRLSCAASGFTVSBHSMSWVRQAPGKALZWVSAIYRGGT-TYY 59
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+            DSVKGRFTISRD+++BT+YLQM SL++ED+A+YYCAR    D      +G+GT VTVS+
+Sbjct: 60  ADSVKGRFTISRDDSRBTVYLQMBSLRAEDTAVYYCAR----DLAAARLFGKGTTVTVSS 115
+
+
+>sp|P01797|HVM28_MOUSE Ig heavy chain V-III region U61 OS=Mus
+           musculus PE=1 SV=1
+          Length = 113
+
+ Score =  141 bits (356), Expect = 3e-33,   Method: Composition-based stats.
+ Identities = 73/120 (60%), Positives = 95/120 (79%), Gaps = 9/120 (7%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATI--SNGGGYT 58
+           EV+L ESGG LV+PGGS+KLSC ASGF+FS+Y M+WVRQ+P+K LEWVA I   +    T
+Sbjct: 1   EVKLEESGGGLVQPGGSMKLSCVASGFTFSNYWMNWVRQSPEKGLEWVAEIRLKSHNYAT 60
+
+Query: 59  YYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTV 118
+           +Y +SVKGRFTISRD++K+++YLQM++L++ED+ +YYC         GFAYWGQGTLV V
+Sbjct: 61  HYAESVKGRFTISRDDSKSSVYLQMNNLRAEDTGIYYCT-------TGFAYWGQGTLVPV 113
+
+
+>sp|P01766|HV305_HUMAN Ig heavy chain V-III region BRO OS=Homo
+           sapiens PE=1 SV=1
+          Length = 120
+
+ Score =  140 bits (354), Expect = 4e-33,   Method: Composition-based stats.
+ Identities = 77/121 (63%), Positives = 92/121 (76%), Gaps = 7/121 (5%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EVQLVESGG LV+PGGSL+LSCAASGF+FS Y M+WVRQ   K LEWV+ I   G   YY
+Sbjct: 1   EVQLVESGGGLVQPGGSLRLSCAASGFTFSYYNMNWVRQVTGKGLEWVSAIGTAGD-QYY 59
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAY------WGQGT 114
+            DSVKGRFTISR+++KNTLYL M+SL++ED+A+YYCAR      +G+ Y      WGQGT
+Sbjct: 60  ADSVKGRFTISRNDSKNTLYLNMNSLRAEDTAVYYCARSPVSLVDGWLYYYYGSVWGQGT 119
+
+Query: 115 L 115
+           L
+Sbjct: 120 L 120
+
+
+>sp|P01776|HV315_HUMAN Ig heavy chain V-III region WAS OS=Homo
+           sapiens PE=1 SV=1
+          Length = 117
+
+ Score =  140 bits (354), Expect = 4e-33,   Method: Composition-based stats.
+ Identities = 70/117 (59%), Positives = 90/117 (76%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EVQL+ESGG LV+PGGSL+LSCAASGFSFS+  M WVRQ P K LEWVA        +++
+Sbjct: 1   EVQLLESGGGLVQPGGSLRLSCAASGFSFSTDAMYWVRQAPGKGLEWVAWKYQEASNSHF 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVT 117
+            D+V GRFTISR+++KNTLYLQM+ L++ZB+A+YYCAR  +     F  +GQGTLVT
+Sbjct: 61  ADTVNGRFTISRNDSKNTLYLQMNRLEAZBTAVYYCARFRQPFVQFFDVFGQGTLVT 117
+
+
+>sp|P01808|HVM38_MOUSE Ig heavy chain V region T601 OS=Mus musculus
+           PE=1 SV=1
+          Length = 119
+
+ Score =  140 bits (354), Expect = 4e-33,   Method: Composition-based stats.
+ Identities = 76/120 (63%), Positives = 88/120 (73%), Gaps = 2/120 (1%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EV+L+ESGG LV+PGGSLKLSCAASGF FS Y MSWVRQ P K LEW+  I+       Y
+Sbjct: 1   EVKLLESGGGLVQPGGSLKLSCAASGFDFSRYWMSWVRQAPGKGLEWIGEINPDSSTINY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+             S+K +F ISRDNAKNTLYLQMS ++SED+A+YYCAR   Y    F  WG GT VTVS+
+Sbjct: 61  TPSLKDKFIISRDNAKNTLYLQMSKVRSEDTALYYCARLGYYGY--FDVWGAGTTVTVSS 118
+
+
+>sp|P01811|HVM41_MOUSE Ig heavy chain V region UPC10 OS=Mus musculus
+           PE=1 SV=1
+          Length = 117
+
+ Score =  140 bits (353), Expect = 5e-33,   Method: Composition-based stats.
+ Identities = 73/120 (60%), Positives = 89/120 (74%), Gaps = 3/120 (2%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EV+L+ESGG LV+PGGSLKLSCAASGF FS Y MSWVRQ P K LEW+  I+       Y
+Sbjct: 1   EVKLLESGGGLVQPGGSLKLSCAASGFDFSGYWMSWVRQAPGKGLEWIGEINPDSSTINY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+              +K +F ISRDNAKNTL+LQMS ++SED+A+Y+CAR     + GF YWGQ T +TVS+
+Sbjct: 61  TPFLKDKFIISRDNAKNTLFLQMSKVRSEDTALYFCARNW---DVGFDYWGQVTTLTVSS 117
+
+
+>sp|P01773|HV312_HUMAN Ig heavy chain V-III region BUR OS=Homo
+           sapiens PE=1 SV=1
+          Length = 119
+
+ Score =  140 bits (352), Expect = 6e-33,   Method: Composition-based stats.
+ Identities = 72/119 (60%), Positives = 90/119 (75%), Gaps = 1/119 (0%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQLVESGG +V+ G SL+LSC AS F+ S Y M WVRQ P K LZWVA IS GG  TYY
+Sbjct: 1   QVQLVESGGGVVQAGTSLRLSCTASAFNLSDYAMHWVRQAPGKGLZWVALISYGGSBTYY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVS 119
+            DSV+GRFTISRB +KBTLYLZM +L++ED+A+YYCA+          +WGQGTLVTVS
+Sbjct: 61  ADSVRGRFTISRBISKBTLYLZMKTLRTEDTAVYYCAKLIAV-AGTRBFWGQGTLVTVS 118
+
+
+>sp|P01769|HV308_HUMAN Ig heavy chain V-III region GA OS=Homo
+           sapiens PE=1 SV=1
+          Length = 122
+
+ Score =  139 bits (349), Expect = 1e-32,   Method: Composition-based stats.
+ Identities = 71/122 (58%), Positives = 95/122 (77%), Gaps = 2/122 (1%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VZLVZSGG  V+PG SL+LSCAASGFSFS+Y M WVRQ P K LZW++ IS  G   YY
+Sbjct: 1   QVZLVZSGGGAVZPGRSLRLSCAASGFSFSTYAMHWVRQAPGKGLZWLSVISYBGBBZYY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARR--ERYDENGFAYWGQGTLVTV 118
+             SVKGRFTISRBB+KBT+YL+M+SL++E++A+YYCAR         G  YWGZGTLVT+
+Sbjct: 61  AASVKGRFTISRBBSKBTMYLEMNSLRAENTAVYYCARSGIALGSVAGTDYWGZGTLVTI 120
+
+Query: 119 SA 120
+           S+
+Sbjct: 121 SS 122
+
+
+>sp|P19180|HV03_CARAU Ig heavy chain V region 3 OS=Carassius auratus
+           PE=4 SV=1
+          Length = 117
+
+ Score =  137 bits (346), Expect = 3e-32,   Method: Composition-based stats.
+ Identities = 67/98 (68%), Positives = 77/98 (78%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQLVESGGD+ KPG SL+LSC ASG++FS Y M WVRQ P K LEWV+ I + G    Y
+Sbjct: 20  QVQLVESGGDVKKPGDSLRLSCKASGYTFSGYTMYWVRQAPGKGLEWVSRIYDDGSDVSY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+            D+VKGRFTISRDNAKN LYLQMS+LK ED+  YYCAR
+Sbjct: 80  ADTVKGRFTISRDNAKNLLYLQMSNLKPEDTGRYYCAR 117
+
+
+>sp|P01806|HVM36_MOUSE Ig heavy chain V region 441 OS=Mus musculus
+           PE=4 SV=1
+          Length = 116
+
+ Score =  137 bits (345), Expect = 4e-32,   Method: Composition-based stats.
+ Identities = 66/98 (67%), Positives = 77/98 (78%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EV+L+ESGG LV+PGGSLKLSCAASGF FS Y MSWVRQ P K LEW+  I+       Y
+Sbjct: 19  EVKLLESGGGLVQPGGSLKLSCAASGFDFSRYWMSWVRQAPGKGLEWIGEINPDSSTINY 78
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+             S+K +F ISRDNAKNTLYLQMS ++SED+A+YYCAR
+Sbjct: 79  TPSLKDKFIISRDNAKNTLYLQMSKVRSEDTALYYCAR 116
+
+
+>sp|P01812|HVM42_MOUSE Ig heavy chain V region MOPC 173 OS=Mus
+           musculus PE=1 SV=1
+          Length = 117
+
+ Score =  137 bits (345), Expect = 5e-32,   Method: Composition-based stats.
+ Identities = 75/120 (62%), Positives = 88/120 (73%), Gaps = 3/120 (2%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EV+L+ESGG LV+ GGSLKLSCAASGF FS Y MSWVRQ P K LEW+  I        Y
+Sbjct: 1   EVKLLESGGPLVQLGGSLKLSCAASGFDFSRYWMSWVRQAPGKGLEWIGEIDPNSSTINY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+             S+K +F ISR++AKNTLYLQMS ++SED+A+YYCAR   Y  N   YWGQGT VTVS+
+Sbjct: 61  TPSLKDKFIISRNDAKNTLYLQMSKVRSEDTALYYCARSPYYAMN---YWGQGTSVTVSS 117
+
+
+>sp|P01809|HVM39_MOUSE Ig heavy chain V region X24 OS=Mus musculus
+           PE=1 SV=1
+          Length = 118
+
+ Score =  136 bits (342), Expect = 9e-32,   Method: Composition-based stats.
+ Identities = 75/120 (62%), Positives = 88/120 (73%), Gaps = 3/120 (2%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EV+L+ESGG LV+PGGSL LSCAASGF FS Y MSW RQ P K  EW+  I+ G     Y
+Sbjct: 1   EVKLLESGGGLVQPGGSL-LSCAASGFDFSRYWMSWARQAPGKGQEWIGEINPGSSTINY 59
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+             S+K +F ISRDNAKNTLYLQMS ++SED+A+YYCAR   Y    F YWGQGT +TVS+
+Sbjct: 60  TPSLKDKFIISRDNAKNTLYLQMSKVRSEDTALYYCARLGYYGY--FDYWGQGTTLTVSS 117
+
+
+>sp|P01795|HVM26_MOUSE Ig heavy chain V region M167 OS=Mus musculus
+           PE=1 SV=1
+          Length = 144
+
+ Score =  136 bits (342), Expect = 1e-31,   Method: Composition-based stats.
+ Identities = 73/125 (58%), Positives = 92/125 (73%), Gaps = 5/125 (4%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWV-ATISNGGGY-T 58
+           EV++VESGG LV+PGGSL+LSCA SGF+FS + M WVRQTP KRLEW+ A+ S    Y T
+Sbjct: 20  EVKVVESGGGLVQPGGSLRLSCATSGFTFSDFYMEWVRQTPGKRLEWIAASRSKAHDYRT 79
+
+Query: 59  YYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAY---WGQGTL 115
+            Y  SVKGRF +SRD +++ LYLQM++L++ED+A YYC R   Y  + F Y   WG GT 
+Sbjct: 80  EYSASVKGRFIVSRDTSQSVLYLQMNALRAEDTATYYCTRDADYGNSYFGYFDVWGAGTT 139
+
+Query: 116 VTVSA 120
+           VTVS+
+Sbjct: 140 VTVSS 144
+
+
+>sp|P20761|IGG2B_RAT Ig gamma-2B chain C region OS=Rattus norvegicus
+           GN=Igh-1a PE=1 SV=1
+          Length = 333
+
+ Score =  135 bits (341), Expect = 1e-31,   Method: Composition-based stats.
+ Identities = 76/100 (76%), Positives = 86/100 (86%), Gaps = 8/100 (8%)
+
+Query: 121 AKTTAPSVYPLAP------VSSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSD 174
+           A+TTAPSVYPLAP       S+VTLGCLVKGYFPEPVT+TWNSG+LSS VHTFPAVLQS 
+Sbjct: 1   AQTTAPSVYPLAPGCGDTTSSTVTLGCLVKGYFPEPVTVTWNSGALSSDVHTFPAVLQSG 60
+
+Query: 175 LYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIEPR 214
+           LY  + + +VTSSTWPSQ++TCNVAHPASSTKVDKK+E R
+Sbjct: 61  LY--TLTSSVTSSTWPSQTVTCNVAHPASSTKVDKKVERR 98
+
+
+>sp|P01867|IGG2B_MOUSE Ig gamma-2B chain C region OS=Mus musculus
+           GN=Igh-3 PE=1 SV=3
+          Length = 404
+
+ Score =  135 bits (339), Expect = 2e-31,   Method: Composition-based stats.
+ Identities = 78/98 (79%), Positives = 85/98 (86%), Gaps = 6/98 (6%)
+
+Query: 122 KTTAPSVYPLAPV------SSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSDL 175
+           KTT PSVYPLAP       SSVTLGCLVKGYFPE VT+TWNSGSLSS VHTFPA+LQS L
+Sbjct: 1   KTTPPSVYPLAPGCGDTTGSSVTLGCLVKGYFPESVTVTWNSGSLSSSVHTFPALLQSGL 60
+
+Query: 176 YTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIEP 213
+           YT+SSSVTV SSTWPSQ++TC+VAHPASST VDKK+EP
+Sbjct: 61  YTMSSSVTVPSSTWPSQTVTCSVAHPASSTTVDKKLEP 98
+
+
+>sp|P01804|HVM35_MOUSE Ig heavy chain V-III region HPC76 (Fragment)
+           OS=Mus musculus PE=4 SV=1
+          Length = 111
+
+ Score =  134 bits (337), Expect = 3e-31,   Method: Composition-based stats.
+ Identities = 71/116 (61%), Positives = 93/116 (80%), Gaps = 6/116 (5%)
+
+Query: 6   ESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGY-TYYPDSV 64
+           ESGG LV+PGGS+KLSC ASGF+FS+Y M+WVRQ+P+K LEWVA I    GY T+Y +SV
+Sbjct: 1   ESGGGLVQPGGSMKLSCVASGFTFSNYWMNWVRQSPEKGLEWVAEIRLKSGYATHYAESV 60
+
+Query: 65  KGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+           KGRFTISRD++K+++YLQM++L++ED+ +YYC R    D     YWGQGT +TVS+
+Sbjct: 61  KGRFTISRDDSKSSVYLQMNNLRAEDTGIYYCTRPGVPD-----YWGQGTTLTVSS 111
+
+
+>sp|P01789|HVM20_MOUSE Ig heavy chain V region M603 OS=Mus musculus
+           PE=1 SV=1
+          Length = 122
+
+ Score =  133 bits (335), Expect = 7e-31,   Method: Composition-based stats.
+ Identities = 72/122 (59%), Positives = 89/122 (72%), Gaps = 2/122 (1%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGG--YT 58
+           EV+LVESGG LV+PGGSL+LSCA SGF+FS + M WVRQ P KRLEW+A   N G    T
+Sbjct: 1   EVKLVESGGGLVQPGGSLRLSCATSGFTFSDFYMEWVRQPPGKRLEWIAASRNKGNKYTT 60
+
+Query: 59  YYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTV 118
+            Y  SVKGRF +SRD +++ LYLQM++L++ED+A+YYCAR        F  WG GT VTV
+Sbjct: 61  EYSASVKGRFIVSRDTSQSILYLQMNALRAEDTAIYYCARNYYGSTWYFDVWGAGTTVTV 120
+
+Query: 119 SA 120
+           S+
+Sbjct: 121 SS 122
+
+
+>sp|P01794|HVM25_MOUSE Ig heavy chain V region HPCG14 OS=Mus
+           musculus PE=1 SV=1
+          Length = 123
+
+ Score =  132 bits (333), Expect = 1e-30,   Method: Composition-based stats.
+ Identities = 72/123 (58%), Positives = 91/123 (73%), Gaps = 3/123 (2%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGG--YT 58
+           EV+LVESGG LV+PGGSL+LSCA SGF+FS++ M WVRQ P KRLEW+A   N      T
+Sbjct: 1   EVKLVESGGGLVQPGGSLRLSCATSGFTFSAFYMEWVRQPPGKRLEWIAASRNKANDYTT 60
+
+Query: 59  YYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYD-ENGFAYWGQGTLVT 117
+            Y  SVKGRF +SRD +++ LYLQM++L++ED+A+YYCAR   Y  +  F  WG GT VT
+Sbjct: 61  EYSASVKGRFFVSRDTSQSILYLQMNALRAEDTAIYYCARDVYYGYDYWFDVWGAGTTVT 120
+
+Query: 118 VSA 120
+           VS+
+Sbjct: 121 VSS 123
+
+
+>sp|P01791|HVM22_MOUSE Ig heavy chain V region HPCM6 OS=Mus musculus
+           PE=1 SV=1
+          Length = 123
+
+ Score =  132 bits (331), Expect = 2e-30,   Method: Composition-based stats.
+ Identities = 72/123 (58%), Positives = 89/123 (72%), Gaps = 3/123 (2%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGG--YT 58
+           EV+LVESGG LV+PGGSL+LSCA SGF+FS + M WVRQ P KRLEW+A   N      T
+Sbjct: 1   EVKLVESGGGLVQPGGSLRLSCATSGFTFSDFYMEWVRQPPGKRLEWIAASRNKANDYTT 60
+
+Query: 59  YYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARR-ERYDENGFAYWGQGTLVT 117
+            Y  SVKGRF +SRD +++ LYLQM++L++ED+A+YYCAR    Y    F  WG GT VT
+Sbjct: 61  EYSASVKGRFIVSRDTSQSILYLQMNALRAEDTAIYYCARDYYDYPHWYFDVWGAGTTVT 120
+
+Query: 118 VSA 120
+           VS+
+Sbjct: 121 VSS 123
+
+
+>sp|P01803|HVM34_MOUSE Ig heavy chain V region AMPC1 OS=Mus musculus
+           PE=1 SV=1
+          Length = 113
+
+ Score =  131 bits (330), Expect = 3e-30,   Method: Composition-based stats.
+ Identities = 69/120 (57%), Positives = 92/120 (76%), Gaps = 9/120 (7%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATI--SNGGGYT 58
+           EV+L ESGG LV+PG S+KLSC ASGF+FS+Y M+WVRQ+P+K LEWVA I   +     
+Sbjct: 1   EVKLEESGGGLVQPGRSMKLSCVASGFTFSNYWMNWVRQSPEKGLEWVAEIRLKSHNYAI 60
+
+Query: 59  YYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTV 118
+           +Y +SVKGRFTISRD++K+++YLQM++L++ED+ +YYC+        GF  WG GTLVTV
+Sbjct: 61  HYAESVKGRFTISRDDSKSSVYLQMNNLRAEDTGIYYCS-------TGFPSWGPGTLVTV 113
+
+
+>sp|P03987|IGHG3_MOUSE Ig gamma-3 chain C region OS=Mus musculus
+           PE=1 SV=2
+          Length = 398
+
+ Score =  131 bits (329), Expect = 3e-30,   Method: Composition-based stats.
+ Identities = 69/98 (70%), Positives = 78/98 (79%), Gaps = 6/98 (6%)
+
+Query: 123 TTAPSVYPLAPV------SSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSDLY 176
+           TTAPSVYPL P       SSVTLGCLVKGYFPEPVT+ WN G+LSSGV T  +VLQS  Y
+Sbjct: 2   TTAPSVYPLVPGCSDTSGSSVTLGCLVKGYFPEPVTVKWNYGALSSGVRTVSSVLQSGFY 61
+
+Query: 177 TLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIEPR 214
+           +LSS VTV SSTWPSQ++ CNVAHPAS T++ K+IEPR
+Sbjct: 62  SLSSLVTVPSSTWPSQTVICNVAHPASKTELIKRIEPR 99
+
+
+
+ Score = 43.5 bits (101), Expect = 9e-04,   Method: Composition-based stats.
+ Identities = 34/97 (35%), Positives = 47/97 (48%), Gaps = 11/97 (11%)
+
+Query: 117 TVSAAKTTA--PSVYPLAP------VSSVTLGCLVKGYFPEPVTLTWN-SGSLSSGVHTF 167
+           T+S  K  A  P VY + P         V+L CLV  +F E +++ W  +G L       
+Sbjct: 217 TISKPKGRAQTPQVYTIPPPREQMSKKKVSLTCLVTNFFSEAISVEWERNGELEQDYKNT 276
+
+Query: 168 PAVLQSD-LYTLSSSVTVTSSTWPSQSI-TCNVAHPA 202
+           P +L SD  Y L S +TV + +W    I TC+V H A
+Sbjct: 277 PPILDSDGTYFLYSKLTVDTDSWLQGEIFTCSVVHEA 313
+
+
+>sp|P01790|HVM21_MOUSE Ig heavy chain V region M511 OS=Mus musculus
+           PE=1 SV=1
+          Length = 122
+
+ Score =  130 bits (328), Expect = 4e-30,   Method: Composition-based stats.
+ Identities = 71/122 (58%), Positives = 89/122 (72%), Gaps = 2/122 (1%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGG--YT 58
+           EV+LVESGG LV+PGGSL+LSCA SGF+FS + M WVRQ+P KRLEW+A   N      T
+Sbjct: 1   EVKLVESGGGLVQPGGSLRLSCATSGFTFSDFYMEWVRQSPGKRLEWIAASRNKANDYTT 60
+
+Query: 59  YYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTV 118
+            Y  SVKGRF +SRD +++ LYLQM++L++ED+A+YYCAR        F  WG GT VTV
+Sbjct: 61  EYSASVKGRFIVSRDTSQSILYLQMNALRAEDTAIYYCARYYGSSYWYFDVWGAGTTVTV 120
+
+Query: 119 SA 120
+           S+
+Sbjct: 121 SS 122
+
+
+>sp|P01777|HV316_HUMAN Ig heavy chain V-III region TEI OS=Homo
+           sapiens PE=1 SV=1
+          Length = 119
+
+ Score =  130 bits (326), Expect = 8e-30,   Method: Composition-based stats.
+ Identities = 73/119 (61%), Positives = 89/119 (74%), Gaps = 2/119 (1%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EVQLVESGG LV+PGGSL+LSCAASGF+FS+  + WVRQ P K LEWV     G   T+Y
+Sbjct: 1   EVQLVESGGGLVQPGGSLRLSCAASGFTFSTSAVYWVRQAPGKGLEWVGWRYEGSSLTHY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDEN--GFAYWGQGTLVT 117
+             SV+GRFTISR+++KNTLYLQM SL+ ZB+A+YYCAR      +    A WGQGTLVT
+Sbjct: 61  AVSVQGRFTISRNDSKNTLYLQMLSLEPZBTAVYYCARVTPAAASLTFSAVWGQGTLVT 119
+
+
+>sp|P01772|HV311_HUMAN Ig heavy chain V-III region KOL OS=Homo
+           sapiens PE=1 SV=1
+          Length = 126
+
+ Score =  130 bits (326), Expect = 8e-30,   Method: Composition-based stats.
+ Identities = 78/129 (60%), Positives = 94/129 (72%), Gaps = 12/129 (9%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQLVESGG +V+PG SL+LSC++SGF FSSY M WVRQ P K LEWVA I + G   +Y
+Sbjct: 1   QVQLVESGGGVVQPGRSLRLSCSSSGFIFSSYAMYWVRQAPGKGLEWVAIIWDDGSDQHY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFA---------YWG 111
+            DSVKGRFTISRDN+KNTL+LQM SL+ ED+ +Y+CAR   +   GF          YWG
+Sbjct: 61  ADSVKGRFTISRDNSKNTLFLQMDSLRPEDTGVYFCARDGGH---GFCSSASCFGPDYWG 117
+
+Query: 112 QGTLVTVSA 120
+           QGT VTVS+
+Sbjct: 118 QGTPVTVSS 126
+
+
+>sp|P01788|HVM19_MOUSE Ig heavy chain V region H8 OS=Mus musculus
+           PE=1 SV=1
+          Length = 123
+
+ Score =  130 bits (326), Expect = 8e-30,   Method: Composition-based stats.
+ Identities = 72/125 (57%), Positives = 91/125 (72%), Gaps = 7/125 (5%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGG--YT 58
+           EV+LVESGG LV+PGGSL+LSCA SGF+FS + M WVRQ P KRLEW+A   N      T
+Sbjct: 1   EVKLVESGGGLVQPGGSLRLSCATSGFTFSDFYMEWVRQPPGKRLEWIAASRNKANDYTT 60
+
+Query: 59  YYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAY---WGQGTL 115
+            Y  SVKGRF +SRD +++ LYLQM++L++ED+A+YYCAR   Y  B + Y   WG GT 
+Sbjct: 61  EYSASVKGRFIVSRDTSQSILYLQMNALRAEDTAIYYCAR--DYYGBSYWYFDVWGAGTT 118
+
+Query: 116 VTVSA 120
+           VTVS+
+Sbjct: 119 VTVSS 123
+
+
+>sp|P01793|HVM24_MOUSE Ig heavy chain V region HPCG13 OS=Mus
+           musculus PE=1 SV=1
+          Length = 123
+
+ Score =  129 bits (325), Expect = 9e-30,   Method: Composition-based stats.
+ Identities = 72/123 (58%), Positives = 89/123 (72%), Gaps = 3/123 (2%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNG--GGYT 58
+           EV+LVESGG LV+PGGSL+LSCA SGF+ S + M WVRQTP KRLEW+A   N      T
+Sbjct: 1   EVKLVESGGGLVQPGGSLRLSCATSGFTLSDFYMEWVRQTPGKRLEWIAASRNKVYDYTT 60
+
+Query: 59  YYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENG-FAYWGQGTLVT 117
+            Y  SVKGRF +SRD +++ LYLQM++L++ED+A+YYCAR   Y     F  WG GT VT
+Sbjct: 61  EYSASVKGRFIVSRDTSQSILYLQMNALRAEDTAIYYCARDAYYGSYWYFDVWGAGTTVT 120
+
+Query: 118 VSA 120
+           VS+
+Sbjct: 121 VSS 123
+
+
+>sp|P01779|HV318_HUMAN Ig heavy chain V-III region TUR OS=Homo
+           sapiens PE=1 SV=1
+          Length = 116
+
+ Score =  129 bits (323), Expect = 1e-29,   Method: Composition-based stats.
+ Identities = 68/117 (58%), Positives = 86/117 (73%), Gaps = 1/117 (0%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EVQL+ESGG LV+PGGSL+LSCAASGF+FS    SWVRQ P K LEWV+   N     ++
+Sbjct: 1   EVQLLESGGGLVQPGGSLRLSCAASGFTFSRVLSSWVRQAPGKGLEWVSGRLNASSNLHF 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVT 117
+             S +GRFTISR+++KNTLYLQM SL++ZB+A+YYCAR        F  WGQGT V+
+Sbjct: 61  AVSAQGRFTISRNDSKNTLYLQMLSLQAZBTALYYCARLS-VTAVAFDVWGQGTKVS 116
+
+
+>sp|P01765|HV304_HUMAN Ig heavy chain V-III region TIL OS=Homo
+           sapiens PE=1 SV=1
+          Length = 115
+
+ Score =  129 bits (323), Expect = 2e-29,   Method: Composition-based stats.
+ Identities = 74/120 (61%), Positives = 92/120 (76%), Gaps = 5/120 (4%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EVQL+ESGG LV+PGGSL+LSCAASGF+FS+Y MSWVRQ P K LZWV  I        Y
+Sbjct: 1   EVQLLESGGGLVQPGGSLRLSCAASGFTFSTYVMSWVRQAPGKGLZWVGAIZGLSVSZSY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+            BSVKGRFTISRD++KNT    M+SL++ED+A+YYCA + +     F YWGZGTLVTVS+
+Sbjct: 61  ABSVKGRFTISRDDSKNT----MNSLRAEDTAVYYCA-KGKVSAYYFBYWGZGTLVTVSS 115
+
+
+>sp|P01792|HVM23_MOUSE Ig heavy chain V region HPCG8 OS=Mus musculus
+           PE=1 SV=1
+          Length = 123
+
+ Score =  128 bits (322), Expect = 2e-29,   Method: Composition-based stats.
+ Identities = 73/125 (58%), Positives = 90/125 (72%), Gaps = 7/125 (5%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGG--GYT 58
+           EV+LVESGG LV+PGGSL+LSCA SGF+FS + M WVRQ P KRLEW+A   N      T
+Sbjct: 1   EVKLVESGGGLVQPGGSLRLSCATSGFTFSDFYMEWVRQPPGKRLEWIAASRNKAFDYTT 60
+
+Query: 59  YYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARR---ERYDENGFAYWGQGTL 115
+            Y  SVKGRF +SRD +++ LYLQM++L++ED+A+YYCAR     RY    F  WG GT 
+Sbjct: 61  EYSASVKGRFIVSRDTSQSILYLQMNALRAEDTAIYYCARDYYGSRYWY--FDVWGAGTT 118
+
+Query: 116 VTVSA 120
+           VTVS+
+Sbjct: 119 VTVSS 123
+
+
+>sp|P01787|HVM18_MOUSE Ig heavy chain V regions TEPC
+           15/S107/HPCM1/HPCM2/HPCM3 OS=Mus musculus PE=1 SV=1
+          Length = 123
+
+ Score =  128 bits (322), Expect = 2e-29,   Method: Composition-based stats.
+ Identities = 73/127 (57%), Positives = 91/127 (71%), Gaps = 11/127 (8%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGG--YT 58
+           EV+LVESGG LV+PGGSL+LSCA SGF+FS + M WVRQ P KRLEW+A   N      T
+Sbjct: 1   EVKLVESGGGLVQPGGSLRLSCATSGFTFSDFYMEWVRQPPGKRLEWIAASRNKANDYTT 60
+
+Query: 59  YYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAY-----WGQG 113
+            Y  SVKGRF +SRD +++ LYLQM++L++ED+A+YYCAR    D  G +Y     WG G
+Sbjct: 61  EYSASVKGRFIVSRDTSQSILYLQMNALRAEDTAIYYCAR----DYYGSSYWYFDVWGAG 116
+
+Query: 114 TLVTVSA 120
+           T VTVS+
+Sbjct: 117 TTVTVSS 123
+
+
+>sp|P01862|IGHG2_CAVPO Ig gamma-2 chain C region OS=Cavia porcellus
+           PE=1 SV=1
+          Length = 329
+
+ Score =  127 bits (320), Expect = 4e-29,   Method: Composition-based stats.
+ Identities = 70/100 (70%), Positives = 80/100 (80%), Gaps = 10/100 (10%)
+
+Query: 120 AAKTTAPSVYPLAPV------SSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQS 173
+           +A+TTAPSV+PLA        S +TLGCLVKGYFPEPVT+ WNSG+L+SGVHTFPAVLQS
+Sbjct: 1   SARTTAPSVFPLAASCVDTSGSMMTLGCLVKGYFPEPVTVKWNSGALTSGVHTFPAVLQS 60
+
+Query: 174 DLYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIEP 213
+            LY+L+S VTV S    SQ  TCNVAHPASSTKVDK +EP
+Sbjct: 61  GLYSLTSMVTVPS----SQKATCNVAHPASSTKVDKTVEP 96
+
+
+>sp|P01813|HV01_CAICR Ig heavy chain V region C3 OS=Caiman
+           crocodilus GN=C3 PE=4 SV=1
+          Length = 117
+
+ Score =  127 bits (319), Expect = 5e-29,   Method: Composition-based stats.
+ Identities = 64/98 (65%), Positives = 77/98 (78%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQLVESGGD+ KPG SL+LSC ASGF+F  YGM WVRQ P K L+WVATI+  G   +Y
+Sbjct: 20  QVQLVESGGDVRKPGNSLRLSCKASGFTFGGYGMFWVRQAPGKGLDWVATINTDGSSQWY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+             +V+G+FTISR N++N LYLQMSSL  ED+A YYCAR
+Sbjct: 80  SPAVQGKFTISRGNSQNMLYLQMSSLTPEDTATYYCAR 117
+
+
+>sp|P80419|HV322_HUMAN Ig heavy chain V-III region GAR OS=Homo
+           sapiens PE=1 SV=1
+          Length = 118
+
+ Score =  127 bits (319), Expect = 5e-29,   Method: Composition-based stats.
+ Identities = 69/120 (57%), Positives = 86/120 (71%), Gaps = 2/120 (1%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EVQLVESGG LV+PG SLKLSC ASGFS+S+Y M+WVRQ P K LEWV  I       +Y
+Sbjct: 1   EVQLVESGGGLVQPGESLKLSCTASGFSYSNYVMTWVRQAPGKGLEWVTNIRPDETEKFY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+            DSV  RFT+SRDNA+N++   M   + ED+A YYCAR   + + G  +WGQGTLV+V++
+Sbjct: 61  SDSV--RFTVSRDNARNSVSNSMFLQRVEDTATYYCARVSDFGDYGPDFWGQGTLVSVTS 118
+
+
+>sp|P01778|HV317_HUMAN Ig heavy chain V-III region ZAP OS=Homo
+           sapiens PE=1 SV=1
+          Length = 116
+
+ Score =  126 bits (317), Expect = 9e-29,   Method: Composition-based stats.
+ Identities = 68/117 (58%), Positives = 87/117 (74%), Gaps = 1/117 (0%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EVQLVESGG LV+PGGS +LSCAASGF+FS+    WVRQ P K LEWV     G   ++Y
+Sbjct: 1   EVQLVESGGALVQPGGSGRLSCAASGFTFSTTSRFWVRQAPGKGLEWVEFRVQGSAISHY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVT 117
+            DSV+ RFTISR+++KNTLYLQM++ ++ZB+A+YYCA R R        WGQGTLV+
+Sbjct: 61  ADSVQARFTISRNDSKNTLYLQMNTGEAZBTAVYYCA-RTRPGGYFSDVWGQGTLVS 116
+
+
+>sp|P20762|IGG2C_RAT Ig gamma-2C chain C region OS=Rattus norvegicus
+           PE=2 SV=1
+          Length = 329
+
+ Score =  124 bits (312), Expect = 3e-28,   Method: Composition-based stats.
+ Identities = 72/98 (73%), Positives = 82/98 (83%), Gaps = 6/98 (6%)
+
+Query: 121 AKTTAPSVYPLAPVSS------VTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSD 174
+           A+TTAPSVYPL P  S      VTLGCLVKGYFPEPVT+ WNSG+LSSGVHTFPAVLQS 
+Sbjct: 1   ARTTAPSVYPLVPGCSGTSGSLVTLGCLVKGYFPEPVTVKWNSGALSSGVHTFPAVLQSG 60
+
+Query: 175 LYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIE 212
+           LYTLSSSVTV SSTW SQ++TC+VAHPA+ + + K+IE
+Sbjct: 61  LYTLSSSVTVPSSTWSSQTVTCSVAHPATKSNLIKRIE 98
+
+
+>sp|P01780|HV319_HUMAN Ig heavy chain V-III region JON OS=Homo
+           sapiens PE=1 SV=1
+          Length = 115
+
+ Score =  123 bits (308), Expect = 8e-28,   Method: Composition-based stats.
+ Identities = 68/117 (58%), Positives = 82/117 (70%), Gaps = 2/117 (1%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQLVESGG LVKPGGSL+LSCAASGF+FS+  M WVRQ P K LEWV           +
+Sbjct: 1   DVQLVESGGGLVKPGGSLRLSCAASGFTFSTAWMKWVRQAPGKGLEWVVWRVEQVVEKAF 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVT 117
+            +SV GRFTISR+++KNTLYLQM S+  ZB+A+YYCAR           WGQGT VT
+Sbjct: 61  ANSVNGRFTISRNDSKNTLYLQMISVTPZBTAVYYCAR--VVVSTSMDVWGQGTPVT 115
+
+
+>sp|P01746|HVM02_MOUSE Ig heavy chain V region 93G7 OS=Mus musculus
+           PE=2 SV=1
+          Length = 140
+
+ Score =  121 bits (303), Expect = 4e-27,   Method: Composition-based stats.
+ Identities = 61/121 (50%), Positives = 88/121 (72%), Gaps = 1/121 (0%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EVQL +SG +LV+ G S+K+SC ASG++F+SYG++WV+Q P + LEW+  I+ G GY  Y
+Sbjct: 20  EVQLQQSGAELVRAGSSVKMSCKASGYTFTSYGINWVKQRPGQGLEWIGYINPGNGYINY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDEN-GFAYWGQGTLVTVS 119
+            +  KG+ T++ D + +T Y+Q+ SL SEDSA+Y+CAR   Y  +  F YWGQGT +TVS
+Sbjct: 80  NEKFKGKTTLTVDKSSSTAYMQLRSLTSEDSAVYFCARSHYYGGSYDFDYWGQGTPLTVS 139
+
+Query: 120 A 120
+           +
+Sbjct: 140 S 140
+
+
+>sp|P01751|HVM07_MOUSE Ig heavy chain V region B1-8/186-2 OS=Mus
+           musculus PE=1 SV=1
+          Length = 139
+
+ Score =  120 bits (301), Expect = 6e-27,   Method: Composition-based stats.
+ Identities = 62/120 (51%), Positives = 84/120 (70%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQL + G +LVKPG S+KLSC ASG++F+SY M WV+Q P + LEW+  I    G T Y
+Sbjct: 20  QVQLQQPGAELVKPGASVKLSCKASGYTFTSYWMHWVKQRPGRGLEWIGRIDPNSGGTKY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+            +  K + T++ D   +T Y+Q+SSL SEDSA+YYCAR + Y  + F YWGQGT +TVS+
+Sbjct: 80  NEKFKSKATLTVDKPSSTAYMQLSSLTSEDSAVYYCARYDYYGSSYFDYWGQGTTLTVSS 139
+
+
+>sp|P03982|HV03_CAICR Ig heavy chain V region G4 OS=Caiman
+           crocodilus GN=G4 PE=4 SV=1
+          Length = 117
+
+ Score =  120 bits (300), Expect = 9e-27,   Method: Composition-based stats.
+ Identities = 59/98 (60%), Positives = 70/98 (71%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           E+QLVESGG + KPG SL+LSC ASGF+FS   M+W RQ P K L+WV  I+       Y
+Sbjct: 20  EIQLVESGGAIRKPGDSLRLSCKASGFTFSDTWMAWARQPPGKGLQWVGEINGNSETIRY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+              VKGR TISRDN +N L+LQ+SSLK ED+A YYCAR
+Sbjct: 80  APEVKGRLTISRDNTQNLLFLQISSLKPEDTATYYCAR 117
+
+
+>sp|P20957|HV02_XENLA Ig heavy chain V region XIG14 (Fragment)
+           OS=Xenopus laevis PE=2 SV=1
+          Length = 135
+
+ Score =  117 bits (293), Expect = 5e-26,   Method: Composition-based stats.
+ Identities = 62/117 (52%), Positives = 79/117 (67%), Gaps = 2/117 (1%)
+
+Query: 4   LVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYYPDS 63
+           L ESG   VKP  SL+L+C  SGF  SSY M W+RQ P K LEW+  I+ GG  T   DS
+Sbjct: 21  LQESGPGTVKPSESLRLTCTVSGFELSSYHMHWIRQPPGKGLEWIGVIATGGS-TAIADS 79
+
+Query: 64  VKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+           +K R TI++DN K  +YLQM+ ++ +D+AMYYCAR      N F YWGQGT+VTV++
+Sbjct: 80  LKNRVTITKDNGKKQVYLQMNGMEVKDTAMYYCAREYASGYN-FDYWGQGTMVTVTS 135
+
+
+>sp|P01747|HVM03_MOUSE Ig heavy chain V region 36-65 OS=Mus musculus
+           PE=1 SV=1
+          Length = 120
+
+ Score =  116 bits (291), Expect = 9e-26,   Method: Composition-based stats.
+ Identities = 61/120 (50%), Positives = 88/120 (73%), Gaps = 1/120 (0%)
+
+Query: 2   VQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYYP 61
+           VQL +SG +LV+ G S+K+SC ASG++F+SYG++WV+Q P + LEW+  I+ G GYT Y 
+Sbjct: 1   VQLQQSGAELVRAGSSVKMSCKASGYTFTSYGINWVKQRPGQGLEWIGYINPGNGYTKYN 60
+
+Query: 62  DSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDEN-GFAYWGQGTLVTVSA 120
+           +  KG+ T++ D + +T Y+Q+ SL SEDSA+Y+CAR   Y  +  F YWGQGT +TVS+
+Sbjct: 61  EKFKGKTTLTVDKSSSTAYMQLRSLTSEDSAVYFCARSVYYGGSYYFDYWGQGTTLTVSS 120
+
+
+>sp|P01745|HVM01_MOUSE Ig heavy chain V region MPC 11 OS=Mus
+           musculus PE=4 SV=1
+          Length = 121
+
+ Score =  115 bits (288), Expect = 2e-25,   Method: Composition-based stats.
+ Identities = 59/121 (48%), Positives = 89/121 (73%), Gaps = 1/121 (0%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           E QL +SG +LV+PG S+K+SC A+G++F++Y + WV++ P   LEW+  I  GGG+T Y
+Sbjct: 1   EAQLQQSGAELVRPGTSVKISCKAAGYTFTNYWIGWVKERPGHGLEWIGDIYPGGGFTNY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENG-FAYWGQGTLVTVS 119
+            D++KG+ T++ D + +T Y+Q+SSL SEDSA+Y+CAR   Y+ +  F  WGQGT +TVS
+Sbjct: 61  NDNLKGKATLTADTSSSTAYIQLSSLTSEDSAIYHCARGIYYNSSPYFDSWGQGTTLTVS 120
+
+Query: 120 A 120
+           +
+Sbjct: 121 S 121
+
+
+>sp|P01859|IGHG2_HUMAN Ig gamma-2 chain C region OS=Homo sapiens
+           GN=IGHG2 PE=1 SV=2
+          Length = 326
+
+ Score =  114 bits (285), Expect = 4e-25,   Method: Composition-based stats.
+ Identities = 64/99 (64%), Positives = 75/99 (75%), Gaps = 7/99 (7%)
+
+Query: 121 AKTTAPSVYPLAPVSSVT------LGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSD 174
+           A T  PSV+PLAP S  T      LGCLVK YFPEPVT++WNSG+L+SGVHTFPAVLQS 
+Sbjct: 1   ASTKGPSVFPLAPCSRSTSESTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSS 60
+
+Query: 175 -LYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIE 212
+            LY+LSS VTV SS + +Q+ TCNV H  S+TKVDK +E
+Sbjct: 61  GLYSLSSVVTVPSSNFGTQTYTCNVDHKPSNTKVDKTVE 99
+
+
+
+ Score = 45.1 bits (105), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 31/96 (32%), Positives = 50/96 (52%), Gaps = 9/96 (9%)
+
+Query: 116 VTVSAAKTTAPSVYPLAPV------SSVTLGCLVKGYFPEPVTLTWNS-GSLSSGVHTFP 168
+           ++ +  +   P VY L P       + V+L CLVKG++P  +++ W S G   +   T P
+Sbjct: 215 ISKTKGQPREPQVYTLPPSREEMTKNQVSLTCLVKGFYPSDISVEWESNGQPENNYKTTP 274
+
+Query: 169 AVLQSD-LYTLSSSVTVTSSTWPSQSI-TCNVAHPA 202
+            +L SD  + L S +TV  S W   ++ +C+V H A
+Sbjct: 275 PMLDSDGSFFLYSKLTVDKSRWQQGNVFSCSVMHEA 310
+
+
+>sp|P03980|HVM48_MOUSE Ig heavy chain V region TEPC 1017 OS=Mus
+           musculus PE=4 SV=1
+          Length = 138
+
+ Score =  113 bits (282), Expect = 9e-25,   Method: Composition-based stats.
+ Identities = 57/120 (47%), Positives = 83/120 (69%), Gaps = 1/120 (0%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQL + G +LVKPG S++LSC ASG +F++Y + WV+Q P + LEW+  I+   G + Y
+Sbjct: 20  QVQLQQPGAELVKPGASVQLSCKASGHTFTNYWIHWVKQRPGQGLEWIGEINPNDGRSNY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+            +  K + T++ D + +T Y+Q+SSL  E+ A+YYCAR + Y  + F YWGQGTLVT SA
+Sbjct: 80  NEKFKNKATLTVDKSSSTAYMQLSSLTPEEFAVYYCARSDGY-YDWFVYWGQGTLVTFSA 138
+
+
+>sp|P01755|HVM11_MOUSE Ig heavy chain V region S43 OS=Mus musculus
+           PE=1 SV=1
+          Length = 137
+
+ Score =  112 bits (280), Expect = 2e-24,   Method: Composition-based stats.
+ Identities = 61/122 (50%), Positives = 81/122 (66%), Gaps = 6/122 (4%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQL + G + VKPG S+KLSC ASG++F+SY M WV Q P + LEW+  I    G T Y
+Sbjct: 20  QVQLQQPGAEFVKPGASVKLSCKASGYTFTSYLMHWVNQRPGRGLEWIGRIDPNSGGTTY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRE--RYDENGFAYWGQGTLVTV 118
+            +  + + T++ D   +T Y+Q+SSL SEDSA+YYCAR    RY    F YWGQGT +TV
+Sbjct: 80  NEHFRSKATLTIDKPSSTAYMQLSSLTSEDSAVYYCARYRLGRY----FDYWGQGTTLTV 135
+
+Query: 119 SA 120
+           S+
+Sbjct: 136 SS 137
+
+
+>sp|P01743|HV102_HUMAN Ig heavy chain V-I region HG3 OS=Homo sapiens
+           PE=4 SV=1
+          Length = 117
+
+ Score =  110 bits (275), Expect = 6e-24,   Method: Composition-based stats.
+ Identities = 52/98 (53%), Positives = 76/98 (77%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQLV+SG ++ KPG S+K+SC ASG++F+SY M WVRQ P + LEW+  I+  GG T Y
+Sbjct: 20  QVQLVQSGAEVKKPGASVKVSCKASGYTFNSYYMHWVRQAPGQGLEWMGIINPSGGSTSY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+               +GR T++RD + +T+Y+++SSL+SED+A+YYCAR
+Sbjct: 80  AQKFQGRVTMTRDTSTSTVYMELSSLRSEDTAVYYCAR 117
+
+
+>sp|P06330|HVM51_MOUSE Ig heavy chain V region AC38 205.12 OS=Mus
+           musculus PE=1 SV=1
+          Length = 118
+
+ Score =  110 bits (274), Expect = 8e-24,   Method: Composition-based stats.
+ Identities = 60/120 (50%), Positives = 82/120 (68%), Gaps = 2/120 (1%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EVQL +SG +LVKPG S+K+SC ASG++F+ Y M+WV+Q+  K LEW+  I+   G T Y
+Sbjct: 1   EVQLQQSGPELVKPGASVKISCKASGYTFTDYYMNWVKQSHGKSLEWIGDINPNNGGTSY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+               KG+ T++ D + +  Y+++ SL SEDSA+YYCAR   YD   F  WG GT VTVS+
+Sbjct: 61  NQKFKGKATLTVDKSSSATYMELRSLTSEDSAVYYCARGYGYDP--FDVWGTGTTVTVSS 118
+
+
+>sp|P01757|HVM13_MOUSE Ig heavy chain V region J558 OS=Mus musculus
+           PE=1 SV=1
+          Length = 117
+
+ Score =  109 bits (273), Expect = 1e-23,   Method: Composition-based stats.
+ Identities = 60/120 (50%), Positives = 82/120 (68%), Gaps = 3/120 (2%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EVQL +SG +LVKPG S+K+SC ASG++F+ Y M WV+Q+  K LEW+  I+   G T Y
+Sbjct: 1   EVQLQQSGPELVKPGASVKMSCKASGYTFTDYYMKWVKQSHGKSLEWIGDINPNNGGTSY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+               KG+ T++ D + +T Y+Q++SL SEDSA+YYCAR   +    F  WG GT VTVS+
+Sbjct: 61  NQKFKGKATLTVDKSSSTAYMQLNSLTSEDSAVYYCARDRYW---YFDVWGAGTTVTVSS 117
+
+
+>sp|P01756|HVM12_MOUSE Ig heavy chain V region MOPC 104E OS=Mus
+           musculus PE=1 SV=1
+          Length = 117
+
+ Score =  109 bits (272), Expect = 1e-23,   Method: Composition-based stats.
+ Identities = 62/120 (51%), Positives = 83/120 (69%), Gaps = 3/120 (2%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EVQL +SG +LVKPG S+K+SC ASG++F+ Y M WV+Q+  K LEW+  I+   G T Y
+Sbjct: 1   EVQLQQSGPELVKPGASVKMSCKASGYTFTDYYMKWVKQSHGKSLEWIGDINPNNGGTSY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+               KG+ T++ D + +T Y+Q++SL SEDSA+YYCAR   YD   F  WG GT VTVS+
+Sbjct: 61  NQKFKGKATLTVDKSSSTAYMQLNSLTSEDSAVYYCAR--DYDWY-FDVWGAGTTVTVSS 117
+
+
+>sp|P06329|HVM50_MOUSE Ig heavy chain V region AC38 15.3 OS=Mus
+           musculus PE=1 SV=1
+          Length = 120
+
+ Score =  108 bits (269), Expect = 3e-23,   Method: Composition-based stats.
+ Identities = 56/120 (46%), Positives = 81/120 (67%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQL++ G +LVKPG S+ LSC ASG++F+SY M W+RQ P + LEW+  I+   G T Y
+Sbjct: 1   QVQLLQPGTELVKPGASVNLSCKASGYTFTSYWMHWIRQRPGQGLEWIGGINPSNGGTNY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+            +  K + T++ D + +  Y+Q+S+  SEDSA+YYCAR +   +  F  WG GT VTVS+
+Sbjct: 61  NEKFKSKATLTVDKSSSATYMQLSTPTSEDSAVYYCARWDYEGDRYFDVWGTGTTVTVSS 120
+
+
+>sp|P01759|HVM15_MOUSE Ig heavy chain V region BCL1 OS=Mus musculus
+           PE=2 SV=1
+          Length = 136
+
+ Score =  108 bits (269), Expect = 3e-23,   Method: Composition-based stats.
+ Identities = 56/120 (46%), Positives = 82/120 (68%), Gaps = 3/120 (2%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQL +SG ++V+PG S+K+SC  SG++F+ Y M WV+Q+  K LEW+  IS   G T Y
+Sbjct: 20  QVQLQQSGPEVVRPGVSVKISCKGSGYTFTDYAMHWVKQSHAKSLEWIGVISTYNGNTSY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+               KG+ T++ D + +T++++++ L SEDSA  YCA   RY  N F YWGQGT +TVS+
+Sbjct: 80  NQKFKGKATMTVDKSSSTVHMELARLTSEDSANLYCA---RYYGNYFDYWGQGTTLTVSS 136
+
+
+>sp|P01741|HVM00_MOUSE Ig heavy chain V region OS=Mus musculus PE=1
+           SV=1
+          Length = 114
+
+ Score =  108 bits (269), Expect = 3e-23,   Method: Composition-based stats.
+ Identities = 60/118 (50%), Positives = 81/118 (68%), Gaps = 6/118 (5%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EVQL +SG +LVK G S+K+SC A+G++FSSY + WVRQ P + LE +  IS+   Y  Y
+Sbjct: 1   EVQLQQSGAELVKAGSSVKMSCKATGYTFSSYELYWVRQAPGQGLEDLGYISSSSAYPNY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARR--ERYDENGFAYWGQGTLV 116
+               +GR TI+ D + NT Y+++SSL+SED+A+Y+CA R   RY    F  WGQGTLV
+Sbjct: 61  AQKFQGRVTITADESTNTAYMELSSLRSEDTAVYFCAVRVISRY----FDGWGQGTLV 114
+
+
+>sp|P01819|HVM43_MOUSE Ig heavy chain V region MOPC 141 OS=Mus
+           musculus PE=4 SV=1
+          Length = 144
+
+ Score =  107 bits (266), Expect = 6e-23,   Method: Composition-based stats.
+ Identities = 62/128 (48%), Positives = 86/128 (67%), Gaps = 11/128 (8%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQL ESG  LV P  SL ++C  SGFS + YG++WVRQ P K LEW+ TI  G G T Y
+Sbjct: 20  QVQLKESGPGLVAPSQSLSITCTVSGFSLTGYGVNWVRQPPGKGLEWLGTIW-GNGSTDY 78
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCA--------RRERYDENGFAYWGQ 112
+             ++K R TI++DN+K+ ++L+M+SL+++D+A YYCA        R ++Y      YWGQ
+Sbjct: 79  NSTLKSRLTITKDNSKSQVFLKMNSLQTDDTARYYCASVSIYYYGRSDKYFT--LDYWGQ 136
+
+Query: 113 GTLVTVSA 120
+           GT VTVS+
+Sbjct: 137 GTSVTVSS 144
+
+
+>sp|P20956|HV01_XENLA Ig heavy chain V region XIG8 (Fragment)
+           OS=Xenopus laevis PE=2 SV=1
+          Length = 136
+
+ Score =  106 bits (265), Expect = 9e-23,   Method: Composition-based stats.
+ Identities = 54/117 (46%), Positives = 74/117 (63%), Gaps = 1/117 (0%)
+
+Query: 4   LVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYYPDS 63
+           L ESG   VKP  SL+L+C  SGF  +SY + W+RQ P K LEW+  +   G  T   DS
+Sbjct: 21  LQESGPGTVKPSESLRLTCTVSGFELTSYYVYWIRQPPRKTLEWIGVVRTDGS-TAIADS 79
+
+Query: 64  VKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+           +K R TI++DN K  +YLQM+ ++ +D+AMYYC          F +WGQGT+VTV++
+Sbjct: 80  LKNRVTITKDNGKKQVYLQMNGMEVKDTAMYYCTSTLAGTAGYFEHWGQGTMVTVTS 136
+
+
+>sp|P01748|HVM04_MOUSE Ig heavy chain V region 23 OS=Mus musculus
+           PE=4 SV=1
+          Length = 117
+
+ Score =  104 bits (260), Expect = 3e-22,   Method: Composition-based stats.
+ Identities = 52/98 (53%), Positives = 71/98 (72%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQL + G +LVKPG S+KLSC ASG++F+SY M WV+Q P + LEW+  I+ G G T Y
+Sbjct: 20  QVQLQQPGTELVKPGASVKLSCKASGYTFTSYWMHWVKQRPGQGLEWIGNINPGNGGTNY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+            +  K + T++ D + +T Y Q+SSL SEDSA+YYCAR
+Sbjct: 80  NEKFKSKVTLTVDKSSSTAYTQLSSLTSEDSAVYYCAR 117
+
+
+>sp|P06326|HV107_HUMAN Ig heavy chain V-I region Mot OS=Homo sapiens
+           PE=1 SV=1
+          Length = 125
+
+ Score =  104 bits (260), Expect = 3e-22,   Method: Composition-based stats.
+ Identities = 55/125 (44%), Positives = 84/125 (67%), Gaps = 5/125 (4%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQLV+SG ++ KPG S +LSC  SG  F++Y + WVRQ P + LEW+A +      T Y
+Sbjct: 1   QVQLVQSGAEVKKPGSSARLSCKVSGDDFNTYDIHWVRQAPGRGLEWMAVVHPSDDRTTY 60
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERY---DENGFAY--WGQGTL 115
+               + RFT++RD++  T+Y+++++L S D+A+YYCAR   Y   D++G +   WGQGTL
+Sbjct: 61  GPRSQARFTVTRDSSTTTVYMELTALISADTAIYYCARGAHYSDTDDSGTSLGPWGQGTL 120
+
+Query: 116 VTVSA 120
+           + VS+
+Sbjct: 121 LIVSS 125
+
+
+>sp|P01857|IGHG1_HUMAN Ig gamma-1 chain C region OS=Homo sapiens
+           GN=IGHG1 PE=1 SV=1
+          Length = 330
+
+ Score =  104 bits (259), Expect = 5e-22,   Method: Composition-based stats.
+ Identities = 65/101 (64%), Positives = 77/101 (76%), Gaps = 7/101 (6%)
+
+Query: 121 AKTTAPSVYPLAPVSSVT------LGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSD 174
+           A T  PSV+PLAP S  T      LGCLVK YFPEPVT++WNSG+L+SGVHTFPAVLQS 
+Sbjct: 1   ASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSS 60
+
+Query: 175 -LYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIEPR 214
+            LY+LSS VTV SS+  +Q+  CNV H  S+TKVDKK+EP+
+Sbjct: 61  GLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPK 101
+
+
+
+ Score = 46.6 bits (109), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 36/97 (37%), Positives = 50/97 (51%), Gaps = 11/97 (11%)
+
+Query: 117 TVSAAKTTA--PSVYPLAPV------SSVTLGCLVKGYFPEPVTLTWNS-GSLSSGVHTF 167
+           T+S AK     P VY L P       + V+L CLVKG++P  + + W S G   +   T 
+Sbjct: 218 TISKAKGQPREPQVYTLPPSRDELTKNQVSLTCLVKGFYPSDIAVEWESNGQPENNYKTT 277
+
+Query: 168 PAVLQSD-LYTLSSSVTVTSSTWPSQSI-TCNVAHPA 202
+           P VL SD  + L S +TV  S W   ++ +C+V H A
+Sbjct: 278 PPVLDSDGSFFLYSKLTVDKSRWQQGNVFSCSVMHEA 314
+
+
+>sp|P03981|HV02_CAICR Ig heavy chain V region E1 OS=Caiman
+           crocodilus GN=E1 PE=4 SV=1
+          Length = 117
+
+ Score =  102 bits (255), Expect = 1e-21,   Method: Composition-based stats.
+ Identities = 52/98 (53%), Positives = 65/98 (66%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQLVESGGD+ KPG SL+LSC  SGF+FS+Y + WVRQ P K L     ++       Y
+Sbjct: 20  QVQLVESGGDVRKPGDSLRLSCKGSGFTFSNYWLGWVRQAPGKALNGSLPLTPLAAAPTY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+              V GRFTISRDNA+  L+L MS L+ ED+  Y+C R
+Sbjct: 80  IPGVSGRFTISRDNARALLHLDMSDLRPEDTGRYHCER 117
+
+
+>sp|P06327|HVM52_MOUSE Ig heavy chain V region VH558 A1/A4 OS=Mus
+           musculus PE=4 SV=1
+          Length = 117
+
+ Score =  102 bits (255), Expect = 1e-21,   Method: Composition-based stats.
+ Identities = 49/98 (50%), Positives = 73/98 (74%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQL +SG +LVKPG  +K+SC ASG++F+SY ++WV+Q P + LEW+  I  G G T Y
+Sbjct: 20  QVQLQQSGPELVKPGALVKISCKASGYTFTSYDINWVKQRPGQGLEWIGWIYPGDGSTKY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+            +  KG+ T++ D + +T Y+Q+SSL SE+SA+Y+CAR
+Sbjct: 80  NEKFKGKATLTADKSSSTAYMQLSSLTSENSAVYFCAR 117
+
+
+>sp|P01860|IGHG3_HUMAN Ig gamma-3 chain C region OS=Homo sapiens
+           GN=IGHG3 PE=1 SV=2
+          Length = 377
+
+ Score =  102 bits (253), Expect = 2e-21,   Method: Composition-based stats.
+ Identities = 64/99 (64%), Positives = 76/99 (76%), Gaps = 7/99 (7%)
+
+Query: 121 AKTTAPSVYPLAPVSSVT------LGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSD 174
+           A T  PSV+PLAP S  T      LGCLVK YFPEPVT++WNSG+L+SGVHTFPAVLQS 
+Sbjct: 1   ASTKGPSVFPLAPCSRSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSS 60
+
+Query: 175 -LYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIE 212
+            LY+LSS VTV SS+  +Q+ TCNV H  S+TKVDK++E
+Sbjct: 61  GLYSLSSVVTVPSSSLGTQTYTCNVNHKPSNTKVDKRVE 99
+
+
+
+ Score = 47.4 bits (111), Expect = 6e-05,   Method: Composition-based stats.
+ Identities = 33/104 (31%), Positives = 54/104 (51%), Gaps = 9/104 (8%)
+
+Query: 116 VTVSAAKTTAPSVYPLAPV------SSVTLGCLVKGYFPEPVTLTW-NSGSLSSGVHTFP 168
+           ++ +  +   P VY L P       + V+L CLVKG++P  + + W +SG   +  +T P
+Sbjct: 266 ISKTKGQPREPQVYTLPPSREEMTKNQVSLTCLVKGFYPSDIAVEWESSGQPENNYNTTP 325
+
+Query: 169 AVLQSD-LYTLSSSVTVTSSTWPSQSI-TCNVAHPASSTKVDKK 210
+            +L SD  + L S +TV  S W   +I +C+V H A   +  +K
+Sbjct: 326 PMLDSDGSFFLYSKLTVDKSRWQQGNIFSCSVMHEALHNRFTQK 369
+
+
+>sp|P01753|HVM09_MOUSE Ig heavy chain V region 186-1 OS=Mus musculus
+           PE=4 SV=2
+          Length = 117
+
+ Score =  101 bits (252), Expect = 3e-21,   Method: Composition-based stats.
+ Identities = 50/98 (51%), Positives = 69/98 (70%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQL + G +LVKPG S+KLSC ASG++F+SY M WV+Q P + LEW+  I    G T Y
+Sbjct: 20  QVQLQQPGAELVKPGASVKLSCKASGYTFTSYWMHWVKQRPGRGLEWIGRIDPNSGGTKY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+            +  K + T++ D + +T Y+Q+ SL SEDSA+YYCAR
+Sbjct: 80  NEKFKSKATLTVDTSSSTAYMQLHSLTSEDSAVYYCAR 117
+
+
+>sp|A6NDP1|VSIG7_HUMAN Putative V-set and immunoglobulin
+           domain-containing protein 7 OS=Homo sapiens GN=VSIG7
+           PE=5 SV=1
+          Length = 120
+
+ Score =  101 bits (251), Expect = 4e-21,   Method: Composition-based stats.
+ Identities = 47/98 (47%), Positives = 69/98 (70%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQL++SG ++ KPG S+++SC ASG++F+SY M WV Q   + LEW+  +    G T Y
+Sbjct: 20  QVQLMQSGAEVKKPGASVRISCKASGYTFTSYCMHWVCQAHAQGLEWMGLVCPSDGSTSY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+               +GR TI+RD +  T Y+++SSL+SED+AMYYC R
+Sbjct: 80  AQKFQGRVTITRDTSMGTAYMELSSLRSEDTAMYYCVR 117
+
+
+>sp|P23083|HV103_HUMAN Ig heavy chain V-I region V35 OS=Homo sapiens
+           PE=1 SV=1
+          Length = 117
+
+ Score =  100 bits (250), Expect = 5e-21,   Method: Composition-based stats.
+ Identities = 47/98 (47%), Positives = 70/98 (71%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQLV+SG ++ KPG S+K+SC ASG++F+ Y M WVRQ P + LEW+  I+   G T Y
+Sbjct: 20  QVQLVQSGAEVKKPGASVKVSCKASGYTFTGYYMHWVRQAPGQGLEWMGRINPNSGGTNY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+               +GR T +RD + +T Y+++S L+S+D+ +YYCAR
+Sbjct: 80  AQKFQGRVTSTRDTSISTAYMELSRLRSDDTVVYYCAR 117
+
+
+>sp|A6NJS3|VSIGL_HUMAN Putative V-set and immunoglobulin
+           domain-containing-like protein ENSP00000303034 OS=Homo
+           sapiens PE=5 SV=1
+          Length = 120
+
+ Score =  100 bits (249), Expect = 6e-21,   Method: Composition-based stats.
+ Identities = 47/98 (47%), Positives = 68/98 (69%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQLV+SG ++ KPG S+K+SC ASG++ +SY M WV Q   + LEW+  +    G T Y
+Sbjct: 20  QVQLVQSGAEVKKPGASVKVSCKASGYTITSYCMHWVHQVHAQGLEWMGLVCPSDGSTSY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+               + R TI+RD + +T Y+++SSL+SED+AMYYC R
+Sbjct: 80  AQKFQARVTITRDTSMSTAYMELSSLRSEDTAMYYCVR 117
+
+
+>sp|P01744|HV104_HUMAN Ig heavy chain V-I region ND (Fragments)
+           OS=Homo sapiens PE=1 SV=2
+          Length = 147
+
+ Score =  100 bits (249), Expect = 6e-21,   Method: Composition-based stats.
+ Identities = 55/128 (42%), Positives = 82/128 (64%), Gaps = 8/128 (6%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           + QLV+SG ++ KPG S+++SC ASG++F    + W+RQ P   LEWV  I+   G T Y
+Sbjct: 20  QTQLVQSGAEVRKPGASVRVSCKASGYTFIDSYIHWIRQAPGHGLEWVGWINPNSGGTNY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERY--DENGFAY------WGQ 112
+               +GR T++RD + +T Y+ + SL+S+DSA++YCA+ + +  D   F Y      WGQ
+Sbjct: 80  APRFQGRVTMTRDASFSTAYMDLRSLRSDDSAVFYCAKSDPFWSDYYNFDYSYTLDVWGQ 139
+
+Query: 113 GTLVTVSA 120
+           GT VTVS+
+Sbjct: 140 GTTVTVSS 147
+
+
+>sp|P01861|IGHG4_HUMAN Ig gamma-4 chain C region OS=Homo sapiens
+           GN=IGHG4 PE=1 SV=1
+          Length = 327
+
+ Score =  100 bits (249), Expect = 7e-21,   Method: Composition-based stats.
+ Identities = 63/101 (62%), Positives = 77/101 (76%), Gaps = 7/101 (6%)
+
+Query: 121 AKTTAPSVYPLAPVSSVT------LGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSD 174
+           A T  PSV+PLAP S  T      LGCLVK YFPEPVT++WNSG+L+SGVHTFPAVLQS 
+Sbjct: 1   ASTKGPSVFPLAPCSRSTSESTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSS 60
+
+Query: 175 -LYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIEPR 214
+            LY+LSS VTV SS+  +++ TCNV H  S+TKVDK++E +
+Sbjct: 61  GLYSLSSVVTVPSSSLGTKTYTCNVDHKPSNTKVDKRVESK 101
+
+
+
+ Score = 46.2 bits (108), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 36/97 (37%), Positives = 50/97 (51%), Gaps = 11/97 (11%)
+
+Query: 117 TVSAAKTTA--PSVYPLAPV------SSVTLGCLVKGYFPEPVTLTWNS-GSLSSGVHTF 167
+           T+S AK     P VY L P       + V+L CLVKG++P  + + W S G   +   T 
+Sbjct: 215 TISKAKGQPREPQVYTLPPSQEEMTKNQVSLTCLVKGFYPSDIAVEWESNGQPENNYKTT 274
+
+Query: 168 PAVLQSD-LYTLSSSVTVTSSTWPSQSI-TCNVAHPA 202
+           P VL SD  + L S +TV  S W   ++ +C+V H A
+Sbjct: 275 PPVLDSDGSFFLYSRLTVDKSRWQEGNVFSCSVMHEA 311
+
+
+>sp|P01870|IGHG_RABIT Ig gamma chain C region OS=Oryctolagus
+           cuniculus PE=1 SV=1
+          Length = 323
+
+ Score =  100 bits (248), Expect = 7e-21,   Method: Composition-based stats.
+ Identities = 59/95 (62%), Positives = 71/95 (74%), Gaps = 8/95 (8%)
+
+Query: 125 APSVYPLAPV------SSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSDLYTL 178
+           APSV+PLAP       S+VTLGCLVKGY PEPVT+TWNSG+L++GV TFP+V QS    L
+Sbjct: 5   APSVFPLAPCCGDTPSSTVTLGCLVKGYLPEPVTVTWNSGTLTNGVRTFPSVRQSS--GL 62
+
+Query: 179 SSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIEP 213
+            S  +V S T  SQ +TCNVAHPA++TKVDK + P
+Sbjct: 63  YSLSSVVSVTSSSQPVTCNVAHPATNTKVDKTVAP 97
+
+
+
+ Score = 45.1 bits (105), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 29/86 (33%), Positives = 45/86 (52%), Gaps = 9/86 (10%)
+
+Query: 126 PSVYPLAP------VSSVTLGCLVKGYFPEPVTLTW-NSGSLSSGVHTFPAVLQSD-LYT 177
+           P VY + P        SV+L C++ G++P  +++ W  +G       T PAVL SD  Y 
+Sbjct: 222 PKVYTMGPPREELSSRSVSLTCMINGFYPSDISVEWEKNGKAEDNYKTTPAVLDSDGSYF 281
+
+Query: 178 LSSSVTVTSSTWPSQSI-TCNVAHPA 202
+           L + ++V +S W    + TC+V H A
+Sbjct: 282 LYNKLSVPTSEWQRGDVFTCSVMHEA 307
+
+
+>sp|P06328|HVM49_MOUSE Ig heavy chain V region VH558 B4 OS=Mus
+           musculus PE=4 SV=1
+          Length = 117
+
+ Score =  100 bits (248), Expect = 9e-21,   Method: Composition-based stats.
+ Identities = 50/97 (51%), Positives = 67/97 (69%)
+
+Query: 2   VQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYYP 61
+           VQL + G +LVKPG S+KLSC ASG++F+SY M WV+Q P + LEW+  I    G T Y 
+Sbjct: 21  VQLQQPGAELVKPGASVKLSCKASGYTFTSYWMHWVKQRPGRGLEWIGNIDPNSGGTKYN 80
+
+Query: 62  DSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+           +  K + T++ D   +T Y+Q+SSL SEDSA+YYC R
+Sbjct: 81  EKFKSKATLTVDKPSSTAYMQLSSLTSEDSAVYYCTR 117
+
+
+>sp|P06331|HV209_HUMAN Ig heavy chain V-II region ARH-77 OS=Homo
+           sapiens PE=4 SV=1
+          Length = 146
+
+ Score =  100 bits (248), Expect = 9e-21,   Method: Composition-based stats.
+ Identities = 60/127 (47%), Positives = 80/127 (62%), Gaps = 8/127 (6%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQL + G  LVKP  +L L+CA  G SFS Y  SW+RQ P + LEW+  I N  G T Y
+Sbjct: 21  QVQLQQWGAGLVKPSETLSLTCAVFGGSFSGYYWSWIRQPPGRGLEWIGEI-NHSGSTNY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR---RERYDENGFAY----WGQG 113
+             S+K R TIS D +KN   L++SS+ + D+A+YYCAR   R  +++  + Y    WGQG
+Sbjct: 80  KTSLKSRVTISLDTSKNLFSLKLSSVTAADTAVYYCARGLLRGGWNDVDYYYGMDVWGQG 139
+
+Query: 114 TLVTVSA 120
+           T VTVS+
+Sbjct: 140 TTVTVSS 146
+
+
+>sp|P01749|HVM05_MOUSE Ig heavy chain V region 3 OS=Mus musculus
+           GN=Igh-VJ558 PE=1 SV=1
+          Length = 117
+
+ Score =  100 bits (248), Expect = 9e-21,   Method: Composition-based stats.
+ Identities = 49/98 (50%), Positives = 69/98 (70%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQL + G +LV+PG S+KLSC ASG++F+SY M WV+Q P + LEW+  I      T+Y
+Sbjct: 20  QVQLQQPGAELVRPGSSVKLSCKASGYTFTSYWMDWVKQRPGQGLEWIGNIYPSDSETHY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+               K + T++ D + +T Y+Q+SSL SEDSA+YYCAR
+Sbjct: 80  NQKFKDKATLTVDKSSSTAYMQLSSLTSEDSAVYYCAR 117
+
+
+>sp|P01758|HVM14_MOUSE Ig heavy chain V region 108A OS=Mus musculus
+           GN=Igh-VJ558 PE=4 SV=1
+          Length = 117
+
+ Score = 99.8 bits (247), Expect = 1e-20,   Method: Composition-based stats.
+ Identities = 51/98 (52%), Positives = 70/98 (71%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EVQL +SG +LVKPG S+K+SC ASG++F+ Y M WV+Q+  K LEW+  I    G T Y
+Sbjct: 20  EVQLQQSGPELVKPGASVKISCKASGYTFTDYNMHWVKQSHGKSLEWIGYIYPYNGGTGY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+               K + T++ DN+ +T Y+++SSL SEDSA+YYCAR
+Sbjct: 80  NQKFKSKATLTVDNSSSTAYMELSSLTSEDSAVYYCAR 117
+
+
+>sp|P01823|HVM47_MOUSE Ig heavy chain V region 36-60 OS=Mus musculus
+           PE=1 SV=1
+          Length = 113
+
+ Score = 99.4 bits (246), Expect = 1e-20,   Method: Composition-based stats.
+ Identities = 61/120 (50%), Positives = 79/120 (65%), Gaps = 7/120 (5%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           EVQL ESG  LVKP  +L L+C+ +G S +S   +W+R+ P  +LE +  IS  G  TYY
+Sbjct: 1   EVQLQESGPSLVKPSQTLSLTCSVTGDSITSDYWNWIRKFPGNKLEHMGYISYSGS-TYY 59
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+             S+K R +I+RD +KN  YLQ++S+ SED+A YYC          FAYWGQGTLVTVSA
+Sbjct: 60  NPSLKSRISITRDTSKNQYYLQLNSVTSEDTATYYCTSLR------FAYWGQGTLVTVSA 113
+
+
+>sp|P01754|HVM10_MOUSE Ig heavy chain V region 145 OS=Mus musculus
+           GN=Igh-VJ558 PE=4 SV=2
+          Length = 117
+
+ Score = 99.0 bits (245), Expect = 2e-20,   Method: Composition-based stats.
+ Identities = 50/98 (51%), Positives = 68/98 (69%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQL + G +LVKPG S+KLS  ASG++F+SY M WV+Q P + LEW+  I    G T Y
+Sbjct: 20  QVQLQQPGAELVKPGASVKLSSKASGYTFTSYWMHWVKQRPGRGLEWIGRIDPNSGGTKY 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+            +  K + T++ D   +T Y+Q+SSL SEDSA+YYCAR
+Sbjct: 80  NEKFKSKATLTVDKPSSTAYMQLSSLTSEDSAVYYCAR 117
+
+
+>sp|P01750|HVM06_MOUSE Ig heavy chain V region 102 OS=Mus musculus
+           PE=1 SV=1
+          Length = 117
+
+ Score = 98.6 bits (244), Expect = 3e-20,   Method: Composition-based stats.
+ Identities = 49/96 (51%), Positives = 67/96 (69%)
+
+Query: 2   VQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYYP 61
+           VQL + G +LVKPG S+K+SC ASG++F+SY M WV+Q P + LEW+  I      T Y 
+Sbjct: 21  VQLQQPGAELVKPGASVKVSCKASGYTFTSYWMHWVKQRPGQGLEWIGRIHPSDSDTNYN 80
+
+Query: 62  DSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCA 97
+              KG+ T++ D + +T Y+Q+SSL SEDSA+YYCA
+Sbjct: 81  QKFKGKATLTVDKSSSTAYMQLSSLTSEDSAVYYCA 116
+
+
+>sp|P01822|HVM46_MOUSE Ig heavy chain V region MOPC 315 OS=Mus
+           musculus PE=1 SV=2
+          Length = 137
+
+ Score = 98.2 bits (243), Expect = 3e-20,   Method: Composition-based stats.
+ Identities = 55/121 (45%), Positives = 80/121 (66%), Gaps = 3/121 (2%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSS-YGMSWVRQTPDKRLEWVATISNGGGYTY 59
+           +VQL ESG  LVKP  SL L+C+ +G+S +S Y  +W+RQ P  +LEW+  I   G   Y
+Sbjct: 19  DVQLQESGPGLVKPSQSLSLTCSVTGYSITSGYFWNWIRQFPGNKLEWLGFIKYDGSNGY 78
+
+Query: 60  YPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVS 119
+            P S+K R +I+RD ++N  +L+++S+ +ED+A YYCA    +    F YWGQGT +TVS
+Sbjct: 79  NP-SLKNRVSITRDTSENQFFLKLNSVTTEDTATYYCAGDNDHLYY-FDYWGQGTTLTVS 136
+
+Query: 120 A 120
+           +
+Sbjct: 137 S 137
+
+
+>sp|P01821|HVM45_MOUSE Ig heavy chain V region MC101 OS=Mus musculus
+           PE=1 SV=1
+          Length = 116
+
+ Score = 98.2 bits (243), Expect = 3e-20,   Method: Composition-based stats.
+ Identities = 49/98 (50%), Positives = 71/98 (72%), Gaps = 1/98 (1%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQL +SG  LV+P  SL ++C  SGFS +SYG+ WVRQ+P K LEW+  I +GG  T Y
+Sbjct: 20  QVQLKQSGPGLVQPSQSLSITCTVSGFSLTSYGVHWVRQSPGKGLEWLGVIWSGGS-TDY 78
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+             +   R +IS+DN+K+ ++ +M+SL+S D+A+YYCAR
+Sbjct: 79  NAAFISRLSISKDNSKSQVFFKMNSLQSNDTAIYYCAR 116
+
+
+>sp|P01820|HVM44_MOUSE Ig heavy chain V region PJ14 OS=Mus musculus
+           PE=1 SV=1
+          Length = 115
+
+ Score = 97.8 bits (242), Expect = 4e-20,   Method: Composition-based stats.
+ Identities = 49/97 (50%), Positives = 70/97 (72%), Gaps = 1/97 (1%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQL ESG  LV P  SL ++C  SGFS + YG++WVRQ P K LEW+  I  G G T Y
+Sbjct: 20  QVQLKESGPGLVAPSQSLSITCTVSGFSLTGYGVNWVRQPPGKGLEWLGMIW-GDGSTDY 78
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCA 97
+             ++K R +IS+DN+K+ ++L+M+SL+++D+A YYCA
+Sbjct: 79  NSALKSRLSISKDNSKSQVFLKMNSLQTDDTARYYCA 115
+
+
+>sp|P18532|HVM61_MOUSE Ig heavy chain V region 1B43 OS=Mus musculus
+           PE=1 SV=1
+          Length = 116
+
+ Score = 96.3 bits (238), Expect = 1e-19,   Method: Composition-based stats.
+ Identities = 49/99 (49%), Positives = 68/99 (68%), Gaps = 2/99 (2%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSS-YGMSWVRQTPDKRLEWVATISNGGGYTY 59
+           +VQL ESG DLVKP  SL L+C  +G+S +S Y   W+RQ P  +LEW+  I   G  +Y
+Sbjct: 19  DVQLQESGPDLVKPSQSLSLTCTVTGYSITSGYSWHWIRQFPGNKLEWMGYIHYSGNTSY 78
+
+Query: 60  YPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+            P S+K R +I+RD +KN  +LQ++S+ +ED+A YYCAR
+Sbjct: 79  NP-SLKSRISITRDTSKNQFFLQLNSVTTEDTATYYCAR 116
+
+
+>sp|P01829|HV2C_RABIT Ig heavy chain V-A2 region P-MU-3
+           OS=Oryctolagus cuniculus PE=4 SV=1
+          Length = 136
+
+ Score = 95.1 bits (235), Expect = 3e-19,   Method: Composition-based stats.
+ Identities = 55/116 (47%), Positives = 71/116 (61%), Gaps = 4/116 (3%)
+
+Query: 6   ESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYYPDSVK 65
+           ES G L KP  +L L+C  SGFS SSYG++WVRQ P K LEW+  I  G   TY  +  K
+Sbjct: 24  ESEGGLFKPMDTLTLTCTVSGFSLSSYGVNWVRQAPGKGLEWIGYIGTG---TYLANWAK 80
+
+Query: 66  GRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGF-AYWGQGTLVTVSA 120
+            R TI+ +  +NT+ L+M+SL   D+A Y+C      +   F A WG GTLVTVS+
+Sbjct: 81  SRSTITSNTNENTVTLKMTSLTGADTATYFCGSGANIENEFFNAIWGPGTLVTVSS 136
+
+
+>sp|P01761|HV106_HUMAN Ig heavy chain V-I region SIE OS=Homo sapiens
+           PE=1 SV=1
+          Length = 124
+
+ Score = 95.1 bits (235), Expect = 3e-19,   Method: Composition-based stats.
+ Identities = 55/129 (42%), Positives = 80/129 (62%), Gaps = 14/129 (10%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQLV+SG ++ KPG S++++C  SG +FS Y +SWVRQ P + LEWV      G    +
+Sbjct: 1   QVQLVQSGAEVKKPGSSVRVTCKTSGGTFSGYTISWVRQAPGRGLEWV------GSPAKW 54
+
+Query: 61  PDSVKG------RFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR--RERYDENGFAYWGQ 112
+            D  +G      R T+S   + N  Y+++ +L +ED A+YYCAR  + + + N F YWGQ
+Sbjct: 55  TDPFQGVYIKWERVTVSLKPSFNQAYMELVNLFNEDGAVYYCAREWKGQVNVNPFDYWGQ 114
+
+Query: 113 GTLVTVSAA 121
+           G LVTVS+ 
+Sbjct: 115 GVLVTVSSG 123
+
+
+>sp|P01760|HV105_HUMAN Ig heavy chain V-I region WOL OS=Homo sapiens
+           PE=1 SV=1
+          Length = 124
+
+ Score = 95.1 bits (235), Expect = 3e-19,   Method: Composition-based stats.
+ Identities = 57/124 (45%), Positives = 79/124 (63%), Gaps = 4/124 (3%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATIS-NGGGYTY 59
+           +VQL++SG ++ KPG S+++SC  SG +F  Y   WVRQ P K LEWV  I     G   
+Sbjct: 1   QVQLMQSGAEVKKPGSSVRVSCKTSGGTFVDYKGLWVRQAPGKGLEWVGQIPLRFNGEVK 60
+
+Query: 60  YPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENG--FAYWGQGTLVT 117
+            P SV  R ++S   + N  ++++SSL SED+A+YYCAR   +D +   + YWGQGTLVT
+Sbjct: 61  NPGSVV-RVSVSLKPSFNQAHMELSSLFSEDTAVYYCAREYGFDTSDYYYYYWGQGTLVT 119
+
+Query: 118 VSAA 121
+           VS+ 
+Sbjct: 120 VSSG 123
+
+
+>sp|P01742|HV101_HUMAN Ig heavy chain V-I region EU OS=Homo
+          sapiens PE=1 SV=1
+          Length = 117
+
+ Score = 92.4 bits (228), Expect = 2e-18,   Method: Composition-based stats.
+ Identities = 47/97 (48%), Positives = 66/97 (68%)
+
+Query: 1  EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+          +VQLV+SG ++ KPG S+K+SC ASG +FS   + WVRQ P + LEW+  I    G   Y
+Sbjct: 1  QVQLVQSGAEVKKPGSSVKVSCKASGGTFSRSAIIWVRQAPGQGLEWMGGIVPMFGPPNY 60
+
+Query: 61 PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCA 97
+              +GR TI+ D + NT Y+++SSL+SED+A Y+CA
+Sbjct: 61 AQKFQGRVTITADESTNTAYMELSSLRSEDTAFYFCA 97
+
+
+>sp|P18531|HVM60_MOUSE Ig heavy chain V region M315 OS=Mus musculus
+           PE=1 SV=1
+          Length = 116
+
+ Score = 91.7 bits (226), Expect = 3e-18,   Method: Composition-based stats.
+ Identities = 48/99 (48%), Positives = 69/99 (69%), Gaps = 2/99 (2%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSS-YGMSWVRQTPDKRLEWVATISNGGGYTY 59
+           +VQL ESG  LVKP  SL L+C+ +G+S +S Y  +W+RQ P  +LEW+  IS  G   Y
+Sbjct: 19  DVQLQESGPGLVKPSQSLSLTCSVTGYSITSGYYWNWIRQFPGNKLEWMGYISYDGSNNY 78
+
+Query: 60  YPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+            P S+K R +I+RD +KN  +L+++S+ +ED+A YYCAR
+Sbjct: 79  NP-SLKNRISITRDTSKNQFFLKLNSVTTEDTATYYCAR 116
+
+
+>sp|P03983|HV01_HETFR Ig heavy chain V region OS=Heterodontus
+           francisci PE=4 SV=1
+          Length = 116
+
+ Score = 91.3 bits (225), Expect = 4e-18,   Method: Composition-based stats.
+ Identities = 47/98 (47%), Positives = 63/98 (64%), Gaps = 1/98 (1%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           ++ L +   D  KP GSL+L+C  SGFS  SY M+WVRQ P + LEW+ +  +     Y 
+Sbjct: 20  DIVLTQPEADTGKPEGSLRLTCKTSGFSLGSYYMTWVRQVPGQGLEWLVSYHSSSYQYYA 79
+
+Query: 61  PDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+           P+ +K RFT S+D + N   L M SLK+ED+AMYYCAR
+Sbjct: 80  PE-IKDRFTASKDTSNNIFALDMKSLKTEDTAMYYCAR 116
+
+
+>sp|P80421|HV108_HUMAN Ig heavy chain V-I region DOT OS=Homo sapiens
+           PE=1 SV=1
+          Length = 120
+
+ Score = 90.5 bits (223), Expect = 7e-18,   Method: Composition-based stats.
+ Identities = 47/120 (39%), Positives = 73/120 (60%), Gaps = 2/120 (1%)
+
+Query: 2   VQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYYP 61
+           VQLV+SG +   PG S+++SC ASG++F +Y + WVRQ P   LEW+   +   G     
+Sbjct: 2   VQLVQSGVERKVPGASVRISCKASGYAFENYYIHWVRQAPGLGLEWMGIFNPVAG-AVSS 60
+
+Query: 62  DSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRE-RYDENGFAYWGQGTLVTVSA 120
+           +  + R  +S D + NT+ +Q+ +L+S+D+  Y+CAR    + + G   WGQGT V VS+
+Sbjct: 61  EKFRDRLVMSSDTSANTVSMQLRNLRSDDTGRYFCARVSYDFSQYGMDVWGQGTTVIVSS 120
+
+
+>sp|P01817|HV204_HUMAN Ig heavy chain V-II region MCE OS=Homo
+           sapiens PE=1 SV=1
+          Length = 125
+
+ Score = 89.4 bits (220), Expect = 2e-17,   Method: Composition-based stats.
+ Identities = 55/126 (43%), Positives = 78/126 (61%), Gaps = 7/126 (5%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSS--YGMSWVRQTPDKRLEWVATISNGGGYT 58
+           ++ L ESG  LVKP  +L L+C  SGFS S+   G+ W+RQ P K LEW+A I+      
+Sbjct: 1   QITLKESGPTLVKPTETLTLTCTFSGFSLSTSGVGVGWIRQRPGKALEWLAFINWDDDNR 60
+
+Query: 59  YYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRE--RYDEN--GFAYWGQGT 114
+           Y P S++ R T ++D ++N + L ++++   DS  Y+CA R   R+  N  GF  WGQGT
+Sbjct: 61  YSP-SLRSRLTGTKDTSRNQVVLTITNMDPVDSGTYFCAHRPPWRFTGNLGGFDXWGQGT 119
+
+Query: 115 LVTVSA 120
+           LVTVS+
+Sbjct: 120 LVTVSS 125
+
+
+>sp|P01826|HV1A_RABIT Ig heavy chain V-A1 region BS-5 OS=Oryctolagus
+           cuniculus PE=1 SV=1
+          Length = 116
+
+ Score = 87.0 bits (214), Expect = 6e-17,   Method: Composition-based stats.
+ Identities = 59/120 (49%), Positives = 69/120 (57%), Gaps = 14/120 (11%)
+
+Query: 6   ESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYYPDSVK 65
+           ESGG LV P   L L+C  SGFS SSY M WVRQ P K LEW+  I    G TYY    K
+Sbjct: 5   ESGGRLVTPTPGLTLTCTVSGFSLSSYDMGWVRQAPGKGLEWIGIIY-ASGSTYYASWAK 63
+
+Query: 66  GRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAY------WGQGTLVTVS 119
+           GRFTIS+ +    L    +SL +ED+A Y+CAR+      G  +      WG GTLVTVS
+Sbjct: 64  GRFTISKTSTTVDL---KTSLPTEDTATYFCARQ----GTGLVHLAFVDVWGPGTLVTVS 116
+
+
+>sp|P18533|HVM62_MOUSE Ig heavy chain V region 733 OS=Mus musculus
+           PE=4 SV=1
+          Length = 117
+
+ Score = 87.0 bits (214), Expect = 7e-17,   Method: Composition-based stats.
+ Identities = 48/100 (48%), Positives = 65/100 (65%), Gaps = 3/100 (3%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSS--YGMSWVRQTPDKRLEWVATISNGGGYT 58
+           +VQL ESG  LVKP  S+ L+C  +G S ++  Y  SW+RQ P  +LEW+  I      +
+Sbjct: 19  DVQLQESGPGLVKPSQSIALTCTVTGISITTGNYRWSWIRQFPGNKLEWIGYIYYSAITS 78
+
+Query: 59  YYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+           Y P S K R TI+RD +KN  +L+M+SL +ED+A YYCAR
+Sbjct: 79  YNP-SPKSRTTITRDTSKNQFFLEMNSLTAEDTATYYCAR 117
+
+
+>sp|P01814|HV201_HUMAN Ig heavy chain V-II region OU OS=Homo sapiens
+           PE=1 SV=1
+          Length = 126
+
+ Score = 87.0 bits (214), Expect = 8e-17,   Method: Composition-based stats.
+ Identities = 54/127 (42%), Positives = 77/127 (60%), Gaps = 8/127 (6%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGM--SWVRQTPDKRLEWVATISNGGGYT 58
+           +V L ESG  LVKP   L L+C  SGFS S+  M  SW+R+ P K LEW+A I B   + 
+Sbjct: 1   QVTLTESGPALVKPKQPLTLTCTFSGFSLSTSRMRVSWIRRPPGKALEWLARIBBBDKF- 59
+
+Query: 59  YYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAY-----WGQG 113
+           Y+  S++ R +IS++++KN + L M ++   D+A YYCAR       G+ Y     WG+G
+Sbjct: 60  YWSTSLRTRLSISKNDSKNQVVLIMINVNPVDTATYYCARVVNSVMAGYYYYYMDVWGKG 119
+
+Query: 114 TLVTVSA 120
+           T VTVS+
+Sbjct: 120 TTVTVSS 126
+
+
+>sp|P01824|HV206_HUMAN Ig heavy chain V-II region WAH OS=Homo
+           sapiens PE=1 SV=1
+          Length = 129
+
+ Score = 85.9 bits (211), Expect = 2e-16,   Method: Composition-based stats.
+ Identities = 55/129 (42%), Positives = 73/129 (56%), Gaps = 11/129 (8%)
+
+Query: 2   VQLVESGGDLVKPGGSLKLSCAASG--FSFSSYGMSWVRQTPDKRLEWVATISNGGGYTY 59
+           +QL ESG  LVKP  +L L+C  SG     + Y   W+RQ P K LEW+  +   G   Y
+Sbjct: 2   LQLQESGPGLVKPSETLSLTCIVSGGPIRRTGYYWGWIRQPPGKGLEWIGGVYYTGSIYY 61
+
+Query: 60  YPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRE---RYD-----ENGFAYWG 111
+            P S++GR TIS D ++N   L + S+ + D+AMYYCAR      YD     ++G   WG
+Sbjct: 62  NP-SLRGRVTISVDTSRNQFSLNLRSMSAADTAMYYCARGNPPPYYDIGTGSDDGIDVWG 120
+
+Query: 112 QGTLVTVSA 120
+           QGT V VS+
+Sbjct: 121 QGTTVHVSS 129
+
+
+>sp|P04438|HV208_HUMAN Ig heavy chain V-II region SESS OS=Homo
+           sapiens PE=4 SV=1
+          Length = 147
+
+ Score = 85.9 bits (211), Expect = 2e-16,   Method: Composition-based stats.
+ Identities = 52/123 (42%), Positives = 72/123 (58%), Gaps = 10/123 (8%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMS--WVRQTPDKRLEWVATISNGGGYT 58
+           +V L ESG  LVK   +L L+C  SG S ++ GMS  W+RQ P K LEW+A I +     
+Sbjct: 20  QVNLRESGPALVKATHTLTLTCTFSGLSVNTRGMSVSWIRQPPGKALEWLARI-DWDDDK 78
+
+Query: 59  YYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRE-------RYDENGFAYWG 111
+           YY  S++ R TIS+D +KN + L+++++   D+A YYCAR +           N F  WG
+Sbjct: 79  YYGTSLETRLTISKDTSKNQVVLKVTNMDPADTATYYCARMQVTMVREVMITSNAFDIWG 138
+
+Query: 112 QGT 114
+           QGT
+Sbjct: 139 QGT 141
+
+
+>sp|P01816|HV203_HUMAN Ig heavy chain V-II region DAW OS=Homo
+           sapiens PE=1 SV=1
+          Length = 119
+
+ Score = 85.5 bits (210), Expect = 2e-16,   Method: Composition-based stats.
+ Identities = 55/123 (44%), Positives = 74/123 (60%), Gaps = 7/123 (5%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGM--SWVRQTPDKRLEWVA-TISNGGGY 57
+           +V L ESG  LV+P  +L L+C  SGFS S   M  +W+RQ P + LEW+A  I N    
+Sbjct: 1   QVTLRESGPALVRPTQTLTLTCTFSGFSLSGETMCVAWIRQPPGEALEWLAWDILNDD-- 58
+
+Query: 58  TYYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVT 117
+            YY  S++ R  +S+D +KN + L M+++   D+A YYCAR        F YWGQG LVT
+Sbjct: 59  KYYGASLETRLAVSKDTSKNQVVLSMNTVGPGDTATYYCAR--SCGSQYFDYWGQGILVT 116
+
+Query: 118 VSA 120
+           VS+
+Sbjct: 117 VSS 119
+
+
+>sp|P01827|HV2A_RABIT Ig heavy chain V-A2 region BS-1 OS=Oryctolagus
+           cuniculus PE=1 SV=1
+          Length = 114
+
+ Score = 84.0 bits (206), Expect = 7e-16,   Method: Composition-based stats.
+ Identities = 54/114 (47%), Positives = 69/114 (60%), Gaps = 4/114 (3%)
+
+Query: 6   ESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYYPDSVK 65
+           ES G L KP  +L L+C  SGFS SSY ++WVRQ P + LEW+  + + G  TYY    K
+Sbjct: 5   ESEGGLFKPTDTLTLTCTVSGFSLSSYTVAWVRQAPGZGLEWIGILKSSGS-TYYASWAK 63
+
+Query: 66  GRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVS 119
+            R TI+R   +NT+ L M SL +ZD+A Y+CAR           WG GTLVTVS
+Sbjct: 64  SRSTITR--TQNTVNL-MBSLTAZDTATYFCARITHGYLGLMDVWGPGTLVTVS 114
+
+
+>sp|P83907|IGW3_HETFR IgW heavy chain V region W26 (Fragment)
+           OS=Heterodontus francisci PE=2 SV=1
+          Length = 118
+
+ Score = 83.2 bits (204), Expect = 1e-15,   Method: Composition-based stats.
+ Identities = 45/108 (41%), Positives = 69/108 (63%), Gaps = 5/108 (4%)
+
+Query: 13  KPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYYPDSVKGRFTISR 72
+           KPG S KLSC  SGF  + + M+WV+Q P + LEW+ +       TYY   ++GR T S 
+Sbjct: 13  KPGESHKLSCTVSGFDVNGHHMNWVKQVPGEGLEWLLSYRKTYN-TYYASGIQGRITFST 71
+
+Query: 73  DNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+           +++  T ++++ +L+ ED+AMYYCAR   + + G  YWG GT +TV++
+Sbjct: 72  ESS--TTFIEIPNLRVEDTAMYYCARGTGFPQWG--YWGSGTFLTVTS 115
+
+
+>sp|P01828|HV2B_RABIT Ig heavy chain V-A2 region K-25 OS=Oryctolagus
+           cuniculus PE=1 SV=1
+          Length = 117
+
+ Score = 82.8 bits (203), Expect = 1e-15,   Method: Composition-based stats.
+ Identities = 57/117 (48%), Positives = 69/117 (58%), Gaps = 7/117 (5%)
+
+Query: 6   ESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYYPDSVK 65
+           ES G L KP  +L L+C  SGFS S Y MSWVRQ P K LEW+  I    G TYY    K
+Sbjct: 5   ESEGGLFKPTDTLTLTCTVSGFSLSGYDMSWVRQAPGKGLEWIGVIY-ASGSTYYATWAK 63
+
+Query: 66  GRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRE---RYDENGFAYWGQGTLVTVS 119
+            R TI+R    BT+ L M SL ++D+A Y+CAR      Y ++    WG GTLVTVS
+Sbjct: 64  SRSTITR--TSBTVBL-MDSLTAQDTATYFCARGHTGLSYLKSSVDVWGPGTLVTVS 117
+
+
+>sp|P01815|HV202_HUMAN Ig heavy chain V-II region COR OS=Homo
+           sapiens PE=1 SV=1
+          Length = 120
+
+ Score = 80.9 bits (198), Expect = 5e-15,   Method: Composition-based stats.
+ Identities = 56/124 (45%), Positives = 72/124 (58%), Gaps = 8/124 (6%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGM--SWVRQTPDKRLEWVATISNGGGYT 58
+           +V L ESG  LVKP  +L L+C  SGFS SS GM   W+RQ P K LEW+A I +     
+Sbjct: 1   QVTLRESGPALVKPTQTLTLTCTFSGFSLSSTGMCVGWIRQPPGKGLEWLARI-DWDDDK 59
+
+Query: 59  YYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENG--FAYWGQGTLV 116
+           YY  S++ R TIS+D ++N + L M  +   D+A YYCAR             WG+GT V
+Sbjct: 60  YYNTSLETRLTISKDTSRNQVVLTMDPV---DTATYYCARITVIPAPAGYMDVWGRGTPV 116
+
+Query: 117 TVSA 120
+           TVS+
+Sbjct: 117 TVSS 120
+
+
+>sp|P01825|HV207_HUMAN Ig heavy chain V-II region NEWM OS=Homo
+           sapiens PE=1 SV=1
+          Length = 117
+
+ Score = 80.1 bits (196), Expect = 8e-15,   Method: Composition-based stats.
+ Identities = 50/126 (39%), Positives = 74/126 (58%), Gaps = 15/126 (11%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYY 60
+           +VQL +SG  LV+P  +L L+C  SG +FS+   +WVRQ P + LEW+       GY +Y
+Sbjct: 1   QVQLEQSGPGLVRPSQTLSLTCTVSGSTFSNDYYTWVRQPPGRGLEWI-------GYVFY 53
+
+Query: 61  PDS------VKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGT 114
+             +      ++ R T+  D +KN   L++SS+ + D+A+YYCAR           WGQG+
+Sbjct: 54  HGTSDDTTPLRSRVTMLVDTSKNQFSLRLSSVTAADTAVYYCAR--NLIAGCIDVWGQGS 111
+
+Query: 115 LVTVSA 120
+           LVTVS+
+Sbjct: 112 LVTVSS 117
+
+
+>sp|P04215|HV02_HETFR Ig heavy chain V region HC-3 (Fragment)
+           OS=Heterodontus francisci PE=4 SV=1
+          Length = 89
+
+ Score = 75.9 bits (185), Expect = 2e-13,   Method: Composition-based stats.
+ Identities = 41/92 (44%), Positives = 55/92 (59%), Gaps = 3/92 (3%)
+
+Query: 29  FSSYGMSWVRQTPDKRLEWVATISNGGGYTYYPDSVKGRFTISRDNAKNTLYLQMSSLKS 88
+             S  M+WVRQ P   LEW+ +        Y P+ +K RFT S+D + N   L M SLK+
+Sbjct: 1   LGSTTMNWVRQGPGXGLEWLVSYYGPSKNAYAPE-IKDRFTASKDTSNNIFALDMKSLKT 59
+
+Query: 89  EDSAMYYCARRERYDENGFAYWGQGTLVTVSA 120
+           ED+A+YYC  +  Y    F +WGQGT+VTV+A
+Sbjct: 60  EDTAIYYCVGQRNYYY--FDFWGQGTMVTVTA 89
+
+
+>sp|P01818|HV205_HUMAN Ig heavy chain V-II region HE OS=Homo sapiens
+           PE=1 SV=1
+          Length = 121
+
+ Score = 75.1 bits (183), Expect = 3e-13,   Method: Composition-based stats.
+ Identities = 48/122 (39%), Positives = 71/122 (58%), Gaps = 3/122 (2%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMS--WVRQTPDKRLEWVATISNGGGYT 58
+           +V L E+G  LVKP  +L L+C  SG S ++ G++  W+RQ P + LEW+A +       
+Sbjct: 1   QVTLKENGPTLVKPTETLTLTCTLSGLSLTTDGVAVGWIRQGPGRALEWLAWLLYWDDDK 60
+
+Query: 59  YYPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTV 118
+            +  S+K R T++RD +KN + L M+++   D+A YYC  R       F  WGQGT V V
+Sbjct: 61  RFSPSLKSRLTVTRDTSKNQVVLTMTNMDPVDTATYYCVHRHPRTL-AFDVWGQGTKVAV 119
+
+Query: 119 SA 120
+           S+
+Sbjct: 120 SS 121
+
+
+>sp|P01855|IGHE_RAT Ig epsilon chain C region OS=Rattus norvegicus
+           PE=2 SV=1
+          Length = 429
+
+ Score = 73.6 bits (179), Expect = 9e-13,   Method: Composition-based stats.
+ Identities = 44/95 (46%), Positives = 59/95 (62%), Gaps = 8/95 (8%)
+
+Query: 125 APSVYPLAPVSS-----VTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSDLYTLS 179
+           APS+YPL P SS     VTLGCLVK YFP+PVT+TW S SL++    FP++  SDL T +
+Sbjct: 5   APSLYPLKPCSSENTASVTLGCLVKDYFPDPVTVTWYSDSLNTSTMNFPSI-GSDLKTTT 63
+
+Query: 180 SSVTVTSSTWPSQSITCNVAHPASSTKVDKKIEPR 214
+           S +T    +  +++ TC+V H  S+   D  I  R
+Sbjct: 64  SQMTSWGKS--AKNFTCHVTHAPSTFVSDLTIRAR 96
+
+
+>sp|A6NJ16|VSIG6_HUMAN Putative V-set and immunoglobulin
+           domain-containing protein 6 OS=Homo sapiens GN=VSIG6
+           PE=5 SV=2
+          Length = 123
+
+ Score = 72.4 bits (176), Expect = 2e-12,   Method: Composition-based stats.
+ Identities = 49/99 (49%), Positives = 61/99 (61%), Gaps = 2/99 (2%)
+
+Query: 1   EVQLVESGGDLVKPGGSLKLSCAASGFSFSSYGMSW-VRQTPDKRLEWVATISNGGGYTY 59
+           +VQL ESG  LVKP  +L L+C  SG S SS      VRQ P K LEW+  I + G   Y
+Sbjct: 20  QVQLQESGPGLVKPSETLSLTCVVSGGSISSSNWWSWVRQPPGKGLEWIGEIYHSGSPNY 79
+
+Query: 60  YPDSVKGRFTISRDNAKNTLYLQMSSLKSEDSAMYYCAR 98
+            P S+K R TIS D +KN   L++SS+ + D A+YYCAR
+Sbjct: 80  NP-SLKSRVTISVDKSKNQFSLKLSSVTAADRAVYYCAR 117
+
+
+>sp|P01854|IGHE_HUMAN Ig epsilon chain C region OS=Homo sapiens
+           GN=IGHE PE=1 SV=1
+          Length = 428
+
+ Score = 71.2 bits (173), Expect = 4e-12,   Method: Composition-based stats.
+ Identities = 44/100 (44%), Positives = 57/100 (57%), Gaps = 10/100 (10%)
+
+Query: 121 AKTTAPSVYPL--------APVSSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPA-VL 171
+           A T +PSV+PL        +  +SVTLGCL  GYFPEPV +TW++GSL+    T PA  L
+Sbjct: 1   ASTQSPSVFPLTRCCKNIPSNATSVTLGCLATGYFPEPVMVTWDTGSLNGTTMTLPATTL 60
+
+Query: 172 QSDLYTLSSSVTVTSSTWPSQSITCNVAH-PASSTKVDKK 210
+               +  + S+   S  W  Q  TC VAH P+S+  VD K
+Sbjct: 61  TLSGHYATISLLTVSGAWAKQMFTCRVAHTPSSTDWVDNK 100
+
+
+>sp|P06336|IGHE_MOUSE Ig epsilon chain C region OS=Mus musculus PE=2
+           SV=2
+          Length = 421
+
+ Score = 67.0 bits (162), Expect = 8e-11,   Method: Composition-based stats.
+ Identities = 39/81 (48%), Positives = 51/81 (62%), Gaps = 6/81 (7%)
+
+Query: 126 PSVYPLAP---VSSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSDLYTLSSSV 182
+           P +YPL P    +S+TLGCLVK YFP PVT+TW S SL+     FPA L S+L   +S V
+Sbjct: 5   PQLYPLKPCKGTASMTLGCLVKDYFPNPVTVTWYSDSLNMSTVNFPA-LGSELKVTTSQV 63
+
+Query: 183 TVTSSTWPSQSITCNVAHPAS 203
+           T    +  +++ TC+V HP S
+Sbjct: 64  TSWGKS--AKNFTCHVTHPPS 82
+
+
+>sp|P20758|IGHA1_GORGO Ig alpha-1 chain C region OS=Gorilla gorilla
+           gorilla GN=IGHA1 PE=1 SV=1
+          Length = 353
+
+ Score = 54.3 bits (129), Expect = 6e-07,   Method: Composition-based stats.
+ Identities = 33/89 (37%), Positives = 51/89 (57%), Gaps = 9/89 (10%)
+
+Query: 121 AKTTAPSVYPLA-----PVSSVTLGCLVKGYFP-EPVTLTWNSGSLSSGVHTFPAVLQS- 173
+           A  T+P V+PL+     P   V + CLV+G+FP EP+++TW+          FP    + 
+Sbjct: 1   ASPTSPKVFPLSLCSTQPDGDVVVACLVQGFFPQEPLSVTWSESGQGVTARNFPPSQDAS 60
+
+Query: 174 -DLYTLSSSVTVTSSTWPS-QSITCNVAH 200
+            DLYT SS +T+ ++  P  +S+TC+V H
+Sbjct: 61  GDLYTTSSQLTLPATQCPDGKSVTCHVNH 89
+
+
+>sp|P01880|IGHD_HUMAN Ig delta chain C region OS=Homo sapiens
+           GN=IGHD PE=1 SV=2
+          Length = 384
+
+ Score = 53.5 bits (127), Expect = 1e-06,   Method: Composition-based stats.
+ Identities = 35/94 (37%), Positives = 45/94 (47%), Gaps = 8/94 (8%)
+
+Query: 121 AKTTAPSVYPLAP-------VSSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQS 173
+           A T AP V+P+          S V L CL+ GY P  VT+TW  G+ S    TFP + + 
+Sbjct: 1   APTKAPDVFPIISGCRHPKDNSPVVLACLITGYHPTSVTVTWYMGTQSQPQRTFPEIQRR 60
+
+Query: 174 DLYTLSSSVTVTS-STWPSQSITCNVAHPASSTK 206
+           D Y ++SS   T    W      C V H AS +K
+Sbjct: 61  DSYYMTSSQLSTPLQQWRQGEYKCVVQHTASKSK 94
+
+
+>sp|P01877|IGHA2_HUMAN Ig alpha-2 chain C region OS=Homo sapiens
+           GN=IGHA2 PE=1 SV=3
+          Length = 340
+
+ Score = 53.1 bits (126), Expect = 1e-06,   Method: Composition-based stats.
+ Identities = 33/89 (37%), Positives = 53/89 (59%), Gaps = 9/89 (10%)
+
+Query: 121 AKTTAPSVYPLAPVSS-----VTLGCLVKGYFP-EPVTLTWNSGSLSSGVHTFPAVLQS- 173
+           A  T+P V+PL+  S+     V + CLV+G+FP EP+++TW+    +     FP    + 
+Sbjct: 1   ASPTSPKVFPLSLDSTPQDGNVVVACLVQGFFPQEPLSVTWSESGQNVTARNFPPSQDAS 60
+
+Query: 174 -DLYTLSSSVTVTSSTWPS-QSITCNVAH 200
+            DLYT SS +T+ ++  P  +S+TC+V H
+Sbjct: 61  GDLYTTSSQLTLPATQCPDGKSVTCHVKH 89
+
+
+>sp|P01876|IGHA1_HUMAN Ig alpha-1 chain C region OS=Homo sapiens
+           GN=IGHA1 PE=1 SV=2
+          Length = 353
+
+ Score = 52.0 bits (123), Expect = 3e-06,   Method: Composition-based stats.
+ Identities = 32/89 (35%), Positives = 51/89 (57%), Gaps = 9/89 (10%)
+
+Query: 121 AKTTAPSVYPLA-----PVSSVTLGCLVKGYFP-EPVTLTWNSGSLSSGVHTFPAVLQS- 173
+           A  T+P V+PL+     P  +V + CLV+G+FP EP+++TW+          FP    + 
+Sbjct: 1   ASPTSPKVFPLSLCSTQPDGNVVIACLVQGFFPQEPLSVTWSESGQGVTARNFPPSQDAS 60
+
+Query: 174 -DLYTLSSSVTVTSST-WPSQSITCNVAH 200
+            DLYT SS +T+ ++     +S+TC+V H
+Sbjct: 61  GDLYTTSSQLTLPATQCLAGKSVTCHVKH 89
+
+
+>sp|P01721|LV601_HUMAN Ig lambda chain V-VI region AR OS=Homo
+           sapiens PE=1 SV=1
+          Length = 112
+
+ Score = 51.6 bits (122), Expect = 4e-06,   Method: Composition-based stats.
+ Identities = 37/105 (35%), Positives = 51/105 (48%), Gaps = 8/105 (7%)
+
+Query: 14  PGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYYPDSVKGRFTISRD 73
+           PG ++  SC  SG S +   + W +Q P      V    N       P  V  RF+ S D
+Sbjct: 14  PGKTVTFSCTGSGGSIADSFVQWYQQRPGSAPTTVIYDDN-----QRPSGVPDRFSGSID 68
+
+Query: 74  NAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTV 118
+           ++ N+  L +S LK+ED A YYC   + Y+ N    +G GT VTV
+Sbjct: 69  DSANSASLTISGLKTEDEADYYC---QSYNSNHHVVFGGGTKVTV 110
+
+
+>sp|P11364|TCB_FLV T-cell receptor beta chain T17T-22 OS=Feline
+           leukemia virus GN=V-TCR PE=4 SV=1
+          Length = 321
+
+ Score = 50.4 bits (119), Expect = 7e-06,   Method: Composition-based stats.
+ Identities = 45/139 (32%), Positives = 64/139 (46%), Gaps = 21/139 (15%)
+
+Query: 81  LQMSSLKSEDSAMYYCARRERYD-ENGFA-YWGQGTLVTV--SAAKTTAPSVYPLAPVSS 136
+           L M+SL+  DSA+Y CA     D E G   Y+G+G+ +TV     K + P V    P  +
+Sbjct: 104 LNMTSLELTDSALYLCASSPNEDSEYGETLYFGEGSRLTVVEDLKKVSPPKVTVFEPSEA 163
+
+Query: 137 -------VTLGCLVKGYFPEPVTLTW--NSGSLSSGVHTFPAVLQS------DLYTLSSS 181
+                   TL CL  G++P+ V L+W  N   +  GV T P   +         Y LSS 
+Sbjct: 164 EISRTLKATLVCLATGFYPDHVELSWWVNGKEVRDGVSTDPEPYKEQSGANVSSYCLSSR 223
+
+Query: 182 VTVTSSTW--PSQSITCNV 198
+           + V+++ W  P     C V
+Sbjct: 224 LRVSATFWHNPRNHFRCQV 242
+
+
+>sp|P13373|VPRE2_MOUSE Immunoglobulin omega chain OS=Mus musculus
+           GN=Vpreb2 PE=2 SV=1
+          Length = 142
+
+ Score = 46.2 bits (108), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 28/84 (33%), Positives = 44/84 (52%), Gaps = 2/84 (2%)
+
+Query: 15  GGSLKLSCAASG-FSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYYPDSVKGRFTISRD 73
+           G +++LSC  S   +   Y + W +Q P     ++    +       PD +  RF+ S+D
+Sbjct: 34  GATIRLSCTLSNDHNIGIYSIYWYQQRPGHPPRFLLRYFSHSDKHQGPD-IPPRFSGSKD 92
+
+Query: 74  NAKNTLYLQMSSLKSEDSAMYYCA 97
+            A+N  YL +S L+ ED A+YYCA
+Sbjct: 93  TARNLGYLSISELQPEDEAVYYCA 116
+
+
+>sp|P06317|LV603_HUMAN Ig lambda chain V-VI region SUT OS=Homo
+           sapiens PE=1 SV=1
+          Length = 111
+
+ Score = 46.2 bits (108), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 34/105 (32%), Positives = 53/105 (50%), Gaps = 9/105 (8%)
+
+Query: 14  PGGSLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYYPDSVKGRFTISRD 73
+           PG ++ +SC  S  + + Y + W +Q P +    V         T  P  V  RF+ S D
+Sbjct: 14  PGKTVIISCTRSDGTIAGYYVQWYQQRPGRAPTTVIFED-----TQRPSGVPDRFSGSID 68
+
+Query: 74  NAKNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTV 118
+            + N+  L +S L++ED A YYC   + YD + + + G GT +TV
+Sbjct: 69  RSSNSASLTISGLQTEDEADYYC---QSYDRDHWVF-GGGTKLTV 109
+
+
+>sp|P01871|IGHM_HUMAN Ig mu chain C region OS=Homo sapiens GN=IGHM
+           PE=1 SV=3
+          Length = 452
+
+ Score = 45.1 bits (105), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 29/91 (31%), Positives = 48/91 (52%), Gaps = 14/91 (15%)
+
+Query: 124 TAPSVYPL-------APVSSVTLGCLVKGYFPEPVTLTW---NSGSLSSGVHTFPAVLQS 173
+           +AP+++PL       +  SSV +GCL + + P+ +TL+W   N+  +SS    FP+VL+ 
+Sbjct: 4   SAPTLFPLVSCENSPSDTSSVAVGCLAQDFLPDSITLSWKYKNNSDISS-TRGFPSVLRG 62
+
+Query: 174 DLYTLSSSVTVTSS---TWPSQSITCNVAHP 201
+             Y  +S V + S        + + C V HP
+Sbjct: 63  GKYAATSQVLLPSKDVMQGTDEHVVCKVQHP 93
+
+
+>sp|P13372|VPRE1_MOUSE Immunoglobulin iota chain OS=Mus musculus
+           GN=Vpreb1 PE=2 SV=1
+          Length = 142
+
+ Score = 44.7 bits (104), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 29/91 (31%), Positives = 45/91 (49%), Gaps = 2/91 (2%)
+
+Query: 15  GGSLKLSCAASG-FSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYYPDSVKGRFTISRD 73
+           G +++LSC  S   +   Y + W +Q P     ++    +       PD +  RF+ S+D
+Sbjct: 34  GATIRLSCTLSNDHNIGIYSIYWYQQRPGHPPRFLLRYFSHSDKHQGPD-IPPRFSGSKD 92
+
+Query: 74  NAKNTLYLQMSSLKSEDSAMYYCARRERYDE 104
+             +N  YL +S L+ ED A+YYCA   R  E
+Sbjct: 93  TTRNLGYLSISELQPEDEAVYYCAVGLRSQE 123
+
+
+>sp|P15814|IGLL1_HUMAN Immunoglobulin lambda-like polypeptide 1
+           OS=Homo sapiens GN=IGLL1 PE=1 SV=1
+          Length = 213
+
+ Score = 44.7 bits (104), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 36/114 (31%), Positives = 58/114 (50%), Gaps = 12/114 (10%)
+
+Query: 110 WGQGTLVTVSAAKTTAPSVYPLAPVSS------VTLGCLVKGYFPEPVTLTWNSGS--LS 161
+           +G GT +TV +     PSV    P S        TL CL+  ++P  +T+TW +    ++
+Sbjct: 98  FGSGTQLTVLSQPKATPSVTLFPPSSEELQANKATLVCLMNDFYPGILTVTWKADGTPIT 157
+
+Query: 162 SGVH-TFPAVLQSDLYTLSSSVTVTSSTWPS-QSITCNVAHPASSTKVDKKIEP 213
+            GV  T P+   ++ Y  SS +++T   W S +S +C V H  S+  V+K + P
+Sbjct: 158 QGVEMTTPSKQSNNKYAASSYLSLTPEQWRSRRSYSCQVMHEGST--VEKTVAP 209
+
+
+>sp|P01874|IGHM_CANFA Ig mu chain C region OS=Canis familiaris PE=1
+           SV=1
+          Length = 450
+
+ Score = 44.3 bits (103), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 28/96 (29%), Positives = 45/96 (46%), Gaps = 11/96 (11%)
+
+Query: 124 TAPSVYPLA------PVSSVTLGCLVKGYFPEPVTLTWNSGSLSS--GVHTFPAVLQSDL 175
+           +APS++PL       P S+V +GCL + + P  +T +W    LS+      FP+VL+   
+Sbjct: 4   SAPSIFPLVSCENSNPTSTVAMGCLARDFLPGSITFSWKYEBLSAINSTRGFPSVLRGGK 63
+
+Query: 176 YTLSSSVTVTSS---TWPSQSITCNVAHPASSTKVD 208
+           Y  +S V + S        + I C V H     + B
+Sbjct: 64  YVATSQVFLPSVDIIQGTDEHIVCKVRHSBGBKQKB 99
+
+
+>sp|Q9UKI3|VPRE3_HUMAN Pre-B lymphocyte protein 3 OS=Homo sapiens
+           GN=VPREB3 PE=2 SV=1
+          Length = 123
+
+ Score = 43.9 bits (102), Expect = 6e-04,   Method: Composition-based stats.
+ Identities = 27/89 (30%), Positives = 44/89 (49%), Gaps = 3/89 (3%)
+
+Query: 11  LVKPGGSLKLSCAAS--GFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYYPDSVKGRF 68
+           LV PG   +LSC  S    +   YG+SW +Q       ++    +   + + P  +  RF
+Sbjct: 29  LVFPGQVAQLSCTLSPQHVTIRDYGVSWYQQRAGSAPRYLLYYRSEEDH-HRPADIPDRF 87
+
+Query: 69  TISRDNAKNTLYLQMSSLKSEDSAMYYCA 97
+           + ++D A N   L +S ++ ED A YYC+
+Sbjct: 88  SAAKDEAHNACVLTISPVQPEDDADYYCS 116
+
+
+>sp|P20768|IGHM_SUNMU Ig mu chain C region OS=Suncus murinus PE=4
+           SV=1
+          Length = 457
+
+ Score = 43.9 bits (102), Expect = 8e-04,   Method: Composition-based stats.
+ Identities = 32/104 (30%), Positives = 51/104 (49%), Gaps = 16/104 (15%)
+
+Query: 123 TTAPSVYPLAPVSS-------VTLGCLVKGYFPEPVTLTWN----SGSLSSGVHTFPAVL 171
+           ++AP ++PL    S       VTLGCL + + P PVT +W     S   S  ++ FP V 
+Sbjct: 2   SSAPLLFPLVSCDSSLPDETQVTLGCLARDFLPRPVTFSWKFKNSSSISSQNIYNFPEVF 61
+
+Query: 172 QSDLYTLSSSVTVTSSTWPSQS---ITCNVAHPASSTKVDKKIE 212
+               Y  +S V + S+     +   ITC+  H  ++ + +KK+E
+Sbjct: 62  TGGKYMATSQVLLPSTAILQSTDDYITCHTKH--TTGEKEKKVE 103
+
+
+>sp|P01740|TVC1_MOUSE T-cell receptor gamma chain V region V108A
+           OS=Mus musculus PE=4 SV=1
+          Length = 135
+
+ Score = 43.5 bits (101), Expect = 0.001,   Method: Composition-based stats.
+ Identities = 28/103 (27%), Positives = 51/103 (49%), Gaps = 3/103 (2%)
+
+Query: 17  SLKLSCAASGFSFSSYGMSWVRQTPDKRLEWVATISNGGGYTYYPDSVK-GRFTISRDNA 75
+           ++++SC      FS+  + W RQ  +++ E++  ++    Y   P   K  +   S+D  
+Sbjct: 34  NVQISCIVYLPYFSNTAIHWYRQKTNQQFEYLIYVATN--YNQRPLGGKHKKIEASKDFK 91
+
+Query: 76  KNTLYLQMSSLKSEDSAMYYCARRERYDENGFAYWGQGTLVTV 118
+            +T  L+++ LK ED A YYCA   R+       + +GT + V
+Sbjct: 92  SSTSTLEINYLKKEDEATYYCAVWMRWSSGFHKVFAEGTKLIV 134
+
+
+  Database: sprot
+    Posted date:  May 6, 2009 11:11 AM
+  Number of letters in database: 165,389,953
+  Number of sequences in database:  466,739
+  
+Lambda     K      H
+   0.313    0.127    0.382 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 68,965,030
+Number of Sequences: 466739
+Number of extensions: 2652265
+Number of successful extensions: 6222
+Number of sequences better than 1.0e-03: 185
+Number of HSP's better than  0.0 without gapping: 139
+Number of HSP's successfully gapped in prelim test: 46
+Number of HSP's that attempted gapping in prelim test: 5845
+Number of HSP's gapped (non-prelim): 237
+length of query: 214
+length of database: 165,389,953
+effective HSP length: 112
+effective length of query: 102
+effective length of database: 113,115,185
+effective search space: 11537748870
+effective search space used: 11537748870
+T: 11
+A: 40
+X1: 16 ( 7.2 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 42 (21.9 bits)
+S2: 101 (43.5 bits)

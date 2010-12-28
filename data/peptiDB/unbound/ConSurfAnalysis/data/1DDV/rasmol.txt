@@ -1,0 +1,83 @@
+select all
+color [200,200,200]
+
+
+select   GLU1003, VAL1013, PRO1026, ASN1043, ARG1046, ILE1057, ASN1058, PHE1074, GLN1076, ASP1079
+select selected or GLY1087, PHE1090, SER1092, PHE1099
+select selected and :A
+color [160,37,96]
+spacefill
+
+define CON9 selected
+
+
+select    GLU999, MET1001, ILE1006, ARG1010, ALA1011, ASP1017, LYS1021, TRP1024, ILE1047, ILE1048
+select selected or SER1049, THR1070, SER1071, GLY1075, ARG1081, VAL1085, GLY1089, LEU1096, GLU1108
+select selected and :A
+color [240,125,171]
+spacefill
+
+define CON8 selected
+
+
+select    GLY1002, THR1009, PHE1014, ILE1016, PRO1018, ASN1023, THR1033, VAL1034, PHE1037, TYR1045
+select selected or ILE1056, PHE1067, THR1068, LYS1069, ALA1078, ALA1082, ASN1083, LEU1088, ALA1100, PHE1103
+select selected or ALA1109
+select selected and :A
+color [250,201,222]
+spacefill
+
+define CON7 selected
+
+
+select    GLN1004, THR1020, VAL1025, VAL1032, TYR1036, TYR1038, ASP1039, VAL1044, ALA1055, THR1060
+select selected or ILE1061, ASN1064, THR1066, TRP1077, SER1080, THR1084, GLU1093, PHE1106, ALA1110
+select selected and :A
+color [252,237,244]
+spacefill
+
+define CON6 selected
+
+
+select    PRO1005, PHE1007, LYS1022, SER1028, SER1035, LYS1054, SER1059, MET1065, LYS1073, PRO1127
+select selected or ASP1135, SER1138
+select selected and :A
+color [255,255,255]
+spacefill
+
+define CON5 selected
+
+
+select    HIS1012, THR1027, ASP1051, SER1053, PRO1063, GLN1072, TYR1086, LYS1102, GLU1105, ALA1113
+select selected and :A
+color [234,255,255]
+spacefill
+
+define CON4 selected
+
+
+select    GLN1015, ALA1031, LEU1050, HIS1095, GLN1104, LYS1107, LYS1116, SER1117, LYS1120
+select selected and :A
+color [215,255,255]
+spacefill
+
+define CON3 selected
+
+
+select    PHE1000, LYS1029, HIS1030, THR1041, ARG1042, GLY1052, THR1062, HIS1094, GLU1101, ARG1111
+select selected or GLU1115, THR1126, SER1128, PRO1139, PRO1142
+select selected and :A
+color [140,255,255]
+spacefill
+
+define CON2 selected
+
+
+select    SER1008, ASN1019, SER1040, SER1091, SER1097, LYS1098, LEU1112, LYS1114, MET1121, GLU1122
+select selected or LEU1123, THR1124, SER1125, GLY1134, LEU1136, GLN1137, LEU1140, THR1141, GLU1143
+select selected and :A
+color [16,200,209]
+spacefill
+
+define CON1 selected
+

@@ -1,0 +1,84 @@
+select all
+color [200,200,200]
+
+
+select   ILE37, GLY48, LEU51, SER63, HIS88, PHE90, GLY98, HIS133, GLY134
+select selected and :A
+color [160,37,96]
+spacefill
+
+define CON9 selected
+
+
+select    VAL13, SER17, ARG31, TRP35, ALA66, ALA68, LEU70, ASN74, SER100, ILE116
+select selected or VAL127, ALA129, VAL135
+select selected and :A
+color [240,125,171]
+spacefill
+
+define CON8 selected
+
+
+select    ARG4, GLU6, SER25, PRO27, VAL30, VAL39, PRO41, PHE49, GLU56, TRP62
+select selected or CYS64, ASP96, ASN101, PHE102, PRO111, GLY114, PRO132
+select selected and :A
+color [250,201,222]
+spacefill
+
+define CON7 selected
+
+
+select    SER5, THR8, GLU14, ARG15, PHE16, PHE50, GLN52, CYS53, ASN54, GLN67
+select selected or ILE86, LEU89, PHE91, ASN95, TRP105, PHE115, ASP118, ASP119, VAL121, VAL125
+select selected or ASP130, TRP137
+select selected and :A
+color [252,237,244]
+spacefill
+
+define CON6 selected
+
+
+select    THR1, SER2, PHE9, GLN10, THR12, LEU19, PRO26, PHE29, LYS36, MET40
+select selected or SER59, THR60, SER83, ARG84, SER87, HIS92, PHE99, SER106, VAL108, GLU112
+select selected or PHE123, GLU124, ALA131
+select selected and :A
+color [255,255,255]
+spacefill
+
+define CON5 selected
+
+
+select    TRP3, ALA7, PHE11, ASN32, PRO34, LYS45, ILE72, GLU94, MET103, GLU107
+select selected or LYS113, ALA136
+select selected and :A
+color [234,255,255]
+spacefill
+
+define CON4 selected
+
+
+select    CYS28, MET38, ARG42, GLN44, SER46, VAL47, ALA55, HIS65, VAL69, LYS71
+select selected or TYR75, SER81, PHE82, ARG85, TRP97, ALA104, THR122, GLN128
+select selected and :A
+color [215,255,255]
+spacefill
+
+define CON3 selected
+
+
+select    ARG18, SER20, GLU21, SER22, VAL23, LEU24, LEU33, PHE43, ILE73, ASP78
+select selected or LYS93, ASP110, LYS120
+select selected and :A
+color [140,255,255]
+spacefill
+
+define CON2 selected
+
+
+select    SER57, ASP58, SER61, ARG76, ASP77, GLU79, LYS80, THR109, ASP117, PHE126
+select selected and :A
+color [16,200,209]
+spacefill
+
+define CON1 selected
+

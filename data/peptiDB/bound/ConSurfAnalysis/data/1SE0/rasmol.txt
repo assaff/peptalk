@@ -1,0 +1,79 @@
+select all
+color [200,200,200]
+
+
+select   GLU6, ARG9, ALA27, THR29, GLY30, ASP38, VAL40, CYS42, CYS45, TRP52
+select selected or ASP56, HIS62, PRO67, CYS69
+select selected and :A
+color [160,37,96]
+spacefill
+
+define CON9 selected
+
+
+select    ASP2, THR12, TRP16, PRO17, LEU26, PHE43, PRO58
+select selected and :A
+color [240,125,171]
+spacefill
+
+define CON8 selected
+
+
+select    PHE13, MET31, PHE33, THR34, ILE49, GLU61, LEU71
+select selected and :A
+color [250,201,222]
+spacefill
+
+define CON7 selected
+
+
+select    LEU3, LYS23, TYR32, HIS35, VAL47, SER51, SER66, ASN68, ASN83, LEU87
+select selected or PRO93, ILE94, SER95, TYR96, ASP97
+select selected and :A
+color [252,237,244]
+spacefill
+
+define CON6 selected
+
+
+select    ASN1, THR8, LEU21, LYS41, GLY46, GLU53, GLN57, GLN63, ARG64, PRO70
+select selected or LEU72, ARG74, THR77, ASN79, PRO81, GLU85
+select selected and :A
+color [255,255,255]
+spacefill
+
+define CON5 selected
+
+
+select    GLU7, LEU10, ASP22, GLN28, LYS39, GLU48, ARG73, ALA84, ALA86, ASP88
+select selected or PRO92
+select selected and :A
+color [234,255,255]
+spacefill
+
+define CON4 selected
+
+
+select    ASN4, ASP15, GLN25, PHE44, GLY50, GLU55, TRP65, VAL80, LEU91
+select selected and :A
+color [215,255,255]
+spacefill
+
+define CON3 selected
+
+
+select    ARG5, ARG24, GLY37, PRO60, ARG75, ASN78, ILE82, ARG89
+select selected and :A
+color [140,255,255]
+spacefill
+
+define CON2 selected
+
+
+select    LYS11, THR14, LEU18, ASP19, TRP20, ALA36, GLN54, VAL59, THR76, ILE90
+select selected and :A
+color [16,200,209]
+spacefill
+
+define CON1 selected
+

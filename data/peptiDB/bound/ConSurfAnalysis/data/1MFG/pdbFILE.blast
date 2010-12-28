@@ -1,0 +1,1667 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_A  95
+         (95 letters)
+
+Database: sprot 
+           412,525 sequences; 148,809,765 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q96RT1|LAP2_HUMAN Protein LAP2 OS=Homo sapiens GN=ERBB2IP PE=...   187   2e-47
+sp|Q80TH2|LAP2_MOUSE Protein LAP2 OS=Mus musculus GN=Erbb2ip PE=...   182   4e-46
+sp|Q96NW7|LRRC7_HUMAN Leucine-rich repeat-containing protein 7 O...   139   4e-33
+sp|Q80TE7|LRRC7_MOUSE Leucine-rich repeat-containing protein 7 O...   139   6e-33
+sp|P70587|LRRC7_RAT Leucine-rich repeat-containing protein 7 OS=...   139   6e-33
+sp|Q7KRY7|LAP4_DROME Protein lap4 OS=Drosophila melanogaster GN=...    66   5e-11
+sp|Q80U72|LAP4_MOUSE Protein LAP4 OS=Mus musculus GN=Scrib PE=1 ...    60   2e-09
+sp|Q14160|LAP4_HUMAN Protein LAP4 OS=Homo sapiens GN=SCRIB PE=1 ...    60   4e-09
+sp|O61967|LAP1_CAEEL Protein lap1 OS=Caenorhabditis elegans GN=l...    56   4e-08
+sp|Q15700|DLG2_HUMAN Disks large homolog 2 OS=Homo sapiens GN=DL...    55   7e-08
+sp|Q63622|DLG2_RAT Disks large homolog 2 OS=Rattus norvegicus GN...    55   8e-08
+sp|Q9DBG9|TX1B3_MOUSE Tax1-binding protein 3 OS=Mus musculus GN=...    54   2e-07
+sp|O14907|TX1B3_HUMAN Tax1-binding protein 3 OS=Homo sapiens GN=...    54   2e-07
+sp|Q91XM9|DLG2_MOUSE Disks large homolog 2 OS=Mus musculus GN=Dl...    54   3e-07
+sp|Q5PYH7|DLG2_DANRE Disks large homolog 2 OS=Danio rerio GN=dlg...    54   3e-07
+sp|Q62108|DLG4_MOUSE Disks large homolog 4 OS=Mus musculus GN=Dl...    51   1e-06
+sp|P31016|DLG4_RAT Disks large homolog 4 OS=Rattus norvegicus GN...    50   3e-06
+sp|P78352|DLG4_HUMAN Disks large homolog 4 OS=Homo sapiens GN=DL...    50   3e-06
+sp|Q811D0|DLG1_MOUSE Disks large homolog 1 OS=Mus musculus GN=Dl...    50   4e-06
+sp|Q12959|DLG1_HUMAN Disks large homolog 1 OS=Homo sapiens GN=DL...    50   4e-06
+sp|Q5PYH6|DLG1_DANRE Disks large homolog 1 OS=Danio rerio GN=dlg...    50   4e-06
+sp|Q68DX3|FRPD2_HUMAN FERM and PDZ domain-containing protein 2 O...    49   6e-06
+sp|Q62936|DLG3_RAT Disks large homolog 3 OS=Rattus norvegicus GN...    49   8e-06
+sp|Q92796|DLG3_HUMAN Disks large homolog 3 OS=Homo sapiens GN=DL...    49   8e-06
+sp|P70175|DLG3_MOUSE Disks large homolog 3 OS=Mus musculus GN=Dl...    49   8e-06
+sp|Q5PYH5|DLG1L_DANRE Discs large homolog 1-like protein OS=Dani...    48   1e-05
+sp|Q6R005|DLG4_DANRE Disks large homolog 4 OS=Danio rerio GN=dlg...    48   1e-05
+sp|Q9UPQ7|PZRN3_HUMAN PDZ domain-containing RING finger protein ...    48   1e-05
+sp|Q9UDY2|ZO2_HUMAN Tight junction protein ZO-2 OS=Homo sapiens ...    48   1e-05
+sp|Q64512|PTN13_MOUSE Tyrosine-protein phosphatase non-receptor ...    48   2e-05
+sp|Q95168|ZO2_CANFA Tight junction protein ZO-2 OS=Canis familia...    48   2e-05
+sp|Q62696|DLG1_RAT Disks large homolog 1 OS=Rattus norvegicus GN...    47   2e-05
+sp|Q9Z0U1|ZO2_MOUSE Tight junction protein ZO-2 OS=Mus musculus ...    47   2e-05
+sp|Q69ZS0|PZRN3_MOUSE PDZ domain-containing RING finger protein ...    47   2e-05
+sp|P68907|PZRN3_RAT PDZ domain-containing RING finger protein 3 ...    47   2e-05
+sp|Q9WVJ4|SYJ2B_RAT Synaptojanin-2-binding protein OS=Rattus nor...    47   2e-05
+sp|O75970|MPDZ_HUMAN Multiple PDZ domain protein OS=Homo sapiens...    47   3e-05
+sp|O97758|ZO1_CANFA Tight junction protein ZO-1 OS=Canis familia...    47   3e-05
+sp|Q07157|ZO1_HUMAN Tight junction protein ZO-1 OS=Homo sapiens ...    47   3e-05
+sp|P39447|ZO1_MOUSE Tight junction protein ZO-1 OS=Mus musculus ...    47   3e-05
+sp|Q9CZG9|PDZ11_MOUSE PDZ domain-containing protein 11 OS=Mus mu...    47   3e-05
+sp|Q32LE7|PDZ11_BOVIN PDZ domain-containing protein 11 OS=Bos ta...    47   4e-05
+sp|Q6QA76|PDZ11_PIG PDZ domain-containing protein 11 OS=Sus scro...    47   4e-05
+sp|Q9Y3R0|GRIP1_HUMAN Glutamate receptor-interacting protein 1 O...    47   4e-05
+sp|Q5ZIK2|PDZ11_CHICK PDZ domain-containing protein 11 OS=Gallus...    47   4e-05
+sp|Q5EBL8|PDZ11_HUMAN PDZ domain-containing protein 11 OS=Homo s...    46   5e-05
+sp|P97879|GRIP1_RAT Glutamate receptor-interacting protein 1 OS=...    46   5e-05
+sp|Q925T6|GRIP1_MOUSE Glutamate receptor-interacting protein 1 O...    46   5e-05
+sp|Q6NXB2|PDZ11_DANRE PDZ domain-containing protein 11 OS=Danio ...    46   6e-05
+sp|Q12923|PTN13_HUMAN Tyrosine-protein phosphatase non-receptor ...    46   6e-05
+sp|P31007|DLG1_DROME Disks large 1 tumor suppressor protein OS=D...    46   6e-05
+sp|P57105|SYJ2B_HUMAN Synaptojanin-2-binding protein OS=Homo sap...    45   8e-05
+sp|O55164|MPDZ_RAT Multiple PDZ domain protein OS=Rattus norvegi...    45   1e-04
+sp|Q8VBX6|MPDZ_MOUSE Multiple PDZ domain protein OS=Mus musculus...    45   1e-04
+sp|Q09506|YQI7_CAEEL Uncharacterized protein C45G9.7 OS=Caenorha...    44   2e-04
+sp|O95049|ZO3_HUMAN Tight junction protein ZO-3 OS=Homo sapiens ...    44   2e-04
+sp|Q6ZMN7|PZRN4_HUMAN PDZ domain-containing RING finger protein ...    44   2e-04
+sp|Q2KIB6|LIN7B_BOVIN Lin-7 homolog B OS=Bos taurus GN=LIN7B PE=...    44   2e-04
+sp|Q9HAP6|LIN7B_HUMAN Lin-7 homolog B OS=Homo sapiens GN=LIN7B P...    44   2e-04
+sp|Q8N448|LNX2_HUMAN Ligand of Numb protein X 2 OS=Homo sapiens ...    44   3e-04
+sp|O88951|LIN7B_MOUSE Lin-7 homolog B OS=Mus musculus GN=Lin7b P...    44   3e-04
+sp|Q9Z252|LIN7B_RAT Lin-7 homolog B OS=Rattus norvegicus GN=Lin7...    44   3e-04
+sp|Q91XL2|LNX2_MOUSE Ligand of Numb protein X 2 OS=Mus musculus ...    43   4e-04
+sp|Q9C0E4|GRIP2_HUMAN Glutamate receptor-interacting protein 2 O...    43   5e-04
+sp|Q9ES64|USH1C_MOUSE Harmonin OS=Mus musculus GN=Ush1c PE=1 SV=1      43   5e-04
+sp|Q80VW5|WHRN_MOUSE Whirlin OS=Mus musculus GN=Whrn PE=1 SV=3         42   6e-04
+sp|Q32LM6|LIN7A_BOVIN Lin-7 homolog A OS=Bos taurus GN=LIN7A PE=...    42   0.001
+sp|O14910|LIN7A_HUMAN Lin-7 homolog A OS=Homo sapiens GN=LIN7A P...    42   0.001
+sp|Q8JZS0|LIN7A_MOUSE Lin-7 homolog A OS=Mus musculus GN=Lin7a P...    42   0.001
+sp|Q9Z250|LIN7A_RAT Lin-7 homolog A OS=Rattus norvegicus GN=Lin7...    42   0.001
+
+>sp|Q96RT1|LAP2_HUMAN Protein LAP2 OS=Homo sapiens GN=ERBB2IP PE=1
+            SV=2
+          Length = 1412
+
+ Score =  187 bits (474), Expect = 2e-47,   Method: Composition-based stats.
+ Identities = 92/92 (100%), Positives = 92/92 (100%)
+
+Query: 4    EIRVRVEKDPELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKLLQPGDKIIQANG 63
+            EIRVRVEKDPELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKLLQPGDKIIQANG
+Sbjct: 1321 EIRVRVEKDPELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKLLQPGDKIIQANG 1380
+
+Query: 64   YSFINIEHGQAVSLLKTFQNTVELIIVREVSS 95
+            YSFINIEHGQAVSLLKTFQNTVELIIVREVSS
+Sbjct: 1381 YSFINIEHGQAVSLLKTFQNTVELIIVREVSS 1412
+
+
+>sp|Q80TH2|LAP2_MOUSE Protein LAP2 OS=Mus musculus GN=Erbb2ip PE=1
+            SV=2
+          Length = 1402
+
+ Score =  182 bits (462), Expect = 4e-46,   Method: Composition-based stats.
+ Identities = 89/92 (96%), Positives = 90/92 (97%)
+
+Query: 4    EIRVRVEKDPELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKLLQPGDKIIQANG 63
+            EIRVRVEKDPELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKLLQPGDKIIQANG
+Sbjct: 1311 EIRVRVEKDPELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKLLQPGDKIIQANG 1370
+
+Query: 64   YSFINIEHGQAVSLLKTFQNTVELIIVREVSS 95
+            YSFINIEHGQAVSLLKTF N V+LIIVREVSS
+Sbjct: 1371 YSFINIEHGQAVSLLKTFHNAVDLIIVREVSS 1402
+
+
+>sp|Q96NW7|LRRC7_HUMAN Leucine-rich repeat-containing protein 7
+            OS=Homo sapiens GN=LRRC7 PE=1 SV=1
+          Length = 1537
+
+ Score =  139 bits (350), Expect = 4e-33,   Method: Composition-based stats.
+ Identities = 63/88 (71%), Positives = 80/88 (90%)
+
+Query: 7    VRVEKDPELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKLLQPGDKIIQANGYSF 66
+            VR+EK+P LGFSISGG+ G+GNPF+P D GIFVTRVQP+GPAS LLQPGDKI+QANG+SF
+Sbjct: 1449 VRIEKNPGLGFSISGGISGQGNPFKPSDKGIFVTRVQPDGPASNLLQPGDKILQANGHSF 1508
+
+Query: 67   INIEHGQAVSLLKTFQNTVELIIVREVS 94
+            +++EH +AV LLK+FQNTV+L+I RE++
+Sbjct: 1509 VHMEHEKAVLLLKSFQNTVDLVIQRELT 1536
+
+
+>sp|Q80TE7|LRRC7_MOUSE Leucine-rich repeat-containing protein 7 OS=Mus
+            musculus GN=Lrrc7 PE=1 SV=2
+          Length = 1490
+
+ Score =  139 bits (349), Expect = 6e-33,   Method: Composition-based stats.
+ Identities = 63/88 (71%), Positives = 80/88 (90%)
+
+Query: 7    VRVEKDPELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKLLQPGDKIIQANGYSF 66
+            VR+EK+P LGFSISGG+ G+GNPF+P D GIFVTRVQP+GPAS LLQPGDKI+QANG+SF
+Sbjct: 1402 VRIEKNPGLGFSISGGISGQGNPFKPSDKGIFVTRVQPDGPASNLLQPGDKILQANGHSF 1461
+
+Query: 67   INIEHGQAVSLLKTFQNTVELIIVREVS 94
+            +++EH +AV LLK+FQNTV+L+I RE++
+Sbjct: 1462 VHMEHEKAVLLLKSFQNTVDLVIQRELT 1489
+
+
+>sp|P70587|LRRC7_RAT Leucine-rich repeat-containing protein 7
+            OS=Rattus norvegicus GN=Lrrc7 PE=1 SV=1
+          Length = 1495
+
+ Score =  139 bits (349), Expect = 6e-33,   Method: Composition-based stats.
+ Identities = 63/88 (71%), Positives = 80/88 (90%)
+
+Query: 7    VRVEKDPELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKLLQPGDKIIQANGYSF 66
+            VR+EK+P LGFSISGG+ G+GNPF+P D GIFVTRVQP+GPAS LLQPGDKI+QANG+SF
+Sbjct: 1407 VRIEKNPGLGFSISGGISGQGNPFKPSDKGIFVTRVQPDGPASNLLQPGDKILQANGHSF 1466
+
+Query: 67   INIEHGQAVSLLKTFQNTVELIIVREVS 94
+            +++EH +AV LLK+FQNTV+L+I RE++
+Sbjct: 1467 VHMEHEKAVLLLKSFQNTVDLVIQRELT 1494
+
+
+>sp|Q7KRY7|LAP4_DROME Protein lap4 OS=Drosophila melanogaster
+           GN=scrib PE=1 SV=1
+          Length = 1851
+
+ Score = 66.2 bits (160), Expect = 5e-11,   Method: Composition-based stats.
+ Identities = 37/81 (45%), Positives = 52/81 (64%), Gaps = 3/81 (3%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL-LQPGDKIIQANGYSFINIEHGQ 73
+           LG SI+GG G    PF+ DDDGIF++RV   GPA    L+ GDK+I+ NG   ++ +H Q
+Sbjct: 741 LGLSIAGGKGS--TPFKGDDDGIFISRVTEAGPADLAGLKVGDKVIKVNGIVVVDADHYQ 798
+
+Query: 74  AVSLLKTFQNTVELIIVREVS 94
+           AV +LK     + L++ REV+
+Sbjct: 799 AVQVLKACGAVLVLVVQREVT 819
+
+
+
+ Score = 57.8 bits (138), Expect = 1e-08,   Method: Composition-based stats.
+ Identities = 30/94 (31%), Positives = 55/94 (58%), Gaps = 3/94 (3%)
+
+Query: 1    GSMEIRVRVEKDPELGFSISGGVGG-RGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDK 57
+            G  E+ +   +   LG  I GG+ G RGNP  P D+G+FV+++   G A +   L+ G +
+Sbjct: 1333 GFQEVLLSKAEGERLGMHIKGGLNGQRGNPADPSDEGVFVSKINSVGAARRDGRLKVGMR 1392
+
+Query: 58   IIQANGYSFINIEHGQAVSLLKTFQNTVELIIVR 91
+            +++ NG+S +   H  AV++L+   N ++L++ +
+Sbjct: 1393 LLEVNGHSLLGASHQDAVNVLRNAGNEIQLVVCK 1426
+
+
+
+ Score = 50.1 bits (118), Expect = 3e-06,   Method: Composition-based stats.
+ Identities = 31/80 (38%), Positives = 44/80 (55%), Gaps = 4/80 (5%)
+
+Query: 15   LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANGYSFINIEHG 72
+            LGFSI+GG G    PF+ D DGIF++R+   G A +   +  GD+++  NG       H 
+Sbjct: 941  LGFSIAGGKGS--PPFKDDCDGIFISRITEGGLAYRDGKIMVGDRVMAINGNDMTEAHHD 998
+
+Query: 73   QAVSLLKTFQNTVELIIVRE 92
+             AV+ L   Q  V L++ RE
+Sbjct: 999  AAVACLTEPQRFVRLVLQRE 1018
+
+
+>sp|Q80U72|LAP4_MOUSE Protein LAP4 OS=Mus musculus GN=Scrib PE=1
+           SV=2
+          Length = 1612
+
+ Score = 60.5 bits (145), Expect = 2e-09,   Method: Composition-based stats.
+ Identities = 32/79 (40%), Positives = 52/79 (65%), Gaps = 3/79 (3%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL-LQPGDKIIQANGYSFINIEHGQ 73
+           LG SI+GG G    P++ DD+GIF++RV  EGPA++  ++ GDK+++ NG +  + EH +
+Sbjct: 724 LGISIAGGKGS--TPYKGDDEGIFISRVSEEGPAARAGVRVGDKLLEVNGVALQDAEHHE 781
+
+Query: 74  AVSLLKTFQNTVELIIVRE 92
+           AV  L+     V++ + RE
+Sbjct: 782 AVEALRGAGAAVQMRVWRE 800
+
+
+
+ Score = 59.3 bits (142), Expect = 6e-09,   Method: Composition-based stats.
+ Identities = 37/88 (42%), Positives = 49/88 (55%), Gaps = 6/88 (6%)
+
+Query: 7   VRVEKDPELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANGY 64
+           VR EK   LGFSI+GG G    P+R  D GIF++R+   G A +   LQ GD+++  NG 
+Sbjct: 852 VRSEKG--LGFSIAGGKGS--TPYRAGDGGIFISRIAEGGAAHRAGTLQVGDRVLSINGV 907
+
+Query: 65  SFINIEHGQAVSLLKTFQNTVELIIVRE 92
+                 H  AVSLL     T+ L++ RE
+Sbjct: 908 DMTEARHDHAVSLLTAASPTISLLLERE 935
+
+
+
+ Score = 57.4 bits (137), Expect = 2e-08,   Method: Composition-based stats.
+ Identities = 31/92 (33%), Positives = 55/92 (59%), Gaps = 3/92 (3%)
+
+Query: 1    GSMEIRVRVEKDPELGFSISGGVGGR-GNPFRPDDDGIFVTRVQPEGPASK--LLQPGDK 57
+            G  E+ ++     +LG SI GG  G  GNP  P D+GIF+++V P G A +   L+ G +
+Sbjct: 1083 GMRELCIQKAPGEKLGISIRGGAKGHAGNPCDPTDEGIFISKVSPTGAAGRDGRLRVGLR 1142
+
+Query: 58   IIQANGYSFINIEHGQAVSLLKTFQNTVELII 89
+            +++ N  S + + H +AV LL++  +T+ +++
+Sbjct: 1143 LLEVNQQSLLGLTHAEAVQLLRSVGDTLTVLV 1174
+
+
+
+ Score = 45.8 bits (107), Expect = 5e-05,   Method: Composition-based stats.
+ Identities = 26/65 (40%), Positives = 37/65 (56%), Gaps = 1/65 (1%)
+
+Query: 15   LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL-LQPGDKIIQANGYSFINIEHGQ 73
+            LG SI GG     +PF   D G+F+++V P G A++  L+ GD+I+  NG       H +
+Sbjct: 1000 LGLSIVGGSDHSSHPFGVQDPGVFISKVLPRGLAARCGLRVGDRILAVNGQDVREATHQE 1059
+
+Query: 74   AVSLL 78
+            AVS L
+Sbjct: 1060 AVSAL 1064
+
+
+>sp|Q14160|LAP4_HUMAN Protein LAP4 OS=Homo sapiens GN=SCRIB PE=1
+           SV=3
+          Length = 1630
+
+ Score = 59.7 bits (143), Expect = 4e-09,   Method: Composition-based stats.
+ Identities = 32/79 (40%), Positives = 51/79 (64%), Gaps = 3/79 (3%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL-LQPGDKIIQANGYSFINIEHGQ 73
+           LG SI+GG G    P++ DD+GIF++RV  EGPA++  ++ GDK+++ NG +    EH +
+Sbjct: 738 LGISIAGGKGS--TPYKGDDEGIFISRVSEEGPAARAGVRVGDKLLEVNGVALQGAEHHE 795
+
+Query: 74  AVSLLKTFQNTVELIIVRE 92
+           AV  L+     V++ + RE
+Sbjct: 796 AVEALRGAGTAVQMRVWRE 814
+
+
+
+ Score = 57.4 bits (137), Expect = 2e-08,   Method: Composition-based stats.
+ Identities = 32/92 (34%), Positives = 55/92 (59%), Gaps = 3/92 (3%)
+
+Query: 1    GSMEIRVRVEKDPELGFSISGGVGGR-GNPFRPDDDGIFVTRVQPEGPASK--LLQPGDK 57
+            G  E+ ++      LG SI GG  G  GNP  P D+GIF+++V P G A +   L+ G +
+Sbjct: 1097 GLRELCIQKAPGERLGISIRGGARGHAGNPRDPTDEGIFISKVSPTGAAGRDGRLRVGLR 1156
+
+Query: 58   IIQANGYSFINIEHGQAVSLLKTFQNTVELII 89
+            +++ N  S + + HG+AV LL++  +T+ +++
+Sbjct: 1157 LLEVNQQSLLGLTHGEAVQLLRSVGDTLTVLV 1188
+
+
+
+ Score = 57.0 bits (136), Expect = 3e-08,   Method: Composition-based stats.
+ Identities = 34/80 (42%), Positives = 45/80 (56%), Gaps = 4/80 (5%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANGYSFINIEHG 72
+           LGFSI+GG G    P+R  D GIFV+R+   G A +   LQ GD+++  NG       H 
+Sbjct: 872 LGFSIAGGKGS--TPYRAGDAGIFVSRIAEGGAAHRAGTLQVGDRVLSINGVDVTEARHD 929
+
+Query: 73  QAVSLLKTFQNTVELIIVRE 92
+            AVSLL     T+ L++ RE
+Sbjct: 930 HAVSLLTAASPTIALLLERE 949
+
+
+
+ Score = 44.7 bits (104), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 29/76 (38%), Positives = 43/76 (56%), Gaps = 2/76 (2%)
+
+Query: 4    EIRVRVEKDPELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL-LQPGDKIIQAN 62
+            EIR+     P LG SI GG     +PF   + G+F+++V P G A++  L+ GD+I+  N
+Sbjct: 1004 EIRLPRAGGP-LGLSIVGGSDHSSHPFGVQEPGVFISKVLPRGLAARSGLRVGDRILAVN 1062
+
+Query: 63   GYSFINIEHGQAVSLL 78
+            G    +  H +AVS L
+Sbjct: 1063 GQDVRDATHQEAVSAL 1078
+
+
+>sp|O61967|LAP1_CAEEL Protein lap1 OS=Caenorhabditis elegans
+           GN=let-413 PE=1 SV=3
+          Length = 699
+
+ Score = 56.2 bits (134), Expect = 4e-08,   Method: Composition-based stats.
+ Identities = 34/92 (36%), Positives = 52/92 (56%), Gaps = 4/92 (4%)
+
+Query: 7   VRVEKDP--ELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL-LQPGDKIIQANG 63
+           +R++KD   +LG S +GG      P    D G+FVT+V P   A +  L+ GDK+I+AN 
+Sbjct: 569 IRIQKDDTGKLGLSFAGGTSNDPAPNSNGDSGLFVTKVTPGSAAYRCGLREGDKLIRAND 628
+
+Query: 64  YSFINIEHGQAVSLLKTFQNTVELIIVREVSS 95
+            + IN     A+  +K  + TVEL+++R   S
+Sbjct: 629 VNMINASQDNAMEAIKK-RETVELVVLRRSPS 659
+
+
+>sp|Q15700|DLG2_HUMAN Disks large homolog 2 OS=Homo sapiens GN=DLG2
+           PE=1 SV=3
+          Length = 870
+
+ Score = 55.5 bits (132), Expect = 7e-08,   Method: Composition-based stats.
+ Identities = 35/90 (38%), Positives = 56/90 (62%), Gaps = 9/90 (10%)
+
+Query: 5   IRVRVEKDPE-LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQA 61
+           + +++ K P+ LGFSI+GGVG   N   P D+ I+VT++   G A K   LQ GD+++  
+Sbjct: 192 VEIKLFKGPKGLGFSIAGGVG---NQHIPGDNSIYVTKIIDGGAAQKDGRLQVGDRLLMV 248
+
+Query: 62  NGYSFINIEHGQAVSLLKTFQNTVELIIVR 91
+           N YS   + H +AV++LK   NT E++ ++
+Sbjct: 249 NNYSLEEVTHEEAVAILK---NTSEVVYLK 275
+
+
+
+ Score = 46.2 bits (108), Expect = 5e-05,   Method: Composition-based stats.
+ Identities = 30/79 (37%), Positives = 43/79 (54%), Gaps = 5/79 (6%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANGYSFINIEHG 72
+           LGFSI+GG     NP   DD GIF+T++ P G A++   L+  D I++ N      + H 
+Sbjct: 108 LGFSIAGGTD---NPHIGDDPGIFITKIIPGGAAAEDGRLRVNDCILRVNEVDVSEVSHS 164
+
+Query: 73  QAVSLLKTFQNTVELIIVR 91
+           +AV  LK   + V L + R
+Sbjct: 165 KAVEALKEAGSIVRLYVRR 183
+
+
+
+ Score = 42.0 bits (97), Expect = 9e-04,   Method: Composition-based stats.
+ Identities = 30/76 (39%), Positives = 38/76 (50%), Gaps = 11/76 (14%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPA--SKLLQPGDKIIQANGYSFINIEHG 72
+           LGF+I GG          D +GIFV+ +   GPA  S  LQ GD+I+  NG       H 
+Sbjct: 431 LGFNIVGG---------EDGEGIFVSFILAGGPADLSGELQRGDQILSVNGIDLRGASHE 481
+
+Query: 73  QAVSLLKTFQNTVELI 88
+           QA + LK    TV +I
+Sbjct: 482 QAAAALKGAGQTVTII 497
+
+
+>sp|Q63622|DLG2_RAT Disks large homolog 2 OS=Rattus norvegicus
+           GN=Dlg2 PE=1 SV=1
+          Length = 852
+
+ Score = 55.5 bits (132), Expect = 8e-08,   Method: Composition-based stats.
+ Identities = 34/86 (39%), Positives = 52/86 (60%), Gaps = 6/86 (6%)
+
+Query: 5   IRVRVEKDPE-LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQA 61
+           + +++ K P+ LGFSI+GGVG   N   P D+ I+VT++   G A K   LQ GD+++  
+Sbjct: 192 VEIKLFKGPKGLGFSIAGGVG---NQHIPGDNSIYVTKIIDGGAAQKDGRLQVGDRLLMV 248
+
+Query: 62  NGYSFINIEHGQAVSLLKTFQNTVEL 87
+           N YS   + H +AV++LK   + V L
+Sbjct: 249 NNYSLEEVTHEEAVAILKNTSDVVYL 274
+
+
+
+ Score = 46.2 bits (108), Expect = 5e-05,   Method: Composition-based stats.
+ Identities = 30/79 (37%), Positives = 43/79 (54%), Gaps = 5/79 (6%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANGYSFINIEHG 72
+           LGFSI+GG     NP   DD GIF+T++ P G A++   L+  D I++ N      + H 
+Sbjct: 108 LGFSIAGGTD---NPHIGDDPGIFITKIIPGGAAAEDGRLRVNDCILRVNEVDVSEVSHS 164
+
+Query: 73  QAVSLLKTFQNTVELIIVR 91
+           +AV  LK   + V L + R
+Sbjct: 165 KAVEALKEAGSIVRLYVRR 183
+
+
+
+ Score = 42.0 bits (97), Expect = 0.001,   Method: Composition-based stats.
+ Identities = 30/76 (39%), Positives = 38/76 (50%), Gaps = 11/76 (14%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPA--SKLLQPGDKIIQANGYSFINIEHG 72
+           LGF+I GG          D +GIFV+ +   GPA  S  LQ GD+I+  NG       H 
+Sbjct: 431 LGFNIVGG---------EDGEGIFVSFILAGGPADLSGELQRGDQILSVNGIDLRGASHE 481
+
+Query: 73  QAVSLLKTFQNTVELI 88
+           QA + LK    TV +I
+Sbjct: 482 QAAAALKGAGQTVTII 497
+
+
+>sp|Q9DBG9|TX1B3_MOUSE Tax1-binding protein 3 OS=Mus musculus
+           GN=Tax1bp3 PE=1 SV=1
+          Length = 124
+
+ Score = 53.9 bits (128), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 39/93 (41%), Positives = 52/93 (55%), Gaps = 6/93 (6%)
+
+Query: 6   RVRVEKDPELGFSISGGVGG--RGNPFRPD--DDGIFVTRVQPEGPASKL-LQPGDKIIQ 60
+           ++R  ++  LGFSI GG+      NPF  D  D GI+VTRV   GPA    LQ GDKI+Q
+Sbjct: 20  KLRQGENLILGFSIGGGIDQDPSQNPFSEDKTDKGIYVTRVSEGGPAEIAGLQIGDKIMQ 79
+
+Query: 61  ANGYSFINIEHGQAVS-LLKTFQNTVELIIVRE 92
+            NG+    + H QA   L K  +  V L++ R+
+Sbjct: 80  VNGWDMTMVTHDQARKRLTKRSEEVVRLLVTRQ 112
+
+
+>sp|O14907|TX1B3_HUMAN Tax1-binding protein 3 OS=Homo sapiens
+           GN=TAX1BP3 PE=1 SV=2
+          Length = 124
+
+ Score = 53.9 bits (128), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 39/93 (41%), Positives = 52/93 (55%), Gaps = 6/93 (6%)
+
+Query: 6   RVRVEKDPELGFSISGGVGG--RGNPFRPD--DDGIFVTRVQPEGPASKL-LQPGDKIIQ 60
+           ++R  ++  LGFSI GG+      NPF  D  D GI+VTRV   GPA    LQ GDKI+Q
+Sbjct: 20  KLRQGENLILGFSIGGGIDQDPSQNPFSEDKTDKGIYVTRVSEGGPAEIAGLQIGDKIMQ 79
+
+Query: 61  ANGYSFINIEHGQAVS-LLKTFQNTVELIIVRE 92
+            NG+    + H QA   L K  +  V L++ R+
+Sbjct: 80  VNGWDMTMVTHDQARKRLTKRSEEVVRLLVTRQ 112
+
+
+>sp|Q91XM9|DLG2_MOUSE Disks large homolog 2 OS=Mus musculus GN=Dlg2
+           PE=1 SV=1
+          Length = 852
+
+ Score = 53.5 bits (127), Expect = 3e-07,   Method: Composition-based stats.
+ Identities = 33/86 (38%), Positives = 52/86 (60%), Gaps = 6/86 (6%)
+
+Query: 5   IRVRVEKDPE-LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQA 61
+           + +++ K P+ LGFSI+GGVG   +   P D+ I+VT++   G A K   LQ GD+++  
+Sbjct: 192 VEIKLFKGPKGLGFSIAGGVG---DQHIPGDNSIYVTKIIDGGAAQKDGRLQVGDRLLMV 248
+
+Query: 62  NGYSFINIEHGQAVSLLKTFQNTVEL 87
+           N YS   + H +AV++LK   + V L
+Sbjct: 249 NNYSLEEVTHEEAVAILKNTSDVVYL 274
+
+
+
+ Score = 43.1 bits (100), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 29/79 (36%), Positives = 42/79 (53%), Gaps = 5/79 (6%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANGYSFINIEHG 72
+           LGFSI+GG     NP    D GIF+T++ P G A++   L+  D I++ N      + H 
+Sbjct: 108 LGFSIAGGTD---NPHIGGDPGIFITKIIPGGAAAEDGRLRVNDCILRVNEVDVSEVSHS 164
+
+Query: 73  QAVSLLKTFQNTVELIIVR 91
+           +AV  LK   + V L + R
+Sbjct: 165 KAVEALKEAGSIVRLYVRR 183
+
+
+
+ Score = 42.0 bits (97), Expect = 0.001,   Method: Composition-based stats.
+ Identities = 30/76 (39%), Positives = 38/76 (50%), Gaps = 11/76 (14%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPA--SKLLQPGDKIIQANGYSFINIEHG 72
+           LGF+I GG          D +GIFV+ +   GPA  S  LQ GD+I+  NG       H 
+Sbjct: 431 LGFNIVGG---------EDGEGIFVSFILAGGPADLSGELQRGDQILSVNGIDLRGASHE 481
+
+Query: 73  QAVSLLKTFQNTVELI 88
+           QA + LK    TV +I
+Sbjct: 482 QAAAALKGAGQTVTII 497
+
+
+>sp|Q5PYH7|DLG2_DANRE Disks large homolog 2 OS=Danio rerio GN=dlg2
+           PE=2 SV=1
+          Length = 881
+
+ Score = 53.5 bits (127), Expect = 3e-07,   Method: Composition-based stats.
+ Identities = 34/91 (37%), Positives = 54/91 (59%), Gaps = 6/91 (6%)
+
+Query: 7   VRVEKDPE-LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANG 63
+           +++ K P+ LGFSI+GGVG   N   P D+ I+VT++   G A K   LQ GD+++  N 
+Sbjct: 251 IKLIKGPKGLGFSIAGGVG---NQHIPGDNSIYVTKIIDGGAAQKDGRLQVGDRLLMVNN 307
+
+Query: 64  YSFINIEHGQAVSLLKTFQNTVELIIVREVS 94
+           Y+   + H +AV++LK   + V L + +  S
+Sbjct: 308 YTLEEVTHEEAVAILKNTSDVVYLKVGKPTS 338
+
+
+
+ Score = 45.8 bits (107), Expect = 6e-05,   Method: Composition-based stats.
+ Identities = 30/79 (37%), Positives = 43/79 (54%), Gaps = 5/79 (6%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANGYSFINIEHG 72
+           LGFSI+GG     NP   DD GIF+T++ P G A++   L+  D I++ N      + H 
+Sbjct: 165 LGFSIAGGTD---NPHIGDDPGIFITKIIPGGAAAEDGRLRVNDCILRVNESDVSEVSHS 221
+
+Query: 73  QAVSLLKTFQNTVELIIVR 91
+           +AV  LK   + V L + R
+Sbjct: 222 KAVEALKAAGSIVRLYVRR 240
+
+
+>sp|Q62108|DLG4_MOUSE Disks large homolog 4 OS=Mus musculus GN=Dlg4
+           PE=1 SV=1
+          Length = 724
+
+ Score = 51.2 bits (121), Expect = 1e-06,   Method: Composition-based stats.
+ Identities = 35/90 (38%), Positives = 51/90 (56%), Gaps = 6/90 (6%)
+
+Query: 5   IRVRVEKDPE-LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQA 61
+           I +++ K P+ LGFSI+GGVG   N   P D+ I+VT++   G A K   LQ GDKI+  
+Sbjct: 159 IEIKLIKGPKGLGFSIAGGVG---NQHIPGDNSIYVTKIIEGGAAHKDGRLQIGDKILAV 215
+
+Query: 62  NGYSFINIEHGQAVSLLKTFQNTVELIIVR 91
+           N     ++ H  AV+ LK   + V L + +
+Sbjct: 216 NSVGLEDVMHEDAVAALKNTYDVVYLKVAK 245
+
+
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 29/79 (36%), Positives = 41/79 (51%), Gaps = 5/79 (6%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANGYSFINIEHG 72
+           LGFSI+GG     NP   DD  IF+T++ P G A++   L+  D I+  N      + H 
+Sbjct: 75  LGFSIAGGTD---NPHIGDDPSIFITKIIPGGAAAQDGRLRVNDSILFVNEVDVREVTHS 131
+
+Query: 73  QAVSLLKTFQNTVELIIVR 91
+            AV  LK   + V L ++R
+Sbjct: 132 AAVEALKEAGSIVRLYVMR 150
+
+
+
+ Score = 42.0 bits (97), Expect = 8e-04,   Method: Composition-based stats.
+ Identities = 29/76 (38%), Positives = 38/76 (50%), Gaps = 11/76 (14%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPA--SKLLQPGDKIIQANGYSFINIEHG 72
+           LGF+I GG          D +GIF++ +   GPA  S  L+ GD+I+  NG    N  H 
+Sbjct: 323 LGFNIVGG---------EDGEGIFISFILAGGPADLSGELRKGDQILSVNGVDLRNASHE 373
+
+Query: 73  QAVSLLKTFQNTVELI 88
+           QA   LK    TV +I
+Sbjct: 374 QAAIALKNAGQTVTII 389
+
+
+>sp|P31016|DLG4_RAT Disks large homolog 4 OS=Rattus norvegicus
+           GN=Dlg4 PE=1 SV=1
+          Length = 724
+
+ Score = 50.1 bits (118), Expect = 3e-06,   Method: Composition-based stats.
+ Identities = 34/90 (37%), Positives = 51/90 (56%), Gaps = 6/90 (6%)
+
+Query: 5   IRVRVEKDPE-LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQA 61
+           + +++ K P+ LGFSI+GGVG   N   P D+ I+VT++   G A K   LQ GDKI+  
+Sbjct: 159 MEIKLIKGPKGLGFSIAGGVG---NQHIPGDNSIYVTKIIEGGAAHKDGRLQIGDKILAV 215
+
+Query: 62  NGYSFINIEHGQAVSLLKTFQNTVELIIVR 91
+           N     ++ H  AV+ LK   + V L + +
+Sbjct: 216 NSVGLEDVMHEDAVAALKNTYDVVYLKVAK 245
+
+
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 29/79 (36%), Positives = 41/79 (51%), Gaps = 5/79 (6%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANGYSFINIEHG 72
+           LGFSI+GG     NP   DD  IF+T++ P G A++   L+  D I+  N      + H 
+Sbjct: 75  LGFSIAGGTD---NPHIGDDPSIFITKIIPGGAAAQDGRLRVNDSILFVNEVDVREVTHS 131
+
+Query: 73  QAVSLLKTFQNTVELIIVR 91
+            AV  LK   + V L ++R
+Sbjct: 132 AAVEALKEAGSIVRLYVMR 150
+
+
+
+ Score = 42.0 bits (97), Expect = 8e-04,   Method: Composition-based stats.
+ Identities = 29/76 (38%), Positives = 38/76 (50%), Gaps = 11/76 (14%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPA--SKLLQPGDKIIQANGYSFINIEHG 72
+           LGF+I GG          D +GIF++ +   GPA  S  L+ GD+I+  NG    N  H 
+Sbjct: 323 LGFNIVGG---------EDGEGIFISFILAGGPADLSGELRKGDQILSVNGVDLRNASHE 373
+
+Query: 73  QAVSLLKTFQNTVELI 88
+           QA   LK    TV +I
+Sbjct: 374 QAAIALKNAGQTVTII 389
+
+
+>sp|P78352|DLG4_HUMAN Disks large homolog 4 OS=Homo sapiens GN=DLG4
+           PE=1 SV=3
+          Length = 724
+
+ Score = 50.1 bits (118), Expect = 3e-06,   Method: Composition-based stats.
+ Identities = 34/90 (37%), Positives = 51/90 (56%), Gaps = 6/90 (6%)
+
+Query: 5   IRVRVEKDPE-LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQA 61
+           + +++ K P+ LGFSI+GGVG   N   P D+ I+VT++   G A K   LQ GDKI+  
+Sbjct: 159 MEIKLIKGPKGLGFSIAGGVG---NQHIPGDNSIYVTKIIEGGAAHKDGRLQIGDKILAV 215
+
+Query: 62  NGYSFINIEHGQAVSLLKTFQNTVELIIVR 91
+           N     ++ H  AV+ LK   + V L + +
+Sbjct: 216 NSVGLEDVMHEDAVAALKNTYDVVYLKVAK 245
+
+
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 29/79 (36%), Positives = 41/79 (51%), Gaps = 5/79 (6%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANGYSFINIEHG 72
+           LGFSI+GG     NP   DD  IF+T++ P G A++   L+  D I+  N      + H 
+Sbjct: 75  LGFSIAGGTD---NPHIGDDPSIFITKIIPGGAAAQDGRLRVNDSILFVNEVDVREVTHS 131
+
+Query: 73  QAVSLLKTFQNTVELIIVR 91
+            AV  LK   + V L ++R
+Sbjct: 132 AAVEALKEAGSIVRLYVMR 150
+
+
+
+ Score = 42.0 bits (97), Expect = 8e-04,   Method: Composition-based stats.
+ Identities = 29/76 (38%), Positives = 38/76 (50%), Gaps = 11/76 (14%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPA--SKLLQPGDKIIQANGYSFINIEHG 72
+           LGF+I GG          D +GIF++ +   GPA  S  L+ GD+I+  NG    N  H 
+Sbjct: 323 LGFNIVGG---------EDGEGIFISFILAGGPADLSGELRKGDQILSVNGVDLRNASHE 373
+
+Query: 73  QAVSLLKTFQNTVELI 88
+           QA   LK    TV +I
+Sbjct: 374 QAAIALKNAGQTVTII 389
+
+
+>sp|Q811D0|DLG1_MOUSE Disks large homolog 1 OS=Mus musculus GN=Dlg1
+           PE=1 SV=1
+          Length = 905
+
+ Score = 49.7 bits (117), Expect = 4e-06,   Method: Composition-based stats.
+ Identities = 34/93 (36%), Positives = 52/93 (55%), Gaps = 6/93 (6%)
+
+Query: 5   IRVRVEKDPE-LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQA 61
+           + +++ K P+ LGFSI+GGVG   N   P D+ I+VT++   G A K   LQ GDK++  
+Sbjct: 318 MEIKLIKGPKGLGFSIAGGVG---NQHIPGDNSIYVTKIIEGGAAHKDGKLQIGDKLLAV 374
+
+Query: 62  NGYSFINIEHGQAVSLLKTFQNTVELIIVREVS 94
+           N      + H +AV+ LK   + V L + +  S
+Sbjct: 375 NSVCLEEVTHEEAVTALKNTSDFVYLKVAKPTS 407
+
+
+>sp|Q12959|DLG1_HUMAN Disks large homolog 1 OS=Homo sapiens GN=DLG1
+           PE=1 SV=2
+          Length = 904
+
+ Score = 49.7 bits (117), Expect = 4e-06,   Method: Composition-based stats.
+ Identities = 34/93 (36%), Positives = 52/93 (55%), Gaps = 6/93 (6%)
+
+Query: 5   IRVRVEKDPE-LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQA 61
+           + +++ K P+ LGFSI+GGVG   N   P D+ I+VT++   G A K   LQ GDK++  
+Sbjct: 318 MEIKLIKGPKGLGFSIAGGVG---NQHIPGDNSIYVTKIIEGGAAHKDGKLQIGDKLLAV 374
+
+Query: 62  NGYSFINIEHGQAVSLLKTFQNTVELIIVREVS 94
+           N      + H +AV+ LK   + V L + +  S
+Sbjct: 375 NNVCLEEVTHEEAVTALKNTSDFVYLKVAKPTS 407
+
+
+>sp|Q5PYH6|DLG1_DANRE Disks large homolog 1 OS=Danio rerio GN=dlg1
+           PE=2 SV=2
+          Length = 873
+
+ Score = 49.7 bits (117), Expect = 4e-06,   Method: Composition-based stats.
+ Identities = 34/91 (37%), Positives = 50/91 (54%), Gaps = 6/91 (6%)
+
+Query: 7   VRVEKDPE-LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANG 63
+           V++ K P+ LGFSI+GGVG   N   P D+ I++T++   G A K   LQ GDK++  N 
+Sbjct: 326 VKLVKGPKGLGFSIAGGVG---NQHIPGDNSIYITKIIEGGAAHKDGRLQIGDKLLAVNA 382
+
+Query: 64  YSFINIEHGQAVSLLKTFQNTVELIIVREVS 94
+                + H  AV+ LK   + V L + +  S
+Sbjct: 383 VCLEEVTHEDAVAALKNTPDVVYLKVAKPTS 413
+
+
+>sp|Q68DX3|FRPD2_HUMAN FERM and PDZ domain-containing protein 2
+            OS=Homo sapiens GN=FRMPD2 PE=2 SV=1
+          Length = 1309
+
+ Score = 49.3 bits (116), Expect = 6e-06,   Method: Composition-based stats.
+ Identities = 32/88 (36%), Positives = 49/88 (55%), Gaps = 9/88 (10%)
+
+Query: 9    VEKDPELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK---LLQPGDKIIQANGYS 65
+            V++D  LGFS++GG+     P+     GI+V  + P GPA+K   +LQ GD+++Q +G  
+Sbjct: 954  VKEDGTLGFSVTGGIN-TSVPY----GGIYVKSIVPGGPAAKEGQILQ-GDRLLQVDGVI 1007
+
+Query: 66   FINIEHGQAVSLLKTFQNTVELIIVREV 93
+               + H QAV  LK       L++ R V
+Sbjct: 1008 LCGLTHKQAVQCLKGPGQVARLVLERRV 1035
+
+
+
+ Score = 45.1 bits (105), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 28/87 (32%), Positives = 45/87 (51%), Gaps = 5/87 (5%)
+
+Query: 5   IRVRVEKDPELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPA--SKLLQPGDKIIQAN 62
+           +RV +++DP  GF   G V   G      D GIF++ + P GPA  +K ++PG + +  N
+Sbjct: 774 VRVTLKRDPHRGF---GFVINEGEYSGQADPGIFISSIIPGGPAEKAKTIKPGGQTLALN 830
+
+Query: 63  GYSFINIEHGQAVSLLKTFQNTVELII 89
+             S        AV +++   + +ELII
+Sbjct: 831 HISLEGFTFNMAVRMIQNSPDNIELII 857
+
+
+>sp|Q62936|DLG3_RAT Disks large homolog 3 OS=Rattus norvegicus
+           GN=Dlg3 PE=1 SV=1
+          Length = 849
+
+ Score = 48.5 bits (114), Expect = 8e-06,   Method: Composition-based stats.
+ Identities = 31/90 (34%), Positives = 52/90 (57%), Gaps = 6/90 (6%)
+
+Query: 5   IRVRVEKDPE-LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQA 61
+           + V + K P+ LGFSI+GG+G   N   P D+ I++T++   G A K   LQ GD+++  
+Sbjct: 243 MEVNLLKGPKGLGFSIAGGIG---NQHIPGDNSIYITKIIEGGAAQKDGRLQIGDRLLAV 299
+
+Query: 62  NGYSFINIEHGQAVSLLKTFQNTVELIIVR 91
+           N  +  ++ H +AV+ LK   + V L + +
+Sbjct: 300 NNTNLQDVRHEEAVASLKNTSDMVYLKVAK 329
+
+
+
+ Score = 45.1 bits (105), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 27/67 (40%), Positives = 38/67 (56%), Gaps = 5/67 (7%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANGYSFINIEHG 72
+           LGFSI+GG+    NP  PDD GIF+T++ P G A+    L   D +++ N      + H 
+Sbjct: 159 LGFSIAGGID---NPHVPDDPGIFITKIIPGGAAAMDGRLGVNDCVLRVNEVDVSEVVHS 215
+
+Query: 73  QAVSLLK 79
+           +AV  LK
+Sbjct: 216 RAVEALK 222
+
+
+>sp|Q92796|DLG3_HUMAN Disks large homolog 3 OS=Homo sapiens GN=DLG3
+           PE=1 SV=2
+          Length = 817
+
+ Score = 48.5 bits (114), Expect = 8e-06,   Method: Composition-based stats.
+ Identities = 31/90 (34%), Positives = 52/90 (57%), Gaps = 6/90 (6%)
+
+Query: 5   IRVRVEKDPE-LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQA 61
+           + V + K P+ LGFSI+GG+G   N   P D+ I++T++   G A K   LQ GD+++  
+Sbjct: 225 MEVNLLKGPKGLGFSIAGGIG---NQHIPGDNSIYITKIIEGGAAQKDGRLQIGDRLLAV 281
+
+Query: 62  NGYSFINIEHGQAVSLLKTFQNTVELIIVR 91
+           N  +  ++ H +AV+ LK   + V L + +
+Sbjct: 282 NNTNLQDVRHEEAVASLKNTSDMVYLKVAK 311
+
+
+
+ Score = 45.1 bits (105), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 27/67 (40%), Positives = 38/67 (56%), Gaps = 5/67 (7%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANGYSFINIEHG 72
+           LGFSI+GG+    NP  PDD GIF+T++ P G A+    L   D +++ N      + H 
+Sbjct: 141 LGFSIAGGID---NPHVPDDPGIFITKIIPGGAAAMDGRLGVNDCVLRVNEVDVSEVVHS 197
+
+Query: 73  QAVSLLK 79
+           +AV  LK
+Sbjct: 198 RAVEALK 204
+
+
+>sp|P70175|DLG3_MOUSE Disks large homolog 3 OS=Mus musculus GN=Dlg3
+           PE=1 SV=1
+          Length = 849
+
+ Score = 48.5 bits (114), Expect = 8e-06,   Method: Composition-based stats.
+ Identities = 31/90 (34%), Positives = 52/90 (57%), Gaps = 6/90 (6%)
+
+Query: 5   IRVRVEKDPE-LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQA 61
+           + V + K P+ LGFSI+GG+G   N   P D+ I++T++   G A K   LQ GD+++  
+Sbjct: 243 MEVNLLKGPKGLGFSIAGGIG---NQHIPGDNSIYITKIIEGGAAQKDGRLQIGDRLLAV 299
+
+Query: 62  NGYSFINIEHGQAVSLLKTFQNTVELIIVR 91
+           N  +  ++ H +AV+ LK   + V L + +
+Sbjct: 300 NNTNLQDVRHEEAVASLKNTSDMVYLKVAK 329
+
+
+
+ Score = 44.7 bits (104), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 27/67 (40%), Positives = 38/67 (56%), Gaps = 5/67 (7%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANGYSFINIEHG 72
+           LGFSI+GG+    NP  PDD GIF+T++ P G A+    L   D +++ N      + H 
+Sbjct: 159 LGFSIAGGID---NPHVPDDPGIFITKIIPGGAAAMDGRLGVNDCVLRVNEVDVSEVVHS 215
+
+Query: 73  QAVSLLK 79
+           +AV  LK
+Sbjct: 216 RAVEALK 222
+
+
+>sp|Q5PYH5|DLG1L_DANRE Discs large homolog 1-like protein OS=Danio
+           rerio GN=dlg1l PE=2 SV=1
+          Length = 827
+
+ Score = 48.1 bits (113), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 33/90 (36%), Positives = 50/90 (55%), Gaps = 6/90 (6%)
+
+Query: 5   IRVRVEKDPE-LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQA 61
+           + +++ K P+ LGFSI+GGVG   N   P D+ I+VT++   G A K   LQ GDK++  
+Sbjct: 253 MEIKLIKGPKGLGFSIAGGVG---NQHIPGDNSIYVTKIIEGGAAHKDGRLQIGDKLLAV 309
+
+Query: 62  NGYSFINIEHGQAVSLLKTFQNTVELIIVR 91
+           N      + H  AV+ LK   + V L + +
+Sbjct: 310 NSSCLEEVTHEHAVTALKNTPDVVYLKVAK 339
+
+
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 30/83 (36%), Positives = 45/83 (54%), Gaps = 5/83 (6%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANGYSFINIEHG 72
+           LGFSI+GG     NP   +D  IF+T+V P G A++   L+  D I++ N     ++ H 
+Sbjct: 169 LGFSIAGGTD---NPHIGEDPSIFITKVIPGGAAAQDGRLRVNDVILRVNEVDVRDVTHS 225
+
+Query: 73  QAVSLLKTFQNTVELIIVREVSS 95
+           +AV  LK   + V L + R  S+
+Sbjct: 226 KAVEALKEAGSLVRLYVRRRKSA 248
+
+
+>sp|Q6R005|DLG4_DANRE Disks large homolog 4 OS=Danio rerio GN=dlg4
+           PE=2 SV=1
+          Length = 801
+
+ Score = 48.1 bits (113), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 35/88 (39%), Positives = 51/88 (57%), Gaps = 9/88 (10%)
+
+Query: 7   VRVEKDPE-LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANG 63
+           +++ K P+ LGFSI+GGVG   N   P D+ I+VT++   G A K   LQ GDKI+  N 
+Sbjct: 249 LKLIKGPKGLGFSIAGGVG---NQHVPGDNSIYVTKIIEGGAAHKDGRLQIGDKILAVNN 305
+
+Query: 64  YSFINIEHGQAVSLLKTFQNTVELIIVR 91
+                + H  AV+ LK   NT +++ +R
+Sbjct: 306 MYLEEVMHEDAVAALK---NTGDVVFLR 330
+
+
+
+ Score = 42.4 bits (98), Expect = 6e-04,   Method: Composition-based stats.
+ Identities = 30/83 (36%), Positives = 41/83 (49%), Gaps = 5/83 (6%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANGYSFINIEHG 72
+           LGFSI+GG     NP   DD  IF+T++ P G A++   L+  D I+  N      + H 
+Sbjct: 163 LGFSIAGGTD---NPHIGDDPSIFITKIIPGGAAAQDGRLRVNDSILFVNDVDVREVTHS 219
+
+Query: 73  QAVSLLKTFQNTVELIIVREVSS 95
+            AV  LK     V L ++R   S
+Sbjct: 220 FAVEALKEAGPIVRLYVLRHKPS 242
+
+
+>sp|Q9UPQ7|PZRN3_HUMAN PDZ domain-containing RING finger protein 3
+           OS=Homo sapiens GN=PDZRN3 PE=1 SV=2
+          Length = 1066
+
+ Score = 47.8 bits (112), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 29/79 (36%), Positives = 42/79 (53%), Gaps = 2/79 (2%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL--LQPGDKIIQANGYSFINIEHG 72
+           LGF+I GG     N      +GIFV+++   GPA+K   LQ  D+II+ NG       H 
+Sbjct: 259 LGFNIIGGRPSVDNHDGSSSEGIFVSKIVDSGPAAKEGGLQIHDRIIEVNGRDLSRATHD 318
+
+Query: 73  QAVSLLKTFQNTVELIIVR 91
+           QAV   KT +  + + ++R
+Sbjct: 319 QAVEAFKTAKEPIVVQVLR 337
+
+
+>sp|Q9UDY2|ZO2_HUMAN Tight junction protein ZO-2 OS=Homo sapiens
+           GN=TJP2 PE=1 SV=1
+          Length = 1190
+
+ Score = 47.8 bits (112), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 29/86 (33%), Positives = 45/86 (52%), Gaps = 2/86 (2%)
+
+Query: 7   VRVEKDPELGFSISGGVGGRGNP-FRPDDDGIFVTRVQPEGPASKLLQPGDKIIQANGYS 65
+           V ++KD + GF I+   GGR NP F   +  I ++ V P GPA  LLQ  D+++  NG  
+Sbjct: 34  VTLQKDSKRGFGIAVS-GGRDNPHFENGETSIVISDVLPGGPADGLLQENDRVVMVNGTP 92
+
+Query: 66  FINIEHGQAVSLLKTFQNTVELIIVR 91
+             ++ H  AV  L+       +++ R
+Sbjct: 93  MEDVLHSFAVQQLRKSGKVAAIVVKR 118
+
+
+>sp|Q64512|PTN13_MOUSE Tyrosine-protein phosphatase non-receptor type
+            13 OS=Mus musculus GN=Ptpn13 PE=1 SV=2
+          Length = 2453
+
+ Score = 47.8 bits (112), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 34/88 (38%), Positives = 47/88 (53%), Gaps = 11/88 (12%)
+
+Query: 7    VRVEKDPE--LGFSISGGVG-GRGNPFRPDDDGIFVTRVQPEGPAS--KLLQPGDKIIQA 61
+            V ++KDP+  LGF I GG   GR       D G+F++ V P GPA     L+PGD++I  
+Sbjct: 1085 VNLKKDPKHGLGFQIIGGEKMGRL------DLGVFISAVTPGGPADLDGCLKPGDRLISV 1138
+
+Query: 62   NGYSFINIEHGQAVSLLKTFQNTVELII 89
+            N  S   + H  AV +L+     V L+I
+Sbjct: 1139 NSVSLEGVSHHAAVDILQNAPEDVTLVI 1166
+
+
+>sp|Q95168|ZO2_CANFA Tight junction protein ZO-2 OS=Canis
+          familiaris GN=TJP2 PE=1 SV=1
+          Length = 1174
+
+ Score = 47.8 bits (112), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 29/86 (33%), Positives = 45/86 (52%), Gaps = 2/86 (2%)
+
+Query: 7  VRVEKDPELGFSISGGVGGRGNP-FRPDDDGIFVTRVQPEGPASKLLQPGDKIIQANGYS 65
+          V ++KD + GF I+   GGR NP F   +  I ++ V P GPA  LLQ  D+++  NG  
+Sbjct: 11 VTLQKDSKRGFGIAVS-GGRDNPHFENGETSIVISDVLPGGPADGLLQENDRVVMVNGTP 69
+
+Query: 66 FINIEHGQAVSLLKTFQNTVELIIVR 91
+            ++ H  AV  L+       +++ R
+Sbjct: 70 MEDVLHSFAVQQLRKSGKIAAIVVKR 95
+
+
+>sp|Q62696|DLG1_RAT Disks large homolog 1 OS=Rattus norvegicus
+           GN=Dlg1 PE=1 SV=1
+          Length = 911
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 34/91 (37%), Positives = 50/91 (54%), Gaps = 6/91 (6%)
+
+Query: 7   VRVEKDPE-LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANG 63
+           +++ K P+ LGFSI+GGVG   N   P D+ I+VT++   G A K   LQ GDK++  N 
+Sbjct: 319 IKLIKGPKGLGFSIAGGVG---NQHIPGDNSIYVTKIIEGGAAHKDGKLQIGDKLLAVNS 375
+
+Query: 64  YSFINIEHGQAVSLLKTFQNTVELIIVREVS 94
+                + H +AV+ LK   + V L   +  S
+Sbjct: 376 VCLEEVTHEEAVTALKNTSDFVYLKAAKPTS 406
+
+
+>sp|Q9Z0U1|ZO2_MOUSE Tight junction protein ZO-2 OS=Mus musculus
+          GN=Tjp2 PE=1 SV=2
+          Length = 1167
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 29/86 (33%), Positives = 45/86 (52%), Gaps = 2/86 (2%)
+
+Query: 7  VRVEKDPELGFSISGGVGGRGNP-FRPDDDGIFVTRVQPEGPASKLLQPGDKIIQANGYS 65
+          V ++KD + GF I+   GGR NP F   +  I ++ V P GPA  LLQ  D+++  NG  
+Sbjct: 11 VTLQKDSKRGFGIAVS-GGRDNPHFENGETSIVISDVLPGGPADGLLQENDRVVMVNGTP 69
+
+Query: 66 FINIEHGQAVSLLKTFQNTVELIIVR 91
+            ++ H  AV  L+       +++ R
+Sbjct: 70 MEDVLHSFAVQQLRKSGKIAAIVVKR 95
+
+
+>sp|Q69ZS0|PZRN3_MOUSE PDZ domain-containing RING finger protein 3
+           OS=Mus musculus GN=Pdzrn3 PE=2 SV=2
+          Length = 1063
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 29/79 (36%), Positives = 42/79 (53%), Gaps = 2/79 (2%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL--LQPGDKIIQANGYSFINIEHG 72
+           LGF+I GG     N      +GIFV+++   GPA+K   LQ  D+II+ NG       H 
+Sbjct: 259 LGFNIIGGRPCVDNQDGSSSEGIFVSKIVDSGPAAKEGGLQIHDRIIEVNGKDLSRATHD 318
+
+Query: 73  QAVSLLKTFQNTVELIIVR 91
+           QAV   KT +  + + ++R
+Sbjct: 319 QAVEAFKTAKEPIVVQVLR 337
+
+
+>sp|P68907|PZRN3_RAT PDZ domain-containing RING finger protein 3
+           OS=Rattus norvegicus GN=Pdzrn3 PE=1 SV=1
+          Length = 1062
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 29/79 (36%), Positives = 42/79 (53%), Gaps = 2/79 (2%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL--LQPGDKIIQANGYSFINIEHG 72
+           LGF+I GG     N      +GIFV+++   GPA+K   LQ  D+II+ NG       H 
+Sbjct: 258 LGFNIIGGRPCVDNQDGSSSEGIFVSKIVDSGPAAKEGGLQIHDRIIEVNGKDLSRATHD 317
+
+Query: 73  QAVSLLKTFQNTVELIIVR 91
+           QAV   KT +  + + ++R
+Sbjct: 318 QAVEAFKTAKEPIVVQVLR 336
+
+
+>sp|Q9WVJ4|SYJ2B_RAT Synaptojanin-2-binding protein OS=Rattus
+          norvegicus GN=Synj2bp PE=1 SV=2
+          Length = 145
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 29/75 (38%), Positives = 42/75 (56%), Gaps = 5/75 (6%)
+
+Query: 15 LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANGYSFINIEHG 72
+          LGF+I   VGG    +  +D GI+V+R++ +G A++   LQ GDKI+  NG    N+ H 
+Sbjct: 23 LGFNI---VGGTDQQYVSNDSGIYVSRIKEDGAAARDGRLQEGDKILSVNGQDLKNLLHQ 79
+
+Query: 73 QAVSLLKTFQNTVEL 87
+           AV L +     V L
+Sbjct: 80 DAVDLFRNAGYAVSL 94
+
+
+>sp|O75970|MPDZ_HUMAN Multiple PDZ domain protein OS=Homo sapiens
+            GN=MPDZ PE=1 SV=1
+          Length = 2042
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 35/87 (40%), Positives = 53/87 (60%), Gaps = 8/87 (9%)
+
+Query: 7    VRVEKDPE-LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANG 63
+            + +E+ P+ LGFSI   VGG G+P    D  I+V  V  +G AS+   L+ GD+II  NG
+Sbjct: 1960 ITLERGPDGLGFSI---VGGYGSPH--GDLPIYVKTVFAKGAASEDGRLKRGDQIIAVNG 2014
+
+Query: 64   YSFINIEHGQAVSLLKTFQNTVELIIV 90
+             S   + H +AV++LK  + TV L+++
+Sbjct: 2015 QSLEGVTHEEAVAILKRTKGTVTLMVL 2041
+
+
+
+ Score = 43.9 bits (102), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 33/88 (37%), Positives = 50/88 (56%), Gaps = 9/88 (10%)
+
+Query: 7    VRVEKDP--ELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL--LQPGDKIIQAN 62
+            V ++K P   LG SI+GGVG   +P    D  IF+  + P G A++   L+ GD+I+   
+Sbjct: 1835 VEMKKGPTDSLGISIAGGVG---SPL--GDVPIFIAMMHPTGVAAQTQKLRVGDRIVTIC 1889
+
+Query: 63   GYSFINIEHGQAVSLLKTFQNTVELIIV 90
+            G S   + H QAV+LLK    ++E+ +V
+Sbjct: 1890 GTSTEGMTHTQAVNLLKNASGSIEMQVV 1917
+
+
+
+ Score = 43.1 bits (100), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 32/92 (34%), Positives = 48/92 (52%), Gaps = 11/92 (11%)
+
+Query: 6    RVRVEKDPE--LGFSISGGVGGRGNPFRPDDD----GIFVTRVQPEGPASK--LLQPGDK 57
+            RV + ++P   LG SI   VGGRG   R  +     GIF+  V  + PA K   L+PGD+
+Sbjct: 1151 RVELWREPSKSLGISI---VGGRGMGSRLSNGEVMRGIFIKHVLEDSPAGKNGTLKPGDR 1207
+
+Query: 58   IIQANGYSFINIEHGQAVSLLKTFQNTVELII 89
+            I++ +G    +  H QAV  ++   N V  ++
+Sbjct: 1208 IVEVDGMDLRDASHEQAVEAIRKAGNPVVFMV 1239
+
+
+>sp|O97758|ZO1_CANFA Tight junction protein ZO-1 OS=Canis familiaris
+           GN=TJP1 PE=1 SV=1
+          Length = 1769
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 30/87 (34%), Positives = 44/87 (50%), Gaps = 2/87 (2%)
+
+Query: 7   VRVEKDPELGFSISGGVGGRGNP-FRPDDDGIFVTRVQPEGPASKLLQPGDKIIQANGYS 65
+           V + + P  GF I+   GGR NP F+  +  I ++ V   GPA   LQ  D++   NG S
+Sbjct: 24  VTLHRAPGFGFGIAIS-GGRDNPHFQSGETSIVISDVLKGGPAEGQLQENDRVAMVNGVS 82
+
+Query: 66  FINIEHGQAVSLLKTFQNTVELIIVRE 92
+             N+EH  AV  L+      ++ I R+
+Sbjct: 83  MDNVEHAFAVQQLRKSGKNAKITIRRK 109
+
+
+>sp|Q07157|ZO1_HUMAN Tight junction protein ZO-1 OS=Homo sapiens
+           GN=TJP1 PE=1 SV=3
+          Length = 1748
+
+ Score = 47.0 bits (110), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 30/87 (34%), Positives = 44/87 (50%), Gaps = 2/87 (2%)
+
+Query: 7   VRVEKDPELGFSISGGVGGRGNP-FRPDDDGIFVTRVQPEGPASKLLQPGDKIIQANGYS 65
+           V + + P  GF I+   GGR NP F+  +  I ++ V   GPA   LQ  D++   NG S
+Sbjct: 24  VTLHRAPGFGFGIAIS-GGRDNPHFQSGETSIVISDVLKGGPAEGQLQENDRVAMVNGVS 82
+
+Query: 66  FINIEHGQAVSLLKTFQNTVELIIVRE 92
+             N+EH  AV  L+      ++ I R+
+Sbjct: 83  MDNVEHAFAVQQLRKSGKNAKITIRRK 109
+
+
+>sp|P39447|ZO1_MOUSE Tight junction protein ZO-1 OS=Mus musculus
+           GN=Tjp1 PE=1 SV=1
+          Length = 1745
+
+ Score = 46.6 bits (109), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 30/87 (34%), Positives = 44/87 (50%), Gaps = 2/87 (2%)
+
+Query: 7   VRVEKDPELGFSISGGVGGRGNP-FRPDDDGIFVTRVQPEGPASKLLQPGDKIIQANGYS 65
+           V + + P  GF I+   GGR NP F+  +  I ++ V   GPA   LQ  D++   NG S
+Sbjct: 24  VTLHRAPGFGFGIAIS-GGRDNPHFQSGETSIVISDVLKGGPAEGQLQENDRVAMVNGVS 82
+
+Query: 66  FINIEHGQAVSLLKTFQNTVELIIVRE 92
+             N+EH  AV  L+      ++ I R+
+Sbjct: 83  MDNVEHAFAVQQLRKSGKNAKITIRRK 109
+
+
+>sp|Q9CZG9|PDZ11_MOUSE PDZ domain-containing protein 11 OS=Mus
+           musculus GN=Pdzd11 PE=1 SV=1
+          Length = 140
+
+ Score = 46.6 bits (109), Expect = 3e-05,   Method: Composition-based stats.
+ Identities = 29/77 (37%), Positives = 45/77 (58%), Gaps = 11/77 (14%)
+
+Query: 7   VRVEKDP--ELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL-LQPGDKIIQANG 63
+           V ++K P  +LGF+I GG        +    GIF+++V P+  A +  LQ GD+++  N 
+Sbjct: 48  VTLKKPPGAQLGFNIRGG--------KASQLGIFISKVIPDSDAHRAGLQEGDQVLAVND 99
+
+Query: 64  YSFINIEHGQAVSLLKT 80
+             F +IEH +AV +LKT
+Sbjct: 100 VDFQDIEHSKAVEILKT 116
+
+
+>sp|Q32LE7|PDZ11_BOVIN PDZ domain-containing protein 11 OS=Bos
+           taurus GN=PDZD11 PE=2 SV=1
+          Length = 140
+
+ Score = 46.6 bits (109), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 29/77 (37%), Positives = 45/77 (58%), Gaps = 11/77 (14%)
+
+Query: 7   VRVEKDP--ELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL-LQPGDKIIQANG 63
+           V ++K P  +LGF+I GG        +    GIF+++V P+  A +  LQ GD+++  N 
+Sbjct: 48  VTLKKPPGAQLGFNIRGG--------KASQLGIFISKVIPDSDAHRAGLQEGDQVLAVND 99
+
+Query: 64  YSFINIEHGQAVSLLKT 80
+             F +IEH +AV +LKT
+Sbjct: 100 VDFQDIEHSKAVEILKT 116
+
+
+>sp|Q6QA76|PDZ11_PIG PDZ domain-containing protein 11 OS=Sus scrofa
+           GN=PDZD11 PE=2 SV=1
+          Length = 140
+
+ Score = 46.6 bits (109), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 29/77 (37%), Positives = 45/77 (58%), Gaps = 11/77 (14%)
+
+Query: 7   VRVEKDP--ELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL-LQPGDKIIQANG 63
+           V ++K P  +LGF+I GG        +    GIF+++V P+  A +  LQ GD+++  N 
+Sbjct: 48  VTLKKPPGAQLGFNIRGG--------KASQLGIFISKVIPDSDAHRAGLQEGDQVLAVND 99
+
+Query: 64  YSFINIEHGQAVSLLKT 80
+             F +IEH +AV +LKT
+Sbjct: 100 VDFQDIEHSKAVEILKT 116
+
+
+>sp|Q9Y3R0|GRIP1_HUMAN Glutamate receptor-interacting protein 1
+           OS=Homo sapiens GN=GRIP1 PE=1 SV=2
+          Length = 1128
+
+ Score = 46.6 bits (109), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 27/82 (32%), Positives = 43/82 (52%), Gaps = 6/82 (7%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANGYSFINIEHG 72
+            GF I GG     N  RP    + +T V+P GPA +   ++PGD+++  +G   +   H 
+Sbjct: 162 FGFVIRGGAHDDRNKSRP----VVITCVRPGGPADREGTIKPGDRLLSVDGIRLLGTTHA 217
+
+Query: 73  QAVSLLKTFQNTVELIIVREVS 94
+           +A+S+LK       L+I  +VS
+Sbjct: 218 EAMSILKQCGQEAALLIEYDVS 239
+
+
+>sp|Q5ZIK2|PDZ11_CHICK PDZ domain-containing protein 11 OS=Gallus
+           gallus GN=PDZD11 PE=2 SV=1
+          Length = 140
+
+ Score = 46.6 bits (109), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 30/79 (37%), Positives = 44/79 (55%), Gaps = 12/79 (15%)
+
+Query: 6   RVRVEKDP---ELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL-LQPGDKIIQA 61
+           R  V K P   +LGF+I GG        +    GIF+++V P+  A +  LQ GD+++  
+Sbjct: 46  RTVVLKKPPGAQLGFNIRGG--------KASQLGIFISKVIPDSDAHRAGLQEGDQVLSV 97
+
+Query: 62  NGYSFINIEHGQAVSLLKT 80
+           N   F +IEH +AV +LKT
+Sbjct: 98  NDVDFQDIEHSKAVEILKT 116
+
+
+>sp|Q5EBL8|PDZ11_HUMAN PDZ domain-containing protein 11 OS=Homo
+           sapiens GN=PDZD11 PE=1 SV=2
+          Length = 140
+
+ Score = 46.2 bits (108), Expect = 5e-05,   Method: Composition-based stats.
+ Identities = 28/77 (36%), Positives = 45/77 (58%), Gaps = 11/77 (14%)
+
+Query: 7   VRVEKDP--ELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL-LQPGDKIIQANG 63
+           + ++K P  +LGF+I GG        +    GIF+++V P+  A +  LQ GD+++  N 
+Sbjct: 48  ITLKKPPGAQLGFNIRGG--------KASQLGIFISKVIPDSDAHRAGLQEGDQVLAVND 99
+
+Query: 64  YSFINIEHGQAVSLLKT 80
+             F +IEH +AV +LKT
+Sbjct: 100 VDFQDIEHSKAVEILKT 116
+
+
+>sp|P97879|GRIP1_RAT Glutamate receptor-interacting protein 1
+           OS=Rattus norvegicus GN=Grip1 PE=1 SV=1
+          Length = 1112
+
+ Score = 46.2 bits (108), Expect = 5e-05,   Method: Composition-based stats.
+ Identities = 27/82 (32%), Positives = 43/82 (52%), Gaps = 6/82 (7%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANGYSFINIEHG 72
+            GF I GG     N  RP    + +T V+P GPA +   ++PGD+++  +G   +   H 
+Sbjct: 162 FGFVIRGGAHDDRNKSRP----VVITCVRPGGPADREGTIKPGDRLLSVDGIRLLGTTHA 217
+
+Query: 73  QAVSLLKTFQNTVELIIVREVS 94
+           +A+S+LK       L+I  +VS
+Sbjct: 218 EAMSILKQCGQEATLLIEYDVS 239
+
+
+>sp|Q925T6|GRIP1_MOUSE Glutamate receptor-interacting protein 1
+           OS=Mus musculus GN=Grip1 PE=1 SV=1
+          Length = 1127
+
+ Score = 46.2 bits (108), Expect = 5e-05,   Method: Composition-based stats.
+ Identities = 27/82 (32%), Positives = 43/82 (52%), Gaps = 6/82 (7%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANGYSFINIEHG 72
+            GF I GG     N  RP    + +T V+P GPA +   ++PGD+++  +G   +   H 
+Sbjct: 162 FGFVIRGGAHDDRNKSRP----VVITCVRPGGPADREGTIKPGDRLLSVDGIRLLGTTHA 217
+
+Query: 73  QAVSLLKTFQNTVELIIVREVS 94
+           +A+S+LK       L+I  +VS
+Sbjct: 218 EAMSILKQCGQEATLLIEYDVS 239
+
+
+>sp|Q6NXB2|PDZ11_DANRE PDZ domain-containing protein 11 OS=Danio
+           rerio GN=pdzd11 PE=2 SV=1
+          Length = 142
+
+ Score = 45.8 bits (107), Expect = 6e-05,   Method: Composition-based stats.
+ Identities = 30/79 (37%), Positives = 44/79 (55%), Gaps = 12/79 (15%)
+
+Query: 6   RVRVEKDP---ELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL-LQPGDKIIQA 61
+           R  V K P   +LGF+I GG        +    GIF+++V P+  A +  LQ GD+++  
+Sbjct: 48  RTIVLKKPPGAQLGFNIRGG--------KASQLGIFISKVVPDSDAHRAGLQEGDQVLSV 99
+
+Query: 62  NGYSFINIEHGQAVSLLKT 80
+           N   F +IEH +AV +LKT
+Sbjct: 100 NEVDFQDIEHSRAVEILKT 118
+
+
+>sp|Q12923|PTN13_HUMAN Tyrosine-protein phosphatase non-receptor type
+            13 OS=Homo sapiens GN=PTPN13 PE=1 SV=2
+          Length = 2485
+
+ Score = 45.8 bits (107), Expect = 6e-05,   Method: Composition-based stats.
+ Identities = 33/88 (37%), Positives = 46/88 (52%), Gaps = 11/88 (12%)
+
+Query: 7    VRVEKDPE--LGFSISGGVG-GRGNPFRPDDDGIFVTRVQPEGPAS--KLLQPGDKIIQA 61
+            V ++KD +  LGF I GG   GR       D GIF++ V P GPA     L+PGD++I  
+Sbjct: 1094 VNLKKDAKYGLGFQIIGGEKMGR------LDLGIFISSVAPGGPADLDGCLKPGDRLISV 1147
+
+Query: 62   NGYSFINIEHGQAVSLLKTFQNTVELII 89
+            N  S   + H  A+ +L+     V L+I
+Sbjct: 1148 NSVSLEGVSHHAAIEILQNAPEDVTLVI 1175
+
+
+>sp|P31007|DLG1_DROME Disks large 1 tumor suppressor protein
+           OS=Drosophila melanogaster GN=dlg1 PE=1 SV=2
+          Length = 970
+
+ Score = 45.8 bits (107), Expect = 6e-05,   Method: Composition-based stats.
+ Identities = 34/81 (41%), Positives = 47/81 (58%), Gaps = 9/81 (11%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPAS--KLLQPGDKII--QANGY--SFIN 68
+           LGFSI+GG+G   N   P D+GI+VT++   G A     L  GDK+I  + NG   +  N
+Sbjct: 340 LGFSIAGGIG---NQHIPGDNGIYVTKLMDGGAAQVDGRLSIGDKLIAVRTNGSEKNLEN 396
+
+Query: 69  IEHGQAVSLLKTFQNTVELII 89
+           + H  AV+ LK+  + V LII
+Sbjct: 397 VTHELAVATLKSITDKVTLII 417
+
+
+>sp|P57105|SYJ2B_HUMAN Synaptojanin-2-binding protein OS=Homo
+          sapiens GN=SYNJ2BP PE=1 SV=2
+          Length = 145
+
+ Score = 45.4 bits (106), Expect = 8e-05,   Method: Composition-based stats.
+ Identities = 29/75 (38%), Positives = 40/75 (53%), Gaps = 5/75 (6%)
+
+Query: 15 LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPAS--KLLQPGDKIIQANGYSFINIEHG 72
+          LGF+I   VGG    +  +D GI+V+R++  G A+    LQ GDKI+  NG    N+ H 
+Sbjct: 23 LGFNI---VGGTDQQYVSNDSGIYVSRIKENGAAALDGRLQEGDKILSVNGQDLKNLLHQ 79
+
+Query: 73 QAVSLLKTFQNTVEL 87
+           AV L +     V L
+Sbjct: 80 DAVDLFRNAGYAVSL 94
+
+
+>sp|O55164|MPDZ_RAT Multiple PDZ domain protein OS=Rattus norvegicus
+            GN=Mpdz PE=1 SV=1
+          Length = 2054
+
+ Score = 44.7 bits (104), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 33/87 (37%), Positives = 53/87 (60%), Gaps = 8/87 (9%)
+
+Query: 7    VRVEKDPE-LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANG 63
+            + +++ P+ LGFSI   VGG G+P    D  I+V  V  +G A++   L+ GD+II  NG
+Sbjct: 1972 ITLDRGPDGLGFSI---VGGYGSPH--GDLPIYVKTVFAKGAAAEDGRLKRGDQIIAVNG 2026
+
+Query: 64   YSFINIEHGQAVSLLKTFQNTVELIIV 90
+             S   + H +AV++LK  + TV L+++
+Sbjct: 2027 QSLEGVTHEEAVAILKRTKGTVTLMVL 2053
+
+
+
+ Score = 43.9 bits (102), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 32/88 (36%), Positives = 50/88 (56%), Gaps = 9/88 (10%)
+
+Query: 7    VRVEKDPE--LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL--LQPGDKIIQAN 62
+            V ++K P   LG SI+GGVG   +P    D  IF+  + P G A++   L+ GD+I+   
+Sbjct: 1847 VEIKKGPADALGLSIAGGVG---SPL--GDVPIFIAMMHPNGVAAQTQKLRVGDRIVTIC 1901
+
+Query: 63   GYSFINIEHGQAVSLLKTFQNTVELIIV 90
+            G S   + H QAV+L+K    ++E+ +V
+Sbjct: 1902 GTSTDGMTHTQAVNLMKNASGSIEVQVV 1929
+
+
+>sp|Q8VBX6|MPDZ_MOUSE Multiple PDZ domain protein OS=Mus musculus
+            GN=Mpdz PE=1 SV=2
+          Length = 2055
+
+ Score = 44.7 bits (104), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 33/87 (37%), Positives = 53/87 (60%), Gaps = 8/87 (9%)
+
+Query: 7    VRVEKDPE-LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKIIQANG 63
+            + +++ P+ LGFSI   VGG G+P    D  I+V  V  +G A++   L+ GD+II  NG
+Sbjct: 1973 ITLDRGPDGLGFSI---VGGYGSPH--GDLPIYVKTVFAKGAAAEDGRLKRGDQIIAVNG 2027
+
+Query: 64   YSFINIEHGQAVSLLKTFQNTVELIIV 90
+             S   + H +AV++LK  + TV L+++
+Sbjct: 2028 QSLEGVTHEEAVAILKRTKGTVTLMVL 2054
+
+
+
+ Score = 43.9 bits (102), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 32/88 (36%), Positives = 50/88 (56%), Gaps = 9/88 (10%)
+
+Query: 7    VRVEKDP--ELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL--LQPGDKIIQAN 62
+            V ++K P   LG SI+GGV   G+P    D  IF+  + P G A++   L+ GD+I+   
+Sbjct: 1848 VEIKKGPADSLGLSIAGGV---GSPL--GDVPIFIAMMHPNGVAAQTQKLRVGDRIVTIC 1902
+
+Query: 63   GYSFINIEHGQAVSLLKTFQNTVELIIV 90
+            G S   + H QAV+L+K    ++E+ +V
+Sbjct: 1903 GTSTDGMTHTQAVNLMKNASGSIEVQVV 1930
+
+
+
+ Score = 43.9 bits (102), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 33/92 (35%), Positives = 48/92 (52%), Gaps = 11/92 (11%)
+
+Query: 6    RVRVEKDPE--LGFSISGGVGGRGNPFRPDDD----GIFVTRVQPEGPASK--LLQPGDK 57
+            RV + ++P   LG SI   VGGRG   R  +     GIF+  V  + PA K   L+PGD+
+Sbjct: 1139 RVELWREPSKSLGISI---VGGRGMGSRLSNGEVMRGIFIKHVLEDSPAGKNGTLKPGDR 1195
+
+Query: 58   IIQANGYSFINIEHGQAVSLLKTFQNTVELII 89
+            II+ +G    +  H QAV  ++   N V  ++
+Sbjct: 1196 IIEVDGMDLRDASHEQAVEAIRKAGNPVVFMV 1227
+
+
+>sp|Q09506|YQI7_CAEEL Uncharacterized protein C45G9.7
+           OS=Caenorhabditis elegans GN=C45G9.7 PE=1 SV=1
+          Length = 124
+
+ Score = 44.3 bits (103), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 25/68 (36%), Positives = 37/68 (54%), Gaps = 3/68 (4%)
+
+Query: 15  LGFSISGGVGGRGN--PFRPDDDGIFVTRVQPEGPASKL-LQPGDKIIQANGYSFINIEH 71
+           +GF I GG+       PF+  D G+++T V+   PA    L+  DKI+Q NG  F  + H
+Sbjct: 37  VGFKIGGGIDQDPTKAPFKYPDSGVYITNVESGSPADVAGLRKHDKILQVNGADFTMMTH 96
+
+Query: 72  GQAVSLLK 79
+            +AV  +K
+Sbjct: 97  DRAVKFIK 104
+
+
+>sp|O95049|ZO3_HUMAN Tight junction protein ZO-3 OS=Homo sapiens
+          GN=TJP3 PE=1 SV=2
+          Length = 933
+
+ Score = 44.3 bits (103), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 30/83 (36%), Positives = 39/83 (46%), Gaps = 5/83 (6%)
+
+Query: 9  VEKDPELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKLLQPGDKIIQANGYSFIN 68
+          + KDP  GF I+   GGR  P       + V+ V P GPA   LQ GD I+  NG S  N
+Sbjct: 14 LSKDPRRGFGIAIS-GGRDRP----GGSMVVSDVVPGGPAEGRLQTGDHIVMVNGVSMEN 68
+
+Query: 69 IEHGQAVSLLKTFQNTVELIIVR 91
+               A+ +LKT      + + R
+Sbjct: 69 ATSAFAIQILKTCTKMANITVKR 91
+
+
+>sp|Q6ZMN7|PZRN4_HUMAN PDZ domain-containing RING finger protein 4
+           OS=Homo sapiens GN=PDZRN4 PE=1 SV=3
+          Length = 1036
+
+ Score = 43.9 bits (102), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 27/79 (34%), Positives = 43/79 (54%), Gaps = 5/79 (6%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL--LQPGDKIIQANGYSFINIEHG 72
+           LGF+I GG   + N      +GI+V+++   GPA +   L+  DKI++ NG       H 
+Sbjct: 234 LGFNIIGGRPNQNNQEGTSTEGIYVSKILENGPADRADGLEIHDKIMEVNGKDLSKATHE 293
+
+Query: 73  QAVSLLKTFQNTVELIIVR 91
+           +AV   + F+N  E I+V+
+Sbjct: 294 EAV---EAFRNAKEPIVVQ 309
+
+
+>sp|Q2KIB6|LIN7B_BOVIN Lin-7 homolog B OS=Bos taurus GN=LIN7B PE=2
+           SV=1
+          Length = 201
+
+ Score = 43.9 bits (102), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 28/82 (34%), Positives = 46/82 (56%), Gaps = 10/82 (12%)
+
+Query: 10  EKDPELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL--LQPGDKIIQANGYSFI 67
+           + D  LGF+I GG        +  +  I+++RV P G A +   L+ GD+++  NG S  
+Sbjct: 98  KTDEGLGFNIMGG--------KEQNSPIYISRVIPGGVADRHGGLKRGDQLLSVNGVSVE 149
+
+Query: 68  NIEHGQAVSLLKTFQNTVELII 89
+             +H +AV LLK  Q +V+L++
+Sbjct: 150 GEQHEKAVELLKAAQGSVKLVV 171
+
+
+>sp|Q9HAP6|LIN7B_HUMAN Lin-7 homolog B OS=Homo sapiens GN=LIN7B PE=1
+           SV=1
+          Length = 207
+
+ Score = 43.9 bits (102), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 28/82 (34%), Positives = 46/82 (56%), Gaps = 10/82 (12%)
+
+Query: 10  EKDPELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL--LQPGDKIIQANGYSFI 67
+           + D  LGF+I GG        +  +  I+++RV P G A +   L+ GD+++  NG S  
+Sbjct: 98  KTDEGLGFNIMGG--------KEQNSPIYISRVIPGGVADRHGGLKRGDQLLSVNGVSVE 149
+
+Query: 68  NIEHGQAVSLLKTFQNTVELII 89
+             +H +AV LLK  Q +V+L++
+Sbjct: 150 GEQHEKAVELLKAAQGSVKLVV 171
+
+
+>sp|Q8N448|LNX2_HUMAN Ligand of Numb protein X 2 OS=Homo sapiens
+           GN=LNX2 PE=1 SV=1
+          Length = 690
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 26/80 (32%), Positives = 43/80 (53%), Gaps = 9/80 (11%)
+
+Query: 4   EIRVRVEKDPE--LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKII 59
+           E  + V+K+P   LG +++GG G +          IFVT V P G  ++   ++ GD ++
+Sbjct: 466 EKHITVKKEPHESLGMTVAGGRGSKSGELP-----IFVTSVPPHGCLARDGRIKRGDVLL 520
+
+Query: 60  QANGYSFINIEHGQAVSLLK 79
+             NG    N+ H +AV++LK
+Sbjct: 521 NINGIDLTNLSHSEAVAMLK 540
+
+
+>sp|O88951|LIN7B_MOUSE Lin-7 homolog B OS=Mus musculus GN=Lin7b PE=1
+           SV=2
+          Length = 207
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 28/82 (34%), Positives = 45/82 (54%), Gaps = 10/82 (12%)
+
+Query: 10  EKDPELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL--LQPGDKIIQANGYSFI 67
+           + D  LGF+I GG        +  +  I+++RV P G A +   L+ GD+++  NG S  
+Sbjct: 98  KTDEGLGFNIMGG--------KEQNSPIYISRVIPGGVADRHGGLKRGDQLLSVNGVSVE 149
+
+Query: 68  NIEHGQAVSLLKTFQNTVELII 89
+              H +AV LLK  Q +V+L++
+Sbjct: 150 GEHHEKAVELLKAAQGSVKLVV 171
+
+
+>sp|Q9Z252|LIN7B_RAT Lin-7 homolog B OS=Rattus norvegicus GN=Lin7b
+           PE=1 SV=1
+          Length = 207
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 28/82 (34%), Positives = 45/82 (54%), Gaps = 10/82 (12%)
+
+Query: 10  EKDPELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL--LQPGDKIIQANGYSFI 67
+           + D  LGF+I GG        +  +  I+++RV P G A +   L+ GD+++  NG S  
+Sbjct: 98  KTDEGLGFNIMGG--------KEQNSPIYISRVIPGGVADRHGGLKRGDQLLSVNGVSVE 149
+
+Query: 68  NIEHGQAVSLLKTFQNTVELII 89
+              H +AV LLK  Q +V+L++
+Sbjct: 150 GEHHEKAVELLKAAQGSVKLVV 171
+
+
+>sp|Q91XL2|LNX2_MOUSE Ligand of Numb protein X 2 OS=Mus musculus
+           GN=Lnx2 PE=1 SV=1
+          Length = 687
+
+ Score = 43.1 bits (100), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 26/80 (32%), Positives = 43/80 (53%), Gaps = 9/80 (11%)
+
+Query: 4   EIRVRVEKDPE--LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASK--LLQPGDKII 59
+           E  + V+K+P   LG +++GG G +          IFVT V P G  ++   ++ GD ++
+Sbjct: 463 EKHITVKKEPHESLGMTVAGGRGSKSGELP-----IFVTSVPPHGCLARDGRIKRGDVLL 517
+
+Query: 60  QANGYSFINIEHGQAVSLLK 79
+             NG    N+ H +AV++LK
+Sbjct: 518 NINGIDLTNLSHSEAVAMLK 537
+
+
+>sp|Q9C0E4|GRIP2_HUMAN Glutamate receptor-interacting protein 2
+            OS=Homo sapiens GN=GRIP2 PE=1 SV=3
+          Length = 1043
+
+ Score = 42.7 bits (99), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 31/91 (34%), Positives = 50/91 (54%), Gaps = 13/91 (14%)
+
+Query: 6    RVRVEKDP---ELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL-LQPGDKIIQA 61
+            +V + KDP   + GFS+S G+          + G++V  V+P+GPA +  LQP D+++Q 
+Sbjct: 941  KVTLHKDPMRHDFGFSVSDGLL---------EKGVYVHTVRPDGPAHRGGLQPFDRVLQV 991
+
+Query: 62   NGYSFINIEHGQAVSLLKTFQNTVELIIVRE 92
+            N     + +   AV LL    + +ELII R+
+Sbjct: 992  NHVRTRDFDCCLAVPLLAEAGDVLELIISRK 1022
+
+
+>sp|Q9ES64|USH1C_MOUSE Harmonin OS=Mus musculus GN=Ush1c PE=1 SV=1
+          Length = 910
+
+ Score = 42.7 bits (99), Expect = 5e-04,   Method: Composition-based stats.
+ Identities = 26/67 (38%), Positives = 43/67 (64%), Gaps = 9/67 (13%)
+
+Query: 15  LGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL-LQPGDKIIQANGYSFINIEHGQ 73
+           LG SIS G      P +    GIFV+ V+P   ++++ L+ GD+I++ NG  F N++H +
+Sbjct: 222 LGCSISSG------PIQ--KPGIFVSHVKPGSLSAEVGLETGDQIVEVNGIDFTNLDHKE 273
+
+Query: 74  AVSLLKT 80
+           AV++LK+
+Sbjct: 274 AVNVLKS 280
+
+
+>sp|Q80VW5|WHRN_MOUSE Whirlin OS=Mus musculus GN=Whrn PE=1 SV=3
+          Length = 918
+
+ Score = 42.4 bits (98), Expect = 6e-04,   Method: Composition-based stats.
+ Identities = 23/51 (45%), Positives = 35/51 (68%), Gaps = 1/51 (1%)
+
+Query: 36  GIFVTRVQPEGPA-SKLLQPGDKIIQANGYSFINIEHGQAVSLLKTFQNTV 85
+           GI++T V P   A S  L+ GD+I++ NG SF+NI H +AV LLK+ ++ +
+Sbjct: 304 GIYITGVDPGSEAESSGLKVGDQILEVNGRSFLNILHDEAVKLLKSSRHLI 354
+
+
+>sp|Q32LM6|LIN7A_BOVIN Lin-7 homolog A OS=Bos taurus GN=LIN7A PE=2
+           SV=1
+          Length = 233
+
+ Score = 42.0 bits (97), Expect = 0.001,   Method: Composition-based stats.
+ Identities = 25/82 (30%), Positives = 46/82 (56%), Gaps = 10/82 (12%)
+
+Query: 10  EKDPELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL--LQPGDKIIQANGYSFI 67
+           + D  LGF++ GG        +  +  I+++R+ P G A +   L+ GD+++  NG S  
+Sbjct: 113 KTDEGLGFNVMGG--------KEQNSPIYISRIIPGGVAERHGGLKRGDQLLSVNGVSVE 164
+
+Query: 68  NIEHGQAVSLLKTFQNTVELII 89
+              H +AV LLK  +++V+L++
+Sbjct: 165 GEHHEKAVELLKAAKDSVKLVV 186
+
+
+>sp|O14910|LIN7A_HUMAN Lin-7 homolog A OS=Homo sapiens GN=LIN7A PE=1
+           SV=2
+          Length = 233
+
+ Score = 42.0 bits (97), Expect = 0.001,   Method: Composition-based stats.
+ Identities = 25/82 (30%), Positives = 46/82 (56%), Gaps = 10/82 (12%)
+
+Query: 10  EKDPELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL--LQPGDKIIQANGYSFI 67
+           + D  LGF++ GG        +  +  I+++R+ P G A +   L+ GD+++  NG S  
+Sbjct: 113 KTDEGLGFNVMGG--------KEQNSPIYISRIIPGGVAERHGGLKRGDQLLSVNGVSVE 164
+
+Query: 68  NIEHGQAVSLLKTFQNTVELII 89
+              H +AV LLK  +++V+L++
+Sbjct: 165 GEHHEKAVELLKAAKDSVKLVV 186
+
+
+>sp|Q8JZS0|LIN7A_MOUSE Lin-7 homolog A OS=Mus musculus GN=Lin7a PE=1
+           SV=2
+          Length = 233
+
+ Score = 42.0 bits (97), Expect = 0.001,   Method: Composition-based stats.
+ Identities = 25/82 (30%), Positives = 46/82 (56%), Gaps = 10/82 (12%)
+
+Query: 10  EKDPELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL--LQPGDKIIQANGYSFI 67
+           + D  LGF++ GG        +  +  I+++R+ P G A +   L+ GD+++  NG S  
+Sbjct: 113 KTDEGLGFNVMGG--------KEQNSPIYISRIIPGGVAERHGGLKRGDQLLSVNGVSVE 164
+
+Query: 68  NIEHGQAVSLLKTFQNTVELII 89
+              H +AV LLK  +++V+L++
+Sbjct: 165 GEHHEKAVELLKAAKDSVKLVV 186
+
+
+>sp|Q9Z250|LIN7A_RAT Lin-7 homolog A OS=Rattus norvegicus GN=Lin7a
+           PE=1 SV=2
+          Length = 232
+
+ Score = 42.0 bits (97), Expect = 0.001,   Method: Composition-based stats.
+ Identities = 25/82 (30%), Positives = 46/82 (56%), Gaps = 10/82 (12%)
+
+Query: 10  EKDPELGFSISGGVGGRGNPFRPDDDGIFVTRVQPEGPASKL--LQPGDKIIQANGYSFI 67
+           + D  LGF++ GG        +  +  I+++R+ P G A +   L+ GD+++  NG S  
+Sbjct: 113 KTDEGLGFNVMGG--------KEQNSPIYISRIIPGGVAERHGGLKRGDQLLSVNGVSVE 164
+
+Query: 68  NIEHGQAVSLLKTFQNTVELII 89
+              H +AV LLK  +++V+L++
+Sbjct: 165 GEHHEKAVELLKAAKDSVKLVV 186
+
+
+  Database: sprot
+    Posted date:  Mar 15, 2009  5:38 PM
+  Number of letters in database: 148,809,765
+  Number of sequences in database:  412,525
+  
+Lambda     K      H
+   0.316    0.140    0.396 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 29,147,977
+Number of Sequences: 412525
+Number of extensions: 1179875
+Number of successful extensions: 3674
+Number of sequences better than 1.0e-03: 91
+Number of HSP's better than  0.0 without gapping: 11
+Number of HSP's successfully gapped in prelim test: 80
+Number of HSP's that attempted gapping in prelim test: 3455
+Number of HSP's gapped (non-prelim): 255
+length of query: 95
+length of database: 148,809,765
+effective HSP length: 65
+effective length of query: 30
+effective length of database: 121,995,640
+effective search space: 3659869200
+effective search space used: 3659869200
+T: 11
+A: 40
+X1: 16 ( 7.3 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.6 bits)
+S2: 97 (42.0 bits)

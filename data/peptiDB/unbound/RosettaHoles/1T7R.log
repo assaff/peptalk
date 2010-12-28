@@ -1,0 +1,51 @@
+core.init: command: /vol/ek/share/rosetta/mini/build/src/release/linux/2.6/32/x86/gcc/holes.linuxgccrelease -database /vol/ek/share/rosetta/minirosetta_database/ -holes:dalphaball /vol/ek/share/bin/DAlphaBall -holes:make_pdb -holes:make_voids -s 1T7R.mainChain.pdb
+core.init: 'RNG device' seed mode, using '/dev/urandom', seed=721227047 seed_offset=0 real_seed=721227047
+core.init.random: RandomGenerator:init: Normal mode, seed=721227047 RG_type=mt19937
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: standard
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION PATCH: score12
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/pdb_pair_stats_fine
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/P_AA
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/P_AA_n
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/P_AA_pp
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/Rama_smooth_dyn.dat_ss_6.4
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: standard
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION PATCH: score12
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue LYS 167
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD  on residue LYS 167
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CE  on residue LYS 167
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  NZ  on residue LYS 167
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue LYS 178
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD  on residue LYS 178
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CE  on residue LYS 178
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  NZ  on residue LYS 178
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue ASN 179
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OD1 on residue ASN 179
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  ND2 on residue ASN 179
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CG  on residue GLU 224
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  CD  on residue GLU 224
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OE1 on residue GLU 224
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OE2 on residue GLU 224
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_missing_sidechains: packing residue number 167 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 178 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 179 because of missing atom number 6 atom name  CG 
+core.pack.pack_missing_sidechains: packing residue number 224 because of missing atom number 6 atom name  CG 
+core.scoring.dunbrack: Dunbrack library took 0.06 seconds to load from binary
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.pack_rotamers: built 61 rotamers at 4 positions.
+core.pack.pack_rotamers: IG: 2168 bytes
+core.scoring.packing.compute_holes_score: compute_holes_surfs try: 1
+core.scoring.packing.compute_holes_score: compute_holes_surfs completed successfully
+core.scoring.packing.compute_holes_score: compute_rosettaholes_score done: 1.90553
+RosettaHoles: 1T7R.mainChain.pdb 1.90553 1.90495 -2.11155 -255.47
+dumping pdb to 1T7R.mainChain.pdb_cavs.pdb
+dumping cavities 
+protocols.packstat: prune raduis 1.4 15278 9382 6827 5431 4661 4217 3912 3723 3579 3487 3385 3317 3264 3222 3193 3182 3173 3168 3166 3164 3161 3159 3159 
+core.conformation.util: Non-ideal residue detected:  Residue #1 atom #1:  Ideal D=1.458, Inspected D=1.49019
+core.io.silent: ERROR: trying to use a 'protein' type silent file for a non-ideal pose
+core.io.silent: consider using the '-out:file:silent_struct_type binary' flag

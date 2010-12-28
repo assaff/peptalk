@@ -1,0 +1,1485 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_A  120
+         (120 letters)
+
+Database: sprot 
+           470,369 sequences; 166,709,888 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+1   sp|Q62625|MLP3B_RAT Microtubule-associated proteins 1A/1B light ...   224   9e-59
+2   sp|O41515|MLP3B_BOVIN Microtubule-associated proteins 1A/1B ligh...   219   2e-57
+3   sp|Q9GZQ8|MLP3B_HUMAN Microtubule-associated proteins 1A/1B ligh...   219   4e-57
+4   sp|Q9CQV6|MLP3B_MOUSE Microtubule-associated proteins 1A/1B ligh...   219   5e-57
+5   sp|A6NCE7|MP3B2_HUMAN Microtubule-associated proteins 1A/1B ligh...   218   7e-57
+6   sp|Q2HJ23|MLP3A_BOVIN Microtubule-associated proteins 1A/1B ligh...   191   1e-48
+7   sp|Q9H492|MLP3A_HUMAN Microtubule-associated proteins 1A/1B ligh...   191   1e-48
+8   sp|Q91VR7|MLP3A_MOUSE Microtubule-associated proteins 1A/1B ligh...   191   1e-48
+9   sp|Q6XVN8|MLP3A_RAT Microtubule-associated proteins 1A/1B light ...   191   1e-48
+10  sp|Q9BXW4|MLP3C_HUMAN Microtubule-associated proteins 1A/1B ligh...   129   3e-30
+11  sp|Q23536|LGG2_CAEEL Protein lgg-2 OS=Caenorhabditis elegans GN=...   125   6e-29
+12  sp|Q9LRP7|ATG8I_ARATH Autophagy-related protein 8i OS=Arabidopsi...    94   2e-19
+13  sp|Q8LEM4|ATG8A_ARATH Autophagy-related protein 8a OS=Arabidopsi...    92   8e-19
+14  sp|Q8VYK7|ATG8F_ARATH Autophagy-related protein 8f OS=Arabidopsi...    91   2e-18
+15  sp|Q9XEB5|ATG8B_ARATH Autophagy-related protein 8b OS=Arabidopsi...    90   4e-18
+16  sp|Q8S926|ATG8E_ARATH Autophagy-related protein 8e OS=Arabidopsi...    89   5e-18
+17  sp|P60519|GBRL2_BOVIN Gamma-aminobutyric acid receptor-associate...    89   9e-18
+18  sp|P60520|GBRL2_HUMAN Gamma-aminobutyric acid receptor-associate...    89   9e-18
+19  sp|P60521|GBRL2_MOUSE Gamma-aminobutyric acid receptor-associate...    89   9e-18
+20  sp|P60522|GBRL2_RAT Gamma-aminobutyric acid receptor-associated ...    89   9e-18
+21  sp|A2YS06|ATG8C_ORYSI Autophagy-related protein 8C OS=Oryza sati...    87   2e-17
+22  sp|Q6Z1D5|ATG8C_ORYSJ Autophagy-related protein 8C OS=Oryza sati...    87   2e-17
+23  sp|Q8S927|ATG8C_ARATH Autophagy-related protein 8c OS=Arabidopsi...    86   7e-17
+24  sp|Q4P2U6|ATG8_USTMA Autophagy-related protein 8 OS=Ustilago may...    86   8e-17
+25  sp|A2XXR7|ATG8B_ORYSI Autophagy-related protein 8B OS=Oryza sati...    85   9e-17
+26  sp|Q7XPR1|ATG8B_ORYSJ Autophagy-related protein 8B OS=Oryza sati...    85   9e-17
+27  sp|P87068|ATG8_LACBI Autophagy-related protein 8 OS=Laccaria bic...    85   1e-16
+28  sp|Q9SL04|ATG8D_ARATH Autophagy-related protein 8d OS=Arabidopsi...    85   1e-16
+29  sp|Q9LZZ9|ATG8G_ARATH Autophagy-related protein 8g OS=Arabidopsi...    84   2e-16
+30  sp|Q8H715|ATG8_PHYIN Autophagy-related protein 8 OS=Phytophthora...    84   2e-16
+31  sp|Q8S925|ATG8H_ARATH Autophagy-related protein 8h OS=Arabidopsi...    82   1e-15
+32  sp|Q6CMF8|ATG8_KLULA Autophagy-related protein 8 OS=Kluyveromyce...    82   1e-15
+33  sp|Q2RBS4|ATG8D_ORYSJ Autophagy-related protein 8D OS=Oryza sati...    82   1e-15
+34  sp|Q6C794|ATG8_YARLI Autophagy-related protein 8 OS=Yarrowia lip...    81   1e-15
+35  sp|Q2XPP5|ATG8A_ORYSI Autophagy-related protein 8A OS=Oryza sati...    81   2e-15
+36  sp|Q69RC4|ATG8A_ORYSJ Autophagy-related protein 8A OS=Oryza sati...    81   2e-15
+37  sp|Q5QFG1|ATG8_PICAN Autophagy-related protein 8 OS=Pichia angus...    81   2e-15
+38  sp|Q5KN30|ATG8_CRYNE Autophagy-related protein 8 OS=Cryptococcus...    81   2e-15
+39  sp|A1CQS1|ATG8_ASPCL Autophagy-related protein 8 OS=Aspergillus ...    80   4e-15
+40  sp|Q4WJ27|ATG8_ASPFU Autophagy-related protein 8 OS=Aspergillus ...    80   4e-15
+41  sp|A2QPN1|ATG8_ASPNC Autophagy-related protein 8 OS=Aspergillus ...    80   4e-15
+42  sp|Q0C804|ATG8_ASPTN Autophagy-related protein 8 OS=Aspergillus ...    80   4e-15
+43  sp|A1D3N4|ATG8_NEOFI Autophagy-related protein 8 OS=Neosartorya ...    80   4e-15
+44  sp|Q5B2U9|ATG8_EMENI Autophagy-related protein 8 OS=Emericella n...    80   5e-15
+45  sp|Q8J282|ATG8_PODAN Autophagy-related protein 8 OS=Podospora an...    80   5e-15
+46  sp|Q2GVL1|ATG8_CHAGB Autophagy-related protein 8 OS=Chaetomium g...    79   5e-15
+47  sp|A4LA70|ATG8_COLLN Autophagy-related protein 8 OS=Colletotrich...    79   6e-15
+48  sp|Q2UBH5|ATG8_ASPOR Autophagy-related protein 8 OS=Aspergillus ...    79   6e-15
+49  sp|A7KAL9|ATG8_PENCW Autophagy-related protein 8 OS=Penicillium ...    79   6e-15
+50  sp|O94272|ATG8_SCHPO Autophagy-related protein 8 OS=Schizosaccha...    79   6e-15
+51  sp|Q8WZY7|ATG8_NEUCR Autophagy-related protein 8 OS=Neurospora c...    79   8e-15
+52  sp|A3GFU8|ATG8_PICST Autophagy-related protein 8 OS=Pichia stipi...    79   1e-14
+53  sp|Q1E4K5|ATG8_COCIM Autophagy-related protein 8 OS=Coccidioides...    78   1e-14
+54  sp|Q0V3Y9|ATG8_PHANO Autophagy-related protein 8 OS=Phaeosphaeri...    78   1e-14
+55  sp|A7E8H4|ATG8_SCLS1 Autophagy-related protein 8 OS=Sclerotinia ...    78   1e-14
+56  sp|P0C075|ATG8_CANAL Autophagy-related protein 8 OS=Candida albi...    78   1e-14
+57  sp|A6RPU4|ATG8_BOTFB Autophagy-related protein 8 OS=Botryotinia ...    78   2e-14
+58  sp|Q51MW4|ATG8_MAGGR Autophagy-related protein 8 OS=Magnaporthe ...    78   2e-14
+59  sp|Q6FXR8|ATG8_CANGA Autophagy-related protein 8 OS=Candida glab...    77   3e-14
+60  sp|A7TDU7|ATG8_VANPO Autophagy-related protein 8 OS=Vanderwaltoz...    77   4e-14
+61  sp|A5DWI6|ATG8_LODEL Autophagy-related protein 8 OS=Lodderomyces...    76   4e-14
+62  sp|A6ZKM4|ATG8_YEAS7 Autophagy-related protein 8 OS=Saccharomyce...    76   4e-14
+63  sp|P38182|ATG8_YEAST Autophagy-related protein 8 OS=Saccharomyce...    76   4e-14
+64  sp|Q8NJJ4|ATG8_PICPA Autophagy-related protein 8 OS=Pichia pasto...    76   5e-14
+65  sp|Q755X2|ATG8_ASHGO Autophagy-related protein 8 OS=Ashbya gossy...    75   9e-14
+66  sp|Q6BT31|ATG8_DEBHA Autophagy-related protein 8 OS=Debaryomyces...    73   4e-13
+67  sp|Q86CR8|ATG8_DICDI Autophagy-related protein 8 OS=Dictyosteliu...    73   5e-13
+68  sp|Q5RF21|GBRL1_PONAB Gamma-aminobutyric acid receptor-associate...    71   1e-12
+69  sp|Q8HYB6|GBRL1_BOVIN Gamma-aminobutyric acid receptor-associate...    70   2e-12
+70  sp|P60518|GBRL1_CAVPO Gamma-aminobutyric acid receptor-associate...    70   2e-12
+71  sp|Q9H0R8|GBRL1_HUMAN Gamma-aminobutyric acid receptor-associate...    70   2e-12
+72  sp|Q8R3R8|GBRL1_MOUSE Gamma-aminobutyric acid receptor-associate...    70   2e-12
+73  sp|Q0VGK0|GBRL1_RAT Gamma-aminobutyric acid receptor-associated ...    70   2e-12
+74  sp|Q6GQ27|GBRL1_XENLA Gamma-aminobutyric acid receptor-associate...    70   2e-12
+75  sp|Q5BIZ2|GBRL1_XENTR Gamma-aminobutyric acid receptor-associate...    70   2e-12
+76  sp|Q09490|LGG1_CAEEL Protein lgg-1 OS=Caenorhabditis elegans GN=...    70   4e-12
+77  sp|Q9GJW7|GBRAP_BOVIN Gamma-aminobutyric acid receptor-associate...    69   8e-12
+78  sp|O95166|GBRAP_HUMAN Gamma-aminobutyric acid receptor-associate...    69   8e-12
+79  sp|Q9DCD6|GBRAP_MOUSE Gamma-aminobutyric acid receptor-associate...    69   8e-12
+80  sp|Q8MK68|GBRAP_RABIT Gamma-aminobutyric acid receptor-associate...    69   8e-12
+81  sp|P60517|GBRAP_RAT Gamma-aminobutyric acid receptor-associated ...    69   8e-12
+82  sp|Q9BY60|GBRL3_HUMAN Gamma-aminobutyric acid receptor-associate...    68   1e-11
+83  sp|Q6H6P0|ATG8E_ORYSJ Putative autophagy-related protein 8E OS=O...    47   2e-05
+
+>1|sp|Q62625|MLP3B_RAT Microtubule-associated proteins 1A/1B light
+           chain 3B OS=Rattus norvegicus GN=Map1lc3b PE=1 SV=3
+          Length = 142
+
+ Score =  224 bits (571), Expect = 9e-59,   Method: Composition-based stats.
+ Identities = 118/120 (98%), Positives = 120/120 (100%)
+
+Query: 1   MPSEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM 60
+           MPSEKTFKQRR+FEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM
+Sbjct: 1   MPSEKTFKQRRSFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM 60
+
+Query: 61  SELIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           SELIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESE+DEDGFLYMVYASQETFG
+Sbjct: 61  SELIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESERDEDGFLYMVYASQETFG 120
+
+
+>2|sp|O41515|MLP3B_BOVIN Microtubule-associated proteins 1A/1B light
+           chain 3B OS=Bos taurus GN=MAP1LC3B PE=1 SV=4
+          Length = 125
+
+ Score =  219 bits (559), Expect = 2e-57,   Method: Composition-based stats.
+ Identities = 119/120 (99%), Positives = 119/120 (99%)
+
+Query: 1   MPSEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM 60
+           MPSEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM
+Sbjct: 1   MPSEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM 60
+
+Query: 61  SELIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           SELIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPI EVYESEKDEDGFLYMVYASQETFG
+Sbjct: 61  SELIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPICEVYESEKDEDGFLYMVYASQETFG 120
+
+
+>3|sp|Q9GZQ8|MLP3B_HUMAN Microtubule-associated proteins 1A/1B light
+           chain 3B OS=Homo sapiens GN=MAP1LC3B PE=1 SV=3
+          Length = 125
+
+ Score =  219 bits (558), Expect = 4e-57,   Method: Composition-based stats.
+ Identities = 120/120 (100%), Positives = 120/120 (100%)
+
+Query: 1   MPSEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM 60
+           MPSEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM
+Sbjct: 1   MPSEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM 60
+
+Query: 61  SELIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           SELIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG
+Sbjct: 61  SELIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+
+
+>4|sp|Q9CQV6|MLP3B_MOUSE Microtubule-associated proteins 1A/1B light
+           chain 3B OS=Mus musculus GN=Map1lc3b PE=1 SV=3
+          Length = 125
+
+ Score =  219 bits (557), Expect = 5e-57,   Method: Composition-based stats.
+ Identities = 118/120 (98%), Positives = 120/120 (100%)
+
+Query: 1   MPSEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM 60
+           MPSEKTFKQRR+FEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM
+Sbjct: 1   MPSEKTFKQRRSFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM 60
+
+Query: 61  SELIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           SELIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESE+DEDGFLYMVYASQETFG
+Sbjct: 61  SELIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESERDEDGFLYMVYASQETFG 120
+
+
+>5|sp|A6NCE7|MP3B2_HUMAN Microtubule-associated proteins 1A/1B light
+           chain 3 beta 2 OS=Homo sapiens GN=MAP1LC3B2 PE=2 SV=1
+          Length = 125
+
+ Score =  218 bits (555), Expect = 7e-57,   Method: Composition-based stats.
+ Identities = 119/120 (99%), Positives = 119/120 (99%)
+
+Query: 1   MPSEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM 60
+           MPSEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM
+Sbjct: 1   MPSEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM 60
+
+Query: 61  SELIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           SELIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMV ASQETFG
+Sbjct: 61  SELIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVCASQETFG 120
+
+
+>6|sp|Q2HJ23|MLP3A_BOVIN Microtubule-associated proteins 1A/1B light
+           chain 3A OS=Bos taurus GN=MAP1LC3A PE=2 SV=1
+          Length = 121
+
+ Score =  191 bits (484), Expect = 1e-48,   Method: Composition-based stats.
+ Identities = 100/120 (83%), Positives = 111/120 (92%)
+
+Query: 1   MPSEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM 60
+           MPS++ FKQRR+F  R ++V+ IREQHP+KIPVIIERYKGEKQLPVLDKTKFLVPDHVNM
+Sbjct: 1   MPSDRPFKQRRSFADRCKEVQQIREQHPSKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM 60
+
+Query: 61  SELIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           SEL+KIIRRRLQLN  QAFFLLVN HSMVSVSTPI+++YE EKDEDGFLYMVYASQETFG
+Sbjct: 61  SELVKIIRRRLQLNPTQAFFLLVNQHSMVSVSTPIADIYEQEKDEDGFLYMVYASQETFG 120
+
+
+>7|sp|Q9H492|MLP3A_HUMAN Microtubule-associated proteins 1A/1B light
+           chain 3A OS=Homo sapiens GN=MAP1LC3A PE=1 SV=2
+          Length = 121
+
+ Score =  191 bits (484), Expect = 1e-48,   Method: Composition-based stats.
+ Identities = 99/120 (82%), Positives = 111/120 (92%)
+
+Query: 1   MPSEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM 60
+           MPS++ FKQRR+F  R ++V+ IR+QHP+KIPVIIERYKGEKQLPVLDKTKFLVPDHVNM
+Sbjct: 1   MPSDRPFKQRRSFADRCKEVQQIRDQHPSKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM 60
+
+Query: 61  SELIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           SEL+KIIRRRLQLN  QAFFLLVN HSMVSVSTPI+++YE EKDEDGFLYMVYASQETFG
+Sbjct: 61  SELVKIIRRRLQLNPTQAFFLLVNQHSMVSVSTPIADIYEQEKDEDGFLYMVYASQETFG 120
+
+
+>8|sp|Q91VR7|MLP3A_MOUSE Microtubule-associated proteins 1A/1B light
+           chain 3A OS=Mus musculus GN=Map1lc3a PE=2 SV=1
+          Length = 121
+
+ Score =  191 bits (484), Expect = 1e-48,   Method: Composition-based stats.
+ Identities = 99/120 (82%), Positives = 111/120 (92%)
+
+Query: 1   MPSEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM 60
+           MPS++ FKQRR+F  R ++V+ IR+QHP+KIPVIIERYKGEKQLPVLDKTKFLVPDHVNM
+Sbjct: 1   MPSDRPFKQRRSFADRCKEVQQIRDQHPSKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM 60
+
+Query: 61  SELIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           SEL+KIIRRRLQLN  QAFFLLVN HSMVSVSTPI+++YE EKDEDGFLYMVYASQETFG
+Sbjct: 61  SELVKIIRRRLQLNPTQAFFLLVNQHSMVSVSTPIADIYEQEKDEDGFLYMVYASQETFG 120
+
+
+>9|sp|Q6XVN8|MLP3A_RAT Microtubule-associated proteins 1A/1B light
+           chain 3A OS=Rattus norvegicus GN=Map1lc3a PE=1 SV=1
+          Length = 121
+
+ Score =  191 bits (484), Expect = 1e-48,   Method: Composition-based stats.
+ Identities = 99/120 (82%), Positives = 111/120 (92%)
+
+Query: 1   MPSEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM 60
+           MPS++ FKQRR+F  R ++V+ IR+QHP+KIPVIIERYKGEKQLPVLDKTKFLVPDHVNM
+Sbjct: 1   MPSDRPFKQRRSFADRCKEVQQIRDQHPSKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM 60
+
+Query: 61  SELIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           SEL+KIIRRRLQLN  QAFFLLVN HSMVSVSTPI+++YE EKDEDGFLYMVYASQETFG
+Sbjct: 61  SELVKIIRRRLQLNPTQAFFLLVNQHSMVSVSTPIADIYEQEKDEDGFLYMVYASQETFG 120
+
+
+>10|sp|Q9BXW4|MLP3C_HUMAN Microtubule-associated proteins 1A/1B light
+           chain 3C OS=Homo sapiens GN=MAP1LC3C PE=1 SV=1
+          Length = 147
+
+ Score =  129 bits (325), Expect = 3e-30,   Method: Composition-based stats.
+ Identities = 66/120 (55%), Positives = 87/120 (72%)
+
+Query: 1   MPSEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM 60
+           +PS + FKQR++   R E+V  IR + P KIPV++ERY  E  LP LDKTKFLVP  + M
+Sbjct: 7   IPSVRPFKQRKSLAIRQEEVAGIRAKFPNKIPVVVERYPRETFLPPLDKTKFLVPQELTM 66
+
+Query: 61  SELIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           ++ + IIR R+ L A +AF+LLVN  S+VS+S  ++E+Y   KDEDGF+YM YASQETFG
+Sbjct: 67  TQFLSIIRSRMVLRATEAFYLLVNNKSLVSMSATMAEIYRDYKDEDGFVYMTYASQETFG 126
+
+
+>11|sp|Q23536|LGG2_CAEEL Protein lgg-2 OS=Caenorhabditis elegans
+           GN=lgg-2 PE=1 SV=1
+          Length = 130
+
+ Score =  125 bits (314), Expect = 6e-29,   Method: Composition-based stats.
+ Identities = 67/115 (58%), Positives = 88/115 (76%)
+
+Query: 6   TFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIK 65
+           +FK+RR F +R +DV  IR Q P K+PVIIER+ GE+ LP++D+ KFLVP+H+ ++EL+ 
+Sbjct: 16  SFKERRPFHERQKDVEEIRSQQPNKVPVIIERFDGERSLPLMDRCKFLVPEHITVAELMS 75
+
+Query: 66  IIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           I+RRRLQL+  QAFFLLVN  SMVS S  +S +Y  E+D DGF+YMVY SQ  FG
+Sbjct: 76  IVRRRLQLHPQQAFFLLVNERSMVSNSMSMSNLYSQERDPDGFVYMVYTSQPAFG 130
+
+
+>12|sp|Q9LRP7|ATG8I_ARATH Autophagy-related protein 8i OS=Arabidopsis
+           thaliana GN=ATG8I PE=2 SV=1
+          Length = 115
+
+ Score = 94.4 bits (233), Expect = 2e-19,   Method: Composition-based stats.
+ Identities = 48/116 (41%), Positives = 80/116 (68%), Gaps = 2/116 (1%)
+
+Query: 5   KTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELI 64
+           K+FK++ T ++R+ + R I  ++PT+IPVI E+Y  +  LP ++K KFLVP  +++ + I
+Sbjct: 2   KSFKEQYTLDERLAESREIIAKYPTRIPVIAEKY-CKTDLPAIEKKKFLVPRDMSVGQFI 60
+
+Query: 65  KIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+            I+  RL L+  +A F+ VN +++   +  +  VYES KD+DGF+YM Y+S++TFG
+Sbjct: 61  YILSARLHLSPGKALFVFVN-NTLPQTAALMDSVYESYKDDDGFVYMCYSSEKTFG 115
+
+
+>13|sp|Q8LEM4|ATG8A_ARATH Autophagy-related protein 8a OS=Arabidopsis
+           thaliana GN=ATG8A PE=1 SV=2
+          Length = 122
+
+ Score = 92.0 bits (227), Expect = 8e-19,   Method: Composition-based stats.
+ Identities = 44/118 (37%), Positives = 77/118 (65%), Gaps = 2/118 (1%)
+
+Query: 3   SEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSE 62
+           ++ +FK     E R+ +   IRE++P +IPVI+E+  G+  +P +DK K+LVP  + + +
+Sbjct: 2   AKSSFKISNPLEARMSESSRIREKYPDRIPVIVEK-AGQSDVPDIDKKKYLVPADLTVGQ 60
+
+Query: 63  LIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+            + ++R+R++L A +A F+ V  +++   +  +S +YE  KDEDGFLYM Y+ + TFG
+Sbjct: 61  FVYVVRKRIKLGAEKAIFVFVK-NTLPPTAALMSAIYEEHKDEDGFLYMTYSGENTFG 117
+
+
+>14|sp|Q8VYK7|ATG8F_ARATH Autophagy-related protein 8f OS=Arabidopsis
+           thaliana GN=ATG8F PE=2 SV=1
+          Length = 121
+
+ Score = 90.9 bits (224), Expect = 2e-18,   Method: Composition-based stats.
+ Identities = 44/118 (37%), Positives = 79/118 (66%), Gaps = 2/118 (1%)
+
+Query: 3   SEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSE 62
+           ++ +FKQ    E+R  +   IRE++P +IPVI+E+ + +  +P +DK K+LVP  + + +
+Sbjct: 2   AKSSFKQEHDLEKRRAEAARIREKYPDRIPVIVEKAE-KSDIPTIDKKKYLVPADLTVGQ 60
+
+Query: 63  LIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+            + +IR+R++L+A +A F+ V+ + +      +S VYE +KD+DGFLY+ Y+ + TFG
+Sbjct: 61  FVYVIRKRIKLSAEKAIFIFVD-NVLPPAGALMSSVYEEKKDDDGFLYVTYSGENTFG 117
+
+
+>15|sp|Q9XEB5|ATG8B_ARATH Autophagy-related protein 8b OS=Arabidopsis
+           thaliana GN=ATG8B PE=2 SV=1
+          Length = 122
+
+ Score = 89.7 bits (221), Expect = 4e-18,   Method: Composition-based stats.
+ Identities = 42/117 (35%), Positives = 75/117 (64%), Gaps = 2/117 (1%)
+
+Query: 4   EKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSEL 63
+           + +FK     E R+ +   IR ++P ++PVI+E+  G+  +P +DK K+LVP  + + + 
+Sbjct: 3   KNSFKLSNPLEMRMAESTRIRAKYPERVPVIVEK-AGQSDVPDIDKKKYLVPADLTIGQF 61
+
+Query: 64  IKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           + ++R+R++L A +A F+ V  +++   +  +S +YE  KDEDGFLYM Y+ + TFG
+Sbjct: 62  VYVVRKRIKLGAEKAIFVFVK-NTLPPTAALMSAIYEEHKDEDGFLYMTYSGENTFG 117
+
+
+>16|sp|Q8S926|ATG8E_ARATH Autophagy-related protein 8e OS=Arabidopsis
+           thaliana GN=ATG8E PE=2 SV=1
+          Length = 122
+
+ Score = 89.4 bits (220), Expect = 5e-18,   Method: Composition-based stats.
+ Identities = 46/120 (38%), Positives = 78/120 (65%), Gaps = 2/120 (1%)
+
+Query: 1   MPSEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNM 60
+           M     FK    FE+R  +   IRE++P +IPVI+E+ + + ++P +DK K+LVP  + +
+Sbjct: 1   MNKGSIFKMDDDFEKRKAEAGRIREKYPDRIPVIVEKAE-KSEVPNIDKKKYLVPSDLTV 59
+
+Query: 61  SELIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+            + + +IR+R++L+A +A F+ V+ + +      +S VYE +KDEDGFLY+ Y+ + TFG
+Sbjct: 60  GQFVYVIRKRIKLSAEKAIFIFVD-NVLPPTGELMSSVYEDKKDEDGFLYITYSGENTFG 118
+
+
+>17|sp|P60519|GBRL2_BOVIN Gamma-aminobutyric acid receptor-associated
+           protein-like 2 OS=Bos taurus GN=GABARAPL2 PE=1 SV=1
+          Length = 117
+
+ Score = 88.6 bits (218), Expect = 9e-18,   Method: Composition-based stats.
+ Identities = 45/114 (39%), Positives = 75/114 (65%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK+  + E R  +   IR ++P ++PVI+E+  G  Q+  +DK K+LVP  + +++ + I
+Sbjct: 5   FKEDHSLEHRCVESAKIRAKYPDRVPVIVEKVSGS-QIVDIDKRKYLVPSDITVAQFMWI 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R+QL + +A FL V+  ++   S  + ++YE EKDEDGFLY+ Y+ + TFG
+Sbjct: 64  IRKRIQLPSEKAIFLFVD-KTVPQSSLTMGQLYEKEKDEDGFLYVAYSGENTFG 116
+
+
+>18|sp|P60520|GBRL2_HUMAN Gamma-aminobutyric acid receptor-associated
+           protein-like 2 OS=Homo sapiens GN=GABARAPL2 PE=1 SV=1
+          Length = 117
+
+ Score = 88.6 bits (218), Expect = 9e-18,   Method: Composition-based stats.
+ Identities = 45/114 (39%), Positives = 75/114 (65%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK+  + E R  +   IR ++P ++PVI+E+  G  Q+  +DK K+LVP  + +++ + I
+Sbjct: 5   FKEDHSLEHRCVESAKIRAKYPDRVPVIVEKVSGS-QIVDIDKRKYLVPSDITVAQFMWI 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R+QL + +A FL V+  ++   S  + ++YE EKDEDGFLY+ Y+ + TFG
+Sbjct: 64  IRKRIQLPSEKAIFLFVD-KTVPQSSLTMGQLYEKEKDEDGFLYVAYSGENTFG 116
+
+
+>19|sp|P60521|GBRL2_MOUSE Gamma-aminobutyric acid receptor-associated
+           protein-like 2 OS=Mus musculus GN=Gabarapl2 PE=2 SV=1
+          Length = 117
+
+ Score = 88.6 bits (218), Expect = 9e-18,   Method: Composition-based stats.
+ Identities = 45/114 (39%), Positives = 75/114 (65%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK+  + E R  +   IR ++P ++PVI+E+  G  Q+  +DK K+LVP  + +++ + I
+Sbjct: 5   FKEDHSLEHRCVESAKIRAKYPDRVPVIVEKVSGS-QIVDIDKRKYLVPSDITVAQFMWI 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R+QL + +A FL V+  ++   S  + ++YE EKDEDGFLY+ Y+ + TFG
+Sbjct: 64  IRKRIQLPSEKAIFLFVD-KTVPQSSLTMGQLYEKEKDEDGFLYVAYSGENTFG 116
+
+
+>20|sp|P60522|GBRL2_RAT Gamma-aminobutyric acid receptor-associated
+           protein-like 2 OS=Rattus norvegicus GN=Gabarapl2 PE=2
+           SV=1
+          Length = 117
+
+ Score = 88.6 bits (218), Expect = 9e-18,   Method: Composition-based stats.
+ Identities = 45/114 (39%), Positives = 75/114 (65%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK+  + E R  +   IR ++P ++PVI+E+  G  Q+  +DK K+LVP  + +++ + I
+Sbjct: 5   FKEDHSLEHRCVESAKIRAKYPDRVPVIVEKVSGS-QIVDIDKRKYLVPSDITVAQFMWI 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R+QL + +A FL V+  ++   S  + ++YE EKDEDGFLY+ Y+ + TFG
+Sbjct: 64  IRKRIQLPSEKAIFLFVD-KTVPQSSLTMGQLYEKEKDEDGFLYVAYSGENTFG 116
+
+
+>21|sp|A2YS06|ATG8C_ORYSI Autophagy-related protein 8C OS=Oryza sativa
+           subsp. indica GN=ATG8C PE=3 SV=2
+          Length = 120
+
+ Score = 87.4 bits (215), Expect = 2e-17,   Method: Composition-based stats.
+ Identities = 43/118 (36%), Positives = 76/118 (64%), Gaps = 2/118 (1%)
+
+Query: 3   SEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSE 62
+           +  +FK     E+R  +   IRE++P +IPVI+E+ +    +P +DK K+LVP  + + +
+Sbjct: 2   ARSSFKLEHPLERRQAEANRIREKYPDRIPVIVEKAE-RSDIPDIDKKKYLVPADLTVGQ 60
+
+Query: 63  LIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+            + ++R+R++L+A +A F+ V  +++   +  +S +YE  KDEDGFLYM Y+ + TFG
+Sbjct: 61  FVYVVRKRIKLSAEKAIFIFVK-NTLPPTAALMSAIYEENKDEDGFLYMTYSGENTFG 117
+
+
+>22|sp|Q6Z1D5|ATG8C_ORYSJ Autophagy-related protein 8C OS=Oryza sativa
+           subsp. japonica GN=ATG8C PE=2 SV=1
+          Length = 120
+
+ Score = 87.4 bits (215), Expect = 2e-17,   Method: Composition-based stats.
+ Identities = 43/118 (36%), Positives = 76/118 (64%), Gaps = 2/118 (1%)
+
+Query: 3   SEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSE 62
+           +  +FK     E+R  +   IRE++P +IPVI+E+ +    +P +DK K+LVP  + + +
+Sbjct: 2   ARSSFKLEHPLERRQAEANRIREKYPDRIPVIVEKAE-RSDIPDIDKKKYLVPADLTVGQ 60
+
+Query: 63  LIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+            + ++R+R++L+A +A F+ V  +++   +  +S +YE  KDEDGFLYM Y+ + TFG
+Sbjct: 61  FVYVVRKRIKLSAEKAIFIFVK-NTLPPTAALMSAIYEENKDEDGFLYMTYSGENTFG 117
+
+
+>23|sp|Q8S927|ATG8C_ARATH Autophagy-related protein 8c OS=Arabidopsis
+           thaliana GN=ATG8C PE=2 SV=1
+          Length = 119
+
+ Score = 85.9 bits (211), Expect = 7e-17,   Method: Composition-based stats.
+ Identities = 43/118 (36%), Positives = 76/118 (64%), Gaps = 2/118 (1%)
+
+Query: 3   SEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSE 62
+           +  +FK     E+R  +   IRE++P +IPVI+ER +    +P +DK K+LVP  + + +
+Sbjct: 2   ANSSFKLEHPLERRQIESSRIREKYPDRIPVIVERAE-RSDVPNIDKKKYLVPADLTVGQ 60
+
+Query: 63  LIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+            + ++R+R++L+A +A F+ V  +++   +  +S +Y+  KDEDGFLYM Y+ + TFG
+Sbjct: 61  FVYVVRKRIKLSAEKAIFVFVK-NTLPPTAAMMSAIYDENKDEDGFLYMTYSGENTFG 117
+
+
+>24|sp|Q4P2U6|ATG8_USTMA Autophagy-related protein 8 OS=Ustilago maydis
+           GN=ATG8 PE=3 SV=1
+          Length = 118
+
+ Score = 85.5 bits (210), Expect = 8e-17,   Method: Composition-based stats.
+ Identities = 42/114 (36%), Positives = 72/114 (63%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK   +FE+R  +   IR+++P +IPVI E+      +P +DK K+LVP  + + + + +
+Sbjct: 5   FKNEHSFEKRKAEAERIRQKYPDRIPVICEK-ADRTDIPTIDKKKYLVPSDLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L   +A F+ V+   + + +  +S +YE  KDEDGFLY+ Y+ + TFG
+Sbjct: 64  IRKRIKLAPEKAIFIFVD-EVLPATAALMSAIYEEHKDEDGFLYVSYSGENTFG 116
+
+
+>25|sp|A2XXR7|ATG8B_ORYSI Autophagy-related protein 8B OS=Oryza sativa
+           subsp. indica GN=ATG8B PE=3 SV=1
+          Length = 119
+
+ Score = 85.1 bits (209), Expect = 9e-17,   Method: Composition-based stats.
+ Identities = 42/118 (35%), Positives = 76/118 (64%), Gaps = 2/118 (1%)
+
+Query: 3   SEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSE 62
+           ++ +FK   T E+R  +   IRE++  +IPVI+E+ +    +P +DK K+LVP  + + +
+Sbjct: 2   AKSSFKLDHTLERRQAEANRIREKYSDRIPVIVEKAE-RSDIPDIDKKKYLVPADLTVGQ 60
+
+Query: 63  LIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+            + ++R+R++L+  +A F+ V  +++   +  +S +YE  KDEDGFLYM Y+ + TFG
+Sbjct: 61  FVYVVRKRIKLSPEKAIFIFVK-NTLPPTAALMSAIYEENKDEDGFLYMTYSGENTFG 117
+
+
+>26|sp|Q7XPR1|ATG8B_ORYSJ Autophagy-related protein 8B OS=Oryza sativa
+           subsp. japonica GN=ATG8B PE=3 SV=2
+          Length = 119
+
+ Score = 85.1 bits (209), Expect = 9e-17,   Method: Composition-based stats.
+ Identities = 42/118 (35%), Positives = 76/118 (64%), Gaps = 2/118 (1%)
+
+Query: 3   SEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSE 62
+           ++ +FK   T E+R  +   IRE++  +IPVI+E+ +    +P +DK K+LVP  + + +
+Sbjct: 2   AKSSFKLDHTLERRQAEANRIREKYSDRIPVIVEKAE-RSDIPDIDKKKYLVPADLTVGQ 60
+
+Query: 63  LIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+            + ++R+R++L+  +A F+ V  +++   +  +S +YE  KDEDGFLYM Y+ + TFG
+Sbjct: 61  FVYVVRKRIKLSPEKAIFIFVK-NTLPPTAALMSAIYEENKDEDGFLYMTYSGENTFG 117
+
+
+>27|sp|P87068|ATG8_LACBI Autophagy-related protein 8 OS=Laccaria
+           bicolor GN=ATG8 PE=2 SV=2
+          Length = 184
+
+ Score = 85.1 bits (209), Expect = 1e-16,   Method: Composition-based stats.
+ Identities = 41/114 (35%), Positives = 69/114 (60%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   IR+++P +IPVI E+      +P +DK K+LVP  + + + + +
+Sbjct: 5   FKDEHPFEKRKAEAERIRQKYPDRIPVICEK-ADRTDIPTIDKKKYLVPSDLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L   +A F+ V+   +   +  +S +YE  KDED FLY+ Y+ + TFG
+Sbjct: 64  IRKRIKLAPEKAIFIFVD-EVLPPTAALMSAIYEEHKDEDNFLYVSYSGENTFG 116
+
+
+>28|sp|Q9SL04|ATG8D_ARATH Autophagy-related protein 8d OS=Arabidopsis
+           thaliana GN=ATG8D PE=1 SV=1
+          Length = 120
+
+ Score = 84.7 bits (208), Expect = 1e-16,   Method: Composition-based stats.
+ Identities = 42/115 (36%), Positives = 74/115 (64%), Gaps = 2/115 (1%)
+
+Query: 6   TFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIK 65
+           +FK     E+R  +   IRE++P +IPVI+ER + +  +P +D+ K+LVP  + + + + 
+Sbjct: 5   SFKHEHPLEKRQAEAARIREKYPDRIPVIVERAE-KSDVPDIDRKKYLVPADLTVGQFVY 63
+
+Query: 66  IIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           ++R+R++L+  +A F+ V  + +   +  +S +YE  KDEDGFLYM Y+ + TFG
+Sbjct: 64  VVRKRIKLSPEKAIFIFVK-NILPPTAAIMSAIYEEHKDEDGFLYMSYSGENTFG 117
+
+
+>29|sp|Q9LZZ9|ATG8G_ARATH Autophagy-related protein 8g OS=Arabidopsis
+           thaliana GN=ATG8G PE=2 SV=1
+          Length = 121
+
+ Score = 84.3 bits (207), Expect = 2e-16,   Method: Composition-based stats.
+ Identities = 42/118 (35%), Positives = 77/118 (65%), Gaps = 2/118 (1%)
+
+Query: 3   SEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSE 62
+           S  +F+Q   FE+R  +   IRE++  ++PVI+E+ + +  +P +DK K+LVP  + + +
+Sbjct: 2   SNVSFRQDHDFEKRKAEALRIREKYSDRVPVIVEKSE-KSDIPNIDKKKYLVPADLTVGQ 60
+
+Query: 63  LIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+            + +IR+R+QL+A +A F+ V+ + +      +S +Y+  K+EDGFLY+ Y+ + TFG
+Sbjct: 61  FVYVIRKRIQLSAEKAIFIFVD-NVLPPTGAMMSTIYDENKEEDGFLYVTYSGENTFG 117
+
+
+>30|sp|Q8H715|ATG8_PHYIN Autophagy-related protein 8 OS=Phytophthora
+           infestans GN=ATG8 PE=3 SV=1
+          Length = 116
+
+ Score = 84.0 bits (206), Expect = 2e-16,   Method: Composition-based stats.
+ Identities = 41/115 (35%), Positives = 74/115 (64%), Gaps = 2/115 (1%)
+
+Query: 6   TFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIK 65
+           +FK+   FE+R  + + IR ++P +IPVI E+      +P +DK K+LVP  + + + + 
+Sbjct: 3   SFKKEHPFEKRQAEAQRIRSKYPDRIPVICEK-ADRSDIPDIDKKKYLVPADLTVGQFVY 61
+
+Query: 66  IIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           +IR+R++L+  +A F+ +N + +   +  +S +YE +KD DGFLY+ Y+ + TFG
+Sbjct: 62  VIRKRIKLSPEKAIFIFIN-NVLPPTAALMSNIYEEQKDVDGFLYITYSGENTFG 115
+
+
+>31|sp|Q8S925|ATG8H_ARATH Autophagy-related protein 8h OS=Arabidopsis
+           thaliana GN=ATG8H PE=2 SV=1
+          Length = 119
+
+ Score = 81.6 bits (200), Expect = 1e-15,   Method: Composition-based stats.
+ Identities = 40/116 (34%), Positives = 79/116 (68%), Gaps = 2/116 (1%)
+
+Query: 5   KTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELI 64
+           K+FK + + ++R+++   I  ++P +IPVIIE+Y     LP ++K K+LVP  + +   I
+Sbjct: 6   KSFKDQFSSDERLKESNNIIAKYPDRIPVIIEKYS-NADLPDMEKNKYLVPRDMTVGHFI 64
+
+Query: 65  KIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+            ++ +R+QL+ ++A F+ V+ +++   ++ +  +Y + K+EDGFLYM Y++++TFG
+Sbjct: 65  HMLSKRMQLDPSKALFVFVH-NTLPQTASRMDSLYNTFKEEDGFLYMCYSTEKTFG 119
+
+
+>32|sp|Q6CMF8|ATG8_KLULA Autophagy-related protein 8 OS=Kluyveromyces
+           lactis GN=ATG8 PE=3 SV=1
+          Length = 124
+
+ Score = 81.6 bits (200), Expect = 1e-15,   Method: Composition-based stats.
+ Identities = 43/117 (36%), Positives = 73/117 (62%), Gaps = 2/117 (1%)
+
+Query: 4   EKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSEL 63
+           +  FK    FE+R  +   I ++   +IPVI ER  G+  +P +DK K+LVP  + + + 
+Sbjct: 2   KSAFKSEFPFEKRKAESERIVQKFHNRIPVICER-GGKSDIPDIDKRKYLVPGDLTVGQF 60
+
+Query: 64  IKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           + +IR+R++L A +A F+ VN  ++   +  +S +Y+  KD+DGFLY+ Y+S+ TFG
+Sbjct: 61  VYVIRKRIKLPAEKAIFIFVN-DTLPPTAALMSSIYQQHKDKDGFLYVSYSSENTFG 116
+
+
+>33|sp|Q2RBS4|ATG8D_ORYSJ Autophagy-related protein 8D OS=Oryza sativa
+           subsp. japonica GN=ATG8D PE=3 SV=2
+          Length = 118
+
+ Score = 81.6 bits (200), Expect = 1e-15,   Method: Composition-based stats.
+ Identities = 45/117 (38%), Positives = 75/117 (64%), Gaps = 3/117 (2%)
+
+Query: 5   KTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELI 64
+           + FK+  T E+R ++   +   +P +IPVI+E++     LP ++K K+LVP ++ + + I
+Sbjct: 4   RPFKEEFTLEERAKESAAMIASYPDRIPVIVEKFS-RSNLPEMEKRKYLVPCNMPVGQFI 62
+
+Query: 65  KIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDE-DGFLYMVYASQETFG 120
+            I+R RL L+   A F+ VN +++   +  +  VYES KDE DGFLY+ Y+S++TFG
+Sbjct: 63  FILRSRLHLSPGTALFVFVN-NTLPQTAQLMGSVYESYKDEGDGFLYLCYSSEKTFG 118
+
+
+>34|sp|Q6C794|ATG8_YARLI Autophagy-related protein 8 OS=Yarrowia
+           lipolytica GN=ATG8 PE=3 SV=2
+          Length = 124
+
+ Score = 81.3 bits (199), Expect = 1e-15,   Method: Composition-based stats.
+ Identities = 41/114 (35%), Positives = 74/114 (64%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   IR+++  ++PVI E+ + +  +PV+DK K+LVP  + + + + +
+Sbjct: 5   FKDEHPFEKRRAEAERIRKKYDDRVPVICEKVE-KSDIPVIDKKKYLVPADLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L++ +A F+ V+   +   +  +S +YE  KDEDGFLY+ Y+ + TFG
+Sbjct: 64  IRKRIKLSSERAIFIFVD-DVLPPTAALMSSIYEEHKDEDGFLYVTYSGENTFG 116
+
+
+>35|sp|Q2XPP5|ATG8A_ORYSI Autophagy-related protein 8A OS=Oryza sativa
+           subsp. indica GN=ATG8A PE=1 SV=1
+          Length = 119
+
+ Score = 81.3 bits (199), Expect = 2e-15,   Method: Composition-based stats.
+ Identities = 41/118 (34%), Positives = 75/118 (63%), Gaps = 2/118 (1%)
+
+Query: 3   SEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSE 62
+           +  +FK     E+R  +   IRE++  +IPVI+E+   +  +P +DK K+LVP  + + +
+Sbjct: 2   ARTSFKLEHPLERRQAESARIREKYSDRIPVIVEK-ADKTDVPEIDKKKYLVPADLTVGQ 60
+
+Query: 63  LIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+            + ++R+R++L+  +A F+ V  +++   ++ +S +YE  KDEDGFLYM Y+ + TFG
+Sbjct: 61  FVYVVRKRIKLSPEKAIFVFVK-NTLPPTASLMSAIYEENKDEDGFLYMTYSGENTFG 117
+
+
+>36|sp|Q69RC4|ATG8A_ORYSJ Autophagy-related protein 8A OS=Oryza sativa
+           subsp. japonica GN=ATG8A PE=3 SV=1
+          Length = 119
+
+ Score = 81.3 bits (199), Expect = 2e-15,   Method: Composition-based stats.
+ Identities = 41/118 (34%), Positives = 75/118 (63%), Gaps = 2/118 (1%)
+
+Query: 3   SEKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSE 62
+           +  +FK     E+R  +   IRE++  +IPVI+E+   +  +P +DK K+LVP  + + +
+Sbjct: 2   ARTSFKLEHPLERRQAESARIREKYSDRIPVIVEK-ADKTDVPEIDKKKYLVPADLTVGQ 60
+
+Query: 63  LIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+            + ++R+R++L+  +A F+ V  +++   ++ +S +YE  KDEDGFLYM Y+ + TFG
+Sbjct: 61  FVYVVRKRIKLSPEKAIFVFVK-NTLPPTASLMSAIYEENKDEDGFLYMTYSGENTFG 117
+
+
+>37|sp|Q5QFG1|ATG8_PICAN Autophagy-related protein 8 OS=Pichia angusta
+           GN=ATG8 PE=3 SV=1
+          Length = 125
+
+ Score = 80.9 bits (198), Expect = 2e-15,   Method: Composition-based stats.
+ Identities = 44/114 (38%), Positives = 72/114 (63%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   IR +   +IPVI E+ + E  +P +DK K+LVP  + + + + +
+Sbjct: 5   FKDEHPFERRKAEASRIRGKFLDRIPVICEKVE-ESDIPEIDKRKYLVPSDLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R+QL + +A F+ VN   +   ++ +S +YE  KDEDGFLY++Y+ + TFG
+Sbjct: 64  IRKRIQLPSEKAIFIFVN-DILPPTASLMSTIYEQYKDEDGFLYILYSGENTFG 116
+
+
+>38|sp|Q5KN30|ATG8_CRYNE Autophagy-related protein 8 OS=Cryptococcus
+           neoformans GN=ATG8 PE=3 SV=1
+          Length = 126
+
+ Score = 80.9 bits (198), Expect = 2e-15,   Method: Composition-based stats.
+ Identities = 41/114 (35%), Positives = 73/114 (64%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    F++R  +   IR+++  +IPVI E+ + +  +P +DK K+LVP  + + + + +
+Sbjct: 6   FKDEHPFDKRKAEAERIRQKYQDRIPVICEKAE-KSDIPTIDKKKYLVPADLTVGQFVYV 64
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L   +A F+ V+   +   +  +S +Y+  KDEDGFLY++YAS+ TFG
+Sbjct: 65  IRKRIKLAPEKAIFIFVD-DILPPTAALMSSIYDEHKDEDGFLYVLYASENTFG 117
+
+
+>39|sp|A1CQS1|ATG8_ASPCL Autophagy-related protein 8 OS=Aspergillus
+           clavatus GN=atg8 PE=3 SV=1
+          Length = 118
+
+ Score = 80.1 bits (196), Expect = 4e-15,   Method: Composition-based stats.
+ Identities = 40/114 (35%), Positives = 71/114 (62%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   IR+++  +IPVI E+ + +  +  +DK K+LVP  + + + + +
+Sbjct: 5   FKDEHPFEKRKAEAERIRQKYADRIPVICEKVE-KSDIATIDKKKYLVPADLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L+  +A F+ V+   +   +  +S +YE  KDEDGFLY+ Y+ + TFG
+Sbjct: 64  IRKRIKLSPEKAIFIFVD-EVLPPTAALMSSIYEEHKDEDGFLYITYSGENTFG 116
+
+
+>40|sp|Q4WJ27|ATG8_ASPFU Autophagy-related protein 8 OS=Aspergillus
+           fumigatus GN=atg8 PE=3 SV=1
+          Length = 118
+
+ Score = 80.1 bits (196), Expect = 4e-15,   Method: Composition-based stats.
+ Identities = 40/114 (35%), Positives = 71/114 (62%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   IR+++  +IPVI E+ + +  +  +DK K+LVP  + + + + +
+Sbjct: 5   FKDEHPFEKRKAEAERIRQKYADRIPVICEKVE-KSDIATIDKKKYLVPADLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L+  +A F+ V+   +   +  +S +YE  KDEDGFLY+ Y+ + TFG
+Sbjct: 64  IRKRIKLSPEKAIFIFVD-EVLPPTAALMSSIYEEHKDEDGFLYITYSGENTFG 116
+
+
+>41|sp|A2QPN1|ATG8_ASPNC Autophagy-related protein 8 OS=Aspergillus
+           niger (strain CBS 513.88 / FGSC A1513) GN=atg8 PE=3 SV=1
+          Length = 118
+
+ Score = 80.1 bits (196), Expect = 4e-15,   Method: Composition-based stats.
+ Identities = 40/114 (35%), Positives = 71/114 (62%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   IR+++  +IPVI E+ + +  +  +DK K+LVP  + + + + +
+Sbjct: 5   FKDEHPFEKRKAEAERIRQKYADRIPVICEKVE-KSDIATIDKKKYLVPADLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L+  +A F+ V+   +   +  +S +YE  KDEDGFLY+ Y+ + TFG
+Sbjct: 64  IRKRIKLSPEKAIFIFVD-EVLPPTAALMSSIYEEHKDEDGFLYITYSGENTFG 116
+
+
+>42|sp|Q0C804|ATG8_ASPTN Autophagy-related protein 8 OS=Aspergillus
+           terreus (strain NIH 2624 / FGSC A1156) GN=atg8 PE=3 SV=1
+          Length = 118
+
+ Score = 80.1 bits (196), Expect = 4e-15,   Method: Composition-based stats.
+ Identities = 40/114 (35%), Positives = 71/114 (62%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   IR+++  +IPVI E+ + +  +  +DK K+LVP  + + + + +
+Sbjct: 5   FKDEHPFEKRKAEAERIRQKYADRIPVICEKVE-KSDIATIDKKKYLVPADLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L+  +A F+ V+   +   +  +S +YE  KDEDGFLY+ Y+ + TFG
+Sbjct: 64  IRKRIKLSPEKAIFIFVD-EVLPPTAALMSSIYEEHKDEDGFLYITYSGENTFG 116
+
+
+>43|sp|A1D3N4|ATG8_NEOFI Autophagy-related protein 8 OS=Neosartorya
+           fischeri (strain ATCC 1020 / DSM 3700 / FGSC A1164 /
+           NRRL 181) GN=atg8 PE=3 SV=1
+          Length = 118
+
+ Score = 80.1 bits (196), Expect = 4e-15,   Method: Composition-based stats.
+ Identities = 40/114 (35%), Positives = 71/114 (62%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   IR+++  +IPVI E+ + +  +  +DK K+LVP  + + + + +
+Sbjct: 5   FKDEHPFEKRKAEAERIRQKYADRIPVICEKVE-KSDIATIDKKKYLVPADLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L+  +A F+ V+   +   +  +S +YE  KDEDGFLY+ Y+ + TFG
+Sbjct: 64  IRKRIKLSPEKAIFIFVD-EVLPPTAALMSSIYEEHKDEDGFLYITYSGENTFG 116
+
+
+>44|sp|Q5B2U9|ATG8_EMENI Autophagy-related protein 8 OS=Emericella
+           nidulans GN=atg8 PE=3 SV=1
+          Length = 118
+
+ Score = 79.7 bits (195), Expect = 5e-15,   Method: Composition-based stats.
+ Identities = 40/114 (35%), Positives = 70/114 (61%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   IR ++  +IPVI E+ + +  +  +DK K+LVP  + + + + +
+Sbjct: 5   FKDEHPFEKRKAEAERIRAKYADRIPVICEKVE-KSDIATIDKKKYLVPADLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L+  +A F+ V+   +   +  +S +YE  KDEDGFLY+ Y+ + TFG
+Sbjct: 64  IRKRIKLSPEKAIFIFVD-EVLPPTAALMSSIYEEHKDEDGFLYITYSGENTFG 116
+
+
+>45|sp|Q8J282|ATG8_PODAN Autophagy-related protein 8 OS=Podospora
+           anserina GN=ATG8 PE=3 SV=1
+          Length = 121
+
+ Score = 79.7 bits (195), Expect = 5e-15,   Method: Composition-based stats.
+ Identities = 40/114 (35%), Positives = 71/114 (62%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   IR+++  +IPVI E+ + +  +  +DK K+LVP  + + + + +
+Sbjct: 5   FKDEHPFEKRKAEAERIRQKYADRIPVICEKVE-KSDIATIDKKKYLVPADLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L+  +A F+ V+   +   +  +S +YE  KDEDGFLY+ Y+ + TFG
+Sbjct: 64  IRKRIKLSPEKAIFIFVD-EVLPPTAALMSSIYEEHKDEDGFLYITYSGENTFG 116
+
+
+>46|sp|Q2GVL1|ATG8_CHAGB Autophagy-related protein 8 OS=Chaetomium
+           globosum GN=ATG8 PE=3 SV=1
+          Length = 121
+
+ Score = 79.3 bits (194), Expect = 5e-15,   Method: Composition-based stats.
+ Identities = 40/114 (35%), Positives = 71/114 (62%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   IR+++  +IPVI E+ + +  +  +DK K+LVP  + + + + +
+Sbjct: 5   FKDEHPFEKRKAEAERIRQKYADRIPVICEKVE-KSDIATIDKKKYLVPSDLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L+  +A F+ V+   +   +  +S +YE  KDEDGFLY+ Y+ + TFG
+Sbjct: 64  IRKRIKLSPEKAIFIFVD-EVLPPTAALMSSIYEEHKDEDGFLYITYSGENTFG 116
+
+
+>47|sp|A4LA70|ATG8_COLLN Autophagy-related protein 8 OS=Colletotrichum
+           lindemuthianum GN=ATG8 PE=3 SV=1
+          Length = 121
+
+ Score = 79.3 bits (194), Expect = 6e-15,   Method: Composition-based stats.
+ Identities = 40/114 (35%), Positives = 71/114 (62%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   IR+++  +IPVI E+ + +  +  +DK K+LVP  + + + + +
+Sbjct: 5   FKDEHPFEKRKAEAERIRQKYSDRIPVICEKVE-KSDIATIDKKKYLVPADLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L+  +A F+ V+   +   +  +S +YE  KDEDGFLY+ Y+ + TFG
+Sbjct: 64  IRKRIKLSPEKAIFIFVD-EVLPPTAALMSSIYEEHKDEDGFLYITYSGENTFG 116
+
+
+>48|sp|Q2UBH5|ATG8_ASPOR Autophagy-related protein 8 OS=Aspergillus
+           oryzae GN=atg8 PE=3 SV=1
+          Length = 118
+
+ Score = 79.3 bits (194), Expect = 6e-15,   Method: Composition-based stats.
+ Identities = 40/114 (35%), Positives = 71/114 (62%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   IR+++  +IPVI E+ + +  +  +DK K+LVP  + + + + +
+Sbjct: 5   FKDEHPFEKRKAEAERIRQKYADRIPVICEKVE-KSDIATIDKKKYLVPADLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L+  +A F+ V+   +   +  +S +YE  KDEDGFLY+ Y+ + TFG
+Sbjct: 64  IRKRIKLSPEKAIFIFVD-EVLPPTAALMSSIYEEHKDEDGFLYITYSGENTFG 116
+
+
+>49|sp|A7KAL9|ATG8_PENCW Autophagy-related protein 8 OS=Penicillium
+           chrysogenum (strain ATCC 28089 / DSM 1075 / Wisconsin
+           54-1255) GN=atg8 PE=3 SV=1
+          Length = 118
+
+ Score = 79.3 bits (194), Expect = 6e-15,   Method: Composition-based stats.
+ Identities = 40/114 (35%), Positives = 71/114 (62%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   IR+++  +IPVI E+ + +  +  +DK K+LVP  + + + + +
+Sbjct: 5   FKDEHPFEKRKAEAERIRQKYADRIPVICEKVE-KSDIATIDKKKYLVPADLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L+  +A F+ V+   +   +  +S +YE  KDEDGFLY+ Y+ + TFG
+Sbjct: 64  IRKRIKLSPEKAIFIFVD-EVLPPTAALMSSIYEEHKDEDGFLYITYSGENTFG 116
+
+
+>50|sp|O94272|ATG8_SCHPO Autophagy-related protein 8
+           OS=Schizosaccharomyces pombe GN=atg8 PE=2 SV=1
+          Length = 121
+
+ Score = 79.0 bits (193), Expect = 6e-15,   Method: Composition-based stats.
+ Identities = 40/114 (35%), Positives = 72/114 (63%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK   +FE+R  + + IRE++P +IPVI E+   +  +  +DK K+LVP  + + + + +
+Sbjct: 5   FKDDFSFEKRKTESQRIREKYPDRIPVICEKVD-KSDIAAIDKKKYLVPSDLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L+  +A F+ ++   +   +  +S +YE  K EDGFLY+ Y+ + TFG
+Sbjct: 64  IRKRIKLSPEKAIFIFID-EILPPTAALMSTIYEEHKSEDGFLYITYSGENTFG 116
+
+
+>51|sp|Q8WZY7|ATG8_NEUCR Autophagy-related protein 8 OS=Neurospora
+           crassa GN=atg-8 PE=3 SV=1
+          Length = 121
+
+ Score = 79.0 bits (193), Expect = 8e-15,   Method: Composition-based stats.
+ Identities = 40/114 (35%), Positives = 71/114 (62%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   IR+++  +IPVI E+ + +  +  +DK K+LVP  + + + + +
+Sbjct: 5   FKDEHPFEKRKAEAERIRQKYSDRIPVICEKVE-KSDIATIDKKKYLVPADLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L+  +A F+ V+   +   +  +S +YE  KDEDGFLY+ Y+ + TFG
+Sbjct: 64  IRKRIKLSPEKAIFIFVD-EVLPPTAALMSSIYEEHKDEDGFLYITYSGENTFG 116
+
+
+>52|sp|A3GFU8|ATG8_PICST Autophagy-related protein 8 OS=Pichia stipitis
+           GN=ATG8 PE=3 SV=1
+          Length = 139
+
+ Score = 78.6 bits (192), Expect = 1e-14,   Method: Composition-based stats.
+ Identities = 41/114 (35%), Positives = 71/114 (62%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   I ++   ++PVI E+ +    +P +DK K+LVP  +++ + + +
+Sbjct: 5   FKDEHPFEKRQAEATRIAQRFKDRVPVICEKVE-NSDIPEIDKRKYLVPVDLSVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L + +A F+ VN   +   +  IS +YE  KDEDGFLY++Y+ + TFG
+Sbjct: 64  IRKRIKLPSEKAIFIFVN-DILPPTAALISTIYEEHKDEDGFLYVLYSGENTFG 116
+
+
+>53|sp|Q1E4K5|ATG8_COCIM Autophagy-related protein 8 OS=Coccidioides
+           immitis GN=ATG8 PE=3 SV=1
+          Length = 117
+
+ Score = 78.2 bits (191), Expect = 1e-14,   Method: Composition-based stats.
+ Identities = 39/114 (34%), Positives = 71/114 (62%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   IR+++  +IPVI E+ + +  +  +DK K+LVP  + + + + +
+Sbjct: 5   FKDEHPFEKRKAEAERIRQKYADRIPVICEKVE-KSDIATIDKKKYLVPADLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L+  +A F+ V+   +   +  +S +YE  KD+DGFLY+ Y+ + TFG
+Sbjct: 64  IRKRIKLSPEKAIFIFVD-EVLPPTAALMSSIYEEHKDDDGFLYITYSGENTFG 116
+
+
+>54|sp|Q0V3Y9|ATG8_PHANO Autophagy-related protein 8 OS=Phaeosphaeria
+           nodorum GN=ATG8 PE=3 SV=1
+          Length = 119
+
+ Score = 78.2 bits (191), Expect = 1e-14,   Method: Composition-based stats.
+ Identities = 40/114 (35%), Positives = 71/114 (62%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   IR+++  +IPVI E+ + +  +  +DK K+LVP  + + + + +
+Sbjct: 5   FKDEHPFEKRKAEAERIRQKYNDRIPVICEKVE-KSDIATIDKKKYLVPADLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L+  +A F+ V+   +   +  +S +YE  KDEDGFLY+ Y+ + TFG
+Sbjct: 64  IRKRIKLSPEKAIFIFVD-EVLPPTAALMSSIYEEHKDEDGFLYITYSGENTFG 116
+
+
+>55|sp|A7E8H4|ATG8_SCLS1 Autophagy-related protein 8 OS=Sclerotinia
+           sclerotiorum (strain ATCC 18683 / 1980 / Ss-1) GN=atg8
+           PE=3 SV=1
+          Length = 123
+
+ Score = 78.2 bits (191), Expect = 1e-14,   Method: Composition-based stats.
+ Identities = 40/114 (35%), Positives = 71/114 (62%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   IR+++  +IPVI E+ + +  +  +DK K+LVP  + + + + +
+Sbjct: 5   FKDEHPFEKRKAEAERIRQKYSDRIPVICEKVE-KSDIATIDKKKYLVPSDLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L+  +A F+ V+   +   +  +S +YE  KDEDGFLY+ Y+ + TFG
+Sbjct: 64  IRKRIKLSPEKAIFIFVD-EVLPPTAALMSSIYEEHKDEDGFLYISYSGENTFG 116
+
+
+>56|sp|P0C075|ATG8_CANAL Autophagy-related protein 8 OS=Candida
+           albicans GN=ATG8 PE=3 SV=1
+          Length = 135
+
+ Score = 77.8 bits (190), Expect = 1e-14,   Method: Composition-based stats.
+ Identities = 41/114 (35%), Positives = 70/114 (61%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   I ++   ++PVI E+ +    +P +DK K+LVP  + + + + +
+Sbjct: 5   FKDEHPFEKRQAEAARIAQRFKDRVPVICEKVE-NSDIPEIDKRKYLVPVDLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L + +A F+ VN   +   +  IS +YE  KDEDGFLY++Y+ + TFG
+Sbjct: 64  IRKRIKLPSEKAIFIFVN-DILPPTAALISTIYEEHKDEDGFLYVLYSGENTFG 116
+
+
+>57|sp|A6RPU4|ATG8_BOTFB Autophagy-related protein 8 OS=Botryotinia
+           fuckeliana (strain B05.10) GN=atg8 PE=3 SV=1
+          Length = 123
+
+ Score = 77.8 bits (190), Expect = 2e-14,   Method: Composition-based stats.
+ Identities = 40/114 (35%), Positives = 71/114 (62%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   IR+++  +IPVI E+ + +  +  +DK K+LVP  + + + + +
+Sbjct: 5   FKDEHPFEKRKAEAERIRQKYNDRIPVICEKVE-KSDIATIDKKKYLVPSDLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L+  +A F+ V+   +   +  +S +YE  KDEDGFLY+ Y+ + TFG
+Sbjct: 64  IRKRIKLSPEKAIFIFVD-EVLPPTAALMSSIYEEHKDEDGFLYISYSGENTFG 116
+
+
+>58|sp|Q51MW4|ATG8_MAGGR Autophagy-related protein 8 OS=Magnaporthe
+           grisea GN=ATG8 PE=3 SV=1
+          Length = 123
+
+ Score = 77.8 bits (190), Expect = 2e-14,   Method: Composition-based stats.
+ Identities = 40/114 (35%), Positives = 71/114 (62%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   IR+++  +IPVI E+ + +  +  +DK K+LVP  + + + + +
+Sbjct: 5   FKDEHPFEKRKAEAERIRQKYTDRIPVICEKVE-KSDIATIDKKKYLVPADLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L+  +A F+ V   ++   +  +S +YE  KDEDGFLY+ Y+ + TFG
+Sbjct: 64  IRKRIKLSPEKAIFIFVQ-DTLPPTAALMSSIYELHKDEDGFLYITYSGENTFG 116
+
+
+>59|sp|Q6FXR8|ATG8_CANGA Autophagy-related protein 8 OS=Candida
+           glabrata GN=ATG8 PE=3 SV=1
+          Length = 118
+
+ Score = 76.6 bits (187), Expect = 3e-14,   Method: Composition-based stats.
+ Identities = 41/117 (35%), Positives = 73/117 (62%), Gaps = 2/117 (1%)
+
+Query: 4   EKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSEL 63
+           + +FK    FE+R  +   I E+   +IPVI E+ + +  +P +DK K+LVP  + + + 
+Sbjct: 2   KSSFKSEYPFEKRKAESERISEKFQNRIPVICEKAE-KSDIPEVDKRKYLVPADLTVGQF 60
+
+Query: 64  IKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           + +IR+R+ L   +A F+ VN  ++   ++ +S+VY+  KD+DGFLY+ Y+ + TFG
+Sbjct: 61  VYVIRKRIMLPPEKAIFIFVN-DTLPPTASLMSQVYQEHKDKDGFLYVTYSGENTFG 116
+
+
+>60|sp|A7TDU7|ATG8_VANPO Autophagy-related protein 8 OS=Vanderwaltozyma
+           polyspora (strain ATCC 22028 / DSM 70294) GN=ATG8 PE=3
+           SV=1
+          Length = 118
+
+ Score = 76.6 bits (187), Expect = 4e-14,   Method: Composition-based stats.
+ Identities = 41/117 (35%), Positives = 71/117 (60%), Gaps = 2/117 (1%)
+
+Query: 4   EKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSEL 63
+           + +FK    FE+R  +   I E+   +IPVI E+ + +  +P +DK K+LVP  + + + 
+Sbjct: 2   KSSFKSEYPFEKRKTESERITEKFQNRIPVICEKAE-KSDIPEIDKRKYLVPSDLTVGQF 60
+
+Query: 64  IKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           + +IR+R+ L   +A F+ VN  ++   +  +S VY+  KD+DGFLY+ Y+ + TFG
+Sbjct: 61  VYVIRKRIMLPPEKAIFIFVN-DTLPPTAALMSAVYQEHKDKDGFLYVTYSGENTFG 116
+
+
+>61|sp|A5DWI6|ATG8_LODEL Autophagy-related protein 8 OS=Lodderomyces
+           elongisporus GN=ATG8 PE=3 SV=1
+          Length = 146
+
+ Score = 76.3 bits (186), Expect = 4e-14,   Method: Composition-based stats.
+ Identities = 40/114 (35%), Positives = 70/114 (61%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   I ++   ++PVI E+ +    +P +DK K+LVP  + + + + +
+Sbjct: 5   FKDEHPFEKRQAEAARIAQRFKDRVPVICEKVE-NSDIPEIDKRKYLVPVDLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L + +A F+ VN   +   +  IS +YE  KD+DGFLY++Y+ + TFG
+Sbjct: 64  IRKRIKLPSEKAIFIFVN-DILPPTAALISTIYEEHKDDDGFLYVLYSGENTFG 116
+
+
+>62|sp|A6ZKM4|ATG8_YEAS7 Autophagy-related protein 8 OS=Saccharomyces
+           cerevisiae (strain YJM789) GN=ATG8 PE=3 SV=1
+          Length = 117
+
+ Score = 76.3 bits (186), Expect = 4e-14,   Method: Composition-based stats.
+ Identities = 40/117 (34%), Positives = 71/117 (60%), Gaps = 2/117 (1%)
+
+Query: 4   EKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSEL 63
+           + TFK    FE+R  +   I ++   +IPVI E+ + +  +P +DK K+LVP  + + + 
+Sbjct: 2   KSTFKSEYPFEKRKAESERIADRFKNRIPVICEKAE-KSDIPEIDKRKYLVPADLTVGQF 60
+
+Query: 64  IKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           + +IR+R+ L   +A F+ VN  ++   +  +S +Y+  KD+DGFLY+ Y+ + TFG
+Sbjct: 61  VYVIRKRIMLPPEKAIFIFVN-DTLPPTAALMSAIYQEHKDKDGFLYVTYSGENTFG 116
+
+
+>63|sp|P38182|ATG8_YEAST Autophagy-related protein 8 OS=Saccharomyces
+           cerevisiae GN=ATG8 PE=1 SV=1
+          Length = 117
+
+ Score = 76.3 bits (186), Expect = 4e-14,   Method: Composition-based stats.
+ Identities = 40/117 (34%), Positives = 71/117 (60%), Gaps = 2/117 (1%)
+
+Query: 4   EKTFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSEL 63
+           + TFK    FE+R  +   I ++   +IPVI E+ + +  +P +DK K+LVP  + + + 
+Sbjct: 2   KSTFKSEYPFEKRKAESERIADRFKNRIPVICEKAE-KSDIPEIDKRKYLVPADLTVGQF 60
+
+Query: 64  IKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           + +IR+R+ L   +A F+ VN  ++   +  +S +Y+  KD+DGFLY+ Y+ + TFG
+Sbjct: 61  VYVIRKRIMLPPEKAIFIFVN-DTLPPTAALMSAIYQEHKDKDGFLYVTYSGENTFG 116
+
+
+>64|sp|Q8NJJ4|ATG8_PICPA Autophagy-related protein 8 OS=Pichia pastoris
+           GN=ATG8 PE=1 SV=1
+          Length = 125
+
+ Score = 75.9 bits (185), Expect = 5e-14,   Method: Composition-based stats.
+ Identities = 40/114 (35%), Positives = 72/114 (63%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   IR +   +IPVI E+ + +  +P +DK K+LVP  + + + + +
+Sbjct: 5   FKDEHPFEKRKAEAMRIRYKFADRIPVICEKVE-KSDIPEVDKRKYLVPCDLTVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R+++ + +A F+ ++   +   +  +S+VYE  KDEDGFLY++Y+ + TFG
+Sbjct: 64  IRKRIKIPSEKAIFIFID-DILPPTAALMSKVYEEHKDEDGFLYVLYSGENTFG 116
+
+
+>65|sp|Q755X2|ATG8_ASHGO Autophagy-related protein 8 OS=Ashbya gossypii
+           GN=ATG8 PE=3 SV=1
+          Length = 120
+
+ Score = 75.1 bits (183), Expect = 9e-14,   Method: Composition-based stats.
+ Identities = 41/115 (35%), Positives = 70/115 (60%), Gaps = 2/115 (1%)
+
+Query: 6   TFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIK 65
+           +FK    FE+R  +   I  Q   ++PVI ER + +  +P +D+ K+LVP  + + + + 
+Sbjct: 3   SFKSEYPFEKRKAESERICSQFENRVPVICERAE-KSDIPEVDRRKYLVPADLTVGQFVY 61
+
+Query: 66  IIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           +IRRR++L A +A F+ VN  ++   +  +  VY+  KD+DGFLY+ Y+ + TFG
+Sbjct: 62  VIRRRIKLPAEKAIFIFVN-DTLPPTAALMFAVYQEHKDKDGFLYVKYSGENTFG 115
+
+
+>66|sp|Q6BT31|ATG8_DEBHA Autophagy-related protein 8 OS=Debaryomyces
+           hansenii GN=ATG8 PE=3 SV=2
+          Length = 136
+
+ Score = 73.2 bits (178), Expect = 4e-13,   Method: Composition-based stats.
+ Identities = 38/114 (33%), Positives = 70/114 (61%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           FK    FE+R  +   I ++   ++PVI E+ +    +  +DK K+LVP  +++ + + +
+Sbjct: 5   FKDEHPFEKRKAEATRITQRFNDRLPVICEKAE-NSDIQEIDKRKYLVPGDLSVGQFVYV 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R++L + +A F+ +N   +   +  +S +YE  KDEDGFLY++Y+ + TFG
+Sbjct: 64  IRKRIKLPSEKAIFIFIN-DILPPTAALMSTIYEEHKDEDGFLYVLYSGENTFG 116
+
+
+>67|sp|Q86CR8|ATG8_DICDI Autophagy-related protein 8 OS=Dictyostelium
+           discoideum GN=atg8 PE=1 SV=1
+          Length = 122
+
+ Score = 72.8 bits (177), Expect = 5e-13,   Method: Composition-based stats.
+ Identities = 41/116 (35%), Positives = 71/116 (61%), Gaps = 3/116 (2%)
+
+Query: 6   TFKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIK 65
+           +FK     ++R E    IR ++  +IPVI+E+       P +DK K+LVP  + + + + 
+Sbjct: 6   SFKNDHPLDKRREVAERIRSKYLDRIPVIVEKAP-RSDAPDIDKKKYLVPADITVGKFVY 64
+
+Query: 66  IIRRRL-QLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+            IR+ + +++A +A +L VN +++   +  IS++YE  KDEDGFLY+ Y+ + TFG
+Sbjct: 65  EIRKHMTKVSAEKAIYLFVN-NTIPPTAALISQIYERYKDEDGFLYITYSGENTFG 119
+
+
+>68|sp|Q5RF21|GBRL1_PONAB Gamma-aminobutyric acid receptor-associated
+           protein-like 1 OS=Pongo abelii GN=GABARAPL1 PE=3 SV=1
+          Length = 117
+
+ Score = 71.2 bits (173), Expect = 1e-12,   Method: Composition-based stats.
+ Identities = 37/114 (32%), Positives = 70/114 (61%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           +K+   FE R ++   IR+++P ++PVI+E+   + ++P LDK K+LVP  + + +   +
+Sbjct: 5   YKEDHPFEYRKKEGEKIRKKYPDRVPVIVEKAP-KARVPDLDKRKYLVPSDLTVGQFYFL 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R+ L    A F  VN +++   S  + ++YE  ++ED FLY+ Y+ +  +G
+Sbjct: 64  IRKRIHLRPEDALFFFVN-NTIPPTSATMGQLYEDNREEDYFLYVAYSDESVYG 116
+
+
+>69|sp|Q8HYB6|GBRL1_BOVIN Gamma-aminobutyric acid receptor-associated
+           protein-like 1 OS=Bos taurus GN=GABARAPL1 PE=3 SV=2
+          Length = 117
+
+ Score = 70.5 bits (171), Expect = 2e-12,   Method: Composition-based stats.
+ Identities = 37/114 (32%), Positives = 69/114 (60%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           +K+   FE R ++   IR+++P ++PVI+E+   + ++P LDK K+LVP  + + +   +
+Sbjct: 5   YKEDHPFEYRKKEGEKIRKKYPDRVPVIVEKAP-KARVPDLDKRKYLVPSDLTVGQFYFL 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R+ L    A F  VN +++   S  + ++YE   +ED FLY+ Y+ +  +G
+Sbjct: 64  IRKRIHLRPEDALFFFVN-NTIPPTSATMGQLYEDNHEEDYFLYVAYSDESVYG 116
+
+
+>70|sp|P60518|GBRL1_CAVPO Gamma-aminobutyric acid receptor-associated
+           protein-like 1 OS=Cavia porcellus GN=GABARAPL1 PE=2 SV=1
+          Length = 117
+
+ Score = 70.5 bits (171), Expect = 2e-12,   Method: Composition-based stats.
+ Identities = 37/114 (32%), Positives = 69/114 (60%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           +K+   FE R ++   IR+++P ++PVI+E+   + ++P LDK K+LVP  + + +   +
+Sbjct: 5   YKEDHPFEYRKKEGEKIRKKYPDRVPVIVEKAP-KARVPDLDKRKYLVPSDLTVGQFYFL 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R+ L    A F  VN +++   S  + ++YE   +ED FLY+ Y+ +  +G
+Sbjct: 64  IRKRIHLRPEDALFFFVN-NTIPPTSATMGQLYEDNHEEDYFLYVAYSDESVYG 116
+
+
+>71|sp|Q9H0R8|GBRL1_HUMAN Gamma-aminobutyric acid receptor-associated
+           protein-like 1 OS=Homo sapiens GN=GABARAPL1 PE=1 SV=1
+          Length = 117
+
+ Score = 70.5 bits (171), Expect = 2e-12,   Method: Composition-based stats.
+ Identities = 37/114 (32%), Positives = 69/114 (60%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           +K+   FE R ++   IR+++P ++PVI+E+   + ++P LDK K+LVP  + + +   +
+Sbjct: 5   YKEDHPFEYRKKEGEKIRKKYPDRVPVIVEKAP-KARVPDLDKRKYLVPSDLTVGQFYFL 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R+ L    A F  VN +++   S  + ++YE   +ED FLY+ Y+ +  +G
+Sbjct: 64  IRKRIHLRPEDALFFFVN-NTIPPTSATMGQLYEDNHEEDYFLYVAYSDESVYG 116
+
+
+>72|sp|Q8R3R8|GBRL1_MOUSE Gamma-aminobutyric acid receptor-associated
+           protein-like 1 OS=Mus musculus GN=Gabarapl1 PE=2 SV=2
+          Length = 117
+
+ Score = 70.5 bits (171), Expect = 2e-12,   Method: Composition-based stats.
+ Identities = 37/114 (32%), Positives = 69/114 (60%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           +K+   FE R ++   IR+++P ++PVI+E+   + ++P LDK K+LVP  + + +   +
+Sbjct: 5   YKEDHPFEYRKKEGEKIRKKYPDRVPVIVEKAP-KARVPDLDKRKYLVPSDLTVGQFYFL 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R+ L    A F  VN +++   S  + ++YE   +ED FLY+ Y+ +  +G
+Sbjct: 64  IRKRIHLRPEDALFFFVN-NTIPPTSATMGQLYEDNHEEDYFLYVAYSDESVYG 116
+
+
+>73|sp|Q0VGK0|GBRL1_RAT Gamma-aminobutyric acid receptor-associated
+           protein-like 1 OS=Rattus norvegicus GN=Gabarapl1 PE=1
+           SV=1
+          Length = 117
+
+ Score = 70.5 bits (171), Expect = 2e-12,   Method: Composition-based stats.
+ Identities = 37/114 (32%), Positives = 69/114 (60%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           +K+   FE R ++   IR+++P ++PVI+E+   + ++P LDK K+LVP  + + +   +
+Sbjct: 5   YKEDHPFEYRKKEGEKIRKKYPDRVPVIVEKAP-KARVPDLDKRKYLVPSDLTVGQFYFL 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R+ L    A F  VN +++   S  + ++YE   +ED FLY+ Y+ +  +G
+Sbjct: 64  IRKRIHLRPEDALFFFVN-NTIPPTSATMGQLYEDNHEEDYFLYVAYSDESVYG 116
+
+
+>74|sp|Q6GQ27|GBRL1_XENLA Gamma-aminobutyric acid receptor-associated
+           protein-like 1 OS=Xenopus laevis GN=gabarapl1 PE=3 SV=1
+          Length = 117
+
+ Score = 70.5 bits (171), Expect = 2e-12,   Method: Composition-based stats.
+ Identities = 37/114 (32%), Positives = 69/114 (60%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           +K+   FE R ++   IR+++P ++PVI+E+   + ++P LDK K+LVP  + + +   +
+Sbjct: 5   YKEDHPFEYRKKEGEKIRKKYPDRVPVIVEKAP-KARVPDLDKRKYLVPSDLTVGQFYFL 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R+ L    A F  VN +++   S  + ++YE   +ED FLY+ Y+ +  +G
+Sbjct: 64  IRKRIHLRPEDALFFFVN-NTIPPTSATMGQLYEDNHEEDYFLYVAYSDESVYG 116
+
+
+>75|sp|Q5BIZ2|GBRL1_XENTR Gamma-aminobutyric acid receptor-associated
+           protein-like 1 OS=Xenopus tropicalis GN=gabarapl1 PE=3
+           SV=1
+          Length = 117
+
+ Score = 70.5 bits (171), Expect = 2e-12,   Method: Composition-based stats.
+ Identities = 37/114 (32%), Positives = 69/114 (60%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           +K+   FE R ++   IR+++P ++PVI+E+   + ++P LDK K+LVP  + + +   +
+Sbjct: 5   YKEDHPFEYRKKEGEKIRKKYPDRVPVIVEKAP-KARVPDLDKRKYLVPSDLTVGQFYFL 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R+ L    A F  VN +++   S  + ++YE   +ED FLY+ Y+ +  +G
+Sbjct: 64  IRKRIHLRPEDALFFFVN-NTIPPTSATMGQLYEDNHEEDYFLYVAYSDESVYG 116
+
+
+>76|sp|Q09490|LGG1_CAEEL Protein lgg-1 OS=Caenorhabditis elegans
+           GN=lgg-1 PE=1 SV=1
+          Length = 123
+
+ Score = 69.7 bits (169), Expect = 4e-12,   Method: Composition-based stats.
+ Identities = 39/114 (34%), Positives = 66/114 (57%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           +K+   FE+R  +   IR ++P +IPVI+E+    K L  LDK K+LVP  + + +   +
+Sbjct: 5   YKEENNFEKRRAEGDKIRRKYPDRIPVIVEKAPKSK-LHDLDKKKYLVPSDLTVGQFYFL 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R+QL    A F  VN + +    T + ++Y+   +ED FLY+ Y+ +  +G
+Sbjct: 64  IRKRIQLRPEDALFFFVN-NVIPQTMTTMGQLYQDHHEEDLFLYIAYSDESVYG 116
+
+
+>77|sp|Q9GJW7|GBRAP_BOVIN Gamma-aminobutyric acid receptor-associated
+           protein OS=Bos taurus GN=GABARAP PE=3 SV=2
+          Length = 117
+
+ Score = 68.9 bits (167), Expect = 8e-12,   Method: Composition-based stats.
+ Identities = 36/114 (31%), Positives = 68/114 (59%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           +K+   FE+R  +   IR+++P ++PVI+E+   + ++  LDK K+LVP  + + +   +
+Sbjct: 5   YKEEHPFEKRRSEGEKIRKKYPDRVPVIVEKAP-KARIGDLDKKKYLVPSDLTVGQFYFL 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R+ L A  A F  VN + +   S  + ++Y+   +ED FLY+ Y+ +  +G
+Sbjct: 64  IRKRIHLRAEDALFFFVN-NVIPPTSATMGQLYQEHHEEDFFLYIAYSDESVYG 116
+
+
+>78|sp|O95166|GBRAP_HUMAN Gamma-aminobutyric acid receptor-associated
+           protein OS=Homo sapiens GN=GABARAP PE=1 SV=1
+          Length = 117
+
+ Score = 68.9 bits (167), Expect = 8e-12,   Method: Composition-based stats.
+ Identities = 36/114 (31%), Positives = 68/114 (59%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           +K+   FE+R  +   IR+++P ++PVI+E+   + ++  LDK K+LVP  + + +   +
+Sbjct: 5   YKEEHPFEKRRSEGEKIRKKYPDRVPVIVEKAP-KARIGDLDKKKYLVPSDLTVGQFYFL 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R+ L A  A F  VN + +   S  + ++Y+   +ED FLY+ Y+ +  +G
+Sbjct: 64  IRKRIHLRAEDALFFFVN-NVIPPTSATMGQLYQEHHEEDFFLYIAYSDESVYG 116
+
+
+>79|sp|Q9DCD6|GBRAP_MOUSE Gamma-aminobutyric acid receptor-associated
+           protein OS=Mus musculus GN=Gabarap PE=1 SV=2
+          Length = 117
+
+ Score = 68.9 bits (167), Expect = 8e-12,   Method: Composition-based stats.
+ Identities = 36/114 (31%), Positives = 68/114 (59%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           +K+   FE+R  +   IR+++P ++PVI+E+   + ++  LDK K+LVP  + + +   +
+Sbjct: 5   YKEEHPFEKRRSEGEKIRKKYPDRVPVIVEKAP-KARIGDLDKKKYLVPSDLTVGQFYFL 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R+ L A  A F  VN + +   S  + ++Y+   +ED FLY+ Y+ +  +G
+Sbjct: 64  IRKRIHLRAEDALFFFVN-NVIPPTSATMGQLYQEHHEEDFFLYIAYSDESVYG 116
+
+
+>80|sp|Q8MK68|GBRAP_RABIT Gamma-aminobutyric acid receptor-associated
+           protein OS=Oryctolagus cuniculus GN=GABARAP PE=3 SV=1
+          Length = 117
+
+ Score = 68.9 bits (167), Expect = 8e-12,   Method: Composition-based stats.
+ Identities = 36/114 (31%), Positives = 68/114 (59%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           +K+   FE+R  +   IR+++P ++PVI+E+   + ++  LDK K+LVP  + + +   +
+Sbjct: 5   YKEEHPFEKRRSEGEKIRKKYPDRVPVIVEKAP-KARIGDLDKKKYLVPSDLTVGQFYFL 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R+ L A  A F  VN + +   S  + ++Y+   +ED FLY+ Y+ +  +G
+Sbjct: 64  IRKRIHLRAEDALFFFVN-NVIPPTSATMGQLYQEHHEEDFFLYIAYSDESVYG 116
+
+
+>81|sp|P60517|GBRAP_RAT Gamma-aminobutyric acid receptor-associated
+           protein OS=Rattus norvegicus GN=Gabarap PE=1 SV=1
+          Length = 117
+
+ Score = 68.9 bits (167), Expect = 8e-12,   Method: Composition-based stats.
+ Identities = 36/114 (31%), Positives = 68/114 (59%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           +K+   FE+R  +   IR+++P ++PVI+E+   + ++  LDK K+LVP  + + +   +
+Sbjct: 5   YKEEHPFEKRRSEGEKIRKKYPDRVPVIVEKAP-KARIGDLDKKKYLVPSDLTVGQFYFL 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R+ L A  A F  VN + +   S  + ++Y+   +ED FLY+ Y+ +  +G
+Sbjct: 64  IRKRIHLRAEDALFFFVN-NVIPPTSATMGQLYQEHHEEDFFLYIAYSDESVYG 116
+
+
+>82|sp|Q9BY60|GBRL3_HUMAN Gamma-aminobutyric acid receptor-associated
+           protein-like 3 OS=Homo sapiens GN=GABARAPL3 PE=2 SV=1
+          Length = 117
+
+ Score = 68.2 bits (165), Expect = 1e-11,   Method: Composition-based stats.
+ Identities = 35/114 (30%), Positives = 69/114 (60%), Gaps = 2/114 (1%)
+
+Query: 7   FKQRRTFEQRVEDVRLIREQHPTKIPVIIERYKGEKQLPVLDKTKFLVPDHVNMSELIKI 66
+           +K+   FE R ++   IR+++P ++P+I+E+   + ++P LD+ K+LVP  +   +   +
+Sbjct: 5   YKEVHPFEYRKKEGEKIRKKYPDRVPLIVEKAP-KARVPDLDRRKYLVPSDLTDGQFYLL 63
+
+Query: 67  IRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDEDGFLYMVYASQETFG 120
+           IR+R+ L    A F  VN +++   S  + ++YE   +ED FLY+ Y+++  +G
+Sbjct: 64  IRKRIHLRPEDALFFFVN-NTIPPTSATMGQLYEDSHEEDDFLYVAYSNESVYG 116
+
+
+>83|sp|Q6H6P0|ATG8E_ORYSJ Putative autophagy-related protein 8E
+           OS=Oryza sativa subsp. japonica GN=ATG8E PE=3 SV=2
+          Length = 87
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 27/66 (40%), Positives = 42/66 (63%), Gaps = 2/66 (3%)
+
+Query: 56  DHVNMSELIKIIRRRLQLNANQAFFLLVNGHSMVSVSTPISEVYESEKDE-DGFLYMVYA 114
+           D  + S L ++ +R+L L    A F+ VN +++   +  +  VYES KDE DGFLY+ Y+
+Sbjct: 23  DKFSRSNLPEMEKRKLHLPPGTALFVFVN-NTLPQTAQLMGSVYESYKDEGDGFLYLCYS 81
+
+Query: 115 SQETFG 120
+           S++TFG
+Sbjct: 82  SEKTFG 87
+
+
+  Database: sprot
+    Posted date:  Jun 19, 2009 11:01 PM
+  Number of letters in database: 166,709,888
+  Number of sequences in database:  470,369
+  
+Lambda     K      H
+   0.320    0.136    0.377 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 36,169,571
+Number of Sequences: 470369
+Number of extensions: 1322533
+Number of successful extensions: 3961
+Number of sequences better than 1.0e-03: 83
+Number of HSP's better than  0.0 without gapping: 19
+Number of HSP's successfully gapped in prelim test: 64
+Number of HSP's that attempted gapping in prelim test: 3801
+Number of HSP's gapped (non-prelim): 83
+length of query: 120
+length of database: 166,709,888
+effective HSP length: 87
+effective length of query: 33
+effective length of database: 125,787,785
+effective search space: 4150996905
+effective search space used: 4150996905
+T: 11
+A: 40
+X1: 16 ( 7.4 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.8 bits)
+S2: 97 (42.0 bits)

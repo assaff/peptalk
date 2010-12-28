@@ -1,0 +1,406 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_A  138
+         (138 letters)
+
+Database: sprot 
+           412,525 sequences; 148,809,765 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|P0AFF8|NUSA_ECO57 Transcription elongation protein nusA OS=Es...   138   8e-33
+sp|P0AFF7|NUSA_ECOL6 Transcription elongation protein nusA OS=Es...   138   8e-33
+sp|P0AFF6|NUSA_ECOLI Transcription elongation protein nusA OS=Es...   138   8e-33
+sp|P0AFF9|NUSA_SHIFL Transcription elongation protein nusA OS=Sh...   138   8e-33
+sp|P37430|NUSA_SALTY Transcription elongation protein nusA OS=Sa...   127   1e-29
+sp|Q8K9H0|NUSA_BUCAP Transcription elongation protein nusA OS=Bu...    72   1e-12
+sp|Q89AF4|NUSA_BUCBP Transcription elongation protein nusA OS=Bu...    70   3e-12
+sp|P43915|NUSA_HAEIN Transcription elongation protein nusA OS=Ha...    70   3e-12
+sp|P57459|NUSA_BUCAI Transcription elongation protein nusA OS=Bu...    70   4e-12
+sp|Q83BS0|NUSA_COXBU Transcription elongation protein nusA OS=Co...    53   4e-07
+
+>sp|P0AFF8|NUSA_ECO57 Transcription elongation protein nusA
+           OS=Escherichia coli O157:H7 GN=nusA PE=3 SV=1
+          Length = 495
+
+ Score =  138 bits (347), Expect = 8e-33,   Method: Composition-based stats.
+ Identities = 89/136 (65%), Positives = 97/136 (71%), Gaps = 7/136 (5%)
+
+Query: 1   AHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRERAK 60
+           AHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRERAK
+Sbjct: 352 AHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRERAK 411
+
+Query: 61  NALATIAQA-------HAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIE 113
+           NALATIAQA       +   D       +D D A  L   G  TLE+LA   + +L +IE
+Sbjct: 412 NALATIAQAQEESLGDNKPADDLLNLEGVDRDLAFKLAARGVCTLEDLAEQGIDDLADIE 471
+
+Query: 114 GLDEPTVEALRERAKN 129
+           GL +    AL   A+N
+Sbjct: 472 GLTDEKAGALIMAARN 487
+
+
+
+ Score =  125 bits (314), Expect = 6e-29,   Method: Composition-based stats.
+ Identities = 71/72 (98%), Positives = 72/72 (100%)
+
+Query: 67  AQAHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRER 126
+           A+AHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRER
+Sbjct: 350 AEAHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRER 409
+
+Query: 127 AKNALATIAQAQ 138
+           AKNALATIAQAQ
+Sbjct: 410 AKNALATIAQAQ 421
+
+
+>sp|P0AFF7|NUSA_ECOL6 Transcription elongation protein nusA
+           OS=Escherichia coli O6 GN=nusA PE=3 SV=1
+          Length = 495
+
+ Score =  138 bits (347), Expect = 8e-33,   Method: Composition-based stats.
+ Identities = 89/136 (65%), Positives = 97/136 (71%), Gaps = 7/136 (5%)
+
+Query: 1   AHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRERAK 60
+           AHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRERAK
+Sbjct: 352 AHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRERAK 411
+
+Query: 61  NALATIAQA-------HAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIE 113
+           NALATIAQA       +   D       +D D A  L   G  TLE+LA   + +L +IE
+Sbjct: 412 NALATIAQAQEESLGDNKPADDLLNLEGVDRDLAFKLAARGVCTLEDLAEQGIDDLADIE 471
+
+Query: 114 GLDEPTVEALRERAKN 129
+           GL +    AL   A+N
+Sbjct: 472 GLTDEKAGALIMAARN 487
+
+
+
+ Score =  125 bits (314), Expect = 6e-29,   Method: Composition-based stats.
+ Identities = 71/72 (98%), Positives = 72/72 (100%)
+
+Query: 67  AQAHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRER 126
+           A+AHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRER
+Sbjct: 350 AEAHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRER 409
+
+Query: 127 AKNALATIAQAQ 138
+           AKNALATIAQAQ
+Sbjct: 410 AKNALATIAQAQ 421
+
+
+>sp|P0AFF6|NUSA_ECOLI Transcription elongation protein nusA
+           OS=Escherichia coli (strain K12) GN=nusA PE=1 SV=1
+          Length = 495
+
+ Score =  138 bits (347), Expect = 8e-33,   Method: Composition-based stats.
+ Identities = 89/136 (65%), Positives = 97/136 (71%), Gaps = 7/136 (5%)
+
+Query: 1   AHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRERAK 60
+           AHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRERAK
+Sbjct: 352 AHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRERAK 411
+
+Query: 61  NALATIAQA-------HAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIE 113
+           NALATIAQA       +   D       +D D A  L   G  TLE+LA   + +L +IE
+Sbjct: 412 NALATIAQAQEESLGDNKPADDLLNLEGVDRDLAFKLAARGVCTLEDLAEQGIDDLADIE 471
+
+Query: 114 GLDEPTVEALRERAKN 129
+           GL +    AL   A+N
+Sbjct: 472 GLTDEKAGALIMAARN 487
+
+
+
+ Score =  125 bits (314), Expect = 6e-29,   Method: Composition-based stats.
+ Identities = 71/72 (98%), Positives = 72/72 (100%)
+
+Query: 67  AQAHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRER 126
+           A+AHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRER
+Sbjct: 350 AEAHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRER 409
+
+Query: 127 AKNALATIAQAQ 138
+           AKNALATIAQAQ
+Sbjct: 410 AKNALATIAQAQ 421
+
+
+>sp|P0AFF9|NUSA_SHIFL Transcription elongation protein nusA
+           OS=Shigella flexneri GN=nusA PE=3 SV=1
+          Length = 495
+
+ Score =  138 bits (347), Expect = 8e-33,   Method: Composition-based stats.
+ Identities = 89/136 (65%), Positives = 97/136 (71%), Gaps = 7/136 (5%)
+
+Query: 1   AHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRERAK 60
+           AHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRERAK
+Sbjct: 352 AHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRERAK 411
+
+Query: 61  NALATIAQA-------HAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIE 113
+           NALATIAQA       +   D       +D D A  L   G  TLE+LA   + +L +IE
+Sbjct: 412 NALATIAQAQEESLGDNKPADDLLNLEGVDRDLAFKLAARGVCTLEDLAEQGIDDLADIE 471
+
+Query: 114 GLDEPTVEALRERAKN 129
+           GL +    AL   A+N
+Sbjct: 472 GLTDEKAGALIMAARN 487
+
+
+
+ Score =  125 bits (314), Expect = 6e-29,   Method: Composition-based stats.
+ Identities = 71/72 (98%), Positives = 72/72 (100%)
+
+Query: 67  AQAHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRER 126
+           A+AHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRER
+Sbjct: 350 AEAHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRER 409
+
+Query: 127 AKNALATIAQAQ 138
+           AKNALATIAQAQ
+Sbjct: 410 AKNALATIAQAQ 421
+
+
+>sp|P37430|NUSA_SALTY Transcription elongation protein nusA
+           OS=Salmonella typhimurium GN=nusA PE=3 SV=2
+          Length = 500
+
+ Score =  127 bits (319), Expect = 1e-29,   Method: Composition-based stats.
+ Identities = 83/136 (61%), Positives = 94/136 (69%), Gaps = 7/136 (5%)
+
+Query: 1   AHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRERAK 60
+           AHAAI+ FTKYLDIDE+FATVLVEEGFSTLEELAYVPMKELLEI+GLDEPTVEALRERAK
+Sbjct: 357 AHAAIEIFTKYLDIDEEFATVLVEEGFSTLEELAYVPMKELLEIDGLDEPTVEALRERAK 416
+
+Query: 61  NALATIAQAHAA-------IDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIE 113
+           NALAT+AQ   A        D       +D D A  L   G  TLE+LA   + +L +IE
+Sbjct: 417 NALATLAQDQEASLGDNKPADDLLNLEGLDRDMAFKLAARGVCTLEDLADQGIDDLADIE 476
+
+Query: 114 GLDEPTVEALRERAKN 129
+           GL +     L   A+N
+Sbjct: 477 GLTDEKAGELIMAARN 492
+
+
+
+ Score =  115 bits (289), Expect = 5e-26,   Method: Composition-based stats.
+ Identities = 65/72 (90%), Positives = 70/72 (97%)
+
+Query: 67  AQAHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRER 126
+           A+AHAAI+ FTKYLDIDE+FATVLVEEGFSTLEELAYVPMKELLEI+GLDEPTVEALRER
+Sbjct: 355 AEAHAAIEIFTKYLDIDEEFATVLVEEGFSTLEELAYVPMKELLEIDGLDEPTVEALRER 414
+
+Query: 127 AKNALATIAQAQ 138
+           AKNALAT+AQ Q
+Sbjct: 415 AKNALATLAQDQ 426
+
+
+>sp|Q8K9H0|NUSA_BUCAP Transcription elongation protein nusA
+           OS=Buchnera aphidicola subsp. Schizaphis graminum
+           GN=nusA PE=3 SV=1
+          Length = 495
+
+ Score = 71.6 bits (174), Expect = 1e-12,   Method: Composition-based stats.
+ Identities = 50/136 (36%), Positives = 72/136 (52%), Gaps = 7/136 (5%)
+
+Query: 1   AHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRERAK 60
+           A+AA + F K L++ E     LV+EGFS+LEELAY+P+ ELLEI  L E  V+ +RE AK
+Sbjct: 352 AYAAFNIFKKNLNVSEKVIKTLVKEGFSSLEELAYIPLNELLEINNLTEREVQLVREGAK 411
+
+Query: 61  NALATIA-------QAHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIE 113
+           N L  +        +             ++E  A  L E+   T+EELA   + +L++IE
+Sbjct: 412 NGLLLLELDQKNQIKNKKIEQALLNVNGMNELLALKLAEKNIFTVEELANQGIDDLIDIE 471
+
+Query: 114 GLDEPTVEALRERAKN 129
+            L+      L   A+N
+Sbjct: 472 NLNSEQAGLLIMAARN 487
+
+
+
+ Score = 66.2 bits (160), Expect = 4e-11,   Method: Composition-based stats.
+ Identities = 40/85 (47%), Positives = 53/85 (62%), Gaps = 6/85 (7%)
+
+Query: 47  LDEPTVEALRERAKNALATIAQAHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPM 106
+           L+  T E LR + K       +A+AA + F K L++ E     LV+EGFS+LEELAY+P+
+Sbjct: 336 LNVMTTEDLRSKHKE------EAYAAFNIFKKNLNVSEKVIKTLVKEGFSSLEELAYIPL 389
+
+Query: 107 KELLEIEGLDEPTVEALRERAKNAL 131
+            ELLEI  L E  V+ +RE AKN L
+Sbjct: 390 NELLEINNLTEREVQLVREGAKNGL 414
+
+
+>sp|Q89AF4|NUSA_BUCBP Transcription elongation protein nusA
+           OS=Buchnera aphidicola subsp. Baizongia pistaciae
+           GN=nusA PE=3 SV=1
+          Length = 497
+
+ Score = 70.1 bits (170), Expect = 3e-12,   Method: Composition-based stats.
+ Identities = 44/132 (33%), Positives = 74/132 (56%), Gaps = 7/132 (5%)
+
+Query: 5   IDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRERAKNALA 64
+           ++ FTKYL ID+  + +L++EGFS++EEL Y+P  ELL I  + +    ++RE AK AL 
+Sbjct: 356 LNIFTKYLKIDQKISNILIDEGFSSIEELVYIPFNELLNINSITQELAYSIRESAKKALC 415
+
+Query: 65  TIA-QAHAAIDTFTKYLDI------DEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDE 117
+            I  +    I+    + D+      ++  A  L ++   +LE+LA   + +L++IE L+ 
+Sbjct: 416 AIELENKKVINERKLHKDLLNLKGMNQKLAFKLAKKNIFSLEDLAEQGIDDLIDIENLNS 475
+
+Query: 118 PTVEALRERAKN 129
+            T   L   A+N
+Sbjct: 476 NTAGMLIMAARN 487
+
+
+
+ Score = 61.6 bits (148), Expect = 1e-09,   Method: Composition-based stats.
+ Identities = 28/62 (45%), Positives = 42/62 (67%)
+
+Query: 73  IDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRERAKNALA 132
+           ++ FTKYL ID+  + +L++EGFS++EEL Y+P  ELL I  + +    ++RE AK AL 
+Sbjct: 356 LNIFTKYLKIDQKISNILIDEGFSSIEELVYIPFNELLNINSITQELAYSIRESAKKALC 415
+
+Query: 133 TI 134
+            I
+Sbjct: 416 AI 417
+
+
+>sp|P43915|NUSA_HAEIN Transcription elongation protein nusA
+           OS=Haemophilus influenzae GN=nusA PE=3 SV=1
+          Length = 495
+
+ Score = 69.7 bits (169), Expect = 3e-12,   Method: Composition-based stats.
+ Identities = 54/133 (40%), Positives = 74/133 (55%), Gaps = 8/133 (6%)
+
+Query: 5   IDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGL-DEPTVEALRERAKNAL 63
+           ++ F   L++DE+FA +LVEEGF++LEE+AYVPM EL  I+GL DE  VE L+ RAKNA+
+Sbjct: 356 LNLFINALELDEEFAQILVEEGFTSLEEIAYVPMNELTAIDGLEDEDLVEELQTRAKNAI 415
+
+Query: 64  ATIAQAHAAI-------DTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLD 116
+              A A           D       ++   A  L E+  +TLEELA   + +L +IE L 
+Sbjct: 416 TAAAVAEEEALKKANVEDRLLNLEGMNRHVAIKLAEKQITTLEELAEQGVDDLTDIEELT 475
+
+Query: 117 EPTVEALRERAKN 129
+                 L   A+N
+Sbjct: 476 AEQAADLIMAARN 488
+
+
+
+ Score = 63.5 bits (153), Expect = 2e-10,   Method: Composition-based stats.
+ Identities = 36/66 (54%), Positives = 50/66 (75%), Gaps = 1/66 (1%)
+
+Query: 67  AQAHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGL-DEPTVEALRE 125
+           A+ +  ++ F   L++DE+FA +LVEEGF++LEE+AYVPM EL  I+GL DE  VE L+ 
+Sbjct: 350 AEDNKVLNLFINALELDEEFAQILVEEGFTSLEEIAYVPMNELTAIDGLEDEDLVEELQT 409
+
+Query: 126 RAKNAL 131
+           RAKNA+
+Sbjct: 410 RAKNAI 415
+
+
+>sp|P57459|NUSA_BUCAI Transcription elongation protein nusA
+           OS=Buchnera aphidicola subsp. Acyrthosiphon pisum
+           GN=nusA PE=3 SV=1
+          Length = 496
+
+ Score = 69.7 bits (169), Expect = 4e-12,   Method: Composition-based stats.
+ Identities = 49/137 (35%), Positives = 72/137 (52%), Gaps = 8/137 (5%)
+
+Query: 1   AHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRERAK 60
+           AH A + F K L+I+E+   +LV+EGFS+LEELAY+P  ELLE++ L E   + +RE AK
+Sbjct: 352 AHTAFNFFKKNLNINENIIKILVKEGFSSLEELAYIPFNELLEVKNLTEDQAKKVREGAK 411
+
+Query: 61  NAL--------ATIAQAHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEI 112
+           + L          I Q         K   ++   A  L E+   T+EELA   + +L +I
+Sbjct: 412 SKLLLMESDKNKMIIQERKTEKELLKINGMNAVLALQLAEKNIFTIEELADQGIDDLTDI 471
+
+Query: 113 EGLDEPTVEALRERAKN 129
+           + L+      L   A+N
+Sbjct: 472 KNLNSEQAGLLIMTARN 488
+
+
+
+ Score = 63.2 bits (152), Expect = 4e-10,   Method: Composition-based stats.
+ Identities = 32/64 (50%), Positives = 46/64 (71%)
+
+Query: 68  QAHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRERA 127
+           +AH A + F K L+I+E+   +LV+EGFS+LEELAY+P  ELLE++ L E   + +RE A
+Sbjct: 351 EAHTAFNFFKKNLNINENIIKILVKEGFSSLEELAYIPFNELLEVKNLTEDQAKKVREGA 410
+
+Query: 128 KNAL 131
+           K+ L
+Sbjct: 411 KSKL 414
+
+
+>sp|Q83BS0|NUSA_COXBU Transcription elongation protein nusA
+           OS=Coxiella burnetii GN=nusA PE=1 SV=1
+          Length = 503
+
+ Score = 53.1 bits (126), Expect = 4e-07,   Method: Composition-based stats.
+ Identities = 43/122 (35%), Positives = 61/122 (50%), Gaps = 6/122 (4%)
+
+Query: 8   FTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRERAKNALATIA 67
+           F + LD+DE+ A  LV+ GF  LEE+AYVP +EL  +EG DE     L+ RA + L T  
+Sbjct: 365 FMEKLDVDEEVADALVQAGFMNLEEVAYVPKEELQGVEGFDEDISAELQRRAGDVLLTQE 424
+
+Query: 68  QAHAAIDTFTKYLDI------DEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVE 121
+            A   +D      D+        + A  LVE    T ++LA   + +L EI  +D+    
+Sbjct: 425 IAKQELDEKKPAEDLLTLPGMTTELARQLVENEVLTRDDLAEKSVLDLKEIIEIDDEAAA 484
+
+Query: 122 AL 123
+            L
+Sbjct: 485 NL 486
+
+
+
+ Score = 49.7 bits (117), Expect = 4e-06,   Method: Composition-based stats.
+ Identities = 28/58 (48%), Positives = 37/58 (63%)
+
+Query: 76  FTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRERAKNALAT 133
+           F + LD+DE+ A  LV+ GF  LEE+AYVP +EL  +EG DE     L+ RA + L T
+Sbjct: 365 FMEKLDVDEEVADALVQAGFMNLEEVAYVPKEELQGVEGFDEDISAELQRRAGDVLLT 422
+
+
+  Database: sprot
+    Posted date:  Mar 15, 2009  5:38 PM
+  Number of letters in database: 148,809,765
+  Number of sequences in database:  412,525
+  
+Lambda     K      H
+   0.314    0.131    0.346 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 37,295,412
+Number of Sequences: 412525
+Number of extensions: 1506103
+Number of successful extensions: 5736
+Number of sequences better than 1.0e-03: 10
+Number of HSP's better than  0.0 without gapping: 10
+Number of HSP's successfully gapped in prelim test: 0
+Number of HSP's that attempted gapping in prelim test: 5696
+Number of HSP's gapped (non-prelim): 20
+length of query: 138
+length of database: 148,809,765
+effective HSP length: 103
+effective length of query: 35
+effective length of database: 106,319,690
+effective search space: 3721189150
+effective search space used: 3721189150
+T: 11
+A: 40
+X1: 16 ( 7.2 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 42 (22.0 bits)
+S2: 97 (42.0 bits)

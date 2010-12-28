@@ -1,0 +1,79 @@
+select all
+color [200,200,200]
+
+
+select   GLY683, ILE686, ALA707, ASP717, ILE722, ASN723, LEU739, VAL746
+select selected and :A
+color [160,37,96]
+spacefill
+
+define CON9 selected
+
+
+select    LEU682, ILE684, THR685, ILE696, ILE698, ILE713, GLY716, ALA735, ILE736, LEU748
+select selected and :A
+color [240,125,171]
+spacefill
+
+define CON8 selected
+
+
+select    GLY667, ALA668, PRO681, SER699, LEU701, GLY705, GLY711, ILE719, ALA721, LEU732
+select selected or ALA742, ILE750, ALA759
+select selected and :A
+color [250,201,222]
+spacefill
+
+define CON7 selected
+
+
+select    VAL673, GLU674, LEU675, GLY688, SER700, LEU706, GLU708, ARG709, ARG718, LEU720
+select selected or SER724, SER726, LEU727, GLU734, GLN740, THR745, LYS752
+select selected and :A
+color [252,237,244]
+spacefill
+
+define CON6 selected
+
+
+select    ARG677, SER687, PRO695, THR702, THR710, ALA712, SER733, HIS737, PRO758, SER760
+select selected or SER761
+select selected and :A
+color [255,255,255]
+spacefill
+
+define CON5 selected
+
+
+select    ILE670, ASP694, GLY704, HIS714, GLY729, GLY743, THR747
+select selected and :A
+color [234,255,255]
+spacefill
+
+define CON4 selected
+
+
+select    ILE669, TYR671, THR672, LYS676, THR689, LYS703, LYS728, PRO731, LEU738, LYS749
+select selected and :A
+color [215,255,255]
+spacefill
+
+define CON3 selected
+
+
+select    GLU690, PRO692, ILE715, MET741, GLU744, LYS751
+select selected and :A
+color [140,255,255]
+spacefill
+
+define CON2 selected
+
+
+select    TYR678, GLY679, GLY680, GLU691, PHE693, ILE697, SER725, LYS730, GLN753, THR754
+select selected or ASP755, ALA756, GLN757
+select selected and :A
+color [16,200,209]
+spacefill
+
+define CON1 selected
+

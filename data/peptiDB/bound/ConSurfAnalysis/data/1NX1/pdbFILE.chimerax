@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+  <ChimeraPuppet type="std_webdata">
+<web_files>
+<file  name="pdbFILE_view_ConSurf.pdb" format="text" loc="http://consurf.tau.ac.il/results/1240493503/pdbFILE_view_ConSurf.pdb"/>
+<file  name="pdbFILE.aln" format="text" loc="http://consurf.tau.ac.il/results/1240493503/pdbFILE.aln"/>
+</web_files>
+<commands>
+  <mid_cmd>preset apply pub 3;repr cpk;show;focus;color red ligand</mid_cmd>
+
+<!-- the following 3 lines locate the Multalign Viewer instance
+	that was created by opening the alignment file, and stores a reference
+	to the instance as the variable 'mav' -->
+  <py_cmd>from MultAlignViewer.MAViewer import MAViewer</py_cmd>
+  <py_cmd>from chimera.extension import manager</py_cmd>
+  <py_cmd>mav = [inst for inst in manager.instances if isinstance(inst, MAViewer)][-1]</py_cmd>
+<!-- read in/show Consurf tree -->
+
+<!-- hide initial headers, show phylogeny tree, load the coloring file,
+	and make residue letters black.
+	This uses two possible sets of calls:  one for the 1.2540 release
+	and one for later versions that uses a better API.
+	The 'if' condition guarantees that the code will work no
+	matter what version the user has -->
+<py_cmd>
+if hasattr(mav, 'loadScfFile'):
+	mav.hideHeaders(mav.headers(shownOnly=True))
+	mav.usePhylogenyFile("http://consurf.tau.ac.il/results/1240493503/TheTree.txt", askReorder=False)
+	mav.loadScfFile("http://consurf.tau.ac.il/results/1240493503/pdbFILE.scf")
+	mav.useColoringFile(None)
+else:
+	mav.hideHeaders(mav.seqCanvas.headerDisplayOrder())
+	mav.usePhylogenyFile("http://consurf.tau.ac.il/results/1240493503/TheTree.txt")
+	mav.regionBrowser.loadScfFile("http://consurf.tau.ac.il/results/1240493503/pdbFILE.scf")
+	from MultAlignViewer.prefs import RC_BLACK
+	mav.seqCanvas.setColorFunc(RC_BLACK)
+</py_cmd>
+<!-- read in/show Consurf headers -->
+	<py_cmd>mav.readHeaderFile("http://consurf.tau.ac.il/results/1240493503/pdbFILE.hdr")</py_cmd>
+<!-- show chains other than the one in the alignment as gray ribbon -->
+<py_cmd>
+import chimera
+m = chimera.openModels.list(modelTypes=[chimera.Molecule])[0]
+for seq in m.sequences():
+	if hasattr(seq.residues[0], "mavConSurfHistogram"):
+		continue
+	from chimera.colorTable import getColorByName
+	gray = getColorByName("gray")
+	for r in seq.residues:
+		for a in r.atoms:
+			a.display = False
+		r.ribbonDisplay = True
+		r.ribbonDrawMode = chimera.Residue.Ribbon_Round
+		r.ribbonColor = gray
+</py_cmd>
+
+  </commands>
+</ChimeraPuppet>

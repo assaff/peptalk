@@ -1,0 +1,826 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_A  140
+         (140 letters)
+
+Database: sprot 
+           412,525 sequences; 148,809,765 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q9UJY5|GGA1_HUMAN ADP-ribosylation factor-binding protein GGA...   281   7e-76
+sp|Q8R0H9|GGA1_MOUSE ADP-ribosylation factor-binding protein GGA...   271   6e-73
+sp|Q9NZ52|GGA3_HUMAN ADP-ribosylation factor-binding protein GGA...   218   5e-57
+sp|Q8BMI3|GGA3_MOUSE ADP-ribosylation factor-binding protein GGA...   214   1e-55
+sp|Q6P5E6|GGA2_MOUSE ADP-ribosylation factor-binding protein GGA...   182   3e-46
+sp|Q9UJY4|GGA2_HUMAN ADP-ribosylation factor-binding protein GGA...   182   4e-46
+sp|Q68FJ8|TM1L2_XENLA TOM1-like protein 2 OS=Xenopus laevis GN=t...    75   6e-14
+sp|Q5SRX1|TM1L2_MOUSE TOM1-like protein 2 OS=Mus musculus GN=Tom...    74   3e-13
+sp|Q6ZVM7|TM1L2_HUMAN TOM1-like protein 2 OS=Homo sapiens GN=TOM...    73   4e-13
+sp|O88746|TOM1_MOUSE Target of Myb protein 1 OS=Mus musculus GN=...    72   1e-12
+sp|O60784|TOM1_HUMAN Target of Myb protein 1 OS=Homo sapiens GN=...    69   7e-12
+sp|O12940|TOM1_CHICK Target of Myb protein 1 OS=Gallus gallus GN...    69   9e-12
+sp|Q9JJ50|HGS_RAT Hepatocyte growth factor-regulated tyrosine ki...    61   1e-09
+sp|Q99LI8|HGS_MOUSE Hepatocyte growth factor-regulated tyrosine ...    61   1e-09
+sp|O14964|HGS_HUMAN Hepatocyte growth factor-regulated tyrosine ...    61   2e-09
+sp|Q0V8S0|HGS_BOVIN Hepatocyte growth factor-regulated tyrosine ...    61   2e-09
+sp|P70297|STAM1_MOUSE Signal transducing adapter molecule 1 OS=M...    60   3e-09
+sp|Q92783|STAM1_HUMAN Signal transducing adapter molecule 1 OS=H...    59   5e-09
+sp|O75674|TM1L1_HUMAN TOM1-like protein 1 OS=Homo sapiens GN=TOM...    59   7e-09
+sp|Q960X8|HRS_DROME Hepatocyte growth factor-regulated tyrosine ...    58   1e-08
+sp|Q923U0|TM1L1_MOUSE TOM1-like protein 1 OS=Mus musculus GN=Tom...    57   4e-08
+sp|O01498|STAM1_CAEEL Signal transducing adapter molecule 1 OS=C...    55   9e-08
+sp|O75886|STAM2_HUMAN Signal transducing adapter molecule 2 OS=H...    55   9e-08
+sp|Q5XHY7|STAM2_RAT Signal transducing adapter molecule 2 OS=Rat...    55   1e-07
+sp|O88811|STAM2_MOUSE Signal transducing adapter molecule 2 OS=M...    55   1e-07
+sp|O93436|STAM2_CHICK Signal transducing adapter molecule 2 OS=G...    52   9e-07
+sp|Q2GT05|HSE1_CHAGB Class E vacuolar protein-sorting machinery ...    49   9e-06
+sp|Q10410|YD85_SCHPO Probable ADP-ribosylation factor-binding pr...    49   1e-05
+sp|Q2GS33|VPS27_CHAGB Vacuolar protein sorting-associated protei...    48   2e-05
+sp|Q7RZJ2|VPS27_NEUCR Vacuolar protein sorting-associated protei...    47   2e-05
+sp|Q7S6J4|HSE1_NEUCR Class E vacuolar protein-sorting machinery ...    46   6e-05
+sp|Q5A895|HSE1_CANAL Class E vacuolar protein-sorting machinery ...    44   2e-04
+sp|O13821|VPS27_SCHPO Vacuolar protein sorting-associated protei...    44   3e-04
+sp|Q0CJV3|VPS27_ASPTN Vacuolar protein sorting-associated protei...    44   3e-04
+sp|Q4WHN8|VPS27_ASPFU Vacuolar protein sorting-associated protei...    43   4e-04
+sp|A1DFP5|VPS27_NEOFI Vacuolar protein sorting-associated protei...    43   4e-04
+sp|A2QWA2|VPS27_ASPNC Vacuolar protein sorting-associated protei...    42   7e-04
+sp|A1CEK1|VPS27_ASPCL Vacuolar protein sorting-associated protei...    42   8e-04
+
+>sp|Q9UJY5|GGA1_HUMAN ADP-ribosylation factor-binding protein GGA1
+           OS=Homo sapiens GN=GGA1 PE=1 SV=1
+          Length = 639
+
+ Score =  281 bits (719), Expect = 7e-76,   Method: Composition-based stats.
+ Identities = 140/140 (100%), Positives = 140/140 (100%)
+
+Query: 1   PETLEARINRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQA 60
+           PETLEARINRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQA
+Sbjct: 7   PETLEARINRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQA 66
+
+Query: 61  LTVLETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKNKILELLYSWTVGL 120
+           LTVLETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKNKILELLYSWTVGL
+Sbjct: 67  LTVLETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKNKILELLYSWTVGL 126
+
+Query: 121 PEEVKIAEAYQMLKKQGIVK 140
+           PEEVKIAEAYQMLKKQGIVK
+Sbjct: 127 PEEVKIAEAYQMLKKQGIVK 146
+
+
+>sp|Q8R0H9|GGA1_MOUSE ADP-ribosylation factor-binding protein GGA1
+           OS=Mus musculus GN=Gga1 PE=2 SV=1
+          Length = 635
+
+ Score =  271 bits (693), Expect = 6e-73,   Method: Composition-based stats.
+ Identities = 136/140 (97%), Positives = 138/140 (98%)
+
+Query: 1   PETLEARINRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQA 60
+           PETLEARINRATNPLNKEL+WASIN FCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQA
+Sbjct: 7   PETLEARINRATNPLNKELNWASINSFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQA 66
+
+Query: 61  LTVLETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKNKILELLYSWTVGL 120
+           LTVLETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVK+KILELLYSWTV L
+Sbjct: 67  LTVLETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKSKILELLYSWTVCL 126
+
+Query: 121 PEEVKIAEAYQMLKKQGIVK 140
+           PEEVKIAEAYQMLKKQGIVK
+Sbjct: 127 PEEVKIAEAYQMLKKQGIVK 146
+
+
+>sp|Q9NZ52|GGA3_HUMAN ADP-ribosylation factor-binding protein GGA3
+           OS=Homo sapiens GN=GGA3 PE=1 SV=1
+          Length = 723
+
+ Score =  218 bits (556), Expect = 5e-57,   Method: Composition-based stats.
+ Identities = 101/139 (72%), Positives = 122/139 (87%)
+
+Query: 2   ETLEARINRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQAL 61
+           E+LE+ +N+ATNP N++ DW  I GFC+Q+N++ EGP +A RLLAHKIQSPQEWEA+QAL
+Sbjct: 7   ESLESWLNKATNPSNRQEDWEYIIGFCDQINKELEGPQIAVRLLAHKIQSPQEWEALQAL 66
+
+Query: 62  TVLETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKNKILELLYSWTVGLP 121
+           TVLE CMK+CG+RFH+EVGKFRFLNELIKVVSPKYLG R SEKVK K++ELLYSWT+ LP
+Sbjct: 67  TVLEACMKNCGRRFHNEVGKFRFLNELIKVVSPKYLGDRVSEKVKTKVIELLYSWTMALP 126
+
+Query: 122 EEVKIAEAYQMLKKQGIVK 140
+           EE KI +AY MLK+QGIV+
+Sbjct: 127 EEAKIKDAYHMLKRQGIVQ 145
+
+
+>sp|Q8BMI3|GGA3_MOUSE ADP-ribosylation factor-binding protein GGA3
+           OS=Mus musculus GN=Gga3 PE=2 SV=1
+          Length = 718
+
+ Score =  214 bits (545), Expect = 1e-55,   Method: Composition-based stats.
+ Identities = 99/139 (71%), Positives = 121/139 (87%)
+
+Query: 2   ETLEARINRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQAL 61
+           E+LE+ +N+ATNP N++ DW  I GFC+Q+N++ EGP +A RLLAHKIQSPQEWEA+QAL
+Sbjct: 7   ESLESWLNKATNPSNRQEDWEYIIGFCDQINKELEGPQIAVRLLAHKIQSPQEWEAVQAL 66
+
+Query: 62  TVLETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKNKILELLYSWTVGLP 121
+           TVLE CMK+CG+R H+EVGKFRFLNELIKVVSPKYLG R SEKVK K++ELL+SWT+ LP
+Sbjct: 67  TVLEACMKNCGRRLHNEVGKFRFLNELIKVVSPKYLGDRVSEKVKTKVIELLFSWTLALP 126
+
+Query: 122 EEVKIAEAYQMLKKQGIVK 140
+           EE KI +AY MLK+QGIV+
+Sbjct: 127 EEAKIKDAYHMLKRQGIVQ 145
+
+
+>sp|Q6P5E6|GGA2_MOUSE ADP-ribosylation factor-binding protein GGA2
+           OS=Mus musculus GN=Gga2 PE=2 SV=1
+          Length = 603
+
+ Score =  182 bits (463), Expect = 3e-46,   Method: Composition-based stats.
+ Identities = 88/137 (64%), Positives = 109/137 (79%)
+
+Query: 4   LEARINRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQALTV 63
+           LE  +N+AT+P   E DW++I  FCEQ+N D  GP  A  LLAHKIQSPQE EA+ ALTV
+Sbjct: 29  LELWLNKATDPSMAEQDWSAIQKFCEQVNTDPSGPTHAPWLLAHKIQSPQEKEALYALTV 88
+
+Query: 64  LETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKNKILELLYSWTVGLPEE 123
+           LE CM  CG++FH EV KFRFLNELIKV+SPKYLG+  +EKVK +++E+L+SWTV  PE+
+Sbjct: 89  LEICMNHCGEKFHSEVAKFRFLNELIKVLSPKYLGAWATEKVKGRVIEILFSWTVWFPED 148
+
+Query: 124 VKIAEAYQMLKKQGIVK 140
+           +KI +AYQMLKKQGI+K
+Sbjct: 149 IKIRDAYQMLKKQGIIK 165
+
+
+>sp|Q9UJY4|GGA2_HUMAN ADP-ribosylation factor-binding protein GGA2
+           OS=Homo sapiens GN=GGA2 PE=1 SV=3
+          Length = 613
+
+ Score =  182 bits (462), Expect = 4e-46,   Method: Composition-based stats.
+ Identities = 88/138 (63%), Positives = 109/138 (78%)
+
+Query: 3   TLEARINRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQALT 62
+           +LE  +N+AT+P   E DW++I  FCEQ+N D  GP  A  LLAHKIQSPQE EA+ ALT
+Sbjct: 25  SLELWLNKATDPSMSEQDWSAIQNFCEQVNTDPNGPTHAPWLLAHKIQSPQEKEALYALT 84
+
+Query: 63  VLETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKNKILELLYSWTVGLPE 122
+           VLE CM  CG++FH EV KFRFLNELIKV+SPKYLGS  + KVK +++E+L+SWTV  PE
+Sbjct: 85  VLEMCMNHCGEKFHSEVAKFRFLNELIKVLSPKYLGSWATGKVKGRVIEILFSWTVWFPE 144
+
+Query: 123 EVKIAEAYQMLKKQGIVK 140
+           ++KI +AYQMLKKQGI+K
+Sbjct: 145 DIKIRDAYQMLKKQGIIK 162
+
+
+>sp|Q68FJ8|TM1L2_XENLA TOM1-like protein 2 OS=Xenopus laevis
+           GN=tom1l2 PE=2 SV=1
+          Length = 507
+
+ Score = 75.5 bits (184), Expect = 6e-14,   Method: Composition-based stats.
+ Identities = 47/136 (34%), Positives = 76/136 (55%), Gaps = 8/136 (5%)
+
+Query: 8   INRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEW-EAIQALTVLET 66
+           I +AT+   +  DW      C+ +NE  EGP  A R L  ++   + + E + ALTVLET
+Sbjct: 17  IEKATDGSLQSEDWTLNMEICDIINETEEGPKDAMRALKKRLNGNRNYREVMLALTVLET 76
+
+Query: 67  CMKSCGKRFHDEVGKFRFLNE-LIKVVSPKYLGSRTSEKVKNKILELLYSWTVGL---PE 122
+           C+K+CG RFH +V    F++  L+K++SPK   +     V++K+L L+ +W       P+
+Sbjct: 77  CVKNCGHRFHVQVTHRDFIDGILVKIISPK---NNPPTIVQDKVLALIQAWADAFRSSPD 133
+
+Query: 123 EVKIAEAYQMLKKQGI 138
+              +   Y+ LK++GI
+Sbjct: 134 LTGVVHIYEELKRKGI 149
+
+
+>sp|Q5SRX1|TM1L2_MOUSE TOM1-like protein 2 OS=Mus musculus GN=Tom1l2
+           PE=1 SV=1
+          Length = 507
+
+ Score = 73.6 bits (179), Expect = 3e-13,   Method: Composition-based stats.
+ Identities = 46/136 (33%), Positives = 75/136 (55%), Gaps = 8/136 (5%)
+
+Query: 8   INRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEW-EAIQALTVLET 66
+           + +AT+   +  DW      C+ +NE  EGP  A R L  ++   + + E + ALTVLET
+Sbjct: 17  LEKATDGSLQSEDWTLNMEICDIINETEEGPKDAIRALKKRLSGNRNYREVMLALTVLET 76
+
+Query: 67  CMKSCGKRFHDEVGKFRFLNE-LIKVVSPKYLGSRTSEKVKNKILELLYSWTVGL---PE 122
+           C+K+CG RFH  V    F++  L+K++SPK   +     V++K+L L+ +W       P+
+Sbjct: 77  CVKNCGHRFHLLVANRDFIDSVLVKIISPK---NNPPTIVQDKVLALIQAWADAFRSSPD 133
+
+Query: 123 EVKIAEAYQMLKKQGI 138
+              +   Y+ LK++GI
+Sbjct: 134 LTGVVHIYEELKRRGI 149
+
+
+>sp|Q6ZVM7|TM1L2_HUMAN TOM1-like protein 2 OS=Homo sapiens GN=TOM1L2
+           PE=1 SV=1
+          Length = 507
+
+ Score = 73.2 bits (178), Expect = 4e-13,   Method: Composition-based stats.
+ Identities = 45/136 (33%), Positives = 75/136 (55%), Gaps = 8/136 (5%)
+
+Query: 8   INRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEW-EAIQALTVLET 66
+           + +AT+   +  DW      C+ +NE  EGP  A R L  ++   + + E + ALTVLET
+Sbjct: 17  LEKATDGSLQSEDWTLNMEICDIINETEEGPKDAIRALKKRLNGNRNYREVMLALTVLET 76
+
+Query: 67  CMKSCGKRFHDEVGKFRFLNE-LIKVVSPKYLGSRTSEKVKNKILELLYSWTVGL---PE 122
+           C+K+CG RFH  V    F++  L+K++SPK   +     V++K+L L+ +W       P+
+Sbjct: 77  CVKNCGHRFHILVANRDFIDSVLVKIISPK---NNPPTIVQDKVLALIQAWADAFRSSPD 133
+
+Query: 123 EVKIAEAYQMLKKQGI 138
+              +   Y+ LK++G+
+Sbjct: 134 LTGVVHIYEELKRKGV 149
+
+
+>sp|O88746|TOM1_MOUSE Target of Myb protein 1 OS=Mus musculus
+           GN=Tom1 PE=1 SV=1
+          Length = 492
+
+ Score = 71.6 bits (174), Expect = 1e-12,   Method: Composition-based stats.
+ Identities = 47/137 (34%), Positives = 74/137 (54%), Gaps = 8/137 (5%)
+
+Query: 7   RINRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEW-EAIQALTVLE 65
+           RI +AT+   +  DWA     C+ +NE  EGP  A R +  +I   + + E + ALTVLE
+Sbjct: 16  RIEKATDGSLQSEDWALNMEICDIINETEEGPKDAFRAVKKRIMGNKNFHEVMLALTVLE 75
+
+Query: 66  TCMKSCGKRFHDEVGKFRFL-NELIKVVSPKYLGSRTSEKVKNKILELLYSWTVGL---P 121
+           TC+K+CG RFH  V    F+ N L++ + PK   +     V +K+L L+ SW       P
+Sbjct: 76  TCVKNCGHRFHVLVANQDFVENVLVRTILPK---NNPPTIVHDKVLNLIQSWADAFRSSP 132
+
+Query: 122 EEVKIAEAYQMLKKQGI 138
+           +   +   Y+ L+++G+
+Sbjct: 133 DLTGVVAVYEDLRRKGL 149
+
+
+>sp|O60784|TOM1_HUMAN Target of Myb protein 1 OS=Homo sapiens
+           GN=TOM1 PE=1 SV=2
+          Length = 492
+
+ Score = 68.9 bits (167), Expect = 7e-12,   Method: Composition-based stats.
+ Identities = 46/137 (33%), Positives = 73/137 (53%), Gaps = 8/137 (5%)
+
+Query: 7   RINRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEW-EAIQALTVLE 65
+           RI +AT+   +  DWA     C+ +NE  EGP  A R +  +I   + + E + ALTVLE
+Sbjct: 16  RIEKATDGSLQSEDWALNMEICDIINETEEGPKDALRAVKKRIVGNKNFHEVMLALTVLE 75
+
+Query: 66  TCMKSCGKRFHDEVGKFRFLNE-LIKVVSPKYLGSRTSEKVKNKILELLYSWTVGL---P 121
+           TC+K+CG RFH  V    F+   L++ + PK   +     V +K+L L+ SW       P
+Sbjct: 76  TCVKNCGHRFHVLVASQDFVESVLVRTILPK---NNPPTIVHDKVLNLIQSWADAFRSSP 132
+
+Query: 122 EEVKIAEAYQMLKKQGI 138
+           +   +   Y+ L+++G+
+Sbjct: 133 DLTGVVTIYEDLRRKGL 149
+
+
+>sp|O12940|TOM1_CHICK Target of Myb protein 1 OS=Gallus gallus
+           GN=TOM1 PE=2 SV=2
+          Length = 515
+
+ Score = 68.6 bits (166), Expect = 9e-12,   Method: Composition-based stats.
+ Identities = 46/137 (33%), Positives = 73/137 (53%), Gaps = 8/137 (5%)
+
+Query: 7   RINRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEW-EAIQALTVLE 65
+           RI RAT+   +  DW+     C+ +NE  EGP  A R +  +I   + + E + ALTVLE
+Sbjct: 16  RIERATDGSLRGEDWSLNMEICDIINETEEGPKDAFRAIKKRIVGNKNFHEVMLALTVLE 75
+
+Query: 66  TCMKSCGKRFHDEVGKFRFLNE-LIKVVSPKYLGSRTSEKVKNKILELLYSWTVGL---P 121
+           TC+K+CG RFH  V    F+   L++ + PK   +     V +K+L L+ SW       P
+Sbjct: 76  TCVKNCGHRFHILVASQDFVESVLVRTILPK---NNPPAIVHDKVLTLIQSWADAFRSSP 132
+
+Query: 122 EEVKIAEAYQMLKKQGI 138
+           +   +   Y+ L+++G+
+Sbjct: 133 DLTGVVAVYEDLRRKGL 149
+
+
+>sp|Q9JJ50|HGS_RAT Hepatocyte growth factor-regulated tyrosine
+           kinase substrate OS=Rattus norvegicus GN=Hgs PE=1 SV=1
+          Length = 776
+
+ Score = 61.2 bits (147), Expect = 1e-09,   Method: Composition-based stats.
+ Identities = 42/140 (30%), Positives = 70/140 (50%), Gaps = 8/140 (5%)
+
+Query: 3   TLEARINRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQALT 62
+           T E  +++AT+ L  E DW SI   C+ + +       A   +  K+       A+ AL 
+Sbjct: 7   TFERLLDKATSQLLLETDWESILQICDLIRQGDTQAKYAVNSIKKKVNDKNPHVALYALE 66
+
+Query: 63  VLETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKNKILELLYSWTVGLPE 122
+           V+E+ +K+CG+  HDEV   + + EL ++     L  +    V+NKIL L+ +W      
+Sbjct: 67  VMESVVKNCGQTVHDEVANKQTMEELKEL-----LKRQVEVNVRNKILYLIQAWAHAFRN 121
+
+Query: 123 EVK---IAEAYQMLKKQGIV 139
+           E K   + + YQ++K +G V
+Sbjct: 122 EPKYKVVQDTYQIMKVEGHV 141
+
+
+>sp|Q99LI8|HGS_MOUSE Hepatocyte growth factor-regulated tyrosine
+           kinase substrate OS=Mus musculus GN=Hgs PE=1 SV=2
+          Length = 775
+
+ Score = 61.2 bits (147), Expect = 1e-09,   Method: Composition-based stats.
+ Identities = 42/140 (30%), Positives = 70/140 (50%), Gaps = 8/140 (5%)
+
+Query: 3   TLEARINRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQALT 62
+           T E  +++AT+ L  E DW SI   C+ + +       A   +  K+       A+ AL 
+Sbjct: 7   TFERLLDKATSQLLLETDWESILQICDLIRQGDTQAKYAVNSIKKKVNDKNPHVALYALE 66
+
+Query: 63  VLETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKNKILELLYSWTVGLPE 122
+           V+E+ +K+CG+  HDEV   + + EL ++     L  +    V+NKIL L+ +W      
+Sbjct: 67  VMESVVKNCGQTVHDEVANKQTMEELKEL-----LKRQVEVNVRNKILYLIQAWAHAFRN 121
+
+Query: 123 EVK---IAEAYQMLKKQGIV 139
+           E K   + + YQ++K +G V
+Sbjct: 122 EPKYKVVQDTYQIMKVEGHV 141
+
+
+>sp|O14964|HGS_HUMAN Hepatocyte growth factor-regulated tyrosine
+           kinase substrate OS=Homo sapiens GN=HGS PE=1 SV=1
+          Length = 777
+
+ Score = 60.8 bits (146), Expect = 2e-09,   Method: Composition-based stats.
+ Identities = 42/140 (30%), Positives = 69/140 (49%), Gaps = 8/140 (5%)
+
+Query: 3   TLEARINRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQALT 62
+           T E  +++AT+ L  E DW SI   C+ + +       A   +  K+       A+ AL 
+Sbjct: 7   TFERLLDKATSQLLLETDWESILQICDLIRQGDTQAKYAVNSIKKKVNDKNPHVALYALE 66
+
+Query: 63  VLETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKNKILELLYSWTVGLPE 122
+           V+E+ +K+CG+  HDEV   + + EL  +     L  +    V+NKIL L+ +W      
+Sbjct: 67  VMESVVKNCGQTVHDEVANKQTMEELKDL-----LKRQVEVNVRNKILYLIQAWAHAFRN 121
+
+Query: 123 EVK---IAEAYQMLKKQGIV 139
+           E K   + + YQ++K +G V
+Sbjct: 122 EPKYKVVQDTYQIMKVEGHV 141
+
+
+>sp|Q0V8S0|HGS_BOVIN Hepatocyte growth factor-regulated tyrosine
+           kinase substrate OS=Bos taurus GN=HGS PE=2 SV=1
+          Length = 777
+
+ Score = 60.8 bits (146), Expect = 2e-09,   Method: Composition-based stats.
+ Identities = 42/140 (30%), Positives = 69/140 (49%), Gaps = 8/140 (5%)
+
+Query: 3   TLEARINRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQALT 62
+           T E  +++AT+ L  E DW SI   C+ + +       A   +  K+       A+ AL 
+Sbjct: 7   TFERLLDKATSQLLLETDWESILQICDLIRQGDTQAKYAVSSIKKKVNDKNPHVALYALE 66
+
+Query: 63  VLETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKNKILELLYSWTVGLPE 122
+           V+E+ +K+CG+  HDEV   + + EL  +     L  +    V+NKIL L+ +W      
+Sbjct: 67  VMESVVKNCGQTVHDEVANKQTMEELKDL-----LKRQVEVNVRNKILYLIQAWAHAFRN 121
+
+Query: 123 EVK---IAEAYQMLKKQGIV 139
+           E K   + + YQ++K +G V
+Sbjct: 122 EPKYKVVQDTYQIMKVEGHV 141
+
+
+>sp|P70297|STAM1_MOUSE Signal transducing adapter molecule 1 OS=Mus
+           musculus GN=Stam PE=2 SV=3
+          Length = 548
+
+ Score = 60.1 bits (144), Expect = 3e-09,   Method: Composition-based stats.
+ Identities = 40/134 (29%), Positives = 66/134 (49%), Gaps = 9/134 (6%)
+
+Query: 8   INRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQALTVLETC 67
+           + +AT+ LN   DW  I   C+++ +   GP    R +  ++       A+QALT+L  C
+Sbjct: 13  VEKATSELNTAEDWGLILDICDKVGQSRTGPKDCLRSIMRRVNHKDPHVAMQALTLLGAC 72
+
+Query: 68  MKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKNKILELLYSWTVGL---PEEV 124
+           + +CGK FH EV    F +E+  V+      ++   KV  K+  L+  WT      P+  
+Sbjct: 73  VSNCGKIFHLEVCSRDFASEVSNVL------NKGHPKVCEKLKALMVEWTDEFKNDPQLS 126
+
+Query: 125 KIAEAYQMLKKQGI 138
+            I+   + LK+QG+
+Sbjct: 127 LISAMIKNLKEQGV 140
+
+
+>sp|Q92783|STAM1_HUMAN Signal transducing adapter molecule 1 OS=Homo
+           sapiens GN=STAM PE=1 SV=3
+          Length = 540
+
+ Score = 59.3 bits (142), Expect = 5e-09,   Method: Composition-based stats.
+ Identities = 39/134 (29%), Positives = 66/134 (49%), Gaps = 9/134 (6%)
+
+Query: 8   INRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQALTVLETC 67
+           + +AT+ +N   DW  I   C+++ +   GP    R +  ++       A+QALT+L  C
+Sbjct: 13  VEKATSEMNTAEDWGLILDICDKVGQSRTGPKDCLRSIMRRVNHKDPHVAMQALTLLGAC 72
+
+Query: 68  MKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKNKILELLYSWTVGL---PEEV 124
+           + +CGK FH EV    F +E+  V+      ++   KV  K+  L+  WT      P+  
+Sbjct: 73  VSNCGKIFHLEVCSRDFASEVSNVL------NKGHPKVCEKLKALMVEWTDEFKNDPQLS 126
+
+Query: 125 KIAEAYQMLKKQGI 138
+            I+   + LK+QG+
+Sbjct: 127 LISAMIKNLKEQGV 140
+
+
+>sp|O75674|TM1L1_HUMAN TOM1-like protein 1 OS=Homo sapiens GN=TOM1L1
+           PE=1 SV=2
+          Length = 476
+
+ Score = 58.9 bits (141), Expect = 7e-09,   Method: Composition-based stats.
+ Identities = 38/136 (27%), Positives = 70/136 (51%), Gaps = 8/136 (5%)
+
+Query: 8   INRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQ-ALTVLET 66
+           I +AT    +  DW      C+ +N   +GP  A + L  +I      + IQ  L++++ 
+Sbjct: 19  IEKATFAGVQTEDWGQFMHICDIINTTQDGPKDAVKALKKRISKNYNHKEIQLTLSLIDM 78
+
+Query: 67  CMKSCGKRFHDEVGKFRFLNE-LIKVVSPKYLGSRTSEKVKNKILELLYSWTVGLPEEVK 125
+           C+++CG  F   + K  F+ E L+K+++P+Y        ++N+IL  + +W+ G P  V 
+Sbjct: 79  CVQNCGPSFQSLIVKKEFVKENLVKLLNPRY---NLPLDIQNRILNFIKTWSQGFPGGVD 135
+
+Query: 126 IA---EAYQMLKKQGI 138
+           ++   E Y  L K+G+
+Sbjct: 136 VSEVKEVYLDLVKKGV 151
+
+
+>sp|Q960X8|HRS_DROME Hepatocyte growth factor-regulated tyrosine
+           kinase substrate OS=Drosophila melanogaster GN=Hrs PE=1
+           SV=1
+          Length = 760
+
+ Score = 58.2 bits (139), Expect = 1e-08,   Method: Composition-based stats.
+ Identities = 40/132 (30%), Positives = 67/132 (50%), Gaps = 9/132 (6%)
+
+Query: 3   TLEARINRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQALT 62
+           + +  +  AT+ L  E DW SI   C+++N+    P  A   +  K+ SP    +  +L 
+Sbjct: 5   SFDKNLENATSHLRLEPDWPSILLICDEINQKDVTPKNAFAAIKKKMNSPNPHSSCYSLL 64
+
+Query: 63  VLETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKNKILELLYSWTVGLPE 122
+           VLE+ +K+CG   H+EV    F  E  ++ S  +L S   E V+ K+LEL+ +W      
+Sbjct: 65  VLESIVKNCGAPVHEEV----FTKENCEMFS-SFLESTPHENVRQKMLELVQTWAYAF-- 117
+
+Query: 123 EVKIAEAYQMLK 134
+             + ++ YQ +K
+Sbjct: 118 --RSSDKYQAIK 127
+
+
+>sp|Q923U0|TM1L1_MOUSE TOM1-like protein 1 OS=Mus musculus GN=Tom1l1
+           PE=1 SV=1
+          Length = 474
+
+ Score = 56.6 bits (135), Expect = 4e-08,   Method: Composition-based stats.
+ Identities = 34/124 (27%), Positives = 66/124 (53%), Gaps = 8/124 (6%)
+
+Query: 20  DWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQ-ALTVLETCMKSCGKRFHDE 78
+           DW      C+ +N   +GP  A + L  +I      + IQ +L++++ C+++CG  F   
+Sbjct: 31  DWGQFLHICDIINTTQDGPKDAVKALKKRISKNYNHKEIQLSLSLIDMCVQNCGPSFQSL 90
+
+Query: 79  VGKFRFLNE-LIKVVSPKYLGSRTSEKVKNKILELLYSWTVGLPEEVKIA---EAYQMLK 134
+           + K  F+ + L+K+++P+Y       + +N+IL  + +W+ G P  V ++   E Y  L 
+Sbjct: 91  IVKKEFIKDTLVKLLNPRY---TLPLETQNRILNFIKTWSQGFPGGVDVSEVKEVYLDLL 147
+
+Query: 135 KQGI 138
+           K+G+
+Sbjct: 148 KKGV 151
+
+
+>sp|O01498|STAM1_CAEEL Signal transducing adapter molecule 1
+           OS=Caenorhabditis elegans GN=stam-1 PE=1 SV=2
+          Length = 457
+
+ Score = 55.5 bits (132), Expect = 9e-08,   Method: Composition-based stats.
+ Identities = 31/112 (27%), Positives = 54/112 (48%), Gaps = 6/112 (5%)
+
+Query: 5   EARINRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQALTVL 64
+           E  + + T P     +W  I  FC+ +N DFEG     + L  ++ +      + A++VL
+Sbjct: 13  EDLLGKITAPTITVENWEGILAFCDMINNDFEGSKTGIKSLRKRLNNRDPHVVLLAISVL 72
+
+Query: 65  ETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKNKILELLYSW 116
+           ++C  +C +RF  EV   +F+NEL      K L + +  +V  K+   +  W
+Sbjct: 73  DSCWANCEERFRKEVSSAQFINEL------KALCTSSQRQVAEKMRLTVQKW 118
+
+
+>sp|O75886|STAM2_HUMAN Signal transducing adapter molecule 2 OS=Homo
+           sapiens GN=STAM2 PE=1 SV=1
+          Length = 525
+
+ Score = 55.1 bits (131), Expect = 9e-08,   Method: Composition-based stats.
+ Identities = 37/138 (26%), Positives = 64/138 (46%), Gaps = 8/138 (5%)
+
+Query: 4   LEARINRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQALTV 63
+            E  + +ATN  N   DW+ I   C+++     G     + +  ++       A+QALT+
+Sbjct: 9   FEQDVEKATNEYNTTEDWSLIMDICDKVGSTPNGAKDCLKAIMKRVNHKVPHVALQALTL 68
+
+Query: 64  LETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKNKILELLYSWTVGL--- 120
+           L  C+ +CGK FH EV    F  E+  V+      ++   KV  K+  L+  W+      
+Sbjct: 69  LGACVANCGKIFHLEVCSRDFATEVRAVIK-----NKAHPKVCEKLKSLMVEWSEEFQKD 123
+
+Query: 121 PEEVKIAEAYQMLKKQGI 138
+           P+   I+   + +K++GI
+Sbjct: 124 PQFSLISATIKSMKEEGI 141
+
+
+>sp|Q5XHY7|STAM2_RAT Signal transducing adapter molecule 2 OS=Rattus
+           norvegicus GN=Stam2 PE=2 SV=1
+          Length = 523
+
+ Score = 55.1 bits (131), Expect = 1e-07,   Method: Composition-based stats.
+ Identities = 36/138 (26%), Positives = 64/138 (46%), Gaps = 8/138 (5%)
+
+Query: 4   LEARINRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQALTV 63
+            E  + +ATN  N   DW+ I   C+++     G     + +  ++       A+QALT+
+Sbjct: 9   FEQDVEKATNEYNTTEDWSLIMDICDRVGSTPNGAKDCLKAIMKRVNHKVPHVALQALTL 68
+
+Query: 64  LETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKNKILELLYSWTVGL--- 120
+           L  C+ +CGK FH EV    F  E+  V+      ++   KV  K+  L+  W+      
+Sbjct: 69  LGACVANCGKIFHLEVCSRDFATEVRAVIK-----NKAHPKVCEKLKSLMVEWSEEFQKD 123
+
+Query: 121 PEEVKIAEAYQMLKKQGI 138
+           P+   I+   + +K++G+
+Sbjct: 124 PQFSLISATIKAMKEEGV 141
+
+
+>sp|O88811|STAM2_MOUSE Signal transducing adapter molecule 2 OS=Mus
+           musculus GN=Stam2 PE=1 SV=1
+          Length = 523
+
+ Score = 55.1 bits (131), Expect = 1e-07,   Method: Composition-based stats.
+ Identities = 36/138 (26%), Positives = 64/138 (46%), Gaps = 8/138 (5%)
+
+Query: 4   LEARINRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQALTV 63
+            E  + +ATN  N   DW+ I   C+++     G     + +  ++       A+QALT+
+Sbjct: 9   FEQDVEKATNEYNTTEDWSLIMDICDRVGSTPSGAKDCLKAIMKRVNHKVPHVALQALTL 68
+
+Query: 64  LETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKNKILELLYSWTVGL--- 120
+           L  C+ +CGK FH EV    F  E+  V+      ++   KV  K+  L+  W+      
+Sbjct: 69  LGACVANCGKIFHLEVCSRDFATEVRSVIK-----NKAHPKVCEKLKSLMVEWSEEFQKD 123
+
+Query: 121 PEEVKIAEAYQMLKKQGI 138
+           P+   I+   + +K++G+
+Sbjct: 124 PQFSLISATIKSMKEEGV 141
+
+
+>sp|O93436|STAM2_CHICK Signal transducing adapter molecule 2
+           OS=Gallus gallus GN=STAM2 PE=1 SV=1
+          Length = 468
+
+ Score = 52.0 bits (123), Expect = 9e-07,   Method: Composition-based stats.
+ Identities = 35/138 (25%), Positives = 62/138 (44%), Gaps = 9/138 (6%)
+
+Query: 4   LEARINRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQALTV 63
+            E  + +ATN  N   DW  I   C+++     G     + +  ++       A+QALT+
+Sbjct: 9   FEQDVEKATNEHNNSEDWGLIMDICDKVGSTPNGAKDCLKAIMRRVNHKVPHVALQALTL 68
+
+Query: 64  LETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKNKILELLYSWTVGL--- 120
+           L  C+ +CG+ FH EV    F  E   ++      ++   KV  K+  L+  W+      
+Sbjct: 69  LGACVSNCGRIFHLEVCSRDFATEARGII------NKAHGKVSEKLKTLMVEWSEEFQKD 122
+
+Query: 121 PEEVKIAEAYQMLKKQGI 138
+           P+   I+   + LK++G+
+Sbjct: 123 PQCSLISATIKSLKEEGV 140
+
+
+>sp|Q2GT05|HSE1_CHAGB Class E vacuolar protein-sorting machinery
+           protein HSE1 OS=Chaetomium globosum GN=HSE1 PE=3 SV=1
+          Length = 713
+
+ Score = 48.5 bits (114), Expect = 9e-06,   Method: Composition-based stats.
+ Identities = 30/110 (27%), Positives = 51/110 (46%), Gaps = 4/110 (3%)
+
+Query: 8   INRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQALTVLETC 67
+           IN+AT+      DW +I   C+++  D  GP  +   L  ++        +  L V    
+Sbjct: 14  INKATDENQTSEDWGAIMEICDRVAGDANGPKESVASLIKRLAHRNANVQLYTLEVANAL 73
+
+Query: 68  MKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKNKILELLYSWT 117
+            ++CGK  H E+    F + L+K+ + +     T  +VK KILE +  W+
+Sbjct: 74  SQNCGKNMHRELSSRAFTDALLKLANDR----NTHTQVKAKILERMKDWS 119
+
+
+>sp|Q10410|YD85_SCHPO Probable ADP-ribosylation factor-binding
+           protein C1F3.05 OS=Schizosaccharomyces pombe
+           GN=SPAC1F3.05 PE=2 SV=1
+          Length = 510
+
+ Score = 48.5 bits (114), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 35/116 (30%), Positives = 60/116 (51%), Gaps = 3/116 (2%)
+
+Query: 2   ETLEARINRATNPLNKELDWASINGFCEQLNEDFEGPPL-ATRLLAHKIQSPQEWEAIQA 60
+           +TL   I++AT+  N E + A      + +NE     P  A  L+  ++ S     +  A
+Sbjct: 5   QTLSKYIDKATDQFNLEPNLALNIEIADLINEKKGNTPREAALLILKRVNSANPTVSYLA 64
+
+Query: 61  LTVLETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKNKILELLYSW 116
+           L +L+ C+K+CG  FH ++    FLN  +    P +  SR + K+++K+LE+L  W
+Sbjct: 65  LHLLDICVKNCGYPFHFQIASEEFLNGFVSRF-PNHPISRMN-KIQSKMLEMLEEW 118
+
+
+>sp|Q2GS33|VPS27_CHAGB Vacuolar protein sorting-associated protein
+           27 OS=Chaetomium globosum GN=VPS27 PE=3 SV=2
+          Length = 737
+
+ Score = 47.8 bits (112), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 32/103 (31%), Positives = 52/103 (50%), Gaps = 4/103 (3%)
+
+Query: 38  PPLATRLLAHKIQSPQEWEAIQALTVLETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYL 97
+           P  A R L  +I +      + AL + +TC+K+ G  F  E+    F+  L+ ++     
+Sbjct: 45  PKEAMRSLKKRINNKNPNTQLSALNLTDTCVKNGGAHFLAEIASREFMESLVSLLKAVGP 104
+
+Query: 98  GSRTSEKVKNKILELLYSWTV---GLPEEVKIAEAYQMLKKQG 137
+           G+  +E V+ KILEL+ SW     G  E   I E Y+ L+++G
+Sbjct: 105 GTVNAE-VRAKILELIQSWATAAEGRYELGYIGEVYKTLQREG 146
+
+
+>sp|Q7RZJ2|VPS27_NEUCR Vacuolar protein sorting-associated protein
+           27 OS=Neurospora crassa GN=vps-27 PE=3 SV=2
+          Length = 724
+
+ Score = 47.4 bits (111), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 33/106 (31%), Positives = 52/106 (49%), Gaps = 10/106 (9%)
+
+Query: 38  PPLATRLLAHKIQSPQEWEAIQALTVLETCMKSCGKRFHDEVGKFRFLNELI---KVVSP 94
+           P  A R L  +I        + AL + +TC+K+ G  F  E+    F+  L+   K V P
+Sbjct: 45  PKEAMRSLKKRINHKNPNTQLSALNLTDTCVKNGGAHFLAEIASREFMENLVGLLKAVGP 104
+
+Query: 95  KYLGSRTSEKVKNKILELLYSWTV---GLPEEVKIAEAYQMLKKQG 137
+               +  +  V+NKIL+L+ SW +   G  E   I E Y+ L+++G
+Sbjct: 105 ----AAPNPDVRNKILDLIQSWAMAAEGRYELSYIGEVYKTLQREG 146
+
+
+>sp|Q7S6J4|HSE1_NEUCR Class E vacuolar protein-sorting machinery
+           protein hse-1 OS=Neurospora crassa GN=hse-1 PE=3 SV=1
+          Length = 745
+
+ Score = 45.8 bits (107), Expect = 6e-05,   Method: Composition-based stats.
+ Identities = 29/110 (26%), Positives = 50/110 (45%), Gaps = 4/110 (3%)
+
+Query: 8   INRATNPLNKELDWASINGFCEQLNEDFEGPPLATRLLAHKIQSPQEWEAIQALTVLETC 67
+           IN+AT+      DW +I   C+++  D  G   A   +  ++        +  L V    
+Sbjct: 14  INKATDENLTSEDWGAIMEVCDRVATDANGAKEAVNSMIKRLAHRNANVQLYTLEVANAL 73
+
+Query: 68  MKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKNKILELLYSWT 117
+            ++CGK  H E+    F + L+K+ + +     T  +VK KILE +  W+
+Sbjct: 74  SQNCGKNMHRELSSRAFTDALLKLANDR----NTHTQVKAKILERMKEWS 119
+
+
+>sp|Q5A895|HSE1_CANAL Class E vacuolar protein-sorting machinery
+           protein HSE1 OS=Candida albicans GN=HSE1 PE=3 SV=1
+          Length = 498
+
+ Score = 44.3 bits (103), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 36/136 (26%), Positives = 68/136 (50%), Gaps = 3/136 (2%)
+
+Query: 3   TLEARINRATNPLNKELDWASINGFCEQLNEDFEGPPLAT-RLLAHKIQSPQEWEAIQAL 61
+           +L+  IN+AT+P     +W  I   C++++ D E     T  +L  K+ S      +++L
+Sbjct: 3   SLDVLINKATDPTLTSDNWQYILDVCDRISADPETETKRTITILKTKLTSKDANVVLRSL 62
+
+Query: 62  TVLETCMKSCGKRFHDEVGKFRFLNE-LIKVVSPKYLGSRTSEKVKNKILELLYSWTVGL 120
+           ++L +  ++CG R   E+    FL + L+K +S K L +    K+  ++L  LY+   G 
+Sbjct: 63  SLLISIAENCGSRVKQEIATKSFLQDALVKRLSDKKLHATVKYKI-CEVLTQLYNAFKGD 121
+
+Query: 121 PEEVKIAEAYQMLKKQ 136
+           P    + +AY   + +
+Sbjct: 122 PSLKPMTDAYNKARSE 137
+
+
+>sp|O13821|VPS27_SCHPO Vacuolar protein sorting-associated protein
+           27 OS=Schizosaccharomyces pombe GN=sst4 PE=2 SV=1
+          Length = 610
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 32/111 (28%), Positives = 51/111 (45%), Gaps = 9/111 (8%)
+
+Query: 29  EQLNEDFEGPPLATRLLAHKIQSPQEWEAIQALTVLETCMKSCGKRFHDEVGKFRFLNEL 88
+           +Q+      P  A R+L  +I        I AL + +TC+K+ G  F  E+    F++ L
+Sbjct: 38  DQIRSKSVDPKFAMRILKSRIDHSNPNVQIMALKLTDTCVKNGGSGFLLEIASREFMDNL 97
+
+Query: 89  IKVV-SPKYLGSRTSEKVKNKILELLYSWTVGLPEEVK----IAEAYQMLK 134
+           + ++ SP    +   E VK  IL  + SW + +P+       I   YQ LK
+Sbjct: 98  VSILRSP----AGIDEDVKMVILRYIQSWALAVPDTNSPLSYIIHVYQNLK 144
+
+
+>sp|Q0CJV3|VPS27_ASPTN Vacuolar protein sorting-associated protein
+           27 OS=Aspergillus terreus (strain NIH 2624) GN=vps27
+           PE=3 SV=1
+          Length = 556
+
+ Score = 43.5 bits (101), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 27/103 (26%), Positives = 54/103 (52%), Gaps = 5/103 (4%)
+
+Query: 38  PPLATRLLAHKIQSPQEWEAIQALTVLETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYL 97
+           P  A R L  ++++      +  L + +TC+K+ G  F  E+    F++ L+ ++  K  
+Sbjct: 43  PKEAMRSLKRRLENKNPNVQLATLKLTDTCVKNGGTHFLAEIASREFMDNLVSLL--KTE 100
+
+Query: 98  GSRTSEKVKNKILELLYSWTV---GLPEEVKIAEAYQMLKKQG 137
+           G + + +VK K+LEL+  W +   G  +   + + YQ L+++G
+Sbjct: 101 GLQLNTEVKEKMLELIQDWAMAAQGRMDLSYVGQTYQRLQEEG 143
+
+
+>sp|Q4WHN8|VPS27_ASPFU Vacuolar protein sorting-associated protein
+           27 OS=Aspergillus fumigatus GN=vps27 PE=3 SV=1
+          Length = 729
+
+ Score = 43.1 bits (100), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 32/140 (22%), Positives = 69/140 (49%), Gaps = 16/140 (11%)
+
+Query: 11  ATNPLNKELDWASINGFCEQLNEDFE----------GPPLATRLLAHKIQSPQEWEAIQA 60
+           +T+PL+++++ A+ +   E +  + E           P  A R L  ++++      I  
+Sbjct: 7   STSPLDEQVERATSSSL-EDMALNLEISDLIRSKSVQPKEAMRSLKRRLENRNPNVQIAT 65
+
+Query: 61  LTVLETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYLGSRTSEKVKNKILELLYSWTVGL 120
+           L + +TC+K+ G  F  E+    F++ L+ +++ +  G+  +  VK K+LEL+  W +  
+Sbjct: 66  LKLTDTCVKNGGSHFLAEIASREFMDNLVSLLTTE--GAPLNTDVKEKMLELIQDWAMAA 123
+
+Query: 121 PEEVK---IAEAYQMLKKQG 137
+              +    + E Y+ L+ +G
+Sbjct: 124 QGRMDLNYLGETYRKLQNEG 143
+
+
+>sp|A1DFP5|VPS27_NEOFI Vacuolar protein sorting-associated protein
+           27 OS=Neosartorya fischeri (strain ATCC 1020 / DSM 3700
+           / NRRL 181) GN=vps27 PE=3 SV=1
+          Length = 729
+
+ Score = 43.1 bits (100), Expect = 4e-04,   Method: Composition-based stats.
+ Identities = 26/103 (25%), Positives = 52/103 (50%), Gaps = 5/103 (4%)
+
+Query: 38  PPLATRLLAHKIQSPQEWEAIQALTVLETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYL 97
+           P  A R L  ++++      I  L + +TC+K+ G  F  E+    F++ L+ +++ +  
+Sbjct: 43  PKEAMRSLKRRLENRNPNVQIATLKLTDTCVKNGGSHFLAEIASREFMDNLVSLLTTE-- 100
+
+Query: 98  GSRTSEKVKNKILELLYSWTVGLPEEVK---IAEAYQMLKKQG 137
+           G+  +  VK K+LEL+  W +     +    + E Y+ L+ +G
+Sbjct: 101 GAPLNTDVKEKMLELIQDWAMAAQGRMDLNYLGETYRRLQSEG 143
+
+
+>sp|A2QWA2|VPS27_ASPNC Vacuolar protein sorting-associated protein
+           27 OS=Aspergillus niger (strain CBS 513.88 / FGSC A1513)
+           GN=vps27 PE=3 SV=1
+          Length = 703
+
+ Score = 42.4 bits (98), Expect = 7e-04,   Method: Composition-based stats.
+ Identities = 27/103 (26%), Positives = 52/103 (50%), Gaps = 5/103 (4%)
+
+Query: 38  PPLATRLLAHKIQSPQEWEAIQALTVLETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYL 97
+           P  A R L  ++++      +  L + +TC+K+ G  F  E+    F++ L+ ++  K  
+Sbjct: 43  PKDAMRCLKRRLENKNPNIQLATLKLTDTCVKNGGTHFLAEIASREFMDNLVSLL--KTE 100
+
+Query: 98  GSRTSEKVKNKILELLYSWTV---GLPEEVKIAEAYQMLKKQG 137
+           G+  +  VK K+LEL+  W +   G  +   + E Y+ L+ +G
+Sbjct: 101 GAPLNSDVKAKMLELIQDWAMAAQGRMDLSYVGETYRRLQDEG 143
+
+
+>sp|A1CEK1|VPS27_ASPCL Vacuolar protein sorting-associated protein
+           27 OS=Aspergillus clavatus GN=vps27 PE=3 SV=1
+          Length = 714
+
+ Score = 42.0 bits (97), Expect = 8e-04,   Method: Composition-based stats.
+ Identities = 25/103 (24%), Positives = 52/103 (50%), Gaps = 5/103 (4%)
+
+Query: 38  PPLATRLLAHKIQSPQEWEAIQALTVLETCMKSCGKRFHDEVGKFRFLNELIKVVSPKYL 97
+           P  A R L  ++++      I  L + +TC+K+ G  F  E+    +L+ ++ +++ +  
+Sbjct: 43  PKEAMRSLKRRLENRNPNVQIATLKLTDTCVKNGGTHFLAEIASREYLDNMVSLLTAE-- 100
+
+Query: 98  GSRTSEKVKNKILELLYSWTVGLPEEVK---IAEAYQMLKKQG 137
+           G+  +  VK K+LEL+  W +     +    + E Y+ L+ +G
+Sbjct: 101 GAPLNSDVKEKMLELIQDWAMAAQGRMDLNYLGETYRKLQSEG 143
+
+
+  Database: sprot
+    Posted date:  Mar 15, 2009  5:38 PM
+  Number of letters in database: 148,809,765
+  Number of sequences in database:  412,525
+  
+Lambda     K      H
+   0.316    0.133    0.394 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 41,425,585
+Number of Sequences: 412525
+Number of extensions: 1573081
+Number of successful extensions: 3750
+Number of sequences better than 1.0e-03: 45
+Number of HSP's better than  0.0 without gapping: 20
+Number of HSP's successfully gapped in prelim test: 25
+Number of HSP's that attempted gapping in prelim test: 3709
+Number of HSP's gapped (non-prelim): 46
+length of query: 140
+length of database: 148,809,765
+effective HSP length: 104
+effective length of query: 36
+effective length of database: 105,907,165
+effective search space: 3812657940
+effective search space used: 3812657940
+T: 11
+A: 40
+X1: 16 ( 7.3 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.6 bits)
+S2: 97 (42.0 bits)

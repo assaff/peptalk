@@ -1,0 +1,44 @@
+core.init: command: /vol/ek/share/rosetta/mini/build/src/release/linux/2.6/32/x86/gcc/holes.linuxgccrelease -database /vol/ek/share/rosetta/minirosetta_database/ -holes:dalphaball /vol/ek/share/bin/DAlphaBall -holes:make_pdb -holes:make_voids -s 1SFI.mainChain.pdb
+core.init: 'RNG device' seed mode, using '/dev/urandom', seed=-276413445 seed_offset=0 real_seed=-276413445
+core.init.random: RandomGenerator:init: Normal mode, seed=-276413445 RG_type=mt19937
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: standard
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION PATCH: score12
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/pdb_pair_stats_fine
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/P_AA
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/P_AA_n
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/P_AA_pp
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/Rama_smooth_dyn.dat_ss_6.4
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: standard
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION PATCH: score12
+core.conformation.Conformation: Found disulfide between residues 7 137
+core.conformation.Conformation: Found disulfide between residues 25 41
+core.conformation.Conformation: Found disulfide between residues 109 210
+core.conformation.Conformation: Found disulfide between residues 116 183
+core.conformation.Conformation: Found disulfide between residues 148 162
+core.conformation.Conformation: Found disulfide between residues 173 197
+core.pack.task: Packer task: initialize from command line() 
+core.conformation.Conformation: Found disulfide between residues 7 137
+core.conformation.Conformation: Found disulfide between residues 25 41
+core.conformation.Conformation: Found disulfide between residues 109 210
+core.conformation.Conformation: Found disulfide between residues 116 183
+core.conformation.Conformation: Found disulfide between residues 148 162
+core.conformation.Conformation: Found disulfide between residues 173 197
+core.scoring.packing.compute_holes_score: compute_holes_surfs try: 1
+core.scoring.packing.compute_holes_score: compute_holes_surfs completed successfully
+core.scoring.packing.compute_holes_score: compute_rosettaholes_score done: 1.41838
+RosettaHoles: 1SFI.mainChain.pdb 1.41838 1.41637 -1.78365core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/scoring/score_functions/disulfides/fa_SS_distance_score
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/scoring/score_functions/disulfides/fa_CaCbS_angle_score
+core.io.database: Database file opened: /vol/ek/share/rosetta/minirosetta_database/scoring/score_functions/disulfides/fa_CbSSCb_dihedral_score
+core.scoring.dunbrack: Dunbrack library took 0.05 seconds to load from binary
+ -355.358
+dumping pdb to 1SFI.mainChain.pdb_cavs.pdb
+dumping cavities 
+protocols.packstat: prune raduis 1.4 10552 6011 4144 3292 2832 2548 2397 2311 2248 2205 2185 2173 2166 2157 2152 2149 2145 2144 2139 2137 2136 2133 2132 2131 2131 
+core.conformation.util: Non-ideal residue detected:  Residue #1 atom #1:  Ideal D=1.458, Inspected D=1.51737
+core.io.silent: ERROR: trying to use a 'protein' type silent file for a non-ideal pose
+core.io.silent: consider using the '-out:file:silent_struct_type binary' flag

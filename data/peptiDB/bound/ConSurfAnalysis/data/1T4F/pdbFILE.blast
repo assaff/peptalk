@@ -1,0 +1,301 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_A  88
+         (88 letters)
+
+Database: sprot 
+           412,525 sequences; 148,809,765 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q60524|MDM2_MESAU E3 ubiquitin-protein ligase Mdm2 (Fragment)...   165   8e-41
+sp|Q00987|MDM2_HUMAN E3 ubiquitin-protein ligase Mdm2 OS=Homo sa...   163   2e-40
+sp|P56951|MDM2_HORSE E3 ubiquitin-protein ligase Mdm2 OS=Equus c...   162   3e-40
+sp|Q7YRZ8|MDM2_FELCA E3 ubiquitin-protein ligase Mdm2 OS=Felis s...   162   3e-40
+sp|P56950|MDM2_CANFA E3 ubiquitin-protein ligase Mdm2 OS=Canis f...   162   3e-40
+sp|P23804|MDM2_MOUSE E3 ubiquitin-protein ligase Mdm2 OS=Mus mus...   154   1e-37
+sp|P56273|MDM2_XENLA E3 ubiquitin-protein ligase Mdm2 OS=Xenopus...   139   5e-33
+sp|O42354|MDM2_DANRE E3 ubiquitin-protein ligase Mdm2 OS=Danio r...   114   1e-25
+sp|Q7ZYI3|MDM4_XENLA Protein Mdm4 OS=Xenopus laevis GN=mdm4 PE=2...   106   3e-23
+sp|Q7ZUW7|MDM4_DANRE Protein Mdm4 OS=Danio rerio GN=mdm4 PE=1 SV=2    102   6e-22
+sp|O35618|MDM4_MOUSE Protein Mdm4 OS=Mus musculus GN=Mdm4 PE=2 SV=1    94   3e-19
+sp|Q5XIN1|MDM4_RAT Protein Mdm4 OS=Rattus norvegicus GN=Mdm4 PE=...    92   8e-19
+sp|Q2HJ21|MDM4_BOVIN Protein Mdm4 OS=Bos taurus GN=MDM4 PE=2 SV=1      92   1e-18
+sp|O15151|MDM4_HUMAN Protein Mdm4 OS=Homo sapiens GN=MDM4 PE=1 SV=2    88   1e-17
+
+>sp|Q60524|MDM2_MESAU E3 ubiquitin-protein ligase Mdm2 (Fragment)
+           OS=Mesocricetus auratus GN=MDM2 PE=2 SV=1
+          Length = 466
+
+ Score =  165 bits (417), Expect = 8e-41,   Method: Composition-based stats.
+ Identities = 78/88 (88%), Positives = 82/88 (93%), Gaps = 1/88 (1%)
+
+Query: 1   EQETLVRPKPLLLKLLKSVGAQKDTYTMKEVLFYLGQYIMTKRLYDEKQQHIVYCSNDLL 60
+           EQETLVRPKPL LKLLKSVGAQKDTYTMKE++    QYIMTKRLYDEKQQHIVYCSNDLL
+Sbjct: 15  EQETLVRPKPLFLKLLKSVGAQKDTYTMKEIILSW-QYIMTKRLYDEKQQHIVYCSNDLL 73
+
+Query: 61  GDLFGVPSFSVKEHRKIYTMIYRNLVVV 88
+           GDLFGVPSFSVK+HRKI+ MIYRNLVVV
+Sbjct: 74  GDLFGVPSFSVKDHRKIHIMIYRNLVVV 101
+
+
+>sp|Q00987|MDM2_HUMAN E3 ubiquitin-protein ligase Mdm2 OS=Homo
+           sapiens GN=MDM2 PE=1 SV=1
+          Length = 491
+
+ Score =  163 bits (412), Expect = 2e-40,   Method: Composition-based stats.
+ Identities = 88/88 (100%), Positives = 88/88 (100%)
+
+Query: 1   EQETLVRPKPLLLKLLKSVGAQKDTYTMKEVLFYLGQYIMTKRLYDEKQQHIVYCSNDLL 60
+           EQETLVRPKPLLLKLLKSVGAQKDTYTMKEVLFYLGQYIMTKRLYDEKQQHIVYCSNDLL
+Sbjct: 23  EQETLVRPKPLLLKLLKSVGAQKDTYTMKEVLFYLGQYIMTKRLYDEKQQHIVYCSNDLL 82
+
+Query: 61  GDLFGVPSFSVKEHRKIYTMIYRNLVVV 88
+           GDLFGVPSFSVKEHRKIYTMIYRNLVVV
+Sbjct: 83  GDLFGVPSFSVKEHRKIYTMIYRNLVVV 110
+
+
+>sp|P56951|MDM2_HORSE E3 ubiquitin-protein ligase Mdm2 OS=Equus
+           caballus GN=MDM2 PE=2 SV=1
+          Length = 491
+
+ Score =  162 bits (411), Expect = 3e-40,   Method: Composition-based stats.
+ Identities = 87/88 (98%), Positives = 88/88 (100%)
+
+Query: 1   EQETLVRPKPLLLKLLKSVGAQKDTYTMKEVLFYLGQYIMTKRLYDEKQQHIVYCSNDLL 60
+           EQETLVRPKPLLLKLLKSVGAQKDTYTMKEV+FYLGQYIMTKRLYDEKQQHIVYCSNDLL
+Sbjct: 23  EQETLVRPKPLLLKLLKSVGAQKDTYTMKEVIFYLGQYIMTKRLYDEKQQHIVYCSNDLL 82
+
+Query: 61  GDLFGVPSFSVKEHRKIYTMIYRNLVVV 88
+           GDLFGVPSFSVKEHRKIYTMIYRNLVVV
+Sbjct: 83  GDLFGVPSFSVKEHRKIYTMIYRNLVVV 110
+
+
+>sp|Q7YRZ8|MDM2_FELCA E3 ubiquitin-protein ligase Mdm2 OS=Felis
+           silvestris catus GN=MDM2 PE=2 SV=1
+          Length = 491
+
+ Score =  162 bits (411), Expect = 3e-40,   Method: Composition-based stats.
+ Identities = 87/88 (98%), Positives = 88/88 (100%)
+
+Query: 1   EQETLVRPKPLLLKLLKSVGAQKDTYTMKEVLFYLGQYIMTKRLYDEKQQHIVYCSNDLL 60
+           EQETLVRPKPLLLKLLKSVGAQKDTYTMKEV+FYLGQYIMTKRLYDEKQQHIVYCSNDLL
+Sbjct: 23  EQETLVRPKPLLLKLLKSVGAQKDTYTMKEVIFYLGQYIMTKRLYDEKQQHIVYCSNDLL 82
+
+Query: 61  GDLFGVPSFSVKEHRKIYTMIYRNLVVV 88
+           GDLFGVPSFSVKEHRKIYTMIYRNLVVV
+Sbjct: 83  GDLFGVPSFSVKEHRKIYTMIYRNLVVV 110
+
+
+>sp|P56950|MDM2_CANFA E3 ubiquitin-protein ligase Mdm2 OS=Canis
+           familiaris GN=MDM2 PE=2 SV=1
+          Length = 487
+
+ Score =  162 bits (411), Expect = 3e-40,   Method: Composition-based stats.
+ Identities = 87/88 (98%), Positives = 88/88 (100%)
+
+Query: 1   EQETLVRPKPLLLKLLKSVGAQKDTYTMKEVLFYLGQYIMTKRLYDEKQQHIVYCSNDLL 60
+           EQETLVRPKPLLLKLLKSVGAQKDTYTMKEV+FYLGQYIMTKRLYDEKQQHIVYCSNDLL
+Sbjct: 23  EQETLVRPKPLLLKLLKSVGAQKDTYTMKEVIFYLGQYIMTKRLYDEKQQHIVYCSNDLL 82
+
+Query: 61  GDLFGVPSFSVKEHRKIYTMIYRNLVVV 88
+           GDLFGVPSFSVKEHRKIYTMIYRNLVVV
+Sbjct: 83  GDLFGVPSFSVKEHRKIYTMIYRNLVVV 110
+
+
+>sp|P23804|MDM2_MOUSE E3 ubiquitin-protein ligase Mdm2 OS=Mus
+           musculus GN=Mdm2 PE=1 SV=2
+          Length = 489
+
+ Score =  154 bits (389), Expect = 1e-37,   Method: Composition-based stats.
+ Identities = 81/88 (92%), Positives = 85/88 (96%)
+
+Query: 1   EQETLVRPKPLLLKLLKSVGAQKDTYTMKEVLFYLGQYIMTKRLYDEKQQHIVYCSNDLL 60
+           EQETLVRPKPLLLKLLKSVGAQ DTYTMKE++FY+GQYIMTKRLYDEKQQHIVYCSNDLL
+Sbjct: 23  EQETLVRPKPLLLKLLKSVGAQNDTYTMKEIIFYIGQYIMTKRLYDEKQQHIVYCSNDLL 82
+
+Query: 61  GDLFGVPSFSVKEHRKIYTMIYRNLVVV 88
+           GD+FGVPSFSVKEHRKIY MIYRNLV V
+Sbjct: 83  GDVFGVPSFSVKEHRKIYAMIYRNLVAV 110
+
+
+>sp|P56273|MDM2_XENLA E3 ubiquitin-protein ligase Mdm2 OS=Xenopus
+           laevis GN=mdm2 PE=1 SV=2
+          Length = 473
+
+ Score =  139 bits (349), Expect = 5e-33,   Method: Composition-based stats.
+ Identities = 63/86 (73%), Positives = 75/86 (87%)
+
+Query: 1   EQETLVRPKPLLLKLLKSVGAQKDTYTMKEVLFYLGQYIMTKRLYDEKQQHIVYCSNDLL 60
+           +QE LV+P PLLL LLKS GAQK+T+TMKEV+++LGQYIM K+LYDEKQQHIV+CSND L
+Sbjct: 19  DQEKLVQPTPLLLSLLKSAGAQKETFTMKEVIYHLGQYIMAKQLYDEKQQHIVHCSNDPL 78
+
+Query: 61  GDLFGVPSFSVKEHRKIYTMIYRNLV 86
+           G+LFGV  FSVKE R++Y MI RNLV
+Sbjct: 79  GELFGVQEFSVKEPRRLYAMISRNLV 104
+
+
+>sp|O42354|MDM2_DANRE E3 ubiquitin-protein ligase Mdm2 OS=Danio
+           rerio GN=mdm2 PE=2 SV=1
+          Length = 445
+
+ Score =  114 bits (286), Expect = 1e-25,   Method: Composition-based stats.
+ Identities = 53/88 (60%), Positives = 66/88 (75%)
+
+Query: 1   EQETLVRPKPLLLKLLKSVGAQKDTYTMKEVLFYLGQYIMTKRLYDEKQQHIVYCSNDLL 60
+           + E LVRPK  L  LL+  GA KD +TMKEV+FYLG+YIM+K LYD++QQHIV+C  D L
+Sbjct: 16  DNEKLVRPKVQLKSLLEDAGADKDVFTMKEVMFYLGKYIMSKELYDKQQQHIVHCGEDPL 75
+
+Query: 61  GDLFGVPSFSVKEHRKIYTMIYRNLVVV 88
+           G + GV SFSVKE R ++ +I RNLV V
+Sbjct: 76  GAVLGVKSFSVKEPRALFALINRNLVTV 103
+
+
+>sp|Q7ZYI3|MDM4_XENLA Protein Mdm4 OS=Xenopus laevis GN=mdm4 PE=2
+           SV=1
+          Length = 475
+
+ Score =  106 bits (265), Expect = 3e-23,   Method: Composition-based stats.
+ Identities = 46/87 (52%), Positives = 68/87 (78%)
+
+Query: 2   QETLVRPKPLLLKLLKSVGAQKDTYTMKEVLFYLGQYIMTKRLYDEKQQHIVYCSNDLLG 61
+           +E+LVR +P LLK+L+S GA+ D +T+K+V+ YLGQYIM K LYD++ QHIV+C +D LG
+Sbjct: 24  EESLVRVQPALLKILQSAGAKGDMFTLKQVMHYLGQYIMVKGLYDKQHQHIVHCGSDELG 83
+
+Query: 62  DLFGVPSFSVKEHRKIYTMIYRNLVVV 88
+            L G+ +FSVK+ R +Y M+ +NL+ +
+Sbjct: 84  KLLGITTFSVKDPRPLYDMLKKNLLRI 110
+
+
+>sp|Q7ZUW7|MDM4_DANRE Protein Mdm4 OS=Danio rerio GN=mdm4 PE=1 SV=2
+          Length = 496
+
+ Score =  102 bits (254), Expect = 6e-22,   Method: Composition-based stats.
+ Identities = 46/85 (54%), Positives = 65/85 (76%)
+
+Query: 4   TLVRPKPLLLKLLKSVGAQKDTYTMKEVLFYLGQYIMTKRLYDEKQQHIVYCSNDLLGDL 63
+           T V P+  LL++LK  GAQ++ +T+KEV+ YLGQYIM K+LYD+++QHIV+C +D LG+L
+Sbjct: 22  TQVHPRAPLLQILKVAGAQEEVFTLKEVMHYLGQYIMMKQLYDKQRQHIVHCHDDPLGEL 81
+
+Query: 64  FGVPSFSVKEHRKIYTMIYRNLVVV 88
+             V SFSVK    +Y M+ RNLV++
+Sbjct: 82  LEVGSFSVKNPSPVYEMLKRNLVIL 106
+
+
+>sp|O35618|MDM4_MOUSE Protein Mdm4 OS=Mus musculus GN=Mdm4 PE=2 SV=1
+          Length = 489
+
+ Score = 93.6 bits (231), Expect = 3e-19,   Method: Composition-based stats.
+ Identities = 51/86 (59%), Positives = 66/86 (76%)
+
+Query: 1   EQETLVRPKPLLLKLLKSVGAQKDTYTMKEVLFYLGQYIMTKRLYDEKQQHIVYCSNDLL 60
+           EQ + VRPK  LLK+L + GAQ + +TMKEV+ YLGQYIM K+LYD+++QH+VYC  DLL
+Sbjct: 22  EQISQVRPKLQLLKILHAAGAQGEVFTMKEVMHYLGQYIMVKQLYDQQEQHMVYCGGDLL 81
+
+Query: 61  GDLFGVPSFSVKEHRKIYTMIYRNLV 86
+           GDL G  SFSVK+   +Y M+ +NLV
+Sbjct: 82  GDLLGCQSFSVKDPSPLYDMLRKNLV 107
+
+
+>sp|Q5XIN1|MDM4_RAT Protein Mdm4 OS=Rattus norvegicus GN=Mdm4 PE=2
+           SV=1
+          Length = 490
+
+ Score = 92.0 bits (227), Expect = 8e-19,   Method: Composition-based stats.
+ Identities = 49/81 (60%), Positives = 64/81 (79%)
+
+Query: 6   VRPKPLLLKLLKSVGAQKDTYTMKEVLFYLGQYIMTKRLYDEKQQHIVYCSNDLLGDLFG 65
+           VRPK  LLK+L++ GAQ + +TMKEV+ YLGQYIM K+LYD+++QH+VYC  DLLGDL G
+Sbjct: 28  VRPKLQLLKILQAAGAQGEVFTMKEVMHYLGQYIMVKQLYDQQEQHLVYCGGDLLGDLLG 87
+
+Query: 66  VPSFSVKEHRKIYTMIYRNLV 86
+             SFSVK+   +Y M+ +NLV
+Sbjct: 88  CQSFSVKDPSPLYDMLRKNLV 108
+
+
+>sp|Q2HJ21|MDM4_BOVIN Protein Mdm4 OS=Bos taurus GN=MDM4 PE=2 SV=1
+          Length = 491
+
+ Score = 91.7 bits (226), Expect = 1e-18,   Method: Composition-based stats.
+ Identities = 49/86 (56%), Positives = 66/86 (76%)
+
+Query: 1   EQETLVRPKPLLLKLLKSVGAQKDTYTMKEVLFYLGQYIMTKRLYDEKQQHIVYCSNDLL 60
+           EQ   VRPK  LLK+L++ GAQ + +T+KEV+ YLGQYIM K+LYD+++QH+VYC  DLL
+Sbjct: 22  EQTNQVRPKLPLLKILQAAGAQGEMFTVKEVMHYLGQYIMVKQLYDQQEQHMVYCGGDLL 81
+
+Query: 61  GDLFGVPSFSVKEHRKIYTMIYRNLV 86
+           G+L G  SFSVK+   +Y M+ +NLV
+Sbjct: 82  GELLGRQSFSVKDPSPLYDMLRKNLV 107
+
+
+>sp|O15151|MDM4_HUMAN Protein Mdm4 OS=Homo sapiens GN=MDM4 PE=1 SV=2
+          Length = 490
+
+ Score = 87.8 bits (216), Expect = 1e-17,   Method: Composition-based stats.
+ Identities = 47/81 (58%), Positives = 63/81 (77%)
+
+Query: 6   VRPKPLLLKLLKSVGAQKDTYTMKEVLFYLGQYIMTKRLYDEKQQHIVYCSNDLLGDLFG 65
+           VRPK  LLK+L + GAQ + +T+KEV+ YLGQYIM K+LYD+++QH+VYC  DLLG+L G
+Sbjct: 27  VRPKLPLLKILHAAGAQGEMFTVKEVMHYLGQYIMVKQLYDQQEQHMVYCGGDLLGELLG 86
+
+Query: 66  VPSFSVKEHRKIYTMIYRNLV 86
+             SFSVK+   +Y M+ +NLV
+Sbjct: 87  RQSFSVKDPSPLYDMLRKNLV 107
+
+
+  Database: sprot
+    Posted date:  Mar 15, 2009  5:38 PM
+  Number of letters in database: 148,809,765
+  Number of sequences in database:  412,525
+  
+Lambda     K      H
+   0.323    0.140    0.401 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 24,031,068
+Number of Sequences: 412525
+Number of extensions: 840507
+Number of successful extensions: 1724
+Number of sequences better than 1.0e-03: 14
+Number of HSP's better than  0.0 without gapping: 14
+Number of HSP's successfully gapped in prelim test: 0
+Number of HSP's that attempted gapping in prelim test: 1709
+Number of HSP's gapped (non-prelim): 14
+length of query: 88
+length of database: 148,809,765
+effective HSP length: 58
+effective length of query: 30
+effective length of database: 124,883,315
+effective search space: 3746499450
+effective search space used: 3746499450
+T: 11
+A: 40
+X1: 16 ( 7.5 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (22.0 bits)
+S2: 97 (42.0 bits)

@@ -1,0 +1,441 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_A  104
+         (104 letters)
+
+Database: sprot 
+           412,525 sequences; 148,809,765 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|Q9Z2Y3|HOME1_MOUSE Homer protein homolog 1 OS=Mus musculus GN...   206   4e-53
+sp|Q9Z214|HOME1_RAT Homer protein homolog 1 OS=Rattus norvegicus...   205   4e-53
+sp|Q2KJ56|HOME1_BOVIN Homer protein homolog 1 OS=Bos taurus GN=H...   205   5e-53
+sp|Q86YM7|HOME1_HUMAN Homer protein homolog 1 OS=Homo sapiens GN...   205   7e-53
+sp|Q9NSC5|HOME3_HUMAN Homer protein homolog 3 OS=Homo sapiens GN...   192   5e-49
+sp|Q99JP6|HOME3_MOUSE Homer protein homolog 3 OS=Mus musculus GN...   187   2e-47
+sp|Q9Z2X5|HOME3_RAT Homer protein homolog 3 OS=Rattus norvegicus...   186   3e-47
+sp|Q9NSB8|HOME2_HUMAN Homer protein homolog 2 OS=Homo sapiens GN...   180   2e-45
+sp|O88801|HOME2_RAT Homer protein homolog 2 OS=Rattus norvegicus...   179   3e-45
+sp|Q9QWW1|HOME2_MOUSE Homer protein homolog 2 OS=Mus musculus GN...   177   9e-45
+sp|Q5TJ65|VASP_DICDI Protein VASP homolog OS=Dictyostelium disco...    52   7e-07
+sp|Q8T4F7|ENA_DROME Protein enabled OS=Drosophila melanogaster G...    51   2e-06
+sp|Q9UI08|EVL_HUMAN Ena/VASP-like protein OS=Homo sapiens GN=EVL...    47   4e-05
+sp|O08719|EVL_RAT Ena/VASP-like protein OS=Rattus norvegicus GN=...    47   4e-05
+sp|Q5R896|EVL_PONAB Ena/VASP-like protein OS=Pongo abelii GN=EVL...    46   5e-05
+sp|Q03173|ENAH_MOUSE Protein enabled homolog OS=Mus musculus GN=...    46   6e-05
+sp|Q8N8S7|ENAH_HUMAN Protein enabled homolog OS=Homo sapiens GN=...    45   9e-05
+sp|Q64GL0|EVL_XENLA Ena/VASP-like protein OS=Xenopus laevis GN=e...    45   1e-04
+sp|P70429|EVL_MOUSE Ena/VASP-like protein OS=Mus musculus GN=Evl...    45   1e-04
+sp|P50552|VASP_HUMAN Vasodilator-stimulated phosphoprotein OS=Ho...    44   2e-04
+sp|P70460|VASP_MOUSE Vasodilator-stimulated phosphoprotein OS=Mu...    42   6e-04
+sp|Q2TA49|VASP_BOVIN Vasodilator-stimulated phosphoprotein OS=Bo...    42   7e-04
+
+>sp|Q9Z2Y3|HOME1_MOUSE Homer protein homolog 1 OS=Mus musculus
+           GN=Homer1 PE=1 SV=2
+          Length = 366
+
+ Score =  206 bits (523), Expect = 4e-53,   Method: Composition-based stats.
+ Identities = 104/104 (100%), Positives = 104/104 (100%)
+
+Query: 1   IFSTRAHVFQIDPNTKKNWVPTSKHAVTVSYFYDSTRNVYRIISLDGSKAIINSTITPNM 60
+           IFSTRAHVFQIDPNTKKNWVPTSKHAVTVSYFYDSTRNVYRIISLDGSKAIINSTITPNM
+Sbjct: 6   IFSTRAHVFQIDPNTKKNWVPTSKHAVTVSYFYDSTRNVYRIISLDGSKAIINSTITPNM 65
+
+Query: 61  TFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFAEKFQEFKEA 104
+           TFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFAEKFQEFKEA
+Sbjct: 66  TFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFAEKFQEFKEA 109
+
+
+>sp|Q9Z214|HOME1_RAT Homer protein homolog 1 OS=Rattus norvegicus
+           GN=Homer1 PE=1 SV=2
+          Length = 366
+
+ Score =  205 bits (522), Expect = 4e-53,   Method: Composition-based stats.
+ Identities = 104/104 (100%), Positives = 104/104 (100%)
+
+Query: 1   IFSTRAHVFQIDPNTKKNWVPTSKHAVTVSYFYDSTRNVYRIISLDGSKAIINSTITPNM 60
+           IFSTRAHVFQIDPNTKKNWVPTSKHAVTVSYFYDSTRNVYRIISLDGSKAIINSTITPNM
+Sbjct: 6   IFSTRAHVFQIDPNTKKNWVPTSKHAVTVSYFYDSTRNVYRIISLDGSKAIINSTITPNM 65
+
+Query: 61  TFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFAEKFQEFKEA 104
+           TFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFAEKFQEFKEA
+Sbjct: 66  TFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFAEKFQEFKEA 109
+
+
+>sp|Q2KJ56|HOME1_BOVIN Homer protein homolog 1 OS=Bos taurus
+           GN=HOMER1 PE=2 SV=1
+          Length = 354
+
+ Score =  205 bits (522), Expect = 5e-53,   Method: Composition-based stats.
+ Identities = 104/104 (100%), Positives = 104/104 (100%)
+
+Query: 1   IFSTRAHVFQIDPNTKKNWVPTSKHAVTVSYFYDSTRNVYRIISLDGSKAIINSTITPNM 60
+           IFSTRAHVFQIDPNTKKNWVPTSKHAVTVSYFYDSTRNVYRIISLDGSKAIINSTITPNM
+Sbjct: 6   IFSTRAHVFQIDPNTKKNWVPTSKHAVTVSYFYDSTRNVYRIISLDGSKAIINSTITPNM 65
+
+Query: 61  TFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFAEKFQEFKEA 104
+           TFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFAEKFQEFKEA
+Sbjct: 66  TFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFAEKFQEFKEA 109
+
+
+>sp|Q86YM7|HOME1_HUMAN Homer protein homolog 1 OS=Homo sapiens
+           GN=HOMER1 PE=1 SV=2
+          Length = 354
+
+ Score =  205 bits (521), Expect = 7e-53,   Method: Composition-based stats.
+ Identities = 104/104 (100%), Positives = 104/104 (100%)
+
+Query: 1   IFSTRAHVFQIDPNTKKNWVPTSKHAVTVSYFYDSTRNVYRIISLDGSKAIINSTITPNM 60
+           IFSTRAHVFQIDPNTKKNWVPTSKHAVTVSYFYDSTRNVYRIISLDGSKAIINSTITPNM
+Sbjct: 6   IFSTRAHVFQIDPNTKKNWVPTSKHAVTVSYFYDSTRNVYRIISLDGSKAIINSTITPNM 65
+
+Query: 61  TFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFAEKFQEFKEA 104
+           TFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFAEKFQEFKEA
+Sbjct: 66  TFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFAEKFQEFKEA 109
+
+
+>sp|Q9NSC5|HOME3_HUMAN Homer protein homolog 3 OS=Homo sapiens
+           GN=HOMER3 PE=1 SV=2
+          Length = 361
+
+ Score =  192 bits (487), Expect = 5e-49,   Method: Composition-based stats.
+ Identities = 88/104 (84%), Positives = 98/104 (94%)
+
+Query: 1   IFSTRAHVFQIDPNTKKNWVPTSKHAVTVSYFYDSTRNVYRIISLDGSKAIINSTITPNM 60
+           IFSTRAHVFQIDP TK+NW+P  KHA+TVSYFYD+TRNVYRIIS+ G+KAIINST+TPNM
+Sbjct: 9   IFSTRAHVFQIDPATKRNWIPAGKHALTVSYFYDATRNVYRIISIGGAKAIINSTVTPNM 68
+
+Query: 61  TFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFAEKFQEFKEA 104
+           TFTKTSQKFGQWADSRANTVYGLGF+SE HL++FAEKFQE KEA
+Sbjct: 69  TFTKTSQKFGQWADSRANTVYGLGFASEQHLTQFAEKFQEVKEA 112
+
+
+>sp|Q99JP6|HOME3_MOUSE Homer protein homolog 3 OS=Mus musculus
+           GN=Homer3 PE=1 SV=1
+          Length = 356
+
+ Score =  187 bits (474), Expect = 2e-47,   Method: Composition-based stats.
+ Identities = 87/104 (83%), Positives = 97/104 (93%)
+
+Query: 1   IFSTRAHVFQIDPNTKKNWVPTSKHAVTVSYFYDSTRNVYRIISLDGSKAIINSTITPNM 60
+           IFSTRAHVFQIDP TK+NW+P  KHA+TVSYFYD+TRNVYRIIS+ G+KAIINST+TPNM
+Sbjct: 9   IFSTRAHVFQIDPTTKRNWIPAGKHALTVSYFYDATRNVYRIISIGGAKAIINSTVTPNM 68
+
+Query: 61  TFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFAEKFQEFKEA 104
+           TFTKTSQKFGQWADSRANTVYGLGF+SE  L++FAEKFQE KEA
+Sbjct: 69  TFTKTSQKFGQWADSRANTVYGLGFASEQQLTQFAEKFQEVKEA 112
+
+
+>sp|Q9Z2X5|HOME3_RAT Homer protein homolog 3 OS=Rattus norvegicus
+           GN=Homer3 PE=2 SV=2
+          Length = 358
+
+ Score =  186 bits (471), Expect = 3e-47,   Method: Composition-based stats.
+ Identities = 87/104 (83%), Positives = 96/104 (92%)
+
+Query: 1   IFSTRAHVFQIDPNTKKNWVPTSKHAVTVSYFYDSTRNVYRIISLDGSKAIINSTITPNM 60
+           IFSTRAHVFQIDP TK+NW+P  KHA+TVSYFYD+TRNVYRIIS+ G+KAIINST+TPNM
+Sbjct: 9   IFSTRAHVFQIDPATKRNWIPAGKHALTVSYFYDATRNVYRIISIGGAKAIINSTVTPNM 68
+
+Query: 61  TFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFAEKFQEFKEA 104
+           TFTKTSQKFGQWADSRANTVYGLGF SE  L++FAEKFQE KEA
+Sbjct: 69  TFTKTSQKFGQWADSRANTVYGLGFGSEQQLTQFAEKFQEVKEA 112
+
+
+>sp|Q9NSB8|HOME2_HUMAN Homer protein homolog 2 OS=Homo sapiens
+           GN=HOMER2 PE=1 SV=1
+          Length = 354
+
+ Score =  180 bits (456), Expect = 2e-45,   Method: Composition-based stats.
+ Identities = 90/104 (86%), Positives = 96/104 (92%)
+
+Query: 1   IFSTRAHVFQIDPNTKKNWVPTSKHAVTVSYFYDSTRNVYRIISLDGSKAIINSTITPNM 60
+           IF+TRAHVFQIDPNTKKNW+P SK AVTVSYFYD TRN YRIIS+DG+K IINSTITPNM
+Sbjct: 6   IFTTRAHVFQIDPNTKKNWMPASKQAVTVSYFYDVTRNSYRIISVDGAKVIINSTITPNM 65
+
+Query: 61  TFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFAEKFQEFKEA 104
+           TFTKTSQKFGQWADSRANTV+GLGFSSE  L+KFAEKFQE KEA
+Sbjct: 66  TFTKTSQKFGQWADSRANTVFGLGFSSEQQLTKFAEKFQEVKEA 109
+
+
+>sp|O88801|HOME2_RAT Homer protein homolog 2 OS=Rattus norvegicus
+           GN=Homer2 PE=1 SV=1
+          Length = 354
+
+ Score =  179 bits (455), Expect = 3e-45,   Method: Composition-based stats.
+ Identities = 89/104 (85%), Positives = 96/104 (92%)
+
+Query: 1   IFSTRAHVFQIDPNTKKNWVPTSKHAVTVSYFYDSTRNVYRIISLDGSKAIINSTITPNM 60
+           IF+TRAHVFQIDP+TKKNWVP SK AVTVSYFYD TRN YRIIS+DG+K IINSTITPNM
+Sbjct: 6   IFTTRAHVFQIDPSTKKNWVPASKQAVTVSYFYDVTRNSYRIISVDGAKVIINSTITPNM 65
+
+Query: 61  TFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFAEKFQEFKEA 104
+           TFTKTSQKFGQWADSRANTV+GLGFSSE  L+KFAEKFQE +EA
+Sbjct: 66  TFTKTSQKFGQWADSRANTVFGLGFSSEQQLTKFAEKFQEVREA 109
+
+
+>sp|Q9QWW1|HOME2_MOUSE Homer protein homolog 2 OS=Mus musculus
+           GN=Homer2 PE=1 SV=1
+          Length = 354
+
+ Score =  177 bits (450), Expect = 9e-45,   Method: Composition-based stats.
+ Identities = 89/104 (85%), Positives = 96/104 (92%)
+
+Query: 1   IFSTRAHVFQIDPNTKKNWVPTSKHAVTVSYFYDSTRNVYRIISLDGSKAIINSTITPNM 60
+           IF+TRAHVFQIDP+TKKNWVP SK AVTVSYFYD TRN YRIIS+DG+K IINSTITPNM
+Sbjct: 6   IFTTRAHVFQIDPSTKKNWVPASKQAVTVSYFYDVTRNSYRIISVDGAKVIINSTITPNM 65
+
+Query: 61  TFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFAEKFQEFKEA 104
+           TFTKTSQKFGQWADSRANTV+GLGFSSE  L+KFAEKFQE +EA
+Sbjct: 66  TFTKTSQKFGQWADSRANTVFGLGFSSELQLTKFAEKFQEVREA 109
+
+
+>sp|Q5TJ65|VASP_DICDI Protein VASP homolog OS=Dictyostelium
+           discoideum GN=vasp PE=1 SV=1
+          Length = 380
+
+ Score = 52.4 bits (124), Expect = 7e-07,   Method: Composition-based stats.
+ Identities = 31/102 (30%), Positives = 52/102 (50%), Gaps = 6/102 (5%)
+
+Query: 1   IFSTRAHVFQIDPNTKKNWVPTSKHAVTVSYFYDSTRNVYRIISLDGSKA---IINSTIT 57
+           IF+    VF   P T+ NWVP+S    T+  +++S  N YR+I   G      +IN  + 
+Sbjct: 6   IFNATGQVFTYSPQTR-NWVPSSNVPATLQMYFNSGANTYRVIGRAGDDPNNFLINFAVK 64
+
+Query: 58  PNMTFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFAEKFQ 99
+             + +++ S+ F Q+ D R  T +G+ F+S+     F   F+
+Sbjct: 65  SEVVYSRASEIFHQFTDQR--THFGINFTSKQDADTFGGGFE 104
+
+
+>sp|Q8T4F7|ENA_DROME Protein enabled OS=Drosophila melanogaster
+           GN=ena PE=1 SV=3
+          Length = 829
+
+ Score = 50.8 bits (120), Expect = 2e-06,   Method: Composition-based stats.
+ Identities = 33/99 (33%), Positives = 49/99 (49%), Gaps = 7/99 (7%)
+
+Query: 1   IFSTRAHVFQIDPNTKKNWVPT--SKHAVTVSYFYDSTRNVYRII--SLDGSKAIINSTI 56
+           I   RA V   D N KK WVP+  S     V  ++    N +R++   L   + +IN +I
+Sbjct: 151 IIGARASVMVYDDNQKK-WVPSGSSSGLSKVQIYHHQQNNTFRVVGRKLQDHEVVINCSI 209
+
+Query: 57  TPNMTFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFA 95
+              + + + +  F QW DS+   VYGL FSS++    FA
+Sbjct: 210 LKGLKYNQATATFHQWRDSK--FVYGLNFSSQNDAENFA 246
+
+
+>sp|Q9UI08|EVL_HUMAN Ena/VASP-like protein OS=Homo sapiens GN=EVL
+           PE=1 SV=2
+          Length = 416
+
+ Score = 46.6 bits (109), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 28/100 (28%), Positives = 51/100 (51%), Gaps = 8/100 (8%)
+
+Query: 1   IFSTRAHVFQIDPNTKKNWVPT---SKHAVTVSYFYDSTRNVYRII--SLDGSKAIINST 55
+           I   RA V   D +T K WVP     +    ++ ++++  N +R++   L   + +IN +
+Sbjct: 6   ICQARASVMVYD-DTSKKWVPIKPGQQGFSRINIYHNTASNTFRVVGVKLQDQQVVINYS 64
+
+Query: 56  ITPNMTFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFA 95
+           I   + + + +  F QW D+R   VYGL F+S+   + F+
+Sbjct: 65  IVKGLKYNQATPTFHQWRDAR--QVYGLNFASKEEATTFS 102
+
+
+>sp|O08719|EVL_RAT Ena/VASP-like protein OS=Rattus norvegicus GN=Evl
+           PE=2 SV=1
+          Length = 393
+
+ Score = 46.6 bits (109), Expect = 4e-05,   Method: Composition-based stats.
+ Identities = 28/100 (28%), Positives = 51/100 (51%), Gaps = 8/100 (8%)
+
+Query: 1   IFSTRAHVFQIDPNTKKNWVPT---SKHAVTVSYFYDSTRNVYRII--SLDGSKAIINST 55
+           I   RA V   D +T K WVP     +    ++ ++++  N +R++   L   + +IN +
+Sbjct: 6   ICQARASVMVYD-DTSKKWVPIKPGQQGFSRINIYHNTASNTFRVVGVKLQDQQVVINYS 64
+
+Query: 56  ITPNMTFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFA 95
+           I   + + + +  F QW D+R   VYGL F+S+   + F+
+Sbjct: 65  IVKGLKYNQATPTFHQWRDAR--QVYGLNFASKGEATTFS 102
+
+
+>sp|Q5R896|EVL_PONAB Ena/VASP-like protein OS=Pongo abelii GN=EVL
+           PE=2 SV=1
+          Length = 422
+
+ Score = 46.2 bits (108), Expect = 5e-05,   Method: Composition-based stats.
+ Identities = 28/100 (28%), Positives = 51/100 (51%), Gaps = 8/100 (8%)
+
+Query: 1   IFSTRAHVFQIDPNTKKNWVPT---SKHAVTVSYFYDSTRNVYRII--SLDGSKAIINST 55
+           I   RA V   D +T K WVP     +    ++ ++++  N +R++   L   + +IN +
+Sbjct: 12  ICQARASVMVYD-DTSKKWVPIKPGQQGFSRINIYHNTASNTFRVVGVKLQDQQVVINYS 70
+
+Query: 56  ITPNMTFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFA 95
+           I   + + + +  F QW D+R   VYGL F+S+   + F+
+Sbjct: 71  IVKGLKYNQATPTFHQWRDAR--QVYGLNFASKEEATTFS 108
+
+
+>sp|Q03173|ENAH_MOUSE Protein enabled homolog OS=Mus musculus
+           GN=Enah PE=1 SV=2
+          Length = 802
+
+ Score = 45.8 bits (107), Expect = 6e-05,   Method: Composition-based stats.
+ Identities = 31/99 (31%), Positives = 47/99 (47%), Gaps = 7/99 (7%)
+
+Query: 1   IFSTRAHVFQIDPNTKKNWVPT--SKHAVTVSYFYDSTRNVYRII--SLDGSKAIINSTI 56
+           I   RA V   D   KK WVP   S     V  ++ +  N +R++   +   + +IN  I
+Sbjct: 6   ICQARAAVMVYDDANKK-WVPAGGSTGFSRVHIYHHTGNNTFRVVGRKIQDHQVVINCAI 64
+
+Query: 57  TPNMTFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFA 95
+              + + + +Q F QW D+R   VYGL F S+   + FA
+Sbjct: 65  PKGLKYNQATQTFHQWRDAR--QVYGLNFGSKEDANVFA 101
+
+
+>sp|Q8N8S7|ENAH_HUMAN Protein enabled homolog OS=Homo sapiens
+           GN=ENAH PE=1 SV=2
+          Length = 591
+
+ Score = 45.1 bits (105), Expect = 9e-05,   Method: Composition-based stats.
+ Identities = 31/99 (31%), Positives = 47/99 (47%), Gaps = 7/99 (7%)
+
+Query: 1   IFSTRAHVFQIDPNTKKNWVPT--SKHAVTVSYFYDSTRNVYRII--SLDGSKAIINSTI 56
+           I   RA V   D   KK WVP   S     V  ++ +  N +R++   +   + +IN  I
+Sbjct: 6   ICQARAAVMVYDDANKK-WVPAGGSTGFSRVHIYHHTGNNTFRVVGRKIQDHQVVINCAI 64
+
+Query: 57  TPNMTFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFA 95
+              + + + +Q F QW D+R   VYGL F S+   + FA
+Sbjct: 65  PKGLKYNQATQTFHQWRDAR--QVYGLNFGSKEDANVFA 101
+
+
+>sp|Q64GL0|EVL_XENLA Ena/VASP-like protein OS=Xenopus laevis GN=evl
+           PE=2 SV=1
+          Length = 692
+
+ Score = 44.7 bits (104), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 27/100 (27%), Positives = 51/100 (51%), Gaps = 8/100 (8%)
+
+Query: 1   IFSTRAHVFQIDPNTKKNWVPT---SKHAVTVSYFYDSTRNVYRII--SLDGSKAIINST 55
+           I   RA V   D +T K WVP     +    ++ ++++  N +R++   L   + +IN +
+Sbjct: 6   ICQARASVMIYD-DTSKKWVPIKPGQQGFSRINIYHNTANNTFRVVGVKLQDQQVVINYS 64
+
+Query: 56  ITPNMTFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFA 95
+           +   + + + +  F QW D+R   VYGL F+S+   + F+
+Sbjct: 65  LVKGLKYNQATPTFHQWRDAR--QVYGLNFASKEEATTFS 102
+
+
+>sp|P70429|EVL_MOUSE Ena/VASP-like protein OS=Mus musculus GN=Evl
+           PE=1 SV=2
+          Length = 414
+
+ Score = 44.7 bits (104), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 27/100 (27%), Positives = 51/100 (51%), Gaps = 8/100 (8%)
+
+Query: 1   IFSTRAHVFQIDPNTKKNWVPT---SKHAVTVSYFYDSTRNVYRII--SLDGSKAIINST 55
+           I   RA V   D +T K WVP     +    ++ ++++  + +R++   L   + +IN +
+Sbjct: 6   ICQARASVMVYD-DTSKKWVPIKPGQQGFSRINIYHNTASSTFRVVGVKLQDQQVVINYS 64
+
+Query: 56  ITPNMTFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFA 95
+           I   + + + +  F QW D+R   VYGL F+S+   + F+
+Sbjct: 65  IVKGLKYNQATPTFHQWRDAR--QVYGLNFASKEEATTFS 102
+
+
+>sp|P50552|VASP_HUMAN Vasodilator-stimulated phosphoprotein OS=Homo
+           sapiens GN=VASP PE=1 SV=3
+          Length = 380
+
+ Score = 44.3 bits (103), Expect = 2e-04,   Method: Composition-based stats.
+ Identities = 32/110 (29%), Positives = 53/110 (48%), Gaps = 9/110 (8%)
+
+Query: 1   IFSTRAHVFQIDPNTKKNWVP--TSKHAVT-VSYFYDSTRNVYRIISLD---GSKAIINS 54
+           I S+RA V   D   K+ W+P  T   A + V  +++ T N +R++        + +IN 
+Sbjct: 6   ICSSRATVMLYDDGNKR-WLPAGTGPQAFSRVQIYHNPTANSFRVVGRKMQPDQQVVINC 64
+
+Query: 55  TITPNMTFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFAEKFQEFKEA 104
+            I   + + + +  F QW D+R   V+GL F S+   ++FA       EA
+Sbjct: 65  AIVRGVKYNQATPNFHQWRDAR--QVWGLNFGSKEDAAQFAAGMASALEA 112
+
+
+>sp|P70460|VASP_MOUSE Vasodilator-stimulated phosphoprotein OS=Mus
+           musculus GN=Vasp PE=1 SV=4
+          Length = 375
+
+ Score = 42.4 bits (98), Expect = 6e-04,   Method: Composition-based stats.
+ Identities = 32/110 (29%), Positives = 53/110 (48%), Gaps = 9/110 (8%)
+
+Query: 1   IFSTRAHVFQIDPNTKKNWVP--TSKHAVT-VSYFYDSTRNVYRIISLD---GSKAIINS 54
+           I S+RA V   D ++ K W+P  T   A + V  +++ T N +R++        + +IN 
+Sbjct: 6   ICSSRATVMLYD-DSNKRWLPAGTGPQAFSRVQIYHNPTANSFRVVGRKMQPDQQVVINC 64
+
+Query: 55  TITPNMTFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFAEKFQEFKEA 104
+            I   + + + +  F QW D+R   V+GL F S+    +FA       EA
+Sbjct: 65  AIIRGVKYNQATPIFHQWRDAR--QVWGLNFGSKEDAIQFATGMANALEA 112
+
+
+>sp|Q2TA49|VASP_BOVIN Vasodilator-stimulated phosphoprotein OS=Bos
+           taurus GN=VASP PE=2 SV=3
+          Length = 383
+
+ Score = 42.4 bits (98), Expect = 7e-04,   Method: Composition-based stats.
+ Identities = 30/110 (27%), Positives = 54/110 (49%), Gaps = 9/110 (8%)
+
+Query: 1   IFSTRAHVFQIDPNTKKNWVP--TSKHAVT-VSYFYDSTRNVYRIISLD---GSKAIINS 54
+           + ++RA V   D ++ K W+P  T   A + V  +++ T N +R++        + +IN 
+Sbjct: 6   VCTSRATVMLYD-DSNKRWLPAGTGPQAFSRVQIYHNPTANSFRVVGRKMQPDQQVVINC 64
+
+Query: 55  TITPNMTFTKTSQKFGQWADSRANTVYGLGFSSEHHLSKFAEKFQEFKEA 104
+            I   + + + +  F QW D+R   V+GL F S+   ++FA       EA
+Sbjct: 65  AIVRGVKYNQATPNFHQWRDAR--QVWGLNFGSKEDATQFANGMASALEA 112
+
+
+  Database: sprot
+    Posted date:  Mar 15, 2009  5:38 PM
+  Number of letters in database: 148,809,765
+  Number of sequences in database:  412,525
+  
+Lambda     K      H
+   0.318    0.128    0.379 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 27,346,416
+Number of Sequences: 412525
+Number of extensions: 869183
+Number of successful extensions: 2517
+Number of sequences better than 1.0e-03: 22
+Number of HSP's better than  0.0 without gapping: 10
+Number of HSP's successfully gapped in prelim test: 12
+Number of HSP's that attempted gapping in prelim test: 2499
+Number of HSP's gapped (non-prelim): 22
+length of query: 104
+length of database: 148,809,765
+effective HSP length: 73
+effective length of query: 31
+effective length of database: 118,695,440
+effective search space: 3679558640
+effective search space used: 3679558640
+T: 11
+A: 40
+X1: 16 ( 7.3 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.7 bits)
+S2: 97 (42.0 bits)

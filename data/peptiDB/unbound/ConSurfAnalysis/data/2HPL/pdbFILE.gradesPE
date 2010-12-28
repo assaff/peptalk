@@ -1,0 +1,118 @@
+	 Amino Acid Conservation Scores
+	===============================
+
+- POS: The position of the AA in the SEQRES derived sequence.
+- SEQ: The SEQRES derived sequence in one letter code.
+- 3LATOM: The ATOM derived sequence in three letter code, including the AA's positions as they appear in the PDB file and the chain identifier.
+- SCORE: The normalized conservation scores.
+- COLOR: The color scale representing the conservation scores (9 - conserved, 1 - variable).
+- CONFIDENCE INTERVAL: When using the bayesian method for calculating rates, a confidence interval is assigned to each of the inferred evolutionary conservation scores.
+- CONFIDENCE INTERVAL COLORS: When using the bayesian method for calculating rates. The color scale representing the lower and upper bounds of the confidence interval.
+- MSA DATA: The number of aligned sequences having an amino acid (non-gapped) from the overall number of sequences at each position.
+- RESIDUE VARIETY: The residues variety at each position of the multiple sequence alignment.
+
+ POS	 SEQ	    3LATOM	SCORE		COLOR	CONFIDENCE INTERVAL	CONFIDENCE INTERVAL COLORS	MSA DATA	RESIDUE VARIETY
+    	    	        	(normalized)	        	               
+   1	   S	   SER12:A	-0.115		  5*	-1.610, 1.433			    9,1			     1/8	S                 
+   2	   A	   ALA13:A	 0.709		  3*	-0.969, 2.103			    8,1			     2/8	A,G               
+   3	   S	   SER14:A	-0.538		  6*	-1.943, 0.452			    9,4			     2/8	S                 
+   4	   P	   PRO15:A	 0.707		  3*	-0.969, 2.103			    8,1			     2/8	P,Q               
+   5	   A	   ALA16:A	 0.709		  3*	-0.969, 2.103			    8,1			     2/8	A,G               
+   6	   V	   VAL17:A	-0.621		  7*	-1.943, 0.452			    9,4			     3/8	V                 
+   7	   A	   ALA18:A	 1.880		  1*	 0.057, 3.070			    5,1			     3/8	A,L,R             
+   8	   E	   GLU19:A	 0.562		  4*	-1.288, 2.103			    8,1			     6/8	A,E               
+   9	   L	   LEU20:A	-0.413		  6*	-1.943, 0.902			    9,3			     6/8	L                 
+  10	   C	   CYS21:A	-0.378		  6*	-1.943, 0.902			    9,3			     6/8	C                 
+  11	   Q	   GLN22:A	 0.691		  3*	-0.969, 2.103			    8,1			     7/8	E,K,Q             
+  12	   N	   ASN23:A	-1.526		  9	-2.735,-0.644			    9,7			     7/8	N                 
+  13	   T	   THR24:A	 0.623		  3*	-0.969, 2.103			    8,1			     7/8	A,T,V             
+  14	   P	   PRO25:A	 1.738		  1*	 0.057, 3.070			    5,1			     7/8	K,P,R,T           
+  15	   E	   GLU26:A	 1.219		  2*	-0.644, 3.070			    7,1			     8/8	D,E,N             
+  16	   T	   THR27:A	 0.219		  4*	-1.288, 1.433			    8,1			     8/8	A,T,V             
+  17	   F	   PHE28:A	-0.198		  6*	-1.610, 0.902			    9,3			     8/8	F,Y               
+  18	   L	   LEU29:A	-1.074		  8*	-2.306, 0.057			    9,5			     8/8	L                 
+  19	   E	   GLU30:A	-0.467		  6*	-1.943, 0.452			    9,4			     8/8	D,E               
+  20	   A	   ALA31:A	-0.747		  7*	-1.943, 0.452			    9,4			     8/8	A,V               
+  21	   S	   SER32:A	-0.221		  6*	-1.610, 0.902			    9,3			     8/8	S,V               
+  22	   K	   LYS33:A	-0.196		  6*	-1.610, 0.902			    9,3			     8/8	K,R               
+  23	   L	   LEU34:A	-0.291		  6*	-1.610, 0.902			    9,3			     8/8	I,L               
+  24	   L	   LEU35:A	-1.074		  8*	-2.306, 0.057			    9,5			     8/8	L                 
+  25	   L	   LEU36:A	-0.155		  5*	-1.610, 0.902			    9,3			     8/8	I,L               
+  26	   T	   THR37:A	-0.431		  6*	-1.943, 0.452			    9,4			     8/8	T,V               
+  27	   Y	   TYR38:A	 0.435		  4*	-1.288, 1.433			    8,1			     8/8	L,Y               
+  28	   A	   ALA39:A	 0.068		  5*	-1.610, 1.433			    9,1			     8/8	A,L               
+  29	   D	   ASP40:A	-0.637		  7*	-1.943, 0.452			    9,4			     8/8	D,E               
+  30	   N	   ASN41:A	-1.672		  9	-2.735,-0.969			    9,8			     8/8	N                 
+  31	   I	   ILE42:A	-0.456		  6*	-1.943, 0.452			    9,4			     8/8	I,V               
+  32	   L	   LEU43:A	-1.074		  8*	-2.306, 0.057			    9,5			     8/8	L                 
+  33	   R	   ARG44:A	 0.678		  3*	-0.969, 2.103			    8,1			     8/8	A,R,S             
+  34	   N	   ASN45:A	-0.290		  6*	-1.610, 0.902			    9,3			     8/8	N,Q               
+  35	   P	   PRO46:A	-1.204		  8	-2.306,-0.306			    9,6			     8/8	P                 
+  36	   S	   SER47:A	 1.694		  1*	 0.057, 3.070			    5,1			     8/8	E,N,S,Y           
+  37	   D	   ASP48:A	 0.863		  3*	-0.644, 2.103			    7,1			     8/8	D,E,N             
+  38	   E	   GLU49:A	 0.973		  2*	-0.644, 2.103			    7,1			     8/8	E,S,T             
+  39	   K	   LYS50:A	-0.345		  6*	-1.943, 0.902			    9,3			     8/8	K,M               
+  40	   Y	   TYR51:A	-0.193		  6*	-1.610, 0.902			    9,3			     8/8	F,Y               
+  41	   R	   ARG52:A	-1.435		  9	-2.735,-0.644			    9,7			     8/8	R                 
+  42	   S	   SER53:A	-0.890		  7*	-2.306, 0.057			    9,5			     8/8	S,T               
+  43	   I	   ILE54:A	-1.542		  9	-2.735,-0.644			    9,7			     8/8	I                 
+  44	   R	   ARG55:A	-1.435		  9	-2.735,-0.644			    9,7			     8/8	R                 
+  45	   I	   ILE56:A	 1.658		  1*	 0.057, 3.070			    5,1			     8/8	I,L,N,Q           
+  46	   G	   GLY57:A	 0.791		  3*	-0.969, 2.103			    8,1			     8/8	D,E,G             
+  47	   N	   ASN58:A	-1.672		  9	-2.735,-0.969			    9,8			     8/8	N                 
+  48	   T	   THR59:A	 1.303		  2*	-0.306, 3.070			    6,1			     8/8	K,P,T             
+  49	   A	   ALA60:A	-0.749		  7*	-1.943, 0.452			    9,4			     8/8	A,T               
+  50	   F	   PHE61:A	-0.068		  5*	-1.610, 0.902			    9,3			     8/8	F,I               
+  51	   S	   SER62:A	-0.197		  6*	-1.610, 0.902			    9,3			     8/8	K,S               
+  52	   T	   THR63:A	-0.042		  5*	-1.610, 0.902			    9,3			     8/8	E,T               
+  53	   R	   ARG64:A	 0.258		  4*	-1.288, 1.433			    8,1			     8/8	K,R               
+  54	   L	   LEU65:A	-1.074		  8*	-2.306, 0.057			    9,5			     8/8	L                 
+  55	   L	   LEU66:A	-1.074		  8*	-2.306, 0.057			    9,5			     8/8	L                 
+  56	   P	   PRO67:A	-0.516		  6*	-1.943, 0.452			    9,4			     8/8	P,S               
+  57	   V	   VAL68:A	-0.314		  6*	-1.610, 0.902			    9,3			     8/8	L,V               
+  58	   R	   ARG69:A	 0.824		  3*	-0.969, 2.103			    8,1			     8/8	K,P,R             
+  59	   G	   GLY70:A	-1.098		  8*	-2.306, 0.057			    9,5			     8/8	G                 
+  60	   A	   ALA71:A	-0.098		  5*	-1.610, 0.902			    9,3			     8/8	A,C               
+  61	   V	   VAL72:A	-0.169		  5*	-1.610, 0.902			    9,3			     8/8	E,V               
+  62	   E	   GLU73:A	 0.696		  3*	-0.969, 2.103			    8,1			     8/8	E,K,R             
+  63	   C	   CYS74:A	 0.411		  4*	-1.288, 1.433			    8,1			     8/8	C,L               
+  64	   L	   LEU75:A	-1.074		  8*	-2.306, 0.057			    9,5			     8/8	L                 
+  65	   F	   PHE76:A	 1.059		  2*	-0.644, 2.103			    7,1			     8/8	E,F,Y             
+  66	   E	   GLU77:A	-0.307		  6*	-1.610, 0.902			    9,3			     8/8	A,E               
+  67	   M	   MET78:A	-0.676		  7*	-1.943, 0.452			    9,4			     8/8	I,M               
+  68	   G	   GLY79:A	-1.098		  8*	-2.306, 0.057			    9,5			     8/8	G                 
+  69	   F	   PHE80:A	-1.084		  8*	-2.306, 0.057			    9,5			     8/8	F                 
+  70	   E	   GLU81:A	 1.976		  1*	 0.057, 3.070			    5,1			     8/8	E,Q,R,V           
+  71	   E	   GLU82:A	 1.037		  2*	-0.644, 2.103			    7,1			     8/8	E,H,R             
+  72	   G	   GLY83:A	 1.673		  1*	 0.057, 3.070			    5,1			     8/8	A,G,T             
+  73	   E	   GLU84:A	 0.309		  4*	-1.288, 1.433			    8,1			     8/8	E,P               
+  74	   T	   THR85:A	-0.877		  7*	-2.306, 0.057			    9,5			     8/8	S,T               
+  75	   H	   HIS86:A	-0.337		  6*	-1.610, 0.902			    9,3			     8/8	H,S               
+  76	   L	   LEU87:A	 1.175		  2*	-0.644, 3.070			    7,1			     8/8	L,M,N             
+  77	   I	   ILE88:A	 1.595		  1*	-0.306, 3.070			    6,1			     8/8	A,I,S,V           
+  78	   F	   PHE89:A	-0.198		  6*	-1.610, 0.902			    9,3			     8/8	F,Y               
+  79	   P	   PRO90:A	-1.204		  8	-2.306,-0.306			    9,6			     8/8	P                 
+  80	   K	   LYS91:A	 2.148		  1	 0.452, 5.360			    4,1			     8/8	G,K,R,T           
+  81	   K	   LYS92:A	 0.939		  3*	-0.644, 2.103			    7,1			     8/8	E,K,S             
+  82	   A	   ALA93:A	-0.694		  7*	-1.943, 0.452			    9,4			     8/8	A,V               
+  83	   S	   SER94:A	-1.713		  9	-2.735,-0.969			    9,8			     8/8	S                 
+  84	   V	   VAL95:A	 0.610		  3*	-0.969, 2.103			    8,1			     8/8	I,L,V             
+  85	   E	   GLU96:A	-0.515		  6*	-1.943, 0.452			    9,4			     8/8	E,Q               
+  86	   Q	   GLN97:A	-0.647		  7*	-1.943, 0.452			    9,4			     8/8	K,Q               
+  87	   L	   LEU98:A	 0.615		  3*	-0.969, 2.103			    8,1			     8/8	I,L,V             
+  88	   Q	   GLN99:A	 1.263		  2*	-0.306, 3.070			    6,1			     8/8	K,Q,R             
+  89	   K	  LYS100:A	-0.420		  6*	-1.943, 0.902			    9,3			     8/8	K,Q               
+  90	   I	  ILE101:A	 1.437		  1*	-0.306, 3.070			    6,1			     8/8	I,V,Y             
+  91	   R	  ARG102:A	-0.188		  5*	-1.610, 0.902			    9,3			     8/8	R,Y               
+  92	   D	  ASP103:A	-0.563		  6*	-1.943, 0.452			    9,4			     8/8	D,E               
+  93	   L	  LEU104:A	 1.960		  1*	 0.057, 3.070			    5,1			     8/8	A,L,T,V           
+  94	   I	  ILE105:A	-0.378		  6*	-1.943, 0.902			    9,3			     8/8	I,L               
+  95	   A	  ALA106:A	 0.415		  4*	-1.288, 1.433			    8,1			     8/8	A,R,S             
+  96	   I	  ILE107:A	 2.699		  1	 0.902, 5.360			    3,1			     8/8	A,E,I,V           
+  97	   E	  GLU108:A	 0.126		  5*	-1.288, 1.433			    8,1			     8/8	E,R               
+  98	   R	  ARG109:A	-1.435		  9	-2.735,-0.644			    9,7			     8/8	R                 
+  99	   S	  SER110:A	-0.640		  7*	-1.943, 0.452			    9,4			     6/8	S,T               
+
+
+*Below the confidence cut-off - The calculations for this site were performed on less than 6 non-gaped homologue sequences,
+or the confidence interval for the estimated score is equal to- or larger than- 4 color grades.

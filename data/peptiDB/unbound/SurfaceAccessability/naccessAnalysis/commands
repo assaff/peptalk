@@ -1,0 +1,5 @@
+foreach f ( `ls ../../../unboundSet/*.pdb | sed 's/.*\(....\).pdb.*/\1/'` )
+
+echo $f
+/vol/ek/share/bin/naccess $f.pdb
+end

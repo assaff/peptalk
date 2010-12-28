@@ -1,0 +1,186 @@
+#!/usr/bin/perl
+# author: dattias
+# colorByHBondAvailability
+
+# pdb id
+$pdb = shift;
+
+$HBOND_AVAILABLE = "red";
+$HBOND_FULL = "blue";
+$HBOND_NONE = "white";
+
+# status
+$IS_ACCEPTOR = 0;
+$IS_DONOR = 1;
+$NONE = 2;
+
+%acceptors;
+%donors;
+loadHBondTables(\%acceptors, \%donors);
+#@keys = keys %acceptors;
+#print "acceptors: @keys\n";
+#@keys = keys %donors;
+#print "donors: @keys\n";
+
+open(PDB, "<$pdb.H.pdb");
+open(BNDLST, "<$pdb.bndlst");
+open(PML, ">$pdb.pml");
+print PML "load 2AI4.A.pdb\n".
+		"cmd.show_as(\"cartoon\"   ,\"all\")\n".
+		"cmd.show(\"lines\"     ,\"all\")\n".
+		"util.color_chains(\"(all)\")\n\n";
+
+@bndlstFile = <BNDLST>;
+$bndlstFileStr = join('', @bndlstFile);
+
+$numDonors = 0;
+$numAcceptors = 0;
+$inRes = 0;
+$currAA = "";
+
+while($line = <PDB>){
+	if(!($line =~ m/^ATOM ......  (....)(...) (.)(....)/)){
+		next;
+	}
+	#print $line;
+	$atom = $1; # number
+	$aa = $2; # name
+	$chain = $3;
+	$residue = $4; # number
+	
+	#print "**inRes: $inRes, currAA $currAA, aa $aa\n"; 
+	if($inRes == 1 && $currAA ne $aa){
+		$inRes = 0;
+		finishCurrentRes();
+	}
+	if($inRes == 0){
+		$currAA = $aa;
+		$numDonors = 0;
+		$numAcceptors = 0;
+		
+		print "************** $currAA ****************\n";
+		$inRes = 1;
+	}
+	
+	$atomPattern = sprintf("%s%4d %s  %-4s", $chain, $residue, $aa, $atom);
+	if($bndlstFileStr =~ m/(atom::$atomPattern:.*?)eol/s){
+		chomp($out = $1);
+		
+		print "atom pattern: '$atomPattern'\n";
+		print "bonds: '$out'\n";
+		@bonds = split(/\n/, $out);
+		
+		$status = findHBond(@bonds);
+		if($status == $IS_ACCEPTOR){
+			print "------------> got acceptor bond\n";
+			$numAcceptors++;
+		}
+		elsif($status == $IS_DONOR){
+			print "------------> 	got donor bond\n";
+			$numDonors++;
+		}
+	
+	}
+}
+finishCurrentRes();
+
+close (PML);
+close (BNDLST);
+close (PDB);
+
+##########################################
+sub finishCurrentRes{
+	#print "-- finishing\n";
+	if(exists $acceptors{$currAA} || exists $donors{$currAA}){
+		if(exists $acceptors{$currAA} && exists $donors{$currAA}){
+			if($numDonors == $donors{$currAA} && $numAcceptors == $acceptors{$currAA}){
+				printResidueColor($residue, $HBOND_FULL);
+				return;
+			}
+		}
+		else{
+			if(exists $acceptors{$currAA}){
+				if($numAcceptors == $acceptors{$currAA}){
+					printResidueColor($residue, $HBOND_FULL);
+					return;
+				}
+			}
+			elsif($numDonors == $donors{$currAA}){
+				printResidueColor($residue, $HBOND_FULL);
+				return;
+			}
+		}
+		printResidueColor($residue, $HBOND_AVAILABLE);
+		return;
+	}
+	else{
+		printResidueColor($residue, $HBOND_NONE);
+	}
+}
+
+sub loadHBondTables{
+	my ($acceptors, $donors) = @_;
+	
+	# open hbond potential file
+	$hbondsPotentialsFile = "aminoAcidHbondAvailability.txt";
+	open(HBONDP, "<$hbondsPotentialsFile");
+
+	while($line = <HBONDP>){
+		chomp($line);
+		#print "$line\n";
+		next if(!($line =~ m/^. (...)/));
+		$aa = $1;
+		if($line =~ m/A(\d+?)(\s|$)/){
+			#print "acceptor $1\n";
+			$$acceptors{$aa} = $1;
+		}
+		if($line =~ m/D(\d+?)(\s|$)/){
+			#print "donor $1\n";
+			$$donors{$aa} = $1;
+		}
+	}
+		
+	close(HBONDP)
+}
+
+sub getAtomHBondStatus{
+	my ($atomLine) = @_;
+	@parts = split(/:/,$atomLine);
+	$hbondPart = $parts[11];
+	#print "hbondPart: $hbondPart\n";
+	if($hbondPart =~ m/A/){
+		return $IS_ACCEPTOR;
+	}
+	if($hbondPart =~ m/D/){
+		return $IS_DONOR;
+	}
+	return $NONE;
+}
+
+sub findHBond{
+	my (@bonds) = @_;
+	$atomStatus = getAtomHBondStatus($bonds[0]);
+		
+	if($atomStatus == $NONE){
+		return $NONE;
+	}
+	
+	for($i = 1; $i < (scalar @bonds); $i++){
+		$bondAtomStatus = getAtomHBondStatus($bonds[$i]);
+		print "atomStatus $atomStatus, bondAtomStatus $bondAtomStatus\n";
+		if($atomStatus == $IS_ACCEPTOR && $bondAtomStatus == $IS_DONOR){
+			return $IS_ACCEPTOR;
+		}
+		if($atomStatus == $IS_DONOR && $bondAtomStatus == $IS_ACCEPTOR){
+			return $IS_DONOR;
+		}
+	}
+	
+	return $NONE;
+}
+
+sub printResidueColor{
+	my($residue, $color) = @_;
+	print "$color $residue, donors $numDonors, acceptors, $numAcceptors\n";
+	print PML "color $color, resi $residue\n";
+}

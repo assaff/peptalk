@@ -1,0 +1,617 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= FILE_A  152
+         (152 letters)
+
+Database: sprot 
+           412,525 sequences; 148,809,765 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|O75553|DAB1_HUMAN Disabled homolog 1 OS=Homo sapiens GN=DAB1 ...   320   2e-87
+sp|Q8CJH2|DAB1_RAT Disabled homolog 1 OS=Rattus norvegicus GN=Da...   319   4e-87
+sp|P97318|DAB1_MOUSE Disabled homolog 1 OS=Mus musculus GN=Dab1 ...   318   8e-87
+sp|Q9BGX5|DAB1_MACFA Disabled homolog 1 OS=Macaca fascicularis G...   316   2e-86
+sp|P98082|DAB2_HUMAN Disabled homolog 2 OS=Homo sapiens GN=DAB2 ...   202   4e-52
+sp|P98078|DAB2_MOUSE Disabled homolog 2 OS=Mus musculus GN=Dab2 ...   202   5e-52
+sp|O88797|DAB2_RAT Disabled homolog 2 OS=Rattus norvegicus GN=Da...   202   5e-52
+sp|P98081|DAB_DROME Protein disabled OS=Drosophila melanogaster ...   153   3e-37
+sp|Q5PQS4|GULP1_RAT PTB domain-containing engulfment adapter pro...    74   3e-13
+sp|Q9UBP9|GULP1_HUMAN PTB domain-containing engulfment adapter p...    73   4e-13
+sp|Q8K2A1|GULP1_MOUSE PTB domain-containing engulfment adapter p...    73   5e-13
+sp|Q32PV0|GULP1_DANRE PTB domain-containing engulfment adapter p...    71   2e-12
+sp|Q801G1|ARHA_XENLA Low density lipoprotein receptor adapter pr...    59   8e-09
+sp|Q5SW96|ARH_HUMAN Low density lipoprotein receptor adapter pro...    59   1e-08
+sp|Q67FQ3|ARHB_XENLA Low density lipoprotein receptor adapter pr...    58   2e-08
+sp|Q8C142|ARH_MOUSE Low density lipoprotein receptor adapter pro...    56   7e-08
+sp|P49757|NUMB_HUMAN Protein numb homolog OS=Homo sapiens GN=NUM...    55   2e-07
+sp|Q9QZS3|NUMB_MOUSE Protein numb homolog OS=Mus musculus GN=Num...    55   2e-07
+sp|Q9Y6R0|NUMBL_HUMAN Numb-like protein OS=Homo sapiens GN=NUMBL...    53   5e-07
+sp|O08919|NUMBL_MOUSE Numb-like protein OS=Mus musculus GN=Numbl...    53   5e-07
+sp|Q7Z6G8|ANS1B_HUMAN Ankyrin repeat and sterile alpha motif dom...    52   1e-06
+sp|Q8BIZ1|ANS1B_MOUSE Ankyrin repeat and sterile alpha motif dom...    52   1e-06
+sp|P0C6S7|ANS1B_RAT Ankyrin repeat and sterile alpha motif domai...    52   1e-06
+sp|O76337|CED6_CAEEL Cell death protein 6 OS=Caenorhabditis eleg...    47   5e-05
+sp|P16554|NUMB_DROME Protein numb OS=Drosophila melanogaster GN=...    45   1e-04
+sp|A5PMU4|ANS1B_DANRE Ankyrin repeat and sterile alpha motif dom...    44   3e-04
+
+>sp|O75553|DAB1_HUMAN Disabled homolog 1 OS=Homo sapiens GN=DAB1
+           PE=1 SV=3
+          Length = 588
+
+ Score =  320 bits (820), Expect = 2e-87,   Method: Composition-based stats.
+ Identities = 152/152 (100%), Positives = 152/152 (100%)
+
+Query: 1   GQDRSEATLIKRFKGEGVRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHK 60
+           GQDRSEATLIKRFKGEGVRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHK
+Sbjct: 23  GQDRSEATLIKRFKGEGVRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHK 82
+
+Query: 61  QKIFLTISFGGIKIFDEKTGALQHHHAVHEISYIAKDITDHRAFGYVCGKEGNHRFVAIK 120
+           QKIFLTISFGGIKIFDEKTGALQHHHAVHEISYIAKDITDHRAFGYVCGKEGNHRFVAIK
+Sbjct: 83  QKIFLTISFGGIKIFDEKTGALQHHHAVHEISYIAKDITDHRAFGYVCGKEGNHRFVAIK 142
+
+Query: 121 TAQAAEPVILDLRDLFQLIYELKQREELEKKA 152
+           TAQAAEPVILDLRDLFQLIYELKQREELEKKA
+Sbjct: 143 TAQAAEPVILDLRDLFQLIYELKQREELEKKA 174
+
+
+>sp|Q8CJH2|DAB1_RAT Disabled homolog 1 OS=Rattus norvegicus GN=Dab1
+           PE=1 SV=1
+          Length = 555
+
+ Score =  319 bits (817), Expect = 4e-87,   Method: Composition-based stats.
+ Identities = 152/152 (100%), Positives = 152/152 (100%)
+
+Query: 1   GQDRSEATLIKRFKGEGVRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHK 60
+           GQDRSEATLIKRFKGEGVRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHK
+Sbjct: 23  GQDRSEATLIKRFKGEGVRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHK 82
+
+Query: 61  QKIFLTISFGGIKIFDEKTGALQHHHAVHEISYIAKDITDHRAFGYVCGKEGNHRFVAIK 120
+           QKIFLTISFGGIKIFDEKTGALQHHHAVHEISYIAKDITDHRAFGYVCGKEGNHRFVAIK
+Sbjct: 83  QKIFLTISFGGIKIFDEKTGALQHHHAVHEISYIAKDITDHRAFGYVCGKEGNHRFVAIK 142
+
+Query: 121 TAQAAEPVILDLRDLFQLIYELKQREELEKKA 152
+           TAQAAEPVILDLRDLFQLIYELKQREELEKKA
+Sbjct: 143 TAQAAEPVILDLRDLFQLIYELKQREELEKKA 174
+
+
+>sp|P97318|DAB1_MOUSE Disabled homolog 1 OS=Mus musculus GN=Dab1
+           PE=1 SV=2
+          Length = 588
+
+ Score =  318 bits (814), Expect = 8e-87,   Method: Composition-based stats.
+ Identities = 152/152 (100%), Positives = 152/152 (100%)
+
+Query: 1   GQDRSEATLIKRFKGEGVRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHK 60
+           GQDRSEATLIKRFKGEGVRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHK
+Sbjct: 23  GQDRSEATLIKRFKGEGVRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHK 82
+
+Query: 61  QKIFLTISFGGIKIFDEKTGALQHHHAVHEISYIAKDITDHRAFGYVCGKEGNHRFVAIK 120
+           QKIFLTISFGGIKIFDEKTGALQHHHAVHEISYIAKDITDHRAFGYVCGKEGNHRFVAIK
+Sbjct: 83  QKIFLTISFGGIKIFDEKTGALQHHHAVHEISYIAKDITDHRAFGYVCGKEGNHRFVAIK 142
+
+Query: 121 TAQAAEPVILDLRDLFQLIYELKQREELEKKA 152
+           TAQAAEPVILDLRDLFQLIYELKQREELEKKA
+Sbjct: 143 TAQAAEPVILDLRDLFQLIYELKQREELEKKA 174
+
+
+>sp|Q9BGX5|DAB1_MACFA Disabled homolog 1 OS=Macaca fascicularis
+           GN=DAB1 PE=2 SV=1
+          Length = 555
+
+ Score =  316 bits (810), Expect = 2e-86,   Method: Composition-based stats.
+ Identities = 150/152 (98%), Positives = 150/152 (98%)
+
+Query: 1   GQDRSEATLIKRFKGEGVRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHK 60
+           GQDRSEATLIKRFKGEGVRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHK
+Sbjct: 23  GQDRSEATLIKRFKGEGVRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHK 82
+
+Query: 61  QKIFLTISFGGIKIFDEKTGALQHHHAVHEISYIAKDITDHRAFGYVCGKEGNHRFVAIK 120
+           QKIFLTISFGGIKIFDEKTGALQHHHAVHEISYIAKD TDHRAFGY CGKEGNHRFVAIK
+Sbjct: 83  QKIFLTISFGGIKIFDEKTGALQHHHAVHEISYIAKDTTDHRAFGYACGKEGNHRFVAIK 142
+
+Query: 121 TAQAAEPVILDLRDLFQLIYELKQREELEKKA 152
+           TAQAAEPVILDLRDLFQLIYELKQREELEKKA
+Sbjct: 143 TAQAAEPVILDLRDLFQLIYELKQREELEKKA 174
+
+
+>sp|P98082|DAB2_HUMAN Disabled homolog 2 OS=Homo sapiens GN=DAB2
+           PE=1 SV=3
+          Length = 770
+
+ Score =  202 bits (515), Expect = 4e-52,   Method: Composition-based stats.
+ Identities = 88/138 (63%), Positives = 116/138 (84%)
+
+Query: 5   SEATLIKRFKGEGVRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHKQKIF 64
+           ++  L+ RFKG+GV+YKAKLIGID+V  ARGDK+ QDSMMKLKG+ A  RS+G+HKQ+I+
+Sbjct: 35  TDEYLLARFKGDGVKYKAKLIGIDDVPDARGDKMSQDSMMKLKGMAAAGRSQGQHKQRIW 94
+
+Query: 65  LTISFGGIKIFDEKTGALQHHHAVHEISYIAKDITDHRAFGYVCGKEGNHRFVAIKTAQA 124
+           + IS  GIKI DEKTG ++H H V++IS+IA+D+TD+RAFGYVCG EG H+F AIKT Q 
+Sbjct: 95  VNISLSGIKIIDEKTGVIEHEHPVNKISFIARDVTDNRAFGYVCGGEGQHQFFAIKTGQQ 154
+
+Query: 125 AEPVILDLRDLFQLIYEL 142
+           AEP+++DL+DLFQ+IY +
+Sbjct: 155 AEPLVVDLKDLFQVIYNV 172
+
+
+>sp|P98078|DAB2_MOUSE Disabled homolog 2 OS=Mus musculus GN=Dab2
+           PE=1 SV=2
+          Length = 766
+
+ Score =  202 bits (514), Expect = 5e-52,   Method: Composition-based stats.
+ Identities = 88/136 (64%), Positives = 115/136 (84%)
+
+Query: 5   SEATLIKRFKGEGVRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHKQKIF 64
+           ++  L+ RFKG+GV+YKAKLIGID+V  ARGDK+ QDSMMKLKG+ A  RS+G+HKQ+I+
+Sbjct: 35  TDEYLLARFKGDGVKYKAKLIGIDDVPDARGDKMSQDSMMKLKGMAAAGRSQGQHKQRIW 94
+
+Query: 65  LTISFGGIKIFDEKTGALQHHHAVHEISYIAKDITDHRAFGYVCGKEGNHRFVAIKTAQA 124
+           + IS  GIKI DEKTG ++H H V++IS+IA+D+TD+RAFGYVCG EG H+F AIKT Q 
+Sbjct: 95  VNISLSGIKIIDEKTGVIEHEHPVNKISFIARDVTDNRAFGYVCGGEGQHQFFAIKTGQQ 154
+
+Query: 125 AEPVILDLRDLFQLIY 140
+           AEP+++DL+DLFQ+IY
+Sbjct: 155 AEPLVVDLKDLFQVIY 170
+
+
+>sp|O88797|DAB2_RAT Disabled homolog 2 OS=Rattus norvegicus GN=Dab2
+           PE=1 SV=1
+          Length = 768
+
+ Score =  202 bits (514), Expect = 5e-52,   Method: Composition-based stats.
+ Identities = 88/136 (64%), Positives = 115/136 (84%)
+
+Query: 5   SEATLIKRFKGEGVRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHKQKIF 64
+           ++  L+ RFKG+GV+YKAKLIGID+V  ARGDK+ QDSMMKLKG+ A  RS+G+HKQ+I+
+Sbjct: 35  TDEYLLARFKGDGVKYKAKLIGIDDVPDARGDKMSQDSMMKLKGMAAAGRSQGQHKQRIW 94
+
+Query: 65  LTISFGGIKIFDEKTGALQHHHAVHEISYIAKDITDHRAFGYVCGKEGNHRFVAIKTAQA 124
+           + IS  GIKI DEKTG ++H H V++IS+IA+D+TD+RAFGYVCG EG H+F AIKT Q 
+Sbjct: 95  VNISLSGIKIIDEKTGVIEHEHPVNKISFIARDVTDNRAFGYVCGGEGQHQFFAIKTGQQ 154
+
+Query: 125 AEPVILDLRDLFQLIY 140
+           AEP+++DL+DLFQ+IY
+Sbjct: 155 AEPLVVDLKDLFQVIY 170
+
+
+>sp|P98081|DAB_DROME Protein disabled OS=Drosophila melanogaster
+           GN=Dab PE=1 SV=2
+          Length = 2224
+
+ Score =  153 bits (387), Expect = 3e-37,   Method: Composition-based stats.
+ Identities = 71/136 (52%), Positives = 103/136 (75%), Gaps = 4/136 (2%)
+
+Query: 12  RFKGEGVRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHKQKIFLTISFGG 71
+           RF G+GV++KAKLIGI EV  ARGD++CQ+++  LK  +   R+ GEHKQ+I + ++  G
+Sbjct: 43  RFFGDGVQFKAKLIGILEVGEARGDRMCQEALQDLKMAI---RAAGEHKQRITIHVTIDG 99
+
+Query: 72  IKIFDEKTGALQHHHAVHEISYIAKDITDHRAFGYVCGK-EGNHRFVAIKTAQAAEPVIL 130
+           +++ DEKTG   +HH VH+IS+IA+D+TD RAFGY+ G  +  HRF  IKT +AA  V+L
+Sbjct: 100 LRLRDEKTGDSLYHHPVHKISFIAQDMTDSRAFGYIFGSPDSGHRFFGIKTDKAASQVVL 159
+
+Query: 131 DLRDLFQLIYELKQRE 146
+            +RDLFQ+++ELK++E
+Sbjct: 160 AMRDLFQVVFELKKKE 175
+
+
+>sp|Q5PQS4|GULP1_RAT PTB domain-containing engulfment adapter
+           protein 1 OS=Rattus norvegicus GN=Gulp1 PE=1 SV=1
+          Length = 304
+
+ Score = 73.9 bits (180), Expect = 3e-13,   Method: Composition-based stats.
+ Identities = 42/125 (33%), Positives = 66/125 (52%), Gaps = 2/125 (1%)
+
+Query: 18  VRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHKQKIFLTISFGGIKIFDE 77
+           V Y AK +G  EV   +G ++ +D++ KLK      +S+G+   K+ L IS  G+KI + 
+Sbjct: 25  VPYNAKFLGSTEVEQPKGTEVVRDAVRKLKFARHIKKSEGQKIPKVELQISIYGVKILEP 84
+
+Query: 78  KTGALQHHHAVHEISYIAKDITDHRAFGYVC--GKEGNHRFVAIKTAQAAEPVILDLRDL 135
+           KT  +QH+  +H IS+ A D TD R F ++C   +   H      + + AE + L +   
+Sbjct: 85  KTKEVQHNCQLHRISFCADDKTDKRIFTFICKDSESNKHLCFVFDSEKCAEEITLTIGQA 144
+
+Query: 136 FQLIY 140
+           F L Y
+Sbjct: 145 FDLAY 149
+
+
+>sp|Q9UBP9|GULP1_HUMAN PTB domain-containing engulfment adapter
+           protein 1 OS=Homo sapiens GN=GULP1 PE=1 SV=1
+          Length = 304
+
+ Score = 73.2 bits (178), Expect = 4e-13,   Method: Composition-based stats.
+ Identities = 41/125 (32%), Positives = 66/125 (52%), Gaps = 2/125 (1%)
+
+Query: 18  VRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHKQKIFLTISFGGIKIFDE 77
+           + Y AK +G  EV   +G ++ +D++ KLK      +S+G+   K+ L IS  G+KI + 
+Sbjct: 25  IPYNAKFLGSTEVEQPKGTEVVRDAVRKLKFARHIKKSEGQKIPKVELQISIYGVKILEP 84
+
+Query: 78  KTGALQHHHAVHEISYIAKDITDHRAFGYVC--GKEGNHRFVAIKTAQAAEPVILDLRDL 135
+           KT  +QH+  +H IS+ A D TD R F ++C   +   H      + + AE + L +   
+Sbjct: 85  KTKEVQHNCQLHRISFCADDKTDKRIFTFICKDSESNKHLCYVFDSEKCAEEITLTIGQA 144
+
+Query: 136 FQLIY 140
+           F L Y
+Sbjct: 145 FDLAY 149
+
+
+>sp|Q8K2A1|GULP1_MOUSE PTB domain-containing engulfment adapter
+           protein 1 OS=Mus musculus GN=Gulp1 PE=1 SV=1
+          Length = 304
+
+ Score = 72.8 bits (177), Expect = 5e-13,   Method: Composition-based stats.
+ Identities = 41/125 (32%), Positives = 66/125 (52%), Gaps = 2/125 (1%)
+
+Query: 18  VRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHKQKIFLTISFGGIKIFDE 77
+           + Y AK +G  EV   +G ++ +D++ KLK      +S+G+   K+ L IS  G+KI + 
+Sbjct: 25  IPYNAKFLGSTEVEQPKGTEVVRDAVRKLKFARHIKKSEGQKIPKVELQISIYGVKILEP 84
+
+Query: 78  KTGALQHHHAVHEISYIAKDITDHRAFGYVC--GKEGNHRFVAIKTAQAAEPVILDLRDL 135
+           KT  +QH+  +H IS+ A D TD R F ++C   +   H      + + AE + L +   
+Sbjct: 85  KTKEVQHNCQLHRISFCADDKTDKRIFTFICKDSESNKHLCFVFDSEKCAEEITLTIGQA 144
+
+Query: 136 FQLIY 140
+           F L Y
+Sbjct: 145 FDLAY 149
+
+
+>sp|Q32PV0|GULP1_DANRE PTB domain-containing engulfment adapter
+           protein 1 OS=Danio rerio GN=gulp1 PE=2 SV=1
+          Length = 300
+
+ Score = 71.2 bits (173), Expect = 2e-12,   Method: Composition-based stats.
+ Identities = 40/126 (31%), Positives = 67/126 (53%), Gaps = 2/126 (1%)
+
+Query: 18  VRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHKQKIFLTISFGGIKIFDE 77
+           + Y AK +G  EV   +G ++ +D++ KLK      +S+G+   K+ L IS  G+KI D 
+Sbjct: 25  IPYNAKFLGNTEVDQPKGTEVVKDAVRKLKFQRHIKKSEGQKLPKVELQISIYGVKILDP 84
+
+Query: 78  KTGALQHHHAVHEISYIAKDITDHRAFGYVC--GKEGNHRFVAIKTAQAAEPVILDLRDL 135
+           K+  +Q++  +H IS+ A D TD R F ++C   +   H      + + AE + L +   
+Sbjct: 85  KSKEVQYNCQLHRISFCADDKTDKRIFTFICKDSESNKHLCYVFDSEKCAEEITLTIGQA 144
+
+Query: 136 FQLIYE 141
+           F L Y+
+Sbjct: 145 FDLAYK 150
+
+
+>sp|Q801G1|ARHA_XENLA Low density lipoprotein receptor adapter
+           protein 1-A OS=Xenopus laevis GN=ldlrap1-A PE=1 SV=1
+          Length = 309
+
+ Score = 58.9 bits (141), Expect = 8e-09,   Method: Composition-based stats.
+ Identities = 40/143 (27%), Positives = 74/143 (51%), Gaps = 11/143 (7%)
+
+Query: 16  EGVRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHKQKIFLTISFGGIKIF 75
+           EG+ +  K +G+  V   +G++L   S   +K +VA A++ G+  QK+ L +S  GI ++
+Sbjct: 43  EGMLFHLKYLGMTLVEQPKGEEL---SATAVKRIVATAKASGKKLQKVILKVSPRGIILY 99
+
+Query: 76  DEKTGALQHHHAVHEISYIAKDITDHRAFGYVCGKEGN-----HRFVAIKTAQAAEPVIL 130
+           D  +  L  + +++ ISY   D    + F Y+   + N     H F+  K  + A+ V L
+Sbjct: 100 DSTSNQLIENVSIYRISYCTADKMHDKVFAYIAQSQQNETLECHAFLCTKR-KMAQAVTL 158
+
+Query: 131 DLRDLFQLIYELKQ--REELEKK 151
+            +   F++ +E  Q  R++ EK+
+Sbjct: 159 TVAQAFKVAFEFWQVSRDKTEKR 181
+
+
+>sp|Q5SW96|ARH_HUMAN Low density lipoprotein receptor adapter
+           protein 1 OS=Homo sapiens GN=LDLRAP1 PE=1 SV=3
+          Length = 308
+
+ Score = 58.5 bits (140), Expect = 1e-08,   Method: Composition-based stats.
+ Identities = 42/143 (29%), Positives = 73/143 (51%), Gaps = 11/143 (7%)
+
+Query: 16  EGVRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHKQKIFLTISFGGIKIF 75
+           EG+ +  K +G+  V   +G++L   S   +K +VA A++ G+  QK+ L +S  GI + 
+Sbjct: 44  EGMLFSLKYLGMTLVEQPKGEEL---SAAAIKRIVATAKASGKKLQKVTLKVSPRGIILT 100
+
+Query: 76  DEKTGALQHHHAVHEISYIAKDITDHRAFGYVCGKEGN-----HRFVAIKTAQAAEPVIL 130
+           D  T  L  + +++ ISY   D    + F Y+   + N     H F+  K  + A+ V L
+Sbjct: 101 DNLTNQLIENVSIYRISYCTADKMHDKVFAYIAQSQHNQSLECHAFLCTKR-KMAQAVTL 159
+
+Query: 131 DLRDLFQLIYELKQ--REELEKK 151
+            +   F++ +E  Q  +EE EK+
+Sbjct: 160 TVAQAFKVAFEFWQVSKEEKEKR 182
+
+
+>sp|Q67FQ3|ARHB_XENLA Low density lipoprotein receptor adapter
+           protein 1-B OS=Xenopus laevis GN=ldlrap1-B PE=1 SV=1
+          Length = 309
+
+ Score = 58.2 bits (139), Expect = 2e-08,   Method: Composition-based stats.
+ Identities = 40/143 (27%), Positives = 73/143 (51%), Gaps = 11/143 (7%)
+
+Query: 16  EGVRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHKQKIFLTISFGGIKIF 75
+           EG+ +  K +G+  V   +G++L   S   +K +VA A++ G+  QK+ L +S  GI ++
+Sbjct: 43  EGMLFHLKYLGMTLVEQPKGEEL---SATAVKRIVATAKASGKKLQKVLLKVSPRGIILY 99
+
+Query: 76  DEKTGALQHHHAVHEISYIAKDITDHRAFGYVCGKEGN-----HRFVAIKTAQAAEPVIL 130
+           D  +  L  + +++ ISY   D    + F Y+   + N     H F+  K  + A+ V L
+Sbjct: 100 DSASNQLIENVSIYRISYCTADKMHDKVFAYIAQSQQNETLECHAFLCTKR-KMAQAVTL 158
+
+Query: 131 DLRDLFQLIYELKQ--REELEKK 151
+            +   F++ +E  Q  RE  +K+
+Sbjct: 159 TVAQAFKVAFEFWQVSRENKDKR 181
+
+
+>sp|Q8C142|ARH_MOUSE Low density lipoprotein receptor adapter
+           protein 1 OS=Mus musculus GN=Ldlrap1 PE=1 SV=2
+          Length = 308
+
+ Score = 55.8 bits (133), Expect = 7e-08,   Method: Composition-based stats.
+ Identities = 38/134 (28%), Positives = 67/134 (50%), Gaps = 9/134 (6%)
+
+Query: 16  EGVRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHKQKIFLTISFGGIKIF 75
+           EG+ +  K +G+  V   +G++L   S   +K +VA A++ G+  QK+ L +S  GI + 
+Sbjct: 43  EGMVFSLKYLGMTLVERPKGEEL---SAAAVKRIVATAKASGKKLQKVTLKVSPRGIILT 99
+
+Query: 76  DEKTGALQHHHAVHEISYIAKDITDHRAFGYVCGKEGN-----HRFVAIKTAQAAEPVIL 130
+           D  T  L  + +++ ISY   D    + F Y+   + N     H F+  K  + A+ V L
+Sbjct: 100 DSLTSQLIENVSIYRISYCTADKMHDKVFAYIAQSQQNESLECHAFLCTKR-KVAQAVTL 158
+
+Query: 131 DLRDLFQLIYELKQ 144
+            +   F++ +E  Q
+Sbjct: 159 TVAQAFKVAFEFWQ 172
+
+
+>sp|P49757|NUMB_HUMAN Protein numb homolog OS=Homo sapiens GN=NUMB
+           PE=1 SV=2
+          Length = 651
+
+ Score = 54.7 bits (130), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 46/149 (30%), Positives = 71/149 (47%), Gaps = 18/149 (12%)
+
+Query: 16  EGVR-----YKAKLIGIDEVSAARGDKLCQDSMMKLKG---VVAGARSK-GEHKQKIFLT 66
+           EGVR     +  K +G  EV  +RG  +C+D++ +LK       G   K G+   K  L 
+Sbjct: 30  EGVRTGKCSFPVKYLGHVEVDESRGMHICEDAVKRLKAERKFFKGFFGKTGKKAVKAVLW 89
+
+Query: 67  ISFGGIKIFDEKTGALQHHHAVHEISYIAKDITDHRAFGYVCGKEGN------HRFVAIK 120
+           +S  G+++ DEKT  L     + ++S+ A D    RAF Y+C ++G       H F+A+K
+Sbjct: 90  VSADGLRVVDEKTKDLIVDQTIEKVSFCAPDRNFDRAFSYIC-RDGTTRRWICHCFMAVK 148
+
+Query: 121 TAQAAEPVILDLRDLFQLIYELKQREELE 149
+                E +   +   F    E KQ+ E E
+Sbjct: 149 --DTGERLSHAVGCAFAACLERKQKREKE 175
+
+
+>sp|Q9QZS3|NUMB_MOUSE Protein numb homolog OS=Mus musculus GN=Numb
+           PE=1 SV=1
+          Length = 653
+
+ Score = 54.7 bits (130), Expect = 2e-07,   Method: Composition-based stats.
+ Identities = 46/149 (30%), Positives = 71/149 (47%), Gaps = 18/149 (12%)
+
+Query: 16  EGVR-----YKAKLIGIDEVSAARGDKLCQDSMMKLKG---VVAGARSK-GEHKQKIFLT 66
+           EGVR     +  K +G  EV  +RG  +C+D++ +LK       G   K G+   K  L 
+Sbjct: 30  EGVRTGKCSFPVKYLGHVEVDESRGMHICEDAVKRLKAERKFFKGFFGKTGKKAVKAVLW 89
+
+Query: 67  ISFGGIKIFDEKTGALQHHHAVHEISYIAKDITDHRAFGYVCGKEGN------HRFVAIK 120
+           +S  G+++ DEKT  L     + ++S+ A D    RAF Y+C ++G       H F+A+K
+Sbjct: 90  VSADGLRVVDEKTKDLIVDQTIEKVSFCAPDRNFDRAFSYIC-RDGTTRRWICHCFMAVK 148
+
+Query: 121 TAQAAEPVILDLRDLFQLIYELKQREELE 149
+                E +   +   F    E KQ+ E E
+Sbjct: 149 --DTGERLSHAVGCAFAACLERKQKREKE 175
+
+
+>sp|Q9Y6R0|NUMBL_HUMAN Numb-like protein OS=Homo sapiens GN=NUMBL
+           PE=1 SV=1
+          Length = 609
+
+ Score = 53.1 bits (126), Expect = 5e-07,   Method: Composition-based stats.
+ Identities = 39/136 (28%), Positives = 66/136 (48%), Gaps = 16/136 (11%)
+
+Query: 20  YKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHKQKIFLTISFGGIKIFDEKT 79
+           +  + +G  EV  +RG  +C+D++ KLK +       G    K  L +S  G+++ D+KT
+Sbjct: 80  FPVRYLGHVEVEESRGMHVCEDAVKKLKAM-------GRKSVKSVLWVSADGLRVVDDKT 132
+
+Query: 80  GALQHHHAVHEISYIAKDITDHRAFGYVCGKEGN------HRFVAIKTAQAAEPVILDLR 133
+             L     + ++S+ A D    +AF Y+C ++G       H F+A+K   + E +   + 
+Sbjct: 133 KDLLVDQTIEKVSFCAPDRNLDKAFSYIC-RDGTTRRWICHCFLALK--DSGERLSHAVG 189
+
+Query: 134 DLFQLIYELKQREELE 149
+             F    E KQR E E
+Sbjct: 190 CAFAACLERKQRREKE 205
+
+
+>sp|O08919|NUMBL_MOUSE Numb-like protein OS=Mus musculus GN=Numbl
+           PE=1 SV=2
+          Length = 604
+
+ Score = 53.1 bits (126), Expect = 5e-07,   Method: Composition-based stats.
+ Identities = 39/136 (28%), Positives = 66/136 (48%), Gaps = 16/136 (11%)
+
+Query: 20  YKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHKQKIFLTISFGGIKIFDEKT 79
+           +  + +G  EV  +RG  +C+D++ KLK +       G    K  L +S  G+++ D+KT
+Sbjct: 80  FPVRYLGHVEVEESRGMHVCEDAVKKLKAM-------GRKSVKSVLWVSADGLRVVDDKT 132
+
+Query: 80  GALQHHHAVHEISYIAKDITDHRAFGYVCGKEGN------HRFVAIKTAQAAEPVILDLR 133
+             L     + ++S+ A D    +AF Y+C ++G       H F+A+K   + E +   + 
+Sbjct: 133 KDLLVDQTIEKVSFCAPDRNLDKAFSYIC-RDGTTRRWICHCFLALK--DSGERLSHAVG 189
+
+Query: 134 DLFQLIYELKQREELE 149
+             F    E KQR E E
+Sbjct: 190 CAFAACLERKQRREKE 205
+
+
+>sp|Q7Z6G8|ANS1B_HUMAN Ankyrin repeat and sterile alpha motif
+            domain-containing protein 1B OS=Homo sapiens GN=ANKS1B
+            PE=1 SV=1
+          Length = 1249
+
+ Score = 51.6 bits (122), Expect = 1e-06,   Method: Composition-based stats.
+ Identities = 34/127 (26%), Positives = 58/127 (45%), Gaps = 4/127 (3%)
+
+Query: 20   YKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHKQKIFLTISFGGIKIFDEKT 79
+            YKA  +G   +   RG +  QD+  K++     +  + +    I L++S+ G+K  D   
+Sbjct: 1063 YKAFYLGSMLIKELRGTESTQDACAKMRANCQKSTEQMKKVPTIILSVSYKGVKFIDATN 1122
+
+Query: 80   GALQHHHAVHEISYIAKDITDHRAFGYVCGK-EGNHRFVAIKTA---QAAEPVILDLRDL 135
+              +   H +  IS  A+D  D   F Y+    + NH +  + TA     A  +IL L   
+Sbjct: 1123 KNIIAEHEIRNISCAAQDPEDLSTFAYITKDLKSNHHYCHVFTAFDVNLAYEIILTLGQA 1182
+
+Query: 136  FQLIYEL 142
+            F++ Y+L
+Sbjct: 1183 FEVAYQL 1189
+
+
+>sp|Q8BIZ1|ANS1B_MOUSE Ankyrin repeat and sterile alpha motif
+            domain-containing protein 1B OS=Mus musculus GN=Anks1b
+            PE=1 SV=2
+          Length = 1259
+
+ Score = 51.6 bits (122), Expect = 1e-06,   Method: Composition-based stats.
+ Identities = 34/127 (26%), Positives = 58/127 (45%), Gaps = 4/127 (3%)
+
+Query: 20   YKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHKQKIFLTISFGGIKIFDEKT 79
+            YKA  +G   +   RG +  QD+  K++     +  + +    I L++S+ G+K  D   
+Sbjct: 1061 YKAFYLGSMLIKELRGTESTQDACAKMRANCQKSTEQMKKVPTIILSVSYKGVKFIDAAN 1120
+
+Query: 80   GALQHHHAVHEISYIAKDITDHRAFGYVCGK-EGNHRFVAIKTA---QAAEPVILDLRDL 135
+              +   H +  IS  A+D  D   F Y+    + NH +  + TA     A  +IL L   
+Sbjct: 1121 KNIIAEHEIRNISCAAQDPEDLSTFAYITKDLKSNHHYCHVFTAFDVNLAYEIILTLGQA 1180
+
+Query: 136  FQLIYEL 142
+            F++ Y+L
+Sbjct: 1181 FEVAYQL 1187
+
+
+>sp|P0C6S7|ANS1B_RAT Ankyrin repeat and sterile alpha motif
+            domain-containing protein 1B OS=Rattus norvegicus
+            GN=Anks1b PE=1 SV=1
+          Length = 1260
+
+ Score = 51.6 bits (122), Expect = 1e-06,   Method: Composition-based stats.
+ Identities = 34/127 (26%), Positives = 58/127 (45%), Gaps = 4/127 (3%)
+
+Query: 20   YKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHKQKIFLTISFGGIKIFDEKT 79
+            YKA  +G   +   RG +  QD+  K++     +  + +    I L++S+ G+K  D   
+Sbjct: 1062 YKAFYLGSMLIKELRGTESTQDACAKMRANCQKSTEQMKKVPTIILSVSYKGVKFIDAAN 1121
+
+Query: 80   GALQHHHAVHEISYIAKDITDHRAFGYVCGK-EGNHRFVAIKTA---QAAEPVILDLRDL 135
+              +   H +  IS  A+D  D   F Y+    + NH +  + TA     A  +IL L   
+Sbjct: 1122 KNIIAEHEIRNISCAAQDPEDLSTFAYITKDLKSNHHYCHVFTAFDVNLAYEIILTLGQA 1181
+
+Query: 136  FQLIYEL 142
+            F++ Y+L
+Sbjct: 1182 FEVAYQL 1188
+
+
+>sp|O76337|CED6_CAEEL Cell death protein 6 OS=Caenorhabditis elegans
+           GN=ced-6 PE=1 SV=1
+          Length = 492
+
+ Score = 46.6 bits (109), Expect = 5e-05,   Method: Composition-based stats.
+ Identities = 38/144 (26%), Positives = 64/144 (44%), Gaps = 10/144 (6%)
+
+Query: 18  VRYKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHK----QKIFLTISFGGIK 73
+           V Y A+ +G  E   A G  + ++++  ++      RS+   +    QK+ + IS   + 
+Sbjct: 59  VEYVARFLGCVETPKANGSDVAREAIHAIRFQRDLKRSEQTRETAKLQKVEIRISIDNVI 118
+
+Query: 74  IFDEKTGALQHHHAVHEISYIAKDITDHRAFGYVC---GKEGNHRFVAIKTAQAAEPVIL 130
+           I D KT A  +   +  IS+ A D  D R F ++    G  G     A  + + AE + L
+Sbjct: 119 IADIKTKAPMYTFPLGRISFCADDKDDKRMFSFIARAEGASGKPSCYAFTSEKLAEDITL 178
+
+Query: 131 DLRDLFQLIYEL---KQREELEKK 151
+            + + F L Y+    K R  LE +
+Sbjct: 179 TIGEAFDLAYKRFLDKNRTSLENQ 202
+
+
+>sp|P16554|NUMB_DROME Protein numb OS=Drosophila melanogaster
+           GN=numb PE=1 SV=2
+          Length = 556
+
+ Score = 45.4 bits (106), Expect = 1e-04,   Method: Composition-based stats.
+ Identities = 34/136 (25%), Positives = 63/136 (46%), Gaps = 16/136 (11%)
+
+Query: 20  YKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHKQKIFLTISFGGIKIFDEKT 79
+           +  K +G  EV  +RG ++C++++  L       R       +  L +S  G+++ D++T
+Sbjct: 83  FSVKYLGCVEVFESRGMQVCEEALKVL-------RQSRRRPVRGLLHVSGDGLRVVDDET 135
+
+Query: 80  GALQHHHAVHEISYIAKDITDHRAFGYVCGKEGN------HRFVAIKTAQAAEPVILDLR 133
+             L     + ++S+ A D    R F Y+C ++G       H F+A K   + E +   + 
+Sbjct: 136 KGLIVDQTIEKVSFCAPDRNHERGFSYIC-RDGTTRRWMCHGFLACK--DSGERLSHAVG 192
+
+Query: 134 DLFQLIYELKQREELE 149
+             F +  E KQR + E
+Sbjct: 193 CAFAVCLERKQRRDKE 208
+
+
+>sp|A5PMU4|ANS1B_DANRE Ankyrin repeat and sterile alpha motif
+            domain-containing protein 1B OS=Danio rerio GN=anks1b
+            PE=3 SV=1
+          Length = 1280
+
+ Score = 43.9 bits (102), Expect = 3e-04,   Method: Composition-based stats.
+ Identities = 35/129 (27%), Positives = 58/129 (44%), Gaps = 13/129 (10%)
+
+Query: 20   YKAKLIGIDEVSAARGDKLCQDSMMKLKGVVAGARSKGEHKQ--KIFLTISFGGIKIFDE 77
+            Y+A  +G   V   RG +   D+  K+       RS  + K+   I L++S+ G+K  D 
+Sbjct: 1077 YEAYYLGSMLVKELRGTESTHDACAKM-------RSTEQMKKIPTIVLSVSYKGVKFIDA 1129
+
+Query: 78   KTGALQHHHAVHEISYIAKDITDHRAFGYVCGK-EGNHRFVAIKTA---QAAEPVILDLR 133
+                +   H +  IS  A+D  D   F Y+    + +H +  + TA     A  +IL L 
+Sbjct: 1130 TNKNIIAEHEIRNISCAAQDPEDLSTFAYITKDLKSSHHYCHVFTAFDVNLAYEIILTLG 1189
+
+Query: 134  DLFQLIYEL 142
+              F++ Y+L
+Sbjct: 1190 QAFEVAYQL 1198
+
+
+  Database: sprot
+    Posted date:  Mar 15, 2009  5:38 PM
+  Number of letters in database: 148,809,765
+  Number of sequences in database:  412,525
+  
+Lambda     K      H
+   0.320    0.137    0.388 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 41,879,446
+Number of Sequences: 412525
+Number of extensions: 1600487
+Number of successful extensions: 3482
+Number of sequences better than 1.0e-03: 28
+Number of HSP's better than  0.0 without gapping: 14
+Number of HSP's successfully gapped in prelim test: 14
+Number of HSP's that attempted gapping in prelim test: 3461
+Number of HSP's gapped (non-prelim): 28
+length of query: 152
+length of database: 148,809,765
+effective HSP length: 105
+effective length of query: 47
+effective length of database: 105,494,640
+effective search space: 4958248080
+effective search space used: 4958248080
+T: 11
+A: 40
+X1: 16 ( 7.4 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.8 bits)
+S2: 98 (42.4 bits)

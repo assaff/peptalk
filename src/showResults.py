@@ -99,10 +99,10 @@ score_lines.close()
 
 def truncate_classification_score(score):
     assert type(score) == float, 'classification score should be a float'
-    if score > 1.0:
-        return 1
-    elif score < 0:
+    if score < 0:
         return 0
+#    elif score > 1.0:
+#        return 1
     else:
         return score
     
@@ -131,9 +131,12 @@ if options.write_positives:
 #    binder_carbons=[]
     fd = open(options.write_positives, 'w')
     for atom in receptor_atoms:
-        if atom.bfactor>0 and atom.type=='CA':
-            print >> fd, '%s %d' % (atom.res_type.upper(), atom.res_num)
-#            binder_carbons.append(atom)
+        try:
+            if atom.type=='CA':
+                scores[atom.res_num]
+                print >> fd, '%s %d %.3f' % (atom.res_type.upper(), atom.res_num, atom.bfactor)
+    #            binder_carbons.append(atom)
+        except KeyError: pass
     fd.close()
 
 

@@ -9,11 +9,11 @@ Created on Dec 4, 2010
 VERSION_STRING = '%s v0.0.1, an atom clustering script for molecular structures.'
 
 import os, sys, re, logging, subprocess, re
-sys.path.append('./match')
+sys.path.append(os.path.join(os.path.dirname(sys.argv[0]), 'match'))
 import numpy as np
 from optparse import OptionParser
-from matplotlib import pylab
-from scipy.cluster.hierarchy import *
+#from matplotlib import pylab
+from scipy.cluster.hierarchy import fcluster, fclusterdata, linkage
 from scipy.spatial.distance import pdist, squareform, cdist
 from scipy.stats.stats import pearsonr
 from molecule import AtomFromPdbLine, Atom
@@ -112,7 +112,7 @@ B_FACTOR_CUTOFF = options.b_factor_cutoff
 CLUSTERING_METHOD = options.clustering_method # NOTE: centroid, median and ward methods require using euclidean metric 
 CLUSTERING_METRIC = options.clustering_metric
 CLUSTER_DIAMETER_CUTOFF = options.diameter_cutoff # in angstroms
-CLUSTERING_RESULTS_DIR = options.clustering_results_dir
+CLUSTERING_RESULTS_DIR = os.path.abspath(options.clustering_results_dir)
 PDB_ID = os.path.basename(options.pdbfilename).split('.')[0]
 
 # CONSTANTS
@@ -189,6 +189,8 @@ def coords(atom):
     # should use numpy array
     return [atom.pos.x, atom.pos.y, atom.pos.z]
     
+def bfactor(atom):
+    return atom.bfactor
     
 def get_peptide_atoms(filename):
     pdb_lines = open(filename, 'r')
@@ -227,38 +229,45 @@ def shift_coords_to_centroids(center_atoms, pdbfilename):
         (center_atom.pos.x, center_atom.pos.y, center_atom.pos.z) = centroid(residue_atoms, residue_atom_weights)
     return center_atoms
 
-def spatial_clustering_degree(atoms):
-    distances = pdist(np.array([coords(atom) for atom in atoms]))
-    score = np.power(distances, -1).sum() * np.power(len(atoms), 0)
+def spatial_clustering_degree(atoms, weights_vector=None):
+    weights_vector = np.array(weights_vector)
+    coords_matrix = np.array(map(coords, atoms))
+    distances = pdist(coords_matrix)
+    if weights_vector is not None:
+        assert np.all(weights_vector != 0)
+        assert (type(weights_vector) is np.ndarray) and len(weights_vector.shape) <= 2 and max(weights_vector.shape) == coords_matrix.shape[0]
+        weight_matrix = np.power(np.outer(weights_vector, weights_vector), -1)
+        distances = squareform(np.multiply(squareform(distances), weight_matrix))
+    score = np.power(distances, -1).sum() * np.power(len(atoms), 1)
     return score
 
-def quasi_rmsd(atoms1, atoms2):
-    coords1 = np.array([coords(atom) for atom in atoms1])
-    coords2 = np.array([coords(atom) for atom in atoms2])
-    distances = cdist(coords1, coords2)
-    score = np.power(distances, -1).sum() / float((len(atoms1) * len(atoms2)))
-    return np.power(score, .5)
-
-def mini_rmsd(atoms1, atoms2):
-    coords1 = np.array([coords(atom) for atom in atoms1])
-    coords2 = np.array([coords(atom) for atom in atoms2])
-    distances = cdist(coords1, coords2)
-    cluster_res_proximities = np.power(distances.min(1), -1)
-    score = 1. / float(len(cluster_res_proximities)) * cluster_res_proximities.sum() 
+#def quasi_rmsd(atoms1, atoms2):
+#    coords1 = np.array([coords(atom) for atom in atoms1])
+#    coords2 = np.array([coords(atom) for atom in atoms2])
+#    distances = cdist(coords1, coords2)
+#    score = np.power(distances, -1).sum() / float((len(atoms1) * len(atoms2)))
+#    return np.power(score, .5)
+#
+#def mini_rmsd(atoms1, atoms2):
+#    coords1 = np.array([coords(atom) for atom in atoms1])
+#    coords2 = np.array([coords(atom) for atom in atoms2])
+#    distances = cdist(coords1, coords2)
+#    cluster_res_proximities = np.power(distances.min(1), -1)
+#    score = 1. / float(len(cluster_res_proximities)) * cluster_res_proximities.sum() 
 #    for a in atoms1:
 #        for b in atoms2:
 #            score += 1 / pos_distance(a.pos, b.pos)
 #    score *= float(1) / float(len(atoms1))  
-    return score #sqrt(score)
+#    return score #sqrt(score)
+#    
+#def cluster_distance_with_peptide(cluster_atoms):
+#    peptide_atoms = get_peptide_atoms(pdb)
+#    logging.debug('Peptide CA atoms:')
+#    for atom in peptide_atoms: logging.debug(atom.pdb_str())
+#    return mini_rmsd(cluster_atoms, peptide_atoms)
 
 def cluster_density_score(cluster_atoms):
     return spatial_clustering_degree(cluster_atoms)
-    
-def cluster_distance_with_peptide(cluster_atoms):
-    peptide_atoms = get_peptide_atoms(pdb)
-    logging.debug('Peptide CA atoms:')
-    for atom in peptide_atoms: logging.debug(atom.pdb_str())
-    return mini_rmsd(cluster_atoms, peptide_atoms)
 
 def cluster_contacts_with_peptide(cluster_atoms):
     peptide_atoms = get_peptide_atoms(pdb)
@@ -302,7 +311,7 @@ def weighted_fclusterdata(coords_matrix, bfactor_vector=None):
 #                                 method=CLUSTERING_METHOD)
 
     pdistances = pdist(coords_matrix, metric=CLUSTERING_METRIC)
-    if options.weight_by_bfactor and bfactor_vector is not None:
+    if bfactor_vector is not None:
         # Weighting the distance matrix by pairwise bfactor product
         assert (type(bfactor_vector) is np.ndarray) and len(bfactor_vector.shape) <= 2 and max(bfactor_vector.shape) == coords_matrix.shape[0]
         weight_matrix = np.power(np.outer(bfactor_vector, bfactor_vector), -1)
@@ -316,17 +325,20 @@ def weighted_fclusterdata(coords_matrix, bfactor_vector=None):
     logging.debug('FLAT CLUSTERS:\n' + str(flat_clusters))
     return flat_clusters
 
+def cluster_coords_distance(cluster1_coords, cluster2_coords):
+    return np.min(cdist(cluster1_coords, cluster2_coords))
+
 def find_closest_clusters(clusters_list):
     cluster_coords = [np.array([coords(atom) for atom in cluster]) for cluster in clusters_list]
-    min_distance = np.inf
+    min_distance = np.Inf
     neighbor_clusters = None
     for i in range(len(clusters_list)):
         for j in range(i + 1, len(clusters_list)):
-            dij = np.min(cdist(cluster_coords[i], cluster_coords[j]))
+            dij = cluster_coords_distance(cluster_coords[i], cluster_coords[j])
             if  dij < min_distance:
                 min_distance = dij
                 neighbor_clusters = (clusters_list[i], clusters_list[j])
-#        print min_distance
+    assert min_distance > 0
     return (neighbor_clusters, min_distance)
 
 if __name__ == '__main__':
@@ -349,10 +361,7 @@ if __name__ == '__main__':
     cluster_assignment = weighted_fclusterdata(coords_matrix, weights)
 
     clusters = [[atom for atom in pdb_atoms if cluster_assignment[pdb_atoms.index(atom)] == cluster_num] for cluster_num in set(cluster_assignment)]
-    
-    # testing
-#    clusters = [[atom] for atom in pdb_atoms]
-    
+    clusters = filter(lambda cluster: len(cluster) > 1, clusters)
 
     if options.connect_neighbor_clusters:
         (neighbors, min_distance) = find_closest_clusters(clusters)
@@ -364,9 +373,11 @@ if __name__ == '__main__':
             clusters.insert(0, neighbors[0] + neighbors[1])
             (neighbors, min_distance) = find_closest_clusters(clusters)
 
-    clusters = filter(lambda cluster: len(cluster) > 1, clusters)
     
-    cluster_scoring_function = spatial_clustering_degree
+    def cluster_scoring_function(cluster_atoms):
+        cluster_bfactors = np.array(map(bfactor, cluster_atoms))
+        return spatial_clustering_degree(cluster_atoms, weights_vector=cluster_bfactors)
+    
     if options.binding_residues is not None:
         best_cluster = clusters[0]
         binding_filename = options.binding_residues
@@ -396,9 +407,9 @@ if __name__ == '__main__':
     if clusters is None or len(clusters) == 0:
         print 'ERROR_no_clusters_found'
         exit(1)
-    clusters_quality = [cluster_contacts_with_peptide(cluster) for cluster in clusters]
-    if np.argmax(clusters_quality) > 0:
-        print 'FAIL'
+#    clusters_quality = [cluster_contacts_with_peptide(cluster) for cluster in clusters]
+#    if np.argmax(clusters_quality) > 0:
+#        print 'FAIL'
 #    print clusters
 #    print map(spatial_clustering_degree, clusters)
 #    print map(cluster_contacts_with_peptide, clusters)
@@ -430,7 +441,7 @@ if __name__ == '__main__':
 #        os.remove(TEMP_PML_FILENAME)
 
     if options.save_session:
-        clusters_filename = CLUSTERING_RESULTS_DIR+'/%s_b%.1f_d%.1f_c%.1f.clusters.txt' % (PDB_ID, options.b_factor_cutoff, options.diameter_cutoff, options.neighbor_distance_cutoff)
+        clusters_filename = os.path.join(CLUSTERING_RESULTS_DIR,'%s.clusters.txt' % (PDB_ID))
         CLUSTERS_OUT = open(clusters_filename, 'w')
         for cluster in clusters:
             cluster_str = ''
@@ -444,7 +455,8 @@ if __name__ == '__main__':
         TEMP_PML = open(TEMP_PML_FILENAME, 'w')
         print >> TEMP_PML, DEFAULT_PYMOL_INIT
         write_pymol_script(TEMP_PML, clusters)
-        print >> TEMP_PML, 'save %s/%s_b%.1f_d%.1f_c%.1f.pse; quit;' % (CLUSTERING_RESULTS_DIR, PDB_ID, options.b_factor_cutoff, options.diameter_cutoff, options.neighbor_distance_cutoff)
+        session_filename = os.path.join(CLUSTERING_RESULTS_DIR,'%s.pse' % (PDB_ID))
+        print >> TEMP_PML, 'save %s; quit;' % (session_filename)
         TEMP_PML.close()
         SINK = open('/dev/null')
         subprocess.Popen(['pymol', '-qcd', '@%s' % TEMP_PML_FILENAME, ], stdout=SINK, stderr=SINK)

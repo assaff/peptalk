@@ -9,6 +9,7 @@ Created on Dec 4, 2010
 VERSION_STRING = '%s v0.0.1, an atom clustering script for molecular structures.'
 
 import os, sys, re, logging, subprocess, re
+sys.path.append('./match')
 import numpy as np
 from optparse import OptionParser
 from matplotlib import pylab
@@ -23,7 +24,7 @@ parser.set_defaults(verbose=True)
 parser.add_option('-p', '--pdbfilename', #dest='pdbfilename',
                   help='input PDB file to cluster',)
 parser.add_option('-b', '--b-factor-cutoff',
-                  type='float', default=0.6,
+                  type='float', default=0.001,
                   help='B-factor cutoff. Only CA atoms with B-factor>CUTOFF will be clustered [default: %default]',)
 parser.add_option('-m', '--clustering-method',
                   default='average',
@@ -50,9 +51,6 @@ parser.add_option('-c', '--neighbor-distance-cutoff',
 parser.add_option('-D', '--binding-residues',
                   default=None,
                   help='provide a list of actual binding residues, for evaluating the success of ranking')
-#parser.add_option('-m', '--hyper-pymol-output',
-#                  default='/dev/null',
-#                  help='name of pml file, for visualization of meta-clustering output [default: %default]')
 parser.add_option('-B', '--use-cbeta',
                   action='store_true',
                   default=False,
@@ -70,6 +68,10 @@ parser.add_option('-y', '--pymol-output',
 parser.add_option('-P', '--print-best-cluster',
                   default=None,
                   help='print residues of the best cluster into this file/stream',
+                  )
+parser.add_option('-R', '--clustering-results-dir',
+                  default=os.path.dirname(sys.argv[0]),
+                  help='where to dump clustering results',
                   )
 parser.add_option('-v', '--visualize',
                   action='store_true',
@@ -110,6 +112,7 @@ B_FACTOR_CUTOFF = options.b_factor_cutoff
 CLUSTERING_METHOD = options.clustering_method # NOTE: centroid, median and ward methods require using euclidean metric 
 CLUSTERING_METRIC = options.clustering_metric
 CLUSTER_DIAMETER_CUTOFF = options.diameter_cutoff # in angstroms
+CLUSTERING_RESULTS_DIR = options.clustering_results_dir
 PDB_ID = os.path.basename(options.pdbfilename).split('.')[0]
 
 # CONSTANTS
@@ -195,7 +198,7 @@ def get_peptide_atoms(filename):
     pdb_lines.close()
     return peptide_atoms
 
-def get_positive_receptor_atoms(filename, bfactor_threshold):
+def get_receptor_atoms(filename, bfactor_threshold=-np.Inf):
     pdb_lines = open(filename, 'r')
     binder_filters = [filter_chain_eq(CHAIN_RECEPTOR),
                       filter_atom_type(RECEPTOR_ATOM_TYPE),
@@ -330,7 +333,7 @@ if __name__ == '__main__':
 
     pdb = os.path.abspath(options.pdbfilename)
 
-    pdb_atoms = get_positive_receptor_atoms(pdb, B_FACTOR_CUTOFF)
+    pdb_atoms = get_receptor_atoms(pdb, B_FACTOR_CUTOFF)
     if options.use_centroid:
         pdb_atoms = shift_coords_to_centroids(pdb_atoms, pdbfilename=pdb)
 
@@ -427,7 +430,7 @@ if __name__ == '__main__':
 #        os.remove(TEMP_PML_FILENAME)
 
     if options.save_session:
-        clusters_filename = '../sessions/%s_b%.1f_d%.1f_c%.1f.clusters.txt' % (PDB_ID, options.b_factor_cutoff, options.diameter_cutoff, options.neighbor_distance_cutoff)
+        clusters_filename = CLUSTERING_RESULTS_DIR+'/%s_b%.1f_d%.1f_c%.1f.clusters.txt' % (PDB_ID, options.b_factor_cutoff, options.diameter_cutoff, options.neighbor_distance_cutoff)
         CLUSTERS_OUT = open(clusters_filename, 'w')
         for cluster in clusters:
             cluster_str = ''
@@ -441,7 +444,7 @@ if __name__ == '__main__':
         TEMP_PML = open(TEMP_PML_FILENAME, 'w')
         print >> TEMP_PML, DEFAULT_PYMOL_INIT
         write_pymol_script(TEMP_PML, clusters)
-        print >> TEMP_PML, 'save ../sessions/%s_b%.1f_d%.1f_c%.1f.pse; quit;' % (PDB_ID, options.b_factor_cutoff, options.diameter_cutoff, options.neighbor_distance_cutoff)
+        print >> TEMP_PML, 'save %s/%s_b%.1f_d%.1f_c%.1f.pse; quit;' % (CLUSTERING_RESULTS_DIR, PDB_ID, options.b_factor_cutoff, options.diameter_cutoff, options.neighbor_distance_cutoff)
         TEMP_PML.close()
         SINK = open('/dev/null')
         subprocess.Popen(['pymol', '-qcd', '@%s' % TEMP_PML_FILENAME, ], stdout=SINK, stderr=SINK)

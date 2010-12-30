@@ -12,7 +12,6 @@ from itertools import chain
 from molecule import Atom, AtomFromPdbLine
 from polymer import Polymer
 
-
 BASE_DIR=os.path.abspath(os.path.join(sys.argv[0],'..'))
 SVM_RESULTS_DIR = os.path.join(BASE_DIR, 'svm_results')
 CONFIG='b0.6_d10.0_c7.0'

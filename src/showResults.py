@@ -53,8 +53,8 @@ def truncate_classification_score(score):
     
 for atom in atoms:
     try:
-        atom.bfactor = scores[atom.res_num]
-        print atom.res_name, atom.res_num, atom.bfactor
+        atom.bfactor = truncate_classification_score(scores[atom.res_num])
+        print atom.res_type, atom.res_num, atom.bfactor
     except KeyError:
         atom.bfactor = 0
 

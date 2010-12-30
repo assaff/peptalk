@@ -9,9 +9,10 @@ Created on Dec 4, 2010
 VERSION_STRING = '%s v0.0.1, an atom clustering script for molecular structures.'
 
 import os, sys, re, logging, subprocess, re
+sys.path.append('./match')
+
 import numpy as np
 from optparse import OptionParser
-
 from molecule import AtomFromPdbLine, Atom
 
 parser = OptionParser(version=VERSION_STRING)
@@ -40,9 +41,20 @@ input_lines.close()
 score_lines = open(options.input_scores)
 scores = dict(sorted([(int(line.split()[1]), float(line.split()[2])) for line in score_lines], key=lambda x: x[0]))
 score_lines.close()
+
+def truncate_classification_score(score):
+    assert type(score)==float, 'classification score should be a float'
+    if score > 1.0:
+        return 1
+    elif score < 0:
+        return 0
+    else:
+        return score
+    
 for atom in atoms:
     try:
         atom.bfactor = scores[atom.res_num]
+        print atom.res_name, atom.res_num, atom.bfactor
     except KeyError:
         atom.bfactor = 0
 

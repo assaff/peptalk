@@ -24,7 +24,7 @@ parser.set_defaults(verbose=True)
 parser.add_option('-p', '--pdbfilename', #dest='pdbfilename',
                   help='input PDB file to cluster',)
 parser.add_option('-b', '--b-factor-cutoff',
-                  type='float', default=0.001,
+                  type='float', default=0,
                   help='B-factor cutoff. Only CA atoms with B-factor>CUTOFF will be clustered [default: %default]',)
 parser.add_option('-m', '--clustering-method',
                   default='average',
@@ -34,7 +34,7 @@ parser.add_option('-t', '--clustering-metric',
                   help='clustering metric [default: %default]')
 parser.add_option('-d', '--diameter-cutoff',
                   type='float',
-                  default=10.0,
+                  default=12.0,
                   help='maximum cluster diameter, in angstrom [default: %default]')
 parser.add_option('-w', '--weight-by-bfactor',
                   action='store_true',
@@ -164,7 +164,7 @@ def filter_atom_type(type_constraint):
     return (lambda atom: atom.type == type_constraint)
 
 def filter_bfactor_gt(bfactor_cutoff):
-    return (lambda atom: atom.bfactor >= bfactor_cutoff)
+    return (lambda atom: atom.bfactor > bfactor_cutoff)
 
 def test_clusters_ranking(clusters, clustering_score_function, actual_score_function):
     my_scoring = np.array([clustering_score_function(cluster) for cluster in clusters])

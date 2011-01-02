@@ -24,7 +24,7 @@ parser.set_defaults(verbose=True)
 parser.add_option('-p', '--pdbfilename', #dest='pdbfilename',
                   help='input PDB file to cluster',)
 parser.add_option('-b', '--b-factor-cutoff',
-                  type='float', default=0,
+                  type='float', default=.7,
                   help='B-factor cutoff. Only CA atoms with B-factor>CUTOFF will be clustered [default: %default]',)
 parser.add_option('-m', '--clustering-method',
                   default='average',
@@ -34,7 +34,7 @@ parser.add_option('-t', '--clustering-metric',
                   help='clustering metric [default: %default]')
 parser.add_option('-d', '--diameter-cutoff',
                   type='float',
-                  default=12.0,
+                  default=10.0,
                   help='maximum cluster diameter, in angstrom [default: %default]')
 parser.add_option('-w', '--weight-by-bfactor',
                   action='store_true',
@@ -46,11 +46,8 @@ parser.add_option('-k', '--connect-neighbor-clusters',
                   help='optional post processing that agglomerates neighboring clusters together [default: %default]')
 parser.add_option('-c', '--neighbor-distance-cutoff',
                   type='float',
-                  default=7.0,
+                  default=8.0,
                   help='the maximal distance between two clusters to still be considered neighbors')
-parser.add_option('-D', '--binding-residues',
-                  default=None,
-                  help='provide a list of actual binding residues, for evaluating the success of ranking')
 parser.add_option('-B', '--use-cbeta',
                   action='store_true',
                   default=False,
@@ -62,25 +59,27 @@ parser.add_option('-C', '--use-centroid',
 parser.add_option('-l', '--logfile',
                   default='/dev/null',
                   help='name of log file, mainly for debugging [default: %default]')
-parser.add_option('-y', '--pymol-output',
+parser.add_option('-D', '--binding-residues',
                   default=None,
-                  help='name of pml file, for visualization of output [default: %default]')
-parser.add_option('-P', '--print-best-cluster',
-                  default=None,
-                  help='print residues of the best cluster into this file/stream',
-                  )
-parser.add_option('-R', '--clustering-results-dir',
-                  default=os.path.dirname(sys.argv[0]),
-                  help='where to dump clustering results',
-                  )
+                  help='provide a list of actual binding residues, for evaluating the success of ranking')
 parser.add_option('-v', '--visualize',
                   action='store_true',
                   default=False,
                   help='visualize the clustering results in PyMOL [default: %default]')
-parser.add_option('-S', '--save-session',
-                  action='store_true',
-                  default=False,
+parser.add_option('-Y', '--output-pymol-script',
+                  default=None,
+                  help='name of pml file, for visualization of output [default: %default]')
+parser.add_option('-S', '--output-pymol-session',
+                  default=None,
                   help='save the visualization session as a pse')
+parser.add_option('-R', '--output-clustering-report',
+                  default=None,
+                  help='where to dump clustering results',
+                  )
+parser.add_option('-P', '--output-best-cluster',
+                  default=None,
+                  help='print residues of the best cluster into this file',
+                  )
 
 (options, args) = parser.parse_args()
 
@@ -112,7 +111,6 @@ B_FACTOR_CUTOFF = options.b_factor_cutoff
 CLUSTERING_METHOD = options.clustering_method # NOTE: centroid, median and ward methods require using euclidean metric 
 CLUSTERING_METRIC = options.clustering_metric
 CLUSTER_DIAMETER_CUTOFF = options.diameter_cutoff # in angstroms
-CLUSTERING_RESULTS_DIR = os.path.abspath(options.clustering_results_dir)
 PDB_ID = os.path.basename(options.pdbfilename).split('.')[0]
 
 # CONSTANTS
@@ -238,7 +236,7 @@ def spatial_clustering_degree(atoms, weights_vector=None):
         assert (type(weights_vector) is np.ndarray) and len(weights_vector.shape) <= 2 and max(weights_vector.shape) == coords_matrix.shape[0]
         weight_matrix = np.power(np.outer(weights_vector, weights_vector), -1)
         distances = squareform(np.multiply(squareform(distances), weight_matrix))
-    score = np.power(distances, -1).sum() * np.power(len(atoms), 1)
+    score = np.power(distances, -1).sum() * np.power(len(atoms), -2)
     return score
 
 #def quasi_rmsd(atoms1, atoms2):
@@ -349,7 +347,7 @@ if __name__ == '__main__':
     if options.use_centroid:
         pdb_atoms = shift_coords_to_centroids(pdb_atoms, pdbfilename=pdb)
 
-    logging.debug('Receptor peptide-binding CA atoms:')
+    logging.debug('Receptor "positive" CA atoms:')
     for atom in pdb_atoms: logging.debug(atom.pdb_str())
     
     coords_matrix = np.array([coords(atom) for atom in pdb_atoms])
@@ -357,6 +355,7 @@ if __name__ == '__main__':
 
     weights = None
     if options.weight_by_bfactor:
+        print >> sys.stderr, 'WARNING: weighting residues pairwise distance by their confidence (svm classification).'
         weights = np.array([atom.bfactor for atom in pdb_atoms])
     cluster_assignment = weighted_fclusterdata(coords_matrix, weights)
 
@@ -378,6 +377,56 @@ if __name__ == '__main__':
         cluster_bfactors = np.array(map(bfactor, cluster_atoms))
         return spatial_clustering_degree(cluster_atoms, weights_vector=cluster_bfactors)
     
+    clusters.sort(key=cluster_scoring_function, reverse=True)
+    clusters_confidence = map(cluster_scoring_function, clusters)
+
+#    if clusters is None or len(clusters) == 0:
+#        print 'ERROR_no_clusters_found'
+#        exit(1)
+        
+    if options.visualize:
+#        assert not options.pymol_output.startswith('/dev'), 'Cannot read from %s' % options.pymol_output
+        TEMP_PML_FILENAME = '/tmp/temp%d_visualize.pml' % os.getpid()
+        TEMP_PML = open(TEMP_PML_FILENAME, 'w')
+        print >> TEMP_PML, DEFAULT_PYMOL_INIT
+        write_pymol_script(TEMP_PML, clusters)
+        TEMP_PML.close()
+        SINK = open('/dev/null')
+        subprocess.Popen(['pymol', '-qd', '@%s' % TEMP_PML_FILENAME, ], stdout=SINK, stderr=SINK)
+        SINK.close()
+#        os.remove(TEMP_PML_FILENAME)
+
+    if options.output_clustering_report:    
+        CLUSTERS_OUT = open(options.output_clustering_report, 'w')
+        print >> CLUSTERS_OUT, '#'+('\t'.join(['PDB','RANK','SIZE','CONFD','RESIDUES']))
+        for cluster in clusters:
+            cluster.sort(key=lambda x: x.res_num)
+            cluster_index = clusters.index(cluster)
+            cluster_res_str = ','.join([str(atom.res_num) for atom in cluster])
+            print >> CLUSTERS_OUT, '\t'.join([PDB_ID,
+                                              str(cluster_index), 
+                                              str(len(cluster)), 
+                                              '%.3f' % clusters_confidence[cluster_index], 
+                                              cluster_res_str])
+        CLUSTERS_OUT.close()
+
+    if options.output_pymol_script:
+        PYMOL_SCRIPT = open(options.output_pymol_script, 'w')
+        print >> PYMOL_SCRIPT, DEFAULT_PYMOL_INIT
+        write_pymol_script(PYMOL_SCRIPT, clusters)
+        PYMOL_SCRIPT.close()
+
+    if options.output_pymol_session:
+        TEMP_PML_FILENAME = '/tmp/temp.%d.pml' % os.getpid()
+        TEMP_PML = open(TEMP_PML_FILENAME, 'w')
+        print >> TEMP_PML, DEFAULT_PYMOL_INIT
+        write_pymol_script(TEMP_PML, clusters)
+        print >> TEMP_PML, 'save %s; quit;' % (options.output_pymol_session)
+        TEMP_PML.close()
+        SINK = open('/dev/null')
+        subprocess.Popen(['pymol', '-qcd', '@%s' % TEMP_PML_FILENAME, ], stdout=SINK, stderr=SINK)
+        SINK.close()
+    
     if options.binding_residues is not None:
         best_cluster = clusters[0]
         binding_filename = options.binding_residues
@@ -398,15 +447,7 @@ if __name__ == '__main__':
         assert actual_binders.shape[0] == mdta.shape[0]
         recovery = mdta[mdta < np.inf].shape[0] / float(mdta.shape[0])
         print '%.2f%' % (100 * recovery)
-        
-#        score = 1./float(len(cluster_res_proximities)) * cluster_res_proximities.sum()
-#    exit()
-    clusters.sort(key=cluster_scoring_function, reverse=True)
-    
-    
-    if clusters is None or len(clusters) == 0:
-        print 'ERROR_no_clusters_found'
-        exit(1)
+
 #    clusters_quality = [cluster_contacts_with_peptide(cluster) for cluster in clusters]
 #    if np.argmax(clusters_quality) > 0:
 #        print 'FAIL'
@@ -417,50 +458,10 @@ if __name__ == '__main__':
 #        cluster_centroid_coords = np.array([weighted_centroid(cluster) for cluster in clusters])
 #        cluster_weights = np.array([np.mean([atom.bfactor for atom in cluster]) for cluster in clusters])
 
-    if options.print_best_cluster is not None:
-        cluster_file = open(options.print_best_cluster, 'w')
-        for atom in sorted(clusters[0], key=lambda x: x.res_num):
-            print >> cluster_file, '%s %d' % (atom.res_type.upper(), atom.res_num)
-        cluster_file.close()
-    if options.pymol_output is not None:
-        PML = open(options.pymol_output, 'w')
-        print >> PML, DEFAULT_PYMOL_INIT
-        write_pymol_script(PML, clusters)
-        PML.close()
-    if options.visualize:
-#        assert not options.pymol_output.startswith('/dev'), 'Cannot read from %s' % options.pymol_output
-        TEMP_PML_FILENAME = '/tmp/temp%d_visualize.pml' % os.getpid()
-        TEMP_PML = open(TEMP_PML_FILENAME, 'w')
-        print >> TEMP_PML, DEFAULT_PYMOL_INIT
-        write_pymol_script(TEMP_PML, clusters)
-#        print >> TEMP_PML, 'save ../sessions/%s_Bvwk_b%.1f_d%.1f_c%.1f.pse; quit;' % (PDB_ID, options.b_factor_cutoff, options.diameter_cutoff, options.neighbor_distance_cutoff)
-        TEMP_PML.close()
-        SINK = open('/dev/null')
-        subprocess.Popen(['pymol', '-qd', '@%s' % TEMP_PML_FILENAME, ], stdout=SINK, stderr=SINK)
-        SINK.close()
-#        os.remove(TEMP_PML_FILENAME)
-
-    if options.save_session:
-        clusters_filename = os.path.join(CLUSTERING_RESULTS_DIR,'%s.clusters.txt' % (PDB_ID))
-        CLUSTERS_OUT = open(clusters_filename, 'w')
-        for cluster in clusters:
-            cluster_str = ''
-            cluster.sort(key=lambda x: x.res_num)
-            for atom in cluster:
-                cluster_str += ' %d' % (atom.res_num)
-            print >> CLUSTERS_OUT, '%d\t%s' % (clusters.index(cluster), cluster_str)
-        CLUSTERS_OUT.close()
-        
-        TEMP_PML_FILENAME = '/tmp/temp%d_session.pml' % os.getpid()
-        TEMP_PML = open(TEMP_PML_FILENAME, 'w')
-        print >> TEMP_PML, DEFAULT_PYMOL_INIT
-        write_pymol_script(TEMP_PML, clusters)
-        session_filename = os.path.join(CLUSTERING_RESULTS_DIR,'%s.pse' % (PDB_ID))
-        print >> TEMP_PML, 'save %s; quit;' % (session_filename)
-        TEMP_PML.close()
-        SINK = open('/dev/null')
-        subprocess.Popen(['pymol', '-qcd', '@%s' % TEMP_PML_FILENAME, ], stdout=SINK, stderr=SINK)
-        SINK.close()
-    
+#    if options.print_best_cluster is not None:
+#        cluster_file = open(options.print_best_cluster, 'w')
+#        for atom in sorted(clusters[0], key=lambda x: x.res_num):
+#            print >> cluster_file, '%s %d' % (atom.res_type.upper(), atom.res_num)
+#        cluster_file.close()
     logging.shutdown()
     exit()

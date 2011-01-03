@@ -4,11 +4,11 @@ select cluster0_ca, receptor and name CB and (resi 41,42,43,44,46,121,123,125,22
 select cluster0_red, br. cluster0_ca; deselect
 delete cluster0_ca
 color red, cluster0_red
-select cluster1_ca, receptor and name CB and (resi 150,196,200,203); deselect
+select cluster1_ca, receptor and name CB and (resi 12,79); deselect
 select cluster1_orange, br. cluster1_ca; deselect
 delete cluster1_ca
 color orange, cluster1_orange
-select cluster2_ca, receptor and name CB and (resi 12,79); deselect
+select cluster2_ca, receptor and name CB and (resi 150,196,200,203); deselect
 select cluster2_yellow, br. cluster2_ca; deselect
 delete cluster2_ca
 color yellow, cluster2_yellow

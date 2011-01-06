@@ -1,0 +1,8 @@
+#select within (4.0, (*:B and */0)) and not */0
+#select within (4.0, (*:B)) and not *:B
+
+# Model 1 contains only the peptide
+# Model 0 contains only the main chain
+select within (4.0, */1) and not */1
+show selected
+quit

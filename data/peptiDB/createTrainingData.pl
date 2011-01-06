@@ -222,7 +222,7 @@ sub createResultsForPdb{
 	#2) Go over each residue number:
 	#		- print residue properties to Training Matrix
 	
-	print "$mainChain\n";
+	#print "$mainChain\n";
 	open(PDB, "<$mainChain");
 	my @resLines = ();
 	chomp(@resLines = grep(/^ATOM .* CA /, <PDB>));
@@ -233,7 +233,7 @@ sub createResultsForPdb{
 		$resNumShift = $1 - 1;
 	}
 	else{
-		print "@@@@@@@@@@@@@@@2 $resLines[0] ##########\nATOM..................(....)\n";
+		print "$resLines[0]\nATOM..................(....)\n";
 		print @resLines;
 		die ("\tError: $mode pdb file $pdb has wrong format");
 	}
@@ -269,9 +269,9 @@ sub createResultsForPdb{
 	getLabels($pdb, $currContactWithPeptideData, \%contactingResidues, \%closeResidues, $mode, $mainChain);
 	
  	my @burriedList = keys %burriedResidues;
- 	print "burriedResidues: @burriedList\n";
+ 	#print "burriedResidues: @burriedList\n";
  	my @contactingList = keys %contactingResidues;
- 	print "contactingResidues: @contactingList\n";
+ 	#print "contactingResidues: @contactingList\n";
 
 	open(SURFACE, ">$surfaceResiduesOutputDir/$pdb.$mode.res") or die $!;
 	
@@ -493,7 +493,7 @@ sub getCloseResidues{
 			my $resName = $1;
 			my $resNum = $2;
 			trim(\$resNum);
-			print "$resName$resNum\tcontacting\n";
+			#print "$resName$resNum\tcontacting\n";
 			$$contactingResidues{$resNum} = "+1";
 		}
 	}
@@ -513,7 +513,8 @@ sub getContactingResidues{
 		
 #		$cmd = "(/vol/ek/share/bin/probe -NOHET -NOWATer -MC -U \"ALL\" $workDir$pdb.H.pdb > $workDir$pdb.kin) >& /dev/null\n";
         $cmd = "(/vol/ek/assaff/bin/probe -NOHET -NOWATer -MC -U \"ALL\" $workDir$pdb.H.pdb > $workDir$pdb.kin) >& /dev/null\n";
-		print `$cmd`;
+		#print `$cmd`;
+		`$cmd`;
 		if(!(-e "$workDir$pdb.kin")){
 			die ("\tError: probe failed on $workDir$pdb.H.pdb");
 		}
@@ -1108,6 +1109,7 @@ sub getBurriedResidues{
         print `$cmd`;
 		chdir $currentDir;
 	}
+	print "done.\n";
 	
 	if(! (-e "$workDir$pdb.rsa")){
 		die("\tERROR: missing surface access file: $workDir$pdb.rsa\n");

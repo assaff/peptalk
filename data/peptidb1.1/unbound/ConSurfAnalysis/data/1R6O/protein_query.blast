@@ -1,0 +1,4584 @@
+BLASTP 2.2.18 [Mar-02-2008]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+Query= PDB_ATOM
+         (94 letters)
+
+Database: sprot 
+           523,151 sequences; 184,678,199 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|A7ZJU9|CLPS_ECO24 ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|B7MHI7|CLPS_ECO45 ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|B7LD74|CLPS_ECO55 ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|P0A8Q8|CLPS_ECO57 ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|B5YSH7|CLPS_ECO5E ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|B7NM96|CLPS_ECO7I ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|B7MRT8|CLPS_ECO81 ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|B7M809|CLPS_ECO8A ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|C4ZY53|CLPS_ECOBW ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|B1X822|CLPS_ECODH ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|A7ZYI5|CLPS_ECOHS ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|A1A9B8|CLPS_ECOK1 ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|Q0TJG8|CLPS_ECOL5 ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|P0A8Q7|CLPS_ECOL6 ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|B1IWP1|CLPS_ECOLC ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|P0A8Q6|CLPS_ECOLI ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|B7NAN2|CLPS_ECOLU ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|B6I8V2|CLPS_ECOSE ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|B1LKM9|CLPS_ECOSM ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|Q1RE41|CLPS_ECOUT ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|B5F127|CLPS_SALA4 ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|Q57R56|CLPS_SALCH ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|B5FQ21|CLPS_SALDC ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|B5QYM8|CLPS_SALEP ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|B4TD06|CLPS_SALHS ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|B4T0G6|CLPS_SALNS ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|Q5PGK0|CLPS_SALPA ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|A9N7Z5|CLPS_SALPB ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|C0PXR3|CLPS_SALPC ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|B5BBT0|CLPS_SALPK ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|B4TRR1|CLPS_SALSV ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|P67650|CLPS_SALTI ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|P67649|CLPS_SALTY ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|B2TUJ7|CLPS_SHIB3 ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|Q323M1|CLPS_SHIBS ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|Q32E01|CLPS_SHIDS ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|Q0T8P4|CLPS_SHIF8 ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|P0A8Q9|CLPS_SHIFL ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|Q3Z3N8|CLPS_SHISS ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|A8AIK9|CLPS_CITK8 ATP-dependent Clp protease adapter protein ...   191   1e-48
+sp|B7UMX3|CLPS_ECO27 ATP-dependent Clp protease adapter protein ...   189   3e-48
+sp|B5R8G5|CLPS_SALG2 ATP-dependent Clp protease adapter protein ...   189   3e-48
+sp|B7LN49|CLPS_ESCF3 ATP-dependent Clp protease adapter protein ...   187   1e-47
+sp|A9MI06|CLPS_SALAR ATP-dependent Clp protease adapter protein ...   187   2e-47
+sp|A4W8P9|CLPS_ENT38 ATP-dependent Clp protease adapter protein ...   184   2e-46
+sp|B5XYB2|CLPS_KLEP3 ATP-dependent Clp protease adapter protein ...   182   5e-46
+sp|A6T6X9|CLPS_KLEP7 ATP-dependent Clp protease adapter protein ...   182   5e-46
+sp|A7MEQ8|CLPS_ENTS8 ATP-dependent Clp protease adapter protein ...   181   8e-46
+sp|A1JMC5|CLPS_YERE8 ATP-dependent Clp protease adapter protein ...   176   3e-44
+sp|A8GCD7|CLPS_SERP5 ATP-dependent Clp protease adapter protein ...   176   3e-44
+sp|A7FJZ4|CLPS_YERP3 ATP-dependent Clp protease adapter protein ...   175   7e-44
+sp|Q1CA97|CLPS_YERPA ATP-dependent Clp protease adapter protein ...   175   7e-44
+sp|B2KA00|CLPS_YERPB ATP-dependent Clp protease adapter protein ...   175   7e-44
+sp|Q8ZGD5|CLPS_YERPE ATP-dependent Clp protease adapter protein ...   175   7e-44
+sp|A9R4Y5|CLPS_YERPG ATP-dependent Clp protease adapter protein ...   175   7e-44
+sp|Q1CGD9|CLPS_YERPN ATP-dependent Clp protease adapter protein ...   175   7e-44
+sp|A4TN41|CLPS_YERPP ATP-dependent Clp protease adapter protein ...   175   7e-44
+sp|Q66CL0|CLPS_YERPS ATP-dependent Clp protease adapter protein ...   175   7e-44
+sp|B1JRG2|CLPS_YERPY ATP-dependent Clp protease adapter protein ...   175   7e-44
+sp|B2VC66|CLPS_ERWT9 ATP-dependent Clp protease adapter protein ...   174   2e-43
+sp|Q2NTZ9|CLPS_SODGM ATP-dependent Clp protease adapter protein ...   168   7e-42
+sp|C6DF43|CLPS_PECCP ATP-dependent Clp protease adapter protein ...   166   4e-41
+sp|Q6D3T7|CLPS_ERWCT ATP-dependent Clp protease adapter protein ...   163   2e-40
+sp|C5BEA1|CLPS_EDWI9 ATP-dependent Clp protease adapter protein ...   160   2e-39
+sp|Q7N6F7|CLPS_PHOLL ATP-dependent Clp protease adapter protein ...   150   2e-36
+sp|A5F294|CLPS_VIBC3 ATP-dependent Clp protease adapter protein ...   149   3e-36
+sp|Q9KSW3|CLPS_VIBCH ATP-dependent Clp protease adapter protein ...   149   3e-36
+sp|C3LLJ0|CLPS_VIBCM ATP-dependent Clp protease adapter protein ...   149   3e-36
+sp|Q5E3Y5|CLPS_VIBF1 ATP-dependent Clp protease adapter protein ...   149   3e-36
+sp|B5FG65|CLPS_VIBFM ATP-dependent Clp protease adapter protein ...   149   3e-36
+sp|B6EIX3|CLPS_ALISL ATP-dependent Clp protease adapter protein ...   148   8e-36
+sp|Q6LT14|CLPS_PHOPR ATP-dependent Clp protease adapter protein ...   147   2e-35
+sp|A0KJD6|CLPS_AERHH ATP-dependent Clp protease adapter protein ...   144   2e-34
+sp|A4SNL8|CLPS_AERS4 ATP-dependent Clp protease adapter protein ...   143   4e-34
+sp|Q5R0C3|CLPS_IDILO ATP-dependent Clp protease adapter protein ...   140   2e-33
+sp|Q7MJ40|CLPS_VIBVY ATP-dependent Clp protease adapter protein ...   138   1e-32
+sp|Q8DAS0|CLPS_VIBVU ATP-dependent Clp protease adapter protein ...   137   1e-32
+sp|Q87QY5|CLPS_VIBPA ATP-dependent Clp protease adapter protein ...   137   1e-32
+sp|B4S1R5|CLPS_ALTMD ATP-dependent Clp protease adapter protein ...   137   2e-32
+sp|A7N1L5|CLPS_VIBHB ATP-dependent Clp protease adapter protein ...   137   2e-32
+sp|B7VM32|CLPS_VIBSL ATP-dependent Clp protease adapter protein ...   135   7e-32
+sp|B2FQX5|CLPS_STRMK ATP-dependent Clp protease adapter protein ...   133   3e-31
+sp|B4SIN7|CLPS_STRM5 ATP-dependent Clp protease adapter protein ...   132   7e-31
+sp|A3QD84|CLPS_SHELP ATP-dependent Clp protease adapter protein ...   132   8e-31
+sp|B1KIC5|CLPS_SHEWM ATP-dependent Clp protease adapter protein ...   130   2e-30
+sp|A1WWV6|CLPS_HALHL ATP-dependent Clp protease adapter protein ...   130   2e-30
+sp|A1S7A6|CLPS_SHEAM ATP-dependent Clp protease adapter protein ...   130   3e-30
+sp|A8H5L6|CLPS_SHEPA ATP-dependent Clp protease adapter protein ...   127   1e-29
+sp|B8CLI1|CLPS_SHEPW ATP-dependent Clp protease adapter protein ...   127   1e-29
+sp|Q15T97|CLPS_PSEA6 ATP-dependent Clp protease adapter protein ...   127   2e-29
+sp|A4Y7L6|CLPS_SHEPC ATP-dependent Clp protease adapter protein ...   127   2e-29
+sp|A1RIX2|CLPS_SHESW ATP-dependent Clp protease adapter protein ...   127   2e-29
+sp|A0KW16|CLPS_SHESA ATP-dependent Clp protease adapter protein ...   127   2e-29
+sp|Q0HJP4|CLPS_SHESM ATP-dependent Clp protease adapter protein ...   127   2e-29
+sp|Q0HVZ0|CLPS_SHESR ATP-dependent Clp protease adapter protein ...   127   2e-29
+sp|Q8EDW4|CLPS_SHEON ATP-dependent Clp protease adapter protein ...   127   2e-29
+sp|B0TQ07|CLPS_SHEHH ATP-dependent Clp protease adapter protein ...   127   3e-29
+sp|A8FUH3|CLPS_SHESH ATP-dependent Clp protease adapter protein ...   127   3e-29
+sp|B8E950|CLPS_SHEB2 ATP-dependent Clp protease adapter protein ...   126   4e-29
+sp|A3D5F3|CLPS_SHEB5 ATP-dependent Clp protease adapter protein ...   126   4e-29
+sp|A6WP64|CLPS_SHEB8 ATP-dependent Clp protease adapter protein ...   126   4e-29
+sp|A9L4G4|CLPS_SHEB9 ATP-dependent Clp protease adapter protein ...   126   4e-29
+sp|A6V4G5|CLPS_PSEA7 ATP-dependent Clp protease adapter protein ...   126   4e-29
+sp|Q02NB3|CLPS_PSEAB ATP-dependent Clp protease adapter protein ...   126   4e-29
+sp|Q9I0L7|CLPS_PSEAE ATP-dependent Clp protease adapter protein ...   126   4e-29
+sp|A1U1H1|CLPS_MARAV ATP-dependent Clp protease adapter protein ...   126   5e-29
+sp|Q12N59|CLPS_SHEDO ATP-dependent Clp protease adapter protein ...   125   5e-29
+sp|Q081G4|CLPS_SHEFN ATP-dependent Clp protease adapter protein ...   125   1e-28
+sp|Q4UUJ9|CLPS_XANC8 ATP-dependent Clp protease adapter protein ...   124   1e-28
+sp|Q8P999|CLPS_XANCP ATP-dependent Clp protease adapter protein ...   124   1e-28
+sp|C3JY63|CLPS_PSEFS ATP-dependent Clp protease adapter protein ...   122   6e-28
+sp|Q87ZS0|CLPS_PSESM ATP-dependent Clp protease adapter protein ...   121   1e-27
+sp|Q4K9U7|CLPS_PSEF5 ATP-dependent Clp protease adapter protein ...   121   1e-27
+sp|Q8PL06|CLPS_XANAC ATP-dependent Clp protease adapter protein ...   121   1e-27
+sp|Q2P2Q9|CLPS_XANOM ATP-dependent Clp protease adapter protein ...   121   1e-27
+sp|Q5GZR3|CLPS_XANOR ATP-dependent Clp protease adapter protein ...   121   1e-27
+sp|Q8XWK9|CLPS_RALSO ATP-dependent Clp protease adapter protein ...   121   2e-27
+sp|Q1LJB0|CLPS_RALME ATP-dependent Clp protease adapter protein ...   120   2e-27
+sp|Q46XL9|CLPS_RALEJ ATP-dependent Clp protease adapter protein ...   120   2e-27
+sp|B3R6C0|CLPS_CUPTR ATP-dependent Clp protease adapter protein ...   120   2e-27
+sp|Q0K793|CLPS_RALEH ATP-dependent Clp protease adapter protein ...   120   2e-27
+sp|B1JBE9|CLPS_PSEPW ATP-dependent Clp protease adapter protein ...   120   2e-27
+sp|B2UAR2|CLPS_RALPJ ATP-dependent Clp protease adapter protein ...   120   2e-27
+sp|A4XUY4|CLPS_PSEMY ATP-dependent Clp protease adapter protein ...   120   2e-27
+sp|A5W1G7|CLPS_PSEP1 ATP-dependent Clp protease adapter protein ...   120   2e-27
+sp|B0KLX7|CLPS_PSEPG ATP-dependent Clp protease adapter protein ...   120   2e-27
+sp|Q88FS4|CLPS_PSEPK ATP-dependent Clp protease adapter protein ...   120   2e-27
+sp|A5IG97|CLPS_LEGPC ATP-dependent Clp protease adapter protein ...   120   2e-27
+sp|Q5WY89|CLPS_LEGPL ATP-dependent Clp protease adapter protein ...   120   2e-27
+sp|Q5X6T6|CLPS_LEGPA ATP-dependent Clp protease adapter protein ...   120   2e-27
+sp|Q5ZXB5|CLPS_LEGPH ATP-dependent Clp protease adapter protein ...   120   2e-27
+sp|C1DKZ8|CLPS_AZOVD ATP-dependent Clp protease adapter protein ...   120   2e-27
+sp|Q0A8P0|CLPS_ALHEH ATP-dependent Clp protease adapter protein ...   120   3e-27
+sp|Q48H65|CLPS_PSE14 ATP-dependent Clp protease adapter protein ...   119   4e-27
+sp|Q4ZRK6|CLPS_PSEU2 ATP-dependent Clp protease adapter protein ...   119   4e-27
+sp|Q47BF7|CLPS_DECAR ATP-dependent Clp protease adapter protein ...   119   5e-27
+sp|B2I9Y0|CLPS_XYLF2 ATP-dependent Clp protease adapter protein ...   117   1e-26
+sp|B0U6Q9|CLPS_XYLFM ATP-dependent Clp protease adapter protein ...   117   1e-26
+sp|Q87DL8|CLPS_XYLFT ATP-dependent Clp protease adapter protein ...   117   1e-26
+sp|B1XY29|CLPS_LEPCP ATP-dependent Clp protease adapter protein ...   117   2e-26
+sp|Q607H2|CLPS_METCA ATP-dependent Clp protease adapter protein ...   117   2e-26
+sp|B6INJ3|CLPS_RHOCS ATP-dependent Clp protease adapter protein ...   117   2e-26
+sp|Q9PDD7|CLPS_XYLFA ATP-dependent Clp protease adapter protein ...   115   9e-26
+sp|Q2W899|CLPS_MAGSA ATP-dependent Clp protease adapter protein ...   115   9e-26
+sp|Q7WKT7|CLPS_BORBR ATP-dependent Clp protease adapter protein ...   115   1e-25
+sp|Q7W7E8|CLPS_BORPA ATP-dependent Clp protease adapter protein ...   115   1e-25
+sp|B2T6J4|CLPS_BURPP ATP-dependent Clp protease adapter protein ...   114   1e-25
+sp|B1YVB1|CLPS_BURA4 ATP-dependent Clp protease adapter protein ...   114   2e-25
+sp|Q1BU94|CLPS_BURCA ATP-dependent Clp protease adapter protein ...   114   2e-25
+sp|B1JXD0|CLPS_BURCC ATP-dependent Clp protease adapter protein ...   114   2e-25
+sp|A0K9U2|CLPS_BURCH ATP-dependent Clp protease adapter protein ...   114   2e-25
+sp|B4E904|CLPS_BURCJ ATP-dependent Clp protease adapter protein ...   114   2e-25
+sp|Q0BCK0|CLPS_BURCM ATP-dependent Clp protease adapter protein ...   114   2e-25
+sp|A9AGM9|CLPS_BURM1 ATP-dependent Clp protease adapter protein ...   114   2e-25
+sp|Q39DM1|CLPS_BURS3 ATP-dependent Clp protease adapter protein ...   114   2e-25
+sp|A4JH39|CLPS_BURVG ATP-dependent Clp protease adapter protein ...   114   2e-25
+sp|A3MN51|CLPS_BURM7 ATP-dependent Clp protease adapter protein ...   114   2e-25
+sp|A2S519|CLPS_BURM9 ATP-dependent Clp protease adapter protein ...   114   2e-25
+sp|Q62HH7|CLPS_BURMA ATP-dependent Clp protease adapter protein ...   114   2e-25
+sp|A1V120|CLPS_BURMS ATP-dependent Clp protease adapter protein ...   114   2e-25
+sp|A3NSC3|CLPS_BURP0 ATP-dependent Clp protease adapter protein ...   114   2e-25
+sp|Q3JV77|CLPS_BURP1 ATP-dependent Clp protease adapter protein ...   114   2e-25
+sp|A3N6N9|CLPS_BURP6 ATP-dependent Clp protease adapter protein ...   114   2e-25
+sp|Q63WJ1|CLPS_BURPS ATP-dependent Clp protease adapter protein ...   114   2e-25
+sp|Q2KZI1|CLPS_BORA1 ATP-dependent Clp protease adapter protein ...   114   2e-25
+sp|Q13UV5|CLPS_BURXL ATP-dependent Clp protease adapter protein ...   114   2e-25
+sp|Q2T0I1|CLPS_BURTA ATP-dependent Clp protease adapter protein ...   114   2e-25
+sp|Q7VVC1|CLPS_BORPE ATP-dependent Clp protease adapter protein ...   113   3e-25
+sp|A4G7T9|CLPS_HERAR ATP-dependent Clp protease adapter protein ...   113   3e-25
+sp|A6T108|CLPS_JANMA ATP-dependent Clp protease adapter protein ...   113   3e-25
+sp|Q31GL7|CLPS_THICR ATP-dependent Clp protease adapter protein ...   113   4e-25
+sp|B2S618|CLPS_BRUA1 ATP-dependent Clp protease adapter protein ...   112   5e-25
+sp|A9M5I2|CLPS_BRUC2 ATP-dependent Clp protease adapter protein ...   112   5e-25
+sp|B0CGW7|CLPS_BRUSI ATP-dependent Clp protease adapter protein ...   112   5e-25
+sp|Q8G0C9|CLPS_BRUSU ATP-dependent Clp protease adapter protein ...   112   5e-25
+sp|C0RJD8|CLPS_BRUMB ATP-dependent Clp protease adapter protein ...   112   5e-25
+sp|Q8YHI3|CLPS_BRUME ATP-dependent Clp protease adapter protein ...   112   5e-25
+sp|Q5FTB0|CLPS_GLUOX ATP-dependent Clp protease adapter protein ...   112   5e-25
+sp|Q5NLR1|CLPS_ZYMMO ATP-dependent Clp protease adapter protein ...   112   6e-25
+sp|Q6FCI2|CLPS_ACIAD ATP-dependent Clp protease adapter protein ...   112   8e-25
+sp|Q6N535|CLPS2_RHOPA ATP-dependent Clp protease adapter protein...   112   9e-25
+sp|Q89JW5|CLPS2_BRAJA ATP-dependent Clp protease adapter protein...   112   9e-25
+sp|Q5P201|CLPS_AZOSE ATP-dependent Clp protease adapter protein ...   112   9e-25
+sp|B2JDY3|CLPS_BURP8 ATP-dependent Clp protease adapter protein ...   111   1e-24
+sp|A1K4J5|CLPS_AZOSB ATP-dependent Clp protease adapter protein ...   111   1e-24
+sp|A9IQ03|CLPS_BORPD ATP-dependent Clp protease adapter protein ...   111   1e-24
+sp|Q480C4|CLPS_COLP3 ATP-dependent Clp protease adapter protein ...   110   2e-24
+sp|Q2Y6T2|CLPS_NITMU ATP-dependent Clp protease adapter protein ...   110   2e-24
+sp|Q98MA3|CLPS1_RHILO ATP-dependent Clp protease adapter protein...   110   3e-24
+sp|Q8UFN4|CLPS1_AGRT5 ATP-dependent Clp protease adapter protein...   110   3e-24
+sp|Q0C3E2|CLPS_HYPNA ATP-dependent Clp protease adapter protein ...   110   3e-24
+sp|Q0AEG2|CLPS_NITEC ATP-dependent Clp protease adapter protein ...   110   3e-24
+sp|Q82TY3|CLPS_NITEU ATP-dependent Clp protease adapter protein ...   110   3e-24
+sp|B0T2L1|CLPS_CAUSK ATP-dependent Clp protease adapter protein ...   109   4e-24
+sp|Q7NRW1|CLPS_CHRVO ATP-dependent Clp protease adapter protein ...   109   6e-24
+sp|Q92Q63|CLPS1_RHIME ATP-dependent Clp protease adapter protein...   108   7e-24
+sp|B4R947|CLPS_PHEZH ATP-dependent Clp protease adapter protein ...   108   8e-24
+sp|B8GZM8|CLPS_CAUCN ATP-dependent Clp protease adapter protein ...   108   1e-23
+sp|Q9A5I0|CLPS_CAUCR ATP-dependent Clp protease adapter protein ...   107   2e-23
+sp|Q5LMA7|CLPS_SILPO ATP-dependent Clp protease adapter protein ...   106   3e-23
+sp|Q0AQ60|CLPS_MARMM ATP-dependent Clp protease adapter protein ...   106   5e-23
+sp|Q16AR8|CLPS_ROSDO ATP-dependent Clp protease adapter protein ...   105   7e-23
+sp|A4WPY6|CLPS_RHOS5 ATP-dependent Clp protease adapter protein ...   105   9e-23
+sp|Q1GDK0|CLPS_SILST ATP-dependent Clp protease adapter protein ...   105   1e-22
+sp|A1TS63|CLPS_ACIAC ATP-dependent Clp protease adapter protein ...   104   2e-22
+sp|A7HWX2|CLPS_PARL1 ATP-dependent Clp protease adapter protein ...   103   4e-22
+sp|Q6MNG7|CLPS_BDEBA ATP-dependent Clp protease adapter protein ...   101   2e-21
+sp|Q21UT1|CLPS_RHOFD ATP-dependent Clp protease adapter protein ...   100   3e-21
+sp|A1WRC7|CLPS_VEREI ATP-dependent Clp protease adapter protein ...   100   3e-21
+sp|C5CLL8|CLPS_VARPS ATP-dependent Clp protease adapter protein ...   100   4e-21
+sp|B8DJU4|CLPS_DESVM ATP-dependent Clp protease adapter protein ...    99   6e-21
+sp|Q6G5D4|CLPS_BARHE ATP-dependent Clp protease adapter protein ...    96   5e-20
+sp|Q6FZM5|CLPS_BARQU ATP-dependent Clp protease adapter protein ...    96   9e-20
+sp|C0QI24|CLPS_DESAH ATP-dependent Clp protease adapter protein ...    95   1e-19
+sp|Q30ZJ9|CLPS_DESDG ATP-dependent Clp protease adapter protein ...    94   2e-19
+sp|Q72BN4|CLPS_DESVH ATP-dependent Clp protease adapter protein ...    93   5e-19
+sp|A1VDN4|CLPS_DESVV ATP-dependent Clp protease adapter protein ...    93   5e-19
+sp|Q72RD1|CLPS_LEPIC ATP-dependent Clp protease adapter protein ...    93   6e-19
+sp|Q8F4D8|CLPS_LEPIN ATP-dependent Clp protease adapter protein ...    93   6e-19
+sp|Q1MQQ6|CLPS_LAWIP ATP-dependent Clp protease adapter protein ...    92   1e-18
+sp|Q2LQK8|CLPS_SYNAS ATP-dependent Clp protease adapter protein ...    92   1e-18
+sp|Q04RP4|CLPS_LEPBJ ATP-dependent Clp protease adapter protein ...    92   1e-18
+sp|Q051X7|CLPS_LEPBL ATP-dependent Clp protease adapter protein ...    92   1e-18
+sp|B8FGA3|CLPS_DESAA ATP-dependent Clp protease adapter protein ...    92   1e-18
+sp|Q9RWS9|CLPS_DEIRA ATP-dependent Clp protease adapter protein ...    91   2e-18
+sp|Q5F9I5|CLPS_NEIG1 ATP-dependent Clp protease adapter protein ...    89   1e-17
+sp|Q6APV7|CLPS_DESPS ATP-dependent Clp protease adapter protein ...    88   1e-17
+sp|A3DER9|CLPS_CLOTH ATP-dependent Clp protease adapter protein ...    88   2e-17
+sp|B0S9H9|CLPS_LEPBA ATP-dependent Clp protease adapter protein ...    87   2e-17
+sp|B0SS68|CLPS_LEPBP ATP-dependent Clp protease adapter protein ...    87   2e-17
+sp|Q9JZZ5|CLPS_NEIMB ATP-dependent Clp protease adapter protein ...    87   3e-17
+sp|Q9JV14|CLPS_NEIMA ATP-dependent Clp protease adapter protein ...    86   9e-17
+sp|Q1CZL3|CLPS_MYXXD ATP-dependent Clp protease adapter protein ...    82   8e-16
+sp|Q6NAI2|CLPS1_RHOPA ATP-dependent Clp protease adapter protein...    82   1e-15
+sp|Q7MSL3|CLPS_WOLSU ATP-dependent Clp protease adapter protein ...    82   1e-15
+sp|Q9PNI7|CLPS_CAMJE ATP-dependent Clp protease adapter protein ...    81   2e-15
+sp|Q5HTZ7|CLPS_CAMJR ATP-dependent Clp protease adapter protein ...    81   2e-15
+sp|A7H2Q0|CLPS_CAMJD ATP-dependent Clp protease adapter protein ...    81   2e-15
+sp|A8FMG0|CLPS_CAMJ8 ATP-dependent Clp protease adapter protein ...    81   2e-15
+sp|A1W094|CLPS_CAMJJ ATP-dependent Clp protease adapter protein ...    81   2e-15
+sp|Q7VFW0|CLPS_HELHP ATP-dependent Clp protease adapter protein ...    77   3e-14
+sp|Q73KU4|CLPS_TREDE ATP-dependent Clp protease adapter protein ...    74   2e-13
+sp|Q98HS2|CLPS2_RHILO ATP-dependent Clp protease adapter protein...    74   2e-13
+sp|Q97I31|CLPS_CLOAB ATP-dependent Clp protease adapter protein ...    72   8e-13
+sp|Q89RX6|CLPS1_BRAJA ATP-dependent Clp protease adapter protein...    70   4e-12
+sp|B9L8R5|CLPS_NAUPA ATP-dependent Clp protease adapter protein ...    67   2e-11
+sp|Q92N66|CLPS2_RHIME ATP-dependent Clp protease adapter protein...    65   9e-11
+sp|Q8UD95|CLPS2_AGRT5 ATP-dependent Clp protease adapter protein...    63   4e-10
+sp|P56066|CLPS_HELPY ATP-dependent Clp protease adapter protein ...    62   7e-10
+sp|Q9ZN32|CLPS_HELPJ ATP-dependent Clp protease adapter protein ...    62   1e-09
+sp|Q7NML9|CLPS_GLOVI ATP-dependent Clp protease adapter protein ...    49   8e-06
+sp|Q82D28|CLPS_STRAW ATP-dependent Clp protease adapter protein ...    47   3e-05
+sp|Q9S2G5|CLPS_STRCO ATP-dependent Clp protease adapter protein ...    46   8e-05
+sp|A0QCZ8|CLPS_MYCA1 ATP-dependent Clp protease adapter protein ...    44   4e-04
+sp|Q73X80|CLPS_MYCPA ATP-dependent Clp protease adapter protein ...    44   4e-04
+
+>sp|A7ZJU9|CLPS_ECO24 ATP-dependent Clp protease adapter protein
+           ClpS OS=Escherichia coli O139:H28 (strain E24377A /
+           ETEC) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|B7MHI7|CLPS_ECO45 ATP-dependent Clp protease adapter protein
+           ClpS OS=Escherichia coli O45:K1 (strain S88 / ExPEC)
+           GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|B7LD74|CLPS_ECO55 ATP-dependent Clp protease adapter protein
+           ClpS OS=Escherichia coli (strain 55989 / EAEC) GN=clpS
+           PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|P0A8Q8|CLPS_ECO57 ATP-dependent Clp protease adapter protein
+           ClpS OS=Escherichia coli O157:H7 GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|B5YSH7|CLPS_ECO5E ATP-dependent Clp protease adapter protein
+           ClpS OS=Escherichia coli O157:H7 (strain EC4115 / EHEC)
+           GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|B7NM96|CLPS_ECO7I ATP-dependent Clp protease adapter protein
+           ClpS OS=Escherichia coli O7:K1 (strain IAI39 / ExPEC)
+           GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|B7MRT8|CLPS_ECO81 ATP-dependent Clp protease adapter protein
+           ClpS OS=Escherichia coli O81 (strain ED1a) GN=clpS PE=3
+           SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|B7M809|CLPS_ECO8A ATP-dependent Clp protease adapter protein
+           ClpS OS=Escherichia coli O8 (strain IAI1) GN=clpS PE=3
+           SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|C4ZY53|CLPS_ECOBW ATP-dependent Clp protease adapter protein
+           ClpS OS=Escherichia coli (strain K12 / MC4100 / BW2952)
+           GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|B1X822|CLPS_ECODH ATP-dependent Clp protease adapter protein
+           ClpS OS=Escherichia coli (strain K12 / DH10B) GN=clpS
+           PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|A7ZYI5|CLPS_ECOHS ATP-dependent Clp protease adapter protein
+           ClpS OS=Escherichia coli O9:H4 (strain HS) GN=clpS PE=3
+           SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|A1A9B8|CLPS_ECOK1 ATP-dependent Clp protease adapter protein
+           ClpS OS=Escherichia coli O1:K1 / APEC GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|Q0TJG8|CLPS_ECOL5 ATP-dependent Clp protease adapter protein
+           ClpS OS=Escherichia coli O6:K15:H31 (strain 536 / UPEC)
+           GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|P0A8Q7|CLPS_ECOL6 ATP-dependent Clp protease adapter protein
+           ClpS OS=Escherichia coli O6 GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|B1IWP1|CLPS_ECOLC ATP-dependent Clp protease adapter protein
+           ClpS OS=Escherichia coli (strain ATCC 8739 / DSM 1576 /
+           Crooks) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|P0A8Q6|CLPS_ECOLI ATP-dependent Clp protease adapter protein
+           ClpS OS=Escherichia coli (strain K12) GN=clpS PE=1 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|B7NAN2|CLPS_ECOLU ATP-dependent Clp protease adapter protein
+           ClpS OS=Escherichia coli O17:K52:H18 (strain UMN026 /
+           ExPEC) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|B6I8V2|CLPS_ECOSE ATP-dependent Clp protease adapter protein
+           ClpS OS=Escherichia coli (strain SE11) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|B1LKM9|CLPS_ECOSM ATP-dependent Clp protease adapter protein
+           ClpS OS=Escherichia coli (strain SMS-3-5 / SECEC)
+           GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|Q1RE41|CLPS_ECOUT ATP-dependent Clp protease adapter protein
+           ClpS OS=Escherichia coli (strain UTI89 / UPEC) GN=clpS
+           PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|B5F127|CLPS_SALA4 ATP-dependent Clp protease adapter protein
+           ClpS OS=Salmonella agona (strain SL483) GN=clpS PE=3
+           SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLVEDSVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|Q57R56|CLPS_SALCH ATP-dependent Clp protease adapter protein
+           ClpS OS=Salmonella choleraesuis GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLVEDSVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|B5FQ21|CLPS_SALDC ATP-dependent Clp protease adapter protein
+           ClpS OS=Salmonella dublin (strain CT_02021853) GN=clpS
+           PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLVEDSVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|B5QYM8|CLPS_SALEP ATP-dependent Clp protease adapter protein
+           ClpS OS=Salmonella enteritidis PT4 (strain P125109)
+           GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLVEDSVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|B4TD06|CLPS_SALHS ATP-dependent Clp protease adapter protein
+           ClpS OS=Salmonella heidelberg (strain SL476) GN=clpS
+           PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLVEDSVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|B4T0G6|CLPS_SALNS ATP-dependent Clp protease adapter protein
+           ClpS OS=Salmonella newport (strain SL254) GN=clpS PE=3
+           SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLVEDSVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|Q5PGK0|CLPS_SALPA ATP-dependent Clp protease adapter protein
+           ClpS OS=Salmonella paratyphi A GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLVEDSVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|A9N7Z5|CLPS_SALPB ATP-dependent Clp protease adapter protein
+           ClpS OS=Salmonella paratyphi B (strain ATCC BAA-1250 /
+           SPB7) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLVEDSVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|C0PXR3|CLPS_SALPC ATP-dependent Clp protease adapter protein
+           ClpS OS=Salmonella paratyphi C (strain RKS4594) GN=clpS
+           PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLVEDSVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|B5BBT0|CLPS_SALPK ATP-dependent Clp protease adapter protein
+           ClpS OS=Salmonella paratyphi A (strain AKU_12601)
+           GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLVEDSVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|B4TRR1|CLPS_SALSV ATP-dependent Clp protease adapter protein
+           ClpS OS=Salmonella schwarzengrund (strain CVM19633)
+           GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLVEDSVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|P67650|CLPS_SALTI ATP-dependent Clp protease adapter protein
+           ClpS OS=Salmonella typhi GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLVEDSVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|P67649|CLPS_SALTY ATP-dependent Clp protease adapter protein
+           ClpS OS=Salmonella typhimurium GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLVEDSVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|B2TUJ7|CLPS_SHIB3 ATP-dependent Clp protease adapter protein
+           ClpS OS=Shigella boydii serotype 18 (strain CDC 3083-94
+           / BS512) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|Q323M1|CLPS_SHIBS ATP-dependent Clp protease adapter protein
+           ClpS OS=Shigella boydii serotype 4 (strain Sb227)
+           GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|Q32E01|CLPS_SHIDS ATP-dependent Clp protease adapter protein
+           ClpS OS=Shigella dysenteriae serotype 1 (strain Sd197)
+           GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|Q0T8P4|CLPS_SHIF8 ATP-dependent Clp protease adapter protein
+           ClpS OS=Shigella flexneri serotype 5b (strain 8401)
+           GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|P0A8Q9|CLPS_SHIFL ATP-dependent Clp protease adapter protein
+           ClpS OS=Shigella flexneri GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|Q3Z3N8|CLPS_SHISS ATP-dependent Clp protease adapter protein
+           ClpS OS=Shigella sonnei (strain Ss046) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|A8AIK9|CLPS_CITK8 ATP-dependent Clp protease adapter protein
+           ClpS OS=Citrobacter koseri (strain ATCC BAA-895 / CDC
+           4225-83 / SGSC4696) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  191 bits (485), Expect = 1e-48,   Method: Compositional matrix adjust.
+ Identities = 94/100 (94%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLAEDKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|B7UMX3|CLPS_ECO27 ATP-dependent Clp protease adapter protein
+           ClpS OS=Escherichia coli O127:H6 (strain E2348/69 /
+           EPEC) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  189 bits (481), Expect = 3e-48,   Method: Compositional matrix adjust.
+ Identities = 93/100 (93%), Positives = 94/100 (94%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDF+QL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFEQLAEEKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|B5R8G5|CLPS_SALG2 ATP-dependent Clp protease adapter protein
+           ClpS OS=Salmonella gallinarum (strain 287/91 / NCTC
+           13346) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  189 bits (481), Expect = 3e-48,   Method: Compositional matrix adjust.
+ Identities = 93/100 (93%), Positives = 93/100 (93%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLM AVH
+Sbjct: 7   WLDFDQLVEDSVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMFAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 106
+
+
+>sp|B7LN49|CLPS_ESCF3 ATP-dependent Clp protease adapter protein
+           ClpS OS=Escherichia fergusonii (strain ATCC 35469 / DSM
+           13698 / CDC 0568-73) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  187 bits (476), Expect = 1e-47,   Method: Compositional matrix adjust.
+ Identities = 92/100 (92%), Positives = 92/100 (92%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLML VH
+Sbjct: 7   WLDFDQLAEDKVRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLTVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVAMVN YARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAMVNNYARENEHPLLCTLEKA 106
+
+
+>sp|A9MI06|CLPS_SALAR ATP-dependent Clp protease adapter protein
+           ClpS OS=Salmonella arizonae (strain ATCC BAA-731 /
+           CDC346-86 / RSK2980) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  187 bits (475), Expect = 2e-47,   Method: Compositional matrix adjust.
+ Identities = 92/100 (92%), Positives = 93/100 (93%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH
+Sbjct: 7   WLDFDQLVEDDLRDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKV MVN+YARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVEMVNQYARENEHPLLCTLEKA 106
+
+
+>sp|A4W8P9|CLPS_ENT38 ATP-dependent Clp protease adapter protein
+           ClpS OS=Enterobacter sp. (strain 638) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  184 bits (466), Expect = 2e-46,   Method: Compositional matrix adjust.
+ Identities = 88/100 (88%), Positives = 93/100 (93%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFDQL      DALKPPSMYKV+L+NDDYTPMEFVIDVLQKFFSYDVERATQLML VH
+Sbjct: 7   WLDFDQLAEDKVRDALKPPSMYKVMLMNDDYTPMEFVIDVLQKFFSYDVERATQLMLTVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           Y+GKAICG+FTAEVAETKVAMVN+YARENEHPLLCTLEKA
+Sbjct: 67  YRGKAICGIFTAEVAETKVAMVNEYARENEHPLLCTLEKA 106
+
+
+>sp|B5XYB2|CLPS_KLEP3 ATP-dependent Clp protease adapter protein
+           ClpS OS=Klebsiella pneumoniae (strain 342) GN=clpS PE=3
+           SV=1
+          Length = 105
+
+ Score =  182 bits (462), Expect = 5e-46,   Method: Compositional matrix adjust.
+ Identities = 88/100 (88%), Positives = 92/100 (92%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDF+ L      DA+KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLML VH
+Sbjct: 6   WLDFEHLVDDEVRDAIKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLTVH 65
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           Y+GKAICGVFTAEVAETKVAMVN+YARENEHPLLCTLEKA
+Sbjct: 66  YEGKAICGVFTAEVAETKVAMVNQYARENEHPLLCTLEKA 105
+
+
+>sp|A6T6X9|CLPS_KLEP7 ATP-dependent Clp protease adapter protein
+           ClpS OS=Klebsiella pneumoniae subsp. pneumoniae (strain
+           ATCC 700721 / MGH 78578) GN=clpS PE=3 SV=1
+          Length = 105
+
+ Score =  182 bits (462), Expect = 5e-46,   Method: Compositional matrix adjust.
+ Identities = 88/100 (88%), Positives = 92/100 (92%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDF+ L      DA+KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLML VH
+Sbjct: 6   WLDFEHLVDDEVRDAIKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLTVH 65
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           Y+GKAICGVFTAEVAETKVAMVN+YARENEHPLLCTLEKA
+Sbjct: 66  YEGKAICGVFTAEVAETKVAMVNQYARENEHPLLCTLEKA 105
+
+
+>sp|A7MEQ8|CLPS_ENTS8 ATP-dependent Clp protease adapter protein
+           ClpS OS=Enterobacter sakazakii (strain ATCC BAA-894)
+           GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  181 bits (460), Expect = 8e-46,   Method: Compositional matrix adjust.
+ Identities = 88/100 (88%), Positives = 92/100 (92%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WLDFD L      +ALKPPSMYKVIL+NDDYTPMEFVIDVLQKFFSYDVERATQLML VH
+Sbjct: 7   WLDFDHLAEDDLREALKPPSMYKVILMNDDYTPMEFVIDVLQKFFSYDVERATQLMLTVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVA+VNKYAREN+HPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVALVNKYARENDHPLLCTLEKA 106
+
+
+>sp|A1JMC5|CLPS_YERE8 ATP-dependent Clp protease adapter protein
+           ClpS OS=Yersinia enterocolitica serotype O:8 / biotype
+           1B (strain 8081) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  176 bits (447), Expect = 3e-44,   Method: Compositional matrix adjust.
+ Identities = 85/100 (85%), Positives = 91/100 (91%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFD------QLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WL+F+      Q++ALKPPSMYKVIL NDDYTPMEFVIDVLQKFFSYD+ERATQLML VH
+Sbjct: 7   WLNFEHLVKDKQIEALKPPSMYKVILNNDDYTPMEFVIDVLQKFFSYDIERATQLMLNVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVA VN+YARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAHVNQYARENEHPLLCTLEKA 106
+
+
+>sp|A8GCD7|CLPS_SERP5 ATP-dependent Clp protease adapter protein
+           ClpS OS=Serratia proteamaculans (strain 568) GN=clpS
+           PE=3 SV=1
+          Length = 106
+
+ Score =  176 bits (446), Expect = 3e-44,   Method: Compositional matrix adjust.
+ Identities = 84/100 (84%), Positives = 90/100 (90%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFD------QLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WL+F+      Q+DA+KPPSMYKVIL NDDYTPMEFVIDVLQKFFSYD+ERATQLML VH
+Sbjct: 7   WLNFEHLAEEKQIDAVKPPSMYKVILNNDDYTPMEFVIDVLQKFFSYDIERATQLMLTVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKV  VN+YARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVVHVNRYARENEHPLLCTLEKA 106
+
+
+>sp|A7FJZ4|CLPS_YERP3 ATP-dependent Clp protease adapter protein
+           ClpS OS=Yersinia pseudotuberculosis serotype O:1b
+           (strain IP 31758) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  175 bits (444), Expect = 7e-44,   Method: Compositional matrix adjust.
+ Identities = 84/100 (84%), Positives = 91/100 (91%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFD------QLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WL+F+      Q++AL+PPSMYKVIL NDDYTPMEFVIDVLQKFFSYD+ERATQLML VH
+Sbjct: 7   WLNFEHLVKDKQIEALQPPSMYKVILNNDDYTPMEFVIDVLQKFFSYDIERATQLMLNVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVA VN+YARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAHVNQYARENEHPLLCTLEKA 106
+
+
+>sp|Q1CA97|CLPS_YERPA ATP-dependent Clp protease adapter protein
+           ClpS OS=Yersinia pestis bv. Antiqua (strain Antiqua)
+           GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  175 bits (444), Expect = 7e-44,   Method: Compositional matrix adjust.
+ Identities = 84/100 (84%), Positives = 91/100 (91%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFD------QLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WL+F+      Q++AL+PPSMYKVIL NDDYTPMEFVIDVLQKFFSYD+ERATQLML VH
+Sbjct: 7   WLNFEHLVKDKQIEALQPPSMYKVILNNDDYTPMEFVIDVLQKFFSYDIERATQLMLNVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVA VN+YARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAHVNQYARENEHPLLCTLEKA 106
+
+
+>sp|B2KA00|CLPS_YERPB ATP-dependent Clp protease adapter protein
+           ClpS OS=Yersinia pseudotuberculosis serotype IB (strain
+           PB1/+) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  175 bits (444), Expect = 7e-44,   Method: Compositional matrix adjust.
+ Identities = 84/100 (84%), Positives = 91/100 (91%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFD------QLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WL+F+      Q++AL+PPSMYKVIL NDDYTPMEFVIDVLQKFFSYD+ERATQLML VH
+Sbjct: 7   WLNFEHLVKDKQIEALQPPSMYKVILNNDDYTPMEFVIDVLQKFFSYDIERATQLMLNVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVA VN+YARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAHVNQYARENEHPLLCTLEKA 106
+
+
+>sp|Q8ZGD5|CLPS_YERPE ATP-dependent Clp protease adapter protein
+           ClpS OS=Yersinia pestis GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  175 bits (444), Expect = 7e-44,   Method: Compositional matrix adjust.
+ Identities = 84/100 (84%), Positives = 91/100 (91%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFD------QLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WL+F+      Q++AL+PPSMYKVIL NDDYTPMEFVIDVLQKFFSYD+ERATQLML VH
+Sbjct: 7   WLNFEHLVKDKQIEALQPPSMYKVILNNDDYTPMEFVIDVLQKFFSYDIERATQLMLNVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVA VN+YARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAHVNQYARENEHPLLCTLEKA 106
+
+
+>sp|A9R4Y5|CLPS_YERPG ATP-dependent Clp protease adapter protein
+           ClpS OS=Yersinia pestis bv. Antiqua (strain Angola)
+           GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  175 bits (444), Expect = 7e-44,   Method: Compositional matrix adjust.
+ Identities = 84/100 (84%), Positives = 91/100 (91%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFD------QLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WL+F+      Q++AL+PPSMYKVIL NDDYTPMEFVIDVLQKFFSYD+ERATQLML VH
+Sbjct: 7   WLNFEHLVKDKQIEALQPPSMYKVILNNDDYTPMEFVIDVLQKFFSYDIERATQLMLNVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVA VN+YARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAHVNQYARENEHPLLCTLEKA 106
+
+
+>sp|Q1CGD9|CLPS_YERPN ATP-dependent Clp protease adapter protein
+           ClpS OS=Yersinia pestis bv. Antiqua (strain Nepal516)
+           GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  175 bits (444), Expect = 7e-44,   Method: Compositional matrix adjust.
+ Identities = 84/100 (84%), Positives = 91/100 (91%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFD------QLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WL+F+      Q++AL+PPSMYKVIL NDDYTPMEFVIDVLQKFFSYD+ERATQLML VH
+Sbjct: 7   WLNFEHLVKDKQIEALQPPSMYKVILNNDDYTPMEFVIDVLQKFFSYDIERATQLMLNVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVA VN+YARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAHVNQYARENEHPLLCTLEKA 106
+
+
+>sp|A4TN41|CLPS_YERPP ATP-dependent Clp protease adapter protein
+           ClpS OS=Yersinia pestis (strain Pestoides F) GN=clpS
+           PE=3 SV=1
+          Length = 106
+
+ Score =  175 bits (444), Expect = 7e-44,   Method: Compositional matrix adjust.
+ Identities = 84/100 (84%), Positives = 91/100 (91%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFD------QLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WL+F+      Q++AL+PPSMYKVIL NDDYTPMEFVIDVLQKFFSYD+ERATQLML VH
+Sbjct: 7   WLNFEHLVKDKQIEALQPPSMYKVILNNDDYTPMEFVIDVLQKFFSYDIERATQLMLNVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVA VN+YARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAHVNQYARENEHPLLCTLEKA 106
+
+
+>sp|Q66CL0|CLPS_YERPS ATP-dependent Clp protease adapter protein
+           ClpS OS=Yersinia pseudotuberculosis GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  175 bits (444), Expect = 7e-44,   Method: Compositional matrix adjust.
+ Identities = 84/100 (84%), Positives = 91/100 (91%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFD------QLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WL+F+      Q++AL+PPSMYKVIL NDDYTPMEFVIDVLQKFFSYD+ERATQLML VH
+Sbjct: 7   WLNFEHLVKDKQIEALQPPSMYKVILNNDDYTPMEFVIDVLQKFFSYDIERATQLMLNVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVA VN+YARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAHVNQYARENEHPLLCTLEKA 106
+
+
+>sp|B1JRG2|CLPS_YERPY ATP-dependent Clp protease adapter protein
+           ClpS OS=Yersinia pseudotuberculosis serotype O:3 (strain
+           YPIII) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  175 bits (444), Expect = 7e-44,   Method: Compositional matrix adjust.
+ Identities = 84/100 (84%), Positives = 91/100 (91%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFD------QLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WL+F+      Q++AL+PPSMYKVIL NDDYTPMEFVIDVLQKFFSYD+ERATQLML VH
+Sbjct: 7   WLNFEHLVKDKQIEALQPPSMYKVILNNDDYTPMEFVIDVLQKFFSYDIERATQLMLNVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVA VN+YARENEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAHVNQYARENEHPLLCTLEKA 106
+
+
+>sp|B2VC66|CLPS_ERWT9 ATP-dependent Clp protease adapter protein
+           ClpS OS=Erwinia tasmaniensis (strain DSM 17950 / Et1/99)
+           GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  174 bits (440), Expect = 2e-43,   Method: Compositional matrix adjust.
+ Identities = 84/100 (84%), Positives = 90/100 (90%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WL+F+QL      + LKPPSMYKVIL NDD+TPMEFVIDVLQKFFSYD+ERATQLML VH
+Sbjct: 7   WLNFEQLADDKVREELKPPSMYKVILNNDDFTPMEFVIDVLQKFFSYDIERATQLMLTVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           YQGKAICGVFTAEVAETKVA VNKYAR+NEHPLLCTLEKA
+Sbjct: 67  YQGKAICGVFTAEVAETKVAHVNKYARDNEHPLLCTLEKA 106
+
+
+>sp|Q2NTZ9|CLPS_SODGM ATP-dependent Clp protease adapter protein
+           ClpS OS=Sodalis glossinidius (strain morsitans) GN=clpS
+           PE=3 SV=1
+          Length = 106
+
+ Score =  168 bits (426), Expect = 7e-42,   Method: Compositional matrix adjust.
+ Identities = 76/87 (87%), Positives = 83/87 (95%)
+
+Query: 8   DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAE 67
+           DA++PPSMYKVIL+NDDYTPMEFVIDVLQKFFSYDVERATQLML VHYQGKA+CG++TAE
+Sbjct: 20  DAVRPPSMYKVILINDDYTPMEFVIDVLQKFFSYDVERATQLMLRVHYQGKAVCGIYTAE 79
+
+Query: 68  VAETKVAMVNKYARENEHPLLCTLEKA 94
+           VAETK   VN+YARENEHPLLCTLEKA
+Sbjct: 80  VAETKAVHVNRYARENEHPLLCTLEKA 106
+
+
+>sp|C6DF43|CLPS_PECCP ATP-dependent Clp protease adapter protein
+           ClpS OS=Pectobacterium carotovorum subsp. carotovorum
+           (strain PC1) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  166 bits (420), Expect = 4e-41,   Method: Compositional matrix adjust.
+ Identities = 76/89 (85%), Positives = 82/89 (92%)
+
+Query: 6   QLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFT 65
+           Q + L+PPSMY V+L NDDYTPMEFVIDVLQKFFSYD+ERATQLML VHYQGKAICGVF+
+Sbjct: 18  QKEKLQPPSMYNVVLNNDDYTPMEFVIDVLQKFFSYDIERATQLMLTVHYQGKAICGVFS 77
+
+Query: 66  AEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           AEVAETKV  VN+YARENEHPLLCTLEKA
+Sbjct: 78  AEVAETKVVQVNRYARENEHPLLCTLEKA 106
+
+
+>sp|Q6D3T7|CLPS_ERWCT ATP-dependent Clp protease adapter protein
+           ClpS OS=Erwinia carotovora subsp. atroseptica GN=clpS
+           PE=3 SV=1
+          Length = 106
+
+ Score =  163 bits (413), Expect = 2e-40,   Method: Compositional matrix adjust.
+ Identities = 75/89 (84%), Positives = 81/89 (91%)
+
+Query: 6   QLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFT 65
+           Q + L+PPSMY V+L NDDYTPMEFVIDVLQKFFSYD+ERATQLML VHYQGKAICGVF+
+Sbjct: 18  QKEKLQPPSMYNVVLNNDDYTPMEFVIDVLQKFFSYDIERATQLMLTVHYQGKAICGVFS 77
+
+Query: 66  AEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           AEVAETKV  VN+YARENE PLLCTLEKA
+Sbjct: 78  AEVAETKVVQVNRYARENEQPLLCTLEKA 106
+
+
+>sp|C5BEA1|CLPS_EDWI9 ATP-dependent Clp protease adapter protein
+           ClpS OS=Edwardsiella ictaluri (strain 93-146) GN=clpS
+           PE=3 SV=1
+          Length = 106
+
+ Score =  160 bits (405), Expect = 2e-39,   Method: Compositional matrix adjust.
+ Identities = 74/100 (74%), Positives = 87/100 (87%), Gaps = 6/100 (6%)
+
+Query: 1   WLDFDQL------DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           WL+ + L       A+KPPS+Y VIL NDDYTPMEFVI+VLQ FF+YD+ERATQLML VH
+Sbjct: 7   WLNLEPLAEDQTRRAVKPPSLYSVILNNDDYTPMEFVIEVLQTFFAYDIERATQLMLTVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           Y+GKA+CGVFTAEVAETKVA++N+YAR+NEHPLLCTLEKA
+Sbjct: 67  YKGKAVCGVFTAEVAETKVALINRYARDNEHPLLCTLEKA 106
+
+
+>sp|Q7N6F7|CLPS_PHOLL ATP-dependent Clp protease adapter protein
+           ClpS OS=Photorhabdus luminescens subsp. laumondii
+           GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  150 bits (380), Expect = 2e-36,   Method: Compositional matrix adjust.
+ Identities = 69/84 (82%), Positives = 77/84 (91%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L+PPSMY+VIL NDDYTPMEFV+DVL+KFFSYD+ERATQLML VHYQGKA+CGV+TAEVA
+Sbjct: 22  LQPPSMYQVILNNDDYTPMEFVVDVLRKFFSYDIERATQLMLDVHYQGKAVCGVYTAEVA 81
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEK 93
+           ETK A VN YA+E  HPLLCTLEK
+Sbjct: 82  ETKAAQVNMYAKEYGHPLLCTLEK 105
+
+
+>sp|A5F294|CLPS_VIBC3 ATP-dependent Clp protease adapter protein
+           ClpS OS=Vibrio cholerae serotype O1 (strain ATCC 39541 /
+           Ogawa 395 / O395) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  149 bits (377), Expect = 3e-36,   Method: Compositional matrix adjust.
+ Identities = 70/100 (70%), Positives = 85/100 (85%), Gaps = 6/100 (6%)
+
+Query: 1   WL--DFDQLD----ALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           W+  DFD L+    A+KPPSMY V+L NDDYTPM+FVI++L++FFS D+ERATQ+ML VH
+Sbjct: 7   WISPDFDLLEKEKTAVKPPSMYHVVLNNDDYTPMDFVIEILERFFSMDIERATQVMLKVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           Y+GKAICG FTAEVAETKVA V  Y+RENEHPLLCT+E+A
+Sbjct: 67  YEGKAICGTFTAEVAETKVAQVTMYSRENEHPLLCTMEQA 106
+
+
+>sp|Q9KSW3|CLPS_VIBCH ATP-dependent Clp protease adapter protein
+           ClpS OS=Vibrio cholerae GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  149 bits (377), Expect = 3e-36,   Method: Compositional matrix adjust.
+ Identities = 70/100 (70%), Positives = 85/100 (85%), Gaps = 6/100 (6%)
+
+Query: 1   WL--DFDQLD----ALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           W+  DFD L+    A+KPPSMY V+L NDDYTPM+FVI++L++FFS D+ERATQ+ML VH
+Sbjct: 7   WISPDFDLLEKEKTAVKPPSMYHVVLNNDDYTPMDFVIEILERFFSMDIERATQVMLKVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           Y+GKAICG FTAEVAETKVA V  Y+RENEHPLLCT+E+A
+Sbjct: 67  YEGKAICGTFTAEVAETKVAQVTMYSRENEHPLLCTMEQA 106
+
+
+>sp|C3LLJ0|CLPS_VIBCM ATP-dependent Clp protease adapter protein
+           ClpS OS=Vibrio cholerae serotype O1 (strain M66-2)
+           GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  149 bits (377), Expect = 3e-36,   Method: Compositional matrix adjust.
+ Identities = 70/100 (70%), Positives = 85/100 (85%), Gaps = 6/100 (6%)
+
+Query: 1   WL--DFDQLD----ALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVH 54
+           W+  DFD L+    A+KPPSMY V+L NDDYTPM+FVI++L++FFS D+ERATQ+ML VH
+Sbjct: 7   WISPDFDLLEKEKTAVKPPSMYHVVLNNDDYTPMDFVIEILERFFSMDIERATQVMLKVH 66
+
+Query: 55  YQGKAICGVFTAEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           Y+GKAICG FTAEVAETKVA V  Y+RENEHPLLCT+E+A
+Sbjct: 67  YEGKAICGTFTAEVAETKVAQVTMYSRENEHPLLCTMEQA 106
+
+
+>sp|Q5E3Y5|CLPS_VIBF1 ATP-dependent Clp protease adapter protein
+           ClpS OS=Vibrio fischeri (strain ATCC 700601 / ES114)
+           GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  149 bits (377), Expect = 3e-36,   Method: Compositional matrix adjust.
+ Identities = 66/85 (77%), Positives = 78/85 (91%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L+PPSMYKV+L NDDYTPMEFV++VL KFFS D+E+ATQLML VHY+GKA+CG FTAEVA
+Sbjct: 22  LRPPSMYKVVLNNDDYTPMEFVVEVLDKFFSMDLEKATQLMLTVHYEGKAVCGTFTAEVA 81
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKVA VN Y+R+NEHPLLCT+E+A
+Sbjct: 82  ETKVAQVNTYSRDNEHPLLCTMEQA 106
+
+
+>sp|B5FG65|CLPS_VIBFM ATP-dependent Clp protease adapter protein
+           ClpS OS=Vibrio fischeri (strain MJ11) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  149 bits (377), Expect = 3e-36,   Method: Compositional matrix adjust.
+ Identities = 66/85 (77%), Positives = 78/85 (91%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L+PPSMYKV+L NDDYTPMEFV++VL KFFS D+E+ATQLML VHY+GKA+CG FTAEVA
+Sbjct: 22  LRPPSMYKVVLNNDDYTPMEFVVEVLDKFFSMDLEKATQLMLTVHYEGKAVCGTFTAEVA 81
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKVA VN Y+R+NEHPLLCT+E+A
+Sbjct: 82  ETKVAQVNTYSRDNEHPLLCTMEQA 106
+
+
+>sp|B6EIX3|CLPS_ALISL ATP-dependent Clp protease adapter protein
+           ClpS OS=Aliivibrio salmonicida (strain LFI1238) GN=clpS
+           PE=3 SV=1
+          Length = 106
+
+ Score =  148 bits (374), Expect = 8e-36,   Method: Compositional matrix adjust.
+ Identities = 67/86 (77%), Positives = 78/86 (90%)
+
+Query: 9   ALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEV 68
+            LKPP MYKV+L NDDYTPMEFV++VL KFFS D+E+ATQLML VHY+GKA+CGVFTAEV
+Sbjct: 21  GLKPPPMYKVVLNNDDYTPMEFVVEVLDKFFSMDLEKATQLMLTVHYEGKAVCGVFTAEV 80
+
+Query: 69  AETKVAMVNKYARENEHPLLCTLEKA 94
+           AETKVA VN Y+R+NEHPLLCT+E+A
+Sbjct: 81  AETKVAQVNIYSRDNEHPLLCTMEQA 106
+
+
+>sp|Q6LT14|CLPS_PHOPR ATP-dependent Clp protease adapter protein
+           ClpS OS=Photobacterium profundum GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  147 bits (371), Expect = 2e-35,   Method: Compositional matrix adjust.
+ Identities = 68/85 (80%), Positives = 78/85 (91%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           +KPP+MYKV+L NDDYTPM+FVI+VLQKFFS D+E+ATQLML VHY+GKAICG FTAEVA
+Sbjct: 22  VKPPAMYKVVLNNDDYTPMDFVIEVLQKFFSMDMEKATQLMLNVHYEGKAICGTFTAEVA 81
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKVA V  +ARENEHPLLCT+EKA
+Sbjct: 82  ETKVAQVMMHARENEHPLLCTMEKA 106
+
+
+>sp|A0KJD6|CLPS_AERHH ATP-dependent Clp protease adapter protein
+           ClpS OS=Aeromonas hydrophila subsp. hydrophila (strain
+           ATCC 7966 / NCIB 9240) GN=clpS PE=3 SV=1
+          Length = 105
+
+ Score =  144 bits (362), Expect = 2e-34,   Method: Compositional matrix adjust.
+ Identities = 62/85 (72%), Positives = 74/85 (87%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L+PP MYKV+L NDDYTPMEFV++VLQKFF  D+++ATQ+ML+VHY GK +CG FTAE+A
+Sbjct: 21  LQPPPMYKVVLNNDDYTPMEFVVEVLQKFFGMDLDKATQVMLSVHYSGKGVCGTFTAEIA 80
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKV  VN YAR NEHPLLCT+EKA
+Sbjct: 81  ETKVVQVNTYARNNEHPLLCTMEKA 105
+
+
+>sp|A4SNL8|CLPS_AERS4 ATP-dependent Clp protease adapter protein
+           ClpS OS=Aeromonas salmonicida (strain A449) GN=clpS PE=3
+           SV=1
+          Length = 105
+
+ Score =  143 bits (360), Expect = 4e-34,   Method: Compositional matrix adjust.
+ Identities = 61/85 (71%), Positives = 74/85 (87%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L+PP MYKV+L NDDYTPMEFV++VLQKFF  D+++ATQ+ML+VHY GK +CG FTAE+A
+Sbjct: 21  LQPPPMYKVVLNNDDYTPMEFVVEVLQKFFGMDLDKATQVMLSVHYSGKGVCGTFTAEIA 80
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKV  VN Y+R NEHPLLCT+EKA
+Sbjct: 81  ETKVVQVNTYSRNNEHPLLCTMEKA 105
+
+
+>sp|Q5R0C3|CLPS_IDILO ATP-dependent Clp protease adapter protein
+           ClpS OS=Idiomarina loihiensis GN=clpS PE=3 SV=1
+          Length = 102
+
+ Score =  140 bits (354), Expect = 2e-33,   Method: Compositional matrix adjust.
+ Identities = 62/91 (68%), Positives = 77/91 (84%)
+
+Query: 3   DFDQLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICG 62
+           D ++   LKPPSMYKVI+ NDDYTPM+FVI+VL +FF  D ERAT  ML VHY+GKA+CG
+Sbjct: 11  DTEEKQELKPPSMYKVIINNDDYTPMDFVIEVLMRFFKMDQERATDTMLQVHYKGKAVCG 70
+
+Query: 63  VFTAEVAETKVAMVNKYARENEHPLLCTLEK 93
+           V++AE+AETKV  VN+YAREN+HPLLCT+E+
+Sbjct: 71  VYSAEIAETKVVQVNQYARENQHPLLCTMEQ 101
+
+
+>sp|Q7MJ40|CLPS_VIBVY ATP-dependent Clp protease adapter protein
+           ClpS OS=Vibrio vulnificus (strain YJ016) GN=clpS PE=3
+           SV=1
+          Length = 106
+
+ Score =  138 bits (347), Expect = 1e-32,   Method: Compositional matrix adjust.
+ Identities = 58/89 (65%), Positives = 78/89 (87%)
+
+Query: 6   QLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFT 65
+           ++  ++PP  Y V+L NDDYTPM+FVIDVL++FFS+D+++ATQ+ML VHY+GKAICG ++
+Sbjct: 18  EITQIQPPKKYNVVLNNDDYTPMDFVIDVLERFFSHDLDKATQIMLKVHYEGKAICGTYS 77
+
+Query: 66  AEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           AE+AETKVA V  Y+RENEHPLLCT+E+A
+Sbjct: 78  AEIAETKVAQVTMYSRENEHPLLCTMEQA 106
+
+
+>sp|Q8DAS0|CLPS_VIBVU ATP-dependent Clp protease adapter protein
+           ClpS OS=Vibrio vulnificus GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  137 bits (346), Expect = 1e-32,   Method: Compositional matrix adjust.
+ Identities = 58/89 (65%), Positives = 77/89 (86%)
+
+Query: 6   QLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFT 65
+           ++  ++PP  Y V+L NDDYTPM+FVIDVL++FFS+D+ +ATQ+ML VHY+GKAICG ++
+Sbjct: 18  EITQIQPPKKYNVVLNNDDYTPMDFVIDVLERFFSHDLNKATQIMLKVHYEGKAICGTYS 77
+
+Query: 66  AEVAETKVAMVNKYARENEHPLLCTLEKA 94
+           AE+AETKVA V  Y+RENEHPLLCT+E+A
+Sbjct: 78  AEIAETKVAQVTMYSRENEHPLLCTMEQA 106
+
+
+>sp|Q87QY5|CLPS_VIBPA ATP-dependent Clp protease adapter protein
+           ClpS OS=Vibrio parahaemolyticus GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  137 bits (346), Expect = 1e-32,   Method: Compositional matrix adjust.
+ Identities = 57/85 (67%), Positives = 77/85 (90%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           ++PP +Y V+L NDDYTPM+FVI+VL++FFS+D+++ATQ+ML VHY+GKA+CG ++AE+A
+Sbjct: 22  VQPPKLYNVVLNNDDYTPMDFVIEVLERFFSHDIDKATQIMLKVHYEGKAVCGTYSAEIA 81
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKVA V  YARENEHPLLCT+E+A
+Sbjct: 82  ETKVAQVTMYARENEHPLLCTMEQA 106
+
+
+>sp|B4S1R5|CLPS_ALTMD ATP-dependent Clp protease adapter protein
+           ClpS OS=Alteromonas macleodii (strain DSM 17117 / Deep
+           ecotype) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  137 bits (345), Expect = 2e-32,   Method: Compositional matrix adjust.
+ Identities = 58/84 (69%), Positives = 75/84 (89%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           +PP MYKV+L NDDYTPM+FVI+VL +FF+ D E+A QLML VHYQGKA+CG+FTAE+AE
+Sbjct: 23  QPPPMYKVLLNNDDYTPMDFVIEVLMQFFNMDAEKANQLMLTVHYQGKAVCGIFTAEIAE 82
+
+Query: 71  TKVAMVNKYARENEHPLLCTLEKA 94
+           TKV  VN+YAR+++HPL+CT+E+A
+Sbjct: 83  TKVMQVNQYARKHQHPLMCTMEQA 106
+
+
+>sp|A7N1L5|CLPS_VIBHB ATP-dependent Clp protease adapter protein
+           ClpS OS=Vibrio harveyi (strain ATCC BAA-1116 / BB120)
+           GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  137 bits (345), Expect = 2e-32,   Method: Compositional matrix adjust.
+ Identities = 56/85 (65%), Positives = 77/85 (90%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           ++PP +Y V+L NDDYTPM+FVI+VL++FFS+D+++ATQ+ML +HY+GKAICG ++AE+A
+Sbjct: 22  VQPPKLYNVVLNNDDYTPMDFVIEVLERFFSHDIDKATQIMLKIHYEGKAICGTYSAEIA 81
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKVA V  Y+RENEHPLLCT+E+A
+Sbjct: 82  ETKVAQVTMYSRENEHPLLCTMEQA 106
+
+
+>sp|B7VM32|CLPS_VIBSL ATP-dependent Clp protease adapter protein
+           ClpS OS=Vibrio splendidus (strain LGP32) GN=clpS PE=3
+           SV=1
+          Length = 106
+
+ Score =  135 bits (340), Expect = 7e-32,   Method: Compositional matrix adjust.
+ Identities = 56/84 (66%), Positives = 76/84 (90%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           +KPP+MY V+L NDDYTPM+FVI++L++FFS D+E+AT++ML VHY+GKAICG ++AE+A
+Sbjct: 22  VKPPAMYNVVLHNDDYTPMDFVIEILERFFSLDIEKATEVMLKVHYEGKAICGTYSAEIA 81
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEK 93
+           ETKVA V  Y++ENEHPLLCT+E+
+Sbjct: 82  ETKVAQVTMYSKENEHPLLCTMEQ 105
+
+
+>sp|B2FQX5|CLPS_STRMK ATP-dependent Clp protease adapter protein
+           ClpS OS=Stenotrophomonas maltophilia (strain K279a)
+           GN=clpS PE=3 SV=1
+          Length = 108
+
+ Score =  133 bits (334), Expect = 3e-31,   Method: Compositional matrix adjust.
+ Identities = 57/85 (67%), Positives = 75/85 (88%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           + PP  Y+V+L+NDDYTPM+FV+DVLQ+FFS D+++ATQ+ML VH +G+ +CGVFT EVA
+Sbjct: 24  VAPPPFYQVMLLNDDYTPMDFVVDVLQQFFSMDLDKATQVMLHVHTRGRGVCGVFTREVA 83
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKVA VN+Y+R N+HPLLCT+EKA
+Sbjct: 84  ETKVAQVNEYSRMNQHPLLCTMEKA 108
+
+
+>sp|B4SIN7|CLPS_STRM5 ATP-dependent Clp protease adapter protein
+           ClpS OS=Stenotrophomonas maltophilia (strain R551-3)
+           GN=clpS PE=3 SV=1
+          Length = 108
+
+ Score =  132 bits (331), Expect = 7e-31,   Method: Compositional matrix adjust.
+ Identities = 56/85 (65%), Positives = 75/85 (88%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           + PP  Y+V+L+NDDYTPM+FV+DVLQ+FF+ D+++ATQ+ML VH +G+ +CGVFT EVA
+Sbjct: 24  VAPPPFYQVMLLNDDYTPMDFVVDVLQQFFTMDLDKATQVMLHVHTRGRGVCGVFTREVA 83
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKVA VN+Y+R N+HPLLCT+EKA
+Sbjct: 84  ETKVAQVNEYSRMNQHPLLCTMEKA 108
+
+
+>sp|A3QD84|CLPS_SHELP ATP-dependent Clp protease adapter protein
+           ClpS OS=Shewanella loihica (strain ATCC BAA-1088 / PV-4)
+           GN=clpS PE=3 SV=1
+          Length = 102
+
+ Score =  132 bits (331), Expect = 8e-31,   Method: Compositional matrix adjust.
+ Identities = 59/85 (69%), Positives = 73/85 (85%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L PPSMYKVIL NDDYTPM+FVI+VLQ FF+ + + AT +MLA+H+QGK ICGVF   +A
+Sbjct: 18  LMPPSMYKVILNNDDYTPMDFVIEVLQLFFNKNEQEATDIMLAIHHQGKGICGVFPFGIA 77
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKVA VN++AR+N+HPLLC+LEKA
+Sbjct: 78  ETKVAQVNQFARQNQHPLLCSLEKA 102
+
+
+>sp|B1KIC5|CLPS_SHEWM ATP-dependent Clp protease adapter protein
+           ClpS OS=Shewanella woodyi (strain ATCC 51908 / MS32)
+           GN=clpS PE=3 SV=1
+          Length = 102
+
+ Score =  130 bits (328), Expect = 2e-30,   Method: Compositional matrix adjust.
+ Identities = 58/83 (69%), Positives = 71/83 (85%)
+
+Query: 12  PPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAET 71
+           PPSMYKVIL NDDYTPM+FVI+VLQ FF    E+AT +MLA+H+QGK ICG+F   +AET
+Sbjct: 20  PPSMYKVILNNDDYTPMDFVIEVLQLFFKKTEEQATDIMLAIHHQGKGICGIFPFGIAET 79
+
+Query: 72  KVAMVNKYARENEHPLLCTLEKA 94
+           KVA VN++AR+N+HPLLC+LEKA
+Sbjct: 80  KVAQVNQFARQNQHPLLCSLEKA 102
+
+
+>sp|A1WWV6|CLPS_HALHL ATP-dependent Clp protease adapter protein
+           ClpS OS=Halorhodospira halophila (strain DSM 244 / SL1)
+           GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  130 bits (327), Expect = 2e-30,   Method: Compositional matrix adjust.
+ Identities = 56/86 (65%), Positives = 75/86 (87%)
+
+Query: 9   ALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEV 68
+           +LK P MYKV+L+NDDYTPM+FV++VLQ+FF+ D  +ATQ+ML VH +GK +CGV++ +V
+Sbjct: 21  SLKQPPMYKVVLLNDDYTPMDFVVEVLQRFFNKDRSQATQIMLHVHTRGKGVCGVYSRDV 80
+
+Query: 69  AETKVAMVNKYARENEHPLLCTLEKA 94
+           AETKV+ VN YARE+EHPLLCT+E+A
+Sbjct: 81  AETKVSQVNDYAREHEHPLLCTMEEA 106
+
+
+>sp|A1S7A6|CLPS_SHEAM ATP-dependent Clp protease adapter protein
+           ClpS OS=Shewanella amazonensis (strain ATCC BAA-1098 /
+           SB2B) GN=clpS PE=3 SV=1
+          Length = 102
+
+ Score =  130 bits (326), Expect = 3e-30,   Method: Compositional matrix adjust.
+ Identities = 57/85 (67%), Positives = 73/85 (85%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L PPSMYKVIL NDDYTPM+FV++VLQ FF  +  +AT++ML +H+QGKA+CGVF   +A
+Sbjct: 18  LMPPSMYKVILNNDDYTPMDFVVEVLQLFFKMNEHQATEIMLQIHHQGKAVCGVFPFGIA 77
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKVA VN++AR+N+HPLLC+LEKA
+Sbjct: 78  ETKVAQVNQFARQNQHPLLCSLEKA 102
+
+
+>sp|A8H5L6|CLPS_SHEPA ATP-dependent Clp protease adapter protein
+           ClpS OS=Shewanella pealeana (strain ATCC 700345 /
+           ANG-SQ1) GN=clpS PE=3 SV=1
+          Length = 102
+
+ Score =  127 bits (320), Expect = 1e-29,   Method: Compositional matrix adjust.
+ Identities = 55/85 (64%), Positives = 74/85 (87%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LK PSMYKVIL NDDYTPM+FVI++LQ FF  D ++AT++MLA+H++GK ICG++   +A
+Sbjct: 18  LKQPSMYKVILNNDDYTPMDFVIEILQLFFKKDEQQATEIMLAIHHKGKGICGIYPFGIA 77
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKVA VN++AR+N+HPLLC+LE+A
+Sbjct: 78  ETKVAQVNQFARQNQHPLLCSLEEA 102
+
+
+>sp|B8CLI1|CLPS_SHEPW ATP-dependent Clp protease adapter protein
+           ClpS OS=Shewanella piezotolerans (strain WP3 / JCM
+           13877) GN=clpS PE=3 SV=1
+          Length = 102
+
+ Score =  127 bits (320), Expect = 1e-29,   Method: Compositional matrix adjust.
+ Identities = 56/85 (65%), Positives = 73/85 (85%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LK PSMYKVIL NDDYTPM+FVI++LQ FF  D  +AT++MLA+H++GK ICG++   +A
+Sbjct: 18  LKQPSMYKVILNNDDYTPMDFVIEILQLFFRKDEAQATEIMLAIHHKGKGICGIYPFGIA 77
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKVA VN++AR+NEHPLLC+LE+A
+Sbjct: 78  ETKVAQVNQFARQNEHPLLCSLEEA 102
+
+
+>sp|Q15T97|CLPS_PSEA6 ATP-dependent Clp protease adapter protein
+           ClpS OS=Pseudoalteromonas atlantica (strain T6c /
+           BAA-1087) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  127 bits (319), Expect = 2e-29,   Method: Compositional matrix adjust.
+ Identities = 56/92 (60%), Positives = 77/92 (83%), Gaps = 4/92 (4%)
+
+Query: 6   QLDALK----PPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAIC 61
+           QLD +K    PP MYKV+L NDDYTPM+FVI+VL +FF+ D E+A Q+ML VHY+G+A+C
+Sbjct: 14  QLDTVKQKLAPPPMYKVLLNNDDYTPMDFVIEVLVRFFNLDSEKAHQIMLTVHYRGRAVC 73
+
+Query: 62  GVFTAEVAETKVAMVNKYARENEHPLLCTLEK 93
+           GV+TAE+AETKV  V +YA++++HPL+CT+E+
+Sbjct: 74  GVYTAEIAETKVMQVTQYAKKHQHPLMCTMEQ 105
+
+
+>sp|A4Y7L6|CLPS_SHEPC ATP-dependent Clp protease adapter protein
+           ClpS OS=Shewanella putrefaciens (strain CN-32 / ATCC
+           BAA-453) GN=clpS PE=3 SV=1
+          Length = 102
+
+ Score =  127 bits (319), Expect = 2e-29,   Method: Compositional matrix adjust.
+ Identities = 56/85 (65%), Positives = 70/85 (82%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L PPSMYKVIL NDDYTPM+FVI+VLQ FF  + + AT +ML +H+QGK ICG+F   +A
+Sbjct: 18  LMPPSMYKVILNNDDYTPMDFVIEVLQVFFRKNEQEATDIMLTIHHQGKGICGIFPFGIA 77
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKV  VN++AR+N+HPLLC+LEKA
+Sbjct: 78  ETKVIQVNQFARQNQHPLLCSLEKA 102
+
+
+>sp|A1RIX2|CLPS_SHESW ATP-dependent Clp protease adapter protein
+           ClpS OS=Shewanella sp. (strain W3-18-1) GN=clpS PE=3
+           SV=1
+          Length = 102
+
+ Score =  127 bits (319), Expect = 2e-29,   Method: Compositional matrix adjust.
+ Identities = 56/85 (65%), Positives = 70/85 (82%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L PPSMYKVIL NDDYTPM+FVI+VLQ FF  + + AT +ML +H+QGK ICG+F   +A
+Sbjct: 18  LMPPSMYKVILNNDDYTPMDFVIEVLQVFFRKNEQEATDIMLTIHHQGKGICGIFPFGIA 77
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKV  VN++AR+N+HPLLC+LEKA
+Sbjct: 78  ETKVIQVNQFARQNQHPLLCSLEKA 102
+
+
+>sp|A0KW16|CLPS_SHESA ATP-dependent Clp protease adapter protein
+           ClpS OS=Shewanella sp. (strain ANA-3) GN=clpS PE=3 SV=1
+          Length = 102
+
+ Score =  127 bits (319), Expect = 2e-29,   Method: Compositional matrix adjust.
+ Identities = 56/85 (65%), Positives = 70/85 (82%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L PPSMYKVIL NDDYTPM+FVI+VLQ FF  + + AT +ML +H+QGK ICG+F   +A
+Sbjct: 18  LMPPSMYKVILNNDDYTPMDFVIEVLQIFFRKNEQEATDIMLTIHHQGKGICGIFPYGIA 77
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKV  VN++AR+N+HPLLC+LEKA
+Sbjct: 78  ETKVIQVNQFARQNQHPLLCSLEKA 102
+
+
+>sp|Q0HJP4|CLPS_SHESM ATP-dependent Clp protease adapter protein
+           ClpS OS=Shewanella sp. (strain MR-4) GN=clpS PE=3 SV=1
+          Length = 102
+
+ Score =  127 bits (319), Expect = 2e-29,   Method: Compositional matrix adjust.
+ Identities = 56/85 (65%), Positives = 70/85 (82%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L PPSMYKVIL NDDYTPM+FVI+VLQ FF  + + AT +ML +H+QGK ICG+F   +A
+Sbjct: 18  LMPPSMYKVILNNDDYTPMDFVIEVLQIFFRKNEQEATDIMLTIHHQGKGICGIFPYGIA 77
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKV  VN++AR+N+HPLLC+LEKA
+Sbjct: 78  ETKVIQVNQFARQNQHPLLCSLEKA 102
+
+
+>sp|Q0HVZ0|CLPS_SHESR ATP-dependent Clp protease adapter protein
+           ClpS OS=Shewanella sp. (strain MR-7) GN=clpS PE=3 SV=1
+          Length = 102
+
+ Score =  127 bits (319), Expect = 2e-29,   Method: Compositional matrix adjust.
+ Identities = 56/85 (65%), Positives = 70/85 (82%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L PPSMYKVIL NDDYTPM+FVI+VLQ FF  + + AT +ML +H+QGK ICG+F   +A
+Sbjct: 18  LMPPSMYKVILNNDDYTPMDFVIEVLQIFFRKNEQEATDIMLTIHHQGKGICGIFPYGIA 77
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKV  VN++AR+N+HPLLC+LEKA
+Sbjct: 78  ETKVIQVNQFARQNQHPLLCSLEKA 102
+
+
+>sp|Q8EDW4|CLPS_SHEON ATP-dependent Clp protease adapter protein
+           ClpS OS=Shewanella oneidensis GN=clpS PE=3 SV=1
+          Length = 102
+
+ Score =  127 bits (318), Expect = 2e-29,   Method: Compositional matrix adjust.
+ Identities = 56/85 (65%), Positives = 70/85 (82%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L PPSMYKVIL NDDYTPM+FVI+VLQ FF  + + AT +ML +H+QGK ICG+F   +A
+Sbjct: 18  LMPPSMYKVILNNDDYTPMDFVIEVLQIFFRKNEQEATDIMLTIHHQGKGICGIFPFGIA 77
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKV  VN++AR+N+HPLLC+LEKA
+Sbjct: 78  ETKVIQVNQFARQNQHPLLCSLEKA 102
+
+
+>sp|B0TQ07|CLPS_SHEHH ATP-dependent Clp protease adapter protein
+           ClpS OS=Shewanella halifaxensis (strain HAW-EB4) GN=clpS
+           PE=3 SV=1
+          Length = 102
+
+ Score =  127 bits (318), Expect = 3e-29,   Method: Compositional matrix adjust.
+ Identities = 54/85 (63%), Positives = 73/85 (85%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+            K PSMYKVIL NDDYTPM+FVI++LQ FF  D ++AT++MLA+H++GK ICG++   +A
+Sbjct: 18  FKQPSMYKVILNNDDYTPMDFVIEILQLFFKKDEQQATEIMLAIHHKGKGICGIYPFGIA 77
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKVA VN++AR+N+HPLLC+LE+A
+Sbjct: 78  ETKVAQVNQFARQNQHPLLCSLEEA 102
+
+
+>sp|A8FUH3|CLPS_SHESH ATP-dependent Clp protease adapter protein
+           ClpS OS=Shewanella sediminis (strain HAW-EB3) GN=clpS
+           PE=3 SV=1
+          Length = 102
+
+ Score =  127 bits (318), Expect = 3e-29,   Method: Compositional matrix adjust.
+ Identities = 58/85 (68%), Positives = 70/85 (82%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L PP MYKVIL NDDYTPM+FVI+VLQ FF  + + AT +MLA+H QGK ICGVF   +A
+Sbjct: 18  LMPPPMYKVILNNDDYTPMDFVIEVLQLFFKKNEQDATDIMLAIHNQGKGICGVFPFGIA 77
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKVA VN++AR+N+HPLLC+LEKA
+Sbjct: 78  ETKVAQVNQFARQNQHPLLCSLEKA 102
+
+
+>sp|B8E950|CLPS_SHEB2 ATP-dependent Clp protease adapter protein
+           ClpS OS=Shewanella baltica (strain OS223) GN=clpS PE=3
+           SV=1
+          Length = 102
+
+ Score =  126 bits (317), Expect = 4e-29,   Method: Compositional matrix adjust.
+ Identities = 55/85 (64%), Positives = 70/85 (82%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L PPSMYKV+L NDDYTPM+FVI+VLQ FF  + + AT +ML +H+QGK ICG+F   +A
+Sbjct: 18  LMPPSMYKVVLNNDDYTPMDFVIEVLQVFFRKNEQEATDIMLTIHHQGKGICGIFPFGIA 77
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKV  VN++AR+N+HPLLC+LEKA
+Sbjct: 78  ETKVIQVNQFARQNQHPLLCSLEKA 102
+
+
+>sp|A3D5F3|CLPS_SHEB5 ATP-dependent Clp protease adapter protein
+           ClpS OS=Shewanella baltica (strain OS155 / ATCC
+           BAA-1091) GN=clpS PE=3 SV=1
+          Length = 102
+
+ Score =  126 bits (317), Expect = 4e-29,   Method: Compositional matrix adjust.
+ Identities = 55/85 (64%), Positives = 70/85 (82%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L PPSMYKV+L NDDYTPM+FVI+VLQ FF  + + AT +ML +H+QGK ICG+F   +A
+Sbjct: 18  LMPPSMYKVVLNNDDYTPMDFVIEVLQVFFRKNEQEATDIMLTIHHQGKGICGIFPFGIA 77
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKV  VN++AR+N+HPLLC+LEKA
+Sbjct: 78  ETKVIQVNQFARQNQHPLLCSLEKA 102
+
+
+>sp|A6WP64|CLPS_SHEB8 ATP-dependent Clp protease adapter protein
+           ClpS OS=Shewanella baltica (strain OS185) GN=clpS PE=3
+           SV=1
+          Length = 102
+
+ Score =  126 bits (317), Expect = 4e-29,   Method: Compositional matrix adjust.
+ Identities = 55/85 (64%), Positives = 70/85 (82%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L PPSMYKV+L NDDYTPM+FVI+VLQ FF  + + AT +ML +H+QGK ICG+F   +A
+Sbjct: 18  LMPPSMYKVVLNNDDYTPMDFVIEVLQVFFRKNEQEATDIMLTIHHQGKGICGIFPFGIA 77
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKV  VN++AR+N+HPLLC+LEKA
+Sbjct: 78  ETKVIQVNQFARQNQHPLLCSLEKA 102
+
+
+>sp|A9L4G4|CLPS_SHEB9 ATP-dependent Clp protease adapter protein
+           ClpS OS=Shewanella baltica (strain OS195) GN=clpS PE=3
+           SV=1
+          Length = 102
+
+ Score =  126 bits (317), Expect = 4e-29,   Method: Compositional matrix adjust.
+ Identities = 55/85 (64%), Positives = 70/85 (82%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L PPSMYKV+L NDDYTPM+FVI+VLQ FF  + + AT +ML +H+QGK ICG+F   +A
+Sbjct: 18  LMPPSMYKVVLNNDDYTPMDFVIEVLQVFFRKNEQEATDIMLTIHHQGKGICGIFPFGIA 77
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKV  VN++AR+N+HPLLC+LEKA
+Sbjct: 78  ETKVIQVNQFARQNQHPLLCSLEKA 102
+
+
+>sp|A6V4G5|CLPS_PSEA7 ATP-dependent Clp protease adapter protein
+           ClpS OS=Pseudomonas aeruginosa (strain PA7) GN=clpS PE=3
+           SV=1
+          Length = 122
+
+ Score =  126 bits (316), Expect = 4e-29,   Method: Compositional matrix adjust.
+ Identities = 54/84 (64%), Positives = 72/84 (85%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L+PP +YKV+L NDDYTPM+FV++VL+ FF+ D E+AT++ML VH QGKA+CG+FT +VA
+Sbjct: 37  LQPPPLYKVVLFNDDYTPMDFVVEVLEVFFNMDREKATKIMLTVHTQGKAVCGLFTRDVA 96
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEK 93
+           ETK   VN+YARE++HPLLC +EK
+Sbjct: 97  ETKAMQVNQYARESQHPLLCEIEK 120
+
+
+>sp|Q02NB3|CLPS_PSEAB ATP-dependent Clp protease adapter protein
+           ClpS OS=Pseudomonas aeruginosa (strain UCBPP-PA14)
+           GN=clpS PE=3 SV=1
+          Length = 122
+
+ Score =  126 bits (316), Expect = 4e-29,   Method: Compositional matrix adjust.
+ Identities = 54/84 (64%), Positives = 72/84 (85%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L+PP +YKV+L NDDYTPM+FV++VL+ FF+ D E+AT++ML VH QGKA+CG+FT +VA
+Sbjct: 37  LQPPPLYKVVLFNDDYTPMDFVVEVLEVFFNMDREKATKIMLTVHTQGKAVCGLFTRDVA 96
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEK 93
+           ETK   VN+YARE++HPLLC +EK
+Sbjct: 97  ETKAMQVNQYARESQHPLLCEIEK 120
+
+
+>sp|Q9I0L7|CLPS_PSEAE ATP-dependent Clp protease adapter protein
+           ClpS OS=Pseudomonas aeruginosa GN=clpS PE=3 SV=1
+          Length = 122
+
+ Score =  126 bits (316), Expect = 4e-29,   Method: Compositional matrix adjust.
+ Identities = 54/84 (64%), Positives = 72/84 (85%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L+PP +YKV+L NDDYTPM+FV++VL+ FF+ D E+AT++ML VH QGKA+CG+FT +VA
+Sbjct: 37  LQPPPLYKVVLFNDDYTPMDFVVEVLEVFFNMDREKATKIMLTVHTQGKAVCGLFTRDVA 96
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEK 93
+           ETK   VN+YARE++HPLLC +EK
+Sbjct: 97  ETKAMQVNQYARESQHPLLCEIEK 120
+
+
+>sp|A1U1H1|CLPS_MARAV ATP-dependent Clp protease adapter protein
+           ClpS OS=Marinobacter aquaeolei (strain ATCC 700491 / DSM
+           11845 / VT8) GN=clpS PE=3 SV=1
+          Length = 119
+
+ Score =  126 bits (316), Expect = 5e-29,   Method: Compositional matrix adjust.
+ Identities = 55/86 (63%), Positives = 73/86 (84%)
+
+Query: 9   ALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEV 68
+           ALK P+ Y+V+L+NDDYTPM+FV+DVL KFF+ + E+ATQ+ML VH QGKA+CGV+T ++
+Sbjct: 33  ALKRPARYRVVLLNDDYTPMDFVVDVLMKFFAMNEEKATQVMLLVHTQGKAVCGVYTRDI 92
+
+Query: 69  AETKVAMVNKYARENEHPLLCTLEKA 94
+           AETK A VN+Y+ E EHPLLC +E+A
+Sbjct: 93  AETKAAQVNQYSSECEHPLLCEIERA 118
+
+
+>sp|Q12N59|CLPS_SHEDO ATP-dependent Clp protease adapter protein
+           ClpS OS=Shewanella denitrificans (strain OS217 / ATCC
+           BAA-1090 / DSM 15013) GN=clpS PE=3 SV=1
+          Length = 102
+
+ Score =  125 bits (315), Expect = 5e-29,   Method: Compositional matrix adjust.
+ Identities = 57/85 (67%), Positives = 69/85 (81%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L PPSMYKVIL NDDYTPM+FVI+VL +FF     +AT +ML +H+QGK ICGV+   +A
+Sbjct: 18  LMPPSMYKVILNNDDYTPMDFVIEVLARFFDKHEPQATDIMLTIHHQGKGICGVYPFGIA 77
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKV  VN++AREN+HPLLCTLEKA
+Sbjct: 78  ETKVLQVNQFARENQHPLLCTLEKA 102
+
+
+>sp|Q081G4|CLPS_SHEFN ATP-dependent Clp protease adapter protein
+           ClpS OS=Shewanella frigidimarina (strain NCIMB 400)
+           GN=clpS PE=3 SV=1
+          Length = 102
+
+ Score =  125 bits (313), Expect = 1e-28,   Method: Compositional matrix adjust.
+ Identities = 54/84 (64%), Positives = 70/84 (83%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L+PP MYKV+L NDDYTPM+FV++VLQ+FF  + ++A  +MLA+H QGK +CGVF   +A
+Sbjct: 18  LQPPHMYKVVLNNDDYTPMDFVVEVLQRFFEKNEQQAVDIMLAIHNQGKGLCGVFPFGIA 77
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEK 93
+           ETKV  VN++AREN+HPLLCTLEK
+Sbjct: 78  ETKVFQVNQFARENQHPLLCTLEK 101
+
+
+>sp|Q4UUJ9|CLPS_XANC8 ATP-dependent Clp protease adapter protein
+           ClpS OS=Xanthomonas campestris pv. campestris (strain
+           8004) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  124 bits (312), Expect = 1e-28,   Method: Compositional matrix adjust.
+ Identities = 51/83 (61%), Positives = 73/83 (87%)
+
+Query: 12  PPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAET 71
+           PP  Y+V+L+NDDYTPM+FV+ VLQ+FF+ ++ERATQ+ML VH +G+ +CGV++ EVAE+
+Sbjct: 24  PPPRYQVLLLNDDYTPMDFVVTVLQQFFNLELERATQVMLHVHTRGRGVCGVYSREVAES 83
+
+Query: 72  KVAMVNKYARENEHPLLCTLEKA 94
+           KVA VN+++R N+HPLLCT+E+A
+Sbjct: 84  KVAQVNEFSRMNQHPLLCTMEQA 106
+
+
+>sp|Q8P999|CLPS_XANCP ATP-dependent Clp protease adapter protein
+           ClpS OS=Xanthomonas campestris pv. campestris GN=clpS
+           PE=3 SV=1
+          Length = 106
+
+ Score =  124 bits (312), Expect = 1e-28,   Method: Compositional matrix adjust.
+ Identities = 51/83 (61%), Positives = 73/83 (87%)
+
+Query: 12  PPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAET 71
+           PP  Y+V+L+NDDYTPM+FV+ VLQ+FF+ ++ERATQ+ML VH +G+ +CGV++ EVAE+
+Sbjct: 24  PPPRYQVLLLNDDYTPMDFVVTVLQQFFNLELERATQVMLHVHTRGRGVCGVYSREVAES 83
+
+Query: 72  KVAMVNKYARENEHPLLCTLEKA 94
+           KVA VN+++R N+HPLLCT+E+A
+Sbjct: 84  KVAQVNEFSRMNQHPLLCTMEQA 106
+
+
+>sp|C3JY63|CLPS_PSEFS ATP-dependent Clp protease adapter protein
+           ClpS OS=Pseudomonas fluorescens (strain SBW25) GN=clpS
+           PE=3 SV=1
+          Length = 122
+
+ Score =  122 bits (306), Expect = 6e-28,   Method: Compositional matrix adjust.
+ Identities = 53/85 (62%), Positives = 72/85 (84%)
+
+Query: 9   ALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEV 68
+           AL+ P MYKV+L NDDYTPM+FV++VL+ FF+ + E AT++MLAVH +G+A+CGVFT ++
+Sbjct: 36  ALQAPPMYKVVLFNDDYTPMDFVVEVLEVFFNLNRELATKVMLAVHTEGRAVCGVFTRDI 95
+
+Query: 69  AETKVAMVNKYARENEHPLLCTLEK 93
+           AETK   VN+YARE++HPLLC +EK
+Sbjct: 96  AETKAMQVNQYARESQHPLLCEIEK 120
+
+
+>sp|Q87ZS0|CLPS_PSESM ATP-dependent Clp protease adapter protein
+           ClpS OS=Pseudomonas syringae pv. tomato GN=clpS PE=3
+           SV=1
+          Length = 120
+
+ Score =  121 bits (304), Expect = 1e-27,   Method: Compositional matrix adjust.
+ Identities = 52/84 (61%), Positives = 72/84 (85%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L+ P MYKV+L NDDYTPM+FV++VL+ FF+ + E AT++MLAVH +G+A+CG+FT ++A
+Sbjct: 35  LQAPPMYKVVLFNDDYTPMDFVVEVLEVFFNLNRELATKVMLAVHTEGRAVCGLFTRDIA 94
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEK 93
+           ETK A VN+YARE++HPLLC +EK
+Sbjct: 95  ETKAAQVNQYARESQHPLLCEIEK 118
+
+
+>sp|Q4K9U7|CLPS_PSEF5 ATP-dependent Clp protease adapter protein
+           ClpS OS=Pseudomonas fluorescens (strain Pf-5 / ATCC
+           BAA-477) GN=clpS PE=3 SV=1
+          Length = 120
+
+ Score =  121 bits (304), Expect = 1e-27,   Method: Compositional matrix adjust.
+ Identities = 52/85 (61%), Positives = 72/85 (84%)
+
+Query: 9   ALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEV 68
+           AL+ P MYKV+L NDDYTPM+FV++VL+ FF+ + E AT++MLAVH +G+A+CG+FT ++
+Sbjct: 34  ALQAPPMYKVVLFNDDYTPMDFVVEVLEMFFNLNRELATKVMLAVHTEGRAVCGLFTRDI 93
+
+Query: 69  AETKVAMVNKYARENEHPLLCTLEK 93
+           AETK   VN+YARE++HPLLC +EK
+Sbjct: 94  AETKAMQVNQYARESQHPLLCEIEK 118
+
+
+>sp|Q8PL06|CLPS_XANAC ATP-dependent Clp protease adapter protein
+           ClpS OS=Xanthomonas axonopodis pv. citri GN=clpS PE=3
+           SV=1
+          Length = 106
+
+ Score =  121 bits (303), Expect = 1e-27,   Method: Compositional matrix adjust.
+ Identities = 49/83 (59%), Positives = 73/83 (87%)
+
+Query: 12  PPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAET 71
+           PP  Y+V+L+NDDYTPM+FV+ VL++FF+ ++E+ATQ+ML VH +G+ +CGV++ EVAE+
+Sbjct: 24  PPPRYQVLLLNDDYTPMDFVVTVLEQFFNLNLEQATQIMLHVHTRGRGVCGVYSREVAES 83
+
+Query: 72  KVAMVNKYARENEHPLLCTLEKA 94
+           KVA VN+++R N+HPLLCT+E+A
+Sbjct: 84  KVAQVNEFSRMNQHPLLCTMEQA 106
+
+
+>sp|Q2P2Q9|CLPS_XANOM ATP-dependent Clp protease adapter protein
+           ClpS OS=Xanthomonas oryzae pv. oryzae (strain MAFF
+           311018) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  121 bits (303), Expect = 1e-27,   Method: Compositional matrix adjust.
+ Identities = 49/83 (59%), Positives = 73/83 (87%)
+
+Query: 12  PPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAET 71
+           PP  Y+V+L+NDDYTPM+FV+ VL++FF+ ++E+ATQ+ML VH +G+ +CGV++ EVAE+
+Sbjct: 24  PPPRYQVLLLNDDYTPMDFVVTVLEQFFNLNLEQATQIMLHVHTRGRGVCGVYSREVAES 83
+
+Query: 72  KVAMVNKYARENEHPLLCTLEKA 94
+           KVA VN+++R N+HPLLCT+E+A
+Sbjct: 84  KVAQVNEFSRMNQHPLLCTMEQA 106
+
+
+>sp|Q5GZR3|CLPS_XANOR ATP-dependent Clp protease adapter protein
+           ClpS OS=Xanthomonas oryzae pv. oryzae GN=clpS PE=3 SV=2
+          Length = 106
+
+ Score =  121 bits (303), Expect = 1e-27,   Method: Compositional matrix adjust.
+ Identities = 49/83 (59%), Positives = 73/83 (87%)
+
+Query: 12  PPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAET 71
+           PP  Y+V+L+NDDYTPM+FV+ VL++FF+ ++E+ATQ+ML VH +G+ +CGV++ EVAE+
+Sbjct: 24  PPPRYQVLLLNDDYTPMDFVVTVLEQFFNLNLEQATQIMLHVHTRGRGVCGVYSREVAES 83
+
+Query: 72  KVAMVNKYARENEHPLLCTLEKA 94
+           KVA VN+++R N+HPLLCT+E+A
+Sbjct: 84  KVAQVNEFSRMNQHPLLCTMEQA 106
+
+
+>sp|Q8XWK9|CLPS_RALSO ATP-dependent Clp protease adapter protein
+           ClpS OS=Ralstonia solanacearum GN=clpS PE=3 SV=1
+          Length = 108
+
+ Score =  121 bits (303), Expect = 2e-27,   Method: Compositional matrix adjust.
+ Identities = 50/86 (58%), Positives = 71/86 (82%)
+
+Query: 9   ALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEV 68
+           ALKPP+MYKV+L+NDDYTPMEFV+ +LQ++FS D E ATQ+ML VH +G+ +CG++T ++
+Sbjct: 23  ALKPPAMYKVLLLNDDYTPMEFVVMILQQYFSKDRETATQIMLTVHREGRGVCGIYTRDI 82
+
+Query: 69  AETKVAMVNKYARENEHPLLCTLEKA 94
+           A TKV +V+ +AR+  HPL C +E+A
+Sbjct: 83  AATKVELVSTHARQAGHPLQCVMEEA 108
+
+
+>sp|Q1LJB0|CLPS_RALME ATP-dependent Clp protease adapter protein
+           ClpS OS=Ralstonia metallidurans (strain CH34 / ATCC
+           43123 / DSM 2839) GN=clpS PE=3 SV=1
+          Length = 108
+
+ Score =  120 bits (302), Expect = 2e-27,   Method: Compositional matrix adjust.
+ Identities = 50/85 (58%), Positives = 70/85 (82%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LKPP+MYKV+L+NDDYTPMEFV+ +LQ++FS D E ATQ+ML VH +GK +CG++T ++A
+Sbjct: 24  LKPPAMYKVVLLNDDYTPMEFVVMILQQYFSRDRETATQIMLTVHREGKGVCGIYTRDIA 83
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+            TKV +V+ +AR+  HPL C +E+A
+Sbjct: 84  ATKVELVSTHARQAGHPLQCVMEEA 108
+
+
+>sp|Q46XL9|CLPS_RALEJ ATP-dependent Clp protease adapter protein
+           ClpS OS=Ralstonia eutropha (strain JMP134) GN=clpS PE=3
+           SV=1
+          Length = 108
+
+ Score =  120 bits (302), Expect = 2e-27,   Method: Compositional matrix adjust.
+ Identities = 50/85 (58%), Positives = 70/85 (82%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LKPP+MYKV+L+NDDYTPMEFV+ +LQ++FS D E ATQ+ML VH +GK +CG++T ++A
+Sbjct: 24  LKPPAMYKVVLLNDDYTPMEFVVMILQQYFSRDRETATQIMLTVHREGKGVCGIYTRDIA 83
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+            TKV +V+ +AR+  HPL C +E+A
+Sbjct: 84  ATKVELVSTHARQAGHPLQCVMEEA 108
+
+
+>sp|B3R6C0|CLPS_CUPTR ATP-dependent Clp protease adapter protein
+           ClpS OS=Cupriavidus taiwanensis (strain R1 / LMG 19424)
+           GN=clpS PE=3 SV=1
+          Length = 108
+
+ Score =  120 bits (302), Expect = 2e-27,   Method: Compositional matrix adjust.
+ Identities = 50/87 (57%), Positives = 71/87 (81%)
+
+Query: 8   DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAE 67
+            ALKPP+M+KV+L+NDDYTPMEFV+ +LQ++FS D E ATQ+ML VH +GK +CG++T +
+Sbjct: 22  QALKPPAMFKVVLLNDDYTPMEFVVMILQQYFSRDRETATQIMLTVHREGKGVCGIYTRD 81
+
+Query: 68  VAETKVAMVNKYARENEHPLLCTLEKA 94
+           +A TKV +V+ +AR+  HPL C +E+A
+Sbjct: 82  IAATKVELVSTHARQAGHPLQCVMEEA 108
+
+
+>sp|Q0K793|CLPS_RALEH ATP-dependent Clp protease adapter protein
+           ClpS OS=Ralstonia eutropha (strain ATCC 17699 / H16 /
+           DSM 428 / Stanier 337) GN=clpS PE=3 SV=1
+          Length = 108
+
+ Score =  120 bits (302), Expect = 2e-27,   Method: Compositional matrix adjust.
+ Identities = 50/87 (57%), Positives = 71/87 (81%)
+
+Query: 8   DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAE 67
+            ALKPP+M+KV+L+NDDYTPMEFV+ +LQ++FS D E ATQ+ML VH +GK +CG++T +
+Sbjct: 22  QALKPPAMFKVVLLNDDYTPMEFVVMILQQYFSRDRETATQIMLTVHREGKGVCGIYTRD 81
+
+Query: 68  VAETKVAMVNKYARENEHPLLCTLEKA 94
+           +A TKV +V+ +AR+  HPL C +E+A
+Sbjct: 82  IAATKVELVSTHARQAGHPLQCVMEEA 108
+
+
+>sp|B1JBE9|CLPS_PSEPW ATP-dependent Clp protease adapter protein
+           ClpS OS=Pseudomonas putida (strain W619) GN=clpS PE=3
+           SV=1
+          Length = 120
+
+ Score =  120 bits (302), Expect = 2e-27,   Method: Compositional matrix adjust.
+ Identities = 51/84 (60%), Positives = 70/84 (83%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L+ P MYKV+L NDDYTPM+FV++VL+ FFS + E AT++ML VH +G+A+CG+FT ++A
+Sbjct: 35  LQAPPMYKVVLFNDDYTPMDFVVEVLETFFSLNRELATKIMLTVHTEGRAVCGLFTRDIA 94
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEK 93
+           ETK   VN+YARE++HPLLC +EK
+Sbjct: 95  ETKAMQVNQYARESQHPLLCEIEK 118
+
+
+>sp|B2UAR2|CLPS_RALPJ ATP-dependent Clp protease adapter protein
+           ClpS OS=Ralstonia pickettii (strain 12J) GN=clpS PE=3
+           SV=1
+          Length = 108
+
+ Score =  120 bits (302), Expect = 2e-27,   Method: Compositional matrix adjust.
+ Identities = 51/86 (59%), Positives = 71/86 (82%)
+
+Query: 9   ALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEV 68
+           ALKPP+MYKV+L+NDDYTPMEFV+ +LQ++FS D E ATQ+ML VH +GK +CG++T ++
+Sbjct: 23  ALKPPAMYKVLLLNDDYTPMEFVVMILQQYFSKDRETATQIMLTVHREGKGVCGLYTRDI 82
+
+Query: 69  AETKVAMVNKYARENEHPLLCTLEKA 94
+           A TKV +V+ +AR+  HPL C +E+A
+Sbjct: 83  AATKVELVSTHARQAGHPLQCVMEEA 108
+
+
+>sp|A4XUY4|CLPS_PSEMY ATP-dependent Clp protease adapter protein
+           ClpS OS=Pseudomonas mendocina (strain ymp) GN=clpS PE=3
+           SV=1
+          Length = 120
+
+ Score =  120 bits (301), Expect = 2e-27,   Method: Compositional matrix adjust.
+ Identities = 51/85 (60%), Positives = 70/85 (82%)
+
+Query: 9   ALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEV 68
+           AL+ P MYKV+L NDDYTPM+FV++VL+ FF  + E AT++ML VH +G+A+CGV+T ++
+Sbjct: 34  ALQAPPMYKVVLFNDDYTPMDFVVEVLETFFGMNRELATKIMLTVHTEGRAVCGVYTRDI 93
+
+Query: 69  AETKVAMVNKYARENEHPLLCTLEK 93
+           AETK   VN+YARE++HPLLC +EK
+Sbjct: 94  AETKAMQVNQYARESQHPLLCEIEK 118
+
+
+>sp|A5W1G7|CLPS_PSEP1 ATP-dependent Clp protease adapter protein
+           ClpS OS=Pseudomonas putida (strain F1 / ATCC 700007)
+           GN=clpS PE=3 SV=1
+          Length = 120
+
+ Score =  120 bits (301), Expect = 2e-27,   Method: Compositional matrix adjust.
+ Identities = 51/84 (60%), Positives = 70/84 (83%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L+ P MYKV+L NDDYTPM+FV++VL+ FFS + E AT++ML VH +G+A+CG+FT ++A
+Sbjct: 35  LQAPPMYKVVLFNDDYTPMDFVVEVLETFFSLNRELATKIMLTVHTEGRAVCGLFTRDIA 94
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEK 93
+           ETK   VN+YARE++HPLLC +EK
+Sbjct: 95  ETKAMQVNQYARESQHPLLCEIEK 118
+
+
+>sp|B0KLX7|CLPS_PSEPG ATP-dependent Clp protease adapter protein
+           ClpS OS=Pseudomonas putida (strain GB-1) GN=clpS PE=3
+           SV=1
+          Length = 120
+
+ Score =  120 bits (301), Expect = 2e-27,   Method: Compositional matrix adjust.
+ Identities = 51/84 (60%), Positives = 70/84 (83%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L+ P MYKV+L NDDYTPM+FV++VL+ FFS + E AT++ML VH +G+A+CG+FT ++A
+Sbjct: 35  LQAPPMYKVVLFNDDYTPMDFVVEVLETFFSLNRELATKIMLTVHTEGRAVCGLFTRDIA 94
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEK 93
+           ETK   VN+YARE++HPLLC +EK
+Sbjct: 95  ETKAMQVNQYARESQHPLLCEIEK 118
+
+
+>sp|Q88FS4|CLPS_PSEPK ATP-dependent Clp protease adapter protein
+           ClpS OS=Pseudomonas putida (strain KT2440) GN=clpS PE=3
+           SV=1
+          Length = 120
+
+ Score =  120 bits (301), Expect = 2e-27,   Method: Compositional matrix adjust.
+ Identities = 51/84 (60%), Positives = 70/84 (83%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L+ P MYKV+L NDDYTPM+FV++VL+ FFS + E AT++ML VH +G+A+CG+FT ++A
+Sbjct: 35  LQAPPMYKVVLFNDDYTPMDFVVEVLETFFSLNRELATKIMLTVHTEGRAVCGLFTRDIA 94
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEK 93
+           ETK   VN+YARE++HPLLC +EK
+Sbjct: 95  ETKAMQVNQYARESQHPLLCEIEK 118
+
+
+>sp|A5IG97|CLPS_LEGPC ATP-dependent Clp protease adapter protein
+           ClpS OS=Legionella pneumophila (strain Corby) GN=clpS
+           PE=3 SV=1
+          Length = 111
+
+ Score =  120 bits (301), Expect = 2e-27,   Method: Compositional matrix adjust.
+ Identities = 52/84 (61%), Positives = 70/84 (83%)
+
+Query: 9   ALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEV 68
+           A+K P  YKV+L+NDDYTPM+FV++VL+ FF  + E A Q+ML VH+QGK +CGVFT ++
+Sbjct: 26  AIKRPRKYKVLLLNDDYTPMDFVVEVLKHFFHLNEEVAIQVMLQVHFQGKGVCGVFTRDI 85
+
+Query: 69  AETKVAMVNKYARENEHPLLCTLE 92
+           AETKVA+VN+YAR N+HPLL ++E
+Sbjct: 86  AETKVALVNEYARMNQHPLLSSME 109
+
+
+>sp|Q5WY89|CLPS_LEGPL ATP-dependent Clp protease adapter protein
+           ClpS OS=Legionella pneumophila (strain Lens) GN=clpS
+           PE=3 SV=1
+          Length = 111
+
+ Score =  120 bits (301), Expect = 2e-27,   Method: Compositional matrix adjust.
+ Identities = 52/84 (61%), Positives = 70/84 (83%)
+
+Query: 9   ALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEV 68
+           A+K P  YKV+L+NDDYTPM+FV++VL+ FF  + E A Q+ML VH+QGK +CGVFT ++
+Sbjct: 26  AIKRPRKYKVLLLNDDYTPMDFVVEVLKHFFHLNEEVAIQVMLQVHFQGKGVCGVFTRDI 85
+
+Query: 69  AETKVAMVNKYARENEHPLLCTLE 92
+           AETKVA+VN+YAR N+HPLL ++E
+Sbjct: 86  AETKVALVNEYARMNQHPLLSSME 109
+
+
+>sp|Q5X6T6|CLPS_LEGPA ATP-dependent Clp protease adapter protein
+           ClpS OS=Legionella pneumophila (strain Paris) GN=clpS
+           PE=3 SV=1
+          Length = 111
+
+ Score =  120 bits (301), Expect = 2e-27,   Method: Compositional matrix adjust.
+ Identities = 52/84 (61%), Positives = 70/84 (83%)
+
+Query: 9   ALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEV 68
+           A+K P  YKV+L+NDDYTPM+FV++VL+ FF  + E A Q+ML VH+QGK +CGVFT ++
+Sbjct: 26  AIKRPRKYKVLLLNDDYTPMDFVVEVLKHFFHLNEEVAIQVMLQVHFQGKGVCGVFTRDI 85
+
+Query: 69  AETKVAMVNKYARENEHPLLCTLE 92
+           AETKVA+VN+YAR N+HPLL ++E
+Sbjct: 86  AETKVALVNEYARMNQHPLLSSME 109
+
+
+>sp|Q5ZXB5|CLPS_LEGPH ATP-dependent Clp protease adapter protein
+           ClpS OS=Legionella pneumophila subsp. pneumophila
+           (strain Philadelphia 1 / ATCC 33152 / DSM 7513) GN=clpS
+           PE=3 SV=1
+          Length = 111
+
+ Score =  120 bits (301), Expect = 2e-27,   Method: Compositional matrix adjust.
+ Identities = 52/84 (61%), Positives = 70/84 (83%)
+
+Query: 9   ALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEV 68
+           A+K P  YKV+L+NDDYTPM+FV++VL+ FF  + E A Q+ML VH+QGK +CGVFT ++
+Sbjct: 26  AIKRPRKYKVLLLNDDYTPMDFVVEVLKHFFHLNEEVAIQVMLQVHFQGKGVCGVFTRDI 85
+
+Query: 69  AETKVAMVNKYARENEHPLLCTLE 92
+           AETKVA+VN+YAR N+HPLL ++E
+Sbjct: 86  AETKVALVNEYARMNQHPLLSSME 109
+
+
+>sp|C1DKZ8|CLPS_AZOVD ATP-dependent Clp protease adapter protein
+           ClpS OS=Azotobacter vinelandii (strain DJ / ATCC
+           BAA-1303) GN=clpS PE=3 SV=1
+          Length = 120
+
+ Score =  120 bits (301), Expect = 2e-27,   Method: Compositional matrix adjust.
+ Identities = 53/85 (62%), Positives = 71/85 (83%)
+
+Query: 9   ALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEV 68
+           ALK P MYKV++ NDDYTPM+FV++VL+KFF+ + E AT++ML VH +G+A+CG+FT +V
+Sbjct: 34  ALKVPPMYKVVMFNDDYTPMDFVVEVLEKFFNLNRELATKVMLTVHTEGRAVCGMFTRDV 93
+
+Query: 69  AETKVAMVNKYARENEHPLLCTLEK 93
+           AETK   VN+YARE +HPLLC +EK
+Sbjct: 94  AETKAMQVNQYARECQHPLLCEIEK 118
+
+
+>sp|Q0A8P0|CLPS_ALHEH ATP-dependent Clp protease adapter protein
+           ClpS OS=Alkalilimnicola ehrlichei (strain MLHE-1)
+           GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  120 bits (300), Expect = 3e-27,   Method: Compositional matrix adjust.
+ Identities = 51/85 (60%), Positives = 72/85 (84%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           +K P ++KVI++NDDYTPM+FV++VLQKFF  D  RATQ+ML VH +G+ +CGVF+ +VA
+Sbjct: 22  VKRPPLFKVIILNDDYTPMDFVVEVLQKFFHMDRARATQVMLHVHTRGEGVCGVFSRDVA 81
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKV  VN ++R++EHPL+CTL++A
+Sbjct: 82  ETKVNQVNDWSRQHEHPLMCTLKEA 106
+
+
+>sp|Q48H65|CLPS_PSE14 ATP-dependent Clp protease adapter protein
+           ClpS OS=Pseudomonas syringae pv. phaseolicola (strain
+           1448A / Race 6) GN=clpS PE=3 SV=1
+          Length = 120
+
+ Score =  119 bits (299), Expect = 4e-27,   Method: Compositional matrix adjust.
+ Identities = 51/84 (60%), Positives = 71/84 (84%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L+ P MYKV+L NDDYTPM+FV++VL+ FF+ + E AT++MLAVH +G+A+CG+FT ++A
+Sbjct: 35  LQAPPMYKVVLFNDDYTPMDFVVEVLEVFFNLNRELATKVMLAVHTEGRAVCGLFTRDIA 94
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEK 93
+           ETK   VN+YARE++HPLLC +EK
+Sbjct: 95  ETKAMQVNQYARESQHPLLCEIEK 118
+
+
+>sp|Q4ZRK6|CLPS_PSEU2 ATP-dependent Clp protease adapter protein
+           ClpS OS=Pseudomonas syringae pv. syringae (strain B728a)
+           GN=clpS PE=3 SV=1
+          Length = 120
+
+ Score =  119 bits (299), Expect = 4e-27,   Method: Compositional matrix adjust.
+ Identities = 51/84 (60%), Positives = 71/84 (84%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L+ P MYKV+L NDDYTPM+FV++VL+ FF+ + E AT++MLAVH +G+A+CG+FT ++A
+Sbjct: 35  LQAPPMYKVVLFNDDYTPMDFVVEVLEVFFNLNRELATKVMLAVHTEGRAVCGLFTRDIA 94
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEK 93
+           ETK   VN+YARE++HPLLC +EK
+Sbjct: 95  ETKAMQVNQYARESQHPLLCEIEK 118
+
+
+>sp|Q47BF7|CLPS_DECAR ATP-dependent Clp protease adapter protein
+           ClpS OS=Dechloromonas aromatica (strain RCB) GN=clpS
+           PE=3 SV=1
+          Length = 102
+
+ Score =  119 bits (298), Expect = 5e-27,   Method: Compositional matrix adjust.
+ Identities = 50/88 (56%), Positives = 69/88 (78%)
+
+Query: 6   QLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFT 65
+           Q   L PP MYKV+L+NDDYTPM+FVI VLQ+FFS D E+AT++ML VH +G+ +CGVF 
+Sbjct: 14  QRSRLGPPKMYKVVLLNDDYTPMDFVITVLQRFFSLDTEQATRIMLKVHNEGRGVCGVFP 73
+
+Query: 66  AEVAETKVAMVNKYARENEHPLLCTLEK 93
+            ++A TKV  V+ +AR+++HPL C +E+
+Sbjct: 74  RDIAATKVEQVSAFARQHQHPLACIMEE 101
+
+
+>sp|B2I9Y0|CLPS_XYLF2 ATP-dependent Clp protease adapter protein
+           ClpS OS=Xylella fastidiosa (strain M23) GN=clpS PE=3
+           SV=1
+          Length = 106
+
+ Score =  117 bits (294), Expect = 1e-26,   Method: Compositional matrix adjust.
+ Identities = 49/83 (59%), Positives = 72/83 (86%)
+
+Query: 12  PPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAET 71
+           PP  Y+V+L+NDDYTPM+FVI VLQ+FF+ D+++ATQ+ML VH +G+ +CG +T EVAE+
+Sbjct: 24  PPPRYQVLLLNDDYTPMDFVIVVLQQFFAMDLKKATQVMLHVHTRGRGVCGFYTREVAES 83
+
+Query: 72  KVAMVNKYARENEHPLLCTLEKA 94
+           KVA VN+++R ++HPLLCT+++A
+Sbjct: 84  KVAQVNEFSRIHQHPLLCTMKQA 106
+
+
+>sp|B0U6Q9|CLPS_XYLFM ATP-dependent Clp protease adapter protein
+           ClpS OS=Xylella fastidiosa (strain M12) GN=clpS PE=3
+           SV=1
+          Length = 106
+
+ Score =  117 bits (294), Expect = 1e-26,   Method: Compositional matrix adjust.
+ Identities = 49/83 (59%), Positives = 72/83 (86%)
+
+Query: 12  PPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAET 71
+           PP  Y+V+L+NDDYTPM+FVI VLQ+FF+ D+++ATQ+ML VH +G+ +CG +T EVAE+
+Sbjct: 24  PPPRYQVLLLNDDYTPMDFVIVVLQQFFAMDLKKATQVMLHVHTRGRGVCGFYTREVAES 83
+
+Query: 72  KVAMVNKYARENEHPLLCTLEKA 94
+           KVA VN+++R ++HPLLCT+++A
+Sbjct: 84  KVAQVNEFSRIHQHPLLCTMKQA 106
+
+
+>sp|Q87DL8|CLPS_XYLFT ATP-dependent Clp protease adapter protein
+           ClpS OS=Xylella fastidiosa (strain Temecula1 / ATCC
+           700964) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  117 bits (294), Expect = 1e-26,   Method: Compositional matrix adjust.
+ Identities = 49/83 (59%), Positives = 72/83 (86%)
+
+Query: 12  PPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAET 71
+           PP  Y+V+L+NDDYTPM+FVI VLQ+FF+ D+++ATQ+ML VH +G+ +CG +T EVAE+
+Sbjct: 24  PPPRYQVLLLNDDYTPMDFVIVVLQQFFAMDLKKATQVMLHVHTRGRGVCGFYTREVAES 83
+
+Query: 72  KVAMVNKYARENEHPLLCTLEKA 94
+           KVA VN+++R ++HPLLCT+++A
+Sbjct: 84  KVAQVNEFSRIHQHPLLCTMKQA 106
+
+
+>sp|B1XY29|CLPS_LEPCP ATP-dependent Clp protease adapter protein
+           ClpS OS=Leptothrix cholodnii (strain ATCC 51168 / LMG
+           8142 / SP-6) GN=clpS PE=3 SV=1
+          Length = 115
+
+ Score =  117 bits (294), Expect = 2e-26,   Method: Compositional matrix adjust.
+ Identities = 50/89 (56%), Positives = 71/89 (79%)
+
+Query: 6   QLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFT 65
+           QL  ++PP +Y+V+++NDD+TPMEFV+ VLQ+FF +D+E ATQ+ML +H++G+A+CGV+T
+Sbjct: 27  QLQRVEPPRVYQVVMLNDDFTPMEFVVMVLQQFFRHDLEAATQIMLKIHHEGRAVCGVYT 86
+
+Query: 66  AEVAETKVAMVNKYARENEHPLLCTLEKA 94
+            +VA TKV MV   AR   HPL CT+E A
+Sbjct: 87  QDVAATKVEMVQAAARRAGHPLQCTMEVA 115
+
+
+>sp|Q607H2|CLPS_METCA ATP-dependent Clp protease adapter protein
+           ClpS OS=Methylococcus capsulatus GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  117 bits (293), Expect = 2e-26,   Method: Compositional matrix adjust.
+ Identities = 51/85 (60%), Positives = 69/85 (81%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           +K P +YKV+L+NDD+TPMEFV+ VL  FF  + E+ATQ+ML VH +G  +CGVF+ +VA
+Sbjct: 22  VKRPPLYKVMLLNDDFTPMEFVVHVLMLFFGMNEEKATQVMLHVHTRGVGVCGVFSKDVA 81
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+           ETKV  VN +AR+N+HPLLCT+E+A
+Sbjct: 82  ETKVQQVNAHARQNQHPLLCTMEEA 106
+
+
+>sp|B6INJ3|CLPS_RHOCS ATP-dependent Clp protease adapter protein
+           ClpS OS=Rhodospirillum centenum (strain ATCC 51521 / SW)
+           GN=clpS PE=3 SV=1
+          Length = 108
+
+ Score =  117 bits (293), Expect = 2e-26,   Method: Compositional matrix adjust.
+ Identities = 52/83 (62%), Positives = 68/83 (81%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           K PSMYKV+++NDDYTPMEFV+ VL++FF+ + E AT++ML VH +G  +CGVFT EVAE
+Sbjct: 25  KKPSMYKVLMLNDDYTPMEFVVHVLERFFNKNREEATRIMLHVHRRGVGVCGVFTYEVAE 84
+
+Query: 71  TKVAMVNKYARENEHPLLCTLEK 93
+           TKV  V  +AR+++HPL CTLEK
+Sbjct: 85  TKVTQVMDFARQHQHPLQCTLEK 107
+
+
+>sp|Q9PDD7|CLPS_XYLFA ATP-dependent Clp protease adapter protein
+           ClpS OS=Xylella fastidiosa GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  115 bits (288), Expect = 9e-26,   Method: Compositional matrix adjust.
+ Identities = 49/83 (59%), Positives = 71/83 (85%)
+
+Query: 12  PPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAET 71
+           PP  Y+V+L+NDDYTPM+FVI VLQ+FF+ D+++ATQ+ML VH +G  +CG +T EVAE+
+Sbjct: 24  PPPRYQVLLLNDDYTPMDFVIVVLQQFFAMDLKKATQVMLHVHTRGCGVCGFYTREVAES 83
+
+Query: 72  KVAMVNKYARENEHPLLCTLEKA 94
+           KVA VN+++R ++HPLLCT+++A
+Sbjct: 84  KVAQVNEFSRIHQHPLLCTMKQA 106
+
+
+>sp|Q2W899|CLPS_MAGSA ATP-dependent Clp protease adapter protein
+           ClpS OS=Magnetospirillum magneticum (strain AMB-1 / ATCC
+           700264) GN=clpS PE=3 SV=1
+          Length = 119
+
+ Score =  115 bits (287), Expect = 9e-26,   Method: Compositional matrix adjust.
+ Identities = 52/83 (62%), Positives = 66/83 (79%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           K PSMYKV+++NDDYTPMEFV+ VL++FF+   E AT++ML VH +G  ICGV+T EVAE
+Sbjct: 36  KKPSMYKVLMLNDDYTPMEFVVHVLERFFNKSREDATRVMLHVHTRGVGICGVYTYEVAE 95
+
+Query: 71  TKVAMVNKYARENEHPLLCTLEK 93
+           TKV  V   AR+N+HPL CT+EK
+Sbjct: 96  TKVTQVMDLARQNQHPLQCTIEK 118
+
+
+>sp|Q7WKT7|CLPS_BORBR ATP-dependent Clp protease adapter protein
+           ClpS OS=Bordetella bronchiseptica GN=clpS PE=3 SV=1
+          Length = 104
+
+ Score =  115 bits (287), Expect = 1e-25,   Method: Compositional matrix adjust.
+ Identities = 47/83 (56%), Positives = 67/83 (80%)
+
+Query: 12  PPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAET 71
+           PP MY+V+L+NDDYTPMEFV+ VLQKFF  + E AT++ML VH++G+A+CGV+  ++A T
+Sbjct: 22  PPPMYQVVLLNDDYTPMEFVVKVLQKFFGKNSEDATRIMLQVHHEGRAVCGVYPRDLAAT 81
+
+Query: 72  KVAMVNKYARENEHPLLCTLEKA 94
+           ++A V++YAR  +HPL C +E A
+Sbjct: 82  RIAQVSQYARARQHPLQCIMEPA 104
+
+
+>sp|Q7W7E8|CLPS_BORPA ATP-dependent Clp protease adapter protein
+           ClpS OS=Bordetella parapertussis GN=clpS PE=3 SV=1
+          Length = 104
+
+ Score =  115 bits (287), Expect = 1e-25,   Method: Compositional matrix adjust.
+ Identities = 47/83 (56%), Positives = 67/83 (80%)
+
+Query: 12  PPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAET 71
+           PP MY+V+L+NDDYTPMEFV+ VLQKFF  + E AT++ML VH++G+A+CGV+  ++A T
+Sbjct: 22  PPPMYQVVLLNDDYTPMEFVVKVLQKFFGKNSEDATRIMLQVHHEGRAVCGVYPRDLAAT 81
+
+Query: 72  KVAMVNKYARENEHPLLCTLEKA 94
+           ++A V++YAR  +HPL C +E A
+Sbjct: 82  RIAQVSQYARARQHPLQCIMEPA 104
+
+
+>sp|B2T6J4|CLPS_BURPP ATP-dependent Clp protease adapter protein
+           ClpS OS=Burkholderia phytofirmans (strain DSM 17436 /
+           PsJN) GN=clpS PE=3 SV=1
+          Length = 104
+
+ Score =  114 bits (286), Expect = 1e-25,   Method: Compositional matrix adjust.
+ Identities = 50/89 (56%), Positives = 69/89 (77%)
+
+Query: 6   QLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFT 65
+           Q   LKPPSMYKV+L+NDD+TPMEFV+ V+Q++F+ D E ATQ+ML VH +G+ +CGV+T
+Sbjct: 16  QEKKLKPPSMYKVVLLNDDFTPMEFVVMVVQEYFNKDRETATQVMLKVHREGRGVCGVYT 75
+
+Query: 66  AEVAETKVAMVNKYARENEHPLLCTLEKA 94
+            ++A TKV  V  +AR+  HPL C +E+A
+Sbjct: 76  RDIASTKVEQVVTHARQAGHPLQCVMEEA 104
+
+
+>sp|B1YVB1|CLPS_BURA4 ATP-dependent Clp protease adapter protein
+           ClpS OS=Burkholderia ambifaria (strain MC40-6) GN=clpS
+           PE=3 SV=1
+          Length = 104
+
+ Score =  114 bits (285), Expect = 2e-25,   Method: Compositional matrix adjust.
+ Identities = 49/85 (57%), Positives = 67/85 (78%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LKPPSMYKV+L+NDD+TPMEFV+ V+Q++F  D E ATQ+ML VH +G+ +CGV+T ++A
+Sbjct: 20  LKPPSMYKVVLLNDDFTPMEFVVMVVQEYFKKDRETATQIMLKVHREGRGVCGVYTRDIA 79
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+            TKV  V  +AR+  HPL C +E+A
+Sbjct: 80  STKVEQVVTHARQAGHPLQCVMEEA 104
+
+
+>sp|Q1BU94|CLPS_BURCA ATP-dependent Clp protease adapter protein
+           ClpS OS=Burkholderia cenocepacia (strain AU 1054)
+           GN=clpS PE=3 SV=1
+          Length = 104
+
+ Score =  114 bits (285), Expect = 2e-25,   Method: Compositional matrix adjust.
+ Identities = 49/85 (57%), Positives = 67/85 (78%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LKPPSMYKV+L+NDD+TPMEFV+ V+Q++F  D E ATQ+ML VH +G+ +CGV+T ++A
+Sbjct: 20  LKPPSMYKVVLLNDDFTPMEFVVMVVQEYFKKDRETATQIMLKVHREGRGVCGVYTRDIA 79
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+            TKV  V  +AR+  HPL C +E+A
+Sbjct: 80  STKVEQVVTHARQAGHPLQCVMEEA 104
+
+
+>sp|B1JXD0|CLPS_BURCC ATP-dependent Clp protease adapter protein
+           ClpS OS=Burkholderia cenocepacia (strain MC0-3) GN=clpS
+           PE=3 SV=1
+          Length = 104
+
+ Score =  114 bits (285), Expect = 2e-25,   Method: Compositional matrix adjust.
+ Identities = 49/85 (57%), Positives = 67/85 (78%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LKPPSMYKV+L+NDD+TPMEFV+ V+Q++F  D E ATQ+ML VH +G+ +CGV+T ++A
+Sbjct: 20  LKPPSMYKVVLLNDDFTPMEFVVMVVQEYFKKDRETATQIMLKVHREGRGVCGVYTRDIA 79
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+            TKV  V  +AR+  HPL C +E+A
+Sbjct: 80  STKVEQVVTHARQAGHPLQCVMEEA 104
+
+
+>sp|A0K9U2|CLPS_BURCH ATP-dependent Clp protease adapter protein
+           ClpS OS=Burkholderia cenocepacia (strain HI2424) GN=clpS
+           PE=3 SV=1
+          Length = 104
+
+ Score =  114 bits (285), Expect = 2e-25,   Method: Compositional matrix adjust.
+ Identities = 49/85 (57%), Positives = 67/85 (78%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LKPPSMYKV+L+NDD+TPMEFV+ V+Q++F  D E ATQ+ML VH +G+ +CGV+T ++A
+Sbjct: 20  LKPPSMYKVVLLNDDFTPMEFVVMVVQEYFKKDRETATQIMLKVHREGRGVCGVYTRDIA 79
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+            TKV  V  +AR+  HPL C +E+A
+Sbjct: 80  STKVEQVVTHARQAGHPLQCVMEEA 104
+
+
+>sp|B4E904|CLPS_BURCJ ATP-dependent Clp protease adapter protein
+           ClpS OS=Burkholderia cepacia (strain J2315 / LMG 16656)
+           GN=clpS PE=3 SV=1
+          Length = 104
+
+ Score =  114 bits (285), Expect = 2e-25,   Method: Compositional matrix adjust.
+ Identities = 49/85 (57%), Positives = 67/85 (78%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LKPPSMYKV+L+NDD+TPMEFV+ V+Q++F  D E ATQ+ML VH +G+ +CGV+T ++A
+Sbjct: 20  LKPPSMYKVVLLNDDFTPMEFVVMVVQEYFKKDRETATQIMLKVHREGRGVCGVYTRDIA 79
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+            TKV  V  +AR+  HPL C +E+A
+Sbjct: 80  STKVEQVVTHARQAGHPLQCVMEEA 104
+
+
+>sp|Q0BCK0|CLPS_BURCM ATP-dependent Clp protease adapter protein
+           ClpS OS=Burkholderia ambifaria (strain ATCC BAA-244 /
+           AMMD) GN=clpS PE=3 SV=1
+          Length = 104
+
+ Score =  114 bits (285), Expect = 2e-25,   Method: Compositional matrix adjust.
+ Identities = 49/85 (57%), Positives = 67/85 (78%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LKPPSMYKV+L+NDD+TPMEFV+ V+Q++F  D E ATQ+ML VH +G+ +CGV+T ++A
+Sbjct: 20  LKPPSMYKVVLLNDDFTPMEFVVMVVQEYFKKDRETATQIMLKVHREGRGVCGVYTRDIA 79
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+            TKV  V  +AR+  HPL C +E+A
+Sbjct: 80  STKVEQVVTHARQAGHPLQCVMEEA 104
+
+
+>sp|A9AGM9|CLPS_BURM1 ATP-dependent Clp protease adapter protein
+           ClpS OS=Burkholderia multivorans (strain ATCC 17616 /
+           249) GN=clpS PE=3 SV=1
+          Length = 104
+
+ Score =  114 bits (285), Expect = 2e-25,   Method: Compositional matrix adjust.
+ Identities = 49/85 (57%), Positives = 67/85 (78%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LKPPSMYKV+L+NDD+TPMEFV+ V+Q++F  D E ATQ+ML VH +G+ +CGV+T ++A
+Sbjct: 20  LKPPSMYKVVLLNDDFTPMEFVVMVVQEYFKKDRETATQIMLKVHREGRGVCGVYTRDIA 79
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+            TKV  V  +AR+  HPL C +E+A
+Sbjct: 80  STKVEQVVTHARQAGHPLQCVMEEA 104
+
+
+>sp|Q39DM1|CLPS_BURS3 ATP-dependent Clp protease adapter protein
+           ClpS OS=Burkholderia sp. (strain 383) GN=clpS PE=3 SV=1
+          Length = 104
+
+ Score =  114 bits (285), Expect = 2e-25,   Method: Compositional matrix adjust.
+ Identities = 49/85 (57%), Positives = 67/85 (78%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LKPPSMYKV+L+NDD+TPMEFV+ V+Q++F  D E ATQ+ML VH +G+ +CGV+T ++A
+Sbjct: 20  LKPPSMYKVVLLNDDFTPMEFVVMVVQEYFKKDRETATQIMLKVHREGRGVCGVYTRDIA 79
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+            TKV  V  +AR+  HPL C +E+A
+Sbjct: 80  STKVEQVVTHARQAGHPLQCVMEEA 104
+
+
+>sp|A4JH39|CLPS_BURVG ATP-dependent Clp protease adapter protein
+           ClpS OS=Burkholderia vietnamiensis (strain G4 / LMG
+           22486) GN=clpS PE=3 SV=1
+          Length = 104
+
+ Score =  114 bits (285), Expect = 2e-25,   Method: Compositional matrix adjust.
+ Identities = 49/85 (57%), Positives = 67/85 (78%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LKPPSMYKV+L+NDD+TPMEFV+ V+Q++F  D E ATQ+ML VH +G+ +CGV+T ++A
+Sbjct: 20  LKPPSMYKVVLLNDDFTPMEFVVMVVQEYFKKDRETATQIMLKVHREGRGVCGVYTRDIA 79
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+            TKV  V  +AR+  HPL C +E+A
+Sbjct: 80  STKVEQVVTHARQAGHPLQCVMEEA 104
+
+
+>sp|A3MN51|CLPS_BURM7 ATP-dependent Clp protease adapter protein
+           ClpS OS=Burkholderia mallei (strain NCTC 10247) GN=clpS
+           PE=3 SV=1
+          Length = 104
+
+ Score =  114 bits (285), Expect = 2e-25,   Method: Compositional matrix adjust.
+ Identities = 49/85 (57%), Positives = 67/85 (78%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LKPPSMYKV+L+NDD+TPMEFV+ V+Q++F  D E ATQ+ML VH +G+ +CGV+T ++A
+Sbjct: 20  LKPPSMYKVVLLNDDFTPMEFVVMVVQEYFKKDRETATQIMLKVHREGRGVCGVYTRDIA 79
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+            TKV  V  +AR+  HPL C +E+A
+Sbjct: 80  STKVEQVVTHARQAGHPLQCVMEEA 104
+
+
+>sp|A2S519|CLPS_BURM9 ATP-dependent Clp protease adapter protein
+           ClpS OS=Burkholderia mallei (strain NCTC 10229) GN=clpS
+           PE=3 SV=1
+          Length = 104
+
+ Score =  114 bits (285), Expect = 2e-25,   Method: Compositional matrix adjust.
+ Identities = 49/85 (57%), Positives = 67/85 (78%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LKPPSMYKV+L+NDD+TPMEFV+ V+Q++F  D E ATQ+ML VH +G+ +CGV+T ++A
+Sbjct: 20  LKPPSMYKVVLLNDDFTPMEFVVMVVQEYFKKDRETATQIMLKVHREGRGVCGVYTRDIA 79
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+            TKV  V  +AR+  HPL C +E+A
+Sbjct: 80  STKVEQVVTHARQAGHPLQCVMEEA 104
+
+
+>sp|Q62HH7|CLPS_BURMA ATP-dependent Clp protease adapter protein
+           ClpS OS=Burkholderia mallei GN=clpS PE=3 SV=1
+          Length = 104
+
+ Score =  114 bits (285), Expect = 2e-25,   Method: Compositional matrix adjust.
+ Identities = 49/85 (57%), Positives = 67/85 (78%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LKPPSMYKV+L+NDD+TPMEFV+ V+Q++F  D E ATQ+ML VH +G+ +CGV+T ++A
+Sbjct: 20  LKPPSMYKVVLLNDDFTPMEFVVMVVQEYFKKDRETATQIMLKVHREGRGVCGVYTRDIA 79
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+            TKV  V  +AR+  HPL C +E+A
+Sbjct: 80  STKVEQVVTHARQAGHPLQCVMEEA 104
+
+
+>sp|A1V120|CLPS_BURMS ATP-dependent Clp protease adapter protein
+           ClpS OS=Burkholderia mallei (strain SAVP1) GN=clpS PE=3
+           SV=1
+          Length = 104
+
+ Score =  114 bits (285), Expect = 2e-25,   Method: Compositional matrix adjust.
+ Identities = 49/85 (57%), Positives = 67/85 (78%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LKPPSMYKV+L+NDD+TPMEFV+ V+Q++F  D E ATQ+ML VH +G+ +CGV+T ++A
+Sbjct: 20  LKPPSMYKVVLLNDDFTPMEFVVMVVQEYFKKDRETATQIMLKVHREGRGVCGVYTRDIA 79
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+            TKV  V  +AR+  HPL C +E+A
+Sbjct: 80  STKVEQVVTHARQAGHPLQCVMEEA 104
+
+
+>sp|A3NSC3|CLPS_BURP0 ATP-dependent Clp protease adapter protein
+           ClpS OS=Burkholderia pseudomallei (strain 1106a) GN=clpS
+           PE=3 SV=1
+          Length = 104
+
+ Score =  114 bits (285), Expect = 2e-25,   Method: Compositional matrix adjust.
+ Identities = 49/85 (57%), Positives = 67/85 (78%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LKPPSMYKV+L+NDD+TPMEFV+ V+Q++F  D E ATQ+ML VH +G+ +CGV+T ++A
+Sbjct: 20  LKPPSMYKVVLLNDDFTPMEFVVMVVQEYFKKDRETATQIMLKVHREGRGVCGVYTRDIA 79
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+            TKV  V  +AR+  HPL C +E+A
+Sbjct: 80  STKVEQVVTHARQAGHPLQCVMEEA 104
+
+
+>sp|Q3JV77|CLPS_BURP1 ATP-dependent Clp protease adapter protein
+           ClpS OS=Burkholderia pseudomallei (strain 1710b) GN=clpS
+           PE=3 SV=1
+          Length = 104
+
+ Score =  114 bits (285), Expect = 2e-25,   Method: Compositional matrix adjust.
+ Identities = 49/85 (57%), Positives = 67/85 (78%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LKPPSMYKV+L+NDD+TPMEFV+ V+Q++F  D E ATQ+ML VH +G+ +CGV+T ++A
+Sbjct: 20  LKPPSMYKVVLLNDDFTPMEFVVMVVQEYFKKDRETATQIMLKVHREGRGVCGVYTRDIA 79
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+            TKV  V  +AR+  HPL C +E+A
+Sbjct: 80  STKVEQVVTHARQAGHPLQCVMEEA 104
+
+
+>sp|A3N6N9|CLPS_BURP6 ATP-dependent Clp protease adapter protein
+           ClpS OS=Burkholderia pseudomallei (strain 668) GN=clpS
+           PE=3 SV=1
+          Length = 104
+
+ Score =  114 bits (285), Expect = 2e-25,   Method: Compositional matrix adjust.
+ Identities = 49/85 (57%), Positives = 67/85 (78%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LKPPSMYKV+L+NDD+TPMEFV+ V+Q++F  D E ATQ+ML VH +G+ +CGV+T ++A
+Sbjct: 20  LKPPSMYKVVLLNDDFTPMEFVVMVVQEYFKKDRETATQIMLKVHREGRGVCGVYTRDIA 79
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+            TKV  V  +AR+  HPL C +E+A
+Sbjct: 80  STKVEQVVTHARQAGHPLQCVMEEA 104
+
+
+>sp|Q63WJ1|CLPS_BURPS ATP-dependent Clp protease adapter protein
+           ClpS OS=Burkholderia pseudomallei GN=clpS PE=3 SV=1
+          Length = 104
+
+ Score =  114 bits (285), Expect = 2e-25,   Method: Compositional matrix adjust.
+ Identities = 49/85 (57%), Positives = 67/85 (78%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LKPPSMYKV+L+NDD+TPMEFV+ V+Q++F  D E ATQ+ML VH +G+ +CGV+T ++A
+Sbjct: 20  LKPPSMYKVVLLNDDFTPMEFVVMVVQEYFKKDRETATQIMLKVHREGRGVCGVYTRDIA 79
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+            TKV  V  +AR+  HPL C +E+A
+Sbjct: 80  STKVEQVVTHARQAGHPLQCVMEEA 104
+
+
+>sp|Q2KZI1|CLPS_BORA1 ATP-dependent Clp protease adapter protein
+           ClpS OS=Bordetella avium (strain 197N) GN=clpS PE=3 SV=1
+          Length = 104
+
+ Score =  114 bits (285), Expect = 2e-25,   Method: Compositional matrix adjust.
+ Identities = 47/81 (58%), Positives = 64/81 (79%)
+
+Query: 12  PPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAET 71
+           PP MY+V+L+NDDYTPMEFV+ VLQKFF  + E AT++ML VH++G+ ICGV+  +VA T
+Sbjct: 22  PPPMYQVVLLNDDYTPMEFVVKVLQKFFGKNQEEATRIMLQVHHEGRGICGVYVRDVAAT 81
+
+Query: 72  KVAMVNKYARENEHPLLCTLE 92
+           ++A V +YAR  +HPL C +E
+Sbjct: 82  RIAQVAQYARARQHPLQCIME 102
+
+
+>sp|Q13UV5|CLPS_BURXL ATP-dependent Clp protease adapter protein
+           ClpS OS=Burkholderia xenovorans (strain LB400) GN=clpS
+           PE=3 SV=1
+          Length = 104
+
+ Score =  114 bits (285), Expect = 2e-25,   Method: Compositional matrix adjust.
+ Identities = 49/89 (55%), Positives = 69/89 (77%)
+
+Query: 6   QLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFT 65
+           Q   LKPPSMYKV+L+NDD+TPMEFV+ ++Q++F+ D E ATQ+ML VH +G+ +CGV+T
+Sbjct: 16  QEKKLKPPSMYKVVLLNDDFTPMEFVVMIVQEYFNKDRETATQVMLKVHREGRGVCGVYT 75
+
+Query: 66  AEVAETKVAMVNKYARENEHPLLCTLEKA 94
+            ++A TKV  V  +AR+  HPL C +E+A
+Sbjct: 76  RDIASTKVEQVVTHARQAGHPLQCVMEEA 104
+
+
+>sp|Q2T0I1|CLPS_BURTA ATP-dependent Clp protease adapter protein
+           ClpS OS=Burkholderia thailandensis (strain E264 / ATCC
+           700388 / DSM 13276 / CIP 106301) GN=clpS PE=3 SV=1
+          Length = 104
+
+ Score =  114 bits (284), Expect = 2e-25,   Method: Compositional matrix adjust.
+ Identities = 48/85 (56%), Positives = 67/85 (78%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LKPPSMYKV+L+NDD+TPMEFV+ ++Q++F  D E ATQ+ML VH +G+ +CGV+T ++A
+Sbjct: 20  LKPPSMYKVVLLNDDFTPMEFVVMIVQEYFKKDRETATQIMLKVHREGRGVCGVYTRDIA 79
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEKA 94
+            TKV  V  +AR+  HPL C +E+A
+Sbjct: 80  STKVEQVVTHARQAGHPLQCVMEEA 104
+
+
+>sp|Q7VVC1|CLPS_BORPE ATP-dependent Clp protease adapter protein
+           ClpS OS=Bordetella pertussis GN=clpS PE=3 SV=1
+          Length = 104
+
+ Score =  113 bits (283), Expect = 3e-25,   Method: Compositional matrix adjust.
+ Identities = 46/81 (56%), Positives = 66/81 (81%)
+
+Query: 12  PPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAET 71
+           PP MY+V+L+NDDYTPMEFV+ VLQKFF  + E AT++ML VH++G+A+CGV+  ++A T
+Sbjct: 22  PPPMYQVVLLNDDYTPMEFVVKVLQKFFGKNSEDATRIMLQVHHEGRAVCGVYPRDLAAT 81
+
+Query: 72  KVAMVNKYARENEHPLLCTLE 92
+           ++A V++YAR  +HPL C +E
+Sbjct: 82  RIAQVSQYARARQHPLQCIME 102
+
+
+>sp|A4G7T9|CLPS_HERAR ATP-dependent Clp protease adapter protein
+           ClpS OS=Herminiimonas arsenicoxydans GN=clpS PE=3 SV=1
+          Length = 102
+
+ Score =  113 bits (283), Expect = 3e-25,   Method: Compositional matrix adjust.
+ Identities = 51/88 (57%), Positives = 67/88 (76%)
+
+Query: 6   QLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFT 65
+           Q   LKPPSMY+V+L+NDDYTPMEFV+ +LQ++FS D E ATQ+ML VH  GK ICGV+ 
+Sbjct: 14  QEQKLKPPSMYQVLLLNDDYTPMEFVVMILQEYFSKDRETATQIMLMVHRDGKGICGVYP 73
+
+Query: 66  AEVAETKVAMVNKYARENEHPLLCTLEK 93
+            ++A TKV +V  +AR+  HPL C +E+
+Sbjct: 74  KDIASTKVELVLNHARKAGHPLQCVMEE 101
+
+
+>sp|A6T108|CLPS_JANMA ATP-dependent Clp protease adapter protein
+           ClpS OS=Janthinobacterium sp. (strain Marseille) GN=clpS
+           PE=3 SV=1
+          Length = 102
+
+ Score =  113 bits (282), Expect = 3e-25,   Method: Compositional matrix adjust.
+ Identities = 51/88 (57%), Positives = 67/88 (76%)
+
+Query: 6   QLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFT 65
+           Q   LKPPSMY+V+L+NDDYTPMEFV+ +LQ++FS D E ATQ+ML VH  GK ICGV+ 
+Sbjct: 14  QEQKLKPPSMYQVLLLNDDYTPMEFVVLILQEYFSKDRETATQIMLMVHRDGKGICGVYP 73
+
+Query: 66  AEVAETKVAMVNKYARENEHPLLCTLEK 93
+            ++A TKV +V  +AR+  HPL C +E+
+Sbjct: 74  KDIASTKVELVLNHARKAGHPLQCVMEE 101
+
+
+>sp|Q31GL7|CLPS_THICR ATP-dependent Clp protease adapter protein
+           ClpS OS=Thiomicrospira crunogena (strain XCL-2) GN=clpS
+           PE=3 SV=1
+          Length = 104
+
+ Score =  113 bits (282), Expect = 4e-25,   Method: Compositional matrix adjust.
+ Identities = 48/83 (57%), Positives = 65/83 (78%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           +KPP  Y+V+L+NDD+TPM+FV+DVL +FF  D  +A  +MLAVH +GK  CGV++ EVA
+Sbjct: 20  VKPPKRYQVVLLNDDFTPMDFVVDVLTRFFGMDEAKANAVMLAVHTKGKGTCGVYSREVA 79
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLE 92
+           E KV  VN+YARE++HPL C +E
+Sbjct: 80  EMKVMQVNQYAREHQHPLQCEME 102
+
+
+>sp|B2S618|CLPS_BRUA1 ATP-dependent Clp protease adapter protein
+           ClpS OS=Brucella abortus (strain S19) GN=clpS PE=3 SV=1
+          Length = 116
+
+ Score =  112 bits (281), Expect = 5e-25,   Method: Compositional matrix adjust.
+ Identities = 49/83 (59%), Positives = 66/83 (79%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           + PS+Y+V+L+NDDYTPMEFV+ VLQ+FF  +++ AT++ML VH  G   CGVFT EVAE
+Sbjct: 33  RKPSLYRVLLLNDDYTPMEFVVHVLQRFFQKNLDDATRIMLHVHNHGVGECGVFTYEVAE 92
+
+Query: 71  TKVAMVNKYARENEHPLLCTLEK 93
+           TKV+ V  +AR+N+HPL C +EK
+Sbjct: 93  TKVSQVMDFARQNQHPLQCVMEK 115
+
+
+>sp|A9M5I2|CLPS_BRUC2 ATP-dependent Clp protease adapter protein
+           ClpS OS=Brucella canis (strain ATCC 23365 / NCTC 10854)
+           GN=clpS PE=3 SV=1
+          Length = 116
+
+ Score =  112 bits (281), Expect = 5e-25,   Method: Compositional matrix adjust.
+ Identities = 49/83 (59%), Positives = 66/83 (79%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           + PS+Y+V+L+NDDYTPMEFV+ VLQ+FF  +++ AT++ML VH  G   CGVFT EVAE
+Sbjct: 33  RKPSLYRVLLLNDDYTPMEFVVHVLQRFFQKNLDDATRIMLHVHNHGVGECGVFTYEVAE 92
+
+Query: 71  TKVAMVNKYARENEHPLLCTLEK 93
+           TKV+ V  +AR+N+HPL C +EK
+Sbjct: 93  TKVSQVMDFARQNQHPLQCVMEK 115
+
+
+>sp|B0CGW7|CLPS_BRUSI ATP-dependent Clp protease adapter protein
+           ClpS OS=Brucella suis (strain ATCC 23445 / NCTC 10510)
+           GN=clpS PE=3 SV=1
+          Length = 116
+
+ Score =  112 bits (281), Expect = 5e-25,   Method: Compositional matrix adjust.
+ Identities = 49/83 (59%), Positives = 66/83 (79%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           + PS+Y+V+L+NDDYTPMEFV+ VLQ+FF  +++ AT++ML VH  G   CGVFT EVAE
+Sbjct: 33  RKPSLYRVLLLNDDYTPMEFVVHVLQRFFQKNLDDATRIMLHVHNHGVGECGVFTYEVAE 92
+
+Query: 71  TKVAMVNKYARENEHPLLCTLEK 93
+           TKV+ V  +AR+N+HPL C +EK
+Sbjct: 93  TKVSQVMDFARQNQHPLQCVMEK 115
+
+
+>sp|Q8G0C9|CLPS_BRUSU ATP-dependent Clp protease adapter protein
+           ClpS OS=Brucella suis GN=clpS PE=3 SV=2
+          Length = 116
+
+ Score =  112 bits (281), Expect = 5e-25,   Method: Compositional matrix adjust.
+ Identities = 49/83 (59%), Positives = 66/83 (79%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           + PS+Y+V+L+NDDYTPMEFV+ VLQ+FF  +++ AT++ML VH  G   CGVFT EVAE
+Sbjct: 33  RKPSLYRVLLLNDDYTPMEFVVHVLQRFFQKNLDDATRIMLHVHNHGVGECGVFTYEVAE 92
+
+Query: 71  TKVAMVNKYARENEHPLLCTLEK 93
+           TKV+ V  +AR+N+HPL C +EK
+Sbjct: 93  TKVSQVMDFARQNQHPLQCVMEK 115
+
+
+>sp|C0RJD8|CLPS_BRUMB ATP-dependent Clp protease adapter protein
+           ClpS OS=Brucella melitensis biotype 2 (strain ATCC
+           23457) GN=clpS PE=3 SV=1
+          Length = 116
+
+ Score =  112 bits (281), Expect = 5e-25,   Method: Compositional matrix adjust.
+ Identities = 49/83 (59%), Positives = 66/83 (79%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           + PS+Y+V+L+NDDYTPMEFV+ VLQ+FF  +++ AT++ML VH  G   CGVFT EVAE
+Sbjct: 33  RKPSLYRVLLLNDDYTPMEFVVHVLQRFFQKNLDDATRIMLHVHNHGVGECGVFTYEVAE 92
+
+Query: 71  TKVAMVNKYARENEHPLLCTLEK 93
+           TKV+ V  +AR+N+HPL C +EK
+Sbjct: 93  TKVSQVMDFARQNQHPLQCVMEK 115
+
+
+>sp|Q8YHI3|CLPS_BRUME ATP-dependent Clp protease adapter protein
+           ClpS OS=Brucella melitensis GN=clpS PE=3 SV=2
+          Length = 116
+
+ Score =  112 bits (281), Expect = 5e-25,   Method: Compositional matrix adjust.
+ Identities = 49/83 (59%), Positives = 66/83 (79%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           + PS+Y+V+L+NDDYTPMEFV+ VLQ+FF  +++ AT++ML VH  G   CGVFT EVAE
+Sbjct: 33  RKPSLYRVLLLNDDYTPMEFVVHVLQRFFQKNLDDATRIMLHVHNHGVGECGVFTYEVAE 92
+
+Query: 71  TKVAMVNKYARENEHPLLCTLEK 93
+           TKV+ V  +AR+N+HPL C +EK
+Sbjct: 93  TKVSQVMDFARQNQHPLQCVMEK 115
+
+
+>sp|Q5FTB0|CLPS_GLUOX ATP-dependent Clp protease adapter protein
+           ClpS OS=Gluconobacter oxydans GN=clpS PE=3 SV=1
+          Length = 119
+
+ Score =  112 bits (281), Expect = 5e-25,   Method: Compositional matrix adjust.
+ Identities = 50/83 (60%), Positives = 65/83 (78%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           + PSMYKV+++NDDYTPMEFV+ VL++FF+   + AT +ML VH +G  ICGVFT EVAE
+Sbjct: 36  RKPSMYKVLMLNDDYTPMEFVVHVLERFFAKTRDEATSIMLQVHQRGVGICGVFTYEVAE 95
+
+Query: 71  TKVAMVNKYARENEHPLLCTLEK 93
+           +KV  V   AR+N+HPL CT+EK
+Sbjct: 96  SKVTQVMDLARQNQHPLQCTIEK 118
+
+
+>sp|Q5NLR1|CLPS_ZYMMO ATP-dependent Clp protease adapter protein
+           ClpS OS=Zymomonas mobilis GN=clpS PE=3 SV=2
+          Length = 107
+
+ Score =  112 bits (280), Expect = 6e-25,   Method: Compositional matrix adjust.
+ Identities = 52/84 (61%), Positives = 65/84 (77%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           K P  YKV+++NDDYTPMEFV+  LQ+FF   +E AT++ML VH +G  ICGVFT EVAE
+Sbjct: 24  KKPQPYKVLMLNDDYTPMEFVVLCLQRFFRMGIEDATKVMLQVHQRGVGICGVFTYEVAE 83
+
+Query: 71  TKVAMVNKYARENEHPLLCTLEKA 94
+           TKV  V  +AR+++HPL CTLEKA
+Sbjct: 84  TKVNQVVDFARQHQHPLQCTLEKA 107
+
+
+>sp|Q6FCI2|CLPS_ACIAD ATP-dependent Clp protease adapter protein
+           ClpS OS=Acinetobacter sp. (strain ADP1) GN=clpS PE=3
+           SV=2
+          Length = 107
+
+ Score =  112 bits (279), Expect = 8e-25,   Method: Compositional matrix adjust.
+ Identities = 46/83 (55%), Positives = 66/83 (79%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LK P +Y V+L+NDDYTPM+FVI++LQ++F+ ++++ATQ+ML VHY+GK + GV+  ++A
+Sbjct: 22  LKRPPLYAVVLLNDDYTPMDFVIEILQQYFALNLDQATQVMLTVHYEGKGVAGVYPRDIA 81
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLE 92
+           ETK   VN YAR   HPLLC +E
+Sbjct: 82  ETKANQVNNYARSQGHPLLCQIE 104
+
+
+>sp|Q6N535|CLPS2_RHOPA ATP-dependent Clp protease adapter protein
+           ClpS 2 OS=Rhodopseudomonas palustris GN=clpS2 PE=3 SV=2
+          Length = 109
+
+ Score =  112 bits (279), Expect = 9e-25,   Method: Compositional matrix adjust.
+ Identities = 49/83 (59%), Positives = 66/83 (79%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           K P++Y+V+++NDDYTPMEFV+ VL+KFF  DVE AT++ML VH+ G   CGVFT E+AE
+Sbjct: 26  KRPNLYRVLILNDDYTPMEFVVHVLEKFFQMDVEAATKVMLHVHHHGIGECGVFTYEIAE 85
+
+Query: 71  TKVAMVNKYARENEHPLLCTLEK 93
+           TKV  V  +AR+++HPL C +EK
+Sbjct: 86  TKVTQVMDFARKHQHPLQCVMEK 108
+
+
+>sp|Q89JW5|CLPS2_BRAJA ATP-dependent Clp protease adapter protein
+           ClpS 2 OS=Bradyrhizobium japonicum GN=clpS2 PE=3 SV=2
+          Length = 110
+
+ Score =  112 bits (279), Expect = 9e-25,   Method: Compositional matrix adjust.
+ Identities = 49/83 (59%), Positives = 66/83 (79%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           K P++Y+V+++NDDYTPMEFV+ VL+KFF  DVE AT++ML VH+ G   CGVFT E+AE
+Sbjct: 27  KRPNLYRVLILNDDYTPMEFVVHVLEKFFQKDVEAATKIMLHVHHHGIGECGVFTYEIAE 86
+
+Query: 71  TKVAMVNKYARENEHPLLCTLEK 93
+           TKV  V  +AR+++HPL C +EK
+Sbjct: 87  TKVTQVMDFARKHQHPLQCVMEK 109
+
+
+>sp|Q5P201|CLPS_AZOSE ATP-dependent Clp protease adapter protein
+           ClpS OS=Azoarcus sp. (strain EbN1) GN=clpS PE=3 SV=1
+          Length = 102
+
+ Score =  112 bits (279), Expect = 9e-25,   Method: Compositional matrix adjust.
+ Identities = 49/83 (59%), Positives = 65/83 (78%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           KPP +YKV+L+NDD+TPM+FVI VLQKFF  D ERAT++ML VH +G  +CGVF  +VA 
+Sbjct: 19  KPPPLYKVLLLNDDFTPMDFVIVVLQKFFGMDRERATRVMLQVHREGMGVCGVFPKDVAA 78
+
+Query: 71  TKVAMVNKYARENEHPLLCTLEK 93
+           TKV  V  +AR+++HPL C +E+
+Sbjct: 79  TKVEQVVAFARQHQHPLACVMEE 101
+
+
+>sp|B2JDY3|CLPS_BURP8 ATP-dependent Clp protease adapter protein
+           ClpS OS=Burkholderia phymatum (strain DSM 17167 /
+           STM815) GN=clpS PE=3 SV=1
+          Length = 104
+
+ Score =  111 bits (278), Expect = 1e-24,   Method: Compositional matrix adjust.
+ Identities = 47/89 (52%), Positives = 69/89 (77%)
+
+Query: 6   QLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFT 65
+           Q   LKPP+M+KV+L+NDD+TPMEFV+ ++Q++F+ D E ATQ+ML VH +G+ +CGV+T
+Sbjct: 16  QEQKLKPPAMFKVVLLNDDFTPMEFVVMIVQEYFNKDRETATQIMLKVHREGRGVCGVYT 75
+
+Query: 66  AEVAETKVAMVNKYARENEHPLLCTLEKA 94
+            ++A TKV  V  +AR+  HPL C +E+A
+Sbjct: 76  RDIASTKVEQVVTHARQAGHPLQCVMEEA 104
+
+
+>sp|A1K4J5|CLPS_AZOSB ATP-dependent Clp protease adapter protein
+           ClpS OS=Azoarcus sp. (strain BH72) GN=clpS PE=3 SV=1
+          Length = 102
+
+ Score =  111 bits (278), Expect = 1e-24,   Method: Compositional matrix adjust.
+ Identities = 47/83 (56%), Positives = 66/83 (79%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           +PP +YKV+L+NDD+TPM+FVI VLQK+FS D ERAT++ML VH +G  +CGVF  ++A 
+Sbjct: 19  RPPPLYKVLLLNDDFTPMDFVIVVLQKYFSMDRERATRVMLQVHREGMGVCGVFPRDIAS 78
+
+Query: 71  TKVAMVNKYARENEHPLLCTLEK 93
+           TKV  V  +AR+++HPL C +E+
+Sbjct: 79  TKVEQVVSFARQHQHPLACVMEE 101
+
+
+>sp|A9IQ03|CLPS_BORPD ATP-dependent Clp protease adapter protein
+           ClpS OS=Bordetella petrii (strain ATCC BAA-461 / DSM
+           12804 / CCUG 43448) GN=clpS PE=3 SV=1
+          Length = 104
+
+ Score =  111 bits (277), Expect = 1e-24,   Method: Compositional matrix adjust.
+ Identities = 46/81 (56%), Positives = 63/81 (77%)
+
+Query: 12  PPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAET 71
+           PP MY+V+L+NDDYTPMEFV+ VLQKFF  + E AT++ML VH++G+  CGV+  +VA T
+Sbjct: 22  PPPMYQVVLLNDDYTPMEFVVKVLQKFFGKNQEDATRIMLQVHHEGRGTCGVYPRDVAAT 81
+
+Query: 72  KVAMVNKYARENEHPLLCTLE 92
+           ++A V +YAR  +HPL C +E
+Sbjct: 82  RIAQVAQYARARQHPLQCVME 102
+
+
+>sp|Q480C4|CLPS_COLP3 ATP-dependent Clp protease adapter protein
+           ClpS OS=Colwellia psychrerythraea (strain 34H / ATCC
+           BAA-681) GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  110 bits (276), Expect = 2e-24,   Method: Compositional matrix adjust.
+ Identities = 49/87 (56%), Positives = 67/87 (77%)
+
+Query: 8   DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAE 67
+           + ++ P+ Y V L+NDDYTPM+FV+DVL  FF+   E+AT +ML +HY+GKA+CG +TAE
+Sbjct: 20  EQIEEPAKYYVFLLNDDYTPMDFVVDVLCNFFNKSEEQATDIMLTIHYKGKALCGTYTAE 79
+
+Query: 68  VAETKVAMVNKYARENEHPLLCTLEKA 94
+           +AETKV  V +YA EN+HPL C + KA
+Sbjct: 80  IAETKVEQVVQYAFENQHPLKCVMTKA 106
+
+
+>sp|Q2Y6T2|CLPS_NITMU ATP-dependent Clp protease adapter protein
+           ClpS OS=Nitrosospira multiformis (strain ATCC 25196 /
+           NCIMB 11849) GN=clpS PE=3 SV=1
+          Length = 102
+
+ Score =  110 bits (275), Expect = 2e-24,   Method: Compositional matrix adjust.
+ Identities = 48/84 (57%), Positives = 65/84 (77%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LKPP M+KVIL+NDD+TPM+FV+ VLQ FFS + E+ATQ+ML VH  G  +CGV+  +VA
+Sbjct: 18  LKPPPMFKVILLNDDFTPMDFVVTVLQTFFSMNREQATQIMLKVHMDGAGVCGVYPNDVA 77
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEK 93
+            TKV  V  +AR+++HPL C +E+
+Sbjct: 78  STKVEQVVAFARQHQHPLQCVMEE 101
+
+
+>sp|Q98MA3|CLPS1_RHILO ATP-dependent Clp protease adapter protein
+           ClpS 1 OS=Rhizobium loti GN=clpS1 PE=3 SV=1
+          Length = 109
+
+ Score =  110 bits (275), Expect = 3e-24,   Method: Compositional matrix adjust.
+ Identities = 48/81 (59%), Positives = 64/81 (79%)
+
+Query: 13  PSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAETK 72
+           PS+Y+V+++NDDYTPMEFV+ VL++FF  D E AT++ML VH  G   CGV+T EVAETK
+Sbjct: 28  PSLYRVLILNDDYTPMEFVVHVLERFFQKDREAATRIMLHVHNHGVGECGVYTFEVAETK 87
+
+Query: 73  VAMVNKYARENEHPLLCTLEK 93
+           V+ V  +AR+N+HPL C +EK
+Sbjct: 88  VSQVMDFARQNQHPLQCVMEK 108
+
+
+>sp|Q8UFN4|CLPS1_AGRT5 ATP-dependent Clp protease adapter protein
+           ClpS 1 OS=Agrobacterium tumefaciens (strain C58 / ATCC
+           33970) GN=clpS1 PE=3 SV=1
+          Length = 117
+
+ Score =  110 bits (275), Expect = 3e-24,   Method: Compositional matrix adjust.
+ Identities = 49/83 (59%), Positives = 65/83 (78%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           K P++Y+V+L+NDDYTPMEFVI +L++FF  D E AT++ML VH  G   CGVFT EVAE
+Sbjct: 34  KRPNLYRVLLLNDDYTPMEFVIHILERFFQKDREAATRIMLHVHQHGVGECGVFTYEVAE 93
+
+Query: 71  TKVAMVNKYARENEHPLLCTLEK 93
+           TKV+ V  +AR+++HPL C +EK
+Sbjct: 94  TKVSQVMDFARQHQHPLQCVMEK 116
+
+
+>sp|Q0C3E2|CLPS_HYPNA ATP-dependent Clp protease adapter protein
+           ClpS OS=Hyphomonas neptunium (strain ATCC 15444) GN=clpS
+           PE=3 SV=1
+          Length = 118
+
+ Score =  110 bits (275), Expect = 3e-24,   Method: Compositional matrix adjust.
+ Identities = 49/83 (59%), Positives = 66/83 (79%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           K PS+Y+V+L+NDDYTPMEFV+ +L++FF+   E+AT++ML VH +G  +CGV+T EVAE
+Sbjct: 34  KKPSLYRVLLLNDDYTPMEFVVFILERFFNRSREQATRIMLHVHQKGVGLCGVYTYEVAE 93
+
+Query: 71  TKVAMVNKYARENEHPLLCTLEK 93
+           TKVA V   AR +EHPL C +EK
+Sbjct: 94  TKVAQVLDLARRHEHPLQCVMEK 116
+
+
+>sp|Q0AEG2|CLPS_NITEC ATP-dependent Clp protease adapter protein
+           ClpS OS=Nitrosomonas eutropha (strain C91) GN=clpS PE=3
+           SV=1
+          Length = 103
+
+ Score =  110 bits (274), Expect = 3e-24,   Method: Compositional matrix adjust.
+ Identities = 44/84 (52%), Positives = 65/84 (77%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L PP +YKVIL+NDD+TPM+FV+ VL+ FF  D E AT++ML +H +G  ICG +  ++A
+Sbjct: 19  LTPPPLYKVILINDDFTPMDFVVKVLRHFFFMDEEMATRIMLKIHTEGAGICGTYPGDIA 78
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEK 93
+            TKV  VN+++++N+HPL+C +EK
+Sbjct: 79  ATKVQQVNEFSKQNQHPLMCVMEK 102
+
+
+>sp|Q82TY3|CLPS_NITEU ATP-dependent Clp protease adapter protein
+           ClpS OS=Nitrosomonas europaea GN=clpS PE=3 SV=1
+          Length = 103
+
+ Score =  110 bits (274), Expect = 3e-24,   Method: Compositional matrix adjust.
+ Identities = 44/84 (52%), Positives = 66/84 (78%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L PP +YKVIL+NDD+TPM+FV+ VL+ FF  + E AT++ML +H +G  ICG++ +++A
+Sbjct: 19  LNPPPLYKVILINDDFTPMDFVVKVLRHFFLMNEEMATKVMLKIHIEGAGICGIYPSDIA 78
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEK 93
+            TKV  VN ++R+N+HPL+C +EK
+Sbjct: 79  VTKVQQVNDFSRQNQHPLMCVMEK 102
+
+
+>sp|B0T2L1|CLPS_CAUSK ATP-dependent Clp protease adapter protein
+           ClpS OS=Caulobacter sp. (strain K31) GN=clpS PE=3 SV=1
+          Length = 109
+
+ Score =  109 bits (273), Expect = 4e-24,   Method: Compositional matrix adjust.
+ Identities = 49/83 (59%), Positives = 65/83 (78%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           + PS+Y+V+++NDDYTPMEFV+ VL++FF+   E AT++ML VH  G  +CGVFT EVAE
+Sbjct: 26  QKPSLYRVLILNDDYTPMEFVVYVLERFFNKSREDATRIMLHVHQHGVGVCGVFTYEVAE 85
+
+Query: 71  TKVAMVNKYARENEHPLLCTLEK 93
+           TKVA V   AR ++HPL CT+EK
+Sbjct: 86  TKVAQVIDSARRHQHPLQCTMEK 108
+
+
+>sp|Q7NRW1|CLPS_CHRVO ATP-dependent Clp protease adapter protein
+           ClpS OS=Chromobacterium violaceum GN=clpS PE=3 SV=1
+          Length = 106
+
+ Score =  109 bits (272), Expect = 6e-24,   Method: Compositional matrix adjust.
+ Identities = 50/95 (52%), Positives = 70/95 (73%), Gaps = 4/95 (4%)
+
+Query: 3   DFDQLDALK----PPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGK 58
+           D  QL+A +    PP MYKV+L+NDD+TPM+FV+ VLQ+FF  + E+AT +ML VH QG 
+Sbjct: 11  DDAQLEASRVRENPPPMYKVLLLNDDFTPMDFVVQVLQQFFHMNREKATHIMLQVHTQGH 70
+
+Query: 59  AICGVFTAEVAETKVAMVNKYARENEHPLLCTLEK 93
+            +CGV+T +VA TKV  V +YA+ ++HPL C +E+
+Sbjct: 71  GVCGVYTKDVAATKVEQVLQYAKAHQHPLQCVMEE 105
+
+
+>sp|Q92Q63|CLPS1_RHIME ATP-dependent Clp protease adapter protein
+           ClpS 1 OS=Rhizobium meliloti GN=clpS1 PE=3 SV=1
+          Length = 117
+
+ Score =  108 bits (271), Expect = 7e-24,   Method: Compositional matrix adjust.
+ Identities = 49/83 (59%), Positives = 63/83 (75%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           K PS+Y+V+L+NDDYTPMEFVI +L++FF  + E AT +ML VH  G   CGVFT EVAE
+Sbjct: 34  KKPSLYRVLLLNDDYTPMEFVIHILERFFQKNREEATVIMLHVHNHGVGECGVFTYEVAE 93
+
+Query: 71  TKVAMVNKYARENEHPLLCTLEK 93
+           TKV  V  +AR+++HPL C +EK
+Sbjct: 94  TKVTQVMDFARQHQHPLQCVMEK 116
+
+
+>sp|B4R947|CLPS_PHEZH ATP-dependent Clp protease adapter protein
+           ClpS OS=Phenylobacterium zucineum (strain HLK1) GN=clpS
+           PE=3 SV=1
+          Length = 109
+
+ Score =  108 bits (270), Expect = 8e-24,   Method: Compositional matrix adjust.
+ Identities = 49/83 (59%), Positives = 65/83 (78%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           + P+MY+V+L+NDDYTPMEFV+ VL++FF+   E AT++ML VH  G  +CGV+T EVAE
+Sbjct: 26  QKPAMYRVLLLNDDYTPMEFVVYVLEQFFNKSREDATRIMLHVHQHGVGVCGVYTYEVAE 85
+
+Query: 71  TKVAMVNKYARENEHPLLCTLEK 93
+           TKVA V   AR ++HPL CT+EK
+Sbjct: 86  TKVAQVVDTARRHQHPLQCTMEK 108
+
+
+>sp|B8GZM8|CLPS_CAUCN ATP-dependent Clp protease adapter protein
+           ClpS OS=Caulobacter crescentus (strain NA1000 / CB15N)
+           GN=clpS PE=3 SV=1
+          Length = 109
+
+ Score =  108 bits (269), Expect = 1e-23,   Method: Compositional matrix adjust.
+ Identities = 48/83 (57%), Positives = 65/83 (78%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           + PS+Y+V+++NDDYTPMEFV+ VL++FF+   E AT++ML VH  G  +CGV+T EVAE
+Sbjct: 26  QKPSLYRVLILNDDYTPMEFVVYVLERFFNKSREDATRIMLHVHQNGVGVCGVYTYEVAE 85
+
+Query: 71  TKVAMVNKYARENEHPLLCTLEK 93
+           TKVA V   AR ++HPL CT+EK
+Sbjct: 86  TKVAQVIDSARRHQHPLQCTMEK 108
+
+
+>sp|Q9A5I0|CLPS_CAUCR ATP-dependent Clp protease adapter protein
+           ClpS OS=Caulobacter crescentus GN=clpS PE=1 SV=1
+          Length = 119
+
+ Score =  107 bits (268), Expect = 2e-23,   Method: Compositional matrix adjust.
+ Identities = 48/81 (59%), Positives = 64/81 (79%)
+
+Query: 13  PSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAETK 72
+           PS+Y+V+++NDDYTPMEFV+ VL++FF+   E AT++ML VH  G  +CGV+T EVAETK
+Sbjct: 38  PSLYRVLILNDDYTPMEFVVYVLERFFNKSREDATRIMLHVHQNGVGVCGVYTYEVAETK 97
+
+Query: 73  VAMVNKYARENEHPLLCTLEK 93
+           VA V   AR ++HPL CT+EK
+Sbjct: 98  VAQVIDSARRHQHPLQCTMEK 118
+
+
+>sp|Q5LMA7|CLPS_SILPO ATP-dependent Clp protease adapter protein
+           ClpS OS=Silicibacter pomeroyi GN=clpS PE=3 SV=1
+          Length = 113
+
+ Score =  106 bits (265), Expect = 3e-23,   Method: Compositional matrix adjust.
+ Identities = 46/83 (55%), Positives = 66/83 (79%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           K P +YKV+L+NDDYTPMEFV+ VL++FF  +  +A ++ML VH +G A+ GVF+ E+AE
+Sbjct: 29  KRPPLYKVLLLNDDYTPMEFVVHVLERFFGMNHAQAFEIMLTVHKKGVAVVGVFSHEIAE 88
+
+Query: 71  TKVAMVNKYARENEHPLLCTLEK 93
+           TKV++V  +AR ++HPL CT+EK
+Sbjct: 89  TKVSLVMDFARRHQHPLQCTMEK 111
+
+
+>sp|Q0AQ60|CLPS_MARMM ATP-dependent Clp protease adapter protein
+           ClpS OS=Maricaulis maris (strain MCS10) GN=clpS PE=3
+           SV=1
+          Length = 109
+
+ Score =  106 bits (264), Expect = 5e-23,   Method: Compositional matrix adjust.
+ Identities = 49/85 (57%), Positives = 62/85 (72%)
+
+Query: 9   ALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEV 68
+           A K PS+Y+V+L+NDDYTPMEFV++VL + F    E A ++ML VH  G  +CGV+T EV
+Sbjct: 24  ATKKPSLYRVLLLNDDYTPMEFVVEVLARIFRKSPEDAARIMLHVHQNGVGMCGVYTYEV 83
+
+Query: 69  AETKVAMVNKYARENEHPLLCTLEK 93
+           AETKVA V   AR  +HPL CT+EK
+Sbjct: 84  AETKVAQVMDAARRAQHPLQCTMEK 108
+
+
+>sp|Q16AR8|CLPS_ROSDO ATP-dependent Clp protease adapter protein
+           ClpS OS=Roseobacter denitrificans (strain ATCC 33942 /
+           OCh 114) GN=clpS PE=3 SV=1
+          Length = 113
+
+ Score =  105 bits (263), Expect = 7e-23,   Method: Compositional matrix adjust.
+ Identities = 49/91 (53%), Positives = 68/91 (74%), Gaps = 4/91 (4%)
+
+Query: 7   LDALKP----PSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICG 62
+           L A KP    P +YKV+L+NDD+TPMEFV+ VL++FF  +  +A ++ML VH +G A+ G
+Sbjct: 21  LTATKPKTKRPPLYKVLLLNDDFTPMEFVVHVLERFFGLNHAQAFEIMLTVHKKGVAVVG 80
+
+Query: 63  VFTAEVAETKVAMVNKYARENEHPLLCTLEK 93
+           VF+ E+AETKVA V  +AR ++HPL CT+EK
+Sbjct: 81  VFSHEIAETKVAQVMDFARRHQHPLQCTMEK 111
+
+
+>sp|A4WPY6|CLPS_RHOS5 ATP-dependent Clp protease adapter protein
+           ClpS OS=Rhodobacter sphaeroides (strain ATCC 17025 / ATH
+           2.4.3) GN=clpS PE=3 SV=1
+          Length = 113
+
+ Score =  105 bits (261), Expect = 9e-23,   Method: Compositional matrix adjust.
+ Identities = 47/81 (58%), Positives = 63/81 (77%)
+
+Query: 13  PSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAETK 72
+           P +YKV+L+NDDYTPMEFV+ VL++FF     +A ++ML VH +G A+ GVF+ EVAETK
+Sbjct: 32  PPLYKVLLLNDDYTPMEFVVHVLERFFGLSHAQAFEIMLTVHKKGLAVVGVFSFEVAETK 91
+
+Query: 73  VAMVNKYARENEHPLLCTLEK 93
+           VA V  +AR ++HPL CT+EK
+Sbjct: 92  VAQVMDFARRHQHPLQCTMEK 112
+
+
+>sp|Q1GDK0|CLPS_SILST ATP-dependent Clp protease adapter protein
+           ClpS OS=Silicibacter sp. (strain TM1040) GN=clpS PE=3
+           SV=1
+          Length = 113
+
+ Score =  105 bits (261), Expect = 1e-22,   Method: Compositional matrix adjust.
+ Identities = 48/81 (59%), Positives = 63/81 (77%)
+
+Query: 13  PSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAETK 72
+           P  YKV+L+NDDYTPMEFV+ VL++FF  +  +A ++ML VH +G A+ GVF+ EVAETK
+Sbjct: 31  PPRYKVLLLNDDYTPMEFVVIVLERFFGLNHAQAFEIMLTVHKKGLAVVGVFSHEVAETK 90
+
+Query: 73  VAMVNKYARENEHPLLCTLEK 93
+           VA V  YAR ++HPL CT+EK
+Sbjct: 91  VAQVMDYARRHQHPLQCTMEK 111
+
+
+>sp|A1TS63|CLPS_ACIAC ATP-dependent Clp protease adapter protein
+           ClpS OS=Acidovorax avenae subsp. citrulli (strain
+           AAC00-1) GN=clpS PE=3 SV=1
+          Length = 122
+
+ Score =  104 bits (259), Expect = 2e-22,   Method: Compositional matrix adjust.
+ Identities = 46/82 (56%), Positives = 60/82 (73%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           +PP MY+V+++NDDYTPMEFVI VLQ+FF  D E ATQ+ML +H  GK +CGV++ +VA 
+Sbjct: 38  QPPQMYQVVMLNDDYTPMEFVIVVLQEFFGKDREAATQIMLKIHLDGKGVCGVYSRDVAA 97
+
+Query: 71  TKVAMVNKYARENEHPLLCTLE 92
+           TKV  V + A +  HPL C  E
+Sbjct: 98  TKVEQVREAAHKAGHPLQCLSE 119
+
+
+>sp|A7HWX2|CLPS_PARL1 ATP-dependent Clp protease adapter protein
+           ClpS OS=Parvibaculum lavamentivorans (strain DS-1 / DSM
+           13023 / NCIMB 13966) GN=clpS PE=3 SV=1
+          Length = 110
+
+ Score =  103 bits (256), Expect = 4e-22,   Method: Compositional matrix adjust.
+ Identities = 45/80 (56%), Positives = 63/80 (78%)
+
+Query: 14  SMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAETKV 73
+           S+YKV+L+NDDYTPMEFV+ VL++FF+   + AT +ML VH  G  ICG++T EVAETKV
+Sbjct: 30  SLYKVLLLNDDYTPMEFVVHVLERFFNKGRDEATVIMLHVHQHGVGICGLYTYEVAETKV 89
+
+Query: 74  AMVNKYARENEHPLLCTLEK 93
+             V  +A++++HPL CT+E+
+Sbjct: 90  TQVMDFAQQHQHPLQCTMER 109
+
+
+>sp|Q6MNG7|CLPS_BDEBA ATP-dependent Clp protease adapter protein
+           ClpS OS=Bdellovibrio bacteriovorus GN=clpS PE=3 SV=1
+          Length = 114
+
+ Score =  101 bits (251), Expect = 2e-21,   Method: Compositional matrix adjust.
+ Identities = 46/84 (54%), Positives = 65/84 (77%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L  P MYKVIL+NDDYTPM+FV+ VL++FF+   E+AT++ML VH +G  + GVF+ E+A
+Sbjct: 29  LDTPKMYKVILLNDDYTPMDFVVLVLRRFFAKTEEQATEIMLDVHKKGAGVAGVFSLEIA 88
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLEK 93
+           E KV  VN++A+ N++PL  TLE+
+Sbjct: 89  EMKVMQVNQFAQLNQYPLKSTLEE 112
+
+
+>sp|Q21UT1|CLPS_RHOFD ATP-dependent Clp protease adapter protein
+           ClpS OS=Rhodoferax ferrireducens (strain DSM 15236 /
+           ATCC BAA-621 / T118) GN=clpS PE=3 SV=1
+          Length = 120
+
+ Score =  100 bits (249), Expect = 3e-21,   Method: Compositional matrix adjust.
+ Identities = 44/82 (53%), Positives = 60/82 (73%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           KPP MY+V+++NDDYTPMEFV+ V+Q+FF  D+E AT++ML +H  GK +CGV++ +VA 
+Sbjct: 35  KPPHMYQVVMLNDDYTPMEFVVVVIQEFFGKDLEAATRIMLKIHLDGKGVCGVYSKDVAA 94
+
+Query: 71  TKVAMVNKYARENEHPLLCTLE 92
+           TKV  V   A +  HPL C  E
+Sbjct: 95  TKVDQVLDAANKAGHPLKCISE 116
+
+
+>sp|A1WRC7|CLPS_VEREI ATP-dependent Clp protease adapter protein
+           ClpS OS=Verminephrobacter eiseniae (strain EF01-2)
+           GN=clpS PE=3 SV=1
+          Length = 119
+
+ Score =  100 bits (249), Expect = 3e-21,   Method: Compositional matrix adjust.
+ Identities = 47/81 (58%), Positives = 59/81 (72%)
+
+Query: 12  PPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAET 71
+           PP MY+V+++NDDYTPMEFVI VLQ+FFS D E AT++ML +H  GK ICGV++ +VA T
+Sbjct: 36  PPQMYQVVMLNDDYTPMEFVIVVLQEFFSKDRETATRIMLKIHLDGKGICGVYSHDVAAT 95
+
+Query: 72  KVAMVNKYARENEHPLLCTLE 92
+           KV  V   A +  HPL C  E
+Sbjct: 96  KVDQVLDAALKAGHPLQCVSE 116
+
+
+>sp|C5CLL8|CLPS_VARPS ATP-dependent Clp protease adapter protein
+           ClpS OS=Variovorax paradoxus (strain S110) GN=clpS PE=3
+           SV=1
+          Length = 119
+
+ Score = 99.8 bits (247), Expect = 4e-21,   Method: Compositional matrix adjust.
+ Identities = 43/81 (53%), Positives = 60/81 (74%)
+
+Query: 12  PPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAET 71
+           PP MY+V+++NDDYTPMEFVI VLQ++F+ D E ATQ+ML +H  G+ +CGV++ ++A T
+Sbjct: 36  PPQMYQVVMLNDDYTPMEFVIVVLQEYFNKDRETATQIMLKIHLDGRGVCGVYSRDLAAT 95
+
+Query: 72  KVAMVNKYARENEHPLLCTLE 92
+           KV  V + A +  HPL C  E
+Sbjct: 96  KVNQVMEAAHQAGHPLQCVSE 116
+
+
+>sp|B8DJU4|CLPS_DESVM ATP-dependent Clp protease adapter protein
+          ClpS OS=Desulfovibrio vulgaris (strain Miyazaki F / DSM
+          19637) GN=clpS PE=3 SV=1
+          Length = 100
+
+ Score = 99.4 bits (246), Expect = 6e-21,   Method: Compositional matrix adjust.
+ Identities = 46/86 (53%), Positives = 63/86 (73%)
+
+Query: 8  DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAE 67
+          D ++ P M++V+L NDDYT MEFV+ +L + F    + AT++MLAVH +G   CGV+TAE
+Sbjct: 14 DEVREPRMFRVLLHNDDYTTMEFVVSILIEVFRRTPDEATRIMLAVHEKGVGECGVYTAE 73
+
+Query: 68 VAETKVAMVNKYARENEHPLLCTLEK 93
+          VAETKVA+V+  AR   +PL CTLE+
+Sbjct: 74 VAETKVALVHARARREGYPLRCTLEE 99
+
+
+>sp|Q6G5D4|CLPS_BARHE ATP-dependent Clp protease adapter protein
+           ClpS OS=Bartonella henselae GN=clpS PE=3 SV=2
+          Length = 110
+
+ Score = 96.3 bits (238), Expect = 5e-20,   Method: Compositional matrix adjust.
+ Identities = 42/83 (50%), Positives = 59/83 (71%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L+ P +Y+V+L++DDYTPM+FVI VL+ FF  + E A  +ML+VH  G   CG++  EVA
+Sbjct: 26  LQKPKLYRVLLLDDDYTPMDFVIFVLKSFFKKNFEEAMHIMLSVHQNGVGECGIYNYEVA 85
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLE 92
+           E K+  V + AR+NEHPL C +E
+Sbjct: 86  EMKIIQVRECARQNEHPLQCVME 108
+
+
+>sp|Q6FZM5|CLPS_BARQU ATP-dependent Clp protease adapter protein
+           ClpS OS=Bartonella quintana GN=clpS PE=3 SV=2
+          Length = 110
+
+ Score = 95.5 bits (236), Expect = 9e-20,   Method: Compositional matrix adjust.
+ Identities = 43/83 (51%), Positives = 56/83 (67%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L+ P +Y+V L NDDYTPM+FV+ VL+ FF    E AT +ML VH  G   CG+++ EVA
+Sbjct: 26  LQKPKLYRVFLFNDDYTPMDFVVFVLKNFFKKSFEEATHIMLNVHQNGVGECGIYSYEVA 85
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLE 92
+           E KV  V + A +NEHPL C +E
+Sbjct: 86  EMKVIQVRECAHQNEHPLQCVME 108
+
+
+>sp|C0QI24|CLPS_DESAH ATP-dependent Clp protease adapter protein
+           ClpS OS=Desulfobacterium autotrophicum (strain ATCC
+           43914 / DSM 3382 / HRM2) GN=clpS PE=3 SV=1
+          Length = 104
+
+ Score = 94.7 bits (234), Expect = 1e-19,   Method: Compositional matrix adjust.
+ Identities = 44/81 (54%), Positives = 56/81 (69%)
+
+Query: 13  PSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAETK 72
+           P MY+V+L NDDYT MEFV+ +L   F   +E+A+ +ML +H QGK ICG +T EVAETK
+Sbjct: 23  PPMYRVVLHNDDYTTMEFVVQILITVFGKSLEKASIIMLNIHKQGKGICGSYTREVAETK 82
+
+Query: 73  VAMVNKYARENEHPLLCTLEK 93
+           V  V+  ARE   PL  T+EK
+Sbjct: 83  VNTVHHLAREQGFPLKSTMEK 103
+
+
+>sp|Q30ZJ9|CLPS_DESDG ATP-dependent Clp protease adapter protein
+           ClpS OS=Desulfovibrio desulfuricans (strain G20) GN=clpS
+           PE=3 SV=1
+          Length = 104
+
+ Score = 94.4 bits (233), Expect = 2e-19,   Method: Compositional matrix adjust.
+ Identities = 44/86 (51%), Positives = 60/86 (69%)
+
+Query: 8   DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAE 67
+           + LK P  ++V+L NDDYT M+FV+ VL   F    E+A  +ML+VH +G  +CGV+TAE
+Sbjct: 18  EELKEPRRFRVLLHNDDYTSMDFVVAVLIDIFRKSREQAMSIMLSVHEKGIGVCGVYTAE 77
+
+Query: 68  VAETKVAMVNKYARENEHPLLCTLEK 93
+           VAETKVAMV+  AR    PL C++E+
+Sbjct: 78  VAETKVAMVHARARAEGFPLRCSMEE 103
+
+
+>sp|Q72BN4|CLPS_DESVH ATP-dependent Clp protease adapter protein
+           ClpS OS=Desulfovibrio vulgaris (strain Hildenborough /
+           ATCC 29579 / NCIMB 8303) GN=clpS PE=3 SV=1
+          Length = 104
+
+ Score = 92.8 bits (229), Expect = 5e-19,   Method: Compositional matrix adjust.
+ Identities = 44/86 (51%), Positives = 59/86 (68%)
+
+Query: 8   DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAE 67
+           D ++ P MY+V+L NDDYT MEFV+ +L + F    E+AT +MLAVH  G   CGV+T E
+Sbjct: 18  DDVRLPRMYRVLLHNDDYTTMEFVVSILVEVFRKTAEQATAIMLAVHRDGVGECGVYTFE 77
+
+Query: 68  VAETKVAMVNKYARENEHPLLCTLEK 93
+           VAETK A+V+  AR   +PL C+ E+
+Sbjct: 78  VAETKAAIVHARARREGYPLRCSTEE 103
+
+
+>sp|A1VDN4|CLPS_DESVV ATP-dependent Clp protease adapter protein
+           ClpS OS=Desulfovibrio vulgaris subsp. vulgaris (strain
+           DP4) GN=clpS PE=3 SV=1
+          Length = 104
+
+ Score = 92.8 bits (229), Expect = 5e-19,   Method: Compositional matrix adjust.
+ Identities = 44/86 (51%), Positives = 59/86 (68%)
+
+Query: 8   DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAE 67
+           D ++ P MY+V+L NDDYT MEFV+ +L + F    E+AT +MLAVH  G   CGV+T E
+Sbjct: 18  DDVRLPRMYRVLLHNDDYTTMEFVVSILVEVFRKTAEQATAIMLAVHRDGVGECGVYTFE 77
+
+Query: 68  VAETKVAMVNKYARENEHPLLCTLEK 93
+           VAETK A+V+  AR   +PL C+ E+
+Sbjct: 78  VAETKAAIVHARARREGYPLRCSTEE 103
+
+
+>sp|Q72RD1|CLPS_LEPIC ATP-dependent Clp protease adapter protein
+           ClpS OS=Leptospira interrogans serogroup
+           Icterohaemorrhagiae serovar copenhageni GN=clpS PE=3
+           SV=1
+          Length = 111
+
+ Score = 92.8 bits (229), Expect = 6e-19,   Method: Compositional matrix adjust.
+ Identities = 41/82 (50%), Positives = 58/82 (70%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LK PS Y+VI++NDD+TPMEFV+ +LQ  F      + Q+ML  H  GKA+CGV++ +VA
+Sbjct: 21  LKKPSKYRVIILNDDFTPMEFVVWILQMVFHRSRAESQQIMLKAHITGKALCGVYSHDVA 80
+
+Query: 70  ETKVAMVNKYARENEHPLLCTL 91
+            TKVA V + A ++ +PL CT+
+Sbjct: 81  RTKVAQVQQLAEQHGYPLHCTM 102
+
+
+>sp|Q8F4D8|CLPS_LEPIN ATP-dependent Clp protease adapter protein
+           ClpS OS=Leptospira interrogans GN=clpS PE=3 SV=1
+          Length = 111
+
+ Score = 92.8 bits (229), Expect = 6e-19,   Method: Compositional matrix adjust.
+ Identities = 41/82 (50%), Positives = 58/82 (70%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LK PS Y+VI++NDD+TPMEFV+ +LQ  F      + Q+ML  H  GKA+CGV++ +VA
+Sbjct: 21  LKKPSKYRVIILNDDFTPMEFVVWILQMVFHRSRAESQQIMLKAHITGKALCGVYSHDVA 80
+
+Query: 70  ETKVAMVNKYARENEHPLLCTL 91
+            TKVA V + A ++ +PL CT+
+Sbjct: 81  RTKVAQVQQLAEQHGYPLHCTM 102
+
+
+>sp|Q1MQQ6|CLPS_LAWIP ATP-dependent Clp protease adapter protein
+           ClpS OS=Lawsonia intracellularis (strain PHE/MN1-00)
+           GN=clpS PE=3 SV=1
+          Length = 109
+
+ Score = 91.7 bits (226), Expect = 1e-18,   Method: Compositional matrix adjust.
+ Identities = 41/86 (47%), Positives = 60/86 (69%)
+
+Query: 8   DALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAE 67
+           + ++ P MY+V+L ND+YT MEFV+ +L K F   +E+AT +ML+VH +G  + GV+T E
+Sbjct: 21  EKIRRPKMYQVLLHNDNYTTMEFVVSILMKIFRKTMEQATSIMLSVHRKGIGVAGVYTRE 80
+
+Query: 68  VAETKVAMVNKYARENEHPLLCTLEK 93
+           +AETKV   +  ARE   PL CTL++
+Sbjct: 81  LAETKVNTTHMLAREAGFPLRCTLQE 106
+
+
+>sp|Q2LQK8|CLPS_SYNAS ATP-dependent Clp protease adapter protein
+           ClpS OS=Syntrophus aciditrophicus (strain SB) GN=clpS
+           PE=3 SV=1
+          Length = 107
+
+ Score = 91.7 bits (226), Expect = 1e-18,   Method: Compositional matrix adjust.
+ Identities = 40/92 (43%), Positives = 64/92 (69%)
+
+Query: 2   LDFDQLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAIC 61
+           L+ +  D +  P MY+VIL ND YT M+FV+ +L   F     +AT++ML VH +G+ +C
+Sbjct: 15  LNIEWEDKVMEPRMYRVILHNDHYTTMDFVVQILMTIFHKPAAQATRIMLDVHRKGQGVC 74
+
+Query: 62  GVFTAEVAETKVAMVNKYARENEHPLLCTLEK 93
+           GV+T ++A TK+A V+  AR+NE+PL C++++
+Sbjct: 75  GVYTYDIASTKIAQVHFMARQNEYPLRCSMDE 106
+
+
+>sp|Q04RP4|CLPS_LEPBJ ATP-dependent Clp protease adapter protein
+           ClpS OS=Leptospira borgpetersenii serovar Hardjo-bovis
+           (strain JB197) GN=clpS PE=3 SV=1
+          Length = 108
+
+ Score = 91.7 bits (226), Expect = 1e-18,   Method: Compositional matrix adjust.
+ Identities = 41/83 (49%), Positives = 59/83 (71%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LK PS Y+VI++NDD+TPMEFV+ +LQ  F     ++ Q+ML  H  GKA+CGV++ +VA
+Sbjct: 21  LKRPSKYRVIILNDDFTPMEFVVWILQFVFHRSRAQSQQIMLKAHITGKALCGVYSHDVA 80
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLE 92
+            TKV  V + A ++ +PL CT+E
+Sbjct: 81  RTKVIQVQQLAEQHGYPLHCTME 103
+
+
+>sp|Q051X7|CLPS_LEPBL ATP-dependent Clp protease adapter protein
+           ClpS OS=Leptospira borgpetersenii serovar Hardjo-bovis
+           (strain L550) GN=clpS PE=3 SV=1
+          Length = 108
+
+ Score = 91.7 bits (226), Expect = 1e-18,   Method: Compositional matrix adjust.
+ Identities = 41/83 (49%), Positives = 59/83 (71%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LK PS Y+VI++NDD+TPMEFV+ +LQ  F     ++ Q+ML  H  GKA+CGV++ +VA
+Sbjct: 21  LKRPSKYRVIILNDDFTPMEFVVWILQFVFHRSRAQSQQIMLKAHITGKALCGVYSHDVA 80
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLE 92
+            TKV  V + A ++ +PL CT+E
+Sbjct: 81  RTKVIQVQQLAEQHGYPLHCTME 103
+
+
+>sp|B8FGA3|CLPS_DESAA ATP-dependent Clp protease adapter protein
+           ClpS OS=Desulfatibacillum alkenivorans (strain AK-01)
+           GN=clpS PE=3 SV=1
+          Length = 104
+
+ Score = 91.7 bits (226), Expect = 1e-18,   Method: Compositional matrix adjust.
+ Identities = 42/80 (52%), Positives = 58/80 (72%)
+
+Query: 13  PSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAETK 72
+           P M+KV+L NDDYT MEFV+ VLQ+ F+  V  AT++ML VH +G  + GV+TAEVAETK
+Sbjct: 23  PRMFKVLLHNDDYTTMEFVVGVLQRVFNKSVPEATRIMLNVHNRGVGVAGVYTAEVAETK 82
+
+Query: 73  VAMVNKYARENEHPLLCTLE 92
+           +  V+  A+ +  PL C++E
+Sbjct: 83  IETVHSMAQADGFPLKCSME 102
+
+
+>sp|Q9RWS9|CLPS_DEIRA ATP-dependent Clp protease adapter protein
+           ClpS OS=Deinococcus radiodurans GN=clpS PE=3 SV=2
+          Length = 113
+
+ Score = 90.9 bits (224), Expect = 2e-18,   Method: Compositional matrix adjust.
+ Identities = 39/82 (47%), Positives = 59/82 (71%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           K P +++V+L+NDDYTPM++V+ VL++FF    + A  +MLAVH++G+ + GV+T +VAE
+Sbjct: 26  KKPRLWRVLLLNDDYTPMDYVVQVLEQFFRKTEQEAELIMLAVHHKGQGVAGVYTRDVAE 85
+
+Query: 71  TKVAMVNKYARENEHPLLCTLE 92
+           TKVA V  +A+   HPL    E
+Sbjct: 86  TKVAQVTAHAQREGHPLRVVAE 107
+
+
+>sp|Q5F9I5|CLPS_NEIG1 ATP-dependent Clp protease adapter protein
+          ClpS OS=Neisseria gonorrhoeae (strain ATCC 700825 / FA
+          1090) GN=clpS PE=3 SV=1
+          Length = 100
+
+ Score = 88.6 bits (218), Expect = 1e-17,   Method: Compositional matrix adjust.
+ Identities = 37/82 (45%), Positives = 56/82 (68%)
+
+Query: 12 PPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAET 71
+          PP  Y V L+NDDYT MEFV+++L + F    E+A  +ML+VH++GK +CG +T ++A+T
+Sbjct: 18 PPKRYGVFLLNDDYTTMEFVVEILTEIFMLGQEQAVAVMLSVHHEGKGLCGTYTRDIAQT 77
+
+Query: 72 KVAMVNKYARENEHPLLCTLEK 93
+          K   V + A+   HPL C +E+
+Sbjct: 78 KQQQVMQRAKAEGHPLQCIVEE 99
+
+
+>sp|Q6APV7|CLPS_DESPS ATP-dependent Clp protease adapter protein
+           ClpS OS=Desulfotalea psychrophila GN=clpS PE=3 SV=1
+          Length = 102
+
+ Score = 88.2 bits (217), Expect = 1e-17,   Method: Compositional matrix adjust.
+ Identities = 41/90 (45%), Positives = 62/90 (68%), Gaps = 1/90 (1%)
+
+Query: 4   FDQLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGV 63
+            D ++  +PP MY+V++ NDDYT M+FV+ +L + FS     A ++ML VH     + G+
+Sbjct: 13  IDDIETREPP-MYRVLIHNDDYTSMDFVVAILMQIFSKTEAVAEEIMLTVHSSEVGVAGL 71
+
+Query: 64  FTAEVAETKVAMVNKYARENEHPLLCTLEK 93
+           +T E+AETKVA+V++ A +NE PL C+LEK
+Sbjct: 72  YTHEIAETKVAIVHQLAEQNEFPLRCSLEK 101
+
+
+>sp|A3DER9|CLPS_CLOTH ATP-dependent Clp protease adapter protein
+          ClpS OS=Clostridium thermocellum (strain ATCC 27405 /
+          DSM 1237) GN=clpS PE=3 SV=1
+          Length = 99
+
+ Score = 87.8 bits (216), Expect = 2e-17,   Method: Compositional matrix adjust.
+ Identities = 40/83 (48%), Positives = 56/83 (67%)
+
+Query: 10 LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           K P MYKVIL+NDDYT M+FV+++L   F      AT++ML VH +GK + GV+T ++A
+Sbjct: 15 FKKPKMYKVILLNDDYTTMDFVVEILITVFHKTAADATRIMLDVHRKGKGVVGVYTYDIA 74
+
+Query: 70 ETKVAMVNKYARENEHPLLCTLE 92
+           +K+A+V K A E E PL   +E
+Sbjct: 75 RSKIALVEKMAAEREFPLAAVME 97
+
+
+>sp|B0S9H9|CLPS_LEPBA ATP-dependent Clp protease adapter protein
+           ClpS OS=Leptospira biflexa serovar Patoc (strain Patoc 1
+           / Ames) GN=clpS PE=3 SV=1
+          Length = 113
+
+ Score = 87.4 bits (215), Expect = 2e-17,   Method: Compositional matrix adjust.
+ Identities = 40/81 (49%), Positives = 54/81 (66%)
+
+Query: 13  PSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAETK 72
+           P  YKVIL+NDDYTP EFV+ VL   F   ++ + Q+M   H +G A+CGV++ ++A TK
+Sbjct: 29  PDRYKVILINDDYTPQEFVVYVLAVVFRKSMDESRQIMWRAHTEGSAVCGVYSLDIARTK 88
+
+Query: 73  VAMVNKYARENEHPLLCTLEK 93
+           VA V+K A +  HPL C L K
+Sbjct: 89  VAEVHKLADDAGHPLQCQLAK 109
+
+
+>sp|B0SS68|CLPS_LEPBP ATP-dependent Clp protease adapter protein
+           ClpS OS=Leptospira biflexa serovar Patoc (strain Patoc 1
+           / ATCC 23582 / Paris) GN=clpS PE=3 SV=1
+          Length = 113
+
+ Score = 87.4 bits (215), Expect = 2e-17,   Method: Compositional matrix adjust.
+ Identities = 40/81 (49%), Positives = 54/81 (66%)
+
+Query: 13  PSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAETK 72
+           P  YKVIL+NDDYTP EFV+ VL   F   ++ + Q+M   H +G A+CGV++ ++A TK
+Sbjct: 29  PDRYKVILINDDYTPQEFVVYVLAVVFRKSMDESRQIMWRAHTEGSAVCGVYSLDIARTK 88
+
+Query: 73  VAMVNKYARENEHPLLCTLEK 93
+           VA V+K A +  HPL C L K
+Sbjct: 89  VAEVHKLADDAGHPLQCQLAK 109
+
+
+>sp|Q9JZZ5|CLPS_NEIMB ATP-dependent Clp protease adapter protein
+          ClpS OS=Neisseria meningitidis serogroup B GN=clpS PE=3
+          SV=1
+          Length = 100
+
+ Score = 87.0 bits (214), Expect = 3e-17,   Method: Compositional matrix adjust.
+ Identities = 37/82 (45%), Positives = 55/82 (67%)
+
+Query: 12 PPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAET 71
+          PP  Y V L+NDDYT MEFV+++L + F    E+A  +ML VH++GK +CG +T ++A+T
+Sbjct: 18 PPKRYGVFLLNDDYTTMEFVVEILTEIFMLGQEQAVAVMLLVHHEGKGLCGTYTRDIAQT 77
+
+Query: 72 KVAMVNKYARENEHPLLCTLEK 93
+          K   V + A+   HPL C +E+
+Sbjct: 78 KQQQVMQRAKAEGHPLQCIVEE 99
+
+
+>sp|Q9JV14|CLPS_NEIMA ATP-dependent Clp protease adapter protein
+           ClpS OS=Neisseria meningitidis serogroup A GN=clpS PE=3
+           SV=1
+          Length = 103
+
+ Score = 85.5 bits (210), Expect = 9e-17,   Method: Compositional matrix adjust.
+ Identities = 37/83 (44%), Positives = 56/83 (67%)
+
+Query: 11  KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+           +PP  Y V L+NDDYT MEFV+++L + F    E+A  +ML VH++GK +CG +T ++A+
+Sbjct: 20  QPPKRYGVFLLNDDYTTMEFVVEILTEVFMLAQEQAVAVMLLVHHEGKGLCGTYTRDIAQ 79
+
+Query: 71  TKVAMVNKYARENEHPLLCTLEK 93
+           TK   V + A+   HPL C +E+
+Sbjct: 80  TKQHQVMERAKTEGHPLKCIVEE 102
+
+
+>sp|Q1CZL3|CLPS_MYXXD ATP-dependent Clp protease adapter protein
+           ClpS OS=Myxococcus xanthus (strain DK 1622) GN=clpS PE=3
+           SV=1
+          Length = 107
+
+ Score = 82.4 bits (202), Expect = 8e-16,   Method: Compositional matrix adjust.
+ Identities = 40/83 (48%), Positives = 55/83 (66%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           LK P +YKV+L ND+YT  EFV+ VL++ F      A Q+ML VHY G  + GV+T +VA
+Sbjct: 21  LKKPPLYKVLLHNDNYTTREFVVAVLKEVFHKSETDAVQIMLHVHYNGVGVAGVYTYDVA 80
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLE 92
+           ETK+  V   A+EN+ PL  ++E
+Sbjct: 81  ETKIQTVEAAAQENDMPLRLSME 103
+
+
+>sp|Q6NAI2|CLPS1_RHOPA ATP-dependent Clp protease adapter protein
+           ClpS 1 OS=Rhodopseudomonas palustris GN=clpS1 PE=3 SV=2
+          Length = 103
+
+ Score = 82.0 bits (201), Expect = 1e-15,   Method: Compositional matrix adjust.
+ Identities = 39/80 (48%), Positives = 51/80 (63%)
+
+Query: 13  PSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAETK 72
+           P ++KVILVNDDYTP EFV+ VL+  F    ++AT++ML  H +G  + GVFT +VAETK
+Sbjct: 21  PKLHKVILVNDDYTPREFVVSVLKGEFRMTEDQATKVMLTAHQRGVCVVGVFTKDVAETK 80
+
+Query: 73  VAMVNKYARENEHPLLCTLE 92
+                   R   +PLL T E
+Sbjct: 81  ATRATDAGRAKGYPLLFTTE 100
+
+
+>sp|Q7MSL3|CLPS_WOLSU ATP-dependent Clp protease adapter protein
+           ClpS OS=Wolinella succinogenes GN=clpS PE=3 SV=1
+          Length = 102
+
+ Score = 81.6 bits (200), Expect = 1e-15,   Method: Compositional matrix adjust.
+ Identities = 37/81 (45%), Positives = 56/81 (69%)
+
+Query: 13  PSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAETK 72
+           P  +KVIL+NDDY+ M+FV++VL   F+ + + A  +ML VH +G+ +CG++  +VAETK
+Sbjct: 21  PRRFKVILLNDDYSTMDFVVEVLMVIFNKNFDEALGVMLKVHNEGRGVCGIYPYDVAETK 80
+
+Query: 73  VAMVNKYARENEHPLLCTLEK 93
+           V+ V K A E+  PL   LE+
+Sbjct: 81  VSQVKKKAEESGFPLRAILEE 101
+
+
+>sp|Q9PNI7|CLPS_CAMJE ATP-dependent Clp protease adapter protein
+          ClpS OS=Campylobacter jejuni GN=clpS PE=3 SV=1
+          Length = 96
+
+ Score = 81.3 bits (199), Expect = 2e-15,   Method: Compositional matrix adjust.
+ Identities = 37/84 (44%), Positives = 54/84 (64%)
+
+Query: 10 LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+          L  P MYKVIL+NDD T M+FVI++L   F  ++E+A+Q ML +H+ G  ICG++T E+A
+Sbjct: 12 LSEPKMYKVILLNDDVTTMDFVIEILMNIFHQNLEKASQTMLEIHHNGSGICGIYTQEIA 71
+
+Query: 70 ETKVAMVNKYARENEHPLLCTLEK 93
+           +K   V   A+    PL   +E+
+Sbjct: 72 LSKQKKVMDAAKLANFPLQAKVEE 95
+
+
+>sp|Q5HTZ7|CLPS_CAMJR ATP-dependent Clp protease adapter protein
+          ClpS OS=Campylobacter jejuni (strain RM1221) GN=clpS
+          PE=3 SV=1
+          Length = 96
+
+ Score = 81.3 bits (199), Expect = 2e-15,   Method: Compositional matrix adjust.
+ Identities = 37/84 (44%), Positives = 54/84 (64%)
+
+Query: 10 LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+          L  P MYKVIL+NDD T M+FVI++L   F  ++E+A+Q ML +H+ G  ICG++T E+A
+Sbjct: 12 LSEPKMYKVILLNDDVTTMDFVIEILMNIFHQNLEKASQTMLEIHHNGSGICGIYTQEIA 71
+
+Query: 70 ETKVAMVNKYARENEHPLLCTLEK 93
+           +K   V   A+    PL   +E+
+Sbjct: 72 LSKQKKVMDAAKLANFPLQAKVEE 95
+
+
+>sp|A7H2Q0|CLPS_CAMJD ATP-dependent Clp protease adapter protein
+          ClpS OS=Campylobacter jejuni subsp. doylei (strain ATCC
+          BAA-1458 / RM4099 / 269.97) GN=clpS PE=3 SV=1
+          Length = 96
+
+ Score = 80.9 bits (198), Expect = 2e-15,   Method: Compositional matrix adjust.
+ Identities = 37/84 (44%), Positives = 54/84 (64%)
+
+Query: 10 LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+          L  P MYKVIL+NDD T M+FVI++L   F  ++E+A+Q ML +H+ G  ICG++T E+A
+Sbjct: 12 LSEPKMYKVILLNDDVTTMDFVIEILMNIFHQNLEKASQTMLEIHHNGSGICGIYTQEIA 71
+
+Query: 70 ETKVAMVNKYARENEHPLLCTLEK 93
+           +K   V   A+    PL   +E+
+Sbjct: 72 LSKQKKVIDAAKLANFPLQAKVEE 95
+
+
+>sp|A8FMG0|CLPS_CAMJ8 ATP-dependent Clp protease adapter protein
+          ClpS OS=Campylobacter jejuni subsp. jejuni serotype O:6
+          (strain 81116 / NCTC 11828) GN=clpS PE=3 SV=1
+          Length = 96
+
+ Score = 80.9 bits (198), Expect = 2e-15,   Method: Compositional matrix adjust.
+ Identities = 37/84 (44%), Positives = 54/84 (64%)
+
+Query: 10 LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+          L  P MYKVIL+NDD T M+FVI++L   F  ++E+A+Q ML +H+ G  ICG++T E+A
+Sbjct: 12 LSEPKMYKVILLNDDVTTMDFVIEILMNIFHQNLEKASQTMLEIHHNGSGICGIYTQEIA 71
+
+Query: 70 ETKVAMVNKYARENEHPLLCTLEK 93
+           +K   V   A+    PL   +E+
+Sbjct: 72 LSKQKKVIDAAKLANFPLQAKVEE 95
+
+
+>sp|A1W094|CLPS_CAMJJ ATP-dependent Clp protease adapter protein
+          ClpS OS=Campylobacter jejuni subsp. jejuni serotype
+          O:23/36 (strain 81-176) GN=clpS PE=3 SV=1
+          Length = 96
+
+ Score = 80.9 bits (198), Expect = 2e-15,   Method: Compositional matrix adjust.
+ Identities = 37/84 (44%), Positives = 54/84 (64%)
+
+Query: 10 LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+          L  P MYKVIL+NDD T M+FVI++L   F  ++E+A+Q ML +H+ G  ICG++T E+A
+Sbjct: 12 LSEPKMYKVILLNDDVTTMDFVIEILMNIFHQNLEKASQTMLEIHHNGSGICGIYTQEIA 71
+
+Query: 70 ETKVAMVNKYARENEHPLLCTLEK 93
+           +K   V   A+    PL   +E+
+Sbjct: 72 LSKQKKVIDAAKLANFPLQAKVEE 95
+
+
+>sp|Q7VFW0|CLPS_HELHP ATP-dependent Clp protease adapter protein
+          ClpS OS=Helicobacter hepaticus GN=clpS PE=3 SV=2
+          Length = 99
+
+ Score = 77.0 bits (188), Expect = 3e-14,   Method: Compositional matrix adjust.
+ Identities = 32/84 (38%), Positives = 57/84 (67%)
+
+Query: 10 LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+          L+ P MY+V+L+NDD+T M+FV  +L + F    + AT + L +H  GK +CG++T ++A
+Sbjct: 14 LEEPKMYRVLLLNDDWTAMDFVARILMEVFDKTSDEATAITLKIHNDGKGVCGIYTYDIA 73
+
+Query: 70 ETKVAMVNKYARENEHPLLCTLEK 93
+          E K+ +V++ A+++ +PL    E+
+Sbjct: 74 ELKMQIVSQMAKQHGYPLRVITEE 97
+
+
+>sp|Q73KU4|CLPS_TREDE ATP-dependent Clp protease adapter protein
+           ClpS OS=Treponema denticola GN=clpS PE=3 SV=1
+          Length = 101
+
+ Score = 74.3 bits (181), Expect = 2e-13,   Method: Compositional matrix adjust.
+ Identities = 36/81 (44%), Positives = 49/81 (60%)
+
+Query: 13  PSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAETK 72
+           P  Y+VIL+NDD+TPM+FV+ VL   F+   E A  LM  VH  G+A  G++  ++A TK
+Sbjct: 20  PENYRVILLNDDFTPMDFVVAVLISIFNKSQEEAETLMFKVHKTGQASVGIYVYDIATTK 79
+
+Query: 73  VAMVNKYARENEHPLLCTLEK 93
+              V   A+ N  PL C +EK
+Sbjct: 80  CFQVLTAAKNNNFPLQCKVEK 100
+
+
+>sp|Q98HS2|CLPS2_RHILO ATP-dependent Clp protease adapter protein
+          ClpS 2 OS=Rhizobium loti GN=clpS2 PE=3 SV=1
+          Length = 101
+
+ Score = 73.9 bits (180), Expect = 2e-13,   Method: Compositional matrix adjust.
+ Identities = 34/80 (42%), Positives = 49/80 (61%)
+
+Query: 13 PSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAETK 72
+          P +YKVIL+NDD+TP EFV+ VL+  F    ++A ++M+  H +G  +  VFT +VAETK
+Sbjct: 19 PKLYKVILINDDFTPREFVVTVLKGEFKLSEDQAHRIMITAHRRGVCVVAVFTKDVAETK 78
+
+Query: 73 VAMVNKYARENEHPLLCTLE 92
+                  +   +PLL T E
+Sbjct: 79 ATRATDAGKAKGYPLLFTTE 98
+
+
+>sp|Q97I31|CLPS_CLOAB ATP-dependent Clp protease adapter protein
+          ClpS OS=Clostridium acetobutylicum GN=clpS PE=3 SV=1
+          Length = 101
+
+ Score = 72.4 bits (176), Expect = 8e-13,   Method: Compositional matrix adjust.
+ Identities = 37/89 (41%), Positives = 52/89 (58%)
+
+Query: 3  DFDQLDALKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICG 62
+          +  Q   ++ P MYKVIL NDDYT MEFVI++L   F+     A ++   VH  G  I G
+Sbjct: 10 NIKQKHKIEKPKMYKVILHNDDYTTMEFVIEILINVFNKVPANAVKITFDVHKNGIGIAG 69
+
+Query: 63 VFTAEVAETKVAMVNKYARENEHPLLCTL 91
+          V+  ++A TK+  V K A +N +PL  T+
+Sbjct: 70 VYPYDIAATKINEVKKLAYKNGYPLKLTM 98
+
+
+>sp|Q89RX6|CLPS1_BRAJA ATP-dependent Clp protease adapter protein
+          ClpS 1 OS=Bradyrhizobium japonicum GN=clpS1 PE=3 SV=1
+          Length = 101
+
+ Score = 70.1 bits (170), Expect = 4e-12,   Method: Compositional matrix adjust.
+ Identities = 34/80 (42%), Positives = 47/80 (58%)
+
+Query: 13 PSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAETK 72
+          P ++KVIL+NDDYTP EFV  +L+  F    ++A ++M+  H  G  +  VFT +VAETK
+Sbjct: 19 PKLHKVILINDDYTPREFVTMILKAEFRMTEDQAYKVMITAHKLGACVVAVFTRDVAETK 78
+
+Query: 73 VAMVNKYARENEHPLLCTLE 92
+                  R   +PLL T E
+Sbjct: 79 ATRATDAGRAKGYPLLFTTE 98
+
+
+>sp|B9L8R5|CLPS_NAUPA ATP-dependent Clp protease adapter protein
+          ClpS OS=Nautilia profundicola (strain ATCC BAA-1463 /
+          DSM 18972 / AmH) GN=clpS PE=3 SV=1
+          Length = 97
+
+ Score = 67.4 bits (163), Expect = 2e-11,   Method: Compositional matrix adjust.
+ Identities = 31/81 (38%), Positives = 50/81 (61%)
+
+Query: 13 PSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAETK 72
+          P +YKV+L+NDDYT  +FVI++L+  F  + E A  + L V  +G A  GV+  E+A+ K
+Sbjct: 16 PKLYKVMLLNDDYTTFDFVIEILKTVFHKNEEEAINITLKVDREGSAAVGVYPYEIAQVK 75
+
+Query: 73 VAMVNKYARENEHPLLCTLEK 93
+          +   +  AR+  +PL   +E+
+Sbjct: 76 IEKTHTLARQAGYPLRAVMEE 96
+
+
+>sp|Q92N66|CLPS2_RHIME ATP-dependent Clp protease adapter protein
+          ClpS 2 OS=Rhizobium meliloti GN=clpS2 PE=3 SV=1
+          Length = 101
+
+ Score = 65.5 bits (158), Expect = 9e-11,   Method: Compositional matrix adjust.
+ Identities = 34/83 (40%), Positives = 47/83 (56%)
+
+Query: 10 LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+          L+ P +YKV+LVNDD+TP EFV+ VL+  F    E   ++M+  H  G ++  V   +VA
+Sbjct: 16 LERPKLYKVLLVNDDFTPREFVVMVLKAVFRMSEEAGYRVMMTAHKMGISVVVVCAKDVA 75
+
+Query: 70 ETKVAMVNKYARENEHPLLCTLE 92
+          ETK        +E   PLL T E
+Sbjct: 76 ETKAKEATDLGKEAGFPLLFTAE 98
+
+
+>sp|Q8UD95|CLPS2_AGRT5 ATP-dependent Clp protease adapter protein
+           ClpS 2 OS=Agrobacterium tumefaciens (strain C58 / ATCC
+           33970) GN=clpS2 PE=3 SV=1
+          Length = 103
+
+ Score = 63.2 bits (152), Expect = 4e-10,   Method: Compositional matrix adjust.
+ Identities = 32/83 (38%), Positives = 46/83 (55%)
+
+Query: 10  LKPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+           L+ P +YKV+L+NDDYTP EFV  VL+  F    +   ++M+  H  G A+  V   ++A
+Sbjct: 18  LERPKLYKVMLLNDDYTPREFVTVVLKAVFRMSEDTGRRVMMTAHRFGSAVVVVCERDIA 77
+
+Query: 70  ETKVAMVNKYARENEHPLLCTLE 92
+           ETK        +E   PL+ T E
+Sbjct: 78  ETKAKEATDLGKEAGFPLMFTTE 100
+
+
+>sp|P56066|CLPS_HELPY ATP-dependent Clp protease adapter protein
+          ClpS OS=Helicobacter pylori GN=clpS PE=3 SV=1
+          Length = 91
+
+ Score = 62.4 bits (150), Expect = 7e-10,   Method: Compositional matrix adjust.
+ Identities = 30/81 (37%), Positives = 47/81 (58%)
+
+Query: 13 PSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAETK 72
+          P+M +VI+V+D  T  EFVI  L+ FF   +E A  L  ++H  G+ +CGV+  ++A  +
+Sbjct: 9  PTMAQVIMVDDPITTTEFVISALRDFFDKSLEEAKALTSSIHRDGEGVCGVYPYDIARHR 68
+
+Query: 73 VAMVNKYARENEHPLLCTLEK 93
+           A V   A+  E PL   +E+
+Sbjct: 69 AAWVRDKAKALEFPLKLLVEE 89
+
+
+>sp|Q9ZN32|CLPS_HELPJ ATP-dependent Clp protease adapter protein
+          ClpS OS=Helicobacter pylori J99 GN=clpS PE=3 SV=1
+          Length = 90
+
+ Score = 61.6 bits (148), Expect = 1e-09,   Method: Compositional matrix adjust.
+ Identities = 28/69 (40%), Positives = 42/69 (60%)
+
+Query: 13 PSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAETK 72
+          P+M +VI++ND  T  EF++  L+ FF   +E A +LML++H  G  +CGV+  E+A  K
+Sbjct: 9  PTMSQVIMLNDSITTAEFMVSALRDFFDKPLEEAQKLMLSIHRDGDGVCGVYPYEIAIYK 68
+
+Query: 73 VAMVNKYAR 81
+             V   AR
+Sbjct: 69 AVCVRDKAR 77
+
+
+>sp|Q7NML9|CLPS_GLOVI ATP-dependent Clp protease adapter protein
+          ClpS OS=Gloeobacter violaceus GN=clpS PE=3 SV=1
+          Length = 93
+
+ Score = 48.9 bits (115), Expect = 8e-06,   Method: Compositional matrix adjust.
+ Identities = 28/70 (40%), Positives = 40/70 (57%), Gaps = 1/70 (1%)
+
+Query: 11 KPPSMYKVILVNDDYTPMEFVIDVLQKFF-SYDVERATQLMLAVHYQGKAICGVFTAEVA 69
+          KP  +YKV+L NDD+TPM +VI+VL K        +A ++ML  H  G A+  V   E A
+Sbjct: 14 KPMPLYKVLLHNDDHTPMNYVIEVLMKTIPKMQPSKARKIMLEAHNGGVAVVIVCALEHA 73
+
+Query: 70 ETKVAMVNKY 79
+          E     +N++
+Sbjct: 74 EFYSESLNRH 83
+
+
+>sp|Q82D28|CLPS_STRAW ATP-dependent Clp protease adapter protein
+          ClpS OS=Streptomyces avermitilis GN=clpS PE=3 SV=1
+          Length = 105
+
+ Score = 47.4 bits (111), Expect = 3e-05,   Method: Compositional matrix adjust.
+ Identities = 24/70 (34%), Positives = 38/70 (54%)
+
+Query: 11 KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+          +P   +  I+ ND    M +V  V Q +F Y  ++AT+LML VH++G+A+    T E  E
+Sbjct: 26 EPDVPWVTIVHNDPVNLMSYVTYVFQTYFGYSKDKATKLMLDVHHKGRAVVSSGTREEME 85
+
+Query: 71 TKVAMVNKYA 80
+            V  ++ Y 
+Sbjct: 86 RDVQAMHGYG 95
+
+
+>sp|Q9S2G5|CLPS_STRCO ATP-dependent Clp protease adapter protein
+          ClpS OS=Streptomyces coelicolor GN=clpS PE=3 SV=2
+          Length = 96
+
+ Score = 45.8 bits (107), Expect = 8e-05,   Method: Compositional matrix adjust.
+ Identities = 22/70 (31%), Positives = 38/70 (54%)
+
+Query: 11 KPPSMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAE 70
+          +P   +  I+ ND    M +V  V Q +F Y  ++AT+LM+ VH++G+A+    + E  E
+Sbjct: 17 EPDVPWVTIVHNDPVNLMSYVTYVFQSYFGYSKDKATKLMMDVHHKGRAVVSSGSREEME 76
+
+Query: 71 TKVAMVNKYA 80
+            V  ++ Y 
+Sbjct: 77 RDVQAMHGYG 86
+
+
+>sp|A0QCZ8|CLPS_MYCA1 ATP-dependent Clp protease adapter protein
+          ClpS OS=Mycobacterium avium (strain 104) GN=clpS PE=3
+          SV=1
+          Length = 105
+
+ Score = 43.5 bits (101), Expect = 4e-04,   Method: Compositional matrix adjust.
+ Identities = 23/61 (37%), Positives = 32/61 (52%)
+
+Query: 14 SMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAETKV 73
+          S +  I+ +D    M +V  V QK F Y    AT+LML VH +GKA+    + E  E  V
+Sbjct: 30 SPWVTIVWDDPVNLMTYVTYVFQKLFGYSEPHATKLMLQVHNEGKAVVSAGSREAMEVDV 89
+
+Query: 74 A 74
+          +
+Sbjct: 90 S 90
+
+
+>sp|Q73X80|CLPS_MYCPA ATP-dependent Clp protease adapter protein
+          ClpS OS=Mycobacterium paratuberculosis GN=clpS PE=3
+          SV=1
+          Length = 105
+
+ Score = 43.5 bits (101), Expect = 4e-04,   Method: Compositional matrix adjust.
+ Identities = 23/61 (37%), Positives = 32/61 (52%)
+
+Query: 14 SMYKVILVNDDYTPMEFVIDVLQKFFSYDVERATQLMLAVHYQGKAICGVFTAEVAETKV 73
+          S +  I+ +D    M +V  V QK F Y    AT+LML VH +GKA+    + E  E  V
+Sbjct: 30 SPWVTIVWDDPVNLMTYVTYVFQKLFGYSEPHATKLMLQVHNEGKAVVSAGSREAMEVDV 89
+
+Query: 74 A 74
+          +
+Sbjct: 90 S 90
+
+
+  Database: sprot
+    Posted date:  Dec 10, 2010 10:17 AM
+  Number of letters in database: 184,678,199
+  Number of sequences in database:  523,151
+  
+Lambda     K      H
+   0.323    0.136    0.407 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 31,442,547
+Number of Sequences: 523151
+Number of extensions: 970455
+Number of successful extensions: 2547
+Number of sequences better than 1.0e-02: 255
+Number of HSP's better than  0.0 without gapping: 254
+Number of HSP's successfully gapped in prelim test: 1
+Number of HSP's that attempted gapping in prelim test: 2249
+Number of HSP's gapped (non-prelim): 255
+length of query: 94
+length of database: 184,678,199
+effective HSP length: 64
+effective length of query: 30
+effective length of database: 151,196,535
+effective search space: 4535896050
+effective search space used: 4535896050
+T: 11
+A: 40
+X1: 16 ( 7.5 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (22.0 bits)
+S2: 89 (38.9 bits)

@@ -1,0 +1,792 @@
+BLASTP 2.2.18 [Mar-02-2008]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+Query= PDB_ATOM
+         (73 letters)
+
+Database: sprot 
+           523,151 sequences; 184,678,199 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|P61286|PABP1_BOVIN Polyadenylate-binding protein 1 OS=Bos tau...   146   3e-35
+sp|P11940|PABP1_HUMAN Polyadenylate-binding protein 1 OS=Homo sa...   146   3e-35
+sp|Q5R8F7|PABP1_PONAB Polyadenylate-binding protein 1 OS=Pongo a...   146   3e-35
+sp|P20965|PABPA_XENLA Polyadenylate-binding protein 1-A OS=Xenop...   145   6e-35
+sp|Q6IP09|PABPB_XENLA Polyadenylate-binding protein 1-B OS=Xenop...   145   6e-35
+sp|Q9EPH8|PABP1_RAT Polyadenylate-binding protein 1 OS=Rattus no...   145   7e-35
+sp|P29341|PABP1_MOUSE Polyadenylate-binding protein 1 OS=Mus mus...   145   7e-35
+sp|Q13310|PABP4_HUMAN Polyadenylate-binding protein 4 OS=Homo sa...   139   4e-33
+sp|Q9H361|PABP3_HUMAN Polyadenylate-binding protein 3 OS=Homo sa...   139   7e-33
+sp|Q6DEY7|EPAB_XENTR Embryonic polyadenylate-binding protein OS=...   134   2e-31
+sp|Q98SP8|EPABA_XENLA Embryonic polyadenylate-binding protein A ...   132   7e-31
+sp|Q6GR16|EPABB_XENLA Embryonic polyadenylate-binding protein B ...   127   2e-29
+sp|Q4VXU2|PAP1L_HUMAN Polyadenylate-binding protein 1-like OS=Ho...   116   4e-26
+sp|P21187|PABP_DROME Polyadenylate-binding protein OS=Drosophila...   109   5e-24
+sp|Q5B630|PABP_EMENI Polyadenylate-binding protein, cytoplasmic ...    99   6e-21
+sp|Q0CR95|PABP_ASPTN Polyadenylate-binding protein, cytoplasmic ...    94   2e-19
+sp|A1CRM1|PABP_ASPCL Polyadenylate-binding protein, cytoplasmic ...    91   2e-18
+sp|Q5KBW2|PABP_CRYNE Polyadenylate-binding protein, cytoplasmic ...    89   8e-18
+sp|A4QUF0|PABP_MAGGR Polyadenylate-binding protein, cytoplasmic ...    87   4e-17
+sp|Q1DXH0|PABP_COCIM Polyadenylate-binding protein, cytoplasmic ...    86   5e-17
+sp|Q2GSX8|PABP_CHAGB Polyadenylate-binding protein, cytoplasmic ...    85   1e-16
+sp|Q0U1G2|PABP_PHANO Polyadenylate-binding protein, cytoplasmic ...    84   2e-16
+sp|Q7S6N6|PABP_NEUCR Polyadenylate-binding protein, cytoplasmic ...    82   1e-15
+sp|P42731|PABP2_ARATH Polyadenylate-binding protein 2 OS=Arabido...    79   6e-15
+sp|O64380|PABP3_ARATH Polyadenylate-binding protein 3 OS=Arabido...    79   8e-15
+sp|Q4WK03|PABP_ASPFU Polyadenylate-binding protein, cytoplasmic ...    79   1e-14
+sp|Q05196|PABP5_ARATH Polyadenylate-binding protein 5 OS=Arabido...    79   1e-14
+sp|A1D4K4|PABP_NEOFI Polyadenylate-binding protein, cytoplasmic ...    78   2e-14
+sp|Q2UK72|PABP_ASPOR Polyadenylate-binding protein, cytoplasmic ...    77   2e-14
+sp|A2Q848|PABP_ASPNC Polyadenylate-binding protein, cytoplasmic ...    77   3e-14
+sp|P31209|PABP_SCHPO Polyadenylate-binding protein, cytoplasmic ...    72   1e-12
+sp|A3LXL0|PABP_PICST Polyadenylate-binding protein, cytoplasmic ...    67   4e-11
+sp|Q9ZQA8|PABPX_ARATH Probable polyadenylate-binding protein At2...    63   4e-10
+sp|Q6BI95|PABP_DEBHA Polyadenylate-binding protein, cytoplasmic ...    62   9e-10
+sp|O95071|UBR5_HUMAN E3 ubiquitin-protein ligase UBR5 OS=Homo sa...    61   2e-09
+sp|Q80TP3|UBR5_MOUSE E3 ubiquitin-protein ligase UBR5 OS=Mus mus...    61   2e-09
+sp|P51592|HYD_DROME E3 ubiquitin-protein ligase hyd OS=Drosophil...    59   8e-09
+sp|Q62671|UBR5_RAT E3 ubiquitin-protein ligase UBR5 (Fragment) O...    59   1e-08
+sp|A5DM21|PABP_PICGU Polyadenylate-binding protein, cytoplasmic ...    57   4e-08
+sp|A5DW14|PABP_LODEL Polyadenylate-binding protein, cytoplasmic ...    54   2e-07
+sp|Q4P8R9|PABP_USTMA Polyadenylate-binding protein, cytoplasmic ...    54   3e-07
+sp|Q6CDH3|PABP_YARLI Polyadenylate-binding protein, cytoplasmic ...    50   3e-06
+sp|Q5AI15|PABP_CANAL Polyadenylate-binding protein, cytoplasmic ...    49   1e-05
+sp|Q54BM2|PAP1A_DICDI Polyadenylate-binding protein 1-A OS=Dicty...    48   2e-05
+
+>sp|P61286|PABP1_BOVIN Polyadenylate-binding protein 1 OS=Bos taurus
+           GN=PABPC1 PE=2 SV=1
+          Length = 636
+
+ Score =  146 bits (369), Expect = 3e-35,   Method: Compositional matrix adjust.
+ Identities = 73/73 (100%), Positives = 73/73 (100%)
+
+Query: 1   PLTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESL 60
+           PLTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESL
+Sbjct: 544 PLTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESL 603
+
+Query: 61  RSKVDEAVAVLQA 73
+           RSKVDEAVAVLQA
+Sbjct: 604 RSKVDEAVAVLQA 616
+
+
+>sp|P11940|PABP1_HUMAN Polyadenylate-binding protein 1 OS=Homo
+           sapiens GN=PABPC1 PE=1 SV=2
+          Length = 636
+
+ Score =  146 bits (369), Expect = 3e-35,   Method: Compositional matrix adjust.
+ Identities = 73/73 (100%), Positives = 73/73 (100%)
+
+Query: 1   PLTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESL 60
+           PLTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESL
+Sbjct: 544 PLTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESL 603
+
+Query: 61  RSKVDEAVAVLQA 73
+           RSKVDEAVAVLQA
+Sbjct: 604 RSKVDEAVAVLQA 616
+
+
+>sp|Q5R8F7|PABP1_PONAB Polyadenylate-binding protein 1 OS=Pongo
+           abelii GN=PABPC1 PE=2 SV=1
+          Length = 636
+
+ Score =  146 bits (369), Expect = 3e-35,   Method: Compositional matrix adjust.
+ Identities = 73/73 (100%), Positives = 73/73 (100%)
+
+Query: 1   PLTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESL 60
+           PLTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESL
+Sbjct: 544 PLTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESL 603
+
+Query: 61  RSKVDEAVAVLQA 73
+           RSKVDEAVAVLQA
+Sbjct: 604 RSKVDEAVAVLQA 616
+
+
+>sp|P20965|PABPA_XENLA Polyadenylate-binding protein 1-A OS=Xenopus
+           laevis GN=pabpc1-a PE=1 SV=3
+          Length = 633
+
+ Score =  145 bits (367), Expect = 6e-35,   Method: Compositional matrix adjust.
+ Identities = 72/73 (98%), Positives = 73/73 (100%)
+
+Query: 1   PLTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESL 60
+           PLTASMLA+APPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESL
+Sbjct: 542 PLTASMLAAAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESL 601
+
+Query: 61  RSKVDEAVAVLQA 73
+           RSKVDEAVAVLQA
+Sbjct: 602 RSKVDEAVAVLQA 614
+
+
+>sp|Q6IP09|PABPB_XENLA Polyadenylate-binding protein 1-B OS=Xenopus
+           laevis GN=pabpc1-b PE=2 SV=1
+          Length = 633
+
+ Score =  145 bits (367), Expect = 6e-35,   Method: Compositional matrix adjust.
+ Identities = 72/73 (98%), Positives = 73/73 (100%)
+
+Query: 1   PLTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESL 60
+           PLTASMLA+APPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESL
+Sbjct: 542 PLTASMLAAAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESL 601
+
+Query: 61  RSKVDEAVAVLQA 73
+           RSKVDEAVAVLQA
+Sbjct: 602 RSKVDEAVAVLQA 614
+
+
+>sp|Q9EPH8|PABP1_RAT Polyadenylate-binding protein 1 OS=Rattus
+           norvegicus GN=Pabpc1 PE=2 SV=1
+          Length = 636
+
+ Score =  145 bits (366), Expect = 7e-35,   Method: Compositional matrix adjust.
+ Identities = 72/73 (98%), Positives = 73/73 (100%)
+
+Query: 1   PLTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESL 60
+           PLTASMLASAPPQEQKQMLGERLFPLIQAMHP+LAGKITGMLLEIDNSELLHMLESPESL
+Sbjct: 544 PLTASMLASAPPQEQKQMLGERLFPLIQAMHPSLAGKITGMLLEIDNSELLHMLESPESL 603
+
+Query: 61  RSKVDEAVAVLQA 73
+           RSKVDEAVAVLQA
+Sbjct: 604 RSKVDEAVAVLQA 616
+
+
+>sp|P29341|PABP1_MOUSE Polyadenylate-binding protein 1 OS=Mus
+           musculus GN=Pabpc1 PE=1 SV=1
+          Length = 636
+
+ Score =  145 bits (366), Expect = 7e-35,   Method: Compositional matrix adjust.
+ Identities = 72/73 (98%), Positives = 73/73 (100%)
+
+Query: 1   PLTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESL 60
+           PLTASMLASAPPQEQKQMLGERLFPLIQAMHP+LAGKITGMLLEIDNSELLHMLESPESL
+Sbjct: 544 PLTASMLASAPPQEQKQMLGERLFPLIQAMHPSLAGKITGMLLEIDNSELLHMLESPESL 603
+
+Query: 61  RSKVDEAVAVLQA 73
+           RSKVDEAVAVLQA
+Sbjct: 604 RSKVDEAVAVLQA 616
+
+
+>sp|Q13310|PABP4_HUMAN Polyadenylate-binding protein 4 OS=Homo
+           sapiens GN=PABPC4 PE=1 SV=1
+          Length = 644
+
+ Score =  139 bits (351), Expect = 4e-33,   Method: Compositional matrix adjust.
+ Identities = 69/73 (94%), Positives = 70/73 (95%)
+
+Query: 1   PLTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESL 60
+           PLTASMLA+APPQEQKQMLGERLFPLIQ MH  LAGKITGMLLEIDNSELLHMLESPESL
+Sbjct: 553 PLTASMLAAAPPQEQKQMLGERLFPLIQTMHSNLAGKITGMLLEIDNSELLHMLESPESL 612
+
+Query: 61  RSKVDEAVAVLQA 73
+           RSKVDEAVAVLQA
+Sbjct: 613 RSKVDEAVAVLQA 625
+
+
+>sp|Q9H361|PABP3_HUMAN Polyadenylate-binding protein 3 OS=Homo
+           sapiens GN=PABPC3 PE=1 SV=2
+          Length = 631
+
+ Score =  139 bits (349), Expect = 7e-33,   Method: Compositional matrix adjust.
+ Identities = 69/72 (95%), Positives = 71/72 (98%)
+
+Query: 2   LTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESLR 61
+           LTAS LASAPPQ+QKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELL+MLESPESLR
+Sbjct: 540 LTASRLASAPPQKQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLYMLESPESLR 599
+
+Query: 62  SKVDEAVAVLQA 73
+           SKVDEAVAVLQA
+Sbjct: 600 SKVDEAVAVLQA 611
+
+
+>sp|Q6DEY7|EPAB_XENTR Embryonic polyadenylate-binding protein
+           OS=Xenopus tropicalis GN=epabp PE=2 SV=1
+          Length = 629
+
+ Score =  134 bits (337), Expect = 2e-31,   Method: Compositional matrix adjust.
+ Identities = 67/73 (91%), Positives = 69/73 (94%)
+
+Query: 1   PLTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESL 60
+           PLTAS LASAPPQEQKQMLGERL+PLI  MHPTLAGKITGMLLEIDNSELLHMLESPESL
+Sbjct: 541 PLTASSLASAPPQEQKQMLGERLYPLIHEMHPTLAGKITGMLLEIDNSELLHMLESPESL 600
+
+Query: 61  RSKVDEAVAVLQA 73
+            SKV+EAVAVLQA
+Sbjct: 601 HSKVEEAVAVLQA 613
+
+
+>sp|Q98SP8|EPABA_XENLA Embryonic polyadenylate-binding protein A
+           OS=Xenopus laevis GN=epabp-a PE=1 SV=2
+          Length = 629
+
+ Score =  132 bits (331), Expect = 7e-31,   Method: Compositional matrix adjust.
+ Identities = 64/73 (87%), Positives = 69/73 (94%)
+
+Query: 1   PLTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESL 60
+           PLTAS+LA APPQEQKQMLGER++P+I  MHPTLAGKITGMLLEIDNSELLHMLESPESL
+Sbjct: 541 PLTASLLAGAPPQEQKQMLGERIYPVIHEMHPTLAGKITGMLLEIDNSELLHMLESPESL 600
+
+Query: 61  RSKVDEAVAVLQA 73
+            SKV+EAVAVLQA
+Sbjct: 601 HSKVEEAVAVLQA 613
+
+
+>sp|Q6GR16|EPABB_XENLA Embryonic polyadenylate-binding protein B
+           OS=Xenopus laevis GN=epabp-b PE=2 SV=1
+          Length = 629
+
+ Score =  127 bits (319), Expect = 2e-29,   Method: Compositional matrix adjust.
+ Identities = 63/73 (86%), Positives = 69/73 (94%)
+
+Query: 1   PLTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESL 60
+           PLTAS+LA+AP QEQKQ+LGER++PLI  MHPTLAGKITGMLLEIDNSELLHMLESPESL
+Sbjct: 541 PLTASLLAAAPLQEQKQILGERIYPLIHEMHPTLAGKITGMLLEIDNSELLHMLESPESL 600
+
+Query: 61  RSKVDEAVAVLQA 73
+            SKV+EAVAVLQA
+Sbjct: 601 HSKVEEAVAVLQA 613
+
+
+>sp|Q4VXU2|PAP1L_HUMAN Polyadenylate-binding protein 1-like OS=Homo
+           sapiens GN=PABPC1L PE=2 SV=1
+          Length = 614
+
+ Score =  116 bits (291), Expect = 4e-26,   Method: Compositional matrix adjust.
+ Identities = 59/73 (80%), Positives = 65/73 (89%)
+
+Query: 1   PLTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESL 60
+           PLTASMLA+AP  EQKQM+GERL+PLI  +H  LAGKITGMLLEIDNSELL MLESPESL
+Sbjct: 530 PLTASMLAAAPLHEQKQMIGERLYPLIHDVHTQLAGKITGMLLEIDNSELLLMLESPESL 589
+
+Query: 61  RSKVDEAVAVLQA 73
+            +K+DEAVAVLQA
+Sbjct: 590 HAKIDEAVAVLQA 602
+
+
+>sp|P21187|PABP_DROME Polyadenylate-binding protein OS=Drosophila
+           melanogaster GN=pAbp PE=1 SV=3
+          Length = 634
+
+ Score =  109 bits (273), Expect = 5e-24,   Method: Compositional matrix adjust.
+ Identities = 52/71 (73%), Positives = 64/71 (90%)
+
+Query: 2   LTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESLR 61
+           L AS+LA+A PQEQKQ+LGERL+P+I+ MH  LAGKITGMLLEI+NSELLHM+E  E+L+
+Sbjct: 555 LIASLLANAKPQEQKQILGERLYPMIEHMHANLAGKITGMLLEIENSELLHMIEDQEALK 614
+
+Query: 62  SKVDEAVAVLQ 72
+           +KV+EAVAVLQ
+Sbjct: 615 AKVEEAVAVLQ 625
+
+
+>sp|Q5B630|PABP_EMENI Polyadenylate-binding protein, cytoplasmic and
+           nuclear OS=Emericella nidulans GN=pab1 PE=2 SV=2
+          Length = 732
+
+ Score = 99.0 bits (245), Expect = 6e-21,   Method: Compositional matrix adjust.
+ Identities = 48/70 (68%), Positives = 59/70 (84%)
+
+Query: 2   LTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESLR 61
+           LTA  L++APPQ+QKQMLGE L+P IQA  P LAGKITGMLLE+DN+ELL +LE  E+LR
+Sbjct: 633 LTAQALSAAPPQQQKQMLGEALYPKIQATQPELAGKITGMLLEMDNTELLGLLEDDEALR 692
+
+Query: 62  SKVDEAVAVL 71
+           +KVDEA++V 
+Sbjct: 693 AKVDEALSVY 702
+
+
+>sp|Q0CR95|PABP_ASPTN Polyadenylate-binding protein, cytoplasmic and
+           nuclear OS=Aspergillus terreus (strain NIH 2624 / FGSC
+           A1156) GN=pab1 PE=3 SV=1
+          Length = 753
+
+ Score = 94.0 bits (232), Expect = 2e-19,   Method: Compositional matrix adjust.
+ Identities = 47/70 (67%), Positives = 57/70 (81%)
+
+Query: 2   LTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESLR 61
+           LTA  LA+AP  +QKQMLGE L+P IQA  P LAGKITGMLLE+DN+ELL +LE  E+LR
+Sbjct: 650 LTAQSLAAAPAPQQKQMLGEALYPKIQAQQPELAGKITGMLLEMDNTELLSLLEDDEALR 709
+
+Query: 62  SKVDEAVAVL 71
+           +KVDEA++V 
+Sbjct: 710 AKVDEALSVY 719
+
+
+>sp|A1CRM1|PABP_ASPCL Polyadenylate-binding protein, cytoplasmic and
+           nuclear OS=Aspergillus clavatus GN=pab1 PE=3 SV=1
+          Length = 754
+
+ Score = 90.9 bits (224), Expect = 2e-18,   Method: Compositional matrix adjust.
+ Identities = 45/70 (64%), Positives = 56/70 (80%)
+
+Query: 2   LTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESLR 61
+           LTA  L +A P +QKQMLGE L+P IQA  P LAGKITGMLLE+DN+ELL +LE  ++LR
+Sbjct: 652 LTAQALNAAAPPQQKQMLGEALYPKIQAQQPELAGKITGMLLEMDNTELLGLLEDDDALR 711
+
+Query: 62  SKVDEAVAVL 71
+           +KVDEA++V 
+Sbjct: 712 AKVDEALSVY 721
+
+
+>sp|Q5KBW2|PABP_CRYNE Polyadenylate-binding protein, cytoplasmic and
+           nuclear OS=Cryptococcus neoformans GN=PAB1 PE=3 SV=1
+          Length = 673
+
+ Score = 89.0 bits (219), Expect = 8e-18,   Method: Compositional matrix adjust.
+ Identities = 46/70 (65%), Positives = 54/70 (77%)
+
+Query: 2   LTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESLR 61
+           L A  LA A P EQKQMLGE L+PLI    P LAGKITGMLLE+DN+ELLH++ES  +L+
+Sbjct: 572 LDAQSLARAAPAEQKQMLGEALYPLIHETQPELAGKITGMLLEMDNAELLHLVESQPALQ 631
+
+Query: 62  SKVDEAVAVL 71
+            KVDEA+ VL
+Sbjct: 632 EKVDEALRVL 641
+
+
+>sp|A4QUF0|PABP_MAGGR Polyadenylate-binding protein, cytoplasmic and
+           nuclear OS=Magnaporthe grisea GN=PAB1 PE=3 SV=1
+          Length = 762
+
+ Score = 86.7 bits (213), Expect = 4e-17,   Method: Compositional matrix adjust.
+ Identities = 40/60 (66%), Positives = 52/60 (86%)
+
+Query: 12  PQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESLRSKVDEAVAVL 71
+           P +QKQ+LGE +FP IQA+HP LAGKITGMLLE+DN+EL+ ++E+  +LRSKVDEA+AV 
+Sbjct: 677 PGQQKQILGEAIFPKIQAIHPELAGKITGMLLEMDNTELVALVENDGALRSKVDEALAVY 736
+
+
+>sp|Q1DXH0|PABP_COCIM Polyadenylate-binding protein, cytoplasmic and
+           nuclear OS=Coccidioides immitis GN=PAB1 PE=3 SV=1
+          Length = 768
+
+ Score = 86.3 bits (212), Expect = 5e-17,   Method: Compositional matrix adjust.
+ Identities = 41/70 (58%), Positives = 55/70 (78%)
+
+Query: 2   LTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESLR 61
+           LT  +L +APP +QKQMLGE ++P IQA  P LAGKITGMLLE+DN+ELL +++   +L+
+Sbjct: 665 LTLQVLNAAPPAQQKQMLGEAIYPKIQAQQPELAGKITGMLLEMDNAELLALVDDDAALK 724
+
+Query: 62  SKVDEAVAVL 71
+           +KVDEA+ V 
+Sbjct: 725 AKVDEALTVY 734
+
+
+>sp|Q2GSX8|PABP_CHAGB Polyadenylate-binding protein, cytoplasmic and
+           nuclear OS=Chaetomium globosum GN=PAB1 PE=3 SV=1
+          Length = 783
+
+ Score = 84.7 bits (208), Expect = 1e-16,   Method: Compositional matrix adjust.
+ Identities = 41/70 (58%), Positives = 56/70 (80%)
+
+Query: 2   LTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESLR 61
+           L + + A+  PQ+QKQ+LGE LFP IQA+ P LAGKITGMLLE+DN+EL+++LE   +L 
+Sbjct: 679 LQSQLTATNNPQQQKQILGENLFPKIQALQPDLAGKITGMLLEMDNAELVNLLEDEAALV 738
+
+Query: 62  SKVDEAVAVL 71
+           +KV+EA+AV 
+Sbjct: 739 AKVNEAMAVY 748
+
+
+>sp|Q0U1G2|PABP_PHANO Polyadenylate-binding protein, cytoplasmic and
+           nuclear OS=Phaeosphaeria nodorum GN=PAB1 PE=3 SV=3
+          Length = 744
+
+ Score = 84.3 bits (207), Expect = 2e-16,   Method: Compositional matrix adjust.
+ Identities = 40/67 (59%), Positives = 53/67 (79%)
+
+Query: 5   SMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESLRSKV 64
+           S+L++A P +QKQMLGE L+P I  M P LAGKITGMLLE+DNSEL+++     +LR+KV
+Sbjct: 653 SVLSAAAPGQQKQMLGEALYPKIHEMQPELAGKITGMLLEMDNSELINLTADESALRAKV 712
+
+Query: 65  DEAVAVL 71
+           DEA++V 
+Sbjct: 713 DEAMSVY 719
+
+
+>sp|Q7S6N6|PABP_NEUCR Polyadenylate-binding protein, cytoplasmic and
+           nuclear OS=Neurospora crassa GN=pab-1 PE=3 SV=1
+          Length = 764
+
+ Score = 82.0 bits (201), Expect = 1e-15,   Method: Compositional matrix adjust.
+ Identities = 39/70 (55%), Positives = 51/70 (72%)
+
+Query: 2   LTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESLR 61
+           L A +  +  PQ QKQ++GE LFP IQA+ P LAGKITGMLLE+DN+EL+++ E   +L 
+Sbjct: 660 LQAQLATTQDPQAQKQIIGENLFPKIQAIQPALAGKITGMLLEMDNAELINLFEDDNALN 719
+
+Query: 62  SKVDEAVAVL 71
+            KV EA+AV 
+Sbjct: 720 VKVQEALAVY 729
+
+
+>sp|P42731|PABP2_ARATH Polyadenylate-binding protein 2
+           OS=Arabidopsis thaliana GN=PAB2 PE=1 SV=1
+          Length = 629
+
+ Score = 79.3 bits (194), Expect = 6e-15,   Method: Compositional matrix adjust.
+ Identities = 40/77 (51%), Positives = 60/77 (77%), Gaps = 4/77 (5%)
+
+Query: 1   PLT----ASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLES 56
+           PLT    AS L++A P++Q+ MLGE L+PL++ +    A K+TGMLLE+D +E+LH+LES
+Sbjct: 537 PLTIGALASNLSNATPEQQRTMLGEVLYPLVEQVEAESAAKVTGMLLEMDQTEVLHLLES 596
+
+Query: 57  PESLRSKVDEAVAVLQA 73
+           PE+L++KV EA+ VL++
+Sbjct: 597 PEALKAKVAEAMDVLRS 613
+
+
+>sp|O64380|PABP3_ARATH Polyadenylate-binding protein 3
+           OS=Arabidopsis thaliana GN=PAB3 PE=2 SV=1
+          Length = 660
+
+ Score = 79.0 bits (193), Expect = 8e-15,   Method: Compositional matrix adjust.
+ Identities = 37/68 (54%), Positives = 54/68 (79%)
+
+Query: 5   SMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESLRSKV 64
+           S LASA P ++ +MLGE+L+PL++   P    K+TGMLLE+D +E+LH++ESPE+L+SKV
+Sbjct: 577 SSLASASPADRTRMLGEQLYPLVERHEPLHVAKVTGMLLEMDQAEILHLMESPEALKSKV 636
+
+Query: 65  DEAVAVLQ 72
+            EA+ VL+
+Sbjct: 637 SEALDVLR 644
+
+
+>sp|Q4WK03|PABP_ASPFU Polyadenylate-binding protein, cytoplasmic and
+           nuclear OS=Aspergillus fumigatus GN=pab1 PE=3 SV=1
+          Length = 753
+
+ Score = 78.6 bits (192), Expect = 1e-14,   Method: Compositional matrix adjust.
+ Identities = 46/70 (65%), Positives = 57/70 (81%)
+
+Query: 2   LTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESLR 61
+           LTA  L++ PP +QKQMLGE L+P IQA  P LAGKITGMLLE+DN+ELL +LE  E+LR
+Sbjct: 651 LTAQTLSAVPPPQQKQMLGEALYPKIQAQQPELAGKITGMLLEMDNNELLGLLEDEEALR 710
+
+Query: 62  SKVDEAVAVL 71
+           +KVDEA++V 
+Sbjct: 711 AKVDEALSVY 720
+
+
+>sp|Q05196|PABP5_ARATH Polyadenylate-binding protein 5
+           OS=Arabidopsis thaliana GN=PAB5 PE=1 SV=2
+          Length = 668
+
+ Score = 78.6 bits (192), Expect = 1e-14,   Method: Compositional matrix adjust.
+ Identities = 40/76 (52%), Positives = 56/76 (73%), Gaps = 4/76 (5%)
+
+Query: 1   PLTASMLAS----APPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLES 56
+           PLT S LAS    A P +  +MLG+ L+PL++   P  A K+TGMLLE+D +E+LH+LES
+Sbjct: 572 PLTISKLASDLALASPDKHPRMLGDHLYPLVEQQEPANAAKVTGMLLEMDQAEILHLLES 631
+
+Query: 57  PESLRSKVDEAVAVLQ 72
+           PE+L++KV EA+ VL+
+Sbjct: 632 PEALKAKVSEALDVLR 647
+
+
+>sp|A1D4K4|PABP_NEOFI Polyadenylate-binding protein, cytoplasmic and
+           nuclear OS=Neosartorya fischeri (strain ATCC 1020 / DSM
+           3700 / FGSC A1164 / NRRL 181) GN=pab1 PE=3 SV=1
+          Length = 751
+
+ Score = 77.8 bits (190), Expect = 2e-14,   Method: Compositional matrix adjust.
+ Identities = 46/70 (65%), Positives = 56/70 (80%)
+
+Query: 2   LTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESLR 61
+           LTA  L + PP +QKQMLGE L+P IQA  P LAGKITGMLLE+DN+ELL +LE  E+LR
+Sbjct: 649 LTAQTLNAVPPPQQKQMLGEALYPKIQAQQPELAGKITGMLLEMDNTELLGLLEDEEALR 708
+
+Query: 62  SKVDEAVAVL 71
+           +KVDEA++V 
+Sbjct: 709 AKVDEALSVY 718
+
+
+>sp|Q2UK72|PABP_ASPOR Polyadenylate-binding protein, cytoplasmic and
+           nuclear OS=Aspergillus oryzae GN=pab1 PE=3 SV=1
+          Length = 765
+
+ Score = 77.4 bits (189), Expect = 2e-14,   Method: Compositional matrix adjust.
+ Identities = 46/70 (65%), Positives = 57/70 (81%)
+
+Query: 2   LTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESLR 61
+           LTA  L++APP +QKQMLGE L+P IQA  P LAGKITGMLLE++N+ELL +LE  E+LR
+Sbjct: 662 LTAQALSAAPPPQQKQMLGEALYPKIQAQQPELAGKITGMLLEMENTELLSLLEDEEALR 721
+
+Query: 62  SKVDEAVAVL 71
+           +KVDEA+ V 
+Sbjct: 722 AKVDEALNVY 731
+
+
+>sp|A2Q848|PABP_ASPNC Polyadenylate-binding protein, cytoplasmic and
+           nuclear OS=Aspergillus niger (strain CBS 513.88 / FGSC
+           A1513) GN=pab1 PE=3 SV=1
+          Length = 731
+
+ Score = 76.6 bits (187), Expect = 3e-14,   Method: Compositional matrix adjust.
+ Identities = 37/61 (60%), Positives = 45/61 (73%)
+
+Query: 2   LTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESLR 61
+           + A  L +APP +QKQMLGE L+P IQA  P LAGKITGMLLE+DN+ELL +   P + R
+Sbjct: 661 VNAQTLGAAPPAQQKQMLGEALYPKIQAQQPELAGKITGMLLEMDNTELLSLTRKPCAPR 720
+
+Query: 62  S 62
+           S
+Sbjct: 721 S 721
+
+
+>sp|P31209|PABP_SCHPO Polyadenylate-binding protein, cytoplasmic and
+           nuclear OS=Schizosaccharomyces pombe GN=pab1 PE=1 SV=2
+          Length = 653
+
+ Score = 71.6 bits (174), Expect = 1e-12,   Method: Compositional matrix adjust.
+ Identities = 36/71 (50%), Positives = 50/71 (70%)
+
+Query: 2   LTASMLASAPPQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESLR 61
+            TA+ LA+ P + +KQ+LGE L+P +      L+GKITGMLLE+ NSELL +LE   +L 
+Sbjct: 572 FTAADLAAVPEESRKQVLGELLYPKVFVREEKLSGKITGMLLEMPNSELLELLEDDSALN 631
+
+Query: 62  SKVDEAVAVLQ 72
+            +V+EA+ VLQ
+Sbjct: 632 ERVNEAIGVLQ 642
+
+
+>sp|A3LXL0|PABP_PICST Polyadenylate-binding protein, cytoplasmic and
+           nuclear OS=Pichia stipitis GN=PAB1 PE=3 SV=1
+          Length = 632
+
+ Score = 66.6 bits (161), Expect = 4e-11,   Method: Composition-based stats.
+ Identities = 32/73 (43%), Positives = 50/73 (68%), Gaps = 4/73 (5%)
+
+Query: 4   ASMLASAPPQEQKQMLGERLFPLI----QAMHPTLAGKITGMLLEIDNSELLHMLESPES 59
+           A+++ASAPP +QK++LGE L+P I    +A  P  AGKITGM+L++DN E+L +LE  E 
+Sbjct: 539 AAIIASAPPDQQKRILGEELYPKIVATGKAQEPEAAGKITGMMLDLDNQEILALLEDDEL 598
+
+Query: 60  LRSKVDEAVAVLQ 72
+             +  ++A+   +
+Sbjct: 599 FTNHFEDALTAFE 611
+
+
+>sp|Q9ZQA8|PABPX_ARATH Probable polyadenylate-binding protein
+           At2g36660 OS=Arabidopsis thaliana GN=At2g36660 PE=2 SV=1
+          Length = 609
+
+ Score = 63.2 bits (152), Expect = 4e-10,   Method: Composition-based stats.
+ Identities = 34/59 (57%), Positives = 45/59 (76%)
+
+Query: 15  QKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESLRSKVDEAVAVLQA 73
+           + Q+LGE L PL++ + P LA KITGMLLE+D SELL +L+SPE L  +VDEA  VL++
+Sbjct: 525 EMQLLGELLHPLVEKLEPQLANKITGMLLEMDKSELLLLLKSPEDLAVRVDEAFEVLKS 583
+
+
+>sp|Q6BI95|PABP_DEBHA Polyadenylate-binding protein, cytoplasmic and
+           nuclear OS=Debaryomyces hansenii GN=PAB1 PE=3 SV=2
+          Length = 627
+
+ Score = 62.0 bits (149), Expect = 9e-10,   Method: Composition-based stats.
+ Identities = 30/73 (41%), Positives = 49/73 (67%), Gaps = 4/73 (5%)
+
+Query: 4   ASMLASAPPQEQKQMLGERLFPLI----QAMHPTLAGKITGMLLEIDNSELLHMLESPES 59
+           A+++A+AP  +QK++LGE L+P I    +A  P  AGKITGM+L++DN E+L +LE  E 
+Sbjct: 542 AAIIANAPADQQKRILGEELYPKIVSTGKAQEPEAAGKITGMMLDLDNEEILALLEDDEL 601
+
+Query: 60  LRSKVDEAVAVLQ 72
+             +  ++A+   +
+Sbjct: 602 FNTHFEDALTAFE 614
+
+
+>sp|O95071|UBR5_HUMAN E3 ubiquitin-protein ligase UBR5 OS=Homo sapiens
+            GN=UBR5 PE=1 SV=2
+          Length = 2799
+
+ Score = 60.8 bits (146), Expect = 2e-09,   Method: Compositional matrix adjust.
+ Identities = 32/59 (54%), Positives = 45/59 (76%)
+
+Query: 15   QKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESLRSKVDEAVAVLQA 73
+             +Q LGERL+P +QAM P  A KITGMLLE+  ++LL +L S +SLR++VDEA+ ++ A
+Sbjct: 2393 HRQALGERLYPRVQAMQPAFASKITGMLLELSPAQLLLLLASEDSLRARVDEAMELIIA 2451
+
+
+>sp|Q80TP3|UBR5_MOUSE E3 ubiquitin-protein ligase UBR5 OS=Mus musculus
+            GN=Ubr5 PE=1 SV=2
+          Length = 2792
+
+ Score = 60.8 bits (146), Expect = 2e-09,   Method: Compositional matrix adjust.
+ Identities = 32/59 (54%), Positives = 45/59 (76%)
+
+Query: 15   QKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESLRSKVDEAVAVLQA 73
+             +Q LGERL+P +QAM P  A KITGMLLE+  ++LL +L S +SLR++VDEA+ ++ A
+Sbjct: 2387 HRQALGERLYPRVQAMQPAFASKITGMLLELSPAQLLLLLASEDSLRARVDEAMELIIA 2445
+
+
+>sp|P51592|HYD_DROME E3 ubiquitin-protein ligase hyd OS=Drosophila
+            melanogaster GN=hyd PE=1 SV=3
+          Length = 2885
+
+ Score = 58.9 bits (141), Expect = 8e-09,   Method: Composition-based stats.
+ Identities = 28/55 (50%), Positives = 41/55 (74%)
+
+Query: 17   QMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESLRSKVDEAVAVL 71
+            Q +GERL+P I +++ T A KITGMLLEI   +LL ++ S E+LR KV+EA+ ++
+Sbjct: 2502 QQIGERLYPKIHSINQTHAPKITGMLLEIPTPQLLSVISSDETLRQKVNEAIEII 2556
+
+
+>sp|Q62671|UBR5_RAT E3 ubiquitin-protein ligase UBR5 (Fragment)
+           OS=Rattus norvegicus GN=Ubr5 PE=2 SV=2
+          Length = 920
+
+ Score = 58.5 bits (140), Expect = 1e-08,   Method: Compositional matrix adjust.
+ Identities = 31/59 (52%), Positives = 45/59 (76%)
+
+Query: 15  QKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESLRSKVDEAVAVLQA 73
+            +Q LGERL+P +QAM P  A KITGMLLE+  ++LL +L S +SLR++V+EA+ ++ A
+Sbjct: 515 HRQALGERLYPRVQAMQPAFASKITGMLLELSPAQLLLLLASEDSLRARVEEAMELIVA 573
+
+
+>sp|A5DM21|PABP_PICGU Polyadenylate-binding protein, cytoplasmic and
+           nuclear OS=Pichia guilliermondii GN=PAB1 PE=3 SV=2
+          Length = 631
+
+ Score = 56.6 bits (135), Expect = 4e-08,   Method: Compositional matrix adjust.
+ Identities = 27/73 (36%), Positives = 48/73 (65%), Gaps = 4/73 (5%)
+
+Query: 4   ASMLASAPPQEQKQMLGERLFPLI----QAMHPTLAGKITGMLLEIDNSELLHMLESPES 59
+           A+++++ P  +QK++LGE L+P I    +A  P  AGKITGM+L+++N E+L +LE  E 
+Sbjct: 550 AAIISTVPVDQQKRILGEELYPKIVATGKAQEPEAAGKITGMMLDLENEEILALLEDDEL 609
+
+Query: 60  LRSKVDEAVAVLQ 72
+             +  ++A+   +
+Sbjct: 610 FENHFEDALTAFE 622
+
+
+>sp|A5DW14|PABP_LODEL Polyadenylate-binding protein, cytoplasmic and
+           nuclear OS=Lodderomyces elongisporus GN=PAB1 PE=3 SV=1
+          Length = 661
+
+ Score = 54.3 bits (129), Expect = 2e-07,   Method: Compositional matrix adjust.
+ Identities = 28/73 (38%), Positives = 47/73 (64%), Gaps = 4/73 (5%)
+
+Query: 4   ASMLASAPPQEQKQMLGERLFPLI----QAMHPTLAGKITGMLLEIDNSELLHMLESPES 59
+           A+++A+AP + QK++LGE L+  I    +A  P  AGKITGM+L ++N E+L +L+  E 
+Sbjct: 568 AALIANAPLEAQKRILGEELYQRIVATGKAQEPEAAGKITGMMLGLENQEILDLLDDEEL 627
+
+Query: 60  LRSKVDEAVAVLQ 72
+             +  +EA+   +
+Sbjct: 628 FNNHFEEALNAFE 640
+
+
+>sp|Q4P8R9|PABP_USTMA Polyadenylate-binding protein, cytoplasmic and
+           nuclear OS=Ustilago maydis GN=PAB1 PE=3 SV=1
+          Length = 651
+
+ Score = 53.9 bits (128), Expect = 3e-07,   Method: Compositional matrix adjust.
+ Identities = 35/61 (57%), Positives = 49/61 (80%)
+
+Query: 12  PQEQKQMLGERLFPLIQAMHPTLAGKITGMLLEIDNSELLHMLESPESLRSKVDEAVAVL 71
+           P+EQKQMLGE ++P + A  P LAGK+TGM+LE+  +ELLH+LE  E+L +KV+EA+ VL
+Sbjct: 568 PEEQKQMLGEAIYPKVAASQPELAGKLTGMILELPVTELLHLLEESEALDAKVNEALEVL 627
+
+Query: 72  Q 72
+           +
+Sbjct: 628 K 628
+
+
+>sp|Q6CDH3|PABP_YARLI Polyadenylate-binding protein, cytoplasmic and
+           nuclear OS=Yarrowia lipolytica GN=PAB1 PE=3 SV=1
+          Length = 629
+
+ Score = 50.4 bits (119), Expect = 3e-06,   Method: Compositional matrix adjust.
+ Identities = 25/74 (33%), Positives = 47/74 (63%), Gaps = 5/74 (6%)
+
+Query: 4   ASMLASAPPQEQKQMLGERLFPLIQA-----MHPTLAGKITGMLLEIDNSELLHMLESPE 58
+           ++ L +AP ++ KQ++GE L+P + A      +   AGKITGMLLE+   E+L +++  E
+Sbjct: 547 SNALENAPEEQHKQLVGEALYPKVLAEKAIDGNAEFAGKITGMLLEMPIKEILEVIDDEE 606
+
+Query: 59  SLRSKVDEAVAVLQ 72
+            L++++++A+    
+Sbjct: 607 GLQAQINDAITAYN 620
+
+
+>sp|Q5AI15|PABP_CANAL Polyadenylate-binding protein, cytoplasmic and
+           nuclear OS=Candida albicans GN=PAB1 PE=3 SV=1
+          Length = 629
+
+ Score = 48.5 bits (114), Expect = 1e-05,   Method: Composition-based stats.
+ Identities = 27/73 (36%), Positives = 47/73 (64%), Gaps = 4/73 (5%)
+
+Query: 4   ASMLASAPPQEQKQMLGERLFPLI----QAMHPTLAGKITGMLLEIDNSELLHMLESPES 59
+           A++++S P  +QK++LGE L+P I    +A  P  AGKITGM+L ++N E+L +L+  E 
+Sbjct: 542 AAIISSVPQDQQKRILGEELYPKIVATGKAQEPEAAGKITGMMLGLENQEILDLLDDDEL 601
+
+Query: 60  LRSKVDEAVAVLQ 72
+             +  ++A+   +
+Sbjct: 602 FNNHFEDALTAFE 614
+
+
+>sp|Q54BM2|PAP1A_DICDI Polyadenylate-binding protein 1-A
+           OS=Dictyostelium discoideum GN=pabpc1A PE=1 SV=1
+          Length = 565
+
+ Score = 48.1 bits (113), Expect = 2e-05,   Method: Composition-based stats.
+ Identities = 29/72 (40%), Positives = 43/72 (59%), Gaps = 2/72 (2%)
+
+Query: 2   LTASMLASAPPQEQKQM-LGERLFPLIQAMHPTLAGKITGMLLE-IDNSELLHMLESPES 59
+           L    + + P ++Q+ + LGE L+PLI    P LAGKITGMLL+ +   EL  + +  + 
+Sbjct: 491 LNLQSIINLPSRDQQNVALGEHLYPLIHNSQPDLAGKITGMLLDSLPVEELFTLTQRQDL 550
+
+Query: 60  LRSKVDEAVAVL 71
+           L  K+ EA+ VL
+Sbjct: 551 LADKIREALEVL 562
+
+
+  Database: sprot
+    Posted date:  Dec 10, 2010 10:17 AM
+  Number of letters in database: 184,678,199
+  Number of sequences in database:  523,151
+  
+Lambda     K      H
+   0.314    0.129    0.345 
+
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 22,066,487
+Number of Sequences: 523151
+Number of extensions: 665619
+Number of successful extensions: 2108
+Number of sequences better than 1.0e-02: 47
+Number of HSP's better than  0.0 without gapping: 39
+Number of HSP's successfully gapped in prelim test: 8
+Number of HSP's that attempted gapping in prelim test: 2060
+Number of HSP's gapped (non-prelim): 47
+length of query: 73
+length of database: 184,678,199
+effective HSP length: 45
+effective length of query: 28
+effective length of database: 161,136,404
+effective search space: 4511819312
+effective search space used: 4511819312
+T: 11
+A: 40
+X1: 16 ( 7.3 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.6 bits)
+S2: 89 (38.9 bits)

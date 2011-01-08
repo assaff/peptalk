@@ -1,0 +1,125 @@
+// Include file for PDBResidue class
+
+
+ 
+// Class declaration
+
+class PDBResidue {
+public:
+  // Constructor
+  PDBResidue(PDBMolecule *molecule, PDBChain *chain, const char *resName, int sequence, int insertion_code);
+
+  // Property functions
+  int ID(void) const;
+  int Sequence(void) const;
+  int InsertionCode(void) const;
+  const char *Name(void) const;
+  const R3Box& BBox(void) const;
+
+  // Atom access functions
+  int NAtoms(void) const;
+  PDBAtom *Atom(int k) const;
+  PDBAtom *FindAtom(const char *name) const;
+
+  // Other access functions
+  PDBChain *Chain(void) const;
+  PDBMolecule *Molecule(void) const;
+  PDBAminoAcid *AminoAcid(void) const;
+
+
+public:
+  int id;
+  char name[4];
+  int sequence;
+  int insertion_code;
+  R3Box bbox;
+  PDBChain *chain;
+  PDBAminoAcid *aminoacid;
+  RNArray<PDBAtom *> atoms;
+};
+
+
+
+// Inline functions
+
+inline int PDBResidue::
+ID(void) const
+{
+  // Return id
+  return id;
+}
+
+
+
+inline const char *PDBResidue::
+Name(void) const
+{
+  // Return name
+  return name;
+}
+
+
+
+inline int PDBResidue::
+Sequence(void) const
+{
+  // Return sequence
+  return sequence;
+}
+
+
+
+inline int PDBResidue::
+InsertionCode(void) const
+{
+  // Return insertion code
+  return insertion_code;
+}
+
+
+
+inline const R3Box& PDBResidue::
+BBox(void) const
+{
+  // Return bounding box (including atom radii)
+  return bbox;
+}
+
+
+
+inline int PDBResidue::
+NAtoms(void) const
+{
+  // Return number of atoms
+  return atoms.NEntries();
+}
+
+
+
+inline PDBAtom *PDBResidue::
+Atom(int k) const
+{
+  // Return Kth atom
+  return atoms.Kth(k);
+}
+
+
+
+inline PDBChain *PDBResidue::
+Chain(void) const
+{
+  // Return chain
+  return chain;
+}
+
+
+
+inline PDBAminoAcid *PDBResidue::
+AminoAcid(void) const
+{
+  // Return amino acid
+  return aminoacid;
+}
+
+
+

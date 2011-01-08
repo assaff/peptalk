@@ -1,0 +1,62 @@
+// Source file for PDBResidue
+
+
+
+// Include files
+
+#include "PDB.h"
+
+
+
+PDBResidue::
+PDBResidue(PDBMolecule *molecule, PDBChain *chain, const char *resName, int sequence, int insertion_code)
+  : chain(chain), 
+    sequence(sequence),
+    insertion_code(insertion_code),
+    aminoacid(NULL),
+    bbox(R3null_box)
+{
+  // Just checking
+  assert(!molecule || !chain || (chain->molecule == molecule));
+
+  // Assign ID
+  static int PDBnext_residue_id = 0;
+  id = PDBnext_residue_id++;
+
+  // Copy name
+  if (name) strncpy(this->name, resName, 4);
+  else this->name[0] = '\0';
+
+  // Find amino acid
+  if (name[0]) aminoacid = PDBFindAminoAcid(name);
+
+  // Insert residue into chain and molecule
+  if (chain) chain->residues.Insert(this);
+  if (molecule) molecule->residues.Insert(this);
+}
+
+
+
+PDBAtom *PDBResidue::
+FindAtom(const char *name) const
+{
+  // Find atom 
+  for (int i = 0; i < NAtoms(); i++) {
+    PDBAtom *atom = Atom(i);
+    if (!strcmp(atom->Name(), name)) 
+      return atom;
+  }
+  return NULL;
+}
+
+
+
+PDBMolecule *PDBResidue::
+Molecule(void) const
+{
+  // Return molecule
+  return (chain) ? chain->Molecule() : NULL;
+}
+
+
+

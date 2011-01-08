@@ -1,0 +1,332 @@
+// Source file for the heap class 
+
+#ifndef __RN__HEAP__C__
+#define __RN__HEAP__C__
+
+
+
+// Include files
+
+#include "RNBasics.h"
+
+
+
+template <class PtrType>
+RNHeap<PtrType>::
+RNHeap(PtrType base, RNScalar *value_ptr, PtrType **entry_ptr, int least_first)
+  : entries(NULL),
+    nentries(0),
+    nallocated(0),
+    value_offset(0),
+    entry_offset(-1),
+    least_first(least_first)
+{
+  // Check arguments
+  assert(base);
+  assert(value_ptr);
+
+  // Compute offsets to data entries in struct referenced by PtrType
+  if (value_ptr) value_offset = (unsigned char *) value_ptr - (unsigned char *) base;
+  if (entry_ptr) entry_offset = (unsigned char *) entry_ptr - (unsigned char *) base; 
+
+  // Check value offset
+  assert(value_offset >= 0);
+}
+
+
+
+template <class PtrType>
+RNHeap<PtrType>::
+RNHeap(int value_offset, int entry_offset, int least_first)
+  : entries(NULL),
+    nentries(0),
+    nallocated(0),
+    value_offset(value_offset),
+    entry_offset(entry_offset),
+    least_first(least_first)
+{
+  // Check value offset
+  assert(value_offset >= 0);
+}
+
+
+
+template <class PtrType>
+RNHeap<PtrType>::
+~RNHeap(void)
+{
+  // Delete entries
+  if (entries) delete [] entries;
+}
+
+
+
+template <class PtrType>
+int RNHeap<PtrType>::
+IsEmpty(void) const
+{
+  // Return number of entries
+  return (nentries == 0);
+}
+
+
+
+template <class PtrType>
+int RNHeap<PtrType>::
+NEntries(void) const
+{
+  // Return number of entries
+  return nentries;
+}
+
+
+
+template <class PtrType>
+PtrType RNHeap<PtrType>::
+Kth(int k) const
+{
+  // Return kth data element
+  assert((0 <= k) && (k < nentries));
+  return entries[k];
+}
+
+
+
+template <class PtrType>
+PtrType RNHeap<PtrType>::
+operator[](int k) const
+{
+  // Return kth data element
+  assert((0 <= k) && (k < nentries));
+  return entries[k];
+}
+
+
+
+template <class PtrType>
+PtrType RNHeap<PtrType>::
+Peak(void) const
+{
+  // Check number of entries	
+  if (nentries == 0) return NULL;
+
+  // Return head entry
+  return entries[0];
+}
+
+
+
+template <class PtrType>
+void RNHeap<PtrType>::
+Empty(void)
+{
+  // Set nentries to zero -- don't deallocate
+  nentries = 0;
+}
+
+
+
+template <class PtrType>
+void RNHeap<PtrType>::
+Push(PtrType entry)
+{
+  // Allocate space for entry
+  if (nentries == nallocated) {
+    nallocated = (nallocated == 0) ? 1 : 2 * nallocated;
+    PtrType *newentries = new PtrType [nallocated];
+    for (int i = 0; i < nentries; i++) {
+      newentries[i] = entries[i];
+      if (entry_offset >= 0) {
+        *((PtrType **) ((unsigned char *) newentries[i] + entry_offset)) = &newentries[i];
+      }
+    }
+    if (entries) delete [] entries;
+    entries = newentries;
+  }
+
+  // Put entry into tail
+  entries[nentries] = entry;
+
+  // Update entry backpointer
+  if (entry_offset >= 0) {
+    *((PtrType **) ((unsigned char *) entry + entry_offset)) = &entries[nentries];
+  }
+
+  // Increment number of entries
+  nentries++;
+
+  // Bubble tail entry up to its rightful spot
+  BubbleUp(nentries-1);
+}
+
+
+
+template <class PtrType>
+PtrType RNHeap<PtrType>::
+Pop(void)
+{
+  // Check number of entries	
+  if (nentries == 0) return NULL;
+
+  // Get head entry
+  PtrType result = entries[0];
+
+  // Update deleted entry backpointer
+  if (entry_offset >= 0) {
+    *((PtrType **) ((unsigned char *) entries[0] + entry_offset)) = NULL;
+  }
+
+  // Remove head entry, by copying tail over it
+  entries[0] = entries[nentries-1];
+
+  // Update new entry[0] backpointer
+  if (entry_offset >= 0) {
+    *((PtrType **) ((unsigned char *) entries[0] + entry_offset)) = &entries[0];
+  }
+
+  // Decrement number of entries
+  nentries--;
+
+  // Bubble the head entry down to its rightful spot
+  BubbleDown(0);
+
+  // Return original head entry
+  return result;
+}
+
+
+
+template <class PtrType>
+void RNHeap<PtrType>::
+Update(PtrType entry)
+{
+  // Search for entry
+  int index = -1;
+  if (entry_offset >= 0) {
+    PtrType **entryp = (PtrType **) ((unsigned char *) entry + entry_offset);
+    index = *entryp - entries;
+  }
+  else {
+    // Find data in heap, and then move to rightful spot
+    for (int i = 0; i < nentries; i++) {
+      if (entries[i] == entry) {
+        index = i;
+        break;
+      }
+    }
+  }
+
+  // Move data into place
+  if (index == -1) return;
+  assert((0 <= index) && (index < nentries));
+  BubbleUp(BubbleDown(index));
+}
+
+
+
+template <class PtrType>
+void RNHeap<PtrType>::
+Swap(int i, int j)
+{
+  // Swap entries
+  PtrType swap = entries[i];
+  entries[i] = entries[j];
+  entries[j] = swap;
+  
+  // Update entry backpointers
+  if (entry_offset >= 0) {
+    *((PtrType **) ((unsigned char *) entries[i] + entry_offset)) = &entries[i];
+    *((PtrType **) ((unsigned char *) entries[j] + entry_offset)) = &entries[j];
+  }
+}
+
+
+
+template <class PtrType>
+int RNHeap<PtrType>::
+BubbleUp(int index)
+{
+  // Move data up tree to rightful place
+  while (index > 0) {
+    int parent_index = ((index - 1) >> 1);
+    RNScalar parent_value = *((RNScalar *) ((unsigned char *) entries[parent_index] + value_offset));
+    RNScalar value = *((RNScalar *) ((unsigned char *) entries[index] + value_offset));
+    if (least_first) { if (parent_value <= value) break; }
+    else { if (parent_value >= value) break; }
+    Swap(index, parent_index);
+    index = parent_index;
+  }
+
+  // Return new index
+  return index;
+}
+
+
+
+template <class PtrType>
+int RNHeap<PtrType>::
+BubbleDown(int index)
+{
+  // Move data down tree to rightful place
+  while (index < nentries) {
+    int child_index;
+    int child1_index = (index << 1) + 1;
+    int child2_index = child1_index + 1;
+    if (child1_index >= nentries) break;
+    else if (child2_index >= nentries) {
+      child_index = child1_index;
+    }
+    else {
+      RNScalar child1_value = *((RNScalar *) ((unsigned char *) entries[child1_index] + value_offset));
+      RNScalar child2_value = *((RNScalar *) ((unsigned char *) entries[child2_index] + value_offset));
+      child_index = child1_index;
+      if (least_first) { if (child2_value < child1_value) child_index = child2_index; }
+      else { if (child2_value > child1_value) child_index = child2_index; }
+    }
+    RNScalar value = *((RNScalar *) ((unsigned char *) entries[index] + value_offset));
+    RNScalar child_value = *((RNScalar *) ((unsigned char *) entries[child_index] + value_offset));
+    if (least_first) { if (value <= child_value) break; }
+    else { if (value >= child_value) break; }
+    Swap(index, child_index);
+    index = child_index;
+  }
+
+  // Return new index
+  return index;
+}
+
+
+
+template <class PtrType>
+int RNHeap<PtrType>::
+IsValid(void)
+{
+  // Check array
+  assert(nallocated >= 0);
+  assert(nentries >= 0);
+  assert(nentries <= nallocated);
+  assert(entries || ((nentries == 0) && (nallocated == 0)));
+
+  // Check backpointers
+  if (entry_offset >= 0) {
+    for (int i = 0; i < nentries; i++) {
+      assert(*((PtrType **) ((unsigned char *) entries[i] + entry_offset)) == &entries[i]);
+    }
+  }
+
+  // Return success
+  return 1;
+}
+
+
+
+#endif
+
+
+
+
+
+
+
+
+

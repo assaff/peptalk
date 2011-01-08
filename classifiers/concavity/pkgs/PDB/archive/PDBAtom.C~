@@ -1,0 +1,79 @@
+// Source file for PDBAtom
+
+
+
+// Include files
+
+#include "PDB.h"
+
+
+
+PDBAtom::
+PDBAtom(PDBMolecule *molecule, PDBChain *chain, PDBResidue *residue, 
+  int serial, const char *name, int altLoc, RNScalar x, RNScalar y, RNScalar z, 
+  RNScalar occupancy, RNScalar tempFactor)
+  : serial(serial),
+    altLoc(altLoc),
+    position(x, y, z),
+    occupancy(occupancy),
+    tempFactor(tempFactor),
+    id(0),
+    element(NULL),
+    residue(residue)
+{
+  // Just checking
+  assert(!molecule || !chain || (chain->molecule == molecule));
+  assert(!chain || !residue || (residue->chain == chain));
+
+  // Assign ID
+  static int PDBnext_chain_id = 0;
+  id = PDBnext_chain_id++;
+
+  // Copy name
+  if (name) strncpy(this->name, name, 8);
+  else this->name[0] = '\0';
+
+  // Get atom element
+  element = PDBFindElement(name);
+
+  // Determine atom bounding box
+  RNLength radius = Radius();
+  R3Vector half_diagonal(radius, radius, radius);
+  R3Box bbox(position - half_diagonal, position + half_diagonal);
+
+  // Insert atome into residue, chain, and molecule
+  if (residue) { residue->atoms.Insert(this); residue->bbox.Union(bbox); }
+  if (chain) { chain->atoms.Insert(this); chain->bbox.Union(bbox); }
+  if (molecule) { molecule->atoms.Insert(this); molecule->bbox.Union(bbox); }
+}
+
+
+
+PDBAminoAcid *PDBAtom::
+AminoAcid(void) const
+{
+  // Return aminoacid
+  return (residue) ? residue->AminoAcid() : NULL;
+}
+
+
+
+PDBChain *PDBAtom::
+Chain(void) const
+{
+  // Return chain
+  return (residue) ? residue->Chain() : NULL;
+}
+
+
+
+PDBMolecule *PDBAtom::
+Molecule(void) const
+{
+  // Return chain
+  PDBChain *chain = Chain();
+  return (chain) ? chain->Molecule() : NULL;
+}
+
+
+

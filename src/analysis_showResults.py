@@ -76,13 +76,12 @@ def get_peptide_atoms(filename):
 
 def get_receptor_atoms(filename, bfactor_threshold=-np.Inf):
     pdb_lines = open(filename, 'r')
-    binder_filters = [filter_chain_eq(CHAIN_RECEPTOR),
+    receptor_filters = [filter_chain_eq(CHAIN_RECEPTOR),
 #                      filter_atom_type(RECEPTOR_ATOM_TYPE),
-#                      filter_bfactor_gt(bfactor_threshold),
                       ]
-    binders = get_atoms(pdb_lines, binder_filters)
+    receptor_atoms = get_atoms(pdb_lines, receptor_filters)
     pdb_lines.close()
-    return binders
+    return receptor_atoms
 
 
 
@@ -100,7 +99,7 @@ score_lines.close()
 def truncate_classification_score(score):
     assert type(score) == float, 'classification score should be a float'
     if score < 0:
-        return 0
+        return -1.0
 #    elif score > 1.0:
 #        return 1
     else:

@@ -12,6 +12,7 @@ import os, sys, re, logging, subprocess, re
 sys.path.append(os.path.join(os.path.dirname(sys.argv[0]), 'match'))
 import numpy as np
 from optparse import OptionParser
+from itertools import chain
 #from matplotlib import pylab
 from scipy.cluster.hierarchy import fcluster, fclusterdata, linkage
 from scipy.spatial.distance import pdist, squareform, cdist
@@ -56,6 +57,10 @@ parser.add_option('-C', '--use-centroid',
                   action='store_true',
                   default=False,
                   help='use centroid coordinates as representatives of receptor residues.')
+parser.add_option('-E', '--expand-clusters',
+                  action='store_true',
+                  default=False,
+                  help='expand clusters from seeds to continuous patches')
 parser.add_option('-l', '--logfile',
                   default='/dev/null',
                   help='name of log file, mainly for debugging [default: %default]')
@@ -89,12 +94,12 @@ if not (os.path.exists(options.pdbfilename) and os.path.isfile(options.pdbfilena
     pdbid = options.pdbfilename.upper()
     options.pdbfilename = os.path.abspath(
                                 os.path.join(
-                                    os.path.dirname(sys.argv[0]), '../data/%s.results.pdb' % (pdbid.upper())))
+                                    os.path.dirname(sys.argv[0]), '../data/%s.results.classified_pdb_filename' % (pdbid.upper())))
     assert os.path.exists(options.pdbfilename), 'file %s does not exist.' % options.pdbfilename
     print >> sys.stderr, 'using %s as input PDB file.' % options.pdbfilename
     if options.binding_residues is not None and not os.path.exists(options.binding_residues): 
         assert re.match(r'^[\w]{4}$', options.binding_residues), 'At least provide a valid PDB code.'
-        assert pdbid == options.binding_residues.upper(), 'please provide the same pdb code for pdb and binders'
+        assert pdbid == options.binding_residues.upper(), 'please provide the same classified_pdb_filename code for classified_pdb_filename and binders'
         options.binding_residues = os.path.abspath(
                                     os.path.join(
                                         os.path.dirname(sys.argv[0]), '../BindingResidues/%s.res' % (pdbid)))
@@ -119,7 +124,8 @@ META_CLUSTERING_METRIC = 'euclidean'
 META_CLUSTERING_MARGIN = 4.0
 META_CLUSTERING_DIAMETER_CUTOFF = options.diameter_cutoff + META_CLUSTERING_MARGIN
 CLUSTERING_CRITERION = 'distance' # 'inconsistent' or 'distance'
-NEIGHBOR_DISTANCE_CUTOFF = 7.0
+NEIGHBOR_CLUSTER_DISTANCE_CUTOFF = 7.0
+NEIGHBOR_RESIDUE_DISTANCE_CUTOFF = 7.0
 #INCONSISTENCY_THRESHOLD = 0.02
 CHAIN_RECEPTOR = 'A'
 CHAIN_PEPTIDE = 'B'
@@ -162,7 +168,7 @@ def filter_atom_type(type_constraint):
     return (lambda atom: atom.type == type_constraint)
 
 def filter_bfactor_gt(bfactor_cutoff):
-    return (lambda atom: atom.bfactor > bfactor_cutoff)
+    return (lambda atom: atom.bfactor >= bfactor_cutoff)
 
 def test_clusters_ranking(clusters, clustering_score_function, actual_score_function):
     my_scoring = np.array([clustering_score_function(cluster) for cluster in clusters])
@@ -207,6 +213,16 @@ def get_receptor_atoms(filename, bfactor_threshold=-np.Inf):
     pdb_lines.close()
     return binders
 
+def get_receptor_surface_atoms(filename):
+    pdb_lines = open(filename, 'r')
+    surface_filters = [filter_chain_eq(CHAIN_RECEPTOR),
+                      filter_atom_type(RECEPTOR_ATOM_TYPE),
+                      filter_bfactor_gt(0), ]
+    surface_atoms = get_atoms(pdb_lines, surface_filters)
+    pdb_lines.close()
+    return surface_atoms
+
+
 def centroid(residue_atoms, atom_weights=None):
     assert atom_weights is None or (atom_weights.ndim == 1 and len(atom_weights) == len(residue_atoms))
     residue_coords = np.array([coords(atom) for atom in residue_atoms])
@@ -231,12 +247,14 @@ def spatial_clustering_degree(atoms, weights_vector=None):
     weights_vector = np.array(weights_vector)
     coords_matrix = np.array(map(coords, atoms))
     distances = pdist(coords_matrix)
+#    print len(atoms)
     if weights_vector is not None:
         assert np.all(weights_vector != 0)
         assert (type(weights_vector) is np.ndarray) and len(weights_vector.shape) <= 2 and max(weights_vector.shape) == coords_matrix.shape[0]
         weight_matrix = np.power(np.outer(weights_vector, weights_vector), -1)
         distances = squareform(np.multiply(squareform(distances), weight_matrix))
-    score = np.power(distances, -1).sum() * np.power(len(atoms), -2)
+#        print 'dist', distances
+    score = np.power(distances, -1).sum() * np.power(float(len(atoms)), -2)
     return score
 
 #def quasi_rmsd(atoms1, atoms2):
@@ -259,7 +277,7 @@ def spatial_clustering_degree(atoms, weights_vector=None):
 #    return score #sqrt(score)
 #    
 #def cluster_distance_with_peptide(cluster_atoms):
-#    peptide_atoms = get_peptide_atoms(pdb)
+#    peptide_atoms = get_peptide_atoms(classified_pdb_filename)
 #    logging.debug('Peptide CA atoms:')
 #    for atom in peptide_atoms: logging.debug(atom.pdb_str())
 #    return mini_rmsd(cluster_atoms, peptide_atoms)
@@ -268,11 +286,25 @@ def cluster_density_score(cluster_atoms):
     return spatial_clustering_degree(cluster_atoms)
 
 def cluster_contacts_with_peptide(cluster_atoms):
-    peptide_atoms = get_peptide_atoms(pdb)
+    peptide_atoms = get_peptide_atoms(classified_pdb_filename)
     peptide_coords = map(coords, peptide_atoms)
     contacting_residues = [atom for atom in cluster_atoms \
                 if cdist(np.array([coords(atom)]), peptide_coords).min() < 6]
     return len(contacting_residues)
+
+def expand_cluster(cluster_atoms):
+    cluster_coords = map(coords, cluster_atoms)
+    all_surface_atoms = get_receptor_surface_atoms(options.pdbfilename)
+    all_surface_coords = map(coords, all_surface_atoms)
+    distances = cdist(cluster_coords, all_surface_coords)
+    neigboring_atoms = [atom for atom in all_surface_atoms \
+                        if (distances[:,all_surface_atoms.index(atom)].min() < NEIGHBOR_RESIDUE_DISTANCE_CUTOFF)]
+#    print sorted([atom.res_num for atom in cluster_atoms])
+#    print sorted([atom.res_num for atom in neigboring_atoms])
+    expanded_cluster = list(set(cluster_atoms + neigboring_atoms))
+#    print sorted([atom.res_num for atom in expanded_cluster])
+#    exit()
+    return expanded_cluster
 
 def weighted_centroid(atoms):
     assert type(atoms) is list or type(atoms) is np.array
@@ -341,11 +373,11 @@ def find_closest_clusters(clusters_list):
 
 if __name__ == '__main__':
 
-    pdb = os.path.abspath(options.pdbfilename)
+    classified_pdb_filename = os.path.abspath(options.pdbfilename)
 
-    pdb_atoms = get_receptor_atoms(pdb, B_FACTOR_CUTOFF)
+    pdb_atoms = get_receptor_atoms(classified_pdb_filename, B_FACTOR_CUTOFF)
     if options.use_centroid:
-        pdb_atoms = shift_coords_to_centroids(pdb_atoms, pdbfilename=pdb)
+        pdb_atoms = shift_coords_to_centroids(pdb_atoms, pdbfilename=classified_pdb_filename)
 
     logging.debug('Receptor "positive" CA atoms:')
     for atom in pdb_atoms: logging.debug(atom.pdb_str())
@@ -377,9 +409,18 @@ if __name__ == '__main__':
         cluster_bfactors = np.array(map(bfactor, cluster_atoms))
         return spatial_clustering_degree(cluster_atoms, weights_vector=cluster_bfactors)
     
-    clusters.sort(key=cluster_scoring_function, reverse=True)
     clusters_confidence = map(cluster_scoring_function, clusters)
-
+#    if np.argmax(clusters_confidence)>0: print "First cluster is not "
+    clusters.sort(key=cluster_scoring_function, reverse=True)
+    
+    
+    # expand clusters to neighbors on surface
+    if options.expand_clusters:
+        clusters = map(expand_cluster, clusters)
+        for i in range(1,len(clusters)):
+            clusters[i] = list(set(clusters[i]).difference(set(chain.from_iterable(clusters[:i]))))
+    
+#    print len(clusters[0])
 #    if clusters is None or len(clusters) == 0:
 #        print 'ERROR_no_clusters_found'
 #        exit(1)

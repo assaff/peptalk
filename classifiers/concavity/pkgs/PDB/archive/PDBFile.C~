@@ -1,0 +1,139 @@
+// Source file for PDB I/O functions
+
+
+
+// Include files
+
+#include "PDB.h"
+
+
+
+static char *
+PDBToken(char *buffer, int start, int stop)
+{
+  static char token[32];
+  assert(stop-start+1 < 32);
+  char *tokenp = token;
+  for (int i = start-1; i <= stop-1; i++) 
+    if (!isspace(buffer[i])) 
+      *(tokenp++) = buffer[i];
+  *tokenp = '\0';
+  assert(tokenp-token <= stop-start+1);
+  return token;
+}
+
+
+
+PDBMolecule *
+PDBRead(const char *filename)
+{
+  // Open file
+  FILE *fp = fopen(filename, "r");
+  if (!fp) {
+    RNFail("Unable to open PDB file: %s", filename);
+    return 0;
+  }
+
+  // Create molecule
+  PDBMolecule *molecule = new PDBMolecule(filename);
+  assert(molecule);
+
+  // Read atoms from PDB file
+  char buffer[1024];
+  while (fgets(buffer, 1024, fp)) {
+    // Check record type
+    if ((!strncmp(&buffer[0], "ATOM  ", 6)) || (!strncmp(&buffer[0], "HETATM  ", 6))) {
+      // Parse atom fields 
+      int serial = atoi(PDBToken(buffer, 7, 11));
+      char name[8]; strncpy(name, &buffer[12], 4); name[4] = '\0';
+      int altLoc = atoi(PDBToken(buffer, 17, 17));
+      char resName[4]; strncpy(resName, PDBToken(buffer, 18, 20), 4);
+      char chainName[2]; chainName[0] = buffer[21]; chainName[1] = '\0';
+      int resSeq = atoi(PDBToken(buffer, 23, 26));
+      int iCode = buffer[27];
+      RNScalar x = atof(PDBToken(buffer, 31, 38));
+      RNScalar y = atof(PDBToken(buffer, 39, 46));
+      RNScalar z  = atof(PDBToken(buffer, 47, 54));
+      RNScalar occupancy = atof(PDBToken(buffer, 55, 60));
+      RNScalar tempFactor = atof(PDBToken(buffer, 61, 66));
+
+      // Check altLoc
+      if (altLoc != 0) {
+        // Print warning
+        fprintf(stderr, "Skipping atom %d with non-zero altLoc in %s\n", serial, filename);
+        continue;
+      }
+
+      // Get/create chain
+      PDBChain *chain = NULL;
+      chain = molecule->FindChain(chainName);
+      if (!chain) {
+        chain = new PDBChain(molecule, chainName);
+        assert(chain);
+      }
+
+      // Get atom residue
+      PDBResidue *residue = NULL;
+      residue = molecule->FindResidue(chain, resName, resSeq, iCode);
+      if (!residue) {
+        residue = new PDBResidue(molecule, chain, resName, resSeq, iCode);
+        assert(residue);
+      }
+
+      // Create atom
+      PDBAtom *atom = new PDBAtom(molecule, chain, residue, 
+        serial, name, altLoc, x, y, z, occupancy, tempFactor);
+      assert(atom);
+    }
+  }
+
+  // Close file
+  fclose(fp);
+
+  // Return PDB molecule
+  return molecule;
+}
+
+
+
+int 
+PDBWrite(PDBMolecule *molecule, const char *filename)
+{
+  // Open file
+  FILE *fp = fopen(filename, "w");
+  if (!fp) {
+    RNFail("Unable to open PDB file: %s", filename);
+    return 0;
+  }
+
+  // Write all atoms
+  for (int i = 0; i < molecule->NAtoms(); i++) {
+    // Get atom
+    PDBAtom *atom = molecule->Atom(i);
+
+    // Get residue
+    PDBResidue *residue = atom->Residue();
+    if (!residue) fprintf(stderr, "Null residue for atom %d\n", atom->Serial());
+
+    // Get chain
+    PDBChain *chain = residue->Chain();
+    if (!chain) fprintf(stderr, "Null chain for atom %d\n", atom->Serial());
+
+    // Print line to PDB file
+    fprintf(fp, "%-6s%5d %4s %3s %1s%4d%c   %8.3f%8.3f%8.3f%6.2f%6.2f\n",
+           (atom->AminoAcid()) ? "ATOM" : "HETATM",
+           atom->Serial(), atom->Name(), 
+           residue->Name(), chain->Name(), residue->Sequence(), residue->InsertionCode(), 
+           atom->Position().X(), atom->Position().Y(), atom->Position().Z(),
+           atom->Occupancy(), atom->TempFactor());
+  }
+    
+  // Close file
+  fclose(fp);
+
+  // Return number of atoms written
+  return molecule->NAtoms();
+}
+
+
+

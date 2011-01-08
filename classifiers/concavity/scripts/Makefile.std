@@ -1,0 +1,59 @@
+#
+# Makefile setup for GAPS
+#
+
+
+
+#
+# Targets
+#
+
+OBJS=$(CCSRCS:.C=.o) $(CSRCS:.c=.o) 
+INCS=$(HSRCS) $(CCSRCS:.C=.h) $(CSRCS:.c=.h)
+
+
+
+#
+# C flags
+#
+
+CC=g++
+BASE_CFLAGS=$(USER_CFLAGS) -Wall -I. -I../../pkgs 
+DEBUG_CFLAGS=$(BASE_CFLAGS) -g
+OPT_CFLAGS=$(BASE_CFLAGS) -O3 -DNDEBUG
+CFLAGS=$(DEBUG_CFLAGS)
+
+
+
+#
+# Get the operating system and architecture type
+#
+
+OS=$(shell uname -o)
+KERN=$(shell uname -s)
+ARCH=$(shell uname -m)
+
+
+
+#
+# Directories
+#
+
+RELEASE_DIR=../../release
+EXE_DIR=../../bin/$(ARCH)
+LIB_DIR=../../lib/$(ARCH)
+
+
+
+#
+# Default rules
+#
+
+.SUFFIXES: .c .C .o
+
+.C.o:
+	$(CC) $(CFLAGS) -c $<
+
+.c.o:
+	gcc $(CFLAGS) -c $<
+

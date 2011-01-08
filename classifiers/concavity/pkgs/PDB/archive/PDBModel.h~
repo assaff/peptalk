@@ -1,0 +1,135 @@
+// Header file for PDBMolecule class
+
+
+
+// Class declaration
+
+class PDBMolecule {
+public:
+  // Constructor
+  PDBMolecule(const char *name);
+
+  // Property functions
+  int ID(void) const;
+  const char *Name(void) const;
+  const R3Box& BBox(void) const;
+
+  // Atom access functions
+  int NAtoms(void) const;
+  PDBAtom *Atom(int k) const;
+  PDBResidue *FindAtom(PDBChain *chain, PDBResidue *residue, const char *name) const;
+  PDBResidue *FindAtom(PDBChain *chain, const char *residue_name, int residue_sequence, const char *name) const;
+  PDBResidue *FindAtom(const char *chain_name, const char *residue_name, int residue_sequence, const char *name) const;
+
+  // Residue access functions
+  int NResidues(void) const;
+  PDBResidue *Residue(int k) const;
+  PDBResidue *FindResidue(PDBChain *chain, const char *name, int sequence, int insertion_code) const;
+  PDBResidue *FindResidue(const char *chain_name, const char *name, int sequence, int insertion_code) const;
+  PDBResidue *FindResidue(const char *str) const;
+
+  // Chain access functions
+  int NChains(void) const;
+  PDBChain *Chain(int k) const;
+  PDBChain *FindChain(const char *name) const;
+
+public:
+  int id;
+  char name[32];
+  R3Box bbox;
+  RNArray<PDBAtom *> atoms;
+  RNArray<PDBResidue *> residues;
+  RNArray<PDBChain *> chains;
+};
+
+
+
+// Inline functions
+
+inline int PDBMolecule::
+ID(void) const
+{
+  // Return id
+  return id;
+}
+
+
+
+inline const char *PDBMolecule::
+Name(void) const
+{
+  // Return name
+  return name;
+}
+
+
+
+inline const R3Box& PDBMolecule::
+BBox(void) const
+{
+  // Return bounding box (including atom radii)
+  return bbox;
+}
+
+
+
+inline int PDBMolecule::
+NAtoms(void) const
+{
+  // Return number of atoms
+  return atoms.NEntries();
+}
+
+
+
+inline PDBAtom *PDBMolecule::
+Atom(int k) const
+{
+  // Return Kth atom
+  return atoms.Kth(k);
+}
+
+
+
+inline int PDBMolecule::
+NResidues(void) const
+{
+  // Return number of residues
+  return residues.NEntries();
+}
+
+
+
+inline PDBResidue *PDBMolecule::
+Residue(int k) const
+{
+  // Return Kth residue
+  return residues.Kth(k);
+}
+
+
+inline int PDBMolecule::
+NChains(void) const
+{
+  return chains.NEntries();
+}
+
+
+
+inline PDBChain *PDBMolecule::
+Chain(int k) const
+{
+  return chains.Kth(k);
+}
+
+
+
+inline PDBResidue *PDBMolecule::
+FindResidue(const char *chain_name, const char *name, int sequence, int insertion_code) const
+{
+  // Find residue
+  return FindResidue(FindChain(chain_name), name, sequence, insertion_code);
+}
+
+
+

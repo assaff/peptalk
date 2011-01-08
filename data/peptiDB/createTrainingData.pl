@@ -23,7 +23,7 @@ my $contactingResiduesRedo = 0; # Recreate info on contacting residues.
 my $holesRedo = 0; 				# Recreate info on holes residues.
 my $motifsRedo = 0; 			# Recreate info on geometric motifs.
 my $pdb = "";					# Name of a single pdb ID on which to perform training.
-my $outputDir = "results"; 		# Directory for output files.
+my $outputDir = "trainingData"; 		# Directory for output files.
 my $predictionDir = "";			# When creating test data for prediction - this directory contains the predicted PDBs data
 my $outSvmlight = 0; 			# Output in svm_light format
 
@@ -41,7 +41,8 @@ GetOptions ("help" => \$help,
 			"predDir=s" => \$predictionDir,
 			"pdbList=s" => \$pdbList);
 			
-$outputDir = "../../$outputDir"."_results";
+#$outputDir = "$outputDir"."_results";
+
 #END##########################################################################################
 
 if($help){
@@ -69,7 +70,7 @@ my $castPDataDir = "CastPAnalysis/CastPData/";
 my $naccessSurfaceData = "SurfaceAccessability/naccessAnalysis/data/";
 my $contactWithPeptideData = "ContactWithPeptide/data/";
 
-my $mainDir = "/vol/ek/assaff/peptalk_copy/peptalk/data/peptiDB/";
+my $mainDir = "/vol/ek/assaff/workspace/peptalk/data/peptiDB/";
 my $mainBoundDir = "$mainDir/bound/";
 my $mainUnboundDir = "$mainDir/unbound/";
 
@@ -395,7 +396,8 @@ sub createResultsForPdb{
 
 sub outputResults{
 	my ($fh, $pdb, $resName, $resNum, $label, @features) = @_;
-	
+    #print "$pdb, $resName, $resNum, $label\n";
+    #print "@features\n";
 	my @numberedFeatures = @features;
 	numberArray(\@numberedFeatures);
 	
@@ -403,7 +405,7 @@ sub outputResults{
 	my $numberedFeatureStr = join(" ", @numberedFeatures);
 	
 	my $infoStr = "#PDB $pdb Res $resName$resNum";
-	
+    	
 	if($outSvmlight){
 		# svm_light format
 		print $fh "$label $numberedFeatureStr $infoStr\n";
@@ -1106,10 +1108,9 @@ sub getBurriedResidues{
 		my $cmd = "ln -s $pdbFile $pdb.mainChain.pdb";
 		`$cmd`;
 		$cmd = "/vol/ek/share/bin/naccess $pdb.mainChain.pdb";
-        print `$cmd`;
+        `$cmd`;
 		chdir $currentDir;
 	}
-	print "done.\n";
 	
 	if(! (-e "$workDir$pdb.rsa")){
 		die("\tERROR: missing surface access file: $workDir$pdb.rsa\n");

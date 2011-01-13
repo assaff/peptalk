@@ -1,4 +1,4 @@
-load /home/assaf/workspace/peptalk/classifier1_full/results_b0.7/2B1Z.results.pdb;bg white;hide everything;select receptor, chain A;deselect;select peptide, chain B;deselect;color yellow, peptide;show sticks, peptide;show spheres, receptor;
+load /home/assaf/workspace/peptalk/classifiers/classifier1_full/results_b0.7/2B1Z.results.pdb;bg white;hide everything;select receptor, chain A;deselect;select peptide, chain B;deselect;color yellow, peptide;show sticks, peptide;show spheres, receptor;
 color white, receptor
 select cluster0_ca, receptor and name CB and (resi 19,20,21,51,52,54,58,68,71,72,75,76,227,229,230,231,234,235); deselect
 select cluster0_red, br. cluster0_ca; deselect

@@ -1,8 +1,0 @@
-#!/bin/bash
-
-pdbid=`echo $1 | tr '[a-z]' '[A-Z]'`
-cd /home/assaf/workspace/peptalk_scripts/data
-
-pml=$pdbid.results.pml
-pymol $pml > /dev/null &
-

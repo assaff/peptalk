@@ -20,5 +20,3 @@ select cluster4_ca, receptor and name CB and (resi 26,29,85); deselect
 select cluster4_green, br. cluster4_ca; deselect
 delete cluster4_ca
 color green, cluster4_green
-
-

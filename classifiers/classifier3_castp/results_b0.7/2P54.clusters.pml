@@ -28,4 +28,3 @@ select cluster6_ca, receptor and name CB and (resi 214,216); deselect
 select cluster6_blue, br. cluster6_ca; deselect
 delete cluster6_ca
 color blue, cluster6_blue
-

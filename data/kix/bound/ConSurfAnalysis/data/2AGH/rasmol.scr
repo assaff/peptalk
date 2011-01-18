@@ -1,0 +1,61 @@
+select all
+color [200,200,200]
+
+select ARG600, GLU636, TYR649, ARG671
+select selected and :B
+color [160,37,96]
+spacefill
+define CON9 selected
+
+select HIS592, VAL604, LEU607, PRO613, ARG624, MET625, ALA632, LYS667
+select selected and :B
+color [240,125,171]
+spacefill
+define CON8 selected
+
+select GLY586, VAL595, LYS606, ILE611, ASP616, ASP622, LYS633, VAL635, ASP638
+select selected or ALA643, TYR650, ALA654, GLN661
+select selected and :B
+color [250,201,222]
+spacefill
+define CON7 selected
+
+select TRP591, THR596, HIS602, ALA630, TYR640, GLU641, HIS651, LEU652, LYS656
+select selected or LYS659, ILE660, LYS662, LEU664, ARG668
+select selected and :B
+color [252,237,244]
+spacefill
+define CON6 selected
+
+select ARG588, LYS589, ASP598, PHE612, PRO617, ALA619, LEU628, TYR631, LYS634
+select selected or MET639, GLU648, ILE657
+select selected and :B
+color [255,255,255]
+spacefill
+define CON5 selected
+
+select VAL587, LEU603, HIS605, VAL608, GLN609, ALA610, PRO615, VAL629, ARG646
+select selected or LEU653, GLU663, GLU665, GLU666, LEU672
+select selected and :B
+color [234,255,255]
+spacefill
+define CON4 selected
+
+select LEU599, SER601, ALA618, LEU620, LYS621, ASN627, GLU655, TYR658, ARG669
+select selected and :B
+color [215,255,255]
+spacefill
+define CON3 selected
+
+select GLN597, THR614, GLY637, SER642, ASN644, SER645, ASP647
+select selected and :B
+color [140,255,255]
+spacefill
+define CON2 selected
+
+select GLY590, GLU593, HIS594, ARG623, GLU626, SER670
+select selected and :B
+color [16,200,209]
+spacefill
+define CON1 selected
+

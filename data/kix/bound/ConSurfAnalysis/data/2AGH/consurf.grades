@@ -1,0 +1,106 @@
+	 Amino Acid Conservation Scores
+	===============================
+
+- POS: The position of the AA in the SEQRES derived sequence.
+- SEQ: The SEQRES derived sequence in one letter code.
+- 3LATOM: The ATOM derived sequence in three letter code, including the AA's positions as they appear in the PDB file and the chain identifier.
+- SCORE: The normalized conservation scores.
+- COLOR: The color scale representing the conservation scores (9 - conserved, 1 - variable).
+- CONFIDENCE INTERVAL: When using the bayesian method for calculating rates, a confidence interval is assigned to each of the inferred evolutionary conservation scores.
+- CONFIDENCE INTERVAL COLORS: When using the bayesian method for calculating rates. The color scale representing the lower and upper bounds of the confidence interval.
+- MSA DATA: The number of aligned sequences having an amino acid (non-gapped) from the overall number of sequences at each position.
+- RESIDUE VARIETY: The residues variety at each position of the multiple sequence alignment.
+
+ POS	 SEQ	    3LATOM	SCORE		COLOR	CONFIDENCE INTERVAL	CONFIDENCE INTERVAL COLORS	MSA DATA	RESIDUE VARIETY
+    	    	        	(normalized)	        	               
+   1	   G	  GLY586:B	-0.811		  7*	-1.670,-0.119			    9,5			    3/14	G
+   2	   V	  VAL587:B	 0.467		  4*	-0.579, 1.228			    6,2			    4/14	T,I,V
+   3	   R	  ARG588:B	 0.110		  5*	-0.793, 0.787			    7,3			    7/14	S,Q,R
+   4	   K	  LYS589:B	-0.066		  5*	-1.002, 0.787			    7,3			   11/14	Q,N,K,V
+   5	   G	  GLY590:B	 1.689		  1	 0.437, 3.372			    4,1			   11/14	Q,D,P,G,E
+   6	   W	  TRP591:B	-0.569		  6	-1.432, 0.142			    8,5			   12/14	W,L
+   7	   H	  HIS592:B	-1.195		  8	-1.952,-0.793			    9,7			   11/14	H,R
+   8	   E	  GLU593:B	 2.617		  1	 1.863, 3.372			    1,1			   12/14	A,H,S,R,K,E,L
+   9	   H	  HIS594:B	 1.752		  1	 0.787, 3.372			    3,1			   12/14	H,S,Q,D,R,G,E
+  10	   V	  VAL595:B	-0.680		  7	-1.432,-0.119			    8,5			   13/14	R,I,V
+  11	   T	  THR596:B	-0.400		  6	-1.214, 0.142			    8,5			   13/14	T,D,I,P,V
+  12	   Q	  GLN597:B	 1.108		  2*	 0.142, 1.863			    5,1			   14/14	A,Q,T,N,I,R,K,E
+  13	   D	  ASP598:B	-0.142		  5	-1.002, 0.437			    7,4			   14/14	S,T,D,R,G
+  14	   L	  LEU599:B	 1.098		  3*	 0.142, 1.863			    5,1			   14/14	Q,D,I,L,Y
+  15	   R	  ARG600:B	-1.828		  9	-2.396,-1.432			    9,8			   14/14	Q,R
+  16	   S	  SER601:B	 0.669		  3	-0.119, 1.228			    5,2			   14/14	S,Q,T,N,R,I,E
+  17	   H	  HIS602:B	-0.543		  6	-1.214, 0.142			    8,5			   14/14	H,A,Y,E
+  18	   L	  LEU603:B	 0.526		  4*	-0.356, 1.228			    6,2			   14/14	M,I,L,V
+  19	   V	  VAL604:B	-1.508		  8	-1.952,-1.002			    9,7			   14/14	I,V
+  20	   H	  HIS605:B	 0.489		  4*	-0.356, 1.228			    6,2			   14/14	H,T,N,D,R,G,E
+  21	   K	  LYS606:B	-0.859		  7	-1.432,-0.356			    8,6			   14/14	D,R,K
+  22	   L	  LEU607:B	-1.412		  8	-1.952,-1.002			    9,7			   14/14	I,L
+  23	   V	  VAL608:B	 0.332		  4*	-0.579, 1.228			    6,2			   14/14	S,G,L,Y,V
+  24	   Q	  GLN609:B	 0.449		  4*	-0.356, 1.228			    6,2			   14/14	Q,T,R,K,L
+  25	   A	  ALA610:B	 0.616		  4*	-0.356, 1.228			    6,2			   14/14	F,A,S,H,M,G,E
+  26	   I	  ILE611:B	-1.038		  7	-1.670,-0.579			    9,6			   14/14	F,A,I,L
+  27	   F	  PHE612:B	-0.048		  5*	-0.793, 0.787			    7,3			   14/14	F,W,M,C,V
+  28	   P	  PRO613:B	-1.523		  8	-1.952,-1.002			    9,7			   13/14	S,P
+  29	   T	  THR614:B	 1.260		  2*	 0.142, 1.863			    5,1			   13/14	F,A,T,N,R,E
+  30	   P	  PRO615:B	 0.377		  4*	-0.579, 1.228			    6,2			   14/14	S,A,I,P,L,V
+  31	   D	  ASP616:B	-0.691		  7	-1.432,-0.119			    8,5			   13/14	H,N,D,K
+  32	   P	  PRO617:B	 0.073		  5*	-0.793, 0.787			    7,3			   13/14	S,Q,P,V
+  33	   A	  ALA618:B	 0.987		  3*	 0.142, 1.863			    5,1			   14/14	A,Q,T,D,N,G,E
+  34	   A	  ALA619:B	-0.169		  5	-1.002, 0.437			    7,4			   14/14	A,M,T,R,E
+  35	   L	  LEU620:B	 0.687		  3*	-0.356, 1.228			    6,2			   14/14	F,M,K,Y,L
+  36	   K	  LYS621:B	 0.726		  3	-0.119, 1.228			    5,2			   14/14	S,Q,N,K,R,Y,E
+  37	   D	  ASP622:B	-0.972		  7	-1.670,-0.356			    9,6			   14/14	D,P,G,E
+  38	   R	  ARG623:B	 2.204		  1	 1.228, 3.372			    2,1			   13/14	S,A,N,K,P,E,R,I,G
+  39	   R	  ARG624:B	-1.323		  8	-1.952,-0.793			    9,7			   13/14	Q,R,L
+  40	   M	  MET625:B	-1.413		  8	-1.952,-1.002			    9,7			   14/14	F,M,I,L
+  41	   E	  GLU626:B	 2.315		  1	 1.228, 3.372			    2,1			   14/14	H,W,C,D,R,I,K,E
+  42	   N	  ASN627:B	 0.946		  3*	-0.119, 1.863			    5,1			   14/14	Q,T,D,N,R,K,E
+  43	   L	  LEU628:B	-0.123		  5	-1.002, 0.437			    7,4			   14/14	F,W,I,L
+  44	   V	  VAL629:B	 0.567		  4*	-0.356, 1.228			    6,2			   14/14	N,I,K,L,V
+  45	   A	  ALA630:B	-0.252		  6	-1.002, 0.437			    7,4			   14/14	S,A,N,D,R,E
+  46	   Y	  TYR631:B	-0.184		  5	-1.002, 0.437			    7,4			   14/14	N,D,K,Y
+  47	   A	  ALA632:B	-1.181		  8	-1.670,-0.793			    9,7			   14/14	A,S,L,V
+  48	   K	  LYS633:B	-0.747		  7	-1.432,-0.119			    8,5			   14/14	T,K,R,E
+  49	   K	  LYS634:B	 0.124		  5*	-0.793, 0.787			    7,3			   14/14	F,A,S,N,K,R
+  50	   V	  VAL635:B	-0.675		  7	-1.432,-0.119			    8,5			   14/14	A,M,C,L,V
+  51	   E	  GLU636:B	-1.985		  9	-2.396,-1.670			    9,9			   14/14	E
+  52	   G	  GLY637:B	 1.195		  2*	 0.142, 1.863			    5,1			   14/14	A,T,R,K,G,L
+  53	   D	  ASP638:B	-0.737		  7	-1.432,-0.119			    8,5			   14/14	Q,D,K,E
+  54	   M	  MET639:B	 0.073		  5*	-0.793, 0.787			    7,3			   14/14	S,A,M,I,V
+  55	   Y	  TYR640:B	-0.626		  6	-1.432,-0.119			    8,5			   14/14	F,Y,L
+  56	   E	  GLU641:B	-0.239		  6	-1.002, 0.437			    7,4			   14/14	D,R,E,V
+  57	   S	  SER642:B	 1.364		  2	 0.437, 1.863			    4,1			   14/14	S,A,M,T,K,E
+  58	   A	  ALA643:B	-0.968		  7	-1.670,-0.579			    9,6			   14/14	S,A,C,V
+  59	   N	  ASN644:B	 1.241		  2*	 0.142, 1.863			    5,1			   14/14	Q,T,N,K,R,I,G
+  60	   S	  SER645:B	 1.171		  2*	 0.142, 1.863			    5,1			   14/14	S,T,N,C,D,K
+  61	   R	  ARG646:B	 0.463		  4*	-0.579, 1.228			    6,2			   14/14	T,C,I,K,R,L
+  62	   D	  ASP647:B	 1.216		  2*	 0.142, 1.863			    5,1			   14/14	A,S,D,K,G,E
+  63	   E	  GLU648:B	-0.013		  5*	-0.793, 0.787			    7,3			   14/14	H,A,Q,N,D,E
+  64	   Y	  TYR649:B	-1.739		  9	-2.396,-1.432			    9,8			   14/14	Y
+  65	   Y	  TYR650:B	-1.050		  7	-1.670,-0.579			    9,6			   14/14	F,Y
+  66	   H	  HIS651:B	-0.291		  6	-1.002, 0.437			    7,4			   14/14	A,H,N,K,R
+  67	   L	  LEU652:B	-0.563		  6	-1.214, 0.142			    8,5			   14/14	T,M,E,L
+  68	   L	  LEU653:B	 0.227		  4	-0.579, 0.787			    6,3			   14/14	A,M,L,V
+  69	   A	  ALA654:B	-0.670		  7	-1.432,-0.119			    8,5			   14/14	A,S,Q,R,E
+  70	   E	  GLU655:B	 0.926		  3*	-0.119, 1.863			    5,1			   14/14	Q,R,I,L,E
+  71	   K	  LYS656:B	-0.228		  6	-1.002, 0.437			    7,4			   14/14	H,T,I,R,K
+  72	   I	  ILE657:B	 0.213		  5	-0.579, 0.787			    6,3			   14/14	A,C,I,Y,V
+  73	   Y	  TYR658:B	 0.720		  3	-0.119, 1.228			    5,2			   14/14	H,D,C,P,L,Y
+  74	   K	  LYS659:B	-0.331		  6	-1.002, 0.142			    7,5			   14/14	S,Q,N,K,R,E
+  75	   I	  ILE660:B	-0.428		  6	-1.214, 0.142			    8,5			   14/14	M,I,L,E,Y
+  76	   Q	  GLN661:B	-1.006		  7	-1.670,-0.579			    9,6			   14/14	H,Q,L
+  77	   K	  LYS662:B	-0.523		  6	-1.214, 0.142			    8,5			   14/14	S,D,R,K,E
+  78	   E	  GLU663:B	 0.507		  4*	-0.356, 1.228			    6,2			   14/14	H,T,K,G,E
+  79	   L	  LEU664:B	-0.374		  6	-1.214, 0.142			    8,5			   13/14	A,F,M,L
+  80	   E	  GLU665:B	 0.302		  4	-0.579, 0.787			    6,3			   14/14	Q,T,K,P,E
+  81	   E	  GLU666:B	 0.247		  4	-0.579, 0.787			    6,3			   14/14	S,K,R,L,E
+  82	   K	  LYS667:B	-1.158		  8	-1.670,-0.579			    9,6			   12/14	K,R
+  83	   R	  ARG668:B	-0.624		  6	-1.432,-0.119			    8,5			   12/14	Q,K,P,R
+  84	   R	  ARG669:B	 1.055		  3*	 0.142, 1.863			    5,1			   12/14	Q,N,D,I,R,K,L
+  85	   S	  SER670:B	 1.699		  1	 0.787, 3.372			    3,1			   11/14	S,Q,T,R,K,L
+  86	   R	  ARG671:B	-1.550		  9	-2.396,-1.002			    9,7			   10/14	R
+  87	   L	  LEU672:B	 0.648		  4*	-0.579, 1.863			    6,1			    7/14	A,M,L
+
+
+*Below the confidence cut-off - The calculations for this site were performed on less than 6 non-gaped homologue sequences,
+or the confidence interval for the estimated score is equal to- or larger than- 4 color grades.

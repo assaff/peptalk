@@ -16,4 +16,3 @@ select cluster3_ca, receptor and name CB and (resi 104,106,109); deselect
 select cluster3_forest, br. cluster3_ca; deselect
 delete cluster3_ca
 color forest, cluster3_forest
-

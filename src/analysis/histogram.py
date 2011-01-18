@@ -6,12 +6,16 @@ from scipy.stats.stats import histogram
 import matplotlib.pyplot as plt
 #import matplotlib.mlab as mlab
 
-filename=sys.argv[1]
-col_num=int(sys.argv[2])-1
+filenames=sys.argv[1:-1]
+col_num=int(sys.argv[-1])-1
 
-lines = [line.strip().split() for line in open(filename).readlines() if not line.startswith('#')]
-stats_arr = np.array([float(line[col_num]) for line in lines])
+stats_mat = [] #np.ndarray((len(filenames),1))
+for filename in filenames:
+    lines = [line.strip().split() for line in open(filename).readlines() if not line.startswith('#')]
+    stats_arr = [float(line[col_num]) for line in lines]
+    stats_mat += [stats_arr]
 
+stats_mat = np.array(stats_mat)
 #epsilon=np.power(10,-3)
 #(freqs, min_value, bin_size, outliers)=histogram(stats_arr, numbins=20, defaultlimits=[0, 1+epsilon])
 
@@ -25,13 +29,16 @@ stats_arr = np.array([float(line[col_num]) for line in lines])
 
 fig = plt.figure()
 ax = fig.add_subplot(111)
+ax.set_alpha(0)
 
 # the histogram of the data
-n, bins, patches = ax.hist(stats_arr, 20, facecolor='green', alpha=0.8)
+#for stats_arr in np.split(stats_mat, stats_mat.shape[0]):
+n, bins, patches = ax.hist(stats_mat.transpose(), 20, alpha=0.8,normed=True, label=filenames)
 
 ax.set_xlabel(raw_input('xlabel: '))
 ax.set_ylabel(raw_input('ylabel: '))
 ax.set_title(raw_input('title: '))
+ax.legend()
 ax.grid(True)
 
 plt.show()

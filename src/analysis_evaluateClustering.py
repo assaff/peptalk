@@ -6,21 +6,30 @@ Created on Dec 25, 2010
 '''
 
 import os, re, sys
-sys.path.append(os.path.abspath('./match'))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(sys.argv[0]),'match')))
 from itertools import chain
 
 from molecule import Atom, AtomFromPdbLine
 from polymer import Polymer
 
-#BASE_DIR=os.path.abspath(os.path.join(sys.argv[0],'..'))
-#SVM_RESULTS_DIR = os.path.join(BASE_DIR, 'svm_results')
-#CONFIG='b0.6_d10.0_c7.0'
-#if sys.argv[2]: CONFIG=sys.argv[2]
-#CLUSTERING_RESULTS_DIR=os.path.join(BASE_DIR, 'clustering_results', CONFIG)
-#ANALYSIS_DIR = os.path.join(BASE_DIR, 'analysis', CONFIG)
-#BINDING_DIR=os.path.join(SVM_RESULTS_DIR, 'BindingResidues')
-#SURFACE_DIR=os.path.join(SVM_RESULTS_DIR,'SurfaceResidues')
+BASE_DIR=os.path.abspath('/vol/ek/assaff/workspace/peptalk')
+DATASET_DIR=os.path.abspath(os.path.join(BASE_DIR,'data/peptiDB'))
+CLASSIFIER_DIR = os.path.join(BASE_DIR, 'classifiers/classifier1_full')
+#ANALYSIS_DIR = os.path.join(DATASET_DIR, 'analysis', CONFIG)
+BINDING_DIR=os.path.join(CLASSIFIER_DIR, 'BindingResidues')
+SURFACE_DIR=os.path.join(CLASSIFIER_DIR,'SurfaceResidues')
+RESULTS_DIR=os.path.join(CLASSIFIER_DIR,'results_b0.7')
 #OUTPUT_PREFIX = ANALYSIS_DIR
+
+def nsorted(unsorted):
+    s = sorted([int(item) for item in unsorted])
+    return [str(item) for item in s]
+
+def resnums(residues):
+    return nsorted([residue.num for residue in residues])
+
+def isf(filename):
+    return os.path.isfile(filename)
 
 class PDBStats():
     '''
@@ -73,63 +82,67 @@ class PDBStats():
         return [residue for residue in self.polymer_obj._residues if residue.num in residue_nums]
                 
     def evaluate_clustering(self, output_filename):    
-    #    print resnums(model_data.surface_residues)
-    #    print resnums(model_data.binding_residues)
-    #    print 'True binders:', resnums(model_data.binding_residues)
-    #    print 'Best cluster:', resnums(model_data.clusters[0])
-#        binders = self.binding_residues
-#        surface = self.surface_residues
-#        best_cluster = self.clusters[0]
-        total_clustered = set(chain.from_iterable(self.clusters.values()))
-#        total_true_binders = total_clustered.intersection(model_data.binding_residues)
-        def lens(l): return str(len(l)) # string of length
-#        stats_line_format = '\t'.join(['PDB','NUM_BINDING','NUM_CLUSTER','NUM_INTERSECT','TOTAL_CLUSTERED','TOTAL_SURFACE',])
-#        stats_line = '\t'.join([model_data.pdb_id, lens(binders), lens(best_cluster), lens(true_binders),lens(total_clustered), lens(surface)])
-#        print stats_line
+        binders = self.binding_residues
+        nonbinders = self.surface_residues.difference(self.binding_residues)
         PDB_ANALYSIS = open(output_filename, 'w')
-        print >> PDB_ANALYSIS, '#' + '\t'.join(['PDB', 'RANK', 'SIZE', 'NUM_BINDING', '%_OF_BINDING'])
-        for num, cluster in sorted(self.clusters.items(), key=lambda x: x[0]):
+        print >> PDB_ANALYSIS, '#' + '\t'.join(['PDB', 'RANK', 'SIZE', 'TP','FP','TN','FN','TPR','FPR','F1','CLUSTER_RESIDUES'])
+        for cluster_rank, cluster in sorted(self.clusters.items(), key=lambda x: x[0]):
             if len(self.binding_residues) == 0: break
-            cluster_binding = cluster.intersection(self.binding_residues)
-            print >> PDB_ANALYSIS, '\t'.join([self.pdb_id, str(num), lens(cluster), lens(cluster_binding), '%.2f' % (100*len(cluster_binding) / float(len(self.binding_residues)))])
+            tp=binders.intersection(cluster)
+            fp=cluster.difference(binders)
+            tn=nonbinders.difference(cluster)
+            fn=binders.difference(cluster)
+            
+            tp_num = len(tp)
+            fp_num = len(fp)
+            tn_num = len(tn)
+            fn_num = len(fn)
+            
+            assert tp_num+fp_num==len(cluster)
+            assert tp_num+fn_num==len(binders)
+#            assert 
+                        
+            tpr = float(tp_num)/float(tp_num+fn_num)
+            fpr = float(fp_num)/float(fp_num+tp_num)
+            f1 = 2*float(tp_num)/float(2*tp_num+fn_num+fp_num)
+
+            
+            def num_str(num):
+                if type(num) is float: return '%.3f'%num
+                elif type(num) is int: return str(num)
+                else: raise ValueError('please provide either int or float')
+            stats_vector = [tp_num, fp_num, tn_num, fn_num, tpr, fpr, f1] 
+            cluster_res_str = ','.join(resnums(cluster))
+            cluster_row_list = [self.pdb_id, str(cluster_rank), str(len(cluster))] + map(num_str, stats_vector) + [cluster_res_str]
+            
+            cluster_row = '\t'.join(cluster_row_list)
+            print >> PDB_ANALYSIS, cluster_row
         PDB_ANALYSIS.close()
 
-def resnums(residues):
-    return sorted([residue.num for residue in residues])
-
-#def extend_residues(model, residues, t):
-#    return set(model.residues_with_num(extend_kernels(resnums(residues), len(model.polymer_obj._residues), t=t)))
-
-def isf(filename):
-    return os.path.isfile(filename)
-
-#def extend_kernels(int_list, max_value, t=1):
-#    expansion = list(chain.from_iterable([range(i-t,i+t+1) for i in int_list]))
-#    expansion = filter(lambda x: x>=0 and x<=max_value, expansion)
-#    return set(expansion)
-    
 
 def gather_all_stats(pdb_id=None, pdb_filename=None):
-    if pdb_id is None and pdb_filename is None: return
+    if pdb_id is None and pdb_filename is None: raise IOError()
     if pdb_filename is None:
         pdb_id = pdb_id.upper()
-        pdb_filename = os.path.join(SVM_RESULTS_DIR, '.'.join([pdb_id, 'results', 'pdb']))
+        pdb_filename = os.path.join(RESULTS_DIR, '.'.join([pdb_id, 'results', 'pdb']))
     else:
         pdb_id = os.path.basename(pdb_filename).split('.')[0].upper() 
-    surface_file = os.path.join(SURFACE_DIR, '%s.unbound.res' % pdb_id)
+    surface_file = os.path.join(SURFACE_DIR, '%s.bound.res' % pdb_id)
     binders_file = os.path.join(BINDING_DIR, '%s.res' % pdb_id)
-    cluster_file = os.path.join(CLUSTERING_RESULTS_DIR, '%s_%s.clusters.txt' % (pdb_id, CONFIG))
-#    print pdb_filename, surface_file, binders_file, cluster_file
-    assert isf(pdb_filename)
+    clusters_report_file = os.path.join(RESULTS_DIR, '%s.clusters.txt' % pdb_id)
+#    print pdb_filename, surface_file, binders_file, clusters_report_file
     assert isf(surface_file)
     assert isf(binders_file)
-    assert isf(cluster_file)
-    model_data = PDBStats(pdb_filename=pdb_filename, surface_file=surface_file, binders_file=binders_file, clusters_file=cluster_file)
+    assert isf(pdb_filename)
+    assert isf(clusters_report_file)
+    model_data = PDBStats(pdb_filename=pdb_filename, pdb_id=pdb_id, surface_file=surface_file, binders_file=binders_file, clusters_report_file=clusters_report_file)
     return model_data
 
 if __name__ == '__main__':
-    model_data = None
-    if re.match('^[A-Za-z0-9]{4}$', sys.argv[1]):
-        model_data = gather_all_stats(pdb_id=sys.argv[1])
-    else:
-        model_data = gather_all_stats(pdb_filename=sys.argv[1])
+    for pdb in sys.argv[1:]:
+        model_data = None
+        if re.match('^[A-Za-z0-9]{4}$', sys.argv[1]):
+            model_data = gather_all_stats(pdb_id=pdb)
+        else:
+            model_data = gather_all_stats(pdb_filename=pdb)
+        model_data.evaluate_clustering(output_filename='/dev/fd/0')

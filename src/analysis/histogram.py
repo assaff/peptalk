@@ -33,7 +33,7 @@ ax.set_alpha(0)
 
 # the histogram of the data
 #for stats_arr in np.split(stats_mat, stats_mat.shape[0]):
-n, bins, patches = ax.hist(stats_mat.transpose(), 20, alpha=0.8,normed=True, label=filenames)
+n, bins, patches = ax.hist(stats_mat.transpose(), 20, alpha=0.8,normed=False, , label=filenames)
 
 ax.set_xlabel(raw_input('xlabel: '))
 ax.set_ylabel(raw_input('ylabel: '))

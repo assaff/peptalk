@@ -2,15 +2,15 @@
 
 resultsDir=$1
 for k in `seq 1 8`; do
-    outfile="$resultsDir/roc.top$k.clusters.txt"
+    outfile="$resultsDir/roc.best$k.clusters.txt"
     cat /dev/null > $outfile
     echo -e "#PDB\tTPR\tSPECIFICITY" >> $outfile
     for f in $resultsDir/*quality.txt; do
 	    filename=`basename $f`
 	    pdbid=${filename%%.*}
 	
-	    tpr=`cat $f | egrep -v '^#' | head -$k | awk '{sum=sum+$8}END{print sum}'`
-        fpr=`cat $f | egrep -v '^#' | head -$k | awk '{sum=sum+$9}END{print sum}'`
+	    tpr=`cat $f | egrep -v '^#' | head -$k | sort -nrk 8 | head -1 | cut -f8`
+        fpr=`cat $f | egrep -v '^#' | head -$k | sort -nrk 8 | head -1 | cut -f9`
 	    #recall=`calc $tp/$tpfn`
 	    #specificity=`calc $tp/$tpfp`
 	    #echo $coverage $size $tp $tpfp $tpfn

@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python analysis_showResults.py --input-pdb=$1 --input-scores=$2 --peptide-pdb=$3
+python /vol/ek/assaff/workspace/peptalk/src/analysis_showResults.py --input-pdb=$1 --input-scores=$2 --peptide-pdb=$3

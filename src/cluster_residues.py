@@ -25,7 +25,7 @@ parser.set_defaults(verbose=True)
 parser.add_option('-p', '--pdbfilename', #dest='pdbfilename',
                   help='input PDB file to cluster',)
 parser.add_option('-b', '--b-factor-cutoff',
-                  type='float', default=.7,
+                  type='float', default=.001,
                   help='B-factor cutoff. Only CA atoms with B-factor>CUTOFF will be clustered [default: %default]',)
 parser.add_option('-m', '--clustering-method',
                   default='average',
@@ -47,7 +47,7 @@ parser.add_option('-k', '--connect-neighbor-clusters',
                   help='optional post processing that agglomerates neighboring clusters together [default: %default]')
 parser.add_option('-c', '--neighbor-distance-cutoff',
                   type='float',
-                  default=8.0,
+                  default=6.0,
                   help='the maximal distance between two clusters to still be considered neighbors')
 parser.add_option('-B', '--use-cbeta',
                   action='store_true',
@@ -251,7 +251,7 @@ def spatial_clustering_degree(atoms, weights_vector=None):
     if weights_vector is not None:
         assert np.all(weights_vector != 0)
         assert (type(weights_vector) is np.ndarray) and len(weights_vector.shape) <= 2 and max(weights_vector.shape) == coords_matrix.shape[0]
-        weight_matrix = np.power(np.outer(weights_vector, weights_vector), -1)
+        weight_matrix = np.power(np.outer(weights_vector, weights_vector), -0.5)
         distances = squareform(np.multiply(squareform(distances), weight_matrix))
 #        print 'dist', distances
     score = np.power(distances, -1).sum() * np.power(float(len(atoms)), -2)
@@ -344,7 +344,7 @@ def weighted_fclusterdata(coords_matrix, bfactor_vector=None):
     if bfactor_vector is not None:
         # Weighting the distance matrix by pairwise bfactor product
         assert (type(bfactor_vector) is np.ndarray) and len(bfactor_vector.shape) <= 2 and max(bfactor_vector.shape) == coords_matrix.shape[0]
-        weight_matrix = np.power(np.outer(bfactor_vector, bfactor_vector), -1)
+        weight_matrix = np.power(np.outer(bfactor_vector, bfactor_vector), -0.5)
         pdistances = squareform(np.multiply(squareform(pdistances), weight_matrix))
     logging.debug('DISTANCE MATRIX:\n' + str(pdistances))
 
@@ -387,7 +387,7 @@ if __name__ == '__main__':
 
     weights = None
     if options.weight_by_bfactor:
-        print >> sys.stderr, 'WARNING: weighting residues pairwise distance by their confidence (svm classification).'
+#        print >> sys.stderr, 'WARNING: weighting residues pairwise distance by their confidence (svm classification).'
         weights = np.array([atom.bfactor for atom in pdb_atoms])
     cluster_assignment = weighted_fclusterdata(coords_matrix, weights)
 

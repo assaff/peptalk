@@ -9,7 +9,7 @@ Created on Dec 4, 2010
 VERSION_STRING = '%s v0.0.1, process SVM classification of PDB residues.'
 
 import os, sys, re, logging, subprocess, re
-sys.path.append('./match')
+sys.path.append(os.path.join(os.path.dirname(sys.argv[0]), 'match'))
 
 import numpy as np
 from optparse import OptionParser

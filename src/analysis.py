@@ -114,6 +114,7 @@ def process_pdb(pdbid=None):
     print 'Done.'
 
 if __name__ == '__main__':
+    
     for pdb in pdb_args:
         process_pdb(pdbid=pdb)
     exit()

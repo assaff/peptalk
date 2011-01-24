@@ -4,7 +4,7 @@ resultsDir=$1
 for k in `seq 1 8`; do
     outfile="$resultsDir/roc.top$k.clusters.txt"
     cat /dev/null > $outfile
-    echo $outfile
+    #echo $outfile
     echo -e "#PDB\tTPR\tFPR" >> $outfile
     for f in $resultsDir/*.clusters.quality.txt; do
 	    filename=`basename $f`

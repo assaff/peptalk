@@ -52,6 +52,9 @@ parser.add_option('-m', '--matrix',
                   help='SVMlight matrix describing the set classified (input of svm_classify)')
 parser.add_option('-o', '--output-dir',
                   help='directory in which to dump analysis files',)
+parser.add_option('-p','--clustering-options',
+                  help='a string of options passed to the clustering scheme',
+                  default='-Cwk')
 (options, pdb_args) = parser.parse_args()
 
 BINDING_RESIDUES_DIR = os.path.abspath(os.path.join(os.path.dirname(options.classification_file), 'BindingResidues'))
@@ -101,7 +104,8 @@ def process_pdb(pdbid=None):
                           output_filenames[RESULTS_PDB],
                           clustering_report_file,
                           clustering_pymol_session_file,
-                          clustering_pymol_script_file]).communicate()
+                          clustering_pymol_script_file,
+                          options.clustering_options]).communicate()
     
         # step 4: evaluation
         binding_residues_file = os.path.join(BINDING_RESIDUES_DIR, options.pdbid + '.res')

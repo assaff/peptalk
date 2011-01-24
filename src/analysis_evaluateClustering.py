@@ -103,7 +103,7 @@ class PDBStats():
 #            assert 
                         
             tpr = float(tp_num)/float(tp_num+fn_num)
-            fpr = float(fp_num)/float(fp_num+tp_num)
+            fpr = float(fp_num)/float(fp_num+tn_num)
             f1 = 2*float(tp_num)/float(2*tp_num+fn_num+fp_num)
 
             

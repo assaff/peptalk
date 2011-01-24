@@ -5,20 +5,23 @@ for k in `seq 1 8`; do
     outfile="$resultsDir/roc.top$k.clusters.txt"
     cat /dev/null > $outfile
     echo -e "#PDB\tTPR\tFPR" >> $outfile
-    for f in $resultsDir/*quality.txt; do
+    for f in $resultsDir/2P54*.clusters.quality.txt; do
 	    filename=`basename $f`
 	    pdbid=${filename%%.*}
+
+        binders=`cat $f | egrep -v '^#' | head -1 | awk '{print ($4+$7);}'`
+        nonbinders=`cat $f | egrep -v '^#' | head -1 | awk '{print ($5+$6);}'`
 	
 	    tp=`cat $f | egrep -v '^#' | head -$k | awk '{sum=sum+$4}END{print sum}'`
         fp=`cat $f | egrep -v '^#' | head -$k | awk '{sum=sum+$5}END{print sum}'`
-        tn=`cat $f | egrep -v '^#' | head -$k | awk '{sum=sum+$6}END{print sum}'`
-        fn=`cat $f | egrep -v '^#' | head -$k | awk '{sum=sum+$7}END{print sum}'`
+        fn=$((binders - tp))
+        tn=$((nonbinders - fp))
+        #cat $f | head -$k
+        #echo -e "$k\t\t\t$tp\t$fp\t$tn\t$fn"
+        
         tpr=`calc $tp/\($tp+$fn\)`
         fpr=`calc $fp/\($fp+$tn\)`
-	    #recall=`calc $tp/$tpfn`
-	    #specificity=`calc $tp/$tpfp`
-	    #echo $coverage $size $tp $tpfp $tpfn
-	    #echo -e "$pdbid\t$tpr\t$fpr"
+	    echo -e "$pdbid\t$tpr\t$fpr"
 	    echo -e "$pdbid\t$tpr\t$fpr" >> $outfile
     done # | awk '{sum=sum+$1;}END{print sum/NR}'
 done

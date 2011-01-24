@@ -38,7 +38,7 @@ n, bins, patches = ax.hist(stats_mat.transpose(), 20, alpha=0.8,normed=False , l
 ax.set_xlabel(raw_input('xlabel: '))
 ax.set_ylabel(raw_input('ylabel: '))
 ax.set_title(raw_input('title: '))
-ax.legend(loc=8)
+ax.legend(loc=8, mode='expand')
 ax.grid(True)
 
 plt.show()

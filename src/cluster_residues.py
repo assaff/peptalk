@@ -439,6 +439,9 @@ if __name__ == '__main__':
 
     if options.output_clustering_report:    
         CLUSTERS_OUT = open(options.output_clustering_report, 'w')
+        print >> CLUSTERS_OUT, '# Clustering parameters'
+        for param,value in options.__dict__.items():
+            print >> CLUSTERS_OUT,'# %s\t=\t%s' % (param,str(value))
         print >> CLUSTERS_OUT, '#'+('\t'.join(['PDB','RANK','SIZE','CONFD','RESIDUES']))
         for cluster in clusters:
             cluster.sort(key=lambda x: x.res_num)

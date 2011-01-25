@@ -1,1 +1,0 @@
-cat $f.all.kin | grep " B " | grep " A " | cut -d":" -f3,4,5,12 | sed 's/:/ /g' | sort -k10 -nr | head -240 | awk '{print $2 " " $3}' | sort | uniq

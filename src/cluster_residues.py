@@ -204,7 +204,7 @@ def get_peptide_atoms(filename):
     pdb_lines.close()
     return peptide_atoms
 
-def get_receptor_atoms(filename, bfactor_threshold=-np.Inf):
+def get_receptor_atoms(filename, bfactor_threshold= -np.Inf):
     pdb_lines = open(filename, 'r')
     binder_filters = [filter_chain_eq(CHAIN_RECEPTOR),
                       filter_atom_type(RECEPTOR_ATOM_TYPE),
@@ -298,7 +298,7 @@ def expand_cluster(cluster_atoms):
     all_surface_coords = map(coords, all_surface_atoms)
     distances = cdist(cluster_coords, all_surface_coords)
     neigboring_atoms = [atom for atom in all_surface_atoms \
-                        if (distances[:,all_surface_atoms.index(atom)].min() < NEIGHBOR_RESIDUE_DISTANCE_CUTOFF)]
+                        if (distances[:, all_surface_atoms.index(atom)].min() < NEIGHBOR_RESIDUE_DISTANCE_CUTOFF)]
 #    print sorted([atom.res_num for atom in cluster_atoms])
 #    print sorted([atom.res_num for atom in neigboring_atoms])
     expanded_cluster = list(set(cluster_atoms + neigboring_atoms))
@@ -328,6 +328,25 @@ def write_pymol_script(output_stream, clusters):
         print >> output_stream, 'color %s, %s' % (COLORS[cluster_num], cluster_res_object)
     return
 
+def weighted_pdist(coords, weights=None):
+    pdistances = pdist(coords, metric=CLUSTERING_METRIC)
+    if weights is not None:
+        # Weighting the distance matrix by pairwise weight product
+        assert (type(weights) is np.ndarray) and len(weights.shape) <= 2 and max(weights.shape) == coords.shape[0]
+        weight_matrix = np.power(np.outer(weights , weights), -0.5)
+        pdistances = squareform(np.multiply(squareform(pdistances), weight_matrix))
+    return pdistances
+
+def weighted_cdist(coords1, coords2, weights1=None, weights2=None):
+    cdistances = cdist(coords1, coords2, metric=CLUSTERING_METRIC)
+    if weights1 is not None and weights2 is not None:
+        assert (type(weights1) is np.ndarray) and len(weights1.shape) <= 2 and max(weights1.shape) == coords1.shape[0]
+        assert (type(weights2) is np.ndarray) and len(weights2.shape) <= 2 and max(weights2.shape) == coords2.shape[0]
+        weight_matrix = np.power(np.outer(weights1 , weights2), -0.5)
+        assert cdistances.shape == weight_matrix.shape
+        cdistances = np.multiply(cdistances, weight_matrix)
+    return cdistances
+
 def weighted_fclusterdata(coords_matrix, bfactor_vector=None):
     '''
     Input:  N x 3 array of XYZ coordinates (practically a list of lists)
@@ -340,12 +359,7 @@ def weighted_fclusterdata(coords_matrix, bfactor_vector=None):
 #                                 metric=CLUSTERING_METRIC, depth=2,
 #                                 method=CLUSTERING_METHOD)
 
-    pdistances = pdist(coords_matrix, metric=CLUSTERING_METRIC)
-    if bfactor_vector is not None:
-        # Weighting the distance matrix by pairwise bfactor product
-        assert (type(bfactor_vector) is np.ndarray) and len(bfactor_vector.shape) <= 2 and max(bfactor_vector.shape) == coords_matrix.shape[0]
-        weight_matrix = np.power(np.outer(bfactor_vector, bfactor_vector), -0.5)
-        pdistances = squareform(np.multiply(squareform(pdistances), weight_matrix))
+    pdistances = weighted_pdist(coords_matrix, bfactor_vector)
     logging.debug('DISTANCE MATRIX:\n' + str(pdistances))
 
     Z = linkage(pdistances, method=CLUSTERING_METHOD, metric=CLUSTERING_METRIC)
@@ -355,16 +369,18 @@ def weighted_fclusterdata(coords_matrix, bfactor_vector=None):
     logging.debug('FLAT CLUSTERS:\n' + str(flat_clusters))
     return flat_clusters
 
-def cluster_coords_distance(cluster1_coords, cluster2_coords):
-    return np.min(cdist(cluster1_coords, cluster2_coords))
+def cluster_coords_distance(cluster1_coords, cluster2_coords, cluster1_weights=None, cluster2_weights=None):
+    return np.min(weighted_cdist(cluster1_coords, cluster2_coords, cluster1_weights, cluster2_weights))
 
 def find_closest_clusters(clusters_list):
-    cluster_coords = [np.array([coords(atom) for atom in cluster]) for cluster in clusters_list]
+    cluster_coords = [np.array([coords(atom) for atom in cluster])  for cluster in clusters_list]
+#    cluster_weights = [np.array([atom.bfactor for atom in cluster]) for cluster in clusters_list]
     min_distance = np.Inf
     neighbor_clusters = None
     for i in range(len(clusters_list)):
         for j in range(i + 1, len(clusters_list)):
-            dij = cluster_coords_distance(cluster_coords[i], cluster_coords[j])
+            dij = cluster_coords_distance(cluster_coords[i], cluster_coords[j],)
+#                                          cluster_weights[i], cluster_weights[j])
             if  dij < min_distance:
                 min_distance = dij
                 neighbor_clusters = (clusters_list[i], clusters_list[j])
@@ -417,7 +433,7 @@ if __name__ == '__main__':
     # expand clusters to neighbors on surface
     if options.expand_clusters:
         clusters = map(expand_cluster, clusters)
-        for i in range(1,len(clusters)):
+        for i in range(1, len(clusters)):
             clusters[i] = list(set(clusters[i]).difference(set(chain.from_iterable(clusters[:i]))))
     
 #    print len(clusters[0])
@@ -440,17 +456,17 @@ if __name__ == '__main__':
     if options.output_clustering_report:    
         CLUSTERS_OUT = open(options.output_clustering_report, 'w')
         print >> CLUSTERS_OUT, '# Clustering parameters'
-        for param,value in options.__dict__.items():
-            print >> CLUSTERS_OUT,'# %s\t=\t%s' % (param,str(value))
-        print >> CLUSTERS_OUT, '#'+('\t'.join(['PDB','RANK','SIZE','CONFD','RESIDUES']))
+        for param, value in options.__dict__.items():
+            print >> CLUSTERS_OUT, '# %s\t=\t%s' % (param, str(value))
+        print >> CLUSTERS_OUT, '#' + ('\t'.join(['PDB', 'RANK', 'SIZE', 'CONFD', 'RESIDUES']))
         for cluster in clusters:
             cluster.sort(key=lambda x: x.res_num)
             cluster_index = clusters.index(cluster)
             cluster_res_str = ','.join([str(atom.res_num) for atom in cluster])
             print >> CLUSTERS_OUT, '\t'.join([PDB_ID,
-                                              str(cluster_index), 
-                                              str(len(cluster)), 
-                                              '%.3f' % clusters_confidence[cluster_index], 
+                                              str(cluster_index),
+                                              str(len(cluster)),
+                                              '%.3f' % clusters_confidence[cluster_index],
                                               cluster_res_str])
         CLUSTERS_OUT.close()
 

@@ -1,9 +1,0 @@
-foreach f ( `ls ../../boundSet/*.pdb | sed 's/.*\(....\).pdb.*/\1/'` )
-
-echo $f
-reduce -FLIPs ../../boundSet/$f.pdb > $f.H.pdb
-#/vol/ek/share/bin/probe -NOHET -NOWATer -MC -U -Radius0.3 -both "chainA" "chainB"  $f.H.pdb > $f.kin
-/vol/ek/share/bin/probe -NOHET -NOWATer -MC -U "ALL" $f.H.pdb >! $f.kin
-
-end
-

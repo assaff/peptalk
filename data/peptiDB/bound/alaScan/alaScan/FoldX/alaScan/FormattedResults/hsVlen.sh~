@@ -1,0 +1,7 @@
+#!/bin/csh
+
+set thresh=$1
+
+foreach i (`cat /vol/ek/londonir/CleanPeptiDB/db/idlist`)
+echo $i
+end

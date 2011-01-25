@@ -374,13 +374,13 @@ def cluster_coords_distance(cluster1_coords, cluster2_coords, cluster1_weights=N
 
 def find_closest_clusters(clusters_list):
     cluster_coords = [np.array([coords(atom) for atom in cluster])  for cluster in clusters_list]
-    cluster_weights = [np.array([atom.bfactor for atom in cluster]) for cluster in clusters_list]
+#    cluster_weights = [np.array([atom.bfactor for atom in cluster]) for cluster in clusters_list]
     min_distance = np.Inf
     neighbor_clusters = None
     for i in range(len(clusters_list)):
         for j in range(i + 1, len(clusters_list)):
-            dij = cluster_coords_distance(cluster_coords[i], cluster_coords[j],
-                                          cluster_weights[i], cluster_weights[j])
+            dij = cluster_coords_distance(cluster_coords[i], cluster_coords[j],)
+#                                          cluster_weights[i], cluster_weights[j])
             if  dij < min_distance:
                 min_distance = dij
                 neighbor_clusters = (clusters_list[i], clusters_list[j])

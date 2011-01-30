@@ -387,6 +387,10 @@ def find_closest_clusters(clusters_list):
     assert min_distance > 0
     return (neighbor_clusters, min_distance)
 
+def cluster_scoring_function(cluster_atoms):
+    cluster_bfactors = np.array(map(bfactor, cluster_atoms))
+    return spatial_clustering_degree(cluster_atoms, weights_vector=cluster_bfactors)
+
 if __name__ == '__main__':
 
     classified_pdb_filename = os.path.abspath(options.pdbfilename)
@@ -421,9 +425,7 @@ if __name__ == '__main__':
             (neighbors, min_distance) = find_closest_clusters(clusters)
 
     
-    def cluster_scoring_function(cluster_atoms):
-        cluster_bfactors = np.array(map(bfactor, cluster_atoms))
-        return spatial_clustering_degree(cluster_atoms, weights_vector=cluster_bfactors)
+    
     
     clusters_confidence = map(cluster_scoring_function, clusters)
 #    if np.argmax(clusters_confidence)>0: print "First cluster is not "

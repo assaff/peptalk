@@ -16,7 +16,7 @@ BASE_DIR=os.path.abspath('/vol/ek/assaff/workspace/peptalk')
 DATASET_DIR=os.path.abspath(os.path.join(BASE_DIR,'data/peptiDB'))
 CLASSIFIER_DIR = os.path.join(BASE_DIR, 'classifiers/classifier1_full')
 #ANALYSIS_DIR = os.path.join(DATASET_DIR, 'analysis', CONFIG)
-BINDING_DIR=os.path.join(CLASSIFIER_DIR, 'BindingResidues')
+BINDING_DIR=os.path.join(CLASSIFIER_DIR, 'BindingResidues_alaScan')
 SURFACE_DIR=os.path.join(CLASSIFIER_DIR,'SurfaceResidues')
 RESULTS_DIR=os.path.join(CLASSIFIER_DIR,'results_b0.7')
 #OUTPUT_PREFIX = ANALYSIS_DIR
@@ -67,6 +67,8 @@ class PDBStats():
             self.surface_residues = set(chain.from_iterable([self.residues_with_num(int(line.split()[1])) for line in open(surface_file).readlines()]))
         if binders_file:
             self.binding_residues = set(chain.from_iterable([self.residues_with_num(int(line.split()[1])) for line in open(binders_file).readlines()]))
+#            self.alaScan_residues = [(line.split()[0],int(line.split()[1]),float(line.split()[2])) 
+#                                     for line in open(binders_file).readlines()]
         if clusters_report_file:
             for line in open(clusters_report_file).readlines():
                 if line.startswith('#'): continue

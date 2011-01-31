@@ -57,7 +57,7 @@ parser.add_option('-p','--clustering-options',
                   default='-Cwk')
 (options, pdb_args) = parser.parse_args()
 
-BINDING_RESIDUES_DIR = os.path.abspath(os.path.join(os.path.dirname(options.classification_file), 'BindingResidues'))
+BINDING_RESIDUES_DIR = os.path.abspath(os.path.join(os.path.dirname(options.classification_file), 'BindingResidues_alaScan'))
 SURFACE_RESIDUES_DIR = os.path.abspath(os.path.join(os.path.dirname(options.classification_file), 'SurfaceResidues'))
 current_time_str = datetime.now().strftime("%m%d%H%M")
 #print current_time_str

@@ -14,7 +14,7 @@ import subprocess, sys, os
 from optparse import OptionParser
 from datetime import datetime
 
-from analysis_evaluateClustering import PDBStats
+from analysis_evaluateClustering_alaScan import PDBStats
 
 CURRENT_MODULE = sys.argv[0]
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(CURRENT_MODULE), os.pardir))
@@ -113,7 +113,7 @@ def process_pdb(pdbid=None):
         model_data = PDBStats(pdb_filename=receptor_pdb, pdb_id=options.pdbid, binders_file=binding_residues_file, surface_file=surface_residues_file, clusters_report_file=clustering_report_file)
         model_data.evaluate_clustering(output_filename=output_filenames[CLUSTERING_EVAL])
     except:
-        pass
+        raise
 
     print 'Done.'
 

@@ -8,6 +8,7 @@ Created on Dec 25, 2010
 import os, re, sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(sys.argv[0]),'match')))
 from itertools import chain
+import numpy as np
 
 from molecule import Atom, AtomFromPdbLine
 from polymer import Polymer
@@ -16,7 +17,7 @@ BASE_DIR=os.path.abspath('/vol/ek/assaff/workspace/peptalk')
 DATASET_DIR=os.path.abspath(os.path.join(BASE_DIR,'data/peptiDB'))
 CLASSIFIER_DIR = os.path.join(BASE_DIR, 'classifiers/classifier1_full')
 #ANALYSIS_DIR = os.path.join(DATASET_DIR, 'analysis', CONFIG)
-BINDING_DIR=os.path.join(CLASSIFIER_DIR, 'BindingResidues_alaScan')
+BINDING_DIR=os.path.join(CLASSIFIER_DIR, 'BindingResidues')
 SURFACE_DIR=os.path.join(CLASSIFIER_DIR,'SurfaceResidues')
 RESULTS_DIR=os.path.join(CLASSIFIER_DIR,'results_b0.7')
 #OUTPUT_PREFIX = ANALYSIS_DIR
@@ -64,32 +65,57 @@ class PDBStats():
         assert re.match(r'^[A-Za-z0-9]{4}$', self.pdb_id)
         self.polymer_obj = Polymer(self.receptor_tmp_file)
         if surface_file:
-            self.surface_residues = set(chain.from_iterable([self.residues_with_num(int(line.split()[1])) for line in open(surface_file).readlines()]))
+            self.surface_residues = set([self.residue_with_num(int(line.split()[1]))
+                                         for line in open(surface_file).readlines()])
         if binders_file:
-            self.binding_residues = set(chain.from_iterable([self.residues_with_num(int(line.split()[1])) for line in open(binders_file).readlines()]))
+#            self.binding_residues = set(chain.from_iterable([self.residues_with_num(int(line.split()[1])) for line in open(binders_file).readlines()]))
 #            self.alaScan_residues = [(line.split()[0],int(line.split()[1]),float(line.split()[2])) 
 #                                     for line in open(binders_file).readlines()]
+#            self.binding_ddg        = dict([(int(line.split()[1]), float(line.split()[2]))
+#                                            for line in open(binders_file).readlines()])
+            self.binding_dict = dict([((self.residue_with_num(int(line.split()[1]))), 
+                                       float(line.split()[2]))
+                                      for line in open(binders_file).readlines()])
+            self.binding_residues   = set(self.binding_dict.keys())
+            
         if clusters_report_file:
             for line in open(clusters_report_file).readlines():
                 if line.startswith('#'): continue
                 line_split = line.split()
                 cluster_num = int(line_split[1])
-                cluster_residues = set(self.residues_with_num(map(int, line_split[-1].split(','))))
+                cluster_residues = set(map(self.residue_with_num, (map(int, line_split[-1].split(',')))))
                 self.clusters[cluster_num] = cluster_residues
                 if binders_file:
                     self.true_binders[cluster_num] = cluster_residues.intersection(self.binding_residues)
     
-    def residues_with_num(self, residue_nums):
-        if type(residue_nums) == int: residue_nums = [residue_nums]
-        return [residue for residue in self.polymer_obj._residues if residue.num in residue_nums]
+#    def residues_with_num(self, residue_nums):
+#        assert type(residue_nums) == list
+#        return map(self.residue_with_num, residue_nums)
+    
+    def residue_with_num(self, residue_num):
+        assert type(residue_num) == int
+#        print residue_num, self.polymer_obj.n_residue()
+        residues = [res for res in self.polymer_obj._residues if res.num==residue_num]
+        assert len(residues)==1
+        res = residues[0]
+        assert res.num == residue_num, '%d\t%d' %(residue_num, res.num)
+        return res
                 
     def evaluate_clustering(self, output_filename):    
         binders = self.binding_residues
         nonbinders = self.surface_residues.difference(self.binding_residues)
+        total_ddg_array = np.array(self.binding_dict.values())
+        
+#        dbg_arr = np.array([self.binding_dict[resi] for resi in binders])
+#        assert np.equal(total_ddg_array.sum(),dbg_arr.sum()), '%f\t%f'%(total_ddg_array.sum(), dbg_arr.sum())
+#        try: assert np.all(total_ddg_array == np.array([self.binding_dict[resi] for resi in binders]))
+#        except: print total_ddg_array; print dbg_arr; raise
+        
         PDB_ANALYSIS = open(output_filename, 'w')
-        print >> PDB_ANALYSIS, '#' + '\t'.join(['PDB', 'RANK', 'SIZE', 'TP','FP','TN','FN','TPR','FPR','F1','CLUSTER_RESIDUES'])
+        print >> PDB_ANALYSIS, '#' + '\t'.join(['PDB', 'RANK', 'SIZE', 'TP','FP','TN','FN','TPR','FPR','F1','DDG_RCL','CLUSTER_RESIDUES'])
         for cluster_rank, cluster in sorted(self.clusters.items(), key=lambda x: x[0]):
             if len(self.binding_residues) == 0: break
+            
             tp=binders.intersection(cluster)
             fp=cluster.difference(binders)
             tn=nonbinders.difference(cluster)
@@ -102,18 +128,21 @@ class PDBStats():
             
             assert tp_num+fp_num==len(cluster)
             assert tp_num+fn_num==len(binders)
-#            assert 
                         
             tpr = float(tp_num)/float(tp_num+fn_num)
             fpr = float(fp_num)/float(fp_num+tn_num)
             f1 = 2*float(tp_num)/float(2*tp_num+fn_num+fp_num)
-
+            
+            cluster_ddg_array = np.array([self.binding_dict[resi] for resi in tp])
+            rec_ddg = float(cluster_ddg_array.sum()) / float(total_ddg_array.sum())
+            assert rec_ddg <= 1 and rec_ddg >= 0, rec_ddg
+#            print rec_ddg
             
             def num_str(num):
                 if type(num) is float: return '%.3f'%num
                 elif type(num) is int: return str(num)
                 else: raise ValueError('please provide either int or float')
-            stats_vector = [tp_num, fp_num, tn_num, fn_num, tpr, fpr, f1] 
+            stats_vector = [tp_num, fp_num, tn_num, fn_num, tpr, fpr, f1, rec_ddg] 
             cluster_res_str = ','.join(resnums(cluster))
             cluster_row_list = [self.pdb_id, str(cluster_rank), str(len(cluster))] + map(num_str, stats_vector) + [cluster_res_str]
             

@@ -1,6 +1,18 @@
+from Bio.PDB.PDBParser import PDBParser
+
 __author__ = 'assaff'
 
-from numpy import ndarray
+class DataSet:
+    '''
+        Describes a data set of protein structures.
+        '''
 
-a = ndarray((2,3))
-print a.sum(axis=1, axis=abs(32))
+    def __init__(self, *args, **kwargs):
+        self.name = kwargs.name
+        self.id = kwargs.id
+
+a = PDBParser()
+a.get_structure(id='3kze',file='3kze.pdb')
+
+print a.trailer
+

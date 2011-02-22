@@ -19,6 +19,7 @@ from scipy.spatial.distance import pdist, squareform, cdist
 from scipy.stats.stats import pearsonr
 from molecule import AtomFromPdbLine, Atom
 from vector3d import pos_distance
+import networkx as nx
 
 parser = OptionParser(version=VERSION_STRING)
 parser.set_defaults(verbose=True)
@@ -85,6 +86,11 @@ parser.add_option('-P', '--output-best-cluster',
                   default=None,
                   help='print residues of the best cluster into this file',
                   )
+
+parser.add_option('-N', '--closeness',
+                  action='store_true',
+                  default=False,
+                  help='calculate closeness centrality for every surface residue')
 
 (options, args) = parser.parse_args()
 
@@ -442,7 +448,19 @@ if __name__ == '__main__':
 #    if clusters is None or len(clusters) == 0:
 #        print 'ERROR_no_clusters_found'
 #        exit(1)
-        
+
+    NETWORK_THRESHOLD = 8 # angstroms,
+    if options.closeness:
+        surface_graph = nx.Graph()
+        adj_matrix = 1*(cdist(coords_matrix, coords_matrix) <= NETWORK_THRESHOLD)
+        for i in range(adj_matrix.shape[0]):
+            for j in range(adj_matrix.shape[1]):
+                if adj_matrix[i,j]==1:
+                    surface_graph.add_edge(pdb_atoms[i], pdb_atoms[j])
+        import matplotlib.pyplot as plt
+        nx.draw_spectral(surface_graph)
+        plt.show()
+    
     if options.visualize:
 #        assert not options.pymol_output.startswith('/dev'), 'Cannot read from %s' % options.pymol_output
         TEMP_PML_FILENAME = '/tmp/temp%d_visualize.pml' % os.getpid()

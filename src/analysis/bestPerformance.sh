@@ -1,7 +1,7 @@
 #!/bin/bash
 
 resultsDir=$1
-for k in `seq 1 8`; do
+for k in `seq 1 3`; do
 	outfile="$resultsDir/roc.best$k.clusters.txt"
 	cat /dev/null > $outfile
 	echo -e "#PDB\tTPR\tFPR\tF1\tDDG_REC" >> $outfile

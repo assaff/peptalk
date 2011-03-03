@@ -35,20 +35,22 @@ ax.set_alpha(0)
 #for stats_arr in np.split(stats_mat, stats_mat.shape[0]):
 n, bins, patches = ax.hist(stats_mat.transpose(), 20, alpha=0.8,cumulative=True,normed=True, histtype='stepfilled' , label=filenames)
 
-ax.set_xlabel(raw_input('xlabel: '))
-ax.set_ylabel(raw_input('ylabel: '))
-ax.set_title(raw_input('title: '))
+#ax.set_xlabel(raw_input('xlabel: '))
+#ax.set_ylabel(raw_input('ylabel: '))
+#ax.set_title(raw_input('title: '))
+#ax.set_xlim([0,1])
+ax.set_ylim([0,1])
 ax.legend(loc='lower right')
 ax.grid(True)
 
 plt.show()
 
-tosave=raw_input('wanna save the figure? ')
-if tosave not in ['Y', 'y', 'yes']:
-    exit()
-
-savefilename=raw_input('file name: ')
-pngfile = open(savefilename, 'w')
-fig.savefig(pngfile, transparent=True, dpi=600, )
-pngfile.close()
+#tosave=raw_input('wanna save the figure? ')
+#if tosave not in ['Y', 'y', 'yes']:
+#    exit()
+#
+#savefilename=raw_input('file name: ')
+#pngfile = open(savefilename, 'w')
+#fig.savefig(pngfile, transparent=True, dpi=600, )
+#pngfile.close()
 

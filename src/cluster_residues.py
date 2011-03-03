@@ -58,16 +58,9 @@ parser.add_option('-C', '--use-centroid',
                   action='store_true',
                   default=False,
                   help='use centroid coordinates as representatives of receptor residues.')
-parser.add_option('-E', '--expand-clusters',
-                  action='store_true',
-                  default=False,
-                  help='expand clusters from seeds to continuous patches')
 parser.add_option('-l', '--logfile',
                   default='/dev/null',
                   help='name of log file, mainly for debugging [default: %default]')
-parser.add_option('-D', '--binding-residues',
-                  default=None,
-                  help='provide a list of actual binding residues, for evaluating the success of ranking')
 parser.add_option('-v', '--visualize',
                   action='store_true',
                   default=False,
@@ -81,10 +74,6 @@ parser.add_option('-S', '--output-pymol-session',
 parser.add_option('-R', '--output-clustering-report',
                   default=None,
                   help='where to dump clustering results',
-                  )
-parser.add_option('-P', '--output-best-cluster',
-                  default=None,
-                  help='print residues of the best cluster into this file',
                   )
 
 parser.add_option('-N', '--closeness',
@@ -438,29 +427,39 @@ if __name__ == '__main__':
     clusters.sort(key=cluster_scoring_function, reverse=True)
     
     
-    # expand clusters to neighbors on surface
-    if options.expand_clusters:
-        clusters = map(expand_cluster, clusters)
-        for i in range(1, len(clusters)):
-            clusters[i] = list(set(clusters[i]).difference(set(chain.from_iterable(clusters[:i]))))
-    
-#    print len(clusters[0])
-#    if clusters is None or len(clusters) == 0:
-#        print 'ERROR_no_clusters_found'
-#        exit(1)
-
     NETWORK_THRESHOLD = 8 # angstroms,
     if options.closeness:
+        from Bio.PDB import PDBParser, PDBIO
+        p = PDBParser()
+        filename = os.path.abspath(options.pdbfilename)
+        s_tmp = p.get_structure(id='2CCH', file=filename)
+        receptor_res = [res for res in s_tmp.get_residues() if res.get_parent().get_id()==CHAIN_RECEPTOR]
+        old_bfactors = np.array([res['CA'].get_bfactor() for res in receptor_res], float)
+#        print len(receptor_res)
+#        receptor_atoms = [res['CA'] for res in receptor_res]
+        coords_matrix = np.array([res['CA'].get_coord() for res in receptor_res], float)
         surface_graph = nx.Graph()
         adj_matrix = 1*(cdist(coords_matrix, coords_matrix) <= NETWORK_THRESHOLD)
         for i in range(adj_matrix.shape[0]):
             for j in range(adj_matrix.shape[1]):
                 if adj_matrix[i,j]==1:
-                    surface_graph.add_edge(pdb_atoms[i], pdb_atoms[j])
-        import matplotlib.pyplot as plt
-        nx.draw_spectral(surface_graph)
-        plt.show()
-    
+                    surface_graph.add_edge(receptor_res[i], receptor_res[j])
+#        import matplotlib.pyplot as plt
+#        nx.draw_spectral(surface_graph)
+#        plt.show()
+        new_bfactors = np.zeros_like(old_bfactors)
+        for res, cc in nx.closeness_centrality(surface_graph).items():
+            new_bfactors[receptor_res.index(res)] = cc
+        print old_bfactors[:5]
+        print new_bfactors[:5]
+        for res in receptor_res:
+            for atom in res.get_list():
+                atom.set_bfactor(new_bfactors[receptor_res.index(res)])
+        io = PDBIO()
+        io.set_structure(s_tmp)
+        io.save(filename)
+
+
     if options.visualize:
 #        assert not options.pymol_output.startswith('/dev'), 'Cannot read from %s' % options.pymol_output
         TEMP_PML_FILENAME = '/tmp/temp%d_visualize.pml' % os.getpid()
@@ -506,27 +505,6 @@ if __name__ == '__main__':
         SINK = open('/dev/null')
         subprocess.Popen(['pymol', '-qcd', '@%s' % TEMP_PML_FILENAME, ], stdout=SINK, stderr=SINK)
         SINK.close()
-    
-    if options.binding_residues is not None:
-        best_cluster = clusters[0]
-        binding_filename = options.binding_residues
-        assert os.path.isfile(binding_filename)
-        assert os.path.exists(binding_filename)
-        binders_file = open(binding_filename)
-        actual_binders = np.array([[int(line.strip().split()[1])] for line in binders_file])
-        actual_binders.sort()
-        binders_file.close()
-        cluster_binders = np.array([[atom.res_num] for atom in best_cluster])
-        
-        print 'cluster', cluster_binders
-        print 'actual' , actual_binders
-        distances = cdist(actual_binders, cluster_binders)
-        mdta = distances.min(1) # minimal distances of actual binders to 
-        mdta[mdta > 3] = np.inf
-#        print mdta
-        assert actual_binders.shape[0] == mdta.shape[0]
-        recovery = mdta[mdta < np.inf].shape[0] / float(mdta.shape[0])
-        print '%.2f%' % (100 * recovery)
 
 #    clusters_quality = [cluster_contacts_with_peptide(cluster) for cluster in clusters]
 #    if np.argmax(clusters_quality) > 0:

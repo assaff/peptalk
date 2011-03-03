@@ -54,7 +54,7 @@ parser.add_option('-o', '--output-dir',
                   help='directory in which to dump analysis files',)
 parser.add_option('-p','--clustering-options',
                   help='a string of options passed to the clustering scheme',
-                  default='')
+                  default='-Bkw')
 (options, pdb_args) = parser.parse_args()
 
 BINDING_RESIDUES_DIR = os.path.abspath(os.path.join(os.path.dirname(options.classification_file), 'BindingResidues_alaScan'))

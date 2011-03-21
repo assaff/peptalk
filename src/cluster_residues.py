@@ -13,6 +13,7 @@ sys.path.append(os.path.join(os.path.dirname(sys.argv[0]), 'match'))
 import numpy as np
 from optparse import OptionParser
 from itertools import chain
+from glob import glob
 #from matplotlib import pylab
 from scipy.cluster.hierarchy import fcluster, fclusterdata, linkage
 from scipy.spatial.distance import pdist, squareform, cdist
@@ -70,16 +71,18 @@ parser.add_option('-Y', '--output-pymol-script',
                   help='name of pml file, for visualization of output [default: %default]')
 parser.add_option('-S', '--output-pymol-session',
                   default=None,
-                  help='save the visualization session as a pse')
+                  help='save the visualization session as a pse [default: %default]')
 parser.add_option('-R', '--output-clustering-report',
                   default=None,
-                  help='where to dump clustering results',
+                  help='where to dump clustering results [default: %default]',
                   )
-
 parser.add_option('-N', '--closeness',
                   action='store_true',
                   default=False,
                   help='calculate closeness centrality for every surface residue')
+parser.add_option('-f', '--fpocket',
+                  default='',
+                  help='fpocket parameters')
 
 (options, args) = parser.parse_args()
 
@@ -139,21 +142,42 @@ COLORS = ['red',
           'violet',
           'magenta',
           'pink',
-          'black',
           'teal',
           'brown',
           ]
-DEFAULT_PYMOL_INIT = ';'.join(['load %s' % os.path.abspath(options.pdbfilename),
+pymol_pdbid = os.path.basename(options.pdbfilename)[:4]
+ftmap_dir = '/vol/ek/assaff/workspace/peptalk/data/peptiDB/bound/FTMapAnalysis/ftmapData/'
+DEFAULT_PYMOL_INIT = ';'.join([
+                               'load %s' % os.path.abspath(options.pdbfilename),
                                'bg white',
+                               #'label %s, pos=[-20,-20,-20]' % pymol_pdbid,
                                'hide everything',
-                               'select receptor, chain A',
+                               'select receptor_orig, chain A',
                                'deselect',
+                               'show_as cartoon, receptor_orig',
+                               'color grey, receptor_orig',
+#                               'hide everything, receptor_orig',
                                'select peptide, chain B',
                                'deselect',
-                               'color yellow, peptide',
-                               'show sticks, peptide',
-                               'show spheres, receptor',
+                               'color black, peptide',
+                               'show_as cartoon, peptide',
+                               'show sticks, peptide and !(name c+n+o)',
+                               'create receptor, receptor_orig; color white, receptor; show surface, receptor',
+                               'set transparency, 0.4, receptor',
+                               'select binding_site, receptor within 4 of peptide',
+                               'color white, binding_site',
+                               'set transparency, 0, binding_site',
+                               'load %s' % os.path.join(ftmap_dir, pymol_pdbid+'.map.clean.pdb'),
+                               'select ftmap_clusters, crosscluster*',
+                               'show sticks, ftmap_clusters',
+                               'orient receptor',
+                               'pseudoatom receptor_label, receptor_bb; label receptor_label, "receptor"',
+                               'pseudoatom peptide_label, peptide; label peptide_label, "peptide"',
                                ''])
+
+################################################################################
+################################################################################
+################################################################################
     
     
 def filter_chain_eq(chain_constraint):
@@ -164,17 +188,6 @@ def filter_atom_type(type_constraint):
 
 def filter_bfactor_gt(bfactor_cutoff):
     return (lambda atom: atom.bfactor >= bfactor_cutoff)
-
-def test_clusters_ranking(clusters, clustering_score_function, actual_score_function):
-    my_scoring = np.array([clustering_score_function(cluster) for cluster in clusters])
-    real_scoring = np.array([actual_score_function(cluster) for cluster in clusters])
-    pearson_coef = pearsonr(my_scoring, real_scoring)
-    if np.argmax(my_scoring) == np.argmax(real_scoring):
-        print SUCCESS_MESSAGE
-    else:
-        print 'FAILED on %s' % os.path.basename(options.pdbfilename)
-    print 'Generally, pearson coefficient is: %f' % pearson_coef
-    return pearson_coef
 
 def get_atoms(pdb_lines, filters=None):
     atoms = [AtomFromPdbLine(line) for line in pdb_lines if (line.startswith('ATOM') or
@@ -217,6 +230,7 @@ def get_receptor_surface_atoms(filename):
     pdb_lines.close()
     return surface_atoms
 
+################################################################################
 
 def centroid(residue_atoms, atom_weights=None):
     assert atom_weights is None or (atom_weights.ndim == 1 and len(atom_weights) == len(residue_atoms))
@@ -238,90 +252,11 @@ def shift_coords_to_centroids(center_atoms, pdbfilename):
         (center_atom.pos.x, center_atom.pos.y, center_atom.pos.z) = centroid(residue_atoms, residue_atom_weights)
     return center_atoms
 
-def spatial_clustering_degree(atoms, weights_vector=None):
-    weights_vector = np.array(weights_vector)
-    coords_matrix = np.array(map(coords, atoms))
-    distances = pdist(coords_matrix)
-#    print len(atoms)
-    if weights_vector is not None:
-        assert np.all(weights_vector != 0)
-        assert (type(weights_vector) is np.ndarray) and len(weights_vector.shape) <= 2 and max(weights_vector.shape) == coords_matrix.shape[0]
-        weight_matrix = np.power(np.outer(weights_vector, weights_vector), -0.5)
-        distances = squareform(np.multiply(squareform(distances), weight_matrix))
-#        print 'dist', distances
-    score = np.power(distances, -1).sum() * np.power(float(len(atoms)), -2)
-    return score
-
-#def quasi_rmsd(atoms1, atoms2):
-#    coords1 = np.array([coords(atom) for atom in atoms1])
-#    coords2 = np.array([coords(atom) for atom in atoms2])
-#    distances = cdist(coords1, coords2)
-#    score = np.power(distances, -1).sum() / float((len(atoms1) * len(atoms2)))
-#    return np.power(score, .5)
-#
-#def mini_rmsd(atoms1, atoms2):
-#    coords1 = np.array([coords(atom) for atom in atoms1])
-#    coords2 = np.array([coords(atom) for atom in atoms2])
-#    distances = cdist(coords1, coords2)
-#    cluster_res_proximities = np.power(distances.min(1), -1)
-#    score = 1. / float(len(cluster_res_proximities)) * cluster_res_proximities.sum() 
-#    for a in atoms1:
-#        for b in atoms2:
-#            score += 1 / pos_distance(a.pos, b.pos)
-#    score *= float(1) / float(len(atoms1))  
-#    return score #sqrt(score)
-#    
-#def cluster_distance_with_peptide(cluster_atoms):
-#    peptide_atoms = get_peptide_atoms(classified_pdb_filename)
-#    logging.debug('Peptide CA atoms:')
-#    for atom in peptide_atoms: logging.debug(atom.pdb_str())
-#    return mini_rmsd(cluster_atoms, peptide_atoms)
-
-def cluster_density_score(cluster_atoms):
-    return spatial_clustering_degree(cluster_atoms)
-
-def cluster_contacts_with_peptide(cluster_atoms):
-    peptide_atoms = get_peptide_atoms(classified_pdb_filename)
-    peptide_coords = map(coords, peptide_atoms)
-    contacting_residues = [atom for atom in cluster_atoms \
-                if cdist(np.array([coords(atom)]), peptide_coords).min() < 6]
-    return len(contacting_residues)
-
-def expand_cluster(cluster_atoms):
-    cluster_coords = map(coords, cluster_atoms)
-    all_surface_atoms = get_receptor_surface_atoms(options.pdbfilename)
-    all_surface_coords = map(coords, all_surface_atoms)
-    distances = cdist(cluster_coords, all_surface_coords)
-    neigboring_atoms = [atom for atom in all_surface_atoms \
-                        if (distances[:, all_surface_atoms.index(atom)].min() < NEIGHBOR_RESIDUE_DISTANCE_CUTOFF)]
-#    print sorted([atom.res_num for atom in cluster_atoms])
-#    print sorted([atom.res_num for atom in neigboring_atoms])
-    expanded_cluster = list(set(cluster_atoms + neigboring_atoms))
-#    print sorted([atom.res_num for atom in expanded_cluster])
-#    exit()
-    return expanded_cluster
-
 def weighted_centroid(atoms):
     assert type(atoms) is list or type(atoms) is np.array
     coords = np.array([[atom.pos.x, atom.pos.y, atom.pos.z] for atom in atoms])
     weights = np.array([atom.bfactor for atom in atoms ])
     return np.average(coords, 0, weights)
-
-def write_pymol_script(output_stream, clusters):
-    print >> output_stream, 'color white, receptor'
-    for cluster in clusters:
-        if clusters.index(cluster) >= len(COLORS):
-            logging.debug('out of colors - too many clusters!')
-            break
-        cluster_num = clusters.index(cluster,)
-        cluster_ca_object = 'cluster%d_ca' % cluster_num
-        cluster_res_object = 'cluster%d_%s' % (cluster_num, COLORS[cluster_num])
-        cluster_resnum_str = re.sub(r'[\[\] ]', '', str(sorted([atom.res_num for atom in cluster])))
-        print >> output_stream, 'select %s, receptor and name %s and (resi %s); deselect' % (cluster_ca_object, RECEPTOR_ATOM_TYPE, cluster_resnum_str)
-        print >> output_stream, 'select %s, br. %s; deselect' % (cluster_res_object, cluster_ca_object)
-        print >> output_stream, 'delete %s' % (cluster_ca_object)
-        print >> output_stream, 'color %s, %s' % (COLORS[cluster_num], cluster_res_object)
-    return
 
 def weighted_pdist(coords, weights=None):
     pdistances = pdist(coords, metric=CLUSTERING_METRIC)
@@ -341,6 +276,16 @@ def weighted_cdist(coords1, coords2, weights1=None, weights2=None):
         assert cdistances.shape == weight_matrix.shape
         cdistances = np.multiply(cdistances, weight_matrix)
     return cdistances
+
+################################################################################
+
+def spatial_clustering_degree(atoms, weights_vector):
+    coords_matrix = np.array(map(coords, atoms))
+    distances = weighted_pdist(coords_matrix, weights_vector)
+#    print len(atoms)
+    score = np.power(distances, -1).sum() * np.power(float(len(atoms)), -2)
+    return float(score)
+
 
 def weighted_fclusterdata(coords_matrix, bfactor_vector=None):
     '''
@@ -364,27 +309,161 @@ def weighted_fclusterdata(coords_matrix, bfactor_vector=None):
     logging.debug('FLAT CLUSTERS:\n' + str(flat_clusters))
     return flat_clusters
 
-def cluster_coords_distance(cluster1_coords, cluster2_coords, cluster1_weights=None, cluster2_weights=None):
-    return np.min(weighted_cdist(cluster1_coords, cluster2_coords, cluster1_weights, cluster2_weights))
+################################################################################
 
-def find_closest_clusters(clusters_list):
+def cluster_coords_distances(cluster1_coords, cluster2_coords, cluster1_weights=None, cluster2_weights=None):
+    return np.sort(weighted_cdist(cluster1_coords, cluster2_coords, cluster1_weights, cluster2_weights), axis=None)
+
+def find_linkable_clusters(clusters_list):
     cluster_coords = [np.array([coords(atom) for atom in cluster])  for cluster in clusters_list]
 #    cluster_weights = [np.array([atom.bfactor for atom in cluster]) for cluster in clusters_list]
     min_distance = np.Inf
     neighbor_clusters = None
+    dij = None
     for i in range(len(clusters_list)):
         for j in range(i + 1, len(clusters_list)):
-            dij = cluster_coords_distance(cluster_coords[i], cluster_coords[j],)
+            dij = np.min(cluster_coords_distances(cluster_coords[i], cluster_coords[j],))
 #                                          cluster_weights[i], cluster_weights[j])
-            if  dij < min_distance:
-                min_distance = dij
+            #if  dij < min_distance:
+            if (np.all(np.sort(weighted_cdist(cluster_coords[i],cluster_coords[j]), axis=None)[:5] < options.neighbor_distance_cutoff)):
+                min_distance = dij[0]
                 neighbor_clusters = (clusters_list[i], clusters_list[j])
     assert min_distance > 0
-    return (neighbor_clusters, min_distance)
+    return neighbor_clusters
 
 def cluster_scoring_function(cluster_atoms):
     cluster_bfactors = np.array(map(bfactor, cluster_atoms))
     return spatial_clustering_degree(cluster_atoms, weights_vector=cluster_bfactors)
+
+def write_pymol_script(output_stream, clusters):
+    print >> output_stream, 'color white, receptor'
+    for cluster in clusters:
+        if clusters.index(cluster) >= len(COLORS):
+            logging.debug('out of colors - too many clusters!')
+            break
+        cluster_num = clusters.index(cluster,)
+        cluster_ca_object = 'cluster%d_ca' % cluster_num
+        cluster_res_object = 'cluster%d_%s' % (cluster_num, COLORS[cluster_num])
+        cluster_resnum_str = re.sub(r'[\[\] ]', '', str(sorted([atom.res_num for atom in cluster])))
+        print >> output_stream, 'select %s, receptor and name %s and (resi %s); deselect' % (cluster_ca_object, RECEPTOR_ATOM_TYPE, cluster_resnum_str)
+        print >> output_stream, 'select %s, br. %s; deselect' % (cluster_res_object, cluster_ca_object)
+        print >> output_stream, 'delete %s' % (cluster_ca_object)
+        print >> output_stream, 'color %s, %s' % (COLORS[cluster_num], cluster_res_object)
+        print >> output_stream, 'set transparency, 0.1, cluster*'
+    
+    # visualize fpockets:
+    subprocess.Popen(['fpocket','-f', options.pdbfilename, options.fpocket], stdout=open(os.devnull)).communicate()
+    print ' '.join(['fpocket','-f', options.pdbfilename, options.fpocket])   
+    orig_pockets_lib=os.path.abspath(options.pdbfilename[:-4]+'_out')
+    tmp_pockets_lib='/tmp/fpockets_%d' % os.getpid()
+    import shutil
+    shutil.move(orig_pockets_lib, tmp_pockets_lib)
+    pocket_pdbs = glob(tmp_pockets_lib+'/pockets/pocket*.pqr')
+#    fpocket_out_pdb = os.path.join()
+    for pocket_pdb in pocket_pdbs:
+        pocket_number = pocket_pdbs.index(pocket_pdb)
+        pocket_object = 'pocket%d_%s' % (pocket_number, COLORS[pocket_number]) 
+        print >> output_stream, 'load %s, %s' % (pocket_pdb, pocket_object)
+        print >> output_stream, 'show_as mesh, %s' % pocket_object
+        print >> output_stream, 'color %s, %s' % (COLORS[pocket_number], pocket_object)
+        print >> output_stream, 'set transparency, 0.3, %s' % pocket_object
+
+    # visualize conservation
+    consurf_dir='/vol/ek/assaff/workspace/peptalk/data/peptiDB/unbound/ConSurfAnalysis/data'
+    consurf_data_file = os.path.join(consurf_dir, pymol_pdbid, 'pdbFILE_view_ConSurf.pdb')
+    consurf_object = 'consurf_data'
+    print >> output_stream, 'load %s, %s' % (consurf_data_file, consurf_object)
+    print >> output_stream, 'hide everything, %s' % consurf_object
+    print >> output_stream, 'select conserved, br. %s and (b > 8)' % consurf_object
+    print >> output_stream, 'show spheres, conserved; color purple, conserved; deselect'  
+    
+    print >> output_stream, 'orient receptor'
+    return
+    
+def color_by_closeness(network_threshold):        
+    from Bio.PDB import PDBParser, PDBIO
+    p = PDBParser()
+    filename = os.path.abspath(options.pdbfilename)
+    s_tmp = p.get_structure(id='2CCH', file=filename)
+    receptor_res = [res for res in s_tmp.get_residues() if res.get_parent().get_id()==CHAIN_RECEPTOR]
+    old_bfactors = np.array([res['CA'].get_bfactor() for res in receptor_res], float)
+#        print len(receptor_res)
+#        receptor_atoms = [res['CA'] for res in receptor_res]
+    coords_matrix = np.array([res['CA'].get_coord() for res in receptor_res], float)
+    surface_graph = nx.Graph()
+    adj_matrix = 1*(cdist(coords_matrix, coords_matrix) <= network_threshold)
+    for i in range(adj_matrix.shape[0]):
+        for j in range(adj_matrix.shape[1]):
+            if adj_matrix[i,j]==1:
+                surface_graph.add_edge(receptor_res[i], receptor_res[j])
+#        import matplotlib.pyplot as plt
+#        nx.draw_spectral(surface_graph)
+#        plt.show()
+    new_bfactors = np.zeros_like(old_bfactors)
+    for res, cc in nx.closeness_centrality(surface_graph).items():
+        new_bfactors[receptor_res.index(res)] = cc
+    print old_bfactors[:5]
+    print new_bfactors[:5]
+    for res in receptor_res:
+        for atom in res.get_list():
+            atom.set_bfactor(new_bfactors[receptor_res.index(res)])
+    io = PDBIO()
+    io.set_structure(s_tmp)
+    io.save(filename)
+
+def visualize(clusters):
+#        assert not options.pymol_output.startswith('/dev'), 'Cannot read from %s' % options.pymol_output
+    TEMP_PML_FILENAME = '/tmp/temp%d_visualize.pml' % os.getpid()
+    TEMP_PML = open(TEMP_PML_FILENAME, 'w')
+    print >> TEMP_PML, DEFAULT_PYMOL_INIT
+    write_pymol_script(TEMP_PML, clusters)
+    TEMP_PML.close()
+    SINK = open('/dev/null')
+    subprocess.Popen(['pymol', '-qd', '@%s' % TEMP_PML_FILENAME, ], stdout=SINK, stderr=SINK)
+    SINK.close()
+#        os.remove(TEMP_PML_FILENAME)
+
+def report(clusters, clusters_confidence):
+    CLUSTERS_OUT = open(options.output_clustering_report, 'w')
+    print >> CLUSTERS_OUT, '# Clustering parameters'
+    for param, value in options.__dict__.items():
+        print >> CLUSTERS_OUT, '# %s\t=\t%s' % (param, str(value))
+    print >> CLUSTERS_OUT, '#' + ('\t'.join(['PDB', 'RANK', 'SIZE', 'CONFD', 'RESIDUES']))
+    for cluster in clusters:
+        cluster.sort(key=lambda x: x.res_num)
+        cluster_index = clusters.index(cluster)
+        cluster_res_str = ','.join([str(atom.res_num) for atom in cluster])
+        print >> CLUSTERS_OUT, '\t'.join([PDB_ID,
+                                          str(cluster_index),
+                                          str(len(cluster)),
+                                          '%.3f' % clusters_confidence[cluster_index],
+                                          cluster_res_str])
+    CLUSTERS_OUT.close()
+
+def script(clusters):
+    PYMOL_SCRIPT = open(options.output_pymol_script, 'w')
+    print >> PYMOL_SCRIPT, DEFAULT_PYMOL_INIT
+    write_pymol_script(PYMOL_SCRIPT, clusters)
+    PYMOL_SCRIPT.close()
+
+def session(clusters):
+    TEMP_PML_FILENAME = '/tmp/temp.%d.pml' % os.getpid()
+    TEMP_PML = open(TEMP_PML_FILENAME, 'w')
+    print >> TEMP_PML, DEFAULT_PYMOL_INIT
+    write_pymol_script(TEMP_PML, clusters)
+    print >> TEMP_PML, 'save %s; quit;' % (options.output_pymol_session)
+    TEMP_PML.close()
+    SINK = open('/dev/null')
+    subprocess.Popen(['pymol', '-qcd', '@%s' % TEMP_PML_FILENAME, ], stdout=SINK, stderr=SINK)
+    SINK.close()
+
+
+################################################################################
+################################################################################
+#                                MAIN
+################################################################################
+################################################################################
+
 
 if __name__ == '__main__':
 
@@ -407,119 +486,41 @@ if __name__ == '__main__':
     cluster_assignment = weighted_fclusterdata(coords_matrix, weights)
 
     clusters = [[atom for atom in pdb_atoms if cluster_assignment[pdb_atoms.index(atom)] == cluster_num] for cluster_num in set(cluster_assignment)]
-    clusters = filter(lambda cluster: len(cluster) > 1, clusters)
 
     if options.connect_neighbor_clusters:
-        (neighbors, min_distance) = find_closest_clusters(clusters)
-        while min_distance < options.neighbor_distance_cutoff:
+        #while np.all(min_distance < options.neighbor_distance_cutoff):
+        while True:
+            neighbors = find_linkable_clusters(clusters)
             if neighbors is None:
                 break
             clusters.remove(neighbors[0])
             clusters.remove(neighbors[1])
             clusters.insert(0, neighbors[0] + neighbors[1])
-            (neighbors, min_distance) = find_closest_clusters(clusters)
 
-    
-    
+    clusters = filter(lambda cluster: len(cluster) > 1, clusters)
     
     clusters_confidence = map(cluster_scoring_function, clusters)
-#    if np.argmax(clusters_confidence)>0: print "First cluster is not "
     clusters.sort(key=cluster_scoring_function, reverse=True)
     
+################################################################################
+#                                OUTPUT
+################################################################################
     
-    NETWORK_THRESHOLD = 8 # angstroms,
+    NETWORK_THRESHOLD = 8.0 # angstroms,
     if options.closeness:
-        from Bio.PDB import PDBParser, PDBIO
-        p = PDBParser()
-        filename = os.path.abspath(options.pdbfilename)
-        s_tmp = p.get_structure(id='2CCH', file=filename)
-        receptor_res = [res for res in s_tmp.get_residues() if res.get_parent().get_id()==CHAIN_RECEPTOR]
-        old_bfactors = np.array([res['CA'].get_bfactor() for res in receptor_res], float)
-#        print len(receptor_res)
-#        receptor_atoms = [res['CA'] for res in receptor_res]
-        coords_matrix = np.array([res['CA'].get_coord() for res in receptor_res], float)
-        surface_graph = nx.Graph()
-        adj_matrix = 1*(cdist(coords_matrix, coords_matrix) <= NETWORK_THRESHOLD)
-        for i in range(adj_matrix.shape[0]):
-            for j in range(adj_matrix.shape[1]):
-                if adj_matrix[i,j]==1:
-                    surface_graph.add_edge(receptor_res[i], receptor_res[j])
-#        import matplotlib.pyplot as plt
-#        nx.draw_spectral(surface_graph)
-#        plt.show()
-        new_bfactors = np.zeros_like(old_bfactors)
-        for res, cc in nx.closeness_centrality(surface_graph).items():
-            new_bfactors[receptor_res.index(res)] = cc
-        print old_bfactors[:5]
-        print new_bfactors[:5]
-        for res in receptor_res:
-            for atom in res.get_list():
-                atom.set_bfactor(new_bfactors[receptor_res.index(res)])
-        io = PDBIO()
-        io.set_structure(s_tmp)
-        io.save(filename)
-
+        color_by_closeness(NETWORK_THRESHOLD)
 
     if options.visualize:
-#        assert not options.pymol_output.startswith('/dev'), 'Cannot read from %s' % options.pymol_output
-        TEMP_PML_FILENAME = '/tmp/temp%d_visualize.pml' % os.getpid()
-        TEMP_PML = open(TEMP_PML_FILENAME, 'w')
-        print >> TEMP_PML, DEFAULT_PYMOL_INIT
-        write_pymol_script(TEMP_PML, clusters)
-        TEMP_PML.close()
-        SINK = open('/dev/null')
-        subprocess.Popen(['pymol', '-qd', '@%s' % TEMP_PML_FILENAME, ], stdout=SINK, stderr=SINK)
-        SINK.close()
-#        os.remove(TEMP_PML_FILENAME)
+        visualize(clusters)
 
-    if options.output_clustering_report:    
-        CLUSTERS_OUT = open(options.output_clustering_report, 'w')
-        print >> CLUSTERS_OUT, '# Clustering parameters'
-        for param, value in options.__dict__.items():
-            print >> CLUSTERS_OUT, '# %s\t=\t%s' % (param, str(value))
-        print >> CLUSTERS_OUT, '#' + ('\t'.join(['PDB', 'RANK', 'SIZE', 'CONFD', 'RESIDUES']))
-        for cluster in clusters:
-            cluster.sort(key=lambda x: x.res_num)
-            cluster_index = clusters.index(cluster)
-            cluster_res_str = ','.join([str(atom.res_num) for atom in cluster])
-            print >> CLUSTERS_OUT, '\t'.join([PDB_ID,
-                                              str(cluster_index),
-                                              str(len(cluster)),
-                                              '%.3f' % clusters_confidence[cluster_index],
-                                              cluster_res_str])
-        CLUSTERS_OUT.close()
+    if options.output_clustering_report:
+        report(clusters, clusters_confidence)
 
     if options.output_pymol_script:
-        PYMOL_SCRIPT = open(options.output_pymol_script, 'w')
-        print >> PYMOL_SCRIPT, DEFAULT_PYMOL_INIT
-        write_pymol_script(PYMOL_SCRIPT, clusters)
-        PYMOL_SCRIPT.close()
+        script(clusters)
 
     if options.output_pymol_session:
-        TEMP_PML_FILENAME = '/tmp/temp.%d.pml' % os.getpid()
-        TEMP_PML = open(TEMP_PML_FILENAME, 'w')
-        print >> TEMP_PML, DEFAULT_PYMOL_INIT
-        write_pymol_script(TEMP_PML, clusters)
-        print >> TEMP_PML, 'save %s; quit;' % (options.output_pymol_session)
-        TEMP_PML.close()
-        SINK = open('/dev/null')
-        subprocess.Popen(['pymol', '-qcd', '@%s' % TEMP_PML_FILENAME, ], stdout=SINK, stderr=SINK)
-        SINK.close()
+        session(clusters)
 
-#    clusters_quality = [cluster_contacts_with_peptide(cluster) for cluster in clusters]
-#    if np.argmax(clusters_quality) > 0:
-#        print 'FAIL'
-#    print clusters
-#    print map(spatial_clustering_degree, clusters)
-#    print map(cluster_contacts_with_peptide, clusters)
-        # build an atom==>cluster mapping
-#        cluster_centroid_coords = np.array([weighted_centroid(cluster) for cluster in clusters])
-#        cluster_weights = np.array([np.mean([atom.bfactor for atom in cluster]) for cluster in clusters])
-
-#    if options.print_best_cluster is not None:
-#        cluster_file = open(options.print_best_cluster, 'w')
-#        for atom in sorted(clusters[0], key=lambda x: x.res_num):
-#            print >> cluster_file, '%s %d' % (atom.res_type.upper(), atom.res_num)
-#        cluster_file.close()
     logging.shutdown()
     exit()

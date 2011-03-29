@@ -35,9 +35,9 @@ ax.set_alpha(0)
 #for stats_arr in np.split(stats_mat, stats_mat.shape[0]):
 n, bins, patches = ax.hist(stats_mat.transpose(), 20, alpha=0.8,cumulative=True,normed=True, histtype='stepfilled' , label=filenames)
 
-#ax.set_xlabel(raw_input('xlabel: '))
-#ax.set_ylabel(raw_input('ylabel: '))
-#ax.set_title(raw_input('title: '))
+ax.set_xlabel(raw_input('xlabel: '))
+ax.set_ylabel(raw_input('ylabel: '))
+ax.set_title(raw_input('title: '))
 #ax.set_xlim([0,1])
 ax.set_ylim([0,1])
 ax.legend(loc='lower right')

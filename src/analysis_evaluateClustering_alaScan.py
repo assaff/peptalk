@@ -20,6 +20,7 @@ CLASSIFIER_DIR = os.path.join(BASE_DIR, 'classifiers/classifier1_full')
 BINDING_DIR=os.path.join(CLASSIFIER_DIR, 'BindingResidues')
 SURFACE_DIR=os.path.join(CLASSIFIER_DIR,'SurfaceResidues')
 RESULTS_DIR=os.path.join(CLASSIFIER_DIR,'results_b0.7')
+CONSURF_DIR=os.path.join(DATASET_DIR, 'unbound/ConSurfAnalysis/data')
 #OUTPUT_PREFIX = ANALYSIS_DIR
 
 def nsorted(unsorted):

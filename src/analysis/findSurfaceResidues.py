@@ -49,7 +49,7 @@ def findSurfaceResidues(objSel="(all)", cutoff=2.5, doShow=False, verbose=False)
     exposed = stored.tmp_dict.keys()
     exposed.sort()
  
-    selName = "exposed_" + str(random.randint(0,10000))
+    selName = "exposed" # + str(random.randint(0,10000))
     if verbose!=False:
         print "Exposed residues are selected in: " + selName
     cmd.select(selName, objSel + " in " + tmpObj )

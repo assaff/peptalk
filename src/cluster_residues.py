@@ -163,6 +163,7 @@ DEFAULT_PYMOL_INIT = ';'.join([
                                'show_as cartoon, peptide',
                                'show sticks, peptide and !(name c+n+o)',
                                'create receptor, receptor_orig; color white, receptor; show surface, receptor',
+#                               'hide everything, receptor',
                                'set transparency, 0.4, receptor',
                                'select binding_site, receptor within 4 of peptide',
                                'color white, binding_site',
@@ -322,10 +323,10 @@ def find_linkable_clusters(clusters_list):
     dij = None
     for i in range(len(clusters_list)):
         for j in range(i + 1, len(clusters_list)):
-            dij = np.min(cluster_coords_distances(cluster_coords[i], cluster_coords[j],))
+            dij = cluster_coords_distances(cluster_coords[i], cluster_coords[j],)
 #                                          cluster_weights[i], cluster_weights[j])
             #if  dij < min_distance:
-            if (np.all(np.sort(weighted_cdist(cluster_coords[i],cluster_coords[j]), axis=None)[:5] < options.neighbor_distance_cutoff)):
+            if (np.all(dij[:4] < options.neighbor_distance_cutoff)):
                 min_distance = dij[0]
                 neighbor_clusters = (clusters_list[i], clusters_list[j])
     assert min_distance > 0
@@ -352,30 +353,37 @@ def write_pymol_script(output_stream, clusters):
         print >> output_stream, 'set transparency, 0.1, cluster*'
     
     # visualize fpockets:
-    subprocess.Popen(['fpocket','-f', options.pdbfilename, options.fpocket], stdout=open(os.devnull)).communicate()
-    print ' '.join(['fpocket','-f', options.pdbfilename, options.fpocket])   
-    orig_pockets_lib=os.path.abspath(options.pdbfilename[:-4]+'_out')
-    tmp_pockets_lib='/tmp/fpockets_%d' % os.getpid()
     import shutil
-    shutil.move(orig_pockets_lib, tmp_pockets_lib)
+    tmp_pockets_lib='/vol/ek/assaff/workspace/peptalk/data/peptiDB/unbound/fpocket/%s' % pymol_pdbid
+    tmp_pockets_lib = '/tmp/fpocket_test_%d' % os.getpid()
+    if not os.path.exists(tmp_pockets_lib):
+        subprocess.Popen(['fpocket','-f', options.pdbfilename, options.fpocket], stdout=open(os.devnull)).communicate()
+        print ' '.join(['fpocket','-f', options.pdbfilename, options.fpocket])   
+        orig_pockets_lib=os.path.abspath(options.pdbfilename[:-4]+'_out')
+        shutil.move(orig_pockets_lib, tmp_pockets_lib)
     pocket_pdbs = glob(tmp_pockets_lib+'/pockets/pocket*.pqr')
 #    fpocket_out_pdb = os.path.join()
-    for pocket_pdb in pocket_pdbs:
+    for pocket_pdb in pocket_pdbs[:5]:
         pocket_number = pocket_pdbs.index(pocket_pdb)
         pocket_object = 'pocket%d_%s' % (pocket_number, COLORS[pocket_number]) 
         print >> output_stream, 'load %s, %s' % (pocket_pdb, pocket_object)
-        print >> output_stream, 'show_as mesh, %s' % pocket_object
+        print >> output_stream, 'hide everything, %s' % (pocket_object)
+        print >> output_stream, 'alter %s, vdw=vdw+1.4' % (pocket_object)
+        print >> output_stream, 'show surface, %s' % pocket_object
         print >> output_stream, 'color %s, %s' % (COLORS[pocket_number], pocket_object)
-        print >> output_stream, 'set transparency, 0.3, %s' % pocket_object
+        print >> output_stream, 'set transparency, 0.5, %s' % pocket_object
 
     # visualize conservation
     consurf_dir='/vol/ek/assaff/workspace/peptalk/data/peptiDB/unbound/ConSurfAnalysis/data'
     consurf_data_file = os.path.join(consurf_dir, pymol_pdbid, 'pdbFILE_view_ConSurf.pdb')
     consurf_object = 'consurf_data'
+    # find surface residues, save them in 'exposed' object.
     print >> output_stream, 'load %s, %s' % (consurf_data_file, consurf_object)
+    print >> output_stream, 'run /a/warhol-00/h/miro/ek/assaff/workspace/peptalk/src/analysis/findSurfaceResidues.py'
+    print >> output_stream, 'findSurfaceResidues %s' % consurf_object
     print >> output_stream, 'hide everything, %s' % consurf_object
-    print >> output_stream, 'select conserved, br. %s and (b > 8)' % consurf_object
-    print >> output_stream, 'show spheres, conserved; color purple, conserved; deselect'  
+    print >> output_stream, 'select conserved_ca, br. %s and (b > 7) and exposed and name ca' % consurf_object
+    print >> output_stream, 'show spheres, conserved_ca; color purple, conserved_ca; deselect'  
     
     print >> output_stream, 'orient receptor'
     return
@@ -497,7 +505,7 @@ if __name__ == '__main__':
             clusters.remove(neighbors[1])
             clusters.insert(0, neighbors[0] + neighbors[1])
 
-    clusters = filter(lambda cluster: len(cluster) > 1, clusters)
+    clusters = filter(lambda cluster: len(cluster) > 3, clusters)
     
     clusters_confidence = map(cluster_scoring_function, clusters)
     clusters.sort(key=cluster_scoring_function, reverse=True)

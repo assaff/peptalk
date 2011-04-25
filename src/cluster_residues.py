@@ -20,7 +20,6 @@ from scipy.spatial.distance import pdist, squareform, cdist
 from scipy.stats.stats import pearsonr
 from molecule import AtomFromPdbLine, Atom
 from vector3d import pos_distance
-import networkx as nx
 
 parser = OptionParser(version=VERSION_STRING)
 parser.set_defaults(verbose=True)
@@ -388,37 +387,6 @@ def write_pymol_script(output_stream, clusters):
     print >> output_stream, 'orient receptor'
     return
     
-def color_by_closeness(network_threshold):        
-    from Bio.PDB import PDBParser, PDBIO
-    p = PDBParser()
-    filename = os.path.abspath(options.pdbfilename)
-    s_tmp = p.get_structure(id='2CCH', file=filename)
-    receptor_res = [res for res in s_tmp.get_residues() if res.get_parent().get_id()==CHAIN_RECEPTOR]
-    old_bfactors = np.array([res['CA'].get_bfactor() for res in receptor_res], float)
-#        print len(receptor_res)
-#        receptor_atoms = [res['CA'] for res in receptor_res]
-    coords_matrix = np.array([res['CA'].get_coord() for res in receptor_res], float)
-    surface_graph = nx.Graph()
-    adj_matrix = 1*(cdist(coords_matrix, coords_matrix) <= network_threshold)
-    for i in range(adj_matrix.shape[0]):
-        for j in range(adj_matrix.shape[1]):
-            if adj_matrix[i,j]==1:
-                surface_graph.add_edge(receptor_res[i], receptor_res[j])
-#        import matplotlib.pyplot as plt
-#        nx.draw_spectral(surface_graph)
-#        plt.show()
-    new_bfactors = np.zeros_like(old_bfactors)
-    for res, cc in nx.closeness_centrality(surface_graph).items():
-        new_bfactors[receptor_res.index(res)] = cc
-    print old_bfactors[:5]
-    print new_bfactors[:5]
-    for res in receptor_res:
-        for atom in res.get_list():
-            atom.set_bfactor(new_bfactors[receptor_res.index(res)])
-    io = PDBIO()
-    io.set_structure(s_tmp)
-    io.save(filename)
-
 def visualize(clusters):
 #        assert not options.pymol_output.startswith('/dev'), 'Cannot read from %s' % options.pymol_output
     TEMP_PML_FILENAME = '/tmp/temp%d_visualize.pml' % os.getpid()
@@ -514,10 +482,6 @@ if __name__ == '__main__':
 #                                OUTPUT
 ################################################################################
     
-    NETWORK_THRESHOLD = 8.0 # angstroms,
-    if options.closeness:
-        color_by_closeness(NETWORK_THRESHOLD)
-
     if options.visualize:
         visualize(clusters)
 

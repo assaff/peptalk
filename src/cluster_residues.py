@@ -151,19 +151,16 @@ DEFAULT_PYMOL_INIT = ';'.join([
                                'bg white',
                                #'label %s, pos=[-20,-20,-20]' % pymol_pdbid,
                                'hide everything',
-                               'select receptor_orig, chain A',
+                               'select receptor, chain A',
                                'deselect',
-                               'show_as cartoon, receptor_orig',
-                               'color grey, receptor_orig',
-#                               'hide everything, receptor_orig',
+                               'show_as cartoon, receptor',
+                               'color grey, receptor',
+#                               'hide everything, receptor',
                                'select peptide, chain B',
                                'deselect',
                                'color black, peptide',
                                'show_as cartoon, peptide',
                                'show sticks, peptide and !(name c+n+o)',
-                               'create receptor, receptor_orig; color white, receptor; show surface, receptor',
-#                               'hide everything, receptor',
-                               'set transparency, 0.4, receptor',
                                'select binding_site, receptor within 4 of peptide',
                                'color white, binding_site',
                                'set transparency, 0, binding_site',
@@ -345,9 +342,8 @@ def write_pymol_script(output_stream, clusters):
         cluster_ca_object = 'cluster%d_ca' % cluster_num
         cluster_res_object = 'cluster%d_%s' % (cluster_num, COLORS[cluster_num])
         cluster_resnum_str = re.sub(r'[\[\] ]', '', str(sorted([atom.res_num for atom in cluster])))
-        print >> output_stream, 'select %s, receptor and name %s and (resi %s); deselect' % (cluster_ca_object, RECEPTOR_ATOM_TYPE, cluster_resnum_str)
-        print >> output_stream, 'select %s, br. %s; deselect' % (cluster_res_object, cluster_ca_object)
-        print >> output_stream, 'delete %s' % (cluster_ca_object)
+        print >> output_stream, 'select receptor and name %s and (resi %s); deselect' % (RECEPTOR_ATOM_TYPE, cluster_resnum_str)
+        print >> output_stream, 'select %s, br. sel; deselect' % (cluster_res_object)
         print >> output_stream, 'color %s, %s' % (COLORS[cluster_num], cluster_res_object)
         print >> output_stream, 'set transparency, 0.1, cluster*'
     

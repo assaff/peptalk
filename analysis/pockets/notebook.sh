@@ -4,23 +4,25 @@
 # preconditions: get 2p54 results (plain pdb) from CASTp (email)
 #                for the same structure, calculate pockets locally with fpocket
 
+POCKET_DEPTH=1
+rm -rf *txt
 
-rm -rfv *txt
+castp_pdbs=$(ls -d /vol/ek/assaff/workspace/peptalk/data/peptiDB/unbound/CastPAnalysis/CastPData/???? | cut -c 79-82)
 
-cat ../summaryTable_reduced.txt | grep 'BIGGEST' | cut -d' ' -f1 | head -1 > biggestPocket.pdb_list.txt
-for pdbcode in $(cat biggestPocket.pdb_list.txt); do
+#cat ../summaryTable_reduced.txt | grep 'BIGGEST' | cut -d' ' -f1 > biggestPocket.pdb_list.txt
+for pdbcode in $castp_pdbs; do #$(cat biggestPocket.pdb_list.txt); do
 
     #unzip castpcalculation.zip
     rm -rf $pdbcode*
     cp /vol/ek/assaff/workspace/peptalk/data/peptiDB/unbound/CastPAnalysis/CastPData/$pdbcode/$pdbcode.* .
-    [ $? -eq 0 ] && continue
+    [ $? -ne 0 ] && continue
 
     fpocket -f $pdbcode.pdb > /dev/null
 
     cat $pdbcode.pocInfo | sort -nrk7 | nl -pv 0 | awk '{print $1,$4;}' > $pdbcode.vol_sa.pocRank
     cat $pdbcode.poc | grep '^ATOM' | awk '{print $6,$12}' > $pdbcode.resPocMap
 
-    for i in $(seq 0 0); do 
+    for i in $(seq 0 $POCKET_DEPTH); do 
 
         # fpocket per-pocket residue numbers
         fpocket_resimap=resi_poc$i.$pdbcode.fpocket.txt;
@@ -35,13 +37,22 @@ for pdbcode in $(cat biggestPocket.pdb_list.txt); do
         cat $pdbcode.poc | grep '^ATOM' | grep -e "$pocId  POC" | awk '{print $6,$4}' | sort -un > $castp_resimap
         
         
-        # analyze recall and precision
-        tp=$(join -1 1 -2 1 --nocheck-order $castp_resimap $fpocket_resimap | wc -l)
-        tpfp=$(wc -l $castp_resimap)
-        recall=$(calc $tp/$tpfp)
-        echo -e "$pdbcode\t$i\t$recall"
     done
-
+    
+    # analyze recall and precision, crossing all top pockets
+    for i in $(seq 0 $POCKET_DEPTH); do
+        for j in $(seq 0 $POCKET_DEPTH); do
+            fpocket_resimap=resi_poc$i.$pdbcode.fpocket.txt;
+            castp_resimap=resi_poc$j.$pdbcode.castp.txt;
+            
+            tp=$(join -1 1 -2 1 --nocheck-order $castp_resimap $fpocket_resimap | wc -l)
+            tpfp=$(wc -l $castp_resimap)
+            
+            recall=$(calc $tp/$tpfp)
+            echo -e "$pdbcode\tf$i,c$j\t$recall" >> fpk.cst.recall.$pdbcode.txt
+        done
+    done
+    sort -nrk3 fpk.cst.recall.$pdbcode.txt | head -1
     rm -rf $pdbcode*
-done
+done > fpocket.vs.castp.recall.csv
 

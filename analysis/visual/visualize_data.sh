@@ -2,12 +2,15 @@
 
 LOCAL_PDB_DIR=/vol/ek/share/pdb
 
-function view_pdb {
-    local pdb=$1
+function get_pdb {
+    local pdb=$(echo $1 | tr '[A-Z]' '[a-z]')
     local midid=${pdb:1:2}
-    less $LOCAL_PDB_DIR/$midid/pdb$pdb.ent.gz
+    zcat $LOCAL_PDB_DIR/$midid/pdb$pdb.ent.gz
 }
 
+function view_pdb {
+    get_pdb $1 | less
+}
 
 function getRemarks {
 
@@ -62,20 +65,19 @@ function visualize_data_pair {
 
     echo show_as cartoon, all >> $pmlfile
 #    echo hide everything, not bound and not unbound and not peptide >> $pmlfile
-    echo "orient $unbound_pdb_obj;" >> $pmlfile
-    echo "create $unbound_pdb.surface, $unbound_pdb_obj; color white, $unbound_pdb.surface; set transparency, 0.6, $unbound_pdb.surface; show_as surface, $unbound_pdb.surface; hide everything, $unbound_pdb.surface" >> $pmlfile
-    echo "symexp sym, $unbound_pdb_obj, ($unbound_pdb_obj), 5.0" >> $pmlfile
-    echo "show_as cartoon, sym*; color white, sym*" >> $pmlfile
-    echo "disable sym*" >> $pmlfile
-    #echo "select crystal_contacts, sym* within 4.0 of $unbound_chain_obj; color pink, crystal_contacts; deselect;" >> $pmlfile
-    #echo "select suspects, $unbound_chain_obj within 4.0 of crystal_contacts; deselect; color hotpink, suspects" >> $pmlfile
-    echo "center $peptide_obj" >> $pmlfile
+    echo "orient" >> $pmlfile
+#    echo "create $unbound_pdb.surface, $unbound_pdb_obj; color white, $unbound_pdb.surface; set transparency, 0.6, $unbound_pdb.surface; show_as surface, $unbound_pdb.surface; hide everything, $unbound_pdb.surface" >> $pmlfile
+    echo "symexp unbound_sym, $unbound_chain_obj, ($unbound_chain_obj), 5.0" >> $pmlfile
+    echo "symexp bound_sym, $bound_chain_obj, ($bound_chain_obj), 5.0" >> $pmlfile
+    echo "show_as cartoon, *_sym*; color white, sym*" >> $pmlfile
+ #   echo "disable *_sym*" >> $pmlfile
+#    echo "center $peptide_obj" >> $pmlfile
 
-    echo "run ColorByRMSD.py" >> $pmlfile
+#    echo "run ColorByRMSD.py" >> $pmlfile
     #getRemarks $bound_pdb > remarks.$bound_pdb.info
     #getRemarks $unbound_pdb > remarks.$unbound_pdb.info
     
-    #pymol -q $pmlfile &
+#    pymol -q $pmlfile &
 }
 
 function visualize_table {

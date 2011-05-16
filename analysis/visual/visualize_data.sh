@@ -1,6 +1,7 @@
 #!/bin/bash
 
 LOCAL_PDB_DIR=/vol/ek/share/pdb
+PEPTIDB_TABLE_URL='https://spreadsheets.google.com/spreadsheet/pub?hl=en&hl=en&key=0ApXQ1x_sHoGrdFYwdEJ6aTFZckc3cHlzZEVzV01jUWc&single=true&gid=2&range=A2%3AE1000&output=csv'
 
 function get_pdb {
     local pdb=$(echo $1 | tr '[A-Z]' '[a-z]')
@@ -42,8 +43,8 @@ function visualize_data_pair {
     local bound_lig="ligands_"$bound_pdb
     local unbound_lig="ligands_"$unbound_pdb
     
-    local pmlfile="$bound_pdb.$unbound_pdb.pml"
-    #echo $pmlfile
+    local pmlfile="$bound_pdb.$bc.$pc.$unbound_pdb.$ubc.pml"
+    echo $pmlfile
     rm -f $pmlfile
     touch $pmlfile
 
@@ -82,15 +83,26 @@ function visualize_data_pair {
     #getRemarks $bound_pdb > remarks.$bound_pdb.info
     #getRemarks $unbound_pdb > remarks.$unbound_pdb.info
     
-    #pymol -q $pmlfile &
+    pymol -q $pmlfile &
+    
 }
 
 function visualize_table {
-IFS=$'\n' 
-for line in $(cat ../newMapping.csv ); do 
-    IFS=$' '
-    visualize_data_pair $line
-    #break
-done
-    }
+    
+    local tablefile="peptidb_table.csv~"
+    wget $PEPTIDB_TABLE_URL -O $tablefile > /dev/null
+    if [ ! -e $tablefile ]; then 
+        echo "cannot find table online"
+        exit 1
+    fi
+    
+    IFS=$'\n' 
+    for line in $(cat $tablefile | grep -v '^#' | cut -d',' -f1-5 ); do 
+        #IFS=$','
+        #visualize_data_pair $line
+        echo $line
+        #break
+    done
+    rm -v $tablefile
+}
 

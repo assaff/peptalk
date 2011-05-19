@@ -3,13 +3,17 @@
 LOCAL_PDB_DIR=/vol/ek/share/pdb
 PEPTIDB_TABLE_URL='https://spreadsheets.google.com/spreadsheet/pub?hl=en&hl=en&key=0ApXQ1x_sHoGrdFYwdEJ6aTFZckc3cHlzZEVzV01jUWc&single=true&gid=2&range=A2%3AE1000&output=csv'
 
-function get_pdb {
+lowercase() { 
+    echo $1 | tr '[A-Z]' '[a-z]'
+}
+
+get_pdb() {
     local pdb=$(echo $1 | tr '[A-Z]' '[a-z]')
     local midid=${pdb:1:2}
     zcat $LOCAL_PDB_DIR/$midid/pdb$pdb.ent.gz
 }
 
-function view_pdb {
+view_pdb() {
     get_pdb $1 | less
 }
 
@@ -21,15 +25,15 @@ getPdbLocal $pdbid | grep -e '^REMARK'
 
 function visualize_data_pair {
 
-    local bound_pdb=$(echo $1 | tr '[A-Z]' '[a-z]')
-    local bc=$2
+    local bound_pdb=$(lowercase $1)
+    local bc=$(lowercase $2)
     local bc_obj=$(echo $bc | sed 's/\(.\)/\1+/g'); bc_obj=${bc_obj%+}
 
-    local unbound_pdb=$(echo $4 | tr '[A-Z]' '[a-z]')
-    local ubc=$5
+    local unbound_pdb=$(lowercase $4)
+    local ubc=$(lowercase $5)
     local ubc_obj=$(echo $ubc | sed 's/\(.\)/\1+/g'); ubc_obj=${ubc_obj%+}
 
-    local pc=$3
+    local pc=$(lowercase $3)
     local pc_obj=$(echo $pc | sed 's/\(.\)/\1+/g'); pc_obj=${pc_obj%+}
     
     local bound_pdb_obj=$bound_pdb"_bound"
@@ -44,7 +48,6 @@ function visualize_data_pair {
     local unbound_lig="ligands_"$unbound_pdb
     
     local pmlfile="$bound_pdb.$bc.$pc.$unbound_pdb.$ubc.pml"
-    echo $pmlfile
     rm -f $pmlfile
     touch $pmlfile
 
@@ -83,24 +86,24 @@ function visualize_data_pair {
     #getRemarks $bound_pdb > remarks.$bound_pdb.info
     #getRemarks $unbound_pdb > remarks.$unbound_pdb.info
     
-    pymol -q $pmlfile &
-    
+    echo $pmlfile
+    #pymol -q $pmlfile &
 }
 
 visualize_pockets() {
 
     # general names
-    local bound_pdb=$(echo $1 | tr '[A-Z]' '[a-z]')
-    local bc=$2
+    local bound_pdb=$(lowercase $1)
+    local bc=$(lowercase $2)
     local bc_obj=$(echo $bc | sed 's/\(.\)/\1+/g'); bc_obj=${bc_obj%+}
 
-    local unbound_pdb=$(echo $4 | tr '[A-Z]' '[a-z]')
-    local ubc=$5
-    local ubc_obj=$(echo $ubc | sed 's/\(.\)/\1+/g'); ubc_obj=${ubc_obj%+}
-
-    local pc=$3
+    local pc=$(lowercase $3)
     local pc_obj=$(echo $pc | sed 's/\(.\)/\1+/g'); pc_obj=${pc_obj%+}
     
+    local unbound_pdb=$(lowercase $4)
+    local ubc=$(lowercase $5)
+    local ubc_obj=$(echo $ubc | sed 's/\(.\)/\1+/g'); ubc_obj=${ubc_obj%+}
+
     local pair_id="$bound_pdb.$bc.$pc.$unbound_pdb.$ubc"
 
     # pymol objects
@@ -141,9 +144,9 @@ visualize_pockets() {
     echo select $unbound_chain_obj, polymer and $unbound_pdb_obj and chain $ubc_obj >> $clean_pml
     echo align polymer and name ca and $bound_chain_obj, polymer and name ca and $unbound_chain_obj, quiet=0, object=\"aln_bound_unbound\", reset=1 >> $clean_pml
     echo deselect >> $clean_pml
-    echo alter $peptide_obj, type=\"HETATM\", resn=\"PEP\" >> $clean_pml
     
     echo save $unbound_chain_obj.pdb, $unbound_chain_obj >> $clean_pml
+    echo save $bound_chain_obj.pdb, $bound_chain_obj >> $clean_pml
     echo save $peptide_obj.pdb, $peptide_obj >> $clean_pml
     echo quit >> $clean_pml
     
@@ -168,8 +171,8 @@ visualize_pockets() {
     echo "show_as cartoon, all" >> $visualize_pml
 #    echo hide everything, not bound and not unbound and not peptide >> $visualize_pml
     echo "orient" >> $visualize_pml
-#    echo "show sticks, sc. and $peptide_obj" >> $visualize_pml
-    echo "create $unbound_chain_obj.surface, $unbound_chain_obj; color white, $unbound_chain_obj.surface; set transparency, 0.6, $unbound_chain_obj.surface; show_as surface, $unbound_chain_obj.surface; hide everything, $unbound_chain_obj.surface" >> $visualize_pml
+    echo "show sticks, $peptide_obj" >> $visualize_pml
+    echo "create $unbound_chain_obj.surface, $unbound_chain_obj; color white, $unbound_chain_obj.surface; set transparency, 0.6, $unbound_chain_obj.surface; show_as surface, $unbound_chain_obj.surface; disable $unbound_chain_obj.surface" >> $visualize_pml
 
 
     for pocFile in $fpocket_dir/pockets/pocket*vert.pqr; do
@@ -182,6 +185,8 @@ visualize_pockets() {
     echo "center $peptide_obj" >> $visualize_pml
 #    pymol -q $visualize_pml &
 
+    describePockets $unbound_chain_obj.pdb $peptide_obj.pdb
+    
     cd ..; return 0
     
 }
@@ -191,7 +196,7 @@ describePockets() {
 local receptor_pdbfile=$1
 local peptide_pdbfile=$2
 
-local analysis_name="gtd" #$(basename $receptor_pdbfile).$(basename $peptide_pdbfile)
+local analysis_name="dpoc.receptor.peptide"
 local peptide_resn="PEP"
 
 
@@ -213,8 +218,12 @@ pymol -cd "$pymol_seq" > /dev/null
 fpocket -f $analysis_name.pdb
 dpocket_commandfile=/tmp/dpocket_commandfile.txt
 echo -e "$analysis_name.pdb\t$peptide_resn" > $dpocket_commandfile
-dpocket -f $dpocket_commandfile -o $analysis_name
+dpocket -f $dpocket_commandfile
 
+headerline=$(head -1 dpout_fpocketp.txt)
+all_poc_datafile=dpout_total.txt
+echo "#$headerline" > $all_poc_datafile
+cat dpout_fpocket*p.txt | grep -v '^pdb' >> $all_poc_datafile
 }
 
 function visualize_table {
@@ -229,9 +238,9 @@ function visualize_table {
     IFS=$'\n' 
     for line in $(cat $tablefile | grep -v '^#' | cut -d',' -f1-5 ); do 
         IFS=$','
-        #visualize_data_pair $line
+        visualize_data_pair $line
         visualize_pockets $line
-        echo $line
+        #break
     done
     rm -v $tablefile
 }

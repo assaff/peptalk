@@ -5,7 +5,7 @@ import ConfigParser
 import imap_utils
 
 config = ConfigParser.ConfigParser()
-config.read([os.path.expanduser('~/.pymail')])
+config.read([os.path.expanduser('./.pymail')])
 
 hostn = config.get('server', 'hostname')
 uname = config.get('account', 'username')

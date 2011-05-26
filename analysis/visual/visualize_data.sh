@@ -1,7 +1,7 @@
 #!/bin/bash
 
 LOCAL_PDB_DIR=/vol/ek/share/pdb
-PEPTIDB_TABLE_URL='https://spreadsheets.google.com/spreadsheet/pub?hl=en&hl=en&key=0ApXQ1x_sHoGrdFYwdEJ6aTFZckc3cHlzZEVzV01jUWc&single=true&gid=2&range=A2%3AE1000&output=csv'
+PEPTIDB_TABLE_URL='https://spreadsheets.google.com/pub?hl=en_US&hl=en_US&key=0ApXQ1x_sHoGrdFYwdEJ6aTFZckc3cHlzZEVzV01jUWc&single=true&gid=10&range=A1%3AF300&output=csv'
 
 lowercase() { 
     echo $1 | tr '[A-Z]' '[a-z]'
@@ -86,7 +86,7 @@ function visualize_data_pair {
     #getRemarks $bound_pdb > remarks.$bound_pdb.info
     #getRemarks $unbound_pdb > remarks.$unbound_pdb.info
     
-    echo $pmlfile
+    #echo $pmlfile
     #pymol -q $pmlfile &
 }
 
@@ -103,6 +103,8 @@ visualize_pockets() {
     local unbound_pdb=$(lowercase $4)
     local ubc=$(lowercase $5)
     local ubc_obj=$(echo $ubc | sed 's/\(.\)/\1+/g'); ubc_obj=${ubc_obj%+}
+    
+    visualize_data_pair $bound_pdb $bc $unbound_pdb $ubc $pc
 
     local pair_id="$bound_pdb.$bc.$pc.$unbound_pdb.$ubc"
 
@@ -119,7 +121,7 @@ visualize_pockets() {
     local unbound_lig="ligands_"$unbound_pdb
     
     
-    local pockets_dir="$pair_id"_pockets
+    local pockets_dir="$pair_id"
     mkdir -p $pockets_dir
     cd $pockets_dir
     
@@ -150,7 +152,40 @@ visualize_pockets() {
     echo save $peptide_obj.pdb, $peptide_obj >> $clean_pml
     echo quit >> $clean_pml
     
-    pymol -cq $clean_pml
+    pymol -cq $clean_pml > /dev/null
+
+    #describePockets $unbound_chain_obj.pdb $peptide_obj.pdb
+#echo "commenting" << COMMENT1
+local analysis_name="$unbound_pdb_obj"
+local peptide_resn="PEP"
+
+pymol_seq="
+
+load $unbound_chain_obj.pdb, rec
+load $peptide_obj.pdb, pep
+
+alter pep, type=\"HETATM\"
+alter pep, resn=\"$peptide_resn\"
+alter pep, name=\"NIL\"
+alter pep, chain=\" \"
+
+save $analysis_name.pdb, rec or pep
+"
+
+pymol -cd "$pymol_seq" > /dev/null
+
+fpocket -f $analysis_name.pdb
+dpocket_commandfile=/tmp/dpocket_commandfile.txt
+echo -e "$analysis_name.pdb\t$peptide_resn" > $dpocket_commandfile
+dpocket -f $dpocket_commandfile
+
+headerline=$(head -1 dpout_fpocketp.txt)
+all_poc_datafile=dpout_total.txt
+echo "#$headerline" > $all_poc_datafile
+cat dpout_fpocketp.txt dpout_fpocketnp.txt | grep -v '^pdb' | sort -nk5 >> $all_poc_datafile
+
+cd ..; return
+#COMMENT1
     
     # run fpocket on clean unbound pdb
     fpocket -f $unbound_chain_obj.pdb
@@ -182,10 +217,9 @@ visualize_pockets() {
     echo "show_as mesh, pocket*" >> $visualize_pml
     echo color orange, pocket* >> $visualize_pml
 
-    echo "center $peptide_obj" >> $visualize_pml
+    echo "orient" >> $visualize_pml #echo "center $peptide_obj" >> $visualize_pml
 #    pymol -q $visualize_pml &
 
-    describePockets $unbound_chain_obj.pdb $peptide_obj.pdb
     
     cd ..; return 0
     
@@ -242,6 +276,6 @@ function visualize_table {
         visualize_pockets $line
         #break
     done
-    rm -v $tablefile
+    #rm -v $tablefile
 }
 

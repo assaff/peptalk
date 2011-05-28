@@ -13,10 +13,11 @@ def open_connection(hostname, username, password, verbose=False):
     return connection
 
 def getMsgs(connection, keyword='', unread=False):
-  connection.select('Inbox')
+  connection.select('CASTp') # assuming a CASTp label is applied to result messages
   imap_search_string = ''
   if unread: imap_search_string += 'UNSEEN '
   imap_search_string += 'TEXT "%s"' % keyword
+  print 'Searching for: %s' % imap_search_string
   typ, data = connection.search(None, '(%s)' % imap_search_string)
   for num in data[0].split():
     typ, data = connection.fetch(num,'(RFC822)')

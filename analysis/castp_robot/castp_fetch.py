@@ -16,7 +16,7 @@ def fetch_by_keyword(kwd):
     c = imap_utils.open_connection(hostn, uname, psswd, verbose=True)
     messages = imap_utils.getMsgs(c, keyword=kwd)
     for msg in messages:
-        for attachement_filename, attachment_content in imap_utils.getAttachments(msg, filename_filter=None):
+        for attachment_filename, attachment_content in imap_utils.getAttachments(msg, filename_filter=None):
             print 'Saving %s...' % attachment_filename
             local_fd=open(attachment_filename, 'w')
             local_fd.write(attachment_content)

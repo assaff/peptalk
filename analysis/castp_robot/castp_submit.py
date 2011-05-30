@@ -6,13 +6,19 @@ import urllib, urllib2
 import castp_fetch
 
 CASTP_BASE_URL='http://sts.bioengr.uic.edu/castp/'
-CASTP_QUERY_FORM='query.php'
+CASTP_QUERY_FORM='query_process.php'
 CASTP_CALC_REQUEST_FORM='advcal.php'
 
 def submit_pdbid(pdbid, email_address):
     url=CASTP_BASE_URL+CASTP_QUERY_FORM
-    params= {'pdbid': pdbid, 'email': email_address, 'visual':'emailonly'}
-    return submit_form(url, params)
+    params= {'pdbid': pdbid, 'email': email_address, 'visual':'emailonly'} #, 'submitid' : 'Search'}
+    response = submit_form(url, params)
+    response_html = response.read()
+    success_pattern = re.compile('All result files have been sent to %s' % email_address)
+    if not re.search(success_pattern, response_html):
+        response.msg = 'FAIL'
+    return response
+    
     
 def submit_pdbfile(file_path, email_address):
     url=CASTP_BASE_URL + CASTP_CALC_REQUEST_FORM
@@ -23,9 +29,11 @@ def submit_pdbfile(file_path, email_address):
     if not os.access(tempfile, os.R_OK):
         shutil.copy(file_path, os.getcwd())
         copied=True
-    params = {'userfile' : tempfile, 'email': email_address, 'visual':'emailonly'}
+    fd = open(tempfile)
+    params = {'userfile' : fd , 'email': email_address, 'visual':'emailonly'}
     response = submit_form(url, params)
     if copied: os.remove(tempfile)
+    fd.close()
     return response
 
 def submit_form(form_url, params_dict):

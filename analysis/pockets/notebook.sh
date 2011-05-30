@@ -6,7 +6,7 @@
 
 
 cleanup() {
-    rm -rf $1*
+    rm -rf $1
 }
 
 makePymolScript() {
@@ -41,9 +41,15 @@ MAX_POCKET_DEPTH=4
 #castp_pdbs=$(ls -d /vol/ek/assaff/workspace/peptalk/data/peptiDB/unbound/CastPAnalysis/CastPData/???? | cut -c 79-82); cat $castp_pdbs
 
 #cat ../summaryTable_reduced.txt | grep 'IN_BIGGEST' | cut -d' ' -f1 > biggestPocket.pdb_list.txt; cat biggestPocket.pdb_list.txt
+echo -n > atoms.vs.asa.fp.txt
+echo -n > atoms.vs.asa.cp.txt
+
 for pdbcode in "$@"; do 
     
     cleanup $pdbcode
+    mkdir -p $pdbcode
+    
+    cd $pdbcode
     
     #unzip castpcalculation.zip
     castp_dir="/vol/ek/assaff/workspace/peptalk/data/peptiDB/unbound/CastPAnalysis/CastPData/$pdbcode/"
@@ -83,11 +89,20 @@ for pdbcode in "$@"; do
         # get the pocket ID (assigned by CASTp) that is ranked #i
         castp_resimap=resi_poc$i.$pdbcode.castp.txt;
         pocId=$(grep --max-count=1 -e "^$i" $pdbcode.vol_sa.pocRank | cut -d' ' -f2)
+        
         # now grep the poc file for residue numbers assigned to that pocket
         cat $pdbcode.poc | grep '^ATOM' | grep -e "$pocId  POC" | awk '{print $6,$4}' | sort -un > $castp_resimap
 
         cat $pdbcode.poc | grep '^ATOM' | grep -e "$pocId  POC" | sed -r "s/.....  ($pocId  POC)/ $i     \1/" > $pdbcode.pocket$i.castp.pdb
         cat $pdbcode"_out"/pockets/pocket$i"_atm.pdb" | grep '^ATOM' | sed -r "s/(.{60})/\1 $i/" > $pdbcode.pocket$i.fpocket.pdb
+        
+        fp_num_atoms=$(cat $pdbcode.pocket$i.fpocket.pdb | grep '^ATOM' | wc -l)
+        fp_asa=$(cat $pdbcode"_out"/$pdbcode"_info.txt" | grep 'Total SASA' | head -n $((i+1)) | tail -1 | awk '{print $4}')
+        echo -e "$fp_num_atoms\t$fp_asa" >> ../atoms.vs.asa.fp.txt
+        
+        cp_num_atoms=$( cat $pdbcode.pocket$i.castp.pdb | grep '^ATOM' | wc -l)
+        cp_asa=$( cat $pdbcode.pocInfo.sorted | head -n $((i+1)) | tail -1 | awk '{print $5}' )
+        echo -e "$cp_num_atoms\t$cp_asa" >> ../atoms.vs.asa.cp.txt
     done
     
     # analyze recall and precision, crossing all top pockets
@@ -105,6 +120,7 @@ for pdbcode in "$@"; do
     done
     sort -nrk3 fpk.cst.recall.$pdbcode.txt | head -1
     makePymolScript $pdbcode
+    cd ..
     
 done #fpocket.vs.castp.recall.csv
 

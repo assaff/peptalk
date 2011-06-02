@@ -4,7 +4,7 @@ Created on Jun 2, 2011
 @author: assaff
 '''
 
-import sys, os
+import sys
 import StringIO
 
 DEFAULT_FEATURE_FOR_RANKING = 'area_sa'
@@ -33,7 +33,6 @@ def get_all_pocket_stats(poc_info_file,):
         poc = Pocket(**pocket_entries)
         if poc.N_mth == 0: continue
         pockets.append(poc)
-    print 'total %d pockets analyzed' % len(pockets)
     return pockets
 
 def get_pocket_pdb(poc_file_fd, poc_id):
@@ -45,7 +44,16 @@ def get_pocket_pdb(poc_file_fd, poc_id):
     pdb_str = pdb_result.getvalue()
     pdb_result.close()
     return pdb_str
-        
+
+def pocket_stats_str(poc):
+    stats_fd = StringIO.StringIO()        
+    stats_fd.writelines(['  %s     \t:\t%.3f\n' % (field, float(poc.__dict__[field]))
+                              for field in CASTP_POCKET_FEATURES])
+    stats_fd.flush()
+    stats_str = stats_fd.getvalue()
+    stats_fd.close()
+    return stats_str
+
 if __name__ == '__main__':
     poc_file = sys.argv[1]
     poc_info_file = sys.argv[2]
@@ -61,11 +69,18 @@ if __name__ == '__main__':
     
     sort_by_feature = lambda poc: poc.__dict__[feature]
     pockets = sorted(get_all_pocket_stats(poc_info_file), key=sort_by_feature, reverse=True)
-    print pockets[rank-1]
-    
     poc_file_fd = open(poc_file)
-    print get_pocket_pdb(poc_file_fd, pockets[rank-1].ID)
+    for poc in pockets:
+        poc.pdb_str = get_pocket_pdb(poc_file_fd, poc.ID)
     poc_file_fd.close()
     
-    
-    
+    info_file = open('%s_info.castp.txt' % poc_file[:4], 'w')
+    for poc in pockets:
+        rank = pockets.index(poc)
+        print >> info_file, 'Pocket %d:' % (rank)
+        print >> info_file, pocket_stats_str(poc)
+        pdb_filename = 'pocket%d_atm.castp.pdb' % rank
+        pdb_file = open(pdb_filename, 'w')
+        print >> pdb_file, poc.pdb_str
+        pdb_file.close()
+    info_file.close()

@@ -5,6 +5,14 @@
 #                for the same structure, calculate pockets locally with fpocket
 
 
+prepare_castp() {
+    data_dir="/vol/ek/share/peptalk/data/peptiDB"
+    castp_data=$data_dir/$configuration/CastPAnalysis/CastPData
+    
+    cp castp_data/$pdbid/$pdbid.pdb $configuration.pdb
+    
+}
+
 cleanup() {
     rm -rf $1
 }
@@ -13,9 +21,9 @@ makePymolScript() {
 local pdbid=$1
         echo -e \
 "load $pdbid.pdb; 
-"$(for f in $(ls $pdbid.pock*.pdb); do echo "load $f;"; done)" 
-select fpk, $pdbid.pock*.fpo*;
-select cstp, $pdbid.pock*.cast*;
+"$(for f in $(ls pock*.pdb); do echo "load $f;"; done)" 
+select fpk, pock*.fpo*;
+select cstp, pock*.cast*;
 cmd.color(\"grey80\",\"$pdbid\");
 deselect;
 load ../../data/peptiDB/bound/boundSet/$pdbid.pdb, bound; 
@@ -99,22 +107,24 @@ for pdbcode in "$@"; do
         # now grep the poc file for residue numbers assigned to that pocket
         cat $pdbcode.poc | grep '^ATOM' | grep -e "$pocId  POC" | awk '{print $6,$4}' | sort -un > $castp_resimap
 
-        cat $pdbcode.poc | grep '^ATOM' | grep -e "$pocId  POC" | sed -r "s/.....  ($pocId  POC)/ $i     \1/" > $pdbcode.pocket$i.castp.pdb
+        cat $pdbcode.poc | grep '^ATOM' | grep -e "$pocId  POC" | sed -r "s/.....  ($pocId  POC)/ $i     \1/" > pocket$i"_atm.castp.pdb"
         
         fp_rank=$( cat $pdbcode"_out"/$pdbcode"_info.txt" | grep 'Total SASA' | nl -pv 0 | awk '{print $1,$5}' | sort -nrk 2 | head -n $((i+1)) | tail -1 | awk '{print $1}')
-        cat $pdbcode"_out"/pockets/pocket$fp_rank"_atm.pdb" | grep '^ATOM' | sed -r "s/(.{60})/\1 $i/" > $pdbcode.pocket$i.fpocket.pdb
+        cat $pdbcode"_out"/pockets/pocket$fp_rank"_atm.pdb" | grep '^ATOM' | sed -r "s/(.{60})/\1 $i/" > pocket$i"_atm.fpocket.pdb"
         
-        fp_num_atoms=$(cat $pdbcode.pocket$i.fpocket.pdb | grep '^ATOM' | wc -l)
+        fp_num_atoms=$(cat pocket$i"_atm.fpocket.pdb" | grep '^ATOM' | wc -l)
         fp_asa=$(cat $pdbcode"_out"/$pdbcode"_info.txt" | grep 'Total SASA' | head -n $((fp_rank+1)) | tail -1 | awk '{print $4}')
         echo -e "$fp_num_atoms\t$fp_asa" >> ../atoms.vs.asa.fp.txt
         
-        cp_num_atoms=$( cat $pdbcode.pocket$i.castp.pdb | grep '^ATOM' | wc -l)
+        cp_num_atoms=$( cat pocket$i"_atm.castp.pdb" | grep '^ATOM' | wc -l)
         cp_asa=$( cat $pdbcode.pocInfo.sorted | head -n $((i+1)) | tail -1 | awk '{print $5}' )
         echo -e "$cp_num_atoms\t$cp_asa" >> ../atoms.vs.asa.cp.txt
     done
     echo $pdbcode
+    makePymolScript $pdbcode
     cd ..
     continue
+    
     # analyze recall and precision, crossing all top pockets
     for i in $(seq 0 $POCKET_DEPTH); do
         for j in $(seq 0 $POCKET_DEPTH); do
@@ -132,7 +142,6 @@ for pdbcode in "$@"; do
         done
     done
     sort -nrk3 fpk.cst.recall.$pdbcode.txt | head -1
-    makePymolScript $pdbcode
     cd ..
     
 done #fpocket.vs.castp.recall.csv

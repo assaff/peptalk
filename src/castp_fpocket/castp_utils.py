@@ -7,7 +7,7 @@ Created on Jun 2, 2011
 import sys
 import StringIO
 
-DEFAULT_FEATURE_FOR_RANKING = 'area_sa'
+DEFAULT_FEATURE_FOR_RANKING = 'Area_sa'
 
 CASTP_POCKET_FEATURES= ['ID','N_mth','Area_sa','Area_ms','Vol_sa','Vol_ms','Lenth','cnr']
 
@@ -22,7 +22,7 @@ class Pocket:
             except: pass
         self.__dict__.update(entries)
     
-    def __repr__(self): 
+    def __repr__(self):
         return '<%s>' % str('\n '.join('%s : %s' % (k, repr(v)) for (k, v) in self.__dict__.iteritems()))
 
 def get_all_pocket_stats(poc_info_file,):
@@ -38,7 +38,7 @@ def get_all_pocket_stats(poc_info_file,):
 def get_pocket_pdb(poc_file_fd, poc_id):
     # a kind of grep over pocket number
     POC_ID_COLUMN_NUM = 11
-    poc_lines = [line for line in poc_file_fd.readlines() if line.startswith('ATOM') and int(line.split()[POC_ID_COLUMN_NUM])==poc_id]
+    poc_lines = [line for line in poc_file_fd.readlines() if line.startswith('ATOM') and int(line[68:70])==poc_id]
     pdb_result = StringIO.StringIO()
     pdb_result.writelines(poc_lines)
     pdb_str = pdb_result.getvalue()

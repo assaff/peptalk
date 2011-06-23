@@ -17,13 +17,12 @@ CASTP_JID_LENGTH = 11
 
 def submit_pdbid(pdbid, email_address):
     url=CASTP_BASE_URL+CASTP_QUERY_FORM
-    params= {'pdbid': pdbid, 'email': email_address, 'visual':'emailonly'} #, 'submitid' : 'Search'}
+    params= {'pdbid': pdbid, 'email': email_address, 'visual':'emailonly', 'submitid' : 'Search'}
     response = submit_form(url, params)
     response_html = response.read()
     success_pattern = re.compile('All result files have been sent to %s' % email_address)
     if not re.search(success_pattern, response_html):
         response.msg = 'FAIL'
-        return None
     return response
     
 
@@ -38,7 +37,7 @@ def submit_pdbfile(file_path, email_address):
         copied=True
     fd = open(tempfile)
     # using visual=jmol to have the job ID in the response URL
-    params = {'submit_file':'Submit', 'email': email_address, 'visual':'jmol', 'userfile' : fd}
+    params = {'submit_file':'Submit', 'email': email_address, 'userfile' : fd}
     response = submit_form(url, params)
     if copied: os.remove(tempfile)
     fd.close()

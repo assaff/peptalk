@@ -1,18 +1,14 @@
 #!/usr/bin/python
 
-import sys, os, imaplib, email, time
+import sys, os, imaplib, email, time, getpass
 import tarfile
-import ConfigParser
 import imap_utils
 
-config = ConfigParser.ConfigParser()
-config.read([os.path.expanduser('./.pymail')])
-
-hostn = config.get('server', 'hostname')
-uname = config.get('account', 'username')
-psswd = config.get('account', 'password')
-addrs = config.get('account', 'email')
-
+hostn = 'imap.gmail.com'
+addrs = raw_input('HUJI email address: ')
+assert addrs.endswith('@mail.huji.ac.il')
+psswd = getpass.getpass()
+uname = addrs
 
 def poll(keyword, verbose=False):
     c = imap_utils.open_connection(hostn, uname, psswd, verbose=verbose)

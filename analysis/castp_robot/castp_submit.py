@@ -86,7 +86,10 @@ if __name__ == '__main__':
             try:
                 attachments = submit_pdbfile_and_fetch(arg)
                 #print 'Submitted PDB file %s, attachments retreived: %s' % (arg, attachments[0])
-                file2jid[arg] = attachments[0][:-7]
+                jobid = attachments[0][:-7]
+                file2jid[arg] = jobid
+                print '%s\t%s' % (arg,jobid)
+                sys.stdout.flush()
             except ValueError:
                 raise
         else:
@@ -96,7 +99,6 @@ if __name__ == '__main__':
                 if response: print 'Submitted PDB code %s' % arg
             else:
                 print '%s is not a valid argument. Provide either a PDB code (with optional single chain) or a pdb file.' % arg
-    for k,v in file2jid.items():
-        print '%s\t%s' % (k,v)
+    #for k,v in file2jid.items():
     #print 'Done.'
     

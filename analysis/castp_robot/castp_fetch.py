@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import sys, os, imaplib, email
+import sys, os, imaplib, email, time
 import tarfile
 import ConfigParser
 import imap_utils
@@ -28,19 +28,38 @@ def fetch_by_job_id(jid):
     tf = tarfile.open(filename, mode='r:gz')
     return tf
 
+def fetch_attachments(msg):
+    filenames_retrieved = []
+    for attachment_filename, attachment_content in imap_utils.getAttachments(msg, filename_filter=None):
+        #print 'Saving %s...' % attachment_filename
+        local_fd=open(attachment_filename, 'w')
+        local_fd.write(attachment_content)
+        local_fd.close()
+        filenames_retrieved.append(attachment_filename)
+    return filenames_retrieved
+        
 def fetch_by_keyword(kwd):
     c = imap_utils.open_connection(hostn, uname, psswd, verbose=True)
     messages = imap_utils.getMsgs(c, keyword=kwd)
-    filenames_retrieved = []
+    filenames = []
     for msg in messages:
-        for attachment_filename, attachment_content in imap_utils.getAttachments(msg, filename_filter=None):
-            print 'Saving %s...' % attachment_filename
-            local_fd=open(attachment_filename, 'w')
-            local_fd.write(attachment_content)
-            local_fd.close()
-            filenames_retrieved.append(attachment_filename)
+        filenames += fetch_attachments(msg)
     c.logout()
-    return filenames_retrieved
+    return filenames
+
+def fetch_latest_unread():
+    c = imap_utils.open_connection(hostn, uname, psswd, verbose=False)
+    messages = list(imap_utils.getMsgs(c, keyword='CASTp', unread=True))
+    filenames = []
+    for msg in messages:
+        msg_time = email.utils.mktime_tz(email.utils.parsedate_tz(msg['Date']))
+        cur_time = time.time()
+        # HACK: a time issue causes CASTp to send messages "from the future".
+        #       I use this behavior to detect recently-sent emails.
+        if cur_time > msg_time: continue
+        filenames += fetch_attachments(msg)
+    c.logout()
+    return filenames
     
 if __name__ == '__main__':
     

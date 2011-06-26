@@ -3,7 +3,7 @@
 import os, sys, shutil, time
 import re
 import tarfile
-import urllib, urllib2, cookielib
+import urllib, urllib2, cookielib, httplib
 import MultipartPostHandler
 
 import castp_fetch
@@ -30,32 +30,27 @@ def submit_pdbfile(file_path, email_address):
     url=CASTP_BASE_URL + CASTP_CALC_REQUEST_FORM
     if not os.access(file_path, os.R_OK):
         raise IOError('file %s does not exist or is not readable')
-    tempfile=os.path.basename(file_path)
-    copied=False
-    if not os.access(tempfile, os.R_OK):
-        shutil.copy(file_path, os.getcwd())
-        copied=True
-    fd = open(tempfile)
+    fd = open(file_path)
     # using visual=jmol to have the job ID in the response URL
-    params = {'submit_file':'Submit', 'email': email_address, 'userfile' : fd}
+    params = {'submit_file':'Submit','userfile' : fd, 'visual':'emailonly','email': email_address}
     response = submit_form(url, params)
-    if copied: os.remove(tempfile)
     fd.close()
+    return response
+    '''
     jid_index = response.url.index(CASTP_JID_PREFIX)
     jobid = response.url[jid_index:jid_index+CASTP_JID_LENGTH]
-    '''
     return response
     success_pattern = re.compile('Results have been sent to')
     if not re.search(success_pattern, response_html):
         response.msg = 'FAIL'
         return None
-    '''
     return response, jobid
+    '''
 
 def submit_form(form_url, params_dict):
+    httplib.HTTPConnection.debuglevel = 1
     cookies = cookielib.CookieJar()
-    opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookies),
-                                    MultipartPostHandler.MultipartPostHandler)
+    opener = urllib2.build_opener(MultipartPostHandler.MultipartPostHandler)
     response= opener.open(form_url, params_dict)
     # submit the calculation request to castp
     return response
@@ -68,29 +63,32 @@ def submit_pdbid_and_fetch(pdbid):
     
 def submit_pdbfile_and_fetch(pdbfile):
     email_address = castp_fetch.addrs
-    response, jid = submit_pdbfile(pdbfile, email_address)
-    received = False
+    response = submit_pdbfile(pdbfile, email_address)
+    #time.sleep(5)
+    attachments = castp_fetch.fetch_latest_unread()
     curr_wait=0
-    received = castp_fetch.poll(jid)
-    while not received and curr_wait<4:
+    while len(attachments) == 0 and curr_wait<4:
         time.sleep(4)
         curr_wait += 1
-        received = castp_fetch.poll(jid)
-    if received:
-        filenames = castp_fetch.fetch_by_keyword(jid)
-        
+        attachments += castp_fetch.fetch_latest_unread()
+    if len(attachments) > 0:
+        assert len(attachments)==1
+        return attachments
     else:
         raise ValueError('Could not find results for %s on server' % jid)
 
 if __name__ == '__main__':
     
     pdbid_pattern = re.compile('^[a-z0-9]{4}[a-z]?$', re.IGNORECASE)
-    email_address = 'assaf.faragy@mail.huji.ac.il'
+    file2jid = {}
     for arg in sys.argv[1:]:
-        response = None
         if arg.endswith('.pdb') and os.access(arg, os.R_OK):
-            response = submit_pdbfile(arg, email_address)
-            if response: print 'Submitted PDB file %s' % arg
+            try:
+                attachments = submit_pdbfile_and_fetch(arg)
+                #print 'Submitted PDB file %s, attachments retreived: %s' % (arg, attachments[0])
+                file2jid[arg] = attachments[0][:-7]
+            except ValueError:
+                raise
         else:
             if len(arg)>=4 and pdbid_pattern.match(arg):
                 pdbid = arg.lower()
@@ -98,5 +96,7 @@ if __name__ == '__main__':
                 if response: print 'Submitted PDB code %s' % arg
             else:
                 print '%s is not a valid argument. Provide either a PDB code (with optional single chain) or a pdb file.' % arg
-    print 'Done. Results will be sent to email %s' % email_address
+    for k,v in file2jid.items():
+        print '%s\t%s' % (k,v)
+    #print 'Done.'
     

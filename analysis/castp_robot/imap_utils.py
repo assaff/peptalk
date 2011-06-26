@@ -17,12 +17,12 @@ def getMsgs(connection, keyword='', unread=False):
   imap_search_string = ''
   if unread: imap_search_string += 'UNSEEN '
   imap_search_string += 'TEXT "%s"' % keyword
-  print 'Searching for: %s' % imap_search_string
+  #print 'Searching for: %s' % imap_search_string
   typ, data = connection.search(None, '(%s)' % imap_search_string)
   for num in data[0].split():
     typ, data = connection.fetch(num,'(RFC822)')
     msg = email.message_from_string(data[0][1])
-    typ, data = connection.store(num,'-FLAGS','\\Seen')
+    typ, data = connection.store(num,'+FLAGS','\\Seen')
     yield msg
 
 def getAttachments(msg, filename_filter=None):

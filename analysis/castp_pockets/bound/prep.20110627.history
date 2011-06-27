@@ -1,0 +1,1003 @@
+ 1136  cd ../fpocket/
+ 1137  ls
+ 1138  cp ../unbound_2bq0_a.pdb ../peptide_2o02_p.pdb .
+ 1139  fpocket -i 20 -f unbound_2bq0_a.pdb 
+ 1140  cp unbound_2bq0_a_out/pockets/pocket*atm.pdb .
+ 1141  grep "Total SASA" unbound_2bq0_a_out/unbound_2bq0_a_info.txt | awk '{print $4}' > sasa.fpocket.txt
+ 1142  grep "Volume :" unbound_2bq0_a_out/unbound_2bq0_a_info.txt | awk '{print $3}' > volume.fpocket.txt
+ 1143  ls pocket*atm*
+ 1144  touch centroid_dist.fpocket.txt; for i in $(seq 0 30); do ../../../centroid_dist.py ../peptide_2o0j_p.pdb pocket$i"_atm.pdb" >> centroid_dist.fpocket.txt; done
+ 1145  touch centroid_dist.fpocket.txt; for i in $(seq 0 30); do ../../../centroid_dist.py ../peptide_2o02_p.pdb pocket$i"_atm.pdb" >> centroid_dist.fpocket.txt; done
+ 1146  ls pocket*pdb
+ 1147  ls -t pocket*pdb
+ 1148  man ls
+ 1149  ls
+ 1150  cd ../castp/
+ 1151  paste centroid_dist_pep.txt id.sasa.txt id.volume.txt > unbound.castp.data.txt
+ 1152  l unbound.castp.data.txt 
+ 1153  cat unbound.castp.data.txt 
+ 1154  paste centroid_dist_pep.txt id.sasa.txt id.volume.txt | awk '{print $2,$5,$7}' > unbound.castp.data.txt
+ 1155  cat unbound.castp.data.txt 
+ 1156  cd ../../bound/
+ 1157  cd castp/
+ 1158  paste centroid_dist_pep.txt id.sasa.txt id.volume.txt | awk '{print $2,$5,$7}' > bound.castp.data.txt
+ 1159  cd ../fpocket/
+ 1160  ls
+ 1161  cp ../bound_2o02_a.pdb ../peptide_2o02_p.pdb .
+ 1162  fpocket -i 20 -f bound_2o02_a.pdb 
+ 1163  cp bound_2o02_a_out/pockets/pocket*atm.pdb .
+ 1164  grep "Volume :" bound_2o02_a_out/bound_2o02_a_info.txt | awk '{print $3}' > volume.fpocket.txt
+ 1165  grep "Total SASA" bound_2o02_a_out/bound_2o02_a_info.txt | awk '{print $4}' > sasa.fpocket.txt
+ 1166  ls pock*
+ 1167  touch centroid_dist.fpocket.txt; for i in $(seq 0 31); do ../../../centroid_dist.py ../peptide_2o02_p.pdb pocket$i"_atm.pdb" >> centroid_dist.fpocket.txt; done
+ 1168  ls
+ 1169  paste centroid_dist.fpocket.txt sasa.fpocket.txt volume.fpocket.txt | awk '{print $2,$5,$7}' > bound.fpocket.data.txt
+ 1170  cat bound
+ 1171  cat bound.fpocket.data.txt 
+ 1172  paste centroid_dist.fpocket.txt sasa.fpocket.txt volume.fpocket.txt
+ 1173  paste centroid_dist.fpocket.txt sasa.fpocket.txt volume.fpocket.txt | awk '{print $2,$4,$5}' > bound.fpocket.data.txt
+ 1174  l bound.fpocket.data.txt 
+ 1175  cd ../../unbound/castp/
+ 1176  paste centroid_dist.fpocket.txt sasa.fpocket.txt volume.fpocket.txt
+ 1177  paste centroid_dist_pep.txt id.sasa.txt id.volume.txt
+ 1178  paste centroid_dist_pep.txt id.sasa.txt id.volume.txt | awk '{print $1,$2,$5,$7}' > unbound.castp.data.txt
+ 1179  ls
+ 1180  cd ../../unbound/castp/
+ 1181  paste centroid_dist_pep.txt id.sasa.txt id.volume.txt | awk '{print $1,$2,$5,$7}' > bound.castp.data.txt
+ 1182  l bound.castp.data.txt 
+ 1183  cd ../fpocket/
+ 1184  ls
+ 1185  paste centroid_dist.fpocket.txt sasa.fpocket.txt volume.fpocket.txt | awk '{print $2,$4,$5}' > unbound.fpocket.data.txt
+ 1186  cd ../../bound/castp/
+ 1187  l bound.castp.data.txt 
+ 1188  paste centroid_dist_pep.txt id.sasa.txt id.volume.txt | awk '{print $1,$2,$5,$7}' > bound.castp.data.txt
+ 1189  l bound.castp.data.txt 
+ 1190  cd ../fpocket/
+ 1191  ls
+ 1192  l sasa.fpocket.txt 
+ 1193  cd ../../../../visual/
+ 1194  visualize_data_pair 1sfi a i 1utn a
+ 1195  viewpml.sh 1sfi.a.i.1utn.a.pml 
+ 1196  viewpml.sh 1czy.abc.e.1ca4.abc.pml 
+ 1197  viewpml.sh 2o02.a.p.2bq0.a.pml 
+ 1198  cd ../sandbox/2o02/bound/fpocket/
+ 1199  ls
+ 1200  cd bound_2o02_a_out/
+ 1201  bound_2o02_a_PYMOL.sh 
+ 1202  pymol bound_2o02_a_out.pdb pockets/pocket*_vert.pqr
+ 1203  cd ..
+ 1204  cp bound_2o02_a.pdb b_s5.pdb 
+ 1205  fpocket -f b_s5.pdb -s 4.5
+ 1206  cd b_s5_out/
+ 1207  l b_s5_info.txt 
+ 1208  pymol b_s5_out.pdb pockets/pocket*_vert.pqr
+ 1209  cd ../bound_2o02_a_out/
+ 1210  pymol bound_2o02_a_out.pdb pockets/pocket*_vert.pqr
+ 1211  fg
+ 1212  cd ../
+ 1213  rm b_s5_out/ -r
+ 1214  fpocket -f b_s5.pdb -s 4.5 -i 20
+ 1215  cd b_s5_out/
+ 1216  pymol b_s5_out.pdb pockets/pocket*_vert.pqr
+ 1217  cd ..
+ 1218  cp bound_2o02_a.pdb b_s6_n1.pdb 
+ 1219  fpocket -f b_s6_n1.pdb -s 6.0 -n 1 -i 15
+ 1220  cd b_s6_n1_out/
+ 1221  pymol b_s6_n1_out.pdb pockets/pocket*_vert.pqr > /dev/null &
+ 1222  cd ..
+ 1223  rm b_s6_n1_out/ -r
+ 1224  fpocket -f b_s6_n1.pdb -s 6.0 -n 1
+ 1225  cd b_s6_n1_out/
+ 1226  pymol b_s6_n1_out.pdb pockets/pocket*_vert.pqr > /dev/null &
+ 1227  cd ..
+ 1228  cp bound_2o02_a.pdb b_s8_n1_r6.pdb 
+ 1229  fpocket -f b_s8_n1_r6.pdb -s 8.0 -n 1 -r 6
+ 1230  cd b_s8_n1_r6_out/
+ 1231  pymol b_s8_n1_r6_out.pdb pockets/pocket*_vert.pqr > /dev/null &
+ 1232  cd ..
+ 1233  rm b_s8_n1_r6_out/ -r
+ 1234  fpocket -f b_s8_n1_r6.pdb -s 8.0 -n 1 -r 6 -i 35
+ 1235  ls b_s8_n1_r6_out/pockets/
+ 1236  l b_s8_n1_r6_out/b_s8_n1_r6_info.txt 
+ 1237  cd b_s8_n1_r6_out/
+ 1238  pymol b_s8_n1_r6_out.pdb pockets/pocket*_vert.pqr > /dev/null &
+ 1239  cd ..
+ 1240  rm b_s8_n1_r6_out/ -r
+ 1241  cp bound_2o02_a.pdb b_s8.pdb 
+ 1242  fpocket -f b_s8.pdb -s 8.0
+ 1243  cd b_s8_out/
+ 1244  l b_s8_info.txt 
+ 1245  pymol b_s8_out.pdb pockets/pocket*_vert.pqr > /dev/null &
+ 1246  cd ..
+ 1247  ls
+ 1248  cd b_s5_out/
+ 1249  pymol b_s5_out.pdb pockets/pocket*_vert.pqr > /dev/null &
+ 1250  cd ..
+ 1251  cp bound_2o02_a.pdb b_D3_s6.pdb 
+ 1252  fpocket -f b_D3_s6.pdb -D 3 -s 6.0
+ 1253  cd b_D3_s6_out/
+ 1254  l b_D3_s6_info.txt 
+ 1255  grep "Total SASA" b_D3_s6_info.txt 
+ 1256  cd ..
+ 1257  cp bound_2o02_a.pdb b_D2_s5.pdb 
+ 1258  fpocket -f b_D2_s5.pdb -D 2 -s 5
+ 1259  cd b_D2_s5_out/
+ 1260  l b_D2_s5_info.txt 
+ 1261  grep "Total SASA" b_D2_s5_info.txt 
+ 1262  pymol b_D2_s5_out.pdb pockets/pocket*_vert.pqr > /dev/null &
+ 1263  grep "Total SASA" b_D2_s5_info.txt 
+ 1264  cat ../../castp/id.sasa.txt 
+ 1265  cd ../../../../../visual/
+ 1266  cd ..
+ 1267  cd pockets/
+ 1268  ls
+ 1269  l notebook.sh
+ 1270  cd ..
+ 1271  ack "dpocket -f" *
+ 1272  grep -r "dpocket -f"
+ 1273  ack
+ 1274  ack --thpppt
+ 1275  ls
+ 1276  cd 1sfi.a.i5.D1.0.r3.5.s3.5.n2_out/
+ 1277  ls
+ 1278  1sfi.a.i5.D1.0.r3.5.s3.5.n2_PYMOL.sh 
+ 1279  ls
+ 1280  cat 1sfi.a.i5.D1.0.r3.5.s3.5.n2_PYMOL.sh 
+ 1281  pymol 1sfi.a.i5.D1.0.r3.5.s3.5.n2.pml > /dev/null &
+ 1282  l pockets/pocket23_atm.pdb 
+ 1283  l pockets/pocket22_atm.pdb 
+ 1284  l pockets/pocket23_atm.pdb 
+ 1285  l pockets/pocket23_vert.pqr 
+ 1286  l pockets/pocket22_vert.pqr 
+ 1287  paste pockets/pocket22_vert.pqr pockets/pocket23_vert.pqr 
+ 1288  paste pockets/pocket22_vert.pqr pockets/pocket0_vert.pqr 
+ 1289  l 1sfi.a.i5.D1.0.r3.5.s3.5.n2_info.txt 
+ 1290  grep "solvent" 1sfi.a.i5.D1.0.r3.5.s3.5.n2_info.txt | l
+ 1291  grep "solvent" 1sfi.a.i5.D1.0.r3.5.s3.5.n2_info.txt | sort -nk 4 | l
+ 1292  grep "solvent" 1sfi.a.i5.D1.0.r3.5.s3.5.n2_info.txt | sort -n | l
+ 1293  cd ..
+ 1294  ls
+ 1295  du -s
+ 1296  du -sh
+ 1297  cd 1sfi.a.i5.D1.0.r3.5.s3.5.n2_out/
+ 1298  du -sh
+ 1299  cd ../
+ 1300  rm -r 1sfi.a.i5*
+ 1301  pymol 1sfi.a.pdb &
+ 1302  pymol 1sfi_ai.pdb 
+ 1303  ls
+ 1304  cd /net/warhol-00/h/miro/
+ 1305  ls
+ 1306  cd ek
+ 1307  ls
+ 1308  cd assaff/workspace/peptalk/analysis/
+ 1309  ls
+ 1310  ls /vol/ek
+ 1311  ack
+ 1312  vim ~/.bashrc
+ 1313  cd workspace/peptalk/
+ 1314  cd /vol
+ 1315  cd ek
+ 1316  cd londonir/CleanPeptiDB/
+ 1317  ls
+ 1318  l README
+ 1319  cat README
+ 1320  ll -v *pdb
+ 1321  man ls
+ 1322  ll RE*
+ 1323  cat README
+ 1324  cd analysis/castP/allData/singleChain/sameButNoCavities/
+ 1325  ls
+ 1326  eog
+ 1327  eog .
+ 1328  l results_manual_inspection
+ 1329  l smallPoc.list 
+ 1330  l largePoc.list 
+ 1331  l NpocketsNoCavs 
+ 1332  l list 
+ 1333  cd ..
+ 1334  ls
+ 1335  l results 
+ 1336  l hedear
+ 1337  l results 
+ 1338  l hedear
+ 1339  l tmp
+ 1340  l results 
+ 1341  cd ..
+ 1342  cp -r singleChain /cs/grad/assaff/workspace/peptalk/analysis/castp_pockets/
+ 1343  l 2O02.pdb 
+ 1344  ls 2O0*
+ 1345  l 2O02.pdb 
+ 1346  l tmp
+ 1347  cd ~/www
+ 1348  ls
+ 1349  l index.html~ 
+ 1350  cp index.html~ index.html
+ 1351  rm index.html
+ 1352  ls
+ 1353  cd
+ 1354  cd /cs/grad/assaff/workspace/peptalk/analysis/castp_pockets/singleChain/
+ 1355  ls
+ 1356  ll
+ 1357  findBindingPocket.pl 
+ 1358  head findBindingPocket.pl 
+ 1359  ls
+ 1360  findBindingPocket.pl 2O02
+ 1361  findBindingPocket.pl 2O02.pdb 2O02.poc
+ 1362  grep 2O02 results 
+ 1363  l findBindingPocket.pl 
+ 1364  l rascript 
+ 1365  l findBindingPocket.pl 
+ 1366  l tmp
+ 1367  l findBindingPocket.pl 
+ 1368  l 2O02.poc.seq 
+ 1369  l findBindingPocket.pl 
+ 1370  l tmp
+ 1371  ll tmp
+ 1372  l tmp
+ 1373  l 2O02.pdb 
+ 1374  ll 2O02.*
+ 1375  l results 
+ 1376  cat results | cut -f1,2 | l
+ 1377  cat results | cut -f1,2 -d' ' | l
+ 1378  l results 
+ 1379  cat results | cut -f1,2 -d' ' | grep -v "peptide" | l
+ 1380  cat results | cut -f1,2 -d' ' | grep -v "Peptide is not" | l
+ 1381  cat results | cut -f1,2 -d' ' | grep -v "Peptide" | l
+ 1382  cat results | cut -f1,2 -d' ' | grep -v "Peptide" > ../nir_bp_ranks.txt
+ 1383  cd ..
+ 1384  ls
+ 1385  cd bound/
+ 1386  ls
+ 1387  l 2O02/2O02.pocInfo.sorted 
+ 1388  l 2O02/2O02_info.castp.txt 
+ 1389  pymol ../../sandbox/2o02/{bound,peptide}*pdb 2O02/pocket*.pdb
+ 1390  ls
+ 1391  cd ..
+ 1392  ls
+ 1393  l rascript 
+ 1394  mkdir singleChain_assaf
+ 1395  mv singleChain singleChain_nir
+ 1396  cd singleChain_assaf/
+ 1397  ls
+ 1398  cd /cs/grad/assaff/workspace/peptalk/analysis/castp_robot/
+ 1399  ls
+ 1400  l castp_fetch.py
+ 1401  l castp_submit.py
+ 1402  man less
+ 1403  python castp_submit.py 2o02
+ 1404  python castp_submit.py 2hwq.a.pdb 
+ 1405  vim castp_*py
+ 1406  gedit castp_*py &
+ 1407  ls
+ 1408  ipython
+ 1409  ls
+ 1410  ipython
+ 1411  python castp_submit.py 2hwq.a.pdb 
+ 1412  ipython
+ 1413  python castp_fetch.py 2cch
+ 1414  python castp_fetch.py er15
+ 1415  python castp_fetch.py ER15
+ 1416  ls ~/im*
+ 1417  ls ~/.im*
+ 1418  l ree.html 
+ 1419  l ree2.html 
+ 1420  git add *py
+ 1421  git status
+ 1422  git commit -m "submit script functional, also fetches"
+ 1423  git push
+ 1424  nautilus . &
+ 1425  cp ../castp_pockets/2alf.pdb .
+ 1426  ls uploads/
+ 1427  rm -r uploads/
+ 1428  ls uploads/
+ 1429  git add py
+ 1430  git add *py
+ 1431  git commit -m "fixes"; git push
+ 1432  l req.html 
+ 1433  l res.html 
+ 1434  python MultipartPostHandler.py
+ 1435  python MultipartPostHandler.py req.html 
+ 1436  l req.html 
+ 1437  python MultipartPostHandler.py response3.html 
+ 1438  python MultipartPostHandler.py http://www.cs.huji.ac.il/~assaff/index.html 
+ 1439  python MultipartPostHandler.py "http://www.cs.huji.ac.il/~assaff/index.html" 
+ 1440  python MultipartPostHandler.py "http://www.cs.huji.ac.il/~assaff/index.html" > valid.html
+ 1441  chromium-browser valid.html 
+ 1442  ipython
+ 1443  rm castp_*~ -v
+ 1444  rm castp_*pyc -v
+ 1445  ipython
+ 1446  cd /vol/ek/assa
+ 1447  cd /vol/ek/assaff/
+ 1448  cd /vol/ek/
+ 1449  cd assaff/
+ 1450  cd /vol/ek/assaff/
+ 1451  ls
+ 1452  ls /vol/
+ 1453  cd workspace/peptalk/analysis/
+ 1454  ls
+ 1455  cd castp_robot/
+ 1456  ls
+ 1457  gedit *.py &
+ 1458  ipython
+ 1459  man tee
+ 1460  l pdbToJID.txt 
+ 1461  ls
+ 1462  rm JID*
+ 1463  ls
+ 1464  ll
+ 1465  l pdbToJID.txt 
+ 1466  cd ~/bin
+ 1467  ls
+ 1468  ls -a
+ 1469  cd scripts/
+ 1470  ls
+ 1471  ls -a
+ 1472  cd ../..
+ 1473  ipython
+ 1474  ack markovchain
+ 1475  man ack
+ 1476  ack
+ 1477  ipython
+ 1478  cd /vol/ek/share/scripts/
+ 1479  ls
+ 1480  cd python/
+ 1481  ls
+ 1482  cp /cs/grad/assaff/workspace/peptalk/analysis/castp_robot/*py . -v
+ 1483  chmod a+x castp_submit.py 
+ 1484  ll
+ 1485  cd ..
+ 1486  ll
+ 1487  chmod g+x python
+ 1488  ll
+ 1489  cd python
+ 1490  ls
+ 1491  castp_submit.py ~/2alf.pdb 
+ 1492  ls
+ 1493  rm JIDJZ62016A.tar.gz 
+ 1494  cd
+ 1495  /vol/ek/share/scripts/python/castp_submit.py ~/2alf.pdb 
+ 1496  ls
+ 1497  rm JIDDC75936E.tar.gz 
+ 1498  cd ..
+ 1499  ls JID*
+ 1500  tar zxvf JIDHE48613J.tar.gz 
+ 1501  man tar
+ 1502  tar zxvf --touch JIDHE48613J.tar.gz 
+ 1503  tar --touch -zxvf JIDHE48613J.tar.gz 
+ 1504  tar -zxvf --touch JIDCT30251Y.tar.gz 
+ 1505  tar --touch -zxvf JIDCT30251Y.tar.gz 
+ 1506  chromium-browser ree2.html 
+ 1507  git checkout castp_submit.py
+ 1508  ls
+ 1509  l _mechanize.py 
+ 1510  l _form.py 
+ 1511  chromium-browser ree2.html 
+ 1512  echo $TZ
+ 1513  echo $TIMEZONE
+ 1514  python castp_submit.py 2hwq.a.pdb 2alf.pdb 
+ 1515  ls
+ 1516  rm _*py -v
+ 1517  rm *~ JID*gz
+ 1518  ls
+ 1519  rm *pyc re*html *pdb
+ 1520  ls
+ 1521  rm poster* -rf uploads/ valid.html 
+ 1522  git add *py
+ 1523  git commit -m "now covering complete submit-retrieve cycle, but with ugly time-related hack"; git push
+ 1524  cd ../castp_pockets/singleChain_nir/
+ 1525  ls
+ 1526  ll 2FGR*
+ 1527  man cp
+ 1528  cp -L ????.pdb ../../castp_robot/
+ 1529  cd ../../castp_robot/
+ 1530  ls
+ 1531  python castp_submit.py ????.pdb | tee pdbToJID.txt
+ 1532  ls
+ 1533  rm JID* *~
+ 1534  python castp_submit.py ????.pdb | tee pdbToJID.txt
+ 1535  rm JID* *~
+ 1536  ls
+ 1537  python castp_submit.py ????.pdb | tee pdbToJID.txt
+ 1538  l pdbToJID.txt 
+ 1539  rm pdbToJID.txt 
+ 1540  ls
+ 1541  python castp_submit.py 1U??.pdb | tee pdbToJID.txt
+ 1542  rm *pyc
+ 1543  python castp_submit.py 1U??.pdb | tee pdbToJID.txt
+ 1544  python castp_submit.py 1S??.pdb | tee pdbToJID.txt
+ 1545  l pdbToJID.txt 
+ 1546  python castp_submit.py ????.pdb | tee pdbToJID.txt
+ 1547  ls -a
+ 1548  l .pymail 
+ 1549  vim .pymail 
+ 1550  l .pymail 
+ 1551  python castp_submit.py 1AWR.pdb
+ 1552  ls
+ 1553  git commit -m "uname and psswd prompt via getpass"; git push
+ 1554  git add *py
+ 1555  git commit -m "uname and psswd prompt via getpass"; git push
+ 1556  git rm .pymail
+ 1557  git rm -f .pymail
+ 1558  git commit -m "uname and psswd prompt via getpass"; git push
+ 1559  python castp_submit.py 1AWR.pdb
+ 1560  bg
+ 1561  tar xvzf JIDYR22439X.tar.gz 
+ 1562  tar -xvzf --touch JIDYR22439X.tar.gz 
+ 1563  rm uploads/ -r
+ 1564  tar -xvzf --touch JIDYR22439X.tar.gz 
+ 1565  ls
+ 1566  ll
+ 1567  git checkout castp_*py
+ 1568  ;s
+ 1569  ls
+ 1570  cd ../castp_pockets/
+ 1571  ls
+ 1572  cd singleChain_assaf/
+ 1573  ls
+ 1574  ls ../singleChain_nir/
+ 1575  cp ../singleChain_nir/????.p* .
+ 1576  l ../singleChain_nir/results 
+ 1577  l ../findBindingPocket.pl
+ 1578  l ../rascript 
+ 1579  l ../findBindingPocket.pl
+ 1580  l 2P54.pdb 
+ 1581  l ../findBindingPocket.pl
+ 1582  cd ../singleChain_nir/
+ 1583  l hedear
+ 1584  l results 
+ 1585  l hedear
+ 1586  cat hedear
+ 1587  head results 
+ 1588  cd ../singleChain_
+ 1589  cd ../singleChain_assaf/
+ 1590  ls
+ 1591  rm *pocInfo *poc.seq
+ 1592  ls
+ 1593  cp ../singleChain_nir/*pocInfo .
+ 1594  for id in $(ls | cut -c1-4 | uniq); do mkdir $id; for pocId in $(cat $id.pocInfo | tail -n +2 | awk '{if ($4>0) print $3}'); do cat $id.poc | grep '^ATOM' | grep -e " $pocId  POC" > pocket$pocId.castp.pdb; done; done
+ 1595  ls JID*
+ 1596  tar zxvf JIDHE48613J.tar.gz 
+ 1597  man tar
+ 1598  tar zxvf --touch JIDHE48613J.tar.gz 
+ 1599  tar --touch -zxvf JIDHE48613J.tar.gz 
+ 1600  tar -zxvf --touch JIDCT30251Y.tar.gz 
+ 1601  tar --touch -zxvf JIDCT30251Y.tar.gz 
+ 1602  chromium-browser ree2.html 
+ 1603  git checkout castp_submit.py
+ 1604  ls
+ 1605  l _mechanize.py 
+ 1606  l _form.py 
+ 1607  chromium-browser ree2.html 
+ 1608  echo $TZ
+ 1609  echo $TIMEZONE
+ 1610  python castp_submit.py 2hwq.a.pdb 2alf.pdb 
+ 1611  ls
+ 1612  rm _*py -v
+ 1613  rm *~ JID*gz
+ 1614  ls
+ 1615  rm *pyc re*html *pdb
+ 1616  ls
+ 1617  rm poster* -rf uploads/ valid.html 
+ 1618  git add *py
+ 1619  git commit -m "now covering complete submit-retrieve cycle, but with ugly time-related hack"; git push
+ 1620  cd ../castp_pockets/singleChain_nir/
+ 1621  ls
+ 1622  ll 2FGR*
+ 1623  man cp
+ 1624  cp -L ????.pdb ../../castp_robot/
+ 1625  cd ../../castp_robot/
+ 1626  ls
+ 1627  python castp_submit.py ????.pdb | tee pdbToJID.txt
+ 1628  ls
+ 1629  rm JID* *~
+ 1630  python castp_submit.py ????.pdb | tee pdbToJID.txt
+ 1631  rm JID* *~
+ 1632  ls
+ 1633  python castp_submit.py ????.pdb | tee pdbToJID.txt
+ 1634  l pdbToJID.txt 
+ 1635  rm pdbToJID.txt 
+ 1636  ls
+ 1637  python castp_submit.py 1U??.pdb | tee pdbToJID.txt
+ 1638  rm *pyc
+ 1639  python castp_submit.py 1U??.pdb | tee pdbToJID.txt
+ 1640  python castp_submit.py 1S??.pdb | tee pdbToJID.txt
+ 1641  l pdbToJID.txt 
+ 1642  python castp_submit.py ????.pdb | tee pdbToJID.txt
+ 1643  ls -a
+ 1644  l .pymail 
+ 1645  vim .pymail 
+ 1646  l .pymail 
+ 1647  python castp_submit.py 1AWR.pdb
+ 1648  ls
+ 1649  git commit -m "uname and psswd prompt via getpass"; git push
+ 1650  git add *py
+ 1651  git commit -m "uname and psswd prompt via getpass"; git push
+ 1652  git rm .pymail
+ 1653  git rm -f .pymail
+ 1654  git commit -m "uname and psswd prompt via getpass"; git push
+ 1655  python castp_submit.py 1AWR.pdb
+ 1656  bg
+ 1657  tar xvzf JIDYR22439X.tar.gz 
+ 1658  tar -xvzf --touch JIDYR22439X.tar.gz 
+ 1659  rm uploads/ -r
+ 1660  tar -xvzf --touch JIDYR22439X.tar.gz 
+ 1661  ls
+ 1662  ll
+ 1663  git checkout castp_*py
+ 1664  ;s
+ 1665  ls
+ 1666  cd ../castp_pockets/
+ 1667  ls
+ 1668  cd singleChain_assaf/
+ 1669  ls
+ 1670  ls ../singleChain_nir/
+ 1671  cp ../singleChain_nir/????.p* .
+ 1672  l ../singleChain_nir/results 
+ 1673  l ../findBindingPocket.pl
+ 1674  l ../rascript 
+ 1675  l ../findBindingPocket.pl
+ 1676  l 2P54.pdb 
+ 1677  l ../findBindingPocket.pl
+ 1678  cd ../singleChain_nir/
+ 1679  l hedear
+ 1680  l results 
+ 1681  l hedear
+ 1682  cat hedear
+ 1683  head results 
+ 1684  cd ../singleChain_
+ 1685  cd ../singleChain_assaf/
+ 1686  ls
+ 1687  rm *pocInfo *poc.seq
+ 1688  ls
+ 1689  cp ../singleChain_nir/*pocInfo .
+ 1690  for id in $(ls | cut -c1-4 | uniq); do mkdir $id; for pocId in $(cat $id.pocInfo | tail -n +2 | awk '{if ($4>0) print $3}'); do cat $id.poc | grep '^ATOM' | grep -e " $pocId  POC" > pocket$pocId.castp.pdb; done; done
+ 1691  ls JID*
+ 1692  tar zxvf JIDHE48613J.tar.gz 
+ 1693  man tar
+ 1694  tar zxvf --touch JIDHE48613J.tar.gz 
+ 1695  tar --touch -zxvf JIDHE48613J.tar.gz 
+ 1696  tar -zxvf --touch JIDCT30251Y.tar.gz 
+ 1697  tar --touch -zxvf JIDCT30251Y.tar.gz 
+ 1698  chromium-browser ree2.html 
+ 1699  git checkout castp_submit.py
+ 1700  ls
+ 1701  l _mechanize.py 
+ 1702  l _form.py 
+ 1703  chromium-browser ree2.html 
+ 1704  echo $TZ
+ 1705  echo $TIMEZONE
+ 1706  python castp_submit.py 2hwq.a.pdb 2alf.pdb 
+ 1707  ls
+ 1708  rm _*py -v
+ 1709  rm *~ JID*gz
+ 1710  ls
+ 1711  rm *pyc re*html *pdb
+ 1712  ls
+ 1713  rm poster* -rf uploads/ valid.html 
+ 1714  git add *py
+ 1715  git commit -m "now covering complete submit-retrieve cycle, but with ugly time-related hack"; git push
+ 1716  cd ../castp_pockets/singleChain_nir/
+ 1717  ls
+ 1718  ll 2FGR*
+ 1719  man cp
+ 1720  cp -L ????.pdb ../../castp_robot/
+ 1721  cd ../../castp_robot/
+ 1722  ls
+ 1723  python castp_submit.py ????.pdb | tee pdbToJID.txt
+ 1724  ls
+ 1725  rm JID* *~
+ 1726  python castp_submit.py ????.pdb | tee pdbToJID.txt
+ 1727  rm JID* *~
+ 1728  ls
+ 1729  python castp_submit.py ????.pdb | tee pdbToJID.txt
+ 1730  l pdbToJID.txt 
+ 1731  rm pdbToJID.txt 
+ 1732  ls
+ 1733  python castp_submit.py 1U??.pdb | tee pdbToJID.txt
+ 1734  rm *pyc
+ 1735  python castp_submit.py 1U??.pdb | tee pdbToJID.txt
+ 1736  python castp_submit.py 1S??.pdb | tee pdbToJID.txt
+ 1737  l pdbToJID.txt 
+ 1738  python castp_submit.py ????.pdb | tee pdbToJID.txt
+ 1739  ls -a
+ 1740  l .pymail 
+ 1741  vim .pymail 
+ 1742  l .pymail 
+ 1743  python castp_submit.py 1AWR.pdb
+ 1744  ls
+ 1745  git commit -m "uname and psswd prompt via getpass"; git push
+ 1746  git add *py
+ 1747  git commit -m "uname and psswd prompt via getpass"; git push
+ 1748  git rm .pymail
+ 1749  git rm -f .pymail
+ 1750  git commit -m "uname and psswd prompt via getpass"; git push
+ 1751  python castp_submit.py 1AWR.pdb
+ 1752  bg
+ 1753  tar xvzf JIDYR22439X.tar.gz 
+ 1754  tar -xvzf --touch JIDYR22439X.tar.gz 
+ 1755  rm uploads/ -r
+ 1756  tar -xvzf --touch JIDYR22439X.tar.gz 
+ 1757  ls
+ 1758  ll
+ 1759  git checkout castp_*py
+ 1760  ;s
+ 1761  ls
+ 1762  cd ../castp_pockets/
+ 1763  ls
+ 1764  cd singleChain_assaf/
+ 1765  ls
+ 1766  ls ../singleChain_nir/
+ 1767  cp ../singleChain_nir/????.p* .
+ 1768  l ../singleChain_nir/results 
+ 1769  l ../findBindingPocket.pl
+ 1770  l ../rascript 
+ 1771  l ../findBindingPocket.pl
+ 1772  l 2P54.pdb 
+ 1773  l ../findBindingPocket.pl
+ 1774  cd ../singleChain_nir/
+ 1775  l hedear
+ 1776  l results 
+ 1777  l hedear
+ 1778  cat hedear
+ 1779  head results 
+ 1780  cd ../singleChain_
+ 1781  cd ../singleChain_assaf/
+ 1782  ls
+ 1783  rm *pocInfo *poc.seq
+ 1784  ls
+ 1785  cp ../singleChain_nir/*pocInfo .
+ 1786  for id in $(ls | cut -c1-4 | uniq); do mkdir $id; for pocId in $(cat $id.pocInfo | tail -n +2 | awk '{if ($4>0) print $3}'); do cat $id.poc | grep '^ATOM' | grep -e " $pocId  POC" > pocket$pocId.castp.pdb; done; done
+ 1787  echo $PS1
+ 1788  vim /cs/grad/assaff/.bashrc
+ 1789  exit
+ 1790  source ~/.bashrc
+ 1791  vim /cs/grad/assaff/.bashrc
+ 1792  cd /vol/ek/share/
+ 1793  cd sc
+ 1794  cd scripts/
+ 1795  ls
+ 1796  ls pymol
+ 1797  mv python castp
+ 1798  ls castp/
+ 1799  mv castp/match/ .
+ 1800  mv castp/clean_pdb.py .
+ 1801  ls castp/
+ 1802  vim castp/castp_submit.py 
+ 1803  vim castp/imap_utils.py
+ 1804  vim castp/castp_fetch.py 
+ 1805  castp/castp_submit.py ~/2alf.pdb 
+ 1806  vim castp/castp_s
+ 1807  vim castp/castp_submit.py 
+ 1808  castp/castp_submit.py ~/2alf.pdb 
+ 1809  vim castp/castp_submit.py 
+ 1810  castp/castp_submit.py ~/2alf.pdb 
+ 1811  vim castp/castp_fetch.py 
+ 1812  vim castp/castp_submit.py 
+ 1813  castp/castp_submit.py ~/2alf.pdb 
+ 1814  castp/castp_submit.py ~/2src.pdb 
+ 1815  cd /cs/grad/assaff/workspace/peptalk/analysis/sandbox/
+ 1816  ls
+ 1817  cd castp_benchmark/
+ 1818  ls
+ 1819  cat notebook.py
+ 1820  cd ..
+ 1821  cd 2o02/
+ 1822  ls
+ 1823  cd ../../castp_pockets/singleChain_nir/
+ 1824  l findBindingPocket.pl 
+ 1825  l 1AWR.seq
+ 1826  ls
+ 1827  l 1AWR.poc.seq
+ 1828  cd sameButNoCavities/
+ 1829  ls
+ 1830  l findBindingPocket.pl 
+ 1831  l results_manual_inspection
+ 1832  l results_
+ 1833  l results_raw 
+ 1834  l 1AWR.poc.seq 
+ 1835  l results_raw 
+ 1836  l hedear
+ 1837  l findBindingPocket.pl 
+ 1838  ls JID*
+ 1839  tar zxvf JIDHE48613J.tar.gz 
+ 1840  man tar
+ 1841  tar zxvf --touch JIDHE48613J.tar.gz 
+ 1842  tar --touch -zxvf JIDHE48613J.tar.gz 
+ 1843  tar -zxvf --touch JIDCT30251Y.tar.gz 
+ 1844  tar --touch -zxvf JIDCT30251Y.tar.gz 
+ 1845  chromium-browser ree2.html 
+ 1846  git checkout castp_submit.py
+ 1847  ls
+ 1848  l _mechanize.py 
+ 1849  l _form.py 
+ 1850  chromium-browser ree2.html 
+ 1851  echo $TZ
+ 1852  echo $TIMEZONE
+ 1853  python castp_submit.py 2hwq.a.pdb 2alf.pdb 
+ 1854  ls
+ 1855  rm _*py -v
+ 1856  rm *~ JID*gz
+ 1857  ls
+ 1858  rm *pyc re*html *pdb
+ 1859  ls
+ 1860  rm poster* -rf uploads/ valid.html 
+ 1861  git add *py
+ 1862  git commit -m "now covering complete submit-retrieve cycle, but with ugly time-related hack"; git push
+ 1863  cd ../castp_pockets/singleChain_nir/
+ 1864  ls
+ 1865  ll 2FGR*
+ 1866  man cp
+ 1867  cp -L ????.pdb ../../castp_robot/
+ 1868  cd ../../castp_robot/
+ 1869  ls
+ 1870  python castp_submit.py ????.pdb | tee pdbToJID.txt
+ 1871  ls
+ 1872  rm JID* *~
+ 1873  python castp_submit.py ????.pdb | tee pdbToJID.txt
+ 1874  rm JID* *~
+ 1875  ls
+ 1876  python castp_submit.py ????.pdb | tee pdbToJID.txt
+ 1877  l pdbToJID.txt 
+ 1878  rm pdbToJID.txt 
+ 1879  ls
+ 1880  python castp_submit.py 1U??.pdb | tee pdbToJID.txt
+ 1881  rm *pyc
+ 1882  python castp_submit.py 1U??.pdb | tee pdbToJID.txt
+ 1883  python castp_submit.py 1S??.pdb | tee pdbToJID.txt
+ 1884  l pdbToJID.txt 
+ 1885  python castp_submit.py ????.pdb | tee pdbToJID.txt
+ 1886  ls -a
+ 1887  l .pymail 
+ 1888  vim .pymail 
+ 1889  l .pymail 
+ 1890  python castp_submit.py 1AWR.pdb
+ 1891  ls
+ 1892  git commit -m "uname and psswd prompt via getpass"; git push
+ 1893  git add *py
+ 1894  git commit -m "uname and psswd prompt via getpass"; git push
+ 1895  git rm .pymail
+ 1896  git rm -f .pymail
+ 1897  git commit -m "uname and psswd prompt via getpass"; git push
+ 1898  python castp_submit.py 1AWR.pdb
+ 1899  bg
+ 1900  tar xvzf JIDYR22439X.tar.gz 
+ 1901  tar -xvzf --touch JIDYR22439X.tar.gz 
+ 1902  rm uploads/ -r
+ 1903  tar -xvzf --touch JIDYR22439X.tar.gz 
+ 1904  ls
+ 1905  ll
+ 1906  git checkout castp_*py
+ 1907  ;s
+ 1908  ls
+ 1909  cd ../castp_pockets/
+ 1910  ls
+ 1911  cd singleChain_assaf/
+ 1912  ls
+ 1913  ls ../singleChain_nir/
+ 1914  cp ../singleChain_nir/????.p* .
+ 1915  l ../singleChain_nir/results 
+ 1916  l ../findBindingPocket.pl
+ 1917  l ../rascript 
+ 1918  l ../findBindingPocket.pl
+ 1919  l 2P54.pdb 
+ 1920  l ../findBindingPocket.pl
+ 1921  cd ../singleChain_nir/
+ 1922  l hedear
+ 1923  l results 
+ 1924  l hedear
+ 1925  cat hedear
+ 1926  head results 
+ 1927  cd ../singleChain_
+ 1928  cd ../singleChain_assaf/
+ 1929  ls
+ 1930  rm *pocInfo *poc.seq
+ 1931  ls
+ 1932  cp ../singleChain_nir/*pocInfo .
+ 1933  for id in $(ls | cut -c1-4 | uniq); do mkdir $id; for pocId in $(cat $id.pocInfo | tail -n +2 | awk '{if ($4>0) print $3}'); do cat $id.poc | grep '^ATOM' | grep -e " $pocId  POC" > pocket$pocId.castp.pdb; done; done
+ 1934  ls
+ 1935  rm -rf ???? pocket*pdb
+ 1936  for id in $(ls | cut -c1-4 | uniq); do mkdir $id; for pocId in $(cat $id.pocInfo | tail -n +2 | awk '{if ($4>0) print $3}'); do cat $id.poc | grep '^ATOM' | grep -e " $pocId  POC" > $id/pocket$pocId.castp.pdb; done; done
+ 1937  ls
+ 1938  cd 1AWR
+ 1939  cat ../1AWR.pdb | pdbchain B > peptide.pdb
+ 1940  l peptide.pdb 
+ 1941  python ../../../sandbox/centroid_dist.py peptide.pdb pocket*pdb
+ 1942  t$(printf "%02d" $pocId).c
+ 1943  pymol ../1AWR.pdb peptide.pdb pocket*pdb &
+ 1944  l pocket1.castp.pdb 
+ 1945  l pocket12.castp.pdb 
+ 1946  l pocket7.castp.pdb 
+ 1947  l ../1AWR.poc
+ 1948  ll ../1AWR.poc
+ 1949  l ../1AWR.poc
+ 1950  l ../1AWR.pdb
+ 1951  ll ../1AWR.poc
+ 1952  l ../1AWR.poc
+ 1953  cd ..
+ 1954  ls
+ 1955  l 1W9E.pdb 
+ 1956  l 1W9E.poc
+ 1957  l 1W9E.pdb 
+ 1958  l 1W9E.poc
+ 1959  l 1W9E.pdb 
+ 1960  l 1W9E.pocInfo 
+ 1961  l 1W9E.pdb 
+ 1962  l 1W9E.poc
+ 1963  l 1W9E.pdb 
+ 1964  l 1W9E.poc
+ 1965  cut -c77-78 1W9E.poc | l
+ 1966  cut -c72-78 1W9E.poc | l
+ 1967  cut -c62-72 1W9E.poc | l
+ 1968  cut -c67-72 1W9E.poc | l
+ 1969  cut -c69-72 1W9E.poc | l
+ 1970  rm ???? -r
+ 1971  cp ../singleChain_nir/*poc.seq .
+ 1972  ls
+ 1973  for id in $(ls | cut -c1-4 | uniq); do mkdir $id; for pocId in $(cat $id.pocInfo | tail -n +2 | awk '{if ($4>0) print $3}'); do cat $id.poc.seq | grep '^ATOM' | grep -e " $pocId  POC" > $id/pocket$pocId.castp.pdb; done; done
+ 1974  cd 1AWR
+ 1975  cat *
+ 1976  pymol ../1AWR.pdb pocket*pdb
+ 1977  cat ../1AWR.pdb | pdbchain B > peptide.pdb
+ 1978  python ../../../sandbox/centroid_dist.py peptide.pdb pocket*pdb
+ 1979  pymol ../1AWR.pdb pocket*pdb
+ 1980  cd ..
+ 1981  for id in $(ls | cut -c1-4 | uniq); do cd $id; cat ../$id.pdb | pdbchain B > peptide.pdb; python ../../../sandbox/centroid_dist.py peptide.pdb pocket*pdb | sort -nk 2 > p_dist.txt; closest=$(head -1 p_dist.txt | awk '{print $1;}'); echo -e "$id $closest"; cd ..; done
+ 1982  cd 2D0N/
+ 1983  l ../2D0N.poc
+ 1984  l ../2D0N.poc.seq 
+ 1985  cd workspace/peptalk/analysis/sandbox/
+ 1986  echo $PWD
+ 1987  vim /cs/grad/assaff/.bashrc
+ 1988  source ~/.bashrc
+ 1989  cd castp_benchmark/
+ 1990  ls
+ 1991  cd ..
+ 1992  ls
+ 1993  cd ..
+ 1994  ls
+ 1995  pwd
+ 1996  pawd
+ 1997  id
+ 1998  id -u
+ 1999  id
+ 2000  man id
+ 2001  cd ..
+ 2002  ls
+ 2003  cd ..
+ 2004  ls
+ 2005  cd sandbox/fpocket_param/
+ 2006  ls
+ 2007  history | grep fpocket
+ 2008  fpocket
+ 2009  cd ../../
+ 2010  cd pockets/bound/
+ 2011  ls
+ 2012  cat *_out/*info.txt | l
+ 2013  cat *_out/*info* | l
+ 2014  ls 1CKA_out/
+ 2015  man rsh
+ 2016  ls 1CKA_out/
+ 2017  cat *_out/*info* | l
+ 2018  cat 1C*_out/*info* 
+ 2019  cat 1C*_out/*info*  | l
+ 2020  l 1AWR.pdb 
+ 2021  ls /vol/ek/londonir/CleanPeptiDB/
+ 2022  ls /vol/ek/londonir/CleanPeptiDB/analysis/
+ 2023  ls /vol/ek/londonir/CleanPeptiDB/analysis/castP/allData/
+ 2024  ls /vol/ek/londonir/CleanPeptiDB/analysis/castP/nir_castp/
+ 2025  ls /vol/ek/londonir/CleanPeptiDB/analysis/castP/nir_castp/bound/
+ 2026  ls /vol/ek/londonir/CleanPeptiDB/analysis/castP/allData/singleChain/
+ 2027  ll /vol/ek/londonir/CleanPeptiDB/analysis/castP/allData/singleChain/1AWR.pdb 
+ 2028  basename /vol/ek/londonir/CleanPeptiDB/analysis/castP/allData/singleChain/1AWR.pdb 
+ 2029  pymol 1AWR.pdb
+ 2030  ls
+ 2031  for id in $(cut -c1-4 list.txt ); do done
+ 2032  l list.txt 
+ 2033  for id in $(cut -c1-4 list.txt ); do cat /vol/ek/londonir/CleanPeptiDB/analysis/castP/allData/singleChain/$id.pdb | pdbchain B > $id"_out"/peptide.pdb; done
+ 2034  ls */peptide.pdb
+ 2035  for dir in *_out; do cd $dir; python ../../../sandbox/centroid_dist.py peptide.pdb pockets/pocket*vert.pqr > p_dist.txt; cd ..; done
+ 2036  cd 1AWR_out/
+ 2037  ls
+ 2038  l pockets/pocket0_vert.pqr 
+ 2039  l p_dist.txt 
+ 2040  cd ..
+ 2041  for dir in *_out; do cd $dir; grep "Total SASA" *_info.txt | awk '{print $4}' > sasa.fpocket.txt' cd ..; done
+
+done
+'; done
+ 2042  for dir in *_out; do cd $dir; grep "Total SASA" *_info.txt | awk '{print $4}' > sasa.fpocket.txt; cd ..; done
+ 2043  l 1AWR_out/sasa.fpocket.txt
+ 2044  l 2P54_out/sasa.fpocket.txt
+ 2045  l 2CCH_out/sasa.fpocket.txt
+ 2046  l 2DS8_out/sasa.fpocket.txt
+ 2047  l 2R7G_out/sasa.fpocket.txt
+ 2048  pymol 2R7G.pdb 2R7G_out/pockets/pocket*pqr 2R7G_out/peptide.pdb &
+ 2049  cd../..
+ 2050  ls
+ 2051  cd ..
+ 2052  ls
+ 2053  cd castp_pockets/bound/
+ 2054  ls
+ 2055  for id in ????; do cat /vol/ek/londonir/CleanPeptiDB/analysis/castP/allData/singleChain/$id.pdb | pdbchain B > $id/peptide.pdb; done
+ 2056  for id in ????; do cd $id; python ../../../sandbox/centroid_dist.py peptide.pdb pocket*_atm.castp.pdb > p_dist.txt; cd ..; done
+ 2057  cd ..
+ 2058  cd 1AWR/
+ 2059  ls
+ 2060  l p_dist.txt 
+ 2061  cat ../*/p_dist.txt
+ 2062  cd ..
+ 2063  ll -s */pocket*pdb
+ 2064  cd 1AWR/
+ 2065  ll -s pocket*pdb
+ 2066  l pocket1_atm.castp.pdb 
+ 2067  l pocket0_atm.castp.pdb 
+ 2068  l 1AWR.poc
+ 2069  l 1AWR.poc.1 
+ 2070  l 1AWR.poc.2 
+ 2071  ls ../????/????.poc.?
+ 2072  ls ../????/????.poc.2
+ 2073  l 1AWR.poc.2 
+ 2074  l 1AWR_info.castp.txt 
+ 2075  history | grep '_atm.castp.pdb' | grep for
+ 2076  cd ..
+ 2077  ls
+ 2078  ls ..
+ 2079  cd 1AWR/
+ 2080  rm pocket*pdb
+ 2081  l 1AWR_info.castp.txt 
+ 2082  man grep
+ 2083  sed -e :a -e '/^Pocket/N; s/\\\n//; ta' 1AWR_info.castp.txt 
+ 2084  grep -A1 -e '^Pocket' 1AWR_info.castp.txt 
+ 2085  sed -n '/Pocket/,+1 p' 1AWR_info.castp.txt 
+ 2086  sed -n '/Pocket/,+1' 1AWR_info.castp.txt 
+ 2087  sed -n '/Pocket/,+1 p' 1AWR_info.castp.txt 
+ 2088  sed -n '/Pocket/,+1 $' 1AWR_info.castp.txt 
+ 2089  man sed
+ 2090  sed -n '/Pocket/,+1 n' 1AWR_info.castp.txt 
+ 2091  sed -n '/Pocket/,+1 p' 1AWR_info.castp.txt 
+ 2092  man sed
+ 2093  cat 1AWR_info.castp.txt |  sed -e :a -e '/\\$/N; s/\\\n//; ta'
+ 2094  cat 1AWR_info.castp.txt |  sed '$!N;s/\n/ /'
+ 2095  sed -n '/Pocket/,+1 p' 1AWR_info.castp.txt | sed '$!N;s/\n/ /'
+ 2096  sed -n '/Pocket/,+1 p' 1AWR_info.castp.txt | sed '$!N;s/\n/ /' | cut -d ':' -f1,3
+ 2097  sed -n '/Pocket/,+1 p' 1AWR_info.castp.txt | sed '$!N;s/\n/ /' | cut -d ':' -f1,3 | awk '{print $2,$3}'
+ 2098  sed -n '/Pocket/,+1 p' 1AWR_info.castp.txt | sed '$!N;s/\n/ /' | cut -d ':' -f1,3 | awk '{print $2,$3}' | sed 's/://'
+ 2099  cd ..
+ 2100  ls
+ 2101  for id in 1A??; do cd $id; sed -n '/Pocket/,+1 p' $id"_info.castp.txt" | sed '$!N;s/\n/ /' | cut -d ':' -f1,3 | awk '{printf "%d %d\n",$2,$3}' | sed 's/://'; done
+ 2102  for id in 1D??; do cd $id; sed -n '/Pocket/,+1 p' $id"_info.castp.txt" | sed '$!N;s/\n/ /' | cut -d ':' -f1,3 | awk '{printf "%d %d\n",$2,$3}' | sed 's/://'; done
+ 2103  for id in 1R??; do cd $id; sed -n '/Pocket/,+1 p' $id"_info.castp.txt" | sed '$!N;s/\n/ /' | cut -d ':' -f1,3 | awk '{printf "%d %d\n",$2,$3}' | sed 's/://'; done
+ 2104  for id in 1C??; do cd $id; sed -n '/Pocket/,+1 p' $id"_info.castp.txt" | sed '$!N;s/\n/ /' | cut -d ':' -f1,3 | awk '{printf "%d %d\n",$2,$3}' | sed 's/://'; done
+ 2105  cd ..
+ 2106  for id in 1C??; do cd $id; sed -n '/Pocket/,+1 p' $id"_info.castp.txt" | sed '$!N;s/\n/ /' | cut -d ':' -f1,3 | awk '{printf "%d %d\n",$2,$3}' | sed 's/://'; done
+ 2107  for id in 1C??; do cd $id; sed -n '/Pocket/,+1 p' $id"_info.castp.txt" | sed '$!N;s/\n/ /' | cut -d ':' -f1,3 | awk '{printf "%d %d\n",$2,$3}' | sed 's/://'; cd ..; done
+ 2108  for id in ????; do cd $id; sed -n '/Pocket/,+1 p' $id"_info.castp.txt" | sed '$!N;s/\n/ /' | cut -d ':' -f1,3 | awk '{printf "%d %d\n",$2,$3}' | sed 's/://'> rank.id.txt; cd ..; done
+ 2109  rm 2CCH -r
+ 2110  for id in 1A??; do cd $id; IFS=$'\n'; for rankId in $(cat rank.id.txt); do read rank pocId <<< $rankId; cat $id.poc | grep '^ATOM' | grep -e " $pocId  POC" > pocket$rank_atm.castp.pdb; done; unset IFS; cd ..; done
+ 2111  l 1AWR/pocket.castp.pdb 
+ 2112  for id in 1A??; do cd $id; IFS=$'\n'; for rankId in $(cat rank.id.txt); do read rank pocId <<< $rankId; echo $rank $pockId; cat $id.poc | grep '^ATOM' | grep -e " $pocId  POC" > pocket$rank_atm.castp.pdb; done; unset IFS; cd ..; done
+ 2113  for id in 1A??; do cd $id; IFS=$'\n'; for rankId in $(cat rank.id.txt); do read rank pocId <<< $rankId; echo "$rank dude $pockId"; cat $id.poc | grep '^ATOM' | grep -e " $pocId  POC" > pocket$rank_atm.castp.pdb; done; unset IFS; cd ..; done
+ 2114  for id in 1A??; do cd $id; for rankId in $(cat rank.id.txt); do read rank pocId <<< $rankId; echo "$rank dude $pockId"; cat $id.poc | grep '^ATOM' | grep -e " $pocId  POC" > pocket$rank_atm.castp.pdb; done; cd ..; done
+ 2115  for id in 1A??; do cd $id; for rankId in $(cat rank.id.txt); do set IFS=$' '; read rank pocId <<< $rankId; echo "$rank dude $pockId"; unset IFS; cat $id.poc | grep '^ATOM' | grep -e " $pocId  POC" > pocket$rank_atm.castp.pdb; done; cd ..; done
+ 2116  for id in 1A??; do cd $id; set IFS=$'\n'; for rankId in $(cat rank.id.txt); do set IFS=$' '; read rank pocId <<< $rankId; echo "$rank dude $pockId"; unset IFS; cat $id.poc | grep '^ATOM' | grep -e " $pocId  POC" > pocket$rank_atm.castp.pdb; done; cd ..; done
+ 2117  for id in ????; do cd $id; sed -n '/Pocket/,+1 p' $id"_info.castp.txt" | sed '$!N;s/\n/ /' | cut -d ':' -f1,3 | awk '{printf "%d,%d\n",$2,$3}' | sed 's/://'> rank.id.txt; cd ..; done
+ 2118  for id in 1A??; do cd $id; for rankId in $(cat rank.id.txt); do set IFS=$','; read rank pocId <<< $rankId; echo "$rank dude $pockId"; unset IFS; cat $id.poc | grep '^ATOM' | grep -e " $pocId  POC" > pocket$rank_atm.castp.pdb; done; cd ..; done
+ 2119  man read
+ 2120  man <<<
+ 2121  for id in 1A??; do cd $id; for rankId in $(cat rank.id.txt); do set IFS=$','; for rank pocId in $rankId; echo "$rank dude $pockId"; unset IFS; cat $id.poc | grep '^ATOM' | grep -e " $pocId  POC" > pocket$rank_atm.castp.pdb; done; cd ..; done
+ 2122  for id in 1A??; do cd $id; for rankId in $(cat rank.id.txt); do set IFS=$','; for i in $rankId; echo "${i[0]} dude ${i[1]}"; unset IFS; cat $id.poc | grep '^ATOM' | grep -e " $pocId  POC" > pocket$rank_atm.castp.pdb; done; cd ..; done
+ 2123  for id in 1A??; do cd $id; for rankId in $(cat rank.id.txt); do set IFS=$','; for i in $rankId; do echo "${i[0]} dude ${i[1]}"; unset IFS; cat $id.poc | grep '^ATOM' | grep -e " $pocId  POC" > pocket$rank_atm.castp.pdb; done; done; cd ..; done
+ 2124  for id in 1A??; do cd $id; for rankId in $(cat rank.id.txt); do set IFS=$'\,'; for i in $rankId; do echo "${i[0]} dude ${i[1]}"; unset IFS; cat $id.poc | grep '^ATOM' | grep -e " $pocId  POC" > pocket$rank_atm.castp.pdb; done; done; cd ..; done
+ 2125  for id in 1A??; do cd $id; for rankId in $(cat rank.id.txt); do set IFS=','; for i in $rankId; do echo "${i[0]} dude ${i[1]}"; unset IFS; cat $id.poc | grep '^ATOM' | grep -e " $pocId  POC" > pocket$rank_atm.castp.pdb; done; done; cd ..; done
+ 2126  for id in 1A??; do cd $id; for rankId in $(cat rank.id.txt); do rank=${rankId%%,*}; pocId=${rankId##*,}; echo $rank $pockId; cat $id.poc | grep '^ATOM' | grep -e " $pocId  POC" > pocket$rank_atm.castp.pdb; done; done; cd ..; done
+ 2127  for id in 1A??; do cd $id; for rankId in $(cat rank.id.txt); do rank=${rankId%%,*}; pocId=${rankId##*,}; echo $rank $pockId; cat $id.poc | grep '^ATOM' | grep -e " $pocId  POC" > pocket$rank_atm.castp.pdb; done; cd ..; done
+ 2128  ls 1AWR/
+ 2129  rm 1AWR/pocket.castp.pdb 
+ 2130  for id in 1A??; do cd $id; for rankId in $(cat rank.id.txt); do rank=${rankId%%,*}; pocId=${rankId##*,}; echo $rank $pocId; cat $id.poc | grep '^ATOM' | grep -e " $pocId  POC" > pocket$rank"_atm.castp.pdb"; done; cd ..; done
+ 2131  l 1AWR/pocket0_atm.castp.pdb 
+ 2132  l 1AWR/pocket1_atm.castp.pdb 
+ 2133  l 1AWR/pocket7_atm.castp.pdb 
+ 2134  for id in ????; do cd $id; for rankId in $(cat rank.id.txt); do rank=${rankId%%,*}; pocId=${rankId##*,}; cat $id.poc | grep '^ATOM' | grep -e " $pocId  POC" > pocket$rank"_atm.castp.pdb"; done; cd ..; done
+ 2135  history > prep.20110627.history

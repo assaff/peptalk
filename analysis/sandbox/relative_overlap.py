@@ -23,13 +23,7 @@ def pocket_overlap(peptide_filename, pocket_filename):
     cdist_matrix = cdist(pocket_coords, peptide_coords)
     mean_ri = cdist_matrix.min(axis=1).mean()
     assert (mean_ri > 0)
-    return (1+0.1*pocket_coords.shape[0]) * np.power(mean_ri ,-1)
-
-def centroid_dist(filename1, filename2):
-    centroid1 = centroid(get_coords(filename1))
-    centroid2 = centroid(get_coords(filename2))
-    return np.linalg.norm(centroid1-centroid2)
-
+    return (1 + 0.1*pocket_coords.shape[0]) * np.power(mean_ri ,-1)
 
 
 if __name__=='__main__':

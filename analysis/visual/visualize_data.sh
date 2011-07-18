@@ -17,24 +17,29 @@ view_pdb() {
     get_pdb $1 | less
 }
 
-function getRemarks {
+getRemarks() {
 
 local pdbid=$1
 getPdbLocal $pdbid | grep -e '^REMARK'
 }
 
-function visualize_data_pair {
+pymol_chain_str() {
+    local tmp=$(echo $1 | sed 's/\(.\)/\1+/g')
+    echo ${tmp%+}
+}
+
+visualize_data_pair() {
 
     local bound_pdb=$(lowercase $1)
     local bc=$(lowercase $2)
-    local bc_obj=$(echo $bc | sed 's/\(.\)/\1+/g'); bc_obj=${bc_obj%+}
+    local bc_obj=$(pymol_chain_str $bc)
 
     local unbound_pdb=$(lowercase $4)
     local ubc=$(lowercase $5)
-    local ubc_obj=$(echo $ubc | sed 's/\(.\)/\1+/g'); ubc_obj=${ubc_obj%+}
+    local ubc_obj=$(pymol_chain_str $ubc)
 
     local pc=$(lowercase $3)
-    local pc_obj=$(echo $pc | sed 's/\(.\)/\1+/g'); pc_obj=${pc_obj%+}
+    local pc_obj=$(pymol_chain_str $pc)
     
     local bound_pdb_obj=$bound_pdb"_bound"
     local unbound_pdb_obj=$unbound_pdb"_unbound"
@@ -153,7 +158,7 @@ visualize_pockets() {
     echo quit >> $clean_pml
     
     pymol -cq $clean_pml > /dev/null
-
+return
     #describePockets $unbound_chain_obj.pdb $peptide_obj.pdb
 #echo "commenting" << COMMENT1
 local analysis_name="$unbound_pdb_obj"
@@ -260,7 +265,7 @@ echo "#$headerline" > $all_poc_datafile
 cat dpout_fpocket*p.txt | grep -v '^pdb' >> $all_poc_datafile
 }
 
-function visualize_table {
+visualize_table() {
     
     local tablefile="peptidb_table.csv~"
     wget $PEPTIDB_TABLE_URL -O $tablefile > /dev/null

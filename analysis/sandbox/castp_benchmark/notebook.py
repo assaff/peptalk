@@ -1,12 +1,12 @@
-#!/vol/ek/assaff/python/bin/python
+#!/vol/ek/assaff/env/pep1/bin/python
 
 import sys
 sys.path.append('~/workspace/peptalk/analysis/castp_robot')
 
 import pymol
-from prody import compare, proteins, measure, parsePDB, writePDB
-from castp_submit import *
-from castp_fetch import *
+from prody import proteins, writePDB, parsePDB
+#from castp_submit import *
+#from castp_fetch import *
 
 EMAIL_ADDRESS='assaf.faragy@mail.huji.ac.il'
 LOCAL_PDB_DIR='/vol/ek/share/pdbmirror'
@@ -35,19 +35,23 @@ def clean_pair(bound_pdb, bound_chains, peptide_chains, unbound_pdb, unbound_cha
     #unbound_pdb_gzfile = fetchPDB(unbound_pdb)
 
     bound_receptor = parsePDB(bound_pdb, chain=bound_chains+peptide_chains)
-    unbound_receptor = parsePDB(unbound_pdb, chain=unbound_chains)
     
+    writePDB('b.pdb',bound_receptor.select('protein and chain %s' % ' '.join(list(bound_chains))))
+    writePDB('p.pdb',bound_receptor.select('protein and chain %s' % peptide_chains))
     #3
+    unbound_receptor = parsePDB(unbound_pdb, chain=unbound_chains)
     alignment_results = compare.matchAlign(unbound_receptor, bound_receptor)
     unbound_receptor = alignment_results[0]
     
-    writePDB('unb.pdb',unbound_receptor.select('protein')
-    writePDB('b.pdb',bound_receptor.select('protein and chain %s' % ' '.join(list(bound_chains))))
-    writePDB('p.pdb',bound_receptor.select('protein and chain %s' % peptide_chains))
-    
+#    writePDB('unb.pdb',unbound_receptor.select('protein')
+#    return "f"
 
-def castp_submit(
+def peptide_contact(peptide, pocket):
+    contacts = pocket.select('within 4 of ', peptide=peptide)
+    return contacts
+
+def castp_analyze(receptor_pdbfile):
     # 4
-    submit_pdbfile(
+    submit_pdbfile(receptor_pdbfile, EMAIL_ADDRESS)
 
-process_pair(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4],sys.argv[5],)
+# process_pair(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4],sys.argv[5],)

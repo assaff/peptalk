@@ -4,7 +4,7 @@ import sys, os
 import numpy as np
 
 def get_coords(filename):
-    fd = open(filename, 'r')
+    fd = open(filename)
     pdb_array = [line.split() for line in fd.readlines() if line.startswith('ATOM')]
     fd.close()
     coords = np.array([ map(float, atom[6:9]) for atom in pdb_array])
@@ -22,4 +22,4 @@ def centroid_dist(filename1, filename2):
 
 if __name__=='__main__':
     for pocket_filename in sys.argv[2:]:
-        print pocket_filename[6:8], centroid_dist(sys.argv[1], pocket_filename)
+        print '%s %.3f %s' % (pocket_filename[6:8], centroid_dist(sys.argv[1], pocket_filename), pocket_filename)

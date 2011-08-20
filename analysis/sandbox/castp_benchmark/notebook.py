@@ -4,7 +4,7 @@ import sys
 sys.path.append('~/workspace/peptalk/analysis/castp_robot')
 
 import pymol
-from prody import proteins, writePDB, parsePDB
+from prody import compare, proteins, measure, parsePDB, writePDB, fetchPDB
 #from castp_submit import *
 #from castp_fetch import *
 
@@ -31,9 +31,6 @@ Process:
 '''
 def clean_pair(bound_pdb, bound_chains, peptide_chains, unbound_pdb, unbound_chains):
     # 2
-    #bound_pdb_gzfile = fetchPDB(bound_pdb)
-    #unbound_pdb_gzfile = fetchPDB(unbound_pdb)
-
     bound_receptor = parsePDB(bound_pdb, chain=bound_chains+peptide_chains)
     
     writePDB('b.pdb',bound_receptor.select('protein and chain %s' % ' '.join(list(bound_chains))))
@@ -42,16 +39,14 @@ def clean_pair(bound_pdb, bound_chains, peptide_chains, unbound_pdb, unbound_cha
     unbound_receptor = parsePDB(unbound_pdb, chain=unbound_chains)
     alignment_results = compare.matchAlign(unbound_receptor, bound_receptor)
     unbound_receptor = alignment_results[0]
-    
-#    writePDB('unb.pdb',unbound_receptor.select('protein')
-#    return "f"
+    writePDB('unb.pdb',unbound_receptor.select('protein'))
+    writePDB('b.pdb',bound_receptor.select('protein and chain %s' % ' '.join(list(bound_chains))))
+    writePDB('p.pdb',bound_receptor.select('protein and chain %s' % peptide_chains))
+    writePDB('up.pdb',unbound_receptor.select('protein') | bound_receptor.select('protein and chain %s' % peptide_chains))
+    return 0 
 
-def peptide_contact(peptide, pocket):
-    contacts = pocket.select('within 4 of ', peptide=peptide)
-    return contacts
-
-def castp_analyze(receptor_pdbfile):
+def castp_submit():
     # 4
-    submit_pdbfile(receptor_pdbfile, EMAIL_ADDRESS)
+    pass #submit_pdbfile(
 
-# process_pair(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4],sys.argv[5],)
+clean_pair(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4],sys.argv[5],)

@@ -1,0 +1,4 @@
+TYR 9
+GLU 18
+TRP 37
+PHE 53

@@ -1,0 +1,4 @@
+TYR 27
+ASN 30
+TYR 40
+ASN 47

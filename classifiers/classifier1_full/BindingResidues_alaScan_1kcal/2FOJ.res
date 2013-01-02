@@ -1,0 +1,4 @@
+PHE 50
+ASP 96
+TRP 97
+PHE 99

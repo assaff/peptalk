@@ -1,0 +1,5 @@
+TYR 7
+TYR 9
+TRP 36
+ASN 51
+PHE 52

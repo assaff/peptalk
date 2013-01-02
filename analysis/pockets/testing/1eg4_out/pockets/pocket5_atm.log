@@ -1,0 +1,59 @@
+ ACCALL - Accessibility calculations
+ MAX RESIDUES     8000
+ MAX ATOMS/RES     100
+ PDB FILE INPUT pocket5_atm.pdb
+ PROBE SIZE       1.40
+ Z-SLICE WIDTH    .050
+ VDW RADII FILE /vol/ek/share/bin/naccess2.1.1/vdw.radii
+ EXCL HETATOMS
+ EXCL HYDROGENS
+ EXCL WATERS
+ READVDW  32 residues input
+ NON-STANDARD atom.|  CD| in residue> ARG A 286 
+ GUESSED vdw of   CD in ARG A 286  =  1.80
+ NON-STANDARD atom.|  CB| in residue> GLU A 212 
+ GUESSED vdw of   CB in GLU A 212  =  1.80
+ NON-STANDARD atom.|  NE| in residue> ARG A 286 
+ GUESSED vdw of   NE in ARG A 286  =  1.80
+ NON-STANDARD atom.|   O| in residue> MET A 285 
+ GUESSED vdw of    O in MET A 285  =  1.80
+ NON-STANDARD atom.|  CB| in residue> PRO A 296 
+ GUESSED vdw of   CB in PRO A 296  =  1.80
+ NON-STANDARD atom.|  OH| in residue> TYR A 215 
+ GUESSED vdw of   OH in TYR A 215  =  1.80
+ NON-STANDARD atom.|  CG| in residue> PRO A 296 
+ GUESSED vdw of   CG in PRO A 296  =  1.80
+ NON-STANDARD atom.|   O| in residue> ARG A 286 
+ GUESSED vdw of    O in ARG A 286  =  1.80
+ NON-STANDARD atom.|  CG| in residue> GLU A 288 
+ GUESSED vdw of   CG in GLU A 288  =  1.80
+ NON-STANDARD atom.|  CA| in residue> ARG A 286 
+ GUESSED vdw of   CA in ARG A 286  =  1.80
+ NON-STANDARD atom.|   C| in residue> MET A 285 
+ GUESSED vdw of    C in MET A 285  =  1.80
+ NON-STANDARD atom.|  CB| in residue> MET A 285 
+ GUESSED vdw of   CB in MET A 285  =  1.80
+ NON-STANDARD atom.|   N| in residue> ARG A 286 
+ GUESSED vdw of    N in ARG A 286  =  1.80
+ NON-STANDARD atom.|   O| in residue> LEU A 282 
+ GUESSED vdw of    O in LEU A 282  =  1.80
+ NON-STANDARD atom.|  CB| in residue> ARG A 286 
+ GUESSED vdw of   CB in ARG A 286  =  1.80
+ NON-STANDARD atom.|  CB| in residue> LEU A 282 
+ GUESSED vdw of   CB in LEU A 282  =  1.80
+ NON-STANDARD atom.|   N| in residue> GLU A 212 
+ GUESSED vdw of    N in GLU A 212  =  1.80
+ NON-STANDARD atom.|  CA| in residue> GLU A 212 
+ GUESSED vdw of   CA in GLU A 212  =  1.80
+ NON-STANDARD atom.|  CB| in residue> HIS A 210 
+ GUESSED vdw of   CB in HIS A 210  =  1.80
+ NON-STANDARD atom.|   N| in residue> LEU A 211 
+ GUESSED vdw of    N in LEU A 211  =  1.80
+ ADDED VDW RADII
+ CHAINS       1
+ RESIDUES    24
+ ATOMS       28
+ SOLVA: PROGRAM ENDS CORRECTLY
+ CALCULATED ATOMIC ACCESSIBILITES
+ RELATIVE (STANDARD) ACCESSIBILITIES READFOR  20 AMINO ACIDS
+ SUMMED ACCESSIBILITIES OVER RESIDUES

@@ -1,0 +1,53 @@
+ ACCALL - Accessibility calculations
+ MAX RESIDUES     8000
+ MAX ATOMS/RES     100
+ PDB FILE INPUT pocket3_atm.pdb
+ PROBE SIZE       1.40
+ Z-SLICE WIDTH    .050
+ VDW RADII FILE /vol/ek/share/bin/naccess2.1.1/vdw.radii
+ EXCL HETATOMS
+ EXCL HYDROGENS
+ EXCL WATERS
+ READVDW  32 residues input
+ NON-STANDARD atom.|  CB| in residue> ALA A 302 
+ GUESSED vdw of   CB in ALA A 302  =  1.80
+ NON-STANDARD atom.|  CG| in residue> LEU A 298 
+ GUESSED vdw of   CG in LEU A 298  =  1.80
+ NON-STANDARD atom.| CD1| in residue> LEU A 298 
+ ASSUMED vdw of  CD1 in LEU A 298  =  1.87 (same as ILE)
+ NON-STANDARD atom.|   O| in residue> LEU A 298 
+ GUESSED vdw of    O in LEU A 298  =  1.80
+ NON-STANDARD atom.|  NZ| in residue> LYS A 214 
+ GUESSED vdw of   NZ in LYS A 214  =  1.80
+ NON-STANDARD atom.|   O| in residue> CYS A 207 
+ GUESSED vdw of    O in CYS A 207  =  1.80
+ NON-STANDARD atom.|  CA| in residue> HIS A 299 
+ GUESSED vdw of   CA in HIS A 299  =  1.80
+ NON-STANDARD atom.|  CG| in residue> HIS A 299 
+ GUESSED vdw of   CG in HIS A 299  =  1.80
+ NON-STANDARD atom.| ND1| in residue> HIS A 299 
+ ASSUMED vdw of  ND1 in HIS A 299  =  1.65 (same as HIS)
+ NON-STANDARD atom.|   O| in residue> HIS A 299 
+ GUESSED vdw of    O in HIS A 299  =  1.80
+ NON-STANDARD atom.|   O| in residue> LYS A 208 
+ GUESSED vdw of    O in LYS A 208  =  1.80
+ NON-STANDARD atom.|  CA| in residue> LYS A 208 
+ GUESSED vdw of   CA in LYS A 208  =  1.80
+ NON-STANDARD atom.|  CB| in residue> LYS A 208 
+ GUESSED vdw of   CB in LYS A 208  =  1.80
+ NON-STANDARD atom.|  CB| in residue> ASP A 122 
+ GUESSED vdw of   CB in ASP A 122  =  1.80
+ NON-STANDARD atom.|  CA| in residue> ASP A 122 
+ GUESSED vdw of   CA in ASP A 122  =  1.80
+ NON-STANDARD atom.|   O| in residue> ASP A 122 
+ GUESSED vdw of    O in ASP A 122  =  1.80
+ NON-STANDARD atom.|   O| in residue> ALA A 209 
+ GUESSED vdw of    O in ALA A 209  =  1.80
+ ADDED VDW RADII
+ CHAINS       1
+ RESIDUES    13
+ ATOMS       24
+ SOLVA: PROGRAM ENDS CORRECTLY
+ CALCULATED ATOMIC ACCESSIBILITES
+ RELATIVE (STANDARD) ACCESSIBILITIES READFOR  20 AMINO ACIDS
+ SUMMED ACCESSIBILITIES OVER RESIDUES

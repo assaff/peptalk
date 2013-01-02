@@ -1,0 +1,535 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>CASTp calculation</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<STYLE>
+
+ .h1 { font-family: Arial, sans-serif; font-size:16pt; font-weight: bold; }
+ .h2 { font-family: Arial, sans-serif; font-size:12pt; }
+ .h3 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size:10pt; }
+ 
+BODY {
+	FONT-FAMILY: arial,sans-serif
+}
+DIV {
+	FONT-FAMILY: arial,sans-serif
+}
+.p {
+	FONT-FAMILY: arial,sans-serif
+}
+A {
+	FONT-FAMILY: arial,sans-serif
+}
+DIV {
+	COLOR: #000
+}
+.f {
+	COLOR: #6f6f6f
+}
+.fl:link {
+	COLOR: #6f6f6f
+}
+A:link {
+	COLOR: #00c
+}
+.w {
+	COLOR: #00c
+}
+A.w:link {
+	COLOR: #00c
+}
+.w A:link {
+	COLOR: #00c
+}
+A:visited {
+	COLOR: #551a8b
+}
+.fl:visited {
+	COLOR: #551a8b
+}
+A:active {
+	COLOR: #f00
+}
+.fl:active {
+	COLOR: #f00
+}
+.t A:link {
+	COLOR: #000
+}
+.t A:active {
+	COLOR: #000
+}
+.t A:visited {
+	COLOR: #000
+}
+.t {
+	COLOR: #000
+}
+.t {
+	BACKGROUND-COLOR: #e5ecf9
+}
+.k {
+	BACKGROUND-COLOR: #36c
+}
+.j {
+	WIDTH: 34em
+}
+.h {
+	COLOR: #36c
+}
+.i {
+	COLOR: #a90a08
+}
+.i:link {
+	COLOR: #a90a08
+}
+.a {
+	COLOR: #008000
+}
+.a:link {
+	COLOR: #008000
+}
+.z {
+	DISPLAY: none
+}
+DIV.n {
+	MARGIN-TOP: 1ex
+}
+.n A {
+	FONT-SIZE: 10pt; COLOR: #000
+}
+.n .i {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt
+}
+.q A:visited {
+	COLOR: #00c
+}
+.q A:link {
+	COLOR: #00c
+}
+.q A:active {
+	COLOR: #00c
+}
+.q {
+	COLOR: #00c
+}
+.b {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #00c
+}
+.ch {
+	CURSOR: hand
+}
+.e {
+	MARGIN-TOP: 0.75em; MARGIN-BOTTOM: 0.75em
+}
+.g {
+	MARGIN-TOP: 1em; MARGIN-BOTTOM: 1em
+}
+.popup { color: #0000FF; cursor: hand; }
+.whitelink { color: #FFFFFF; cursor: hand; }
+</STYLE>
+
+<body leftmargin="0" topmargin="0">
+
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr height="80">
+    <td >
+    <body leftmargin=0 topmargin=0>
+<table width="100%" height="80" border="0" cellspacing="0" cellpadding="0">
+  <tr height="80">
+  
+    <td width="201" height="80" background="images/castp21.jpg" nowrap>
+    </td>
+    
+    <td height="80" valign="top">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr height="59">
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="650" ><img src="images/castp22-1.jpg" width="650" height="59"></td>
+                <td width="100%" background="images/castp22abg.gif">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        
+        <tr height="21">
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="51"><img src="images/castp22-2.jpg" width="51" height="21"></td>
+                <td width="100%" background="images/castp22bg.gif"> 
+                     <table width="700" border="0" cellspacing="0" cellpadding="0">
+                    <tr align="center">
+                      <td width="120"><font size="2" face="Arial, Helvetica, sans-serif"><strong>
+                      <a target="_blank" style="text-decoration:none; color:#ABB89A" href="index.php">Home</a></strong></font></td>
+                      <td width="120"><font size="2" face="Arial, Helvetica, sans-serif"><strong>
+                      <a target="_blank" style="text-decoration:none; color:#ABB89A" href="http://sts.bioengr.uic.edu/pevosoar/">pevoSoar</a></strong></font></td>
+                      <td width="120"><font size="2" face="Arial, Helvetica, sans-serif"><strong>
+                      <a target="_blank" style="text-decoration:none; color:#ABB89A" href="http://gila.bioengr.uic.edu/lab">Liang Lab</a></strong></font></td>
+                      <td width="120"><font size="2" face="Arial, Helvetica, sans-serif"><strong>
+                      <a target="_blank" style="text-decoration:none; color:#ABB89A" href="http://www.uic.edu/depts/bioe">Bioengineering</a></strong></font></td>
+                      <td width="120"><font size="2" face="Arial, Helvetica, sans-serif"><strong>
+                      <a target="_blank" style="text-decoration:none; color:#ABB89A" href="http://www.uic.edu">UIC</a></strong></font></td>
+                    </tr>
+                  </table>
+               </td>
+              </tr>
+            </table>
+           </td>
+        </tr>
+        
+      </table>
+      </td>
+      
+  </tr>
+</table>
+
+
+
+    </td>
+  </tr>
+  
+  <tr valign="top" >
+    <td valign="top">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top">
+          <td width="201" bgcolor="#004080">
+          <table width="201" height="800" border="0" cellpadding="0" cellspacing="0" bgcolor="#004080">
+  <tr>
+    <td height="58"><img src="images/castp2d.jpg" width="201" height="58"></td>
+  </tr>
+  <tr>
+   <td valign='top'>
+    <table width=201 bgcolor="#004080"'>
+     <tr>
+      <td>
+     <font color="#FFFFFF" size="1" face="Arial, Helvetica, sans-serif">
+       Please submit bug reports to <a href='mailto:zhaojielingzjl@yahoo.com?subject=CASTp Help' style="text-decoration:none; color:#ffff00">Jieling Zhao</a>.
+     </font>
+      </td>
+     </tr>
+     <tr>
+      <td valign='top'>
+       <table>
+              <tr>
+                <td width="34" height="34" align="center" valign="middle"><img src="images/ball1.jpg" width="19" heigh
+t="19"></td>
+                <td width="84%"><font color="#FFFF00" size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>
+                <a href="index.php" style="text-decoration:none; color:#ffff00">
+                Search </a></strong></font></td>
+              </tr>
+              <tr> 
+                <td width="34" height="34" align="center" valign="middle"><img src="images/ball1.jpg" width="19" heigh
+t="19"></td>
+                <td><font color="#FFFF00" size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong> 
+                <a href="calculation.php" style="text-decoration:none; color:#ffff00">
+                  Calculation Request</a>
+                  </strong></font></td>
+              </tr>
+              <tr>
+                <td width="34" height="34" align="center" valign="middle"><img src="images/ball1.jpg" width="19" heigh
+t="19"></td>
+                <td><font color="#FFFF00" size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong> 
+                  CASTp Information</strong></font></td>
+              </tr>
+              <tr>
+                <td height="125">&nbsp;</td>
+                <td><table width="100%" height="115" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td width="17%" align="center" valign="middle"><img src="images/ball2.jpg" width="15" height="15
+"></td>
+                      <td width="83%"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">
+                      <a href="about.php" style="text-decoration:none; color:#ffffff">
+                      About CASTp</a></font></td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="middle"><img src="images/ball2.jpg" width="15" height="15"></td>
+                      <td><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">
+                      <a href="background.php" style="text-decoration:none; color:#ffffff">
+                      Background </a>
+                        </font></td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="middle"><img src="images/ball2.jpg" width="15" height="15"></td>
+                      <td><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">
+                      <a href="inout.php" style="text-decoration:none; color:#ffffff">
+                      Input &amp; output</a></font></td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="middle"><img src="images/ball2.jpg" width="15" height="15"></td>
+                      <td><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">
+                      <a href="examples.php" style="text-decoration:none; color:#ffffff">
+                      Examples 
+                        </font></td>
+                    </tr>
+                    <tr> 
+                      <td align="center" valign="middle"><img src="images/ball2.jpg" width="15" height="15"></td>
+                      <td><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">
+                      <a href="publications.php" style="text-decoration:none; color:#ffffff">
+                      Publications
+                      </font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr> 
+                <td width="34" height="34" align="center" valign="middle"><img src="images/ball1.jpg" width="19" heigh
+t="19"></td>
+                <td><font color="#FFFF00" size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>
+                <a href="pymol.php" style="text-decoration:none; color:#ffff00"> 
+                  PyMOL plugin</a></strong></font></td>
+              </tr>
+              <tr>
+                <td height="14" align="center" valign="middle">&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+
+       </table>
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+</table>
+          </td>
+          
+          <td valign="top">
+          
+          <!-- ==========================  content area ==========================-->
+	
+        	
+<table width='720' bgcolor='#cbdced' border='0' cellspacing='5' cellpadding='5'>
+  <tr>
+    <td align='center' valign='middle' >
+    
+    <table width='99%' height='98%'  bgcolor='#ffffff' cellpadding=10>
+        <tr valign='top'> 
+          <td > <font size='2' color=red>Results have been sent to assaff@cs.huji.ac.il
+
+          </font>
+          </td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+
+
+
+<table width="720" cellpadding="0" cellspacing="0" border="0">
+  <tr > 
+    <td height="10" bgcolor="#cbdced"></td>
+    <td height="10" bgcolor="#cbdced"></td>
+  </tr>
+  
+  <tr> 
+    <td width="280" align="center" bgcolor="#cbdced"><strong><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">
+    Calculation request</font></strong></td>
+    <td width="440" align="center" bgcolor="#cbdced"><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><strong>
+    Options</strong></font></td>
+  </tr>
+  <tr > 
+    <td valign="top" bgcolor="#cbdced"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="10">&nbsp;</td>
+          <td valign="top"><table width=100% border="0" align="left" cellpadding="0" cellspacing="0">
+              <form method="post" action="advcal.php" enctype="multipart/form-data">
+                <tr>
+                  <input type='hidden' name='MAX_FILE_SIZE' value=60000000> 
+                  <td width=100% height="169" align="left"><font size="2" face="Arial, Helvetica, sans-serif"> 
+                    You can either: </font> <br><br>
+                      <li><font size="2" face="Arial, Helvetica, sans-serif"> 
+                        Enter the 4 letter PDB id of the structure. </font> 
+                      <li><font size="2" face="Arial, Helvetica, sans-serif"> 
+                        Upload a molecular structure in standard PDB format. 
+                        </font> 
+                    
+                    <font size="1" face="Arial, Helvetica, sans-serif"><br><br>No multiple 
+                    NMR structures please, and all nonpolar H atoms will be ignored<br>
+                    </font>
+                    <hr noshade>
+                    </td>
+                </tr>
+               <tr> 
+                  <td width=100% height="38" align="left" > <font size="2" face="Arial, Helvetica, sans-serif">
+                    Type the 4 letter pdb ID: <br>
+                    <input type="text" name="pdbid" size="20" maxlength="4"  >
+                    <br> <input name="submit_pdb" type="submit" value="Submit">
+                    </font>
+                  </td>
+                </tr>
+                 <tr> 
+                  <td height="30" align="center"><hr noshade></td>
+                </tr>
+                <tr> 
+                  <td width=100% height="54" align="left" >
+                    <font size="2" face="Arial, Helvetica, sans-serif"> 
+                    Select a local file in PDB format to upload: </font> 
+                    <input type="file" size="20" name="userfile"> <br>
+                    <input name="submit_file" type="submit" value="Submit">
+                  </td>
+                </tr>
+                <tr> 
+                  <td height="30" align="center"><hr noshade></td>
+                </tr>
+             
+            </table></td>
+        </tr>
+      </table>
+      
+    </td>
+    <td align="center" valign="top" bgcolor="#cbdced"> 
+    <table width="98%" height="368" border="0" cellpadding="4" cellspacing="4">
+        <tr> 
+          <td height="347" valign="top"><table height="197" border="0" cellpadding="2" cellspacing="2" bgcolor="#FFFFFF">
+              <tr> 
+                <td> <input type="radio" name="visual" value="jmol"  > 
+                  <font size="2" ><b>Jmol</b></font><font size="2"> - <a href="http://jmol.sourceforge.net/" target="_blank">
+                  Jmol</a> is a free, open source molecule viewer. It is cross-platform, running on Windows, Mac OS X, and 
+                  Linux/Unix systems. It only requires that you have a Java enabled browser. 
+                  </font> </td>
+              </tr>
+              
+              <tr> 
+                <td> <input type="radio" name="visual" value="chime"  >
+                  <font size="2" ><b>Chime Plugin</b></font><font size="2"> - Chime 
+                  is a broswer plugin that runs under Windows, MacOS, and IRIX. 
+                  This is the best choice for Windows 95/98/NT/2000/XP or IRIX. 
+                  Linux user can also use this plugin by running a virtual windows environment(
+                  <a href="http://www.vmware.com/vcommunity/" target="_blank">VMware</a>). 
+                  Chime is available from <a href="http://www.mdli.com/chemscape/chime/" target="_blank">MDL's 
+                  website</a>. </font> </td>
+              </tr>
+              <tr> 
+                <td><input type="radio" name="visual" value="emailonly" CHECKED>
+                  <font face="Arial, Helvetica, sans-serif"><b><font size="2">E-mail 
+                  only</font></b><font size="2"> - This option allows you to get 
+                  results back via email only. No visualizations will be provided. 
+                  </font></font> </td>
+              </tr>
+              <tr> 
+                <td><hr noshade> <font size="2" face="Arial, Helvetica, sans-serif">&nbsp;&nbsp;E-mail 
+                  results to:</font> <font face="Arial, Helvetica, sans-serif"> 
+                  <input type="text" name="email" value='assaff@cs.huji.ac.il'>
+                
+               
+ <br><font size=1><i><center>If an e-mail address is entered, the results will be sent to the given address along with the option chosen above.<i></center></font>
+                 </font></td>
+              </tr>
+            </table>
+            <table width="100%" height="5" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td height="5" align="center"></td>
+              </tr>
+            </table>
+            <table height="83" border="0" cellpadding="2" cellspacing="2" bgcolor="#FFFFFF">
+              <tr> 
+                <td height="79"><p><font size="2" face="Arial, Helvetica, sans-serif"> 
+                    <strong>Probe radius</strong>: 
+                                        <input type="text" name="pradius2" size="3" value='1.4' >
+                    Angstroms. <br> </font> <font size="2" face="Arial, Helvetica, sans-serif">The 
+                    default value used by CASTp server is 1.4 Angstroms. </font> 
+                    <font size="2" face="Arial, Helvetica, sans-serif">Only values 
+                    between 0.0 and 10.0 will be accepted.</font><font size="2" face="Arial, Helvetica, sans-serif"> 
+                    </font></p>
+                  </td>
+              </tr>
+            </table>
+            <table width="100%" height="5" border="0" cellpadding="0" cellspacing="0">
+              <tr> 
+                <td height="5" align="center"></td>
+              </tr>
+            </table>
+             <table border="0" cellpadding="2" cellspacing="2" bgcolor="#FFFFFF">
+              <tr> 
+                <td height="51"><font size="2" face="Arial, Helvetica, sans-serif"> 
+                    <input type="checkbox" name="hetopt" >
+                    <font size="2" face="Arial, Helvetica, sans-serif">Check here 
+                    if you want the option to include HET groups in the calculation and/or run calculations on any combination of chains from a  multiple chain structure</font></font>
+                  </td>
+              </tr>
+            </table>
+           
+</td>
+</form>
+        </tr>
+      </table> 
+      
+    </td>
+  </tr>
+  
+  <tr> 
+    <td height="6"></td>
+    <td height="6"></td>
+  </tr>
+  
+</table>
+
+
+
+
+
+<table width="720" bgcolor="#cbdced" border="0" cellspacing="5" cellpadding="5">
+  <tr>
+    <td align="center" valign="middle" >
+    
+    <table width="99%" height="98%"  bgcolor="#ffffff" cellpadding=10>
+        <tr> 
+          <td class=h1><font size="2" face="Arial, Helvetica, sans-serif"><strong>Reference</strong></font></td>
+        <tr> 
+        <tr>
+          <td class=normal> <font size="2">Please cite the following if you publish 
+            or present results using castP analysis:</font> <br>
+            <i><font size="2" face="Arial, Helvetica, sans-serif">Joe Dundas, Zheng Ouyang, Jeffery Tseng, Andrew Binkowski, Yaron Turpaz, and Jie Liang 
+            2006. CASTp: computed atlas of surface topography of proteins with structural and topographical mapping of functionally annotated resiudes.Nucleic Acid Research, 
+            34:W116-W118.</font> </i> <br>
+          </td>
+        </tr>
+        <tr> 
+          <td class=h1><font size="2" face="Arial, Helvetica, sans-serif"><strong>Additional background reading</strong></font></td>
+        <tr>        
+        <tr>
+          <td class=normal>
+            <i><font size="2" face="Arial, Helvetica, sans-serif">Jie Liang, Herbert Edelsbrunner, and Clare Woodward. 
+            1998. Anatomy of Protein Pockets and Cavities: Measurement of Binding 
+            Site Geometry and Implications for Ligand Design. Protein Sciene, 
+            7:1884-1897.</font> </i> <br>
+            <br>
+            <font size="2" face="Arial, Helvetica, sans-serif">&copy 2005 All rights reserved.</font> 
+          </td>
+        </tr>
+        <tr> 
+          <td class=h1><font size="2" face="Arial, Helvetica, sans-serif"><strong>Acknowledgement</strong></font></td>
+        <tr> 
+          <td class=normal> <font size="2" face="Arial, Helvetica, sans-serif">The CASTp 
+            server is partially funded by support from National Science Foundation 
+            (DBI0078270, CAREER DBI-0133856)</font><br> <img src="images/NSF.gif"> 
+          </td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+        	
+          <!-- ==========================  content area ==========================-->
+          
+          
+          </td>
+          
+        </tr>
+     </table>
+      
+      </td>
+  </tr>
+  
+  
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  
+</table>
+</body>
+</html>
+

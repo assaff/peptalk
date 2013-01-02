@@ -1,0 +1,61 @@
+ ACCALL - Accessibility calculations
+ MAX RESIDUES     8000
+ MAX ATOMS/RES     100
+ PDB FILE INPUT pocket0_atm.pdb
+ PROBE SIZE       1.40
+ Z-SLICE WIDTH    .050
+ VDW RADII FILE /vol/ek/share/bin/naccess2.1.1/vdw.radii
+ EXCL HETATOMS
+ EXCL HYDROGENS
+ EXCL WATERS
+ READVDW  32 residues input
+ NON-STANDARD atom.|   O| in residue> VAL A 222 
+ GUESSED vdw of    O in VAL A 222  =  1.80
+ NON-STANDARD atom.|   O| in residue> ALA A 223 
+ GUESSED vdw of    O in ALA A 223  =  1.80
+ NON-STANDARD atom.|  NE| in residue> ARG A 233 
+ GUESSED vdw of   NE in ARG A 233  =  1.80
+ NON-STANDARD atom.|   O| in residue> GLN A 221 
+ GUESSED vdw of    O in GLN A 221  =  1.80
+ NON-STANDARD atom.|   O| in residue> LYS A 220 
+ GUESSED vdw of    O in LYS A 220  =  1.80
+ NON-STANDARD atom.|  CG| in residue> LYS A 220 
+ GUESSED vdw of   CG in LYS A 220  =  1.80
+ NON-STANDARD atom.|  NZ| in residue> LYS A 220 
+ GUESSED vdw of   NZ in LYS A 220  =  1.80
+ NON-STANDARD atom.|  CA| in residue> GLN A 221 
+ GUESSED vdw of   CA in GLN A 221  =  1.80
+ NON-STANDARD atom.|  NZ| in residue> LYS A 139 
+ GUESSED vdw of   NZ in LYS A 139  =  1.80
+ NON-STANDARD atom.|   O| in residue> LYS A 139 
+ GUESSED vdw of    O in LYS A 139  =  1.80
+ NON-STANDARD atom.|  CB| in residue> SER A 225 
+ GUESSED vdw of   CB in SER A 225  =  1.80
+ NON-STANDARD atom.|  CD| in residue> LYS A 139 
+ GUESSED vdw of   CD in LYS A 139  =  1.80
+ NON-STANDARD atom.|   N| in residue> SER A 225 
+ GUESSED vdw of    N in SER A 225  =  1.80
+ NON-STANDARD atom.|   N| in residue> ASN A 141 
+ GUESSED vdw of    N in ASN A 141  =  1.80
+ NON-STANDARD atom.|  CG| in residue> ASP A 142 
+ GUESSED vdw of   CG in ASP A 142  =  1.80
+ NON-STANDARD atom.|  CB| in residue> ASP A 142 
+ GUESSED vdw of   CB in ASP A 142  =  1.80
+ NON-STANDARD atom.|  CB| in residue> ASN A 141 
+ GUESSED vdw of   CB in ASN A 141  =  1.80
+ NON-STANDARD atom.|   N| in residue> ASP A 142 
+ GUESSED vdw of    N in ASP A 142  =  1.80
+ NON-STANDARD atom.|  CZ| in residue> ARG A 233 
+ GUESSED vdw of   CZ in ARG A 233  =  1.80
+ NON-STANDARD atom.|  CG| in residue> ARG A 233 
+ GUESSED vdw of   CG in ARG A 233  =  1.80
+ NON-STANDARD atom.|  CA| in residue> SER A 225 
+ GUESSED vdw of   CA in SER A 225  =  1.80
+ ADDED VDW RADII
+ CHAINS       1
+ RESIDUES    26
+ ATOMS       32
+ SOLVA: PROGRAM ENDS CORRECTLY
+ CALCULATED ATOMIC ACCESSIBILITES
+ RELATIVE (STANDARD) ACCESSIBILITIES READFOR  20 AMINO ACIDS
+ SUMMED ACCESSIBILITIES OVER RESIDUES

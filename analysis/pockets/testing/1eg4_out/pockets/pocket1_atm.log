@@ -1,0 +1,63 @@
+ ACCALL - Accessibility calculations
+ MAX RESIDUES     8000
+ MAX ATOMS/RES     100
+ PDB FILE INPUT pocket1_atm.pdb
+ PROBE SIZE       1.40
+ Z-SLICE WIDTH    .050
+ VDW RADII FILE /vol/ek/share/bin/naccess2.1.1/vdw.radii
+ EXCL HETATOMS
+ EXCL HYDROGENS
+ EXCL WATERS
+ READVDW  32 residues input
+ NON-STANDARD atom.|  CB| in residue> SER A 125 
+ GUESSED vdw of   CB in SER A 125  =  1.80
+ NON-STANDARD atom.|  CB| in residue> SER A 127 
+ GUESSED vdw of   CB in SER A 127  =  1.80
+ NON-STANDARD atom.|   N| in residue> SER A 127 
+ GUESSED vdw of    N in SER A 127  =  1.80
+ NON-STANDARD atom.|  CB| in residue> LEU A 126 
+ GUESSED vdw of   CB in LEU A 126  =  1.80
+ NON-STANDARD atom.|   N| in residue> LEU A 126 
+ GUESSED vdw of    N in LEU A 126  =  1.80
+ NON-STANDARD atom.|  CA| in residue> ALA A 209 
+ GUESSED vdw of   CA in ALA A 209  =  1.80
+ NON-STANDARD atom.|   N| in residue> HIS A 210 
+ GUESSED vdw of    N in HIS A 210  =  1.80
+ NON-STANDARD atom.|  CB| in residue> ALA A 209 
+ GUESSED vdw of   CB in ALA A 209  =  1.80
+ NON-STANDARD atom.|  CA| in residue> SER A 127 
+ GUESSED vdw of   CA in SER A 127  =  1.80
+ NON-STANDARD atom.|  CG| in residue> LEU A 126 
+ GUESSED vdw of   CG in LEU A 126  =  1.80
+ NON-STANDARD atom.|  CB| in residue> ASP A 213 
+ GUESSED vdw of   CB in ASP A 213  =  1.80
+ NON-STANDARD atom.|  CA| in residue> SER A 125 
+ GUESSED vdw of   CA in SER A 125  =  1.80
+ NON-STANDARD atom.|   N| in residue> ALA A 209 
+ GUESSED vdw of    N in ALA A 209  =  1.80
+ NON-STANDARD atom.|  CG| in residue> LYS A 208 
+ GUESSED vdw of   CG in LYS A 208  =  1.80
+ NON-STANDARD atom.|  CE| in residue> LYS A 208 
+ GUESSED vdw of   CE in LYS A 208  =  1.80
+ NON-STANDARD atom.|  NZ| in residue> LYS A 208 
+ GUESSED vdw of   NZ in LYS A 208  =  1.80
+ NON-STANDARD atom.|   O| in residue> LYS A 208 
+ GUESSED vdw of    O in LYS A 208  =  1.80
+ NON-STANDARD atom.|  CD| in residue> LYS A 208 
+ GUESSED vdw of   CD in LYS A 208  =  1.80
+ NON-STANDARD atom.|   C| in residue> LYS A 208 
+ GUESSED vdw of    C in LYS A 208  =  1.80
+ NON-STANDARD atom.|   O| in residue> ALA A 209 
+ GUESSED vdw of    O in ALA A 209  =  1.80
+ NON-STANDARD atom.|  CA| in residue> HIS A 210 
+ GUESSED vdw of   CA in HIS A 210  =  1.80
+ NON-STANDARD atom.| CD2| in residue> HIS A 210 
+ ASSUMED vdw of  CD2 in HIS A 210  =  1.76 (same as HIS)
+ ADDED VDW RADII
+ CHAINS       1
+ RESIDUES    22
+ ATOMS       28
+ SOLVA: PROGRAM ENDS CORRECTLY
+ CALCULATED ATOMIC ACCESSIBILITES
+ RELATIVE (STANDARD) ACCESSIBILITIES READFOR  20 AMINO ACIDS
+ SUMMED ACCESSIBILITIES OVER RESIDUES

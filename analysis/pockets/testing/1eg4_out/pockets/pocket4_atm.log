@@ -1,0 +1,55 @@
+ ACCALL - Accessibility calculations
+ MAX RESIDUES     8000
+ MAX ATOMS/RES     100
+ PDB FILE INPUT pocket4_atm.pdb
+ PROBE SIZE       1.40
+ Z-SLICE WIDTH    .050
+ VDW RADII FILE /vol/ek/share/bin/naccess2.1.1/vdw.radii
+ EXCL HETATOMS
+ EXCL HYDROGENS
+ EXCL WATERS
+ READVDW  32 residues input
+ NON-STANDARD atom.|  CE| in residue> LYS A  87 
+ GUESSED vdw of   CE in LYS A  87  =  1.80
+ NON-STANDARD atom.|  CG| in residue> LYS A  87 
+ GUESSED vdw of   CG in LYS A  87  =  1.80
+ NON-STANDARD atom.|   O| in residue> GLN A  58 
+ GUESSED vdw of    O in GLN A  58  =  1.80
+ NON-STANDARD atom.| OE1| in residue> GLN A  58 
+ ASSUMED vdw of  OE1 in GLN A  58  =  1.40 (same as GLU)
+ NON-STANDARD atom.|  CD| in residue> PRO A  60 
+ GUESSED vdw of   CD in PRO A  60  =  1.80
+ NON-STANDARD atom.|   O| in residue> SER A  56 
+ GUESSED vdw of    O in SER A  56  =  1.80
+ NON-STANDARD atom.|  CA| in residue> VAL A  57 
+ GUESSED vdw of   CA in VAL A  57  =  1.80
+ NON-STANDARD atom.|   N| in residue> GLN A  58 
+ GUESSED vdw of    N in GLN A  58  =  1.80
+ NON-STANDARD atom.|  CB| in residue> PRO A  86 
+ GUESSED vdw of   CB in PRO A  86  =  1.80
+ NON-STANDARD atom.|   N| in residue> LYS A  87 
+ GUESSED vdw of    N in LYS A  87  =  1.80
+ NON-STANDARD atom.|  CG| in residue> PRO A  86 
+ GUESSED vdw of   CG in PRO A  86  =  1.80
+ NON-STANDARD atom.|  NZ| in residue> LYS A  87 
+ GUESSED vdw of   NZ in LYS A  87  =  1.80
+ NON-STANDARD atom.|   O| in residue> PRO A  86 
+ GUESSED vdw of    O in PRO A  86  =  1.80
+ NON-STANDARD atom.|   C| in residue> PRO A  86 
+ GUESSED vdw of    C in PRO A  86  =  1.80
+ NON-STANDARD atom.|  CD| in residue> GLU A  90 
+ GUESSED vdw of   CD in GLU A  90  =  1.80
+ NON-STANDARD atom.|  CB| in residue> GLU A  90 
+ GUESSED vdw of   CB in GLU A  90  =  1.80
+ NON-STANDARD atom.|  CA| in residue> LYS A  87 
+ GUESSED vdw of   CA in LYS A  87  =  1.80
+ NON-STANDARD atom.|  CG| in residue> GLN A  58 
+ GUESSED vdw of   CG in GLN A  58  =  1.80
+ ADDED VDW RADII
+ CHAINS       1
+ RESIDUES    20
+ ATOMS       25
+ SOLVA: PROGRAM ENDS CORRECTLY
+ CALCULATED ATOMIC ACCESSIBILITES
+ RELATIVE (STANDARD) ACCESSIBILITIES READFOR  20 AMINO ACIDS
+ SUMMED ACCESSIBILITIES OVER RESIDUES

@@ -117,9 +117,23 @@ class PeptalkResult:
     
     def cluster_ddg_recall(self, cluster_resnums):
         total_ddg = sum(self.ddgs.values())
+        ddg_residues_recovered = (
+                    set(self.ddgs.keys()) &
+                    set(list(self.positive_surface_residues.ca.getResnums()))
+                    )
+
+        #if len(ddg_residues_recovered)==0:
+            #print ddg_residues_recovered
+            #print self.ddgs.keys(),
+            #print self.positive_surface_residues.ca.getResnums()
+
+        all_clusters_ddg = sum(self.ddgs[i] for i in ddg_residues_recovered)
         cluster_ddg = sum(self.ddgs[i] for i in cluster_resnums)
+        if cluster_ddg == 0:
+            return 0, 0
         #for j in cl[i]: print j, ddgs[j]
-        return float(cluster_ddg) / float(total_ddg)
+        return (float(cluster_ddg) / float(total_ddg), 
+                float(cluster_ddg) / float(all_clusters_ddg))
     
     def cluster_recall_precision(self, cluster_resnums, binders_resnums):
         binders_resnums = set(binders_resnums)

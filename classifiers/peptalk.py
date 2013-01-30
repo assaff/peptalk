@@ -2,6 +2,8 @@ from sklearn.cluster import Ward, DBSCAN
 from sklearn.neighbors import kneighbors_graph
 
 import prody
+prody.confProDy(verbosity='error')
+
 import numpy as np
 from matplotlib import pylab as pl
 
@@ -114,27 +116,41 @@ class PeptalkResult:
         residue_numbers = self.positive_surface_residues.ca.getResnums()
         clusters = sorted([residue_numbers[residue_labels==i] for i in set(residue_labels) if i!=-1], key=len, reverse=True)
         return dict(enumerate(clusters))
-    
-    def cluster_ddg_recall(self, cluster_resnums):
-        total_ddg = sum(self.ddgs.values())
+
+    @property
+    def total_ddg(self,):
+        return float(sum(self.ddgs.values()))
+
+    @property
+    def recovered_ddg(self,):
         ddg_residues_recovered = (
                     set(self.ddgs.keys()) &
                     set(list(self.positive_surface_residues.ca.getResnums()))
                     )
+        return sum(self.ddgs[i] for i in ddg_residues_recovered)
 
+    
+    def cluster_ddg(self, cluster_resnums):
         #if len(ddg_residues_recovered)==0:
             #print ddg_residues_recovered
             #print self.ddgs.keys(),
             #print self.positive_surface_residues.ca.getResnums()
 
-        all_clusters_ddg = sum(self.ddgs[i] for i in ddg_residues_recovered)
         cluster_ddg = sum(self.ddgs[i] for i in cluster_resnums)
-        if cluster_ddg == 0:
+        return cluster_ddg
+
+    def cluster_ddg_recall(self, cluster_resnums):
+        if self.recovered_ddg == 0:
             return 0, 0
-        #for j in cl[i]: print j, ddgs[j]
-        return (float(cluster_ddg) / float(total_ddg), 
-                float(cluster_ddg) / float(all_clusters_ddg))
+
+        cluster_ddg = self.cluster_ddg(cluster_resnums)
     
+        cluster_ddg_frac = float(cluster_ddg) / float(self.total_ddg)
+        recovered_ddg_frac = float(self.recovered_ddg) / float(self.total_ddg)
+
+        return (cluster_ddg_frac, 
+                cluster_ddg_frac / recovered_ddg_frac)
+
     def cluster_recall_precision(self, cluster_resnums, binders_resnums):
         binders_resnums = set(binders_resnums)
         cluster_resnums = set(cluster_resnums)

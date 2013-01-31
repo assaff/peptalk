@@ -126,9 +126,9 @@ visualize_pockets() {
     local unbound_lig="ligands_"$unbound_pdb
     
     
-    local pockets_dir="$pair_id"
-    mkdir -p $pockets_dir
-    cd $pockets_dir
+    #local pockets_dir="$pair_id"
+    #mkdir -p $pockets_dir
+    #cd $pockets_dir
     
     # pockets analysis
     midid_b=${bound_pdb:1:2}
@@ -136,28 +136,23 @@ visualize_pockets() {
     midid_ub=${unbound_pdb:1:2}
     zcat $LOCAL_PDB_DIR/$midid_ub/pdb$unbound_pdb.ent.gz > $unbound_pdb.pdb    
     
-    local clean_pml="clean.pml"
-    echo $clean_pml
-    rm -f $clean_pml
-    touch $clean_pml
-
-    #getPdbLocal $bound_pdb > $bound_pdb.pdb
-    echo load $bound_pdb.pdb, $bound_pdb_obj >> $clean_pml
-    echo select $bound_chain_obj, polymer and $bound_pdb_obj and chain $bc_obj >> $clean_pml
-    echo select $peptide_obj, polymer and $bound_pdb_obj and chain $pc_obj >> $clean_pml
-
-    #getPdbLocal $unbound_pdb > $unbound_pdb.pdb
-    echo load $unbound_pdb.pdb, $unbound_pdb_obj >> $clean_pml
-    echo select $unbound_chain_obj, polymer and $unbound_pdb_obj and chain $ubc_obj >> $clean_pml
-    echo align polymer and name ca and $bound_chain_obj, polymer and name ca and $unbound_chain_obj, quiet=0, object=\"aln_bound_unbound\", reset=1 >> $clean_pml
-    echo deselect >> $clean_pml
+    local clean_pml="
     
-    echo save $unbound_chain_obj.pdb, $unbound_chain_obj >> $clean_pml
-    echo save $bound_chain_obj.pdb, $bound_chain_obj >> $clean_pml
-    echo save $peptide_obj.pdb, $peptide_obj >> $clean_pml
-    echo quit >> $clean_pml
+    load $bound_pdb.pdb, $bound_pdb_obj 
+    select $bound_chain_obj, polymer and $bound_pdb_obj and chain $bc_obj 
+    select $peptide_obj, polymer and $bound_pdb_obj and chain $pc_obj 
+
+    load $unbound_pdb.pdb, $unbound_pdb_obj 
+    select $unbound_chain_obj, polymer and $unbound_pdb_obj and chain $ubc_obj 
+    align polymer and name ca and $bound_chain_obj, polymer and name ca and $unbound_chain_obj, quiet=0, object=\"aln_bound_unbound\", reset=1 
+    deselect 
     
-    pymol -cq $clean_pml > /dev/null
+    save $unbound_chain_obj.pdb, $unbound_chain_obj 
+    save $bound_chain_obj.pdb, $bound_chain_obj 
+    save $peptide_obj.pdb, $peptide_obj 
+    quit 
+    "
+    pymol -cd "$clean_pml" > /dev/null
 return
     #describePockets $unbound_chain_obj.pdb $peptide_obj.pdb
 #echo "commenting" << COMMENT1

@@ -1,4 +1,4 @@
-#!/vol/ek/assaff/python/bin/python
+#!/vol/ek/assaff/env/pep1/bin/python
 
 import sys
 sys.path.append('~/workspace/peptalk/analysis/castp_robot')
@@ -32,8 +32,11 @@ Process:
 def clean_pair(bound_pdb, bound_chains, peptide_chains, unbound_pdb, unbound_chains):
     # 2
     bound_receptor = parsePDB(bound_pdb, chain=bound_chains+peptide_chains)
-    unbound_receptor = parsePDB(unbound_pdb, chain=unbound_chains)
+    
+    writePDB('b.pdb',bound_receptor.select('protein and chain %s' % ' '.join(list(bound_chains))))
+    writePDB('p.pdb',bound_receptor.select('protein and chain %s' % peptide_chains))
     #3
+    unbound_receptor = parsePDB(unbound_pdb, chain=unbound_chains)
     alignment_results = compare.matchAlign(unbound_receptor, bound_receptor)
     unbound_receptor = alignment_results[0]
     writePDB('unb.pdb',unbound_receptor.select('protein'))

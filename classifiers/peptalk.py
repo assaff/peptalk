@@ -1,5 +1,6 @@
 from sklearn.cluster import Ward, DBSCAN
 from sklearn.neighbors import kneighbors_graph
+from sklearn import svm, cross_validation, preprocessing, datasets
 
 import prody
 prody.confProDy(verbosity='error')
@@ -8,6 +9,14 @@ import numpy as np
 from matplotlib import pylab as pl
 
 from collections import defaultdict
+
+class PeptalkSVMClassifier (svm.SVC):
+    """
+    Defines a SVM classifier.
+    """
+
+    def __init__(self, ):
+        pass
 
 class PeptalkResult:
     

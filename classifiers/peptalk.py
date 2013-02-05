@@ -126,6 +126,16 @@ class PeptalkResult:
         clusters = sorted([residue_numbers[residue_labels==i] for i in set(residue_labels) if i!=-1], key=len, reverse=True)
         return dict(enumerate(clusters))
 
+    class Cluster(object):
+
+        def __init__(self, receptor_result, resnums):
+            self.parent = receptor_result
+            self.resnums = resnums
+
+        @property
+        def ddgs(self,):
+            return { rn: self.parent.ddgs[rn] for rn in self.resnums}
+
     @property
     def total_ddg(self,):
         return float(sum(self.ddgs.values()))

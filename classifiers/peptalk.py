@@ -27,7 +27,7 @@ class PeptalkResult:
     
     WARD_N_CLUSTERS = 5
     
-    def __init__(self, pdbid, preds=None):
+    def __init__(self, pdbid, preds=None, confidence=None):
         self.pdbid = pdbid.upper()
         
         self.pdb_filename = self.PDB_FILENAME_PATTERN.format(pdb=self.pdbid)
@@ -51,6 +51,12 @@ class PeptalkResult:
             assert len(preds) == len(self.surface_resnums)
             pos_sur_resnums = self.surface_resnums[preds != 0]
             self.positive_surface_residues = self.surface_residues.select('resnum %s' % ' '.join(map(str, pos_sur_resnums)))
+
+            if confidence is not None:
+                assert len(confidence) == len(self.surface_resnums)
+                self.confidence = defaultdict(float)
+                for resnum, c in zip(self.surface_resnums, confidence):
+                    self.confidence[resnum] = c
             
         #print 'Surface residues:', self.surface_residues.getHierView().numResidues()
         #print 'Positive residues:', self.positive_surface_residues.getHierView().numResidues()
@@ -135,6 +141,16 @@ class PeptalkResult:
         @property
         def ddgs(self,):
             return { rn: self.parent.ddgs[rn] for rn in self.resnums}
+
+    def precision_score(self, clusters):
+        #clusters = clusters[:2]
+        cluster_ddgs = [self.cluster_ddg(c) for c in clusters]
+        cluster_binders = np.array(cluster_ddgs) > 1.0
+        cluster_confidence = np.array([sum([self.confidence[resnum] for resnum in
+            c]) for c in clusters])
+        print(zip(cluster_binders, cluster_confidence, clusters))
+        from sklearn.metrics import average_precision_score
+        return average_precision_score(cluster_binders, cluster_confidence)
 
     @property
     def total_ddg(self,):

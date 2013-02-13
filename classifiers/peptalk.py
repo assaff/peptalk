@@ -6,9 +6,12 @@ import prody
 prody.confProDy(verbosity='error')
 
 import numpy as np
+import pandas as pd
 from matplotlib import pylab as pl
 
 from collections import defaultdict
+
+unbound_data = pd.read_csv('unbound.data.csv', index_col=[0,1])
 
 class PeptalkSVMClassifier (svm.SVC):
     """
@@ -20,10 +23,10 @@ class PeptalkSVMClassifier (svm.SVC):
 
 class PeptalkResult:
     
-    SURFACE_RESIDUES_FILENAME_PATTERN = 'classifier1_full/SurfaceResidues/{pdb}.bound.res'
-    DDG_RESIDUES_FILENAME_PATTERN = 'classifier1_full/BindingResidues_alaScan/{pdb}.res'
-    BINDING_RESIDUES_FILENAME_PATTERN = 'classifier1_full/BindingResidues_cutoff_4A/{pdb}.res'
-    PDB_FILENAME_PATTERN = '../data/peptiDB/bound/boundSet/{pdb}.pdb'
+    #SURFACE_RESIDUES_FILENAME_PATTERN = 'classifier1_full/SurfaceResidues/{pdb}.bound.res'
+    #DDG_RESIDUES_FILENAME_PATTERN = 'classifier1_full/BindingResidues_alaScan/{pdb}.res'
+    #BINDING_RESIDUES_FILENAME_PATTERN = 'classifier1_full/BindingResidues_cutoff_4A/{pdb}.res'
+    PDB_FILENAME_PATTERN = '../data/peptiDB/unbound/unboundSet/{pdb}.pdb'
     
     WARD_N_CLUSTERS = 5
     
@@ -32,20 +35,24 @@ class PeptalkResult:
         
         self.pdb_filename = self.PDB_FILENAME_PATTERN.format(pdb=self.pdbid)
         self.atoms = prody.parsePDB(self.pdb_filename).noh
+
+        self.svm_data = unbound_data.ix[self.pdbid]
         
-        surface_res_filename = self.SURFACE_RESIDUES_FILENAME_PATTERN.format(pdb=self.pdbid)
-        self.surface_resnums = pl.loadtxt(surface_res_filename, usecols=[1], dtype=int)
+        #surface_res_filename = self.SURFACE_RESIDUES_FILENAME_PATTERN.format(pdb=self.pdbid)
+        #self.surface_resnums = pl.loadtxt(surface_res_filename, usecols=[1], dtype=int)
+        self.surface_resnums = self.svm_data.index.get_level_values(1).values
         self.surface_resnums.sort()
-        self.surface_residues = self.atoms.select('chain A and resnum %s' % ' '.join(map(str, self.surface_resnums)))
+        self.surface_residues = self.atoms.select('resnum %s' % ' '.join(map(str, self.surface_resnums)))
         
-        ddg_res_filename = self.DDG_RESIDUES_FILENAME_PATTERN.format(pdb=self.pdbid)
-        self.ddgs = defaultdict(float)
-        for resnum, ddg in pl.loadtxt(ddg_res_filename, usecols=[1, 2], dtype=[('resnum', int), ('ddg', float)]):
-            self.ddgs[resnum] = ddg
+        #ddg_res_filename = self.DDG_RESIDUES_FILENAME_PATTERN.format(pdb=self.pdbid)
+        #self.ddgs = defaultdict(float)
+        #for resnum, ddg in self.svm_data[:,-1].to_dict().items():
+            #self.ddgs[resnum] = ddg
+        self.ddgs = self.svm_data.ix[:, -1].to_dict()
         self.ddg_resnums = sorted([resnum for resnum in self.ddgs if self.ddgs[resnum]>0])
             
-        binders_filename = self.BINDING_RESIDUES_FILENAME_PATTERN.format(pdb=self.pdbid)
-        self.binders_resnums = pl.loadtxt(binders_filename, usecols=[1], dtype=int)
+        #binders_filename = self.BINDING_RESIDUES_FILENAME_PATTERN.format(pdb=self.pdbid)
+        #self.binders_resnums = pl.loadtxt(binders_filename, usecols=[1], dtype=int)
             
         if preds is not None:
             assert len(preds) == len(self.surface_resnums)

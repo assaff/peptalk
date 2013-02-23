@@ -1,4 +1,5 @@
 
+import sklearn
 from treedict import TreeDict
 import pandas as pd
 import joblib
@@ -67,7 +68,9 @@ def prepDataSet(csv_filename, dataset_name='generic dataset', features=None, tru
     dataset.feature_set = FeatureSet(selected_features, all_features)
     
     dataset.feature_data_df = all_feature_data_df.ix[:,dataset.feature_set.features]
-    dataset.X = dataset.feature_data_df.values #preprocessing.scale(dataset.feature_data_df.values)
+    dataset.X = dataset.feature_data_df.values 
+    #dataset.X = sklearn.preprocessing.scale(
+                    #dataset.feature_data_df.values)
     
     dataset.label_data_df = dataset._df.ix[:,-1]
     dataset.y = dataset.label_data_df.values > 0

@@ -57,7 +57,9 @@ class PeptalkResult:
         if preds is not None:
             assert len(preds) == len(self.surface_resnums)
             pos_sur_resnums = self.surface_resnums[preds != 0]
-            self.positive_surface_residues = self.surface_residues.select('resnum %s' % ' '.join(map(str, pos_sur_resnums)))
+            self.positive_surface_residues = (self.surface_residues.select(
+                    'resnum %s' % ' '.join(map(str, pos_sur_resnums))) 
+                    if len(pos_sur_resnums)>0 else None)
 
             if confidence is not None:
                 assert len(confidence) == len(self.surface_resnums)
@@ -99,6 +101,9 @@ class PeptalkResult:
         Returns a list of cluster labels, in which label ``-1`` means an outlier point,
         which doesn't belong to any cluster.
         '''
+
+        if not self.positive_surface_residues:
+            return {}
         
         if calpha:
             data_atoms = self.positive_surface_residues.select('ca')

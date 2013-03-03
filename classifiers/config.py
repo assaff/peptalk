@@ -35,7 +35,7 @@ def trainConfigClassifiers(configs):
     return clfs
 
 @memory.cache
-def predictClassifier(conf):
+def predictClassifier(conf, proba=True):
     clf = trainClassifier(conf)
-    return clf.predict_proba(conf.test_set.X)
-
+    predict = clf.predict_proba if proba else clf.predict
+    return predict(conf.test_set.X)

@@ -7,7 +7,10 @@ import joblib
 import pandas as pd
 import prody
 
+prody.confProDy(verbosity='error')
+
 fpocket_bin = '/home/assaff/tools/fpocket2/bin/fpocket'
+fpocket_cache = '/home/assaff/data/fpocket/cache'
 
 memory = joblib.Memory('cache')
 
@@ -16,8 +19,7 @@ def pocket_data(pdb_filename,
             params_dict=dict(),#i=30, m=3.0, M=6.0, A=3, D=1.73, s=2.5, n=3, r=4.5),
             ):
     fpocket_cachedir = os.path.join(
-                    memory.cachedir, 
-                    'fpocket_pdb', 
+                    fpocket_cache,
                     '-'.join('{}{}'.format(k, params_dict[k]) for k in sorted(params_dict.keys()) ),
                     #os.path.basename(os.path.dirname(pdb_filename)),
                     )
@@ -33,7 +35,7 @@ def pocket_data(pdb_filename,
                                         digest=hashlib.md5(open(pdb_filename).read()).hexdigest(),
                                         ),
                                     )
-    print cached_filename
+    #print cached_filename
     if not os.path.exists(cached_filename):
         shutil.copy2(pdb_filename, cached_filename)
     

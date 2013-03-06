@@ -4,6 +4,8 @@ import tempfile
 import prody
 import pandas as pd
 
+prody.confProDy(verbosity='error')
+
 NACCESS_BINARY = '/home/assaff/tools/naccess2.1.1/naccess'
 
 rsa_colnames = [
@@ -48,7 +50,7 @@ def read_naccess_asa(asa_filename):
     return atoms_asa_series
 
 def getResidueSasa(atoms, return_atom_asa=False):
-    protein_atoms = atoms.protein
+    protein_atoms = atoms.protein.noh
     assert protein_atoms.getHierView().numChains() == 1
     
     pdb_file = tempfile.NamedTemporaryFile(prefix='tmp_naccess_', suffix='.pdb', delete=False)
@@ -73,10 +75,10 @@ def getResidueSasa(atoms, return_atom_asa=False):
     
     # read the resulting .rsa file into a table
     rsa_table = read_naccess_rsa(rsa_filename)
-    atom_asa = read_naccess_asa(asa_filename)
-    
-    assert len(atom_asa) == len(protein_atoms), '{} != {}'.format(len(atom_asa), len(protein_atoms))
     
     if return_atom_asa:
+        atom_asa = read_naccess_asa(asa_filename)
+        
+        assert len(atom_asa) == len(protein_atoms), '{} != {}'.format(len(atom_asa), len(protein_atoms))
         return rsa_table, atom_asa
     return rsa_table

@@ -17,16 +17,27 @@ rsa_colnames = [
             'All-polar-abs', 'All-polar-rel',
             ]
 
+rsa_colwidths = [
+            3,4,2,4,
+            9,6,
+            7,6,
+            7,6,
+            7,6,
+            7,6,
+            ]
+
 def read_naccess_rsa(rsa_filename):
-    rsa_table = pd.read_csv(rsa_filename, 
+    rsa_table = pd.read_fwf(rsa_filename, 
                        sep=None, 
                        index_col=[2,3,1], 
-                       skipinitialspace=True, 
                        skiprows=4, 
+                       skipinitialspace=True, 
                        header=None, 
                        skipfooter=4, 
+                       delimiter=' ',
                        names=rsa_colnames, 
-                       delimiter=' ')
+                       widths=rsa_colwidths,
+                       )
     colname_endswith_abs = lambda colname: colname.endswith('abs')
     
     rsa_table = rsa_table.ix[:,1:] # remove the RES column

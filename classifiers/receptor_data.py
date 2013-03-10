@@ -62,7 +62,7 @@ class ReceptorData:
         return pd.DataFrame(
                             columns=['Conservation-score'],
                             index=self.resnum_index,
-                            data=consurf_chain.ca.getBetas(),
+                            data=consurf_chain.ca.getBetas()[:len(self.resnum_index)],
                             )
     
     def sasa(self,):

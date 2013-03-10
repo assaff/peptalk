@@ -6,6 +6,8 @@ import joblib
 
 memory = joblib.Memory('cache')
 
+DEBUG_DATASET_SIZE = 1000
+
 class FeatureSet():
     
     def __init__(self, features, all_features):

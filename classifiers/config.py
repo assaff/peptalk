@@ -9,8 +9,8 @@ memory = joblib.Memory('cache')
 @memory.cache
 def createConfig(feature_set, title_meta=None):
     config = TreeDict('config')
-    config.train_set.update(data.prepDataSet('bound.data.csv', features=feature_set, truncate=False))
-    config.test_set.update(data.prepDataSet('unbound.data.csv', features=feature_set, truncate=False))
+    config.train_set.update(data.prepDataSet('bound.data.full.csv', features=feature_set, truncate=False))
+    config.test_set.update(data.prepDataSet('unbound.data.full.csv', features=feature_set, truncate=False))
     
     config.title = config.train_set.feature_set.getTitle(metadata=title_meta)
     #display(Latex(config.title))

@@ -58,7 +58,10 @@ def prepDataSet(csv_filename, dataset_name='generic dataset', features=None, tru
     '''
     
     dataset = TreeDict(dataset_name)
-    dataset._df = pd.read_csv(csv_filename, index_col=[0,1], )
+    dataset._df = pd.read_csv(csv_filename, index_col=[0,1],
+            true_values=['True'],
+            false_values=['False'],
+            )
     
     if truncate:
         dataset._df = dataset._df[:DEBUG_DATASET_SIZE]
@@ -72,7 +75,7 @@ def prepDataSet(csv_filename, dataset_name='generic dataset', features=None, tru
     dataset.feature_data_df = all_feature_data_df.ix[:,dataset.feature_set.features]
     #dataset.X = dataset.feature_data_df.values 
     dataset.X = sklearn.preprocessing.scale(
-                    dataset.feature_data_df.values)
+                    dataset.feature_data_df.values.astype(float))
     
     dataset.label_data_df = dataset._df.ix[:,-1]
     dataset.y = dataset.label_data_df.values > 1.0

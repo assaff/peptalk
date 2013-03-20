@@ -9,10 +9,13 @@ memory = joblib.Memory('cache')
 @memory.cache
 def createConfig(feature_set, title_meta=None):
     config = TreeDict('config')
-    config.train_set.update(data.prepDataSet('bound.data.full.csv', features=feature_set, truncate=False))
-    config.test_set.update(data.prepDataSet('unbound.data.full.csv', features=feature_set, truncate=False))
+    config.feature_set = feature_set
+    config.bound.update(data.prepDataSet('bound.data.full.csv',
+        config.feature_set, truncate=False))
+    config.unbound.update(data.prepDataSet('unbound.data.full.csv',
+        config.feature_set, truncate=False))
     
-    config.title = config.train_set.feature_set.getTitle(metadata=title_meta)
+    config.title = feature_set.getTitle()
     #display(Latex(config.title))
     return config
 
@@ -23,19 +26,19 @@ def trainClassifier(conf):
             probability=True, 
             class_weight='auto',
             )
-    return clf.fit(conf.train_set.X, conf.train_set.y)
+    return clf.fit(conf.unbound.X, conf.unbound.y)
 
 @memory.cache
 def trainConfigClassifiers(configs):
     clfs = {}
     for i, c in enumerate(configs):
         print "Fitting SVCs on feature set: %s" % c.title
-        clfs[i] = trainClassifier(c) #c.svm.fit(c.train_set.X, c.train_set.y)
+        clfs[i] = trainClassifier(c) #c.svm.fit(c.bound.X, c.bound.y)
         
     return clfs
 
 @memory.cache
 def predictClassifier(conf):
     clf = trainClassifier(conf)
-    return clf.predict_proba(conf.test_set.X)
+    return clf.predict_proba(conf.unbound.X)
 

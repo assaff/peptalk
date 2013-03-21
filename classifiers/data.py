@@ -6,6 +6,8 @@ import joblib
 
 memory = joblib.Memory('cache')
 
+cached_csv_df = memory.cache(pd.read_csv)
+
 DEBUG_DATASET_SIZE = 1000
 
 class FeatureSet():
@@ -66,7 +68,7 @@ def prepDataSet(csv_filename, feature_set=None, dataset_name='generic dataset', 
     '''
     
     dataset = TreeDict(dataset_name)
-    dataset._df = pd.read_csv(csv_filename, index_col=[0,1],
+    dataset._df = cached_csv_df(csv_filename, index_col=[0,1],
             true_values=['True'],
             false_values=['False'],
             )
@@ -79,8 +81,8 @@ def prepDataSet(csv_filename, feature_set=None, dataset_name='generic dataset', 
         dataset.feature_set = FeatureSet(cols, cols)
     else:
         dataset.feature_set = feature_set
-
-	all_feature_data_df = dataset._df.ix[:,dataset.feature_set.all_features]
+    
+    all_feature_data_df = dataset._df.ix[:,dataset.feature_set.all_features]
     
     dataset.feature_data_df = all_feature_data_df.ix[:,dataset.feature_set.features]
     #dataset.X = dataset.feature_data_df.values 

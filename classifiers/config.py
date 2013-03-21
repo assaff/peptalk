@@ -7,13 +7,16 @@ from sklearn import svm
 memory = joblib.Memory('cache')
 
 @memory.cache
-def createConfig(feature_set, title_meta=None):
+def createConfig(feature_set, train='unbound', test='bound', title_meta=None):
     config = TreeDict('config')
     config.feature_set = feature_set
     config.bound.update(data.prepDataSet('bound.data.full.csv',
         config.feature_set, truncate=False))
     config.unbound.update(data.prepDataSet('unbound.data.full.csv',
         config.feature_set, truncate=False))
+
+    config.training  = config.unbound if train=='unbound' else config.bound
+    config.testing = config.bound if test=='bound' else config.unbound
     
     config.title = feature_set.getTitle()
     #display(Latex(config.title))
@@ -26,19 +29,19 @@ def trainClassifier(conf):
             probability=True, 
             class_weight='auto',
             )
-    return clf.fit(conf.unbound.X, conf.unbound.y)
+    return clf.fit(conf.training.X, conf.training.y)
 
 @memory.cache
 def trainConfigClassifiers(configs):
     clfs = {}
     for i, c in enumerate(configs):
         print "Fitting SVCs on feature set: %s" % c.title
-        clfs[i] = trainClassifier(c) #c.svm.fit(c.bound.X, c.bound.y)
+        clfs[i] = trainClassifier(c) 
         
     return clfs
 
 @memory.cache
 def predictClassifier(conf):
     clf = trainClassifier(conf)
-    return clf.predict_proba(conf.unbound.X)
+    return clf.predict_proba(conf.testing.X)
 

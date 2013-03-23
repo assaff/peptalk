@@ -173,12 +173,12 @@ class ReceptorData:
         return res_pocket_stats.reindex(res_pocket_map.index, level=1)
     
     def aa_props(self,):
-        aa_props = pd.read_csv('aa_props.csv', true_values='X', false_values='-',)
+        aa_props = pd.read_csv('aa_props.csv', true_values='X', false_values='0',)
         aa_props['resname'] = [s.upper() for s in aa_props['Abbrev.']]
         
-        aa_props['pKa'] = [float(n) for n in aa_props['pKa'].replace('-', '0.0')]
+        aa_props['pKa'] = [float(n) for n in aa_props['pKa'].replace('0', '0.0')]
         aa_props = aa_props.replace('-', 'None')
-        aa_props = aa_props.ix[:, 'Hydrophobic':]
+        aa_props = aa_props.ix[:, 'Hydrogen bonding':]
         
         res_aa_map = pd.DataFrame(
                               columns=['resnum', 'resname'],

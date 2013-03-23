@@ -1,4 +1,5 @@
 
+import os
 import sklearn
 from treedict import TreeDict
 import pandas as pd
@@ -68,6 +69,7 @@ def prepDataSet(csv_filename, feature_set=None, dataset_name='generic dataset', 
     '''
     
     dataset = TreeDict(dataset_name)
+    dataset.csv_filename = os.path.abspath(csv_filename)
     dataset._df = cached_csv_df(csv_filename, index_col=[0,1],
             true_values=['True'],
             false_values=['False'],

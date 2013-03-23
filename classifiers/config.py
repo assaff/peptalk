@@ -28,6 +28,7 @@ def trainClassifier(conf):
             kernel='linear', 
             probability=True, 
             class_weight='auto',
+            cache_size=500,
             )
     return clf.fit(conf.training.X, conf.training.y)
 

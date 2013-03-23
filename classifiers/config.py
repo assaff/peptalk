@@ -24,11 +24,9 @@ def createConfig(feature_set, train='unbound', test='bound', title_meta=None):
 
 @memory.cache
 def trainClassifier(conf):
-    clf = svm.SVC(
-            kernel='linear', 
-            probability=True, 
+    clf = svm.LinearSVC(
             class_weight='auto',
-            cache_size=500,
+            dual=False,
             )
     return clf.fit(conf.training.X, conf.training.y)
 
@@ -44,5 +42,5 @@ def trainConfigClassifiers(configs):
 @memory.cache
 def predictClassifier(conf):
     clf = trainClassifier(conf)
-    return clf.predict_proba(conf.testing.X)
+    return clf.decision_function(conf.testing.X)
 

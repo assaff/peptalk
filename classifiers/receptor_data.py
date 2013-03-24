@@ -197,7 +197,7 @@ class ReceptorData:
                                          ConSurf=self.conservation(),
                                          FTMap=self.ftmap(),
                                          FPocket=self.pockets(),
-                                         Physico=self.aa_props(),
+                                         Physicochemical=self.aa_props(),
                                          )
             
             tuples = list(itertools.chain(*[

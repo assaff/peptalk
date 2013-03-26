@@ -7,35 +7,40 @@ from sklearn import svm
 memory = joblib.Memory('cache')
 
 @memory.cache
-def createConfig(feature_set, title_meta=None):
+def createConfig(feature_set, train=None, test=None, title_meta=None):
     config = TreeDict('config')
-    config.train_set.update(data.prepDataSet('bound.data.csv', features=feature_set, truncate=False))
-    config.test_set.update(data.prepDataSet('unbound.data.csv', features=feature_set, truncate=False))
+    config.feature_set = feature_set
+    config.bound = 'bound.data.old.csv'
+    config.unbound = 'unbound.data.old.csv'
+
+    config.training = data.prepDataSet(train or config.unbound,
+            feature_set=config.feature_set)
+    config.testing = data.prepDataSet(test or config.bound, 
+            feature_set=config.feature_set)
     
-    config.title = config.train_set.feature_set.getTitle(metadata=title_meta)
+    config.title = feature_set.getTitle()
     #display(Latex(config.title))
     return config
 
 @memory.cache
 def trainClassifier(conf):
-    clf = svm.SVC(
-            kernel='linear', 
-            probability=True, 
+    clf = svm.LinearSVC(
             class_weight='auto',
+            dual=False,
             )
-    return clf.fit(conf.train_set.X, conf.train_set.y)
+    return clf.fit(conf.training.X, conf.training.y)
 
 @memory.cache
 def trainConfigClassifiers(configs):
     clfs = {}
     for i, c in enumerate(configs):
         print "Fitting SVCs on feature set: %s" % c.title
-        clfs[i] = trainClassifier(c) #c.svm.fit(c.train_set.X, c.train_set.y)
+        clfs[i] = trainClassifier(c) 
         
     return clfs
 
 @memory.cache
-def predictClassifier(conf, proba=True):
+def predictClassifier(conf):
     clf = trainClassifier(conf)
-    predict = clf.predict_proba if proba else clf.predict
-    return predict(conf.test_set.X)
+    return clf.decision_function(conf.testing.X)
+

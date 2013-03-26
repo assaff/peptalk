@@ -43,6 +43,7 @@ def pocket_data(pdb_filename,
     result_dirname = os.path.join(fpocket_cachedir, cached_filename_base+'_out')
     
     if not os.path.exists(result_dirname):
+        print "calculating pockets for {fn}".format(fn=cached_filename)
         subprocess.Popen([fpocket_bin, '-f', cached_filename,] +
                          ['-{option} {value}'.format(option=k, value=v) for k,v in params_dict.items()],
                          ).communicate()

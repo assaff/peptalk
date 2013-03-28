@@ -11,7 +11,7 @@ from matplotlib import pylab as pl
 
 from collections import defaultdict
 
-unbound_data = pd.read_csv('unbound.data.csv', index_col=[0,1])
+unbound_data = pd.read_csv('bound.data.old.csv', index_col=[0,1])
 
 class PeptalkSVMClassifier (svm.SVC):
     """
@@ -26,7 +26,7 @@ class PeptalkResult:
     #SURFACE_RESIDUES_FILENAME_PATTERN = 'classifier1_full/SurfaceResidues/{pdb}.bound.res'
     #DDG_RESIDUES_FILENAME_PATTERN = 'classifier1_full/BindingResidues_alaScan/{pdb}.res'
     #BINDING_RESIDUES_FILENAME_PATTERN = 'classifier1_full/BindingResidues_cutoff_4A/{pdb}.res'
-    PDB_FILENAME_PATTERN = '../data/peptiDB/unbound/unboundSet/{pdb}.pdb'
+    PDB_FILENAME_PATTERN = '../data/peptiDB/bound/boundSet/{pdb}.pdb'
     
     WARD_N_CLUSTERS = 5
     
@@ -48,14 +48,15 @@ class PeptalkResult:
         #self.ddgs = defaultdict(float)
         #for resnum, ddg in self.svm_data[:,-1].to_dict().items():
             #self.ddgs[resnum] = ddg
-        self.ddgs = self.svm_data.ix[:, -1].to_dict()
-        self.ddg_resnums = sorted([resnum for resnum in self.ddgs if self.ddgs[resnum]>0])
+        self.ddgs = self.svm_data.ix[:, -1]#.to_dict()
+        self.ddg_resnums = self.svm_data.ix[self.ddgs > 0].index
             
         #binders_filename = self.BINDING_RESIDUES_FILENAME_PATTERN.format(pdb=self.pdbid)
         #self.binders_resnums = pl.loadtxt(binders_filename, usecols=[1], dtype=int)
             
         if preds is not None:
-            assert len(preds) == len(self.surface_resnums)
+            assert len(preds) == len(self.surface_resnums), \
+            '{}!={}'.format(len(preds), len(self.surface_resnums))
             pos_sur_resnums = self.surface_resnums[preds != 0]
             self.positive_surface_residues = (self.surface_residues.select(
                     'resnum %s' % ' '.join(map(str, pos_sur_resnums))) 
@@ -70,6 +71,15 @@ class PeptalkResult:
         #print 'Surface residues:', self.surface_residues.getHierView().numResidues()
         #print 'Positive residues:', self.positive_surface_residues.getHierView().numResidues()
         #print 'Positive atoms:', len(self.positive_surface_residues.select('ca or sidechain'))
+
+    def cluster_naive(self, k=10): 
+        conf = pd.Series(self.confidence).order(ascending=False)
+        conf = conf[conf > 0]
+        ranks = conf.rank(method='first', ascending=False) - 1
+        clusters = conf.groupby(lambda resnum: int(ranks[resnum]) / k)
+        return dict((k, v.index) for k, v in clusters)
+        #return dict(enumerate([conf.head((i+1)*k).tail(k).index#ix[i*k : (i+1)*k].index
+            #for i in range(3) if len(conf) > (i+1)*k]))
             
     def cluster_ward(self, calpha=True):
         '''
@@ -166,12 +176,12 @@ class PeptalkResult:
 
     @property
     def total_ddg(self,):
-        return float(sum(self.ddgs.values()))
+        return self.ddgs.sum()
 
     @property
     def recovered_ddg(self,):
         ddg_residues_recovered = (
-                    set(self.ddgs.keys()) &
+                    set(self.ddgs.index.tolist()) &
                     set(list(self.positive_surface_residues.ca.getResnums()))
                     )
         return sum(self.ddgs[i] for i in ddg_residues_recovered)

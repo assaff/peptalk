@@ -26,7 +26,7 @@ class PeptalkResult:
     #SURFACE_RESIDUES_FILENAME_PATTERN = 'classifier1_full/SurfaceResidues/{pdb}.bound.res'
     #DDG_RESIDUES_FILENAME_PATTERN = 'classifier1_full/BindingResidues_alaScan/{pdb}.res'
     #BINDING_RESIDUES_FILENAME_PATTERN = 'classifier1_full/BindingResidues_cutoff_4A/{pdb}.res'
-    PDB_FILENAME_PATTERN = '../data/peptiDB/bound/boundSet/{pdb}.pdb'
+    PDB_FILENAME_PATTERN = '../data/peptiDB/bound/boundSet/mainChain/{pdb}.pdb'
     
     WARD_N_CLUSTERS = 5
     

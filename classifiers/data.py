@@ -52,7 +52,8 @@ class FeatureSet():
         return self.getTitle(style='text')
     
 @memory.cache
-def prepDataSet(csv_filename, feature_set=None, dataset_name='generic dataset', truncate=False):
+def prepDataSet(csv_filename, feature_set=None, dataset_name='generic dataset',
+        ddg_cutoff=1.0, truncate=False):
     '''
     prepares a data set object from a CSV file, under the conventions of this project:
     - the CSV is indexed by PDBID and residue number (columns 0,1)
@@ -92,7 +93,7 @@ def prepDataSet(csv_filename, feature_set=None, dataset_name='generic dataset', 
                     dataset.feature_data_df.values.astype(float))
     
     dataset.label_data_df = dataset._df.ix[:,-1]
-    dataset.y = dataset.label_data_df.values > 1.0
+    dataset.y = dataset.label_data_df.values > ddg_cutoff
     
     # sanity checks
     assert dataset.X.shape[0] == len(dataset.y)

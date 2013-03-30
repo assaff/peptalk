@@ -7,16 +7,18 @@ from sklearn import svm
 memory = joblib.Memory('cache')
 
 @memory.cache
-def createConfig(feature_set, train=None, test=None, title_meta=None):
+def createConfig(feature_set, train=None, test=None, title_meta=None,
+        ddg_cutoff=1.0):
     config = TreeDict('config')
     config.feature_set = feature_set
     config.bound = 'bound.data.old.csv'
     config.unbound = 'unbound.data.old.csv'
+    config.ddg_cutoff = ddg_cutoff
 
     config.training = data.prepDataSet(train or config.unbound,
-            feature_set=config.feature_set)
+            feature_set=config.feature_set, ddg_cutoff=ddg_cutoff)
     config.testing = data.prepDataSet(test or config.bound, 
-            feature_set=config.feature_set)
+            feature_set=config.feature_set, ddg_cutoff=ddg_cutoff)
     
     config.title = feature_set.getTitle()
     #display(Latex(config.title))

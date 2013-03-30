@@ -11,6 +11,8 @@ from matplotlib import pylab as pl
 
 from collections import defaultdict
 
+import config
+
 unbound_data = pd.read_csv('bound.data.old.csv', index_col=[0,1])
 
 BOUND_FILENAME_PATTERN = '../data/peptiDB/bound/boundSet/mainChain/{pdb}.pdb'
@@ -36,7 +38,7 @@ class Classifier:
         self.ddgs = test_set.label_data_df.ix[self.pdbid]
         self.confidence = pd.Series(
                 data=config.predictClassifier(self.config),
-                index=config.testing.label_data_df.index,
+                index=self.config.testing.label_data_df.index,
                 ).ix[self.pdbid]
         self.surface_resnums = self.ddgs.index
         self.binding_resnums = \
@@ -44,22 +46,94 @@ class Classifier:
         self.positive_resnums = \
                 self.surface_resnums[self.confidence > 0]
 
-        self.surface_residues = self.receptor.select('resnum %s' % ' '.join(
-            map(str, self.surface_resnums)
-            ))
+        def receptor_residues(resnums):
+            return self.receptor.select(
+                    'resnum %s' % ' '.join(map(str, resnums)))
+
+        self.surface_residues = receptor_residues(self.surface_resnums)
+        self.positive_residues = receptor_residues(self.positive_resnums)
 
     def cluster_naive(self, k=10):
-        ranks = self.confidence[self.confidence > 0].rank(
+        positive_confs = self.confidence[self.confidence > 0]
+        ranks = positive_confs.rank(
                 method='first', ascending=False) - 1
-        clusters = self.confidence.groupby(
+        clusters = positive_confs.groupby(
                 lambda resnum: int(ranks[resnum]) / k)
         return dict((k, v.index) for k, v in clusters)
 
-    def cluster_dbscan(self,):
-        pass
+    def cluster_dbscan(self, calpha=False, cluster_diameter=6, cluster_min_size=10):
+        '''
+        cluster the residues using the DBSCAN method. 
+        The parameters here are neighborhood diameter (eps) and neighborhood 
+        connectivity (min_samples).
+        
+        Returns a list of cluster labels, in which label ``-1`` means an outlier point,
+        which doesn't belong to any cluster.
+        '''
 
-    def cluster_ward(self,):
-        pass
+        if not self.positive_residues:
+            return {}
+        
+        if calpha:
+            data_atoms = self.positive_residues.select('ca')
+        else:
+            data_atoms = self.positive_residues.select('sidechain or ca').copy()
+        
+        assert (
+                data_atoms.getHierView().numResidues() == 
+                self.positive_residues.getHierView().numResidues()
+                )
+        
+        OUTLIER_LABEL = -1
+        
+        db_clust = DBSCAN(eps=cluster_diameter, min_samples=cluster_min_size)
+        db_clust.fit(data_atoms.getCoords())
+
+        db_labels = db_clust.labels_.astype(int)
+        #print db_labels, len(db_labels)
+        if calpha:
+            residue_labels = db_labels
+        
+        else:
+            residues = list(data_atoms.getHierView().iterResidues())
+            residue_labels = np.zeros(len(residues), dtype=int)
+            
+            def most_common(lst):
+                lst = list(lst)
+                return max(set(lst) or [OUTLIER_LABEL], key=lst.count)
+            
+            data_atoms.setBetas(db_labels)
+            for i, res in enumerate(residues):
+                atom_labels = res.getBetas()
+                residue_labels[i] = most_common(atom_labels[atom_labels!=OUTLIER_LABEL])
+                
+        assert len(residue_labels) == self.positive_residues.getHierView().numResidues()
+        
+        residue_numbers = self.positive_residues.ca.getResnums()
+        clusters = sorted([residue_numbers[residue_labels==i] for i in set(residue_labels) if i!=-1], key=len, reverse=True)
+        return dict(enumerate(clusters))
+
+    def cluster_ward(self, calpha=True, num_clusters=5):
+        '''
+        cluster the positively predicted residues using the Ward method.
+        Returns a list of cluster labels the same length as the number of positively predicted residues.
+        '''
+        
+        if calpha:
+            data_atoms = self.positive_residues.ca
+        else:
+            data_atoms = self.positive_residues.select('ca or sidechain').copy()
+        #if data_atoms.getCoords().shape[0] < 4:
+            #print self.pdbid, data_atoms.getCoords().shape
+            #return {}
+        connectivity = kneighbors_graph(data_atoms.getCoords(), 5)
+        ward = Ward(n_clusters=num_clusters, connectivity=connectivity)
+        ward.fit(data_atoms.getCoords())
+        resnums = data_atoms.getResnums()
+        reslabels = ward.labels_
+        clusters = sorted([resnums[reslabels==i] for i in set(reslabels)], 
+                key=len, reverse=True)
+        return dict(enumerate(clusters))
 
 
 
@@ -73,7 +147,6 @@ class PeptalkResult:
     
     WARD_N_CLUSTERS = 5
     
-
     def __init__(self, pdbid, preds=None, confidence=None):
         self.pdbid = pdbid.upper()
         
@@ -102,7 +175,7 @@ class PeptalkResult:
             assert len(preds) == len(self.surface_resnums), \
             '{}!={}'.format(len(preds), len(self.surface_resnums))
             pos_sur_resnums = self.surface_resnums[preds != 0]
-            self.positive_surface_residues = (self.surface_residues.select(
+            self.positive_residues = (self.surface_residues.select(
                     'resnum %s' % ' '.join(map(str, pos_sur_resnums))) 
                     if len(pos_sur_resnums)>0 else None)
 
@@ -113,8 +186,8 @@ class PeptalkResult:
                     self.confidence[resnum] = c
             
         #print 'Surface residues:', self.surface_residues.getHierView().numResidues()
-        #print 'Positive residues:', self.positive_surface_residues.getHierView().numResidues()
-        #print 'Positive atoms:', len(self.positive_surface_residues.select('ca or sidechain'))
+        #print 'Positive residues:', self.positive_residues.getHierView().numResidues()
+        #print 'Positive atoms:', len(self.positive_residues.select('ca or sidechain'))
 
     def cluster_atoms(self, resnums):
         residues = self.atoms.select('resnum {rn}'.format(

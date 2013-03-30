@@ -72,6 +72,14 @@ class PeptalkResult:
         #print 'Positive residues:', self.positive_surface_residues.getHierView().numResidues()
         #print 'Positive atoms:', len(self.positive_surface_residues.select('ca or sidechain'))
 
+    def cluster_atoms(self, resnums):
+        residues = self.atoms.select('resnum {rn}'.format(
+            rn=' '.join(map(str, resnums))
+            ))
+        if residues:
+            return residues.copy()
+        return None
+
     def cluster_naive(self, k=10): 
         conf = pd.Series(self.confidence).order(ascending=False)
         conf = conf[conf > 0]

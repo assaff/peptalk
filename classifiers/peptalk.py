@@ -13,13 +13,56 @@ from collections import defaultdict
 
 unbound_data = pd.read_csv('bound.data.old.csv', index_col=[0,1])
 
-class PeptalkSVMClassifier (svm.SVC):
+BOUND_FILENAME_PATTERN = '../data/peptiDB/bound/boundSet/mainChain/{pdb}.pdb'
+UNBOUND_FILENAME_PATTERN = '../data/peptiDB/unbound/unboundSet/{pdb}.pdb'
+
+class Classifier:
     """
     Defines a SVM classifier.
     """
 
-    def __init__(self, ):
+    def __init__(self, pdbid, cfg, ):
+        self.pdbid = pdbid
+
+        self.config = cfg
+        self.svm = config.trainClassifier(self.config)
+
+        fn_pattern = BOUND_FILENAME_PATTERN if self.config.testing.is_bound \
+                else UNBOUND_FILENAME_PATTERN
+        self.pdb_filename = fn_pattern.format(pdb=self.pdbid)
+        self.receptor = prody.parsePDB(self.pdb_filename).protein.noh
+
+        test_set = self.config.testing
+        self.ddgs = test_set.label_data_df.ix[self.pdbid]
+        self.confidence = pd.Series(
+                data=config.predictClassifier(self.config),
+                index=config.testing.label_data_df.index,
+                ).ix[self.pdbid]
+        self.surface_resnums = self.ddgs.index
+        self.binding_resnums = \
+                self.surface_resnums[self.ddgs > test_set.ddg_cutoff]
+        self.positive_resnums = \
+                self.surface_resnums[self.confidence > 0]
+
+        self.surface_residues = self.receptor.select('resnum %s' % ' '.join(
+            map(str, self.surface_resnums)
+            ))
+
+    def cluster_naive(self, k=10):
+        ranks = self.confidence[self.confidence > 0].rank(
+                method='first', ascending=False) - 1
+        clusters = self.confidence.groupby(
+                lambda resnum: int(ranks[resnum]) / k)
+        return dict((k, v.index) for k, v in clusters)
+
+    def cluster_dbscan(self,):
         pass
+
+    def cluster_ward(self,):
+        pass
+
+
+
 
 class PeptalkResult:
     
@@ -30,6 +73,7 @@ class PeptalkResult:
     
     WARD_N_CLUSTERS = 5
     
+
     def __init__(self, pdbid, preds=None, confidence=None):
         self.pdbid = pdbid.upper()
         

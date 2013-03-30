@@ -71,6 +71,7 @@ def prepDataSet(csv_filename, feature_set=None, dataset_name='generic dataset',
     
     dataset = TreeDict(dataset_name)
     dataset.csv_filename = os.path.abspath(csv_filename)
+    dataset.is_bound = (csv_filename.find('unbound') == -1)
     dataset._df = cached_csv_df(csv_filename, index_col=[0,1],
             true_values=['True'],
             false_values=['False'],
@@ -93,7 +94,8 @@ def prepDataSet(csv_filename, feature_set=None, dataset_name='generic dataset',
                     dataset.feature_data_df.values.astype(float))
     
     dataset.label_data_df = dataset._df.ix[:,-1]
-    dataset.y = dataset.label_data_df.values > ddg_cutoff
+    dataset.ddg_cutoff = ddg_cutoff
+    dataset.y = dataset.label_data_df.values > dataset.ddg_cutoff
     
     # sanity checks
     assert dataset.X.shape[0] == len(dataset.y)

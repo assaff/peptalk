@@ -1,6 +1,6 @@
 from sklearn.cluster import Ward, DBSCAN
 from sklearn.neighbors import kneighbors_graph
-from sklearn import svm, cross_validation, preprocessing, datasets
+from sklearn import svm, cross_validation, preprocessing, datasets, metrics
 
 import prody
 prody.confProDy(verbosity='error')
@@ -142,6 +142,12 @@ class Classifier:
         clusters = sorted([resnums[reslabels==i] for i in set(reslabels)], 
                 key=len, reverse=True)
         return dict(enumerate(clusters))
+
+    def cluster_accuracy(self, resnums):
+        cluster_mask = self.surface_resnums.map(
+                lambda resnum: resnum in resnums)
+        ddg_mask = self.ddgs > self.config.testing.ddg_cutoff
+        return metrics.accuracy_score(ddg_mask, cluster_mask)
 
     @property
     def total_ddg(self,):

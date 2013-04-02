@@ -53,6 +53,9 @@ class Classifier:
         self.surface_residues = receptor_residues(self.surface_resnums)
         self.positive_residues = receptor_residues(self.positive_resnums)
 
+    def conf_sum(self, resnums):
+        return self.confidence[resnums].sum()
+
     def cluster_naive(self, k=10):
         positive_confs = self.confidence[self.confidence > 0]
         ranks = positive_confs.rank(
@@ -110,7 +113,12 @@ class Classifier:
         assert len(residue_labels) == self.positive_residues.getHierView().numResidues()
         
         residue_numbers = self.positive_residues.ca.getResnums()
-        clusters = sorted([residue_numbers[residue_labels==i] for i in set(residue_labels) if i!=-1], key=len, reverse=True)
+        clusters = sorted(
+                [residue_numbers[residue_labels==i] for i in
+                    set(residue_labels) if i!=-1], 
+                key=self.conf_sum, 
+                reverse=True,
+                )
         return dict(enumerate(clusters))
 
     def cluster_ward(self, calpha=True, num_clusters=5):

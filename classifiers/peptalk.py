@@ -143,6 +143,46 @@ class Classifier:
                 key=len, reverse=True)
         return dict(enumerate(clusters))
 
+    @property
+    def total_ddg(self,):
+        return self.ddgs.sum()
+
+    @property
+    def recovered_ddg(self,):
+        return self.ddgs[self.positive_resnums].sum()
+
+    def cluster_ddg(self, cluster_resnums):
+        return self.ddgs[cluster_resnums].sum()
+
+    def cluster_ddg_recall(self, cluster_resnums):
+        if self.recovered_ddg == 0:
+            return 0, 0
+
+        cluster_ddg = self.cluster_ddg(cluster_resnums)
+    
+        cluster_ddg_frac = float(cluster_ddg) / float(self.total_ddg)
+        recovered_ddg_frac = float(self.recovered_ddg) / float(self.total_ddg)
+
+        return (cluster_ddg_frac, 
+                cluster_ddg_frac / recovered_ddg_frac)
+
+    def cluster_recall_precision(self, cluster_resnums):
+        binders_resnums = set(self.binding_resnums)
+        cluster_resnums = set(cluster_resnums)
+        
+        if len(cluster_resnums):
+            return 0, 0
+        relevant = float(len(binders_resnums))
+        if relevant == 0:
+            return 0, 0
+        retrieved = float(len(cluster_resnums))
+        relevant_and_retrieved = len(binders_resnums & cluster_resnums)
+        
+        cluster_recall = relevant_and_retrieved / relevant
+        cluster_precision = relevant_and_retrieved / retrieved
+        
+        return cluster_recall, cluster_precision
+
 
 
 
@@ -296,64 +336,4 @@ class PeptalkResult:
         @property
         def ddgs(self,):
             return { rn: self.parent.ddgs[rn] for rn in self.resnums}
-
-    def precision_score(self, clusters):
-        #clusters = clusters[:2]
-        cluster_ddgs = [self.cluster_ddg(c) for c in clusters]
-        cluster_binders = np.array(cluster_ddgs) > 1.0
-        cluster_confidence = np.array([sum([self.confidence[resnum] for resnum in
-            c]) for c in clusters])
-        print(zip(cluster_binders, cluster_confidence, clusters))
-        from sklearn.metrics import average_precision_score
-        return average_precision_score(cluster_binders, cluster_confidence)
-
-    @property
-    def total_ddg(self,):
-        return self.ddgs.sum()
-
-    @property
-    def recovered_ddg(self,):
-        ddg_residues_recovered = (
-                    set(self.ddgs.index.tolist()) &
-                    set(list(self.positive_surface_residues.ca.getResnums()))
-                    )
-        return sum(self.ddgs[i] for i in ddg_residues_recovered)
-
-    
-    def cluster_ddg(self, cluster_resnums):
-        #if len(ddg_residues_recovered)==0:
-            #print ddg_residues_recovered
-            #print self.ddgs.keys(),
-            #print self.positive_surface_residues.ca.getResnums()
-
-        cluster_ddg = sum(self.ddgs[i] for i in cluster_resnums)
-        return cluster_ddg
-
-    def cluster_ddg_recall(self, cluster_resnums):
-        if self.recovered_ddg == 0:
-            return 0, 0
-
-        cluster_ddg = self.cluster_ddg(cluster_resnums)
-    
-        cluster_ddg_frac = float(cluster_ddg) / float(self.total_ddg)
-        recovered_ddg_frac = float(self.recovered_ddg) / float(self.total_ddg)
-
-        return (cluster_ddg_frac, 
-                cluster_ddg_frac / recovered_ddg_frac)
-
-    def cluster_recall_precision(self, cluster_resnums, binders_resnums):
-        binders_resnums = set(binders_resnums)
-        cluster_resnums = set(cluster_resnums)
-        
-        #print cluster_resnums
-        #print binders_resnums
-        
-        relevant = float(len(binders_resnums))
-        retrieved = float(len(cluster_resnums))
-        relevant_and_retrieved = len(binders_resnums & cluster_resnums)
-        
-        cluster_recall = relevant_and_retrieved / relevant
-        cluster_precision = relevant_and_retrieved / retrieved
-        
-        return cluster_recall, cluster_precision
 

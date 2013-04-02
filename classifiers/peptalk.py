@@ -251,7 +251,7 @@ class PeptalkResult:
             return residues.copy()
         return None
 
-    def cluster_naive(self, k=10): 
+    def cluster_naive(self, k=5): 
         conf = pd.Series(self.confidence).order(ascending=False)
         conf = conf[conf > 0]
         ranks = conf.rank(method='first', ascending=False) - 1

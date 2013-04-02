@@ -34,17 +34,20 @@ class Classifier:
         self.pdb_filename = fn_pattern.format(pdb=self.pdbid)
         self.receptor = prody.parsePDB(self.pdb_filename).protein.noh
 
-        test_set = self.config.testing
-        self.ddgs = test_set.label_data_df.ix[self.pdbid]
+        self.ddgs = self.config.testing.label_data_df.ix[self.pdbid]
         self.confidence = pd.Series(
                 data=config.predictClassifier(self.config),
                 index=self.config.testing.label_data_df.index,
                 ).ix[self.pdbid]
+
+        self.mask_binding = self.ddgs > self.config.testing.ddg_cutoff
+        self.mask_positive = self.confidence > 0
+
         self.surface_resnums = self.ddgs.index
         self.binding_resnums = \
-                self.surface_resnums[self.ddgs > test_set.ddg_cutoff]
+                self.surface_resnums[self.mask_binding]
         self.positive_resnums = \
-                self.surface_resnums[self.confidence > 0]
+                self.surface_resnums[self.mask_positive]
 
         def receptor_residues(resnums):
             return self.receptor.select(

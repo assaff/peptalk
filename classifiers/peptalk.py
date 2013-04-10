@@ -179,19 +179,33 @@ class Classifier:
         binders_resnums = set(self.binding_resnums)
         cluster_resnums = set(cluster_resnums)
         
-        if len(cluster_resnums):
-            return 0, 0
-        relevant = float(len(binders_resnums))
-        if relevant == 0:
-            return 0, 0
         retrieved = float(len(cluster_resnums))
-        relevant_and_retrieved = len(binders_resnums & cluster_resnums)
+        if not retrieved:
+            return 0, 0
+
+        relevant = float(len(binders_resnums))
+        if not relevant:
+            return 0, 0
+        relevant_and_retrieved = float(len(binders_resnums & cluster_resnums))
         
         cluster_recall = relevant_and_retrieved / relevant
         cluster_precision = relevant_and_retrieved / retrieved
-        
-        return cluster_recall, cluster_precision
 
+        resnum_ix = self.ddgs.index
+        mask_cluster = resnum_ix.map(lambda rn: rn in cluster_resnums)
+        precision, recall, fbeta, support = np.array(
+                metrics.precision_recall_fscore_support(
+                    self.mask_binding,
+                    mask_cluster,
+                    beta=2.0,
+                    ))[:,1]
+
+        assert np.abs(cluster_recall - recall) < 0.01, '{} != {}'.format(
+                cluster_recall, recall)
+        assert np.abs(cluster_precision - precision) < 0.01, '{} != {}'.format(
+                cluster_precision, precision)
+        #return cluster_recall, cluster_precision
+        return recall, precision
 
 
 

@@ -7,7 +7,8 @@ import joblib
 
 memory = joblib.Memory('cache')
 
-cached_csv_df = memory.cache(pd.read_csv)
+#cached_csv_df = memory.cache(pd.read_csv)
+cached_csv_df = pd.read_csv
 
 DEBUG_DATASET_SIZE = 1000
 
@@ -51,7 +52,7 @@ class FeatureSet():
     def __repr__(self,):
         return self.getTitle(style='text')
     
-@memory.cache
+#@memory.cache
 def prepDataSet(csv_filename, feature_set=None, dataset_name='generic dataset',
         ddg_cutoff=1.0, truncate=False):
     '''

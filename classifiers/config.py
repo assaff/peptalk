@@ -6,7 +6,7 @@ from sklearn import svm
 
 memory = joblib.Memory('cache')
 
-@memory.cache
+#@memory.cache
 def createConfig(feature_set, train=None, test=None, title_meta=None,
         ddg_cutoff=1.0):
     config = TreeDict('config')
@@ -24,7 +24,7 @@ def createConfig(feature_set, train=None, test=None, title_meta=None,
     #display(Latex(config.title))
     return config
 
-@memory.cache
+#@memory.cache
 def trainClassifier(conf):
     clf = svm.LinearSVC(
             class_weight='auto',
@@ -32,7 +32,7 @@ def trainClassifier(conf):
             )
     return clf.fit(conf.training.X, conf.training.y)
 
-@memory.cache
+#@memory.cache
 def trainConfigClassifiers(configs):
     clfs = {}
     for i, c in enumerate(configs):
@@ -41,7 +41,7 @@ def trainConfigClassifiers(configs):
         
     return clfs
 
-@memory.cache
+#@memory.cache
 def predictClassifier(conf):
     clf = trainClassifier(conf)
     return clf.decision_function(conf.testing.X)

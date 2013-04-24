@@ -209,6 +209,6 @@ class ReceptorData:
             self._data = pd.concat(feature_generators.values(), axis=1, keys=feature_generators.keys())
         return self._data
         
-@memory.cache
+#@memory.cache
 def recdata(pdbid, context='bound'):
     return ReceptorData(pdbid, context).data()

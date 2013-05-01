@@ -28,7 +28,8 @@ def createConfig(feature_set, train=None, test=None, title_meta=None,
 def trainClassifier(conf):
     clf = svm.LinearSVC(
             class_weight='auto',
-            dual=False,
+            dual=True,
+            loss='l1',
             )
     return clf.fit(conf.training.X, conf.training.y)
 

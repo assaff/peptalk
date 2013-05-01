@@ -54,7 +54,7 @@ class FeatureSet():
     
 #@memory.cache
 def prepDataSet(csv_filename, feature_set=None, dataset_name='generic dataset',
-        ddg_cutoff=1.0, truncate=False):
+        ddg_cutoff=0.0, truncate=False):
     '''
     prepares a data set object from a CSV file, under the conventions of this project:
     - the CSV is indexed by PDBID and residue number (columns 0,1)

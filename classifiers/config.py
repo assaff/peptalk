@@ -8,7 +8,7 @@ memory = joblib.Memory('cache')
 
 #@memory.cache
 def createConfig(feature_set, train=None, test=None, title_meta=None,
-        ddg_cutoff=1.0):
+        ddg_cutoff=0.0):
     config = TreeDict('config')
     config.feature_set = feature_set
     config.bound = 'bound.data.old.csv'

@@ -17,9 +17,9 @@ def createConfig(feature_set, train=None, test=None, title_meta=None,
 
     config.training = data.prepDataSet(train or config.unbound,
             feature_set=config.feature_set, ddg_cutoff=ddg_cutoff)
-    config.testing = data.prepDataSet(test or config.bound, 
+    config.testing = data.prepDataSet(test or config.bound,
             feature_set=config.feature_set, ddg_cutoff=ddg_cutoff)
-    
+
     config.title = feature_set.getTitle()
     #display(Latex(config.title))
     return config
@@ -29,7 +29,7 @@ def trainClassifier(conf):
     clf = svm.LinearSVC(
             class_weight='auto',
             dual=True,
-            loss='l1',
+            loss='hinge',
             )
     return clf.fit(conf.training.X, conf.training.y)
 
@@ -38,8 +38,8 @@ def trainConfigClassifiers(configs):
     clfs = {}
     for i, c in enumerate(configs):
         print "Fitting SVCs on feature set: %s" % c.title
-        clfs[i] = trainClassifier(c) 
-        
+        clfs[i] = trainClassifier(c)
+
     return clfs
 
 #@memory.cache
